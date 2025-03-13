@@ -1,3 +1,6 @@
+---
+title: Revised Professions
+---
 # ATOMIC TOMORROW ADVENTURES: REVISED PROFESSIONS
 
 ## ACES & PILOTS

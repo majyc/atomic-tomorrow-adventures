@@ -1,3 +1,6 @@
+---
+title: More Epithets
+---
 # More Pulp-Inspired Epithets
 
 You're right - let's focus on building a robust collection of evocative pulp epithets first. Here are more options to capture that classic pulp adventure feel:

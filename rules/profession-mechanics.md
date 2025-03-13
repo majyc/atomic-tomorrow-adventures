@@ -1,3 +1,6 @@
+---
+title: Profession Mechanics
+---
 # ATOMIC TOMORROW ADVENTURES
 
 ## PROFESSION MECHANICS (COLUMN B)

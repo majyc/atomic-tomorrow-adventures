@@ -1,3 +1,6 @@
+---
+title: Skill Advancement
+---
 # ATOMIC TOMORROW ADVENTURES
 ## SKILL ADVANCEMENT
 

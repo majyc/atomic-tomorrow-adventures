@@ -1,3 +1,6 @@
+---
+title: Core Skills System
+---
 # Atomic Tomorrow Adventures: Core Skills System
 
 ## Core Skills Framework

@@ -1,3 +1,6 @@
+---
+title: Space Professions
+---
 # Streamlined Pulp Space Professions
 
 

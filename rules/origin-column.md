@@ -1,3 +1,6 @@
+---
+title: Origins
+---
 # ATOMIC TOMORROW ADVENTURES
 ## ORIGINS (COLUMN C)
 

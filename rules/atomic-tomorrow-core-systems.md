@@ -1,3 +1,6 @@
+---
+title: Core Systems & Character Creation
+---
 # Atomic Tomorrow Adventures: Core System & Character Creation
 
 ## Core Resolution System

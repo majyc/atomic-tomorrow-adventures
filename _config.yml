@@ -1,0 +1,36 @@
+title: Atomic Tomorrow Adventures
+description: TTRPG Documentation and Rules
+theme: minima
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Exclude these files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# Collections for organizing content
+collections:
+  rules:
+    output: true
+    permalink: /rules/:path/
+  setting:
+    output: true
+    permalink: /setting/:path/
+
+# Default layouts
+defaults:
+  - scope:
+      path: "rules"
+      type: "pages"
+    values:
+      layout: default
+  - scope:
+      path: "setting"
+      type: "pages"
+    values:
+      layout: default

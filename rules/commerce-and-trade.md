@@ -1,3 +1,6 @@
+---
+title: Commerce & Trade
+---
 ### COMMERCE & TRADE
 - **SPACE TRADER**
   - Skills: Negotiation (CHARM) +40%, Market Analysis (SAVVY) +20%, Appraisal (SAVVY) +10%, Networking (CHARM) +10%
