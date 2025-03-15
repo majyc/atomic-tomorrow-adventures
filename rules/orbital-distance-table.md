@@ -18,15 +18,15 @@ The largest body in the Asteroid Belt, Ceres hosts the Belt's administrative hea
 
 Roll percentile dice (d100) to determine the current relative position between any two planets. The resulting **Distance Class** represents how close or far the planets currently are in their orbits.
 
-| d100 Roll | Position            | Distance Class | Description                     | Duration |
-| --------- | ------------------- | -------------- | ------------------------------- | -------- |
-| 01-05     | Optimal Conjunction | A              | Closest possible approach       | 1d6 days |
-| 06-20     | Near Approach       | B              | Highly favorable distance       | 2d6 days |
-| 21-45     | Favorable Angle     | C              | Better than average distance    | 3d6 days |
-| 46-55     | Average Position    | D              | Typical distance                | 4d6 days |
-| 56-80     | Unfavorable Angle   | E              | Worse than average distance     | 3d6 days |
-| 81-95     | Far Approach        | F              | Highly unfavorable distance     | 2d6 days |
-| 96-00     | Maximum Separation  | G              | Most distant possible alignment | 1d6 days |
+| d100 Roll | Position            | Distance Class | Description                     | Duration    |
+| --------- | ------------------- | -------------- | ------------------------------- | ----------- |
+| 01-05     | Optimal Conjunction | A              | Closest possible approach       | 1d10/2 days |
+| 06-20     | Near Approach       | B              | Highly favorable distance       | 1d10 days   |
+| 21-45     | Favorable Angle     | C              | Better than average distance    | 2d10 days   |
+| 46-55     | Average Position    | D              | Typical distance                | 3d10 days   |
+| 56-80     | Unfavorable Angle   | E              | Worse than average distance     | 2d10 days   |
+| 81-95     | Far Approach        | F              | Highly unfavorable distance     | 1d10 days   |
+| 96-00     | Maximum Separation  | G              | Most distant possible alignment | 1d10/2 days |
 
 ### Distance Class Modifiers
 
@@ -160,7 +160,7 @@ The standard protocol for serious medical emergencies in space is to route patie
 The "Comm Window" row indicates how long a clear communication window typically lasts when relay stations are optimally aligned. Outside these windows, communication requires:
 
 1. Waiting for the next scheduled window
-2. Routing through multiple relay stations (adds 1d6 hours delay)
+2. Routing through multiple relay stations (adds 1d10 hours delay)
 3. Using emergency broadcast protocols (immediate but extremely limited bandwidth)
 
 ## USING THIS SYSTEM IN PLAY

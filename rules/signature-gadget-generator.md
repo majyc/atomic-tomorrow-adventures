@@ -17,14 +17,14 @@ Roll once on each column to determine your retro-futuristic device's name, then 
 
 ## ATOMIC ADJECTIVE EFFECTS
 
-1. **Atomo-** - Powered by miniature atomic pile that never needs recharging. On fumbles, emits harmless but alarming blue glow for 1d6 rounds.
+1. **Atomo-** - Powered by miniature atomic pile that never needs recharging. On fumbles, emits harmless but alarming blue glow for lower of 2d10 rounds.
 2. **Astro-** - Incorporates star-metal from beyond the asteroid belt. Functions perfectly in deep space and adds +15% to astronomy-related checks.
 3. **Cosmo-** - Attuned to cosmic ray frequencies. Can detect alien technology within 20 meters and identifies its basic purpose automatically.
 4. **Electro-** - Crackling with visible electrical energy. Deals 2 shock damage to anything that attacks you while you're holding it.
 5. **Nucleo-** - Glows with eerie green light. Performance increased by 25%, but on any roll showing a 9 on either die releases harmless radiation that makes Geiger counters go wild.
 6. **Chrono-** - Strange temporal properties allow you to see 3 seconds into the future when using it. After a particularly effective use (any critical success), you may declare you "already prepared for this" and pull out exactly the right attachment, but the device then requires 1 hour to reset.
 7. **Magneto-** - Generates localized magnetic field. Can attract/repel metal objects weighing up to 10kg at 5 meters distance. Sticks to any metal surface when not in use.
-8. **Quantum-** - Exists in multiple states simultaneously. After a failed roll using this device, you may declare "that didn't happen" and reroll, but the device becomes unusable for 1d6 hours afterward.
+8. **Quantum-** - Exists in multiple states simultaneously. After a failed roll using this device, you may declare "that didn't happen" and reroll, but the device becomes unusable for lower of 2d10 hours afterward.
 9. **Gyro-** - Incorporates incredible stabilization technology. Grants perfect balance in zero-G and negates penalties from movement, turbulence, or unstable platforms.
 10. **Hyper-** - Operates at incredible speeds. Actions that normally take two rounds complete in one, and you get +15% on initiative when using this device.
 
@@ -36,7 +36,7 @@ Roll once on each column to determine your retro-futuristic device's name, then 
 4. **-Wave** - Emits specialized wavelengths that pass through solid matter. Can scan or affect targets through up to 1 meter of standard materials (not lead or other exotic substances).
 5. **-Flux** - Constantly shifts and adapts to circumstances. Gains +5% effectiveness for each consecutive round used on the same task (max +25%).
 6. **-Static** - Generates localized field that disrupts energy patterns. Can temporarily disable electronic devices within 5 meters with successful SAVVY roll.
-7. **-Field** - Projects dome-shaped energy barrier. Can create 3-meter radius protective field that blocks normal projectiles for 1d6 rounds, but requires 24 hours to recharge afterward.
+7. **-Field** - Projects dome-shaped energy barrier. Can create 3-meter radius protective field that blocks normal projectiles for lower of 2d10 rounds, but requires 24 hours to recharge afterward.
 8. **-Pulse** - Emits regular energy pulses. Can be tuned to resonate with and strengthen (or weaken) specific materials or energy forms.
 9. **-Scope** - Incredible sensory enhancement capabilities. Zoom vision up to 5x, sees in infrared/ultraviolet, and detects motion within 20 meters.
 10. **-Beam** - Focused energy projection system. Double range or area of effect compared to standard models, with distinctive color that's your character's trademark.
@@ -60,7 +60,7 @@ After selecting your Epithet, Profession, Origin, and Background, choose ONE of 
 
 ### 1. Key Relationship
 
-Roll 1d6 to determine your relationship with one randomly selected character:
+Roll lower of 2d10 to determine your relationship with one randomly selected character:
 
 1. **Rivalry** - You compete in the same field or for the same recognition
 2. **Debt** - Either you owe them a significant favor or they owe you one
@@ -88,7 +88,7 @@ Roll 1d8 or select:
 
 ### 4. Pulp Complication
 
-Roll 1d6 or select:
+Roll lower of 2d10 or select:
 
 1. **Distinctive Trait** - Something about you draws attention (scar, accent, appearance)
 2. **Nemesis** - Someone influential has it in for you

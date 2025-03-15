@@ -288,7 +288,7 @@ Each system provides specific functions and has specific effects when damaged:
 
   - **Stressed**: Uncomfortable conditions, no penalties
   - **Damaged**: Deteriorating atmosphere, -20% to all actions after 1 hour
-  - **Critical**: Failing systems, -40% to all actions, environment suits needed within 1d6 hours
+  - **Critical**: Failing systems, -40% to all actions, environment suits needed within lower die of of 2d10 hours
   - **Disabled**: No life support, environment suits required immediately
   - **Destroyed**: Requires dockyard repairs
 - **Communications**
@@ -309,8 +309,8 @@ Each system provides specific functions and has specific effects when damaged:
 ### EMERGENCY REPAIRS
 
 - **Quick Fix**: Engineer rolls Repair. Success improves a system by one damage step for the remainder of combat.
-- **Jury Rig**: Engineer rolls Repair. Success temporarily restores function to a disabled system at -60% for 1d6 rounds.
-- **Field Repair**: Requires appropriate parts and 1d6 hours. Engineer rolls Repair. Success restores system to Stressed status.
+- **Jury Rig**: Engineer rolls Repair. Success temporarily restores function to a disabled system at -60% for lower of 2d10 rounds.
+- **Field Repair**: Requires appropriate parts and lower of 2d20 hours. Engineer rolls Repair. Success restores system to Stressed status.
 
 ## DEFENSIVE MEASURES
 
@@ -348,8 +348,8 @@ If the Structure system reaches Disabled (4):
 
 - The ship begins breaking apart
 - Life support automatically fails
-- Crew has 1d6 minutes to reach escape pods or don vacuum suits
-- After 2d6 minutes, the ship is completely destroyed
+- Crew has lower of 2d10 minutes to reach escape pods or don vacuum suits
+- After 1d10 minutes, the ship is completely destroyed
 
 ### LAST STAND
 
