@@ -158,6 +158,8 @@ When a ship is attacked:
 - Attacker rolls against relevant Combat skill
 - If successful, defender may attempt to defend
 - Defense is typically handled by the Pilot using Evasive Maneuvers
+  - Successive evasive maneuver attempts in a turn suffer a cumulative -20% penalty
+  - On a critical failure on the 2nd or more Evasive attempt in a turn, ship suffers 1 Structure Damage
 
 ### 5. OPPOSED RESOLUTION
 
@@ -193,17 +195,29 @@ When an attack hits a ship, follow this sequence:
 - **If both Precision Shot and Command Decision succeeded**: Compare the roll values (not the quality of success). The higher roll determines who controls targeting.
 - **If Precision Shot won or succeeded alone**: The specific system targeted is damaged if both attack rolls succeeded.
 - **If Command Decision won or succeeded alone**: The Captain allocates incoming damage across systems.
+
   - With a special success, 1 point of damage is negated before allocation.
   - With a critical success, 2 points of damage are negated before allocation (1 point is still negated even if a Precision Shot wins the comparison).
-- **If neither Command Decision nor Precision Shot succeeded**: Roll 1d8 to determine which system is hit:
-  1. Propulsion
-  2. Weapons
-  3. Power
-  4. Sensors
-  5. Life Support
-  6. Communications
-  7. Structure
-  8. Roll twice (damage split between two systems)
+- **If neither Command Decision nor Precision Shot succeeded**: roll on the Hit Locations Chart
+
+  ### HIT LOCATION CHART (d10)
+
+  When a ship is hit and neither Command Decision nor Precision Shot has determined the target system, roll 1d10:
+
+  | Roll | System Hit              |
+  | ---- | ----------------------- |
+  | 1    | Propulsion              |
+  | 2    | Weapons                 |
+  | 3    | Power                   |
+  | 4    | Sensors                 |
+  | 5    | Life Support            |
+  | 6    | Communications          |
+  | 7    | Structure               |
+  | 8    | Cargo Systems           |
+  | 9    | Med-Bay                 |
+  | 0    | Crew/Passenger Quarters |
+
+  *Note: Roll d10 when determining which system takes damage. A result of 0 represents 10 (Crew/Passenger Quarters).*
 
 ### 3. ENGINEER'S DAMAGE CONTROL (OPTIONAL)
 
@@ -381,7 +395,7 @@ When combat begins, the referee sets these dice based on the initial situation:
 
 ### MANEUVER ACTIONS
 
-On the Pilot's turn, they can perform maneuvers to alter the Vector and Velocity dice:
+On the Pilot's turn, they can perform maneuvers to alter the Vector and Velocity dice.  Vector and Velocity represent **relative** speed and velocity compared to another ship, so a roll that fails  doesn't mean the ship refused to turn or accelerate/deccelerate, only that the pilot didn't manage to outfly the opposing pilot trying to compensate for the manuever.  If the opposing ship is not resisting, for instance it's a drifting hulk or a friendly that wants to dock, failure still allows changing by 1, and there are no consequences for special or critical failure.
 
 #### VECTOR CHANGE MANEUVER
 
