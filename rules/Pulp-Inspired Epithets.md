@@ -38,7 +38,6 @@ You're right - let's focus on building a robust collection of evocative pulp epi
 - **Dashing** (stylish and exciting)
 - **Fearless** (without fear)
 
-## :w
 
 ## Pulp Space TTRPG Adjectives
 

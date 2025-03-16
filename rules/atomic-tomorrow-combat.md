@@ -30,21 +30,22 @@ Combat uses abstract positioning with four ranges:
 
 ### ATTACK SEQUENCE
 
-1. Attacker rolls against appropriate Combat skill
+1. Attacker rolls against appropriate Combat skill (Unarmed, Melee, Ranged)
 2. If attack fails, no effect occurs
 3. If attack succeeds, defender may choose to defend or take the hit
 
-### DEFENSE OPTIONS
+### DEFENSE OPTION
 
-- **Parry**: Use Combat (Close Combat) or Combat (Unarmed) for unarmed parry
-- **Block**: Use Combat (Close Combat) with a weapon or shield
-- **Dodge**: Use Athletics skill, can be used against any attack
+There are two Defense skills, Parry (vs melee attacks) and Dodge (vs ranged attacks). Each successive Defense in a turn incurs a -20% penalty.
+
+- **Parry**: requires a weapon or Unarmed Combat skill, only vs. melee or unarmed attacks.
+- **Block**: Requires a shield, +20%. Can only block melee attacks once/turn, can block missiles as many times as needed
+- **Dodge**: -20% vs. melee attacks.
 
 ### DEFENSE LIMITATIONS
 
-- Characters can Parry or Block only once per round
-- Characters can Dodge multiple times with -20% cumulative penalty per additional dodge
-- Two-Fisted epithet allows additional Parry/Block without penalty
+- The first defensive action per turn is at full, each defensive action after is at a cumulative -20% penalty
+- Two-Fisted epithet allows one additional Parry/Block per turn without penalty
 
 ### OPPOSED RESOLUTION
 
@@ -54,11 +55,13 @@ When defense is attempted:
 2. If same quality, highest roll wins
 3. Ties favor the defender
 
-### SUCCESS TYPES
+### SUCCESS AND FAILURE TYPES
 
 - **Critical Success**: Doubles under your skill percentage
 - **Special Success**: Roll ending in 0 or 5 under your skill percentage
 - **Ordinary Success**: Any other roll under your skill percentage
+- **Special Failure**: Roll ending in 0 or 5 over your skill percentage
+- **Critical Failure**: Doubles over your skill percentage
 - **Automatic Success**: Rolls of 01-05 regardless of skill
 - **Automatic Failure**: Rolls of 96-00 regardless of skill
 
@@ -122,7 +125,6 @@ Cover directly reduces the weapon's Wound Rating:
 - Partial Cover: -1 Wound
 - Good Cover: -2 Wounds
 - Excellent Cover: -3 Wounds
-- Minimum wound inflicted is always 0
 
 ### ARMOR PROTECTION
 
@@ -131,7 +133,7 @@ Armor directly reduces incoming wounds:
 - Light Armor: -1 Wound
 - Medium Armor: -2 Wounds
 - Heavy Armor: -3 Wounds
-- Minimum wound inflicted is always 0
+- Critical S
 - Some weapons may have armor-piercing properties that ignore some or all armor protection
 
 ---
@@ -142,13 +144,7 @@ For ease of play, the character sheet includes pre-calculated values:
 
 ### GRIT SOAK VALUES
 
-```
-Unwounded: GRIT × 5 = ____%
-1 Wound:    GRIT × 4 = ____%
-2 Wounds:   GRIT × 3 = ____%
-3 Wounds:   GRIT × 2 = ____%
-4 Wounds:   GRIT × 1 = ____%
-```
+GRIT × 5 = ____% Soak Value
 
 ### REFLEX INITIATIVE
 

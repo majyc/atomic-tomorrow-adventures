@@ -1,37 +1,77 @@
----
-title: Core Systems & Character Creation
----
-# Atomic Tomorrow Adventures: Core System & Character Creation
+# ATOMIC TOMORROW ADVENTURES
+## CORE SYSTEM REFERENCE
 
-## Core Resolution System
+*This document establishes the standardized mechanics used throughout Atomic Tomorrow Adventures. All subsystems build on these foundational principles.*
 
-### Percentile Roll Mechanics
+## CORE RESOLUTION MECHANIC
 
-**Basic Resolution:**
-
-- Roll d100 (two ten-sided dice, read as tens and ones)
-- Roll under your skill or attribute percentage to succeed
+### Basic Resolution
+- Roll percentile dice (d100) against your skill or attribute percentage
+- Roll under your percentage to succeed
 - Higher skill percentages represent greater competence
 
-**Special Results:**
+### Success Quality
+- **Ordinary Success**: Roll under your skill percentage
+- **Special Success**: Roll ending in 0 or 5 and under your skill percentage
+- **Critical Success**: Matching doubles (11, 22, etc.) that are below your skill percentage
+- **Automatic Success**: Roll of 01-05 (succeeds regardless of skill level)
+- **Automatic Failure**: Roll of 96-00 (fails regardless of skill level)
 
-- **Critical Success**: Any doubles (11, 22, etc.) that are below your skill/attribute
-- **Fumble**: Any doubles that are above your skill/attribute
-- **Special Effect**: Any successful roll ending in 0 or 5 (divisible by 5)
-- **Automatic Success**: 05 or less (regardless of skill level)
-- **Automatic Failure**: 96 or higher (even for masters)
+### Success Effects
+Success quality consistently provides the following benefits across all systems:
+- **Ordinary Success**: Base effect achieved
+- **Special Success**: Enhanced effect (+1 additional step of success)
+- **Critical Success**: Superior effect (+2 additional steps of success)
 
-**Opposed Checks:**
+*Example applications: +1/+2 wounds in combat, +1/+2 progress points in tasks, +1/+2 distance in chases*
 
+### Opposed Checks
+When two characters' skills directly oppose each other:
 - Both participants roll percentile dice
-- Highest successful roll wins (blackjack style - highest without going over your percentage)
+- Higher successful roll wins (success trumps failure; better quality trumps lesser quality)
+- If both succeed with same quality, highest roll below skill wins
 - If both fail, higher roll still fails worse
 
-### Attributes
+## STANDARD DIFFICULTY MODIFIERS
 
-Seven core attributes, ranging from 3-18 for normal humans.  
+All skills and actions use this consistent scale of difficulty modifiers:
 
-Roll 2d10, with rolls under 3 becoming 3, and rolls over 18 becoming 18. The only way to have lower or higher scores at the start is to have an Origin or Background that modifies the attribute.
+| Difficulty Level | Modifier | Example Situations |
+|------------------|----------|-------------------|
+| Trivial | +40% | Tasks so simple they rarely require rolls |
+| Easy | +20% | Favorable conditions, ample time, proper tools |
+| Routine | +0% | Standard conditions with appropriate equipment |
+| Challenging | -20% | Time pressure, improvised tools, unfavorable conditions |
+| Difficult | -40% | Severe conditions, missing critical tools, under fire |
+| Extreme | -60% | Nearly impossible circumstances, critically limited resources |
+| Heroic | -80% | The stuff of legends, requires extraordinary effort |
+
+*Apply only the single most significant modifier rather than stacking multiple modifiers.*
+
+## ACTION ECONOMY
+
+### Turn Structure
+Each character gets the following actions per turn:
+- **One Major Action**: Attack, use a significant skill, operate complex equipment.
+- **One Movement**: Change position, adjust stance, mount/dismount
+- **One Minor Action**: Draw weapon, flip switch, brief communication
+
+### Initiative
+- At the start of combat, all participants roll against REFLEX × 5
+- Results determine turn order for the entire encounter:
+  - Highest successful roll acts first, then around the table. 
+  - Switch between clockwise and counterclockwise each encounter 
+  - Ties are resolved by REFLEX score
+
+### Defensive Actions
+Characters can defend themselves using the following guidelines:
+- One free defensive reaction per round (Parry, Block, Dodge, Evasive Maneuver, etc.)
+- Additional defensive reactions suffer a cumulative -20% penalty
+- Some epithets/specialties may grant additional defensive actions
+
+## ATTRIBUTES
+
+Seven core attributes, ranging from 3-18 for normal humans:
 
 - **BRAWN**: Physical strength, toughness, athletic power
 - **REFLEX**: Physical coordination, dexterity, reaction speed
@@ -40,71 +80,122 @@ Roll 2d10, with rolls under 3 becoming 3, and rolls over 18 becoming 18. The onl
 - **CHARM**: Charisma, leadership, persuasiveness
 - **GRIT**: Endurance, willpower, mental fortitude
 - **GUILE**: Cunning, deception, craftiness
+- **PSI**: Psychic potential (optional, only for psychic characters)
 
 For attribute checks, multiply the attribute by 5 to get the target percentage.
 
-### Derived Statistics
+## SKILL SYSTEM
 
-- **Hit Points** = BRAWN + GRIT
-- **Mental Fortitude** = GRIT × 5 (for PSI defense)
-- **Initiative** = REFLEX × 5
+### Core Skills Framework
+- Skills are organized into Core Skills with Specializations
+- Base percentage = (Related attribute × 2) + Skill Bonus
 
-### PSI (Optional Attribute)
+### Skill Ratings from Professions
+- **Primary Skills**: +40% bonus
+- **Secondary Skills**: +20% bonus
+- **Tertiary Skills**: +10% bonus
 
-- Only for characters with psychic potential
-- Used for psychic abilities and defense
+### Using Skills Under Pressure
+- **Combat**: One major skill action per round
+- **Timed**: Skill attempts require defined timeframe
+- **Crisis**: Skill attempts under immediate threat take -20% penalty
 
-## Character Creation Process
+## DAMAGE AND WOUNDS
 
-### Four-Column Selection System
+### Wound System
+- Characters can sustain up to 3 wounds with no mechanical penalties
+- Wound 4 = Incapacitation (character cannot act)
+- Wound 5 = Dying
 
-Characters are created by selecting one option from each of four columns:
+### Damage Calculation
+- Each weapon has a fixed Wound Rating (1-4)
+- Special Success: +1 additional wound
+- Critical Success: +2 additional wounds
+- No additional roll required to determine damage
 
-#### Column A: Epithet
+### Damage Reduction
+- **Cover**: Reduces wounds based on coverage quality (-1 to -3)
+- **Armor**: Reduces wounds based on armor type (-1 to -3)
+- **Soaking**: GRIT check can potentially reduce wounds (by 1-3 based on success quality)
 
-*What makes you extraordinary*
+## EXTENDED TASKS
 
-- Examples: Two-Fisted, Grizzled, Brilliant, Lucky, Daring, etc.
-- Provides special abilities and unique dice roll interpretations
-- May grant attribute bonuses or skill advantages
+### Task Complexity
+- **Standard Tasks**: Single roll against appropriate skill
+- **Complex Tasks**: Requires 3 successes
+- **Demanding Tasks**: Requires 5 successes
+- **Expert Tasks**: Requires 8 successes
+- **Master Tasks**: Requires 12+ successes
 
-#### Column B: Profession
+### Success Counting
+- **Ordinary Success**: Contributes 1 point toward completion
+- **Special Success**: Contributes 2 points toward completion
+- **Critical Success**: Contributes 3 points toward completion
 
-*What you do*
+### Timeframes
+- **Combat Round** (6 seconds): One attempt per round
+- **Task** (1-5 minutes): Frequent checks
+- **Extended Task** (10-60 minutes): Checks at meaningful intervals
+- **Prolonged Effort** (Hours to days): Checks once per significant time unit
 
-- Examples: Scout, Scientist, Rocket Jockey, Smuggler, Patroller, etc.
-- Determines primary skill set and equipment
-- Provides professional knowledge and contacts
+## ADVANCEMENT SYSTEM
 
-#### Column C: Origin
+When a character achieves a critical success with a skill during an adventure:
+1. Roll percentile dice against the current skill percentage after the adventure
+2. If the roll exceeds the current percentage, improve the skill by the ones die (1-9)
+3. Higher skill levels improve more slowly:
+   - **Skilled (50-69%)**: Only improve on a ones die of 1-4
+   - **Expert (70-89%)**: Only improve on a ones die of 1-3
+   - **Master (90%+)**: Only improve on a ones die of 1
 
-*Where you're from*
+## UNIFIED VEHICLE MECHANICS
 
-- Examples: Terran, Loonie, Venusian, Martian, Belter, etc.
-- Grants origin-specific attribute modifiers and cultural skills
-- Influences environmental adaptations and knowledge
+### Vehicle Statistics
+- **Maneuverability**: Affects Vector Change (directional ability)
+  - Sluggish (-20%), Standard (0%), Nimble (+20%), Lightning (+40%)
+- **Thrust Rating**: Affects Velocity Change (acceleration)
+  - TR 1 (-20%), TR 2 (0%), TR 3 (+20%), TR 4 (+40%), TR 5 (+60%)
+- **Size**: Affects durability and target profile
+- **Systems**: Each has damage track from Operational to Destroyed
 
-#### Column D: Background
+### Vehicle Damage
+All vehicles use a 5-step damage system for major systems:
+1. **Operational (0)**: Functioning normally
+2. **Stressed (1)**: -20% to related skill checks
+3. **Damaged (2)**: -40% to related skill checks
+4. **Critical (3)**: -60% to related skill checks
+5. **Disabled (4)**: System non-functional until repaired
+6. **Destroyed (5)**: Requires dockyard repairs
 
-*Your upbringing or past*
+### Vector Combat
+- Opposed rolls against enemy pilot
+- **Vector Change**: Directional heading maneuvers (modified by Maneuverability)
+- **Velocity Change**: Speed maneuvers (modified by Thrust Rating)
+- **Pursuit/Evasion**: Uses worse of Maneuverability or Thrust Rating
+- **Success Quality**: Affects distance (ordinary +1, special +2, critical +3)
 
-- Examples: Military Family, Salaryman, Political Dynasty, Colonist, etc.
-- Adds family/upbringing skills and social connections
-- May provide additional resources or character traits
+## SPECIAL CIRCUMSTANCES
 
-### Skill System
+### Zero-G Environment
+- Actions requiring movement use Athletics (Zero-G) skill
+- Characters without this skill suffer -40% penalty to physical actions
+- High BRAWN can be a hindrance: -5% per point above 10
 
-Skills are percentile-based, starting at:
+### Environmental Hazards
+- **Vacuum**: Exposure without protection causes 1 wound per round
+- **Toxic**: Requires GRIT checks at regular intervals
+- **Radiation**: Causes both immediate and long-term effects
+- **Extreme Temperature**: Requires appropriate gear and GRIT checks
 
-- Base percentage = (Related attribute × 5)
-- Professional training adds +20% to +40%
-- Background skills typically add +10% to +20%
-- Origin skills typically add +10% to +20%
+### Social Interactions
+- Social skills cannot force actions against core values
+- Success creates believable reactions based on context
+- Players always retain agency for their characters
+- Going along with disadvantageous influence can earn advancement benefits
 
-Beginning characters should have competent skill levels between 25% and 80% depending on their natural talents and training.
-
-### Character Advancement
-
-- Characters gain +1d10% in skills used successfully during adventures
-- Attributes may improve after significant milestones
-- New skills can be learned at base level (attribute × 3%)
+### Psionic Abilities
+- Use PSI attribute for activation, Opposed if trying to affect another creature
+- Special Success: +1 success effect
+- Critical Success: +2 success effect
+- Strain reduces current PSI skill rating temporarily
+- Powers organized in five categories (Telepathy, ESP, Psychokinesis, etc.)

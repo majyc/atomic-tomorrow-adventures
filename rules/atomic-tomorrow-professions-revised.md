@@ -29,7 +29,7 @@ Final Skill % = (Attribute × 2) + Skill Bonus
 - Piloting (Spacecraft) +40% *(Core: Piloting +20%)*
 - Technology (Ship Systems) +20% *(Core: Technology +10%)*
 - Navigation (Space) +10% *(Core: Navigation +0%)*
-- Combat (Pistols) +10% *(Core: Combat +0%)*
+- Combat (Pistols) +10% *(Core: Ranged Combat +0%)*
 
 **Starting Equipment:**
 - Custom flight jacket with personal insignia
@@ -556,7 +556,7 @@ Final Skill % = (Attribute × 2) + Skill Bonus
 **Skills:**
 - Security (Law Enforcement) +40% *(Core: Security +20%)*
 - Investigation (Crime Scene Analysis) +20% *(Core: Investigation +10%)*
-- Combat (Rifles) +10% *(Core: Combat +0%)*
+- Combat (Rifles) +10% *(Core: Ranged Combat +0%)*
 - Academics (Regulations) +10% *(Core: Academics +0%)*
 
 **Starting Equipment:**
@@ -580,8 +580,8 @@ Final Skill % = (Attribute × 2) + Skill Bonus
 *Military specialist trained for combat across diverse planetary environments*
 
 **Skills:**
-- Combat (Heavy Weapons) +40% *(Core: Combat +20%)*
-- Combat (Bladed Weapons) +20% *(Core: Combat already covered by primary)*
+- Combat (Heavy Weapons) +40% *(Core: Ranged Combat +20%)*
+- Combat (Bladed Weapons) +20% *(Core: Melee Combat +10%)*
 - Athletics (Strength) +10% *(Core: Athletics +0%)*
 - Survival (Combat Zone) +10% *(Core: Survival +0%)*
 
@@ -608,7 +608,7 @@ Final Skill % = (Attribute × 2) + Skill Bonus
 **Skills:**
 - Investigation (Tracking) +40% *(Core: Investigation +20%)*
 - Streetwise (Information Gathering) +20% *(Core: Streetwise +10%)*
-- Combat (Pistols) +10% *(Core: Combat +0%)*
+- Combat (Pistols) +10% *(Core: Ranged Combat +0%)*
 - Persuasion (Intimidation) +10% *(Core: Persuasion +0%)*
 
 **Starting Equipment:**
@@ -632,7 +632,7 @@ Final Skill % = (Attribute × 2) + Skill Bonus
 *Soldier for hire who contracts military skills to various employers*
 
 **Skills:**
-- Combat (Rifles) +40% *(Core: Combat +20%)*
+- Combat (Rifles) +40% *(Core: Ranged Combat +20%)*
 - Persuasion (Negotiation) +20% *(Core: Persuasion +10%)*
 - Tactics (Combat) +10% *(Core: Tactics +0%)*
 - Survival (Combat Zone) +10% *(Core: Survival +0%)*
@@ -740,7 +740,7 @@ Final Skill % = (Attribute × 2) + Skill Bonus
 **Skills:**
 - Engineering (Experimental) +40% *(Core: Engineering +20%)*
 - Technology (Electronics) +20% *(Core: Technology +10%)*
-- Combat (Exotic Weapons) +10% *(Core: Combat +0%)*
+- Combat (Exotic Weapons) +10% *(Core: Ranged Combat +0%)*
 - Streetwise (Scrounging) +10% *(Core: Streetwise +0%)*
 
 **Starting Equipment:**
