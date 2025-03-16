@@ -92,6 +92,13 @@ Your profession represents your training, expertise, and the career that has sha
 - **MAD GENIUS**: Unorthodox inventor and theorist
 - **TECH WIZARD**: Master of improvised technology
 
+#### COMMERCE & TRADE
+- **SPACE TRADER**: Interplanetary merchant and commerce expert
+- **CARTEL BROKER**: Negotiator for powerful commercial interests
+- **INSURANCE ADJUSTER**: Risk evaluator and claims investigator
+- **ADVENTURE CAPITALIST**: Investor in high-risk, high-reward ventures
+- **EXOTIC DEALER**: Specialist in rare and unusual goods
+
 #### SOLDIERS & ENFORCERS
 - **SPACE RANGER**: Law enforcement officer
 - **SOLAR MARINE**: Military combat specialist
