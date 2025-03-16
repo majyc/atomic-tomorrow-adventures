@@ -1,149 +1,136 @@
 ---
 title: Epithets
 ---
+# COLUMN A: EPITHET
 
-# Atomic Tomorrow Adventures: Streamlined Epithets
+Your epithet represents what makes you extraordinary compared to ordinary people. It provides special abilities and unique traits that other characters don't possess.
 
-## Two-Fisted
+## GRITTY/TOUGH EPITHETS
 
-*You're a walking one-person army who thrives in the thick of combat*
+### GRIZZLED
+*The years have hardened you into something tougher than ordinary folk*
+- **Primary**: +2 GRIT
+- **Benefit**: You have 1 extra wound on your track before incapacitation (5 wounds instead of 4)
 
-- Can fight with a weapon in each hand as effectively as a single weapon
-- Against multiple opponents, success on any roll ending in 0 or 5 hits an additional foe
-- When intimidating groups, doubles also succeed regardless of your percentage
+### HARD-BITTEN
+*You've endured the worst the Solar System can throw at you and kept going*
+- **Primary**: +1 GRIT, +1 NERVE
+- **Benefit**: +20% resistance to environmental hazards and extreme conditions
 
-## Grizzled
+### BATTLE-SCARRED
+*The marks of combat across your body tell stories of survival against the odds*
+- **Primary**: +2 NERVE
+- **Benefit**: Wounds never affect your initiative rolls, regardless of penalty level
 
-*You've seen it all and lived to tell about it*
+### STEELY-EYED
+*Your unflinching gaze makes even hardened criminals think twice*
+- **Primary**: +2 NERVE
+- **Benefit**: In standoffs and intimidation contests, opponents need a critical success to shake you
 
-- +2 GRIT
-- Any successful roll against fear or intimidation counts as a critical success
-- The first wound penalty of any conflict doesn't affect you
+### HARDBOILED
+*Life's knocks have left you cynical but exceptionally tough-minded*
+- **Primary**: +1 GRIT, +1 GUILE
+- **Benefit**: Immune to emotional manipulation and can function without sleep for 48 hours with no penalty
 
-## Daring
+### IRON-WILLED
+*Your determination allows you to push beyond normal human limits*
+- **Primary**: +2 GRIT
+- **Benefit**: When you would normally be incapacitated by a wound, you can continue functioning by making a GRIT check each round. However, sustaining any additional wound immediately renders you unconscious.
 
-*You shine brightest when taking incredible risks*
+### TWO-FISTED
+*You fight with both hands, creating a whirlwind of attacks and defenses*
+- **Primary**: Can fight effectively with a weapon in each hand
+- **Benefit**: Can Parry and Block one more time per turn with no penalty
 
-- When performing genuinely dangerous actions, rolls ending in 1-5 always succeed
-- Fall one category less severely than others would
-- Allies witnessing your successful daring feats gain the same benefit on their next similar action
+## SKILLED/EXPERT EPITHETS
 
-## Brilliant
+### CRACK
+*You're the best there is at what you do, with a reputation to match*
+- **Primary**: In your primary professional skill, any roll of doubles or ending in 0 or 5 succeeds
+- **Benefit**: +10% to all other professional skills
 
-*Your mind operates on a different level*
+### HOTSHOT
+*Natural talent and flair make difficult feats look easy when you perform them*
+- **Primary**: +10% to three skills of your choice
+- **Benefit**: Your show-off maneuvers succeed more often, granting +20% when attempting flashy actions
 
-- +2 SAVVY
-- When analyzing clues or solving puzzles, doubles count as successes regardless of your percentage
-- Can improvise scientific solutions with minimal resources - any roll under 50 succeeds
+### VIRTUOSO
+*Your masterful abilities in your chosen field are unmatched across the Solar System*
+- **Primary**: One professional skill at +20% above normal maximum
+- **Benefit**: Critical successes on professional skill rolls create lasting positive reputation
 
-## Lucky
+### LEGENDARY
+*Your exploits are told in spaceport bars from Mercury to Neptune*
+- **Primary**: Your name opens doors (+20% to social interactions where your reputation matters)
+- **Benefit**: After adequate preparation for a task within your expertise, you can perform one flawless execution (requires describing your preparation)
 
-*Fortune favors you in the strangest ways*
+### PEERLESS
+*In your field, there is simply no one better—and everyone knows it*
+- **Primary**: +10% to all professional skills in your field
+- **Benefit**: After studying a problem in your field for at least an hour, you can attempt solutions that would be impossible for others
 
-- When you fail a roll, any result ending in 7 allows you to reroll
-- Opponents' critical failures occur on any doubles over their skill, not just on failed rolls
-- In games of chance, any roll under 30 succeeds
+### UNCANNY
+*You possess an inexplicable sixth sense that others find unnerving*
+- **Primary**: Sixth sense for danger (+20% to detect ambushes, traps, and betrayals)
+- **Benefit**: Animals and children instinctively trust you
 
-## Crack
+## ADVENTUROUS EPITHETS
 
-*You're a renowned specialist in your field*
+### INTREPID
+*No unexplored region or dangerous frontier can deter your adventurous spirit*
+- **Primary**: +1 NERVE, +1 REFLEX
+- **Benefit**: +20% to all exploration and pathfinding rolls
 
-- Select one skill; in that specialty, any roll under 50 succeeds
-- Your reputation grants automatic success in basic applications of your specialty
-- Can perform actions in your specialty with minimal tools - any roll ending in 0 or 5 succeeds
+### SWASHBUCKLING
+*You fight with dramatic flair, turning combat into a performance art*
+- **Primary**: +20% to acrobatic combat maneuvers
+- **Benefit**: Can goad opponents into making mistakes by targeting their pride
 
-## Steely-Eyed
+### BOLD
+*Your confident approach to challenges often turns failure into future success*
+- **Primary**: After any failure, gain +20% to your next roll if attempting a different approach
+- **Benefit**: Recover from setbacks twice as quickly as normal characters
 
-*Your unwavering focus intimidates opponents and inspires allies*
+### DARING
+*You take risks that make others blanch, and somehow make them pay off*
+- **Primary**: +20% to genuinely dangerous actions
+- **Benefit**: Never suffer special or critical failures when attempting risky actions
 
-- +2 NERVE
-- In tense standoffs, opponents must succeed on doubles to affect you
-- Allies within sight gain immunity to ordinary fear
+### AUDACIOUS
+*The word "impossible" just makes you more determined to succeed*
+- **Primary**: Can attempt normally impossible stunts at -40% instead of being automatically impossible
+- **Benefit**: Your daring inspires allies, granting them +10% to their next action
 
-## Hotshot
+### LUCKY
+*Fortune smiles on you in ways that defy rational explanation*
+- **Primary**: When you fail a roll, any result ending in 7 allows you to reroll (you can continue rerolling as long as you keep getting 7s)
+- **Benefit**: +20% to games of chance and randomized situations
 
-*You're naturally talented and not afraid to show it*
+## CLEVER/SMART EPITHETS
 
-- Pick three skills; for these skills, rolls ending in 1-3 always succeed
-- Flashy maneuvers succeed on doubles regardless of difficulty
-- Successfully showing off improves NPC reactions by one category
+### BRILLIANT
+*Your intellect runs rings around ordinary minds, making connections they miss*
+- **Primary**: +2 SAVVY
+- **Benefit**: When examining clues or evidence, you can make correlations others miss (+20% to deduction and analysis)
 
-## Enigmatic
+### INGENIOUS
+*You can create solutions from the most unlikely components*
+- **Primary**: Can create impromptu tools from available materials on any successful SAVVY roll
+- **Benefit**: Your jury-rigged solutions ignore the first Special Failure, breaking only on Critical Failures or a second Special Failure
 
-*There's something mysterious about you that others can't quite place*
+### SILVER-TONGUED
+*Your persuasive abilities can change minds and shape opinions with remarkable ease*
+- **Primary**: +2 CHARM
+- **Benefit**: Persuasion attempts that succeed create lasting belief changes rather than temporary compliance
 
-- When hiding intentions, opponents need a critical success to see through your deception
-- NPCs reveal secrets to you on any successful CHARM roll
-- By sacrificing a piece of equipment, you can reveal you were prepared for this exact situation
+### ENIGMATIC
+*Something about you defies easy reading, making you a mystery to most*
+- **Primary**: People find it difficult to read you (-20% to others' attempts to analyze your intentions)
+- **Benefit**: Strangers often confide in you, sharing secrets they normally wouldn't
 
-## Veteran
+### VETERAN
+*Years of experience have honed your instincts and awareness to extraordinary levels*
+- **Primary**: +1 GRIT, +1 SAVVY
+- **Benefit**: Better situational awareness; you can detect ambushes on any successful roll, not just critical success
 
-*Years of experience have taught you valuable lessons*
-
-- Start with one additional skill at 50%
-- Detect ambushes and traps on any successful SAVVY roll, even without actively looking
-- When you recount relevant experience, allies succeed on rolls ending in 0 or 5 for related actions
-
-## Hardboiled
-
-*Life has toughened you, making you cynical but effective*
-
-- Immune to emotional manipulation attempts
-- Detect lies on any successful SAVVY roll, not just criticals
-- Can function normally without sleep for 48 hours
-
-## Swashbuckling
-
-*You approach danger with flair and panache*
-
-- Acrobatic combat maneuvers succeed on any roll ending in 0, 5, or 9
-- Successfully taunting an opponent forces them to target you next
-- Stylish successes automatically improve NPC reactions
-
-## Ingenious
-
-*You have a knack for solving problems with whatever's at hand*
-
-- Can create impromptu tools from available materials on any successful SAVVY roll
-- Repair attempts succeed on doubles regardless of normal probability
-- By sacrificing one device, can guarantee the success of another device for one crucial use
-
-## Indomitable
-
-*Your willpower is virtually unbreakable*
-
-- Mental influence or torture attempts only succeed against you on critical rolls
-- When pursuing a vital objective, wound penalties don't affect your rolls
-- When reduced to zero hit points, remain conscious until the immediate threat ends
-
-## Silver-Tongued
-
-*Words are your most powerful weapons*
-
-- +2 CHARM
-- Can attempt to talk down hostile NPCs - success on any roll ending in 0, 5, or 8
-- Persuasion attempts that succeed on doubles create lasting belief changes
-
-## Uncanny
-
-*There's something not quite normal about your abilities*
-
-- Sense danger on any successful NERVE roll, even without obvious warnings
-- Animals and children instinctively trust you without rolls
-- Intuition about unknown subjects succeeds on rolls ending in 1-3
-
-## Fearless
-
-*Where others falter, you press forward*
-
-- Completely immune to fear effects
-- When doing something frightening, succeed on any doubles (not just those under your percentage)
-- Your presence means allies only fail fear resistance on doubles under their percentage
-
-## Relentless
-
-*Nothing will stop you from achieving your goals*
-
-- Can continue at full effectiveness for an extra day without rest
-- Tracking or pursuing targets succeeds on any roll under 50
-- When blocked by an obstacle, if there's any way through, you automatically find it on a successful roll
+*Choose one epithet that best represents your character's extraordinary quality.*
