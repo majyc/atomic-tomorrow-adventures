@@ -20,21 +20,13 @@ By combining these four elements, you'll create a distinctive character with a c
 
 Your seven core attributes form the foundation of your character's capabilities.
 
-### STANDARD METHOD (RECOMMENDED)
+### ATTRIBUTE GENERATION BY ORIGIN
 
-Roll 2d10 for each attribute, with the following adjustment:
-- Results below 3 become 3
-- Results above 18 become 18
+- **TERRANS**: Must use the Standard Array of 15, 14, 12, 11, 10, 9, 8 (distributed as desired)
+- **ALL OTHER ORIGINS**: Roll 2d10 for each attribute, with results below 3 becoming 3 and results above 18 becoming 18
+- **TERRAN EXILES**: May roll attributes like other origins instead of using the Standard Array
 
-The only way to have attributes outside the 3-18 range is through Origin or Background modifiers.
-
-### QUICK ARRAY METHOD
-
-Distribute the following values among your attributes: 15, 14, 12, 11, 10, 9, 8
-
-### CINEMATIC METHOD
-
-Roll 2d10+2 for each attribute, with a minimum of 6. This creates more capable characters suitable for high-powered campaigns.
+The only way to have attributes outside the 3-18 range is through Origin or Background modifiers, which are applied after the initial generation.
 
 ### ATTRIBUTE DESCRIPTIONS
 
@@ -197,9 +189,9 @@ Your background reflects your upbringing, education, and personal history before
 
 Based on your attributes, calculate the following:
 
-- **Hit Points** = BRAWN + GRIT
-- **Mental Fortitude** = GRIT × 5 (for resisting psionic effects)
 - **Initiative** = REFLEX × 5
+
+*Note: All attribute checks (including resistance to damage, psionics, etc.) use the formula Attribute × 5 to determine success percentage.*
 
 ## CALCULATING SKILLS
 
@@ -265,8 +257,6 @@ For players who want to jump straight into action:
 - GUILE: 12 (+1 from Belter = 13)
 
 **DERIVED STATISTICS**:
-- Hit Points: 18 (BRAWN 8 + GRIT 10)
-- Mental Fortitude: 50 (GRIT 10 × 5)
 - Initiative: 75 (REFLEX 15 × 5)
 
 **KEY SKILLS**:
