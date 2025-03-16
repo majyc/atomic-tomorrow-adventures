@@ -53,6 +53,10 @@ Alternatively, characters can spend downtime between adventures learning new ski
 2. Begin with a base chance equal to attribute × 2
 3. After suitable training time (GM's discretion), gain the skill at attribute × 2 + 10%
 
+### BASIC TRAINING
+
+Characters have Basic Training to account for their combat skills if they haven't learned any from the profession or background (or for specific ones they don't have).  Basic Training is Reflex x 2 + 15%, and never improves.  Characters can stil get improvement checks, but if they pass the improvement check then they get the skill for real at the Basic Training level + the ones die %.  E.g. if they earned a check by getting a critical success with a pistol, and the check succeeds then they have Ranged Combat (Pistol) at the new percent,and they retain Basic Training for all their rolls with other sorts of combat.
+
 ### ATTRIBUTE ADVANCEMENT
 
 Attributes improve more slowly than skills, representing the challenge of changing fundamental capabilities:

@@ -17,7 +17,7 @@ Select one option from each column to create your character concept:
 | Battle-Scarred            | Astro Racer                      | Venusian         | Academic Training        |
 | Steely-Eyed               | Orbital Jumper                   | Belter           | Street Urchin            |
 | Hardboiled                | Stunt Pilot                      | Jovian           | Corporate Upbringing     |
-| Iron-Willed               | **SCIENTISTS:**            | Saturian         | Aristocratic Family      |
+| Iron-Willed               | **SCIENTISTS:**            | Saturnian        | Aristocratic Family      |
 | Two-Fisted                | Brainiac                         | Deep Spacer      | Spacer Family            |
 | **SKILLED/EXPERT:** | Atomicist                        | Genmodded        | Religious Order          |
 | Crack                     | Xenobiologist                    | Red Martian      | Laboratory Subject       |
@@ -26,16 +26,16 @@ Select one option from each column to create your character concept:
 | Legendary                 | **TRADE & COMMERCE:**      | Neptunian        | Colonist Child           |
 | Peerless                  | Space Trader                     | Ceres Engineer   | Underworld Family        |
 | Uncanny                   | Cartel Broker                    | Pluto Outpost    | Entertainment Background |
-| **ADVENTUROUS:**    | Insurance Adjuster               |                  |                          |
-| Intrepid                  | Adventure Capitalist             |                  |                          |
-| Swashbuckling             | Exotic Dealer                    |                  |                          |
-| Bold                      | **EXPLORERS & SCOUTS:**    |                  |                          |
-| Daring                    | Scout                            |                  |                          |
-| Audacious                 | Trailblazer                      |                  |                          |
-| Lucky                     | Ruin Delver                      |                  |                          |
-| **CLEVER/SMART:**   | Planetary Scout                  |                  |                          |
-| Brilliant                 | Xeno-Tracker                     |                  |                          |
-| Ingenious                 | **SOLDIERS & ENFORCERS:**  |                  |                          |
+| **ADVENTUROUS:**    | Insurance Adjuster               |                  | Regressed/Barbarian      |
+| Intrepid                  | Adventure Capitalist             |                  | Colonist                 |
+| Swashbuckling             | Exotic Dealer                    |                  | Refugee                  |
+| Bold                      | **EXPLORERS & SCOUTS:**    |                  | Ship-born                |
+| Daring                    | Scout                            |                  | Noble House              |
+| Audacious                 | Trailblazer                      |                  | Atomicorp Employee       |
+| Lucky                     | Ruin Delver                      |                  | Orbital Habitat          |
+| **CLEVER/SMART:**   | Planetary Scout                  |                  | Venusian Cloud Drifter   |
+| Brilliant                 | Xeno-Tracker                     |                  | Belt Prospector Family   |
+| Ingenious                 | **SOLDIERS & ENFORCERS:**  |                  | Station Brat             |
 | Silver-Tongued            | Space Ranger                     |                  |                          |
 | Enigmatic                 | Solar Marine                     |                  |                          |
 | Veteran                   | Bounty Hunter                    |                  |                          |

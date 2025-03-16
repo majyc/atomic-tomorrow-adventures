@@ -44,53 +44,54 @@ The only way to have attributes outside the 3-18 range is through Origin or Back
 Your epithet represents what makes you extraordinary compared to ordinary people. It provides special abilities and unique dice roll interpretations that other characters don't possess.
 
 ### EPITHET SELECTION
+
 Your epithet represents what makes you extraordinary compared to ordinary people. It provides special abilities and unique dice roll interpretations that other characters don't possess.
 
 ### GRITTY/TOUGH EPITHETS
 
-| Epithet | Primary Benefit | Secondary Benefit | Roll Interpretation |
-|---------|-----------------|-------------------|---------------------|
-| **Grizzled** | +2 GRIT | Immune to ordinary fear | The first wound penalty of any conflict doesn't affect you |
-| **Hard-Bitten** | +1 GRIT, +1 NERVE | Resistance to environmental hazards | When rolling to resist environmental conditions, double any bonus from equipment |
-| **Battle-Scarred** | +2 NERVE | Intimidating appearance | Wounds don't affect initiative rolls regardless of penalty level |
-| **Steely-Eyed** | +2 NERVE | Intimidating presence | In tense standoffs, opponents need a critical success to unnerve you |
-| **Hardboiled** | Immune to emotional manipulation | Superior lie detection | Can function without sleep for 48 hours with no penalty |
-| **Iron-Willed** | Can ignore critical wound effects once per session | Resistance to mental manipulation | When rolling to resist mental influence, rolls ending in 1-3 always succeed |
-| **Two-Fisted** | Can fight with a weapon in each hand effectively | Intimidation works better against groups | Against multiple opponents, any roll ending in 0 or 5 hits an additional foe |
+| Epithet                  | Primary Benefit                                    | Secondary Benefit                        | Roll Interpretation                                                              |
+| ------------------------ | -------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------- |
+| **Grizzled**       | +2 GRIT                                            | Immune to ordinary fear                  | The first wound penalty of any conflict doesn't affect you                       |
+| **Hard-Bitten**    | +1 GRIT, +1 NERVE                                  | Resistance to environmental hazards      | When rolling to resist environmental conditions, double any bonus from equipment |
+| **Battle-Scarred** | +2 NERVE                                           | Intimidating appearance                  | Wounds don't affect initiative rolls regardless of penalty level                 |
+| **Steely-Eyed**    | +2 NERVE                                           | Intimidating presence                    | In tense standoffs, opponents need a critical success to unnerve you             |
+| **Hardboiled**     | Immune to emotional manipulation                   | Superior lie detection                   | Can function without sleep for 48 hours with no penalty                          |
+| **Iron-Willed**    | Can ignore critical wound effects once per session | Resistance to mental manipulation        | When rolling to resist mental influence, rolls ending in 1-3 always succeed      |
+| **Two-Fisted**     | Can fight with a weapon in each hand effectively   | Intimidation works better against groups | Can Parry and Block one more time per turn with no penalty.                      |
 
 ### SKILLED/EXPERT EPITHETS
 
-| Epithet | Primary Benefit | Secondary Benefit | Roll Interpretation |
-|---------|-----------------|-------------------|---------------------|
-| **Crack** | Elite specialist in chosen field | Renowned professional reputation | In your specialty, any roll under 50 succeeds |
-| **Hotshot** | Natural talent in multiple areas | Show-off maneuvers succeed more often | Pick three skills; for these skills, rolls ending in 1-3 always succeed |
-| **Virtuoso** | One professional skill at +20% above normal maximum | Admired by peers in your field | Critical successes on professional skill rolls create lasting positive reputation |
-| **Legendary** | Can reroll one failed professional skill check per session | Your name opens doors | Social rolls involving your reputation succeed on any roll ending in 0, 5, or 9 |
-| **Peerless** | +10% to all professional skills in your field | Can perform impossible feats in specialty | Once per session, can succeed automatically on a skill roll in your specialty |
-| **Uncanny** | Sixth sense for danger | Animals and children trust you | Intuition about unknown subjects succeeds on rolls ending in 1-3 |
+| Epithet             | Primary Benefit                                            | Secondary Benefit                         | Roll Interpretation                                                               |
+| ------------------- | ---------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------- |
+| **Crack**     | Elite specialist in chosen field                           | Renowned professional reputation          | In your specialty, any roll under 50 succeeds                                     |
+| **Hotshot**   | Natural talent in multiple areas                           | Show-off maneuvers succeed more often     | Pick three skills; for these skills, rolls ending in 1-3 always succeed           |
+| **Virtuoso**  | One professional skill at +20% above normal maximum        | Admired by peers in your field            | Critical successes on professional skill rolls create lasting positive reputation |
+| **Legendary** | Can reroll one failed professional skill check per session | Your name opens doors                     | Social rolls involving your reputation succeed on any roll ending in 0, 5, or 9   |
+| **Peerless**  | +10% to all professional skills in your field              | Can perform impossible feats in specialty | Once per session, can succeed automatically on a skill roll in your specialty     |
+| **Uncanny**   | Sixth sense for danger                                     | Animals and children trust you            | Intuition about unknown subjects succeeds on rolls ending in 1-3                  |
 
 ### ADVENTUROUS EPITHETS
 
-| Epithet | Primary Benefit | Secondary Benefit | Roll Interpretation |
-|---------|-----------------|-------------------|---------------------|
-| **Intrepid** | +1 NERVE, +1 REFLEX | Always finds a way forward | Exploration and pathfinding rolls succeed on any roll under 50% |
-| **Swashbuckling** | Acrobatic combat expertise | Effective at goading opponents | Acrobatic combat maneuvers succeed on any roll ending in 0, 5, or 9 |
-| **Bold** | Better odds on high-risk rolls | Fast recovery from setbacks | After any failure, next roll gains +20% if attempting a different approach |
-| **Daring** | Better odds when taking bold risks | Fall damage reduced | When performing genuinely dangerous actions, rolls of 01-05 count as critical success |
-| **Audacious** | Can attempt normally impossible stunts | Inspires others with daring | When performing an action others consider impossible, roll succeeds on any doubles under your skill |
-| **Lucky** | Fortune favors you in strange ways | Better odds in games of chance | When you fail a roll, any result ending in 7 allows you to reroll once |
+| Epithet                 | Primary Benefit                        | Secondary Benefit              | Roll Interpretation                                                                                 |
+| ----------------------- | -------------------------------------- | ------------------------------ | --------------------------------------------------------------------------------------------------- |
+| **Intrepid**      | +1 NERVE, +1 REFLEX                    | Always finds a way forward     | Exploration and pathfinding rolls succeed on any roll under 50%                                     |
+| **Swashbuckling** | Acrobatic combat expertise             | Effective at goading opponents | Acrobatic combat maneuvers succeed on any roll ending in 0, 5, or 9                                 |
+| **Bold**          | Better odds on high-risk rolls         | Fast recovery from setbacks    | After any failure, next roll gains +20% if attempting a different approach                          |
+| **Daring**        | Better odds when taking bold risks     | Fall damage reduced            | When performing genuinely dangerous actions, rolls of 01-05 count as critical success               |
+| **Audacious**     | Can attempt normally impossible stunts | Inspires others with daring    | When performing an action others consider impossible, roll succeeds on any doubles under your skill |
+| **Lucky**         | Fortune favors you in strange ways     | Better odds in games of chance | When you fail a roll, any result ending in 7 allows you to reroll once                              |
 
 ### CLEVER/SMART EPITHETS
 
-| Epithet | Primary Benefit | Secondary Benefit | Roll Interpretation |
-|---------|-----------------|-------------------|---------------------|
-| **Brilliant** | +2 SAVVY | Superior analytical capabilities | When analyzing clues or solving puzzles, doubles count as successes regardless of your percentage |
-| **Ingenious** | Creative problem-solver | Superior repair capabilities | Can create impromptu tools from available materials on any successful SAVVY roll |
-| **Silver-Tongued** | +2 CHARM | Superior persuasion | Persuasion attempts that succeed on doubles create lasting belief changes |
-| **Enigmatic** | People find it difficult to read you | Strangers often confide in you | When hiding intentions, opponents need a critical success to see through your deception |
-| **Veteran** | Extensive experience | Better situational awareness | Detect ambushes on any successful roll, not just critical success |
+| Epithet                  | Primary Benefit                      | Secondary Benefit                | Roll Interpretation                                                                               |
+| ------------------------ | ------------------------------------ | -------------------------------- | ------------------------------------------------------------------------------------------------- |
+| **Brilliant**      | +2 SAVVY                             | Superior analytical capabilities | When analyzing clues or solving puzzles, doubles count as successes regardless of your percentage |
+| **Ingenious**      | Creative problem-solver              | Superior repair capabilities     | Can create impromptu tools from available materials on any successful SAVVY roll                  |
+| **Silver-Tongued** | +2 CHARM                             | Superior persuasion              | Persuasion attempts that succeed on doubles create lasting belief changes                         |
+| **Enigmatic**      | People find it difficult to read you | Strangers often confide in you   | When hiding intentions, opponents need a critical success to see through your deception           |
+| **Veteran**        | Extensive experience                 | Better situational awareness     | Detect ambushes on any successful roll, not just critical success                                 |
 
-*Choose one epithet that best represents your character's extraordinary quality.**Choose one epithet that best represents your character's extraordinary quality.*
+*Choose one epithet that best represents your character's extraordinary quality.*
 
 ## COLUMN B: PROFESSION
 
@@ -215,18 +216,32 @@ Your background reflects your upbringing, education, and personal history before
 
 ### BACKGROUND SELECTION
 
-| Background                     | Description                           | Attribute Effects   | Additional Skills                                                  | Resources & Connections                                           |
-| ------------------------------ | ------------------------------------- | ------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| **MILITARY FAMILY**      | Raised in the discipline of service   | GRIT +1, CHARM -1   | Tactics +10%, Military Protocol +10%, Firearms +5%                 | Military contacts, access to surplus equipment                    |
-| **MERCHANT CLAN**        | Raised in the trading business        | CHARM +1, GRIT -1   | Negotiation +10%, Market Analysis +10%, Appraisal +5%              | Trading contacts, credit line with merchant houses                |
-| **FRONTIER HOMESTEAD**   | Raised on the edges of civilization   | GRIT +1, CHARM -1   | Survival +10%, Repair +10%, Animal Handling +5%                    | Wilderness skills, network of frontier contacts                   |
-| **ACADEMIC TRAINING**    | Formal education in institutions      | SAVVY +1, BRAWN -1  | Research +10%, Mathematics +10%, History +5%                       | Academic credentials, university connections                      |
-| **STREET URCHIN**        | Raised in urban underbellies          | GUILE +1, CHARM -1  | Streetwise +10%, Theft +10%, Urban Navigation +5%                  | Criminal contacts, knowledge of urban secrets                     |
-| **CORPORATE UPBRINGING** | Raised in corporate culture           | SAVVY +1, NERVE -1  | Business +10%, Computer Operation +10%, Corporate Politics +5%     | Corporate connections, understanding of business structures       |
-| **ARISTOCRATIC FAMILY**  | Born to privilege and power           | CHARM +1, GRIT -1   | Etiquette +10%, Politics +10%, Art Appreciation +5%                | Wealthy connections, social status, financial resources           |
-| **SPACER FAMILY**        | Raised aboard ships and stations      | REFLEX +1, BRAWN -1 | Zero-G Operations +10%, Ship Systems +10%, Vacuum Survival +5%     | Network of spacers, familiarity with various vessels              |
-| **RELIGIOUS ORDER**      | Raised in spiritual tradition         | NERVE +1, GUILE -1  | Theology +10%, Meditation +10%, Ancient Languages +5%              | Religious contacts, respected status in religious communities     |
-| **LABORATORY SUBJECT**   | Subject of scientific experimentation | GRIT +1, CHARM -1   | Medical Knowledge +10%, Laboratory Procedures +10%, Psychology +5% | Unique physical capabilities, connections to scientific community |
+| Background                       | Description                                              | Attribute Effects   | Additional Skills                                                                         | Resources & Connections                                                                                       |
+| -------------------------------- | -------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **MILITARY FAMILY**        | Raised in the discipline of service                      | GRIT +1, CHARM -1   | Tactics +10%, Military Protocol +10%, Firearms +5%                                        | Military contacts, access to surplus equipment                                                                |
+| **MERCHANT CLAN**          | Raised in the trading business                           | CHARM +1, GRIT -1   | Negotiation +10%, Market Analysis +10%, Appraisal +5%                                     | Trading contacts, credit line with merchant houses                                                            |
+| **FRONTIER HOMESTEAD**     | Raised on the edges of civilization                      | GRIT +1, CHARM -1   | Survival +10%, Repair +10%, Animal Handling +5%                                           | Wilderness skills, network of frontier contacts                                                               |
+| **ACADEMIC TRAINING**      | Formal education in institutions                         | SAVVY +1, BRAWN -1  | Research +10%, Mathematics +10%, History +5%                                              | Academic credentials, university connections                                                                  |
+| **STREET URCHIN**          | Raised in urban underbellies                             | GUILE +1, CHARM -1  | Streetwise +10%, Theft +10%, Urban Navigation +5%                                         | Criminal contacts, knowledge of urban secrets                                                                 |
+| **CORPORATE UPBRINGING**   | Raised in corporate culture                              | SAVVY +1, NERVE -1  | Business +10%, Computer Operation +10%, Corporate Politics +5%                            | Corporate connections, understanding of business structures                                                   |
+| **ARISTOCRATIC FAMILY**    | Born to privilege and power                              | CHARM +1, GRIT -1   | Etiquette +10%, Politics +10%, Art Appreciation +5%                                       | Wealthy connections, social status, financial resources                                                       |
+| **SPACER FAMILY**          | Raised aboard ships and stations                         | REFLEX +1, BRAWN -1 | Zero-G Operations +10%, Ship Systems +10%, Vacuum Survival +5%                            | Network of spacers, familiarity with various vessels                                                          |
+| **RELIGIOUS ORDER**        | Raised in spiritual tradition                            | NERVE +1, GUILE -1  | Theology +10%, Meditation +10%, Ancient Languages +5%                                     | Religious contacts, respected status in religious communities                                                 |
+| **LABORATORY SUBJECT**     | Subject of scientific experimentation                    | GRIT +1, CHARM -1   | Medical Knowledge +10%, Laboratory Procedures +10%, Psychology +5%                        | Unique physical capabilities, connections to scientific community                                             |
+| **MEGACITY NATIVE**        | Raised in the towering urban centers of Earth            | SAVVY +1, GRIT -1   | Urban Navigation +10%, Technology (Infrastructure) +10%, Social (Crowd Management) +5%    | Knowledge of urban shortcuts, contacts in city services, access to hard-to-find goods                         |
+| **POLITICAL DYNASTY**      | Born into a family of political influence                | CHARM +1, NERVE -1  | Politics +10%, Persuasion (Public Speaking) +10%, History +5%                             | Political connections, family name recognition, access to restricted information                              |
+| **UNDERWORLD FAMILY**      | Raised in organized crime or black market circles        | GUILE +1, SAVVY -1  | Streetwise +10%, Deception +10%, Security (Alarm Systems) +5%                             | Criminal contacts, knowledge of illegal operations, access to black market goods                              |
+| **SHOWBIZ FAMILY**         | Raised in the entertainment industry                     | CHARM +1, NERVE -1  | Performance +10%, Social (Networking) +10%, Artistry +5%                                  | Media contacts, performance venues, celebrity recognition                                                     |
+| **REGRESSED/BARBARIAN**    | Raised in an isolated community rejecting technology     | BRAWN +1, SAVVY -1  | Survival +10%, Combat (Primitive Weapons) +10%, Nature Lore +5%                           | Extraordinary physical capabilities, non-technological survival skills, tribe connections                     |
+| **COLONIST**               | Raised in a newly established off-world colony           | GRIT +1, CHARM -1   | Resource Management +10%, Technical Improvisation +10%, Community Relations +5%           | Colony network, self-sufficiency skills, adaptability to harsh conditions                                     |
+| **REFUGEE**                | Displaced from home by disaster or conflict              | NERVE +1, CHARM -1  | Survival (Urban) +10%, Bartering +10%, Situational Awareness +5%                          | Network of fellow refugees, ability to adapt to new environments, resource acquisition skills                 |
+| **SHIP-BORN**              | Born and raised on long-voyage spacecraft                | REFLEX +1, BRAWN -1 | Ship Systems +10%, Navigation (Spacecraft) +10%, Social (Confined Communities) +5%        | Extensive knowledge of ship operations, contacts among space transport crews, familiarity with multiple ports |
+| **NOBLE HOUSE**            | Member of an established aristocratic lineage            | CHARM +1, GRIT -1   | Etiquette +10%, History (Lineages) +10%, Social (Influence) +5%                           | Family wealth and prestige, political connections, access to exclusive venues                                 |
+| **ATOMICORP EMPLOYEE**     | Raised in corporate atomic energy sector                 | SAVVY +1, NERVE -1  | Science (Nuclear Physics) +10%, Engineering (Atomic) +10%, Corporate Politics +5%         | Corporate security clearance, technical knowledge of atomic systems, industry contacts                        |
+| **ORBITAL HABITAT**        | Raised in artificial orbital colonies                    | REFLEX +1, BRAWN -1 | Zero-G Operations +10%, Engineering (Life Support) +10%, Psychology (Confined Spaces) +5% | Understanding of habitat operations, orbital community contacts, recycling expertise                          |
+| **VENUSIAN CLOUD DRIFTER** | Raised in nomadic airships above Venus                   | REFLEX +1, SAVVY -1 | Piloting (Airship) +10%, Survival (High Atmosphere) +10%, Meteorology +5%                 | Navigation in cloud layers, contacts among nomadic communities, unique cultural knowledge                     |
+| **BELT PROSPECTOR FAMILY** | Raised by asteroid miners and resource hunters           | GRIT +1, CHARM -1   | Mineral Identification +10%, Zero-G Operations +10%, Jury-Rigging +5%                     | Knowledge of valuable asteroid locations, assessment of mineral worth, mining contact network                 |
+| **STATION BRAT**           | Raised on a space station with minimal adult supervision | REFLEX +1, NERVE -1 | Zero-G Acrobatics +10%, Station Layouts +10%, Scrounging +5%                              | Knowledge of station maintenance shafts and hidden areas, station crew contacts, improvisation skills         |
 
 *Choose one background that best represents your character's upbringing.*
 
@@ -256,6 +271,13 @@ Your skill percentages are determined by combining your attribute contribution w
 
 ## FINISHING TOUCHES
 
+### Basic Training
+
+Every character starts with Basic Training, which represents self-defense training (or school of hard knocks) that they've been given in their upbringing
+
+* Basic Training is Reflex x 2 + 15%.  It never goes up, but you should track critical success checks normally
+* When making advancement checks if you have a Basic Training check to make, success will grant you the appropriate specialization, e.g. Combat (Pistols) and you'll stop using Basic Training for that skill, while still using it for other combat modes.
+
 ### Personal Details
 
 - **Name**: Choose a name appropriate to your character's origin and background
@@ -281,14 +303,6 @@ Start with:
 ### Signature Gadget (Optional)
 
 Roll on the Signature Gadget table to create a unique device that defines your character's style and capabilities.
-
-## QUICK-START OPTION
-
-For players who want to jump straight into action:
-
-1. Choose your Epithet, Profession, and Background
-2. Choose Terran as your Origin and use the Quick Array Method for attributes (15, 14, 12, 11, 10, 9, 8)
-3. Record equipment from the Profession package
 
 ## SAMPLE CHARACTER: STELLA "LUCKY" BLACKSTAR
 

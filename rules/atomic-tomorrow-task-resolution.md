@@ -1,4 +1,5 @@
 # ATOMIC TOMORROW ADVENTURES
+
 ## TASK RESOLUTION SYSTEM
 
 This system handles non-combat challenges that characters face, from bypassing security systems to performing emergency surgery or deciphering alien artifacts.
@@ -13,11 +14,13 @@ This system handles non-combat challenges that characters face, from bypassing s
 ## WHEN TO ROLL
 
 Roll only when these conditions are met:
+
 - The task has a meaningful chance of failure
 - Failure would have consequences
 - The outcome isn't predetermined by the narrative
 
 **Don't Roll For:**
+
 - Opening an unlocked door
 - Basic piloting in clear conditions
 - Simple communications
@@ -29,28 +32,34 @@ Roll only when these conditions are met:
 Tasks are categorized by complexity, independent of timeframe:
 
 ### Standard Tasks
+
 - Single roll against appropriate skill
 - **Examples**: Hot-wiring a vehicle, treating a minor injury, identifying a strange mineral
 
 ### Complex Tasks
+
 - Requires 3 successes
-- **Examples**: Bypassing security systems, performing field surgery, repairing damaged equipment 
+- **Examples**: Bypassing security systems, performing field surgery, repairing damaged equipment
 
 ### Demanding Tasks
+
 - Requires 5 successes
 - **Examples**: Deciphering alien code, disarming complex explosive, hacking a military computer
 
 ### Expert Tasks
+
 - Requires 8 successes
 - **Examples**: Performing delicate brain surgery, reconstructing ancient technology, navigating a treacherous asteroid field
 
 ### Master Tasks
+
 - Requires 12+ successes
 - **Examples**: Repairing a severely damaged spacecraft, deciphering an entire alien language, terraforming a small region
 
 ## SUCCESS COUNTING
 
 Success quality matters and contributes different amounts toward task completion:
+
 - **Ordinary Success**: Contributes 1 point toward completion
 - **Special Success** (roll ending in 0 or 5): Contributes 2 points toward completion
 - **Critical Success** (matching doubles under skill percentage): Contributes 3 points toward completion
@@ -60,37 +69,46 @@ Success quality matters and contributes different amounts toward task completion
 Timeframes are established separately from difficulty:
 
 ### Combat Round (6 seconds)
+
 - One attempt per round
 - **Examples**: Bypassing a blast door during combat, stabilizing a critically wounded comrade
 
-### Quick Action (1-5 minutes)
+### Standard Task (1-5 minutes)
+
 - Frequent checks (every minute)
 - **Examples**: Hot-wiring a vehicle, picking a standard lock
 
-### Extended Action (10-60 minutes)
+### Extended Task (10-60 minutes)
+
 - Checks at meaningful intervals
 - **Examples**: Performing surgery, repairing ship systems, interrogating a captive
 
 ### Prolonged Effort (Hours to days)
+
 - Checks once per significant time unit
 - **Examples**: Surveying a crash site, researching ancient artifacts, constructing a makeshift shelter
 
 ## TEAMWORK AND COLLABORATION
 
 ### Primary and Secondary Contributors
+
 For tasks where one person clearly leads while others assist:
+
 - The primary operator makes normal skill rolls
 - Assistants make skill rolls at -20%
 - Assistants contribute a maximum of 1 success per roll, regardless of quality
 - **Example**: In surgery, the lead surgeon accumulates normal successes while assistants (nurses, anesthesiologists) can contribute at most 1 success per roll
 
 ### Distributed Effort
+
 For tasks where multiple people can contribute equally:
+
 - All participants make normal skill rolls
 - All successes count normally (1 for ordinary, 2 for special, 3 for critical)
 - **Example**: Searching a large area, repairing a starship, constructing defensive positions
 
 ### Leadership in Group Tasks
+
 - A character with Leadership skill can make a single roll at the start of a group task
 - Success doesn't grant bonuses but instead:
   - On ordinary success: One participant may reroll one failed roll
@@ -103,15 +121,18 @@ For tasks where multiple people can contribute equally:
 For tasks performed during combat or time-sensitive situations:
 
 ### Urgent Tasks
+
 - Character must choose between their normal combat action or one attempt at the task
 - Task attempt counts as their action for that round
 - **Example**: A security expert trying to bypass a blast door while teammates hold off attackers
 
 ### Split Attention
+
 - Character can attempt a task while maintaining awareness, but at -20% to the skill check
 - **Example**: An engineer making emergency repairs while watching for enemies
 
 ### Rushed Work
+
 - Character can attempt to rush a task that would normally take longer
 - Roll at -20% to -40% depending on how much they're rushing
 - Complications are more likely
@@ -122,12 +143,14 @@ For tasks performed during combat or time-sensitive situations:
 When failures occur in complex tasks:
 
 ### Task Setbacks
+
 - **Minor Setback**: On a special failure (failed roll ending in 0 or 5), lose 1 previously accumulated success
 - **Major Setback**: On a critical failure (doubles that fail), lose all accumulated successes and must restart the task
 
 ## SAMPLE EXTENDED TASKS
 
 ### Breaking Mysterian Encryption (Demanding Task)
+
 - **Success Needed**: 5
 - **Skills Used**: Technology (Communications), Computer Systems (Cryptography)
 - **Timeframe**: 30 minutes (check every 5 minutes)
@@ -135,6 +158,7 @@ When failures occur in complex tasks:
 - **Narration**: "The encrypted message could reveal the Mysterians' next target. You'll need to identify their cipher patterns and break through their security protocols."
 
 ### Emergency Repairs During Combat (Complex Task)
+
 - **Success Needed**: 3
 - **Skills Used**: Repair (Ship Systems), Engineering (Power Systems)
 - **Timeframe**: Combat rounds (one attempt per round)
@@ -142,6 +166,7 @@ When failures occur in complex tasks:
 - **Narration**: "With the propulsion system damaged and Mysterian saucers closing in, you need to get the engines back online before you're sitting ducks."
 
 ### Surviving in the Venusian Jungle (Expert Task)
+
 - **Success Needed**: 8
 - **Skills Used**: Survival (Jungle), Science (Xenobiology)
 - **Timeframe**: Days (one check per day)
