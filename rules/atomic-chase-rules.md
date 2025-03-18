@@ -3,28 +3,31 @@
 ## CORE MECHANICS: TWO-PHASE PURSUIT
 
 ### DISTANCE TRACKING
+
 - **Distance 1-2**: Contact range (ramming, boarding possible)
 - **Distance 3-4**: Close range (melee attacks possible with reach weapons)
 - **Distance 5-7**: Medium range (most ranged weapons effective)
 - **Distance 8-9**: Extended range (visual contact maintained)
 - **Distance 10+**: Escape achieved (pursuer loses sight of the lead vehicle)
 
-
 #### ADJUSTING CHASE PARAMETERS
 
 The Game Master may adjust these parameters for different scenarios:
 
 **Extended Chases** (Start: 7, Escape: 12):
+
 - Use for major story pursuits, complex urban environments, or when multiple hazards should be encountered
 - Results in longer chases (6-8 rounds) with more opportunities for dramatic twists
 - Better showcases vehicles with superior speed and maneuverability
 
-**Quick Pursuits** (Start: 4, Escape: 8): 
+**Quick Pursuits** (Start: 4, Escape: 8):
+
 - Use for minor encounters, simple terrain, or when time is limited
 - Creates brief, intense chases (2-3 rounds) that resolve quickly
 - Favors the pursuer slightly, making escape more challenging
 
 **Dramatic Standoffs** (Start: 3, Escape: 10):
+
 - Use when the pursuer has a significant advantage initially
 - Creates tension as the lead vehicle must gain substantial ground to escape
 - Works well for "starting from a stop" scenarios like a sudden ambush
@@ -36,6 +39,7 @@ Each round, track the current distance between vehicles using a die or marker. W
 Each round begins with an opposed Vehicle Operation roll between drivers:
 
 ### OPPOSED ROLL OUTCOMES
+
 - **Lead vehicle wins by Critical vs. Failure**: +3 distance (pulls ahead)
 - **Lead vehicle wins by Special vs. Regular/Failure**: +2 distance
 - **Lead vehicle wins by Regular vs. Failure**: +1 distance
@@ -45,6 +49,7 @@ Each round begins with an opposed Vehicle Operation roll between drivers:
 - **Same quality of success**: Higher roll wins, +/-1 distance
 
 ### VEHICLE FACTORS
+
 - Add Speed Rating (SR) and Maneuverability (MR) modifiers to Vehicle Operation rolls
 - Terrain Speed Caps limit effective SR advantage in certain environments
 
@@ -53,6 +58,7 @@ Each round begins with an opposed Vehicle Operation roll between drivers:
 After determining distance change in Phase 1, the referee randomly generates a hazard:
 
 ### HAZARD GENERATION
+
 - Referee rolls d10 to determine hazard type
 - Lead driver selects Risk Level (1-3)
 - Lead driver makes Vehicle Operation roll with modifiers for Risk Level and MR
@@ -62,17 +68,20 @@ After determining distance change in Phase 1, the referee randomly generates a h
 ### PURSUER OPTIONS
 
 **FOLLOW THROUGH**
+
 - Attempt the same hazard at same Risk Level
 - **Success**: No additional distance change
 - **Failure**: Distance increases by 3 (+1 for Special Failure, +2 for Critical Failure)
 - **Critical Failure**: Distance increases by 5 and roll on Mishap Table with +20
 
 **PLAY IT SAFE**
+
 - Choose not to navigate the hazard
 - Distance automatically increases by 4
 - No roll on Mishap Table
 
 **ALTERNATE ROUTE** (Only available for certain hazards)
+
 - Attempt to find a different path
 - Roll Navigation at -40%
 - **Success**: Distance increases by 2
@@ -87,6 +96,7 @@ After determining distance change in Phase 1, the referee randomly generates a h
 These can be used instead of the normal Phase 2 options:
 
 ### SHORTCUT GAMBIT (PURSUER ONLY)
+
 - Desperate attempt to close distance by taking a risky detour
 - Roll Navigation at -40%
 - **Critical Success**: Distance decreases by 5
@@ -97,6 +107,7 @@ These can be used instead of the normal Phase 2 options:
 - **Critical Failure**: Chase ends (completely lost)
 
 ### CHEMICAL X BOOST (ONCE PER CHASE)
+
 - Push engines beyond safety limits
 - Roll Engineering (Propulsion) or Vehicle Operation
 - **Success**: Lead gains +2 distance, pursuer loses -2 distance
@@ -106,6 +117,7 @@ These can be used instead of the normal Phase 2 options:
 - **Critical Failure**: 2 damage to Propulsion and roll on Mishap Table
 
 ### OFFENSIVE MANEUVER
+
 - Attempt to interfere with the other vehicle's progress
 - Must be at distance 1-3
 - Roll Vehicle Operation against opponent's Vehicle Operation
@@ -113,72 +125,81 @@ These can be used instead of the normal Phase 2 options:
 - **Failure**: -1 distance advantage
 
 ## HAZARD TABLE
+
 Roll d10:
 
 1. **TIGHT TURN**: Sharp change in direction requiring precise control
+
    - **Ground**: Hairpin curve, sudden intersection, traffic circle
    - **Air**: Sudden crosswind, unexpected thermal, pressure gradient
-
 2. **DENSE TRAFFIC**: Navigate through concentrated obstacles
+
    - **Ground**: Busy intersection, market crowd, rush hour congestion
    - **Air**: Dense cloud bank, flock of birds, busy airspace
    - *Allows Alternate Route*
-
 3. **NARROW GAP**: Squeeze through restricted space
+
    - **Ground**: Alley, construction zone bottleneck, tunnel entrance
    - **Air**: Mountain pass, urban canyon between buildings, bridge underpass
    - *Allows Alternate Route*
-
 4. **SURFACE CHANGE**: Transition between environments
+
    - **Ground**: Road to off-road, dry to wet surface, pavement to gravel
    - **Air**: Rapid elevation change, stratosphere boundary, pressure zone
-
 5. **RESTRICTED ZONE**: Area with limited or controlled access
+
    - **Ground**: Military checkpoint, research facility, private property
    - **Air**: No-fly zone, test range, security perimeter
-
 6. **AUTOMATED SYSTEM**: Mechanical devices to navigate
+
    - **Ground**: Robot traffic control, automated barriers, security checkpoints
    - **Air**: Automated flight corridors, defense systems, drone network
-
 7. **ELEVATED ROUTE**: Raised path with fall hazard
+
    - **Ground**: Bridge, overpass, cliff-side road, rooftop
    - **Air**: Canyon, mountain range, urban skyscrapers
    - *Allows Alternate Route*
-
 8. **WEATHER HAZARD**: Atmospheric challenge
+
    - **Ground**: Sudden downpour, fog bank, ice patch
    - **Air**: Thunderstorm, high turbulence zone, microbursts
-
 9. **CIVILIAN AREA**: Zone with innocent bystanders
+
    - **Ground**: School zone, pedestrian mall, public park
    - **Air**: Scenic flyover area, civilian airport approach, public event
    - *Allows Alternate Route*
+10. **CONSTRUCTION ZONE**: Incomplete or in-progress structures
 
-0. **CONSTRUCTION ZONE**: Incomplete or in-progress structures
-   - **Ground**: Road work, building site, demolition area
-   - **Air**: Partially completed towers, crane-filled skyline
+    - **Ground**: Road work, building site, demolition area
+    - **Air**: Partially completed towers, crane-filled skyline
 
 ### RISK LEVELS
+
 Each hazard can be attempted at different risk levels:
 
 - **RISK LEVEL 1 (HAZARDOUS)**
+
   - **Difficulty**: -0% (standard roll)
   - **Mishap Table Modifier**: +0
-
 - **RISK LEVEL 2 (DANGEROUS)**
+
   - **Difficulty**: -20%
   - **Mishap Table Modifier**: +20
-
 - **RISK LEVEL 3 (RECKLESS)**
+
   - **Difficulty**: -40%
   - **Mishap Table Modifier**: +40
+- **RISK LEVEL 4 (CATASTROPHIC)**
+
+  - **Difficulty**: -60%
+  - **Roll On Catastrophic Table instead of Mishap Table**
 
 ## VEHICLE CHARACTERISTICS
 
 ### SPEED RATING (SR)
 
 **Core Function**: Determines how quickly a vehicle can accelerate and its maximum speed
+
 - **SR 1**: Slow (Cargo vehicles, construction equipment)
 - **SR 2**: Standard (Family cruisers, jeeps, light aircraft)
 - **SR 3**: Fast (Sports cars, military aircraft, racing boats)
@@ -188,6 +209,7 @@ Each hazard can be attempted at different risk levels:
 **Skill Modifier**: Each SR point adds +10% to Vehicle Operation for Phase 1 driving contest
 
 **Terrain Speed Caps**:
+
 - **Open Terrain**: No cap (full SR applies)
 - **Highway**: Maximum effective SR 4
 - **Suburban/Light Urban**: Maximum effective SR 3
@@ -197,6 +219,7 @@ Each hazard can be attempted at different risk levels:
 ### MANEUVERABILITY (MR)
 
 **Core Function**: Determines how well a vehicle handles tight turns and complex maneuvers
+
 - **MR 1**: Clumsy (-20% to maneuver rolls)
 - **MR 2**: Standard (No modifier)
 - **MR 3**: Responsive (+20% to maneuver rolls)
@@ -208,6 +231,7 @@ Each hazard can be attempted at different risk levels:
 ## DAMAGE AND MISHAPS
 
 ### MISHAP TABLE
+
 Roll percentile dice:
 
 01-20: **Close Call**: -20% to next maneuver but no damage
@@ -219,23 +243,42 @@ Roll percentile dice:
 
 *Apply modifiers from Risk Level where indicated (e.g., +20 for Risk Level 2)*
 
+
+## CATASTROPHIC RESULTS TABLE
+
+Roll d10:
+
+1. **Total Breakdown**: Vehicle disabled but intact, occupants unharmed
+2. **Spectacular Crash**: Vehicle wrecked, occupants take light damage
+3. **Power Core Breach**: Radiation leak, vehicle disabled, area contaminated
+4. **Chain Reaction**: Multiple systems fail simultaneously, vehicle crippled
+5. **Rollover/Tailspin**: Vehicle severely damaged, occupants trapped
+6. **System Cascade Failure**: Critical systems overload, creating chain reaction
+7. **Special Catastrophe I**: Enhancement system fails catastrophically (see enhancement table)
+8. **Special Catastrophe II**: Enhancement system fails catastrophically (see enhancement table)
+9. **Special Catastrophe III**: Enhancement systems fail catastrophically (see enhancement table)
+10. **Collision Chain Reaction**: Vehicle crashes into nearest other vehicle, which must make its own Catastrophic Results roll
+
 ### VEHICLE DAMAGE SYSTEM
 
 When a vehicle takes damage to a system:
 
 **PROPULSION SYSTEM**
+
 - **Stressed (1)**: -1 SR for 1 round
 - **Damaged (2)**: -1 SR until repaired
 - **Critical (3)**: -2 SR until repaired
 - **Disabled (4)**: Vehicle immobilized
 
 **STEERING SYSTEM**
+
 - **Stressed (1)**: -1 MR for 1 round
 - **Damaged (2)**: -1 MR until repaired
 - **Critical (3)**: -2 MR until repaired
 - **Disabled (4)**: Vehicle cannot turn effectively (-60% to all maneuver rolls)
 
 **STRUCTURE**
+
 - **Stressed (1)**: Cosmetic damage only
 - **Damaged (2)**: Vehicle compromised, passengers at -20% to actions
 - **Critical (3)**: Vehicle severely damaged, passengers at -40%
@@ -244,26 +287,32 @@ When a vehicle takes damage to a system:
 ## ATOMIC AGE VEHICLE ENHANCEMENTS
 
 ### CHEMICAL X INJECTION SYSTEM
+
 - **Normal Function**: Once per chase, provides +20% to a Vehicle Operation roll
 - **Description**: Experimental chemical mixture that supercharges atomic engines for brief bursts
 
 ### GYROSCOPIC STABILIZATION
+
 - **Normal Function**: +20% to any one hazard roll per chase
 - **Description**: Advanced spinning gyros that maintain vehicle stability in extreme maneuvers
 
 ### REINFORCED FRAME
+
 - **Normal Function**: Ignore the first Structure damage in any chase
 - **Description**: Advanced metallurgy and additional structural bracing with distinctive external braces
 
 ### ATOMIC COOLING SYSTEM
+
 - **Normal Function**: SR cannot be reduced by system damage
 - **Description**: Specialized cooling apparatus with glowing blue conduits and distinctive fins
 
 ### ADVANCED TRACTION SYSTEM
+
 - **Normal Function**: +20% to hazards involving surface changes or weather conditions
 - **Description**: Automatically adjusting wheels/treads that conform to terrain conditions
 
 ### ATOMIC RADAR
+
 - **Normal Function**: Once per chase, reveals outcome of Alternate Route before committing
 - **Description**: Experimental scanning system with distinctive rotating dome antenna
 
@@ -272,6 +321,7 @@ When a vehicle takes damage to a system:
 ### GROUND VEHICLES
 
 **ROCKET-TAIL TURBO** (Luxury Sports Car)
+
 - Speed Rating: 4 (Ultra)
 - Maneuverability: 4 (Precision)
 - Durability: 3 (Standard)
@@ -280,6 +330,7 @@ When a vehicle takes damage to a system:
 - Description: Sleek bubble-top sports car with prominent tailfins and atomic power indicators. Chrome trim glows faintly blue from cooling system.
 
 **MARTIAN EXPEDITION VEHICLE** (All-Terrain Explorer)
+
 - Speed Rating: 2 (Standard)
 - Maneuverability: 3 (Responsive)
 - Durability: 5 (Reinforced)
@@ -288,6 +339,7 @@ When a vehicle takes damage to a system:
 - Description: Six-wheeled exploration vehicle with expandable laboratory section. Specialized tires with adaptive tread patterns for various terrains.
 
 **ATOMIC CYCLONE** (Racing Motorcycle)
+
 - Speed Rating: 5 (Experimental)
 - Maneuverability: 5 (Exceptional)
 - Durability: 2 (Fragile)
@@ -296,6 +348,7 @@ When a vehicle takes damage to a system:
 - Description: Streamlined motorcycle with enclosed cockpit and prominent atomic cooling fins. Leaves a distinctive blue exhaust trail at high speeds.
 
 **URBAN MINICAR** (Compact City Vehicle)
+
 - Speed Rating: 2 (Standard)
 - Maneuverability: 5 (Exceptional)
 - Durability: 2 (Fragile)
@@ -304,6 +357,7 @@ When a vehicle takes damage to a system:
 - Description: Tiny bubble car with revolutionary steering system allowing it to turn within its own length and navigate spaces barely wider than the vehicle itself.
 
 **ATOMIC FREIGHT HAULER** (Heavy Transport)
+
 - Speed Rating: 1 (Slow)
 - Maneuverability: 1 (Clumsy)
 - Durability: 7 (Armored)
@@ -314,6 +368,7 @@ When a vehicle takes damage to a system:
 ### AIR VEHICLES
 
 **STRATOJUMPER** (VTOL Aircraft)
+
 - Speed Rating: 4 (Ultra)
 - Maneuverability: 3 (Responsive)
 - Durability: 3 (Standard)
@@ -322,6 +377,7 @@ When a vehicle takes damage to a system:
 - Description: Vertical take-off craft with rotating atomic turbines and transparent bubble cockpit. Wings extend and retract for different flight modes.
 
 **CLOUDSKIMMER** (Luxury Airship)
+
 - Speed Rating: 2 (Standard)
 - Maneuverability: 2 (Standard)
 - Durability: 5 (Reinforced)
@@ -330,6 +386,7 @@ When a vehicle takes damage to a system:
 - Description: Sleek dirigible with art deco styling, observation decks, and atomic-powered propellers. Features a distinctive silver-and-blue livery.
 
 **LIGHTNING-7 INTERCEPTOR** (Military Aircraft)
+
 - Speed Rating: 5 (Experimental)
 - Maneuverability: 4 (Precision)
 - Durability: 4 (Standard)
@@ -338,8 +395,8 @@ When a vehicle takes damage to a system:
 - Description: Needle-shaped aircraft with delta wings and prominent atomic exhaust. Cockpit filled with analog gauges and early computer targeting systems.
 
 ## ADJUSTING THE CHASE LENGTH
-The default chase configuration uses a starting distance of 5, with escape occurring at distance 10. This creates tense, action-packed chases that typically resolve in 4-5 rounds—ideal for maintaining excitement without dominating your gaming session.
 
+The default chase configuration uses a starting distance of 5, with escape occurring at distance 10. This creates tense, action-packed chases that typically resolve in 4-5 rounds—ideal for maintaining excitement without dominating your gaming session.
 
 # ATOMIC TOMORROW ADVENTURES: VEHICLE CHASE SYSTEM
 
