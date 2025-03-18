@@ -106,9 +106,9 @@ These can be used instead of the normal Phase 2 options:
 - **Special Failure**: Distance increases by 5
 - **Critical Failure**: Chase ends (completely lost)
 
-### CHEMICAL X BOOST (ONCE PER CHASE)
+### CHEMICAL X BOOST (ONE USE)
 
-- Push engines beyond safety limits
+- Push engines beyond safety limits, needs recharge after each use
 - Roll Engineering (Propulsion) or Vehicle Operation
 - **Success**: Lead gains +2 distance, pursuer loses -2 distance
 - **Special Success**: Lead gains +3 distance, pursuer loses -3 distance
@@ -243,7 +243,6 @@ Roll percentile dice:
 
 *Apply modifiers from Risk Level where indicated (e.g., +20 for Risk Level 2)*
 
-
 ## CATASTROPHIC RESULTS TABLE
 
 Roll d10:
@@ -253,10 +252,10 @@ Roll d10:
 3. **Power Core Breach**: Radiation leak, vehicle disabled, area contaminated
 4. **Chain Reaction**: Multiple systems fail simultaneously, vehicle crippled
 5. **Rollover/Tailspin**: Vehicle severely damaged, occupants trapped
-6. **System Cascade Failure**: Critical systems overload, creating chain reaction
-7. **Special Catastrophe I**: Enhancement system fails catastrophically (see enhancement table)
-8. **Special Catastrophe II**: Enhancement system fails catastrophically (see enhancement table)
-9. **Special Catastrophe III**: Enhancement systems fail catastrophically (see enhancement table)
+6. **System Cascade Failure**: Critical systems overload, creating chain reactio
+7. **Special Catastrophe**: Enhancement system fails catastrophically (see enhancement table)
+8. **Special Catastrophe**: Enhancement system fails catastrophically (see enhancement table)
+9. **Special Catastrophe**: Enhancement system fail catastrophically (see enhancement table)
 10. **Collision Chain Reaction**: Vehicle crashes into nearest other vehicle, which must make its own Catastrophic Results roll
 
 ### VEHICLE DAMAGE SYSTEM
@@ -290,31 +289,61 @@ When a vehicle takes damage to a system:
 
 - **Normal Function**: Once per chase, provides +20% to a Vehicle Operation roll
 - **Description**: Experimental chemical mixture that supercharges atomic engines for brief bursts
+- **Catastrophe**: The unstable formula ignites in a spectacular cascade of blue-white flames as the atomic accelerator redlines. Vehicle shoots forward at maximum speed, requiring Vehicle Operation rolls at -40% each round until a success is achieved.
 
 ### GYROSCOPIC STABILIZATION
 
 - **Normal Function**: +20% to any one hazard roll per chase
 - **Description**: Advanced spinning gyros that maintain vehicle stability in extreme maneuvers
+- **Catastrophe**: The precision gyros break free from their housings and tear through the vehicle's inner workings like metal pinballs. Vehicle spins wildly out of control, and all occupants must make REFLEX checks or be thrown about the cabin.
 
 ### REINFORCED FRAME
 
 - **Normal Function**: Ignore the first Structure damage in any chase
 - **Description**: Advanced metallurgy and additional structural bracing with distinctive external braces
+- **Catastrophe**: The reinforced components suddenly buckle under opposing stresses, twisting the vehicle's frame with a terrible metallic shriek. The vehicle's Structure system automatically takes the damage from this failure, and handling suffers -20% until repairs are completed.
 
 ### ATOMIC COOLING SYSTEM
 
 - **Normal Function**: SR cannot be reduced by system damage
 - **Description**: Specialized cooling apparatus with glowing blue conduits and distinctive fins
+- **Catastrophe**: Pressurized cooling fluid erupts from ruptured pipes, instantly flash-freezing exposed components. Vehicle stalls completely and requires a successful Engineering (Propulsion) check to restart.
 
 ### ADVANCED TRACTION SYSTEM
 
 - **Normal Function**: +20% to hazards involving surface changes or weather conditions
 - **Description**: Automatically adjusting wheels/treads that conform to terrain conditions
+- **Catastrophe**: The adaptive materials in the tires/treads suddenly shred themselves against the surface in a dramatic burst of rubber and sparks. Vehicle immediately loses 50% of its current speed and handling suffers -20% until repairs are completed.
 
 ### ATOMIC RADAR
 
 - **Normal Function**: Once per chase, reveals outcome of Alternate Route before committing
 - **Description**: Experimental scanning system with distinctive rotating dome antenna
+- **Catastrophe**: The scanning system emits a high-pitched whine before the dome explodes in a shower of sparks and fragments. Driver suffers complete instrument failure, imposing -40% to all driving-related checks until a SAVVY check is passed.
+
+### COMPREHENSIVE SAFETY SYSTEM
+
+- **Normal Function**: When rolling on the Mishap Table, reduce the roll by 20 (minimum 01)
+- **Description**: Advanced protective systems including impact-sensing airbags, automatic bracing mechanisms, and emergency stabilizers
+- **Catastrophe**: All safety measures deploy simultaneously, filling the cabin with protective foam and restraints that obstruct controls and visibility. Driver must make a BRAWN check to reach the controls and a SAVVY check to operate them effectively.
+
+### ULTRA-PERFORMANCE EXHAUST COMPENSATOR
+
+- **Normal Function**: Provides +1 SR when the vehicle is damaged; system needs 10 minutes to recharge after use
+- **Description**: Specialized thrust enhancers that glow with vibrant blue light when activated, producing a distinctive whooshing sound
+- **Catastrophe**: The atomic exhaust system backfires catastrophically, leaving a trail of burning atomic particles and partially melted components. Vehicle loses 1 Speed Rating permanently until a complete exhaust system replacement is installed.
+
+### AUTOMATED NAVIGATION ASSIST
+
+- **Normal Function**: +20% to all Alternate Route attempts; provides real-time hazard warnings on upcoming terrain
+- **Description**: Dashboard-mounted guidance system with rotating radar dish and illuminated map display showing potential shortcuts
+- **Catastrophe**: The navigation system confidently announces "RECALCULATING ROUTE" before steering directly toward the nearest hazard. Vehicle automatically attempts to drive toward the nearest obstacle, requiring a Vehicle Operation check at -20% to override.
+
+### MODULAR ARMOR PLATING
+
+- **Normal Function**: Each piece of armor absorbs one point of system damage before becoming useless; vehicle starts with 2 armor plates that must be replaced after use, Reduces SR and MR by one each.
+- **Description**: Honeycombed shock-absorbing panels with distinctive riveted seams that can be quickly replaced after damage
+- **Catastrophe**: The armor plates detach from their mounting points and cascade off the vehicle like metallic autumn leaves. Vehicle loses all armor benefits and all new damage taken is increased by 1 until repairs are completed.
 
 ## SAMPLE ATOMIC AGE VEHICLES
 
