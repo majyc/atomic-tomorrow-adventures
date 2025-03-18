@@ -29,8 +29,8 @@ At the end of each adventure:
 
 As skills reach higher levels, advancement becomes more difficult, representing the increasing challenge of improving already exceptional abilities:
 
-- **Skilled (50-69%)**: Skills at this level only improve on a roll of 1-4 on the improvement die
-- **Expert (70-89%)**: Skills at this level only improve on a roll of 1-3 on the improvement die
+- **Skilled (50-69%)**: Skills at this level only improve a maximum of 5%, even if the one's die is higher
+- **Expert (70-89%)**: Skills at this level only improve on a roll of 3% on the improvement die
 - **Master (90%+)**: Skills at this level only improve on a roll of 1 on the improvement die
 
 ### ADVANCEMENT EXAMPLE
@@ -38,9 +38,9 @@ As skills reach higher levels, advancement becomes more difficult, representing 
 **Scenario**: Daring Jack, a Rocket Jockey, performs a spectacular emergency landing during an ion storm, rolling a critical success on his Pilot skill check.
 
 1. Jack's player marks Pilot (currently 65%) for advancement
-2. At the end of the adventure, Jack's player rolls 85 against his Pilot skill of 65%
+2. At the end of the adventure, Jack's player rolls 86 against his Pilot skill of 65%
 3. This is a failure, so Jack gets to improve the skill
-4. Jack add the ones die value 5 from the failed check to his skill, increasing his Pilot skill to 70%
+4. Jack would add the 6% (ones die value from the failed check) to his skill, but at this level it caps at 5%, so he increases his Pilot skill to 70%
 5. Since Pilot is now at 70%, it has reached the Expert plateau, making future improvements more challenging
 
 ### LEARNING NEW SKILLS
@@ -49,18 +49,18 @@ Characters can attempt to use skills they don't formally possess at the base att
 
 Alternatively, characters can spend downtime between adventures learning new skills:
 
-1. Choose a skill and a suitable teacher or learning resource
+1. Choose a skill and a suitable teacher or learning resource (generally this will cost about 2000 Cr and a month's time)
 2. Begin with a base chance equal to attribute × 2
 3. After suitable training time (GM's discretion), gain the skill at attribute × 2 + 10%
 
 ### BASIC TRAINING
 
-Characters have Basic Training to account for their combat skills if they haven't learned any from the profession or background (or for specific ones they don't have).  Basic Training is Reflex x 2 + 15%, and never improves.  Characters can stil get improvement checks, but if they pass the improvement check then they get the skill for real at the Basic Training level + the ones die %.  E.g. if they earned a check by getting a critical success with a pistol, and the check succeeds then they have Ranged Combat (Pistol) at the new percent,and they retain Basic Training for all their rolls with other sorts of combat.
+All characters have Basic Training representing the self-defense and militia combat training they've been given in their youth.  Basic Training covers unnarmed combat, pistols, rifles, and first aid.  Basic Training is Reflex × 2 + 15%, and never improves.  If you crit while using Basic Training you mark an improvement check on the specific skill; if you pass the improvement check after the adventure (by failing the skill roll) then you get the full skill at the Basic Training level + the ones die % from the check.  E.g. if you earned a check by getting a critical success with a pistol, and then qualify for improvment you have Ranged Combat (Pistol) at the new percent, and retain Basic Training at it's usual level for any remaining skills it covers. You never improve Basic Training itself.
 
 ### ATTRIBUTE ADVANCEMENT
 
 Attributes improve more slowly than skills, representing the challenge of changing fundamental capabilities:
 
 1. When a character accumulates three critical successes using a particular attribute (not skills based on that attribute), they may attempt to improve it
-2. Roll d100 against the attribute × 5
-3. If the roll fails, increase the attribute by 1 point (maximum 18)
+2. Roll a check against that attribute (remember, checks are vs Attribute × 5)
+3. If the roll fails, increase the attribute by 1 point (maximum 18, plus or minus any modifiers from your Origin.  If you start with -1 BRAWN for being a Loonie, your maximum is 17 without gene therapy or cybernetic modifications)

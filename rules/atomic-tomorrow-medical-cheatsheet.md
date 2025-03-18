@@ -1,5 +1,4 @@
 # ATOMIC TOMORROW ADVENTURES
-
 ## FIELD MEDIC'S EMERGENCY REFERENCE
 
 ### QUICK REFERENCE: COMBAT WOUNDS
@@ -10,69 +9,67 @@
 
 ### EMERGENCY MEDICATIONS
 
-| Medication                       | Primary Effect                                  | Side Effect                                                                                          | Duration                             | Best For                                                 |
-| -------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------ | -------------------------------------------------------- |
-| **Kermitomine**            | Removes ALL wound penalties                     | Unconsciousness + GRIT check when expires or suffer additional wound; 20% chance of spasms          | 3 turns, then Grit check every turn  | Critical combat situations requiring immediate action    |
-| **Aplombium**              | Functions despite wounds at -20% to all actions | Masks worsening symptoms                                                                             | 12 hours, then Grit check every hour | Long-duration missions where crash would be dangerous    |
-| **Stim-Shot**              | Removes ALL wound penalties                     | -40% penalty until Grit check (1/hour) succeeds after it expires; second dose risks unconsciousness | 3 hours, then Grit check every hour  | Medium-length operations with recovery time after        |
-| **Psychotropic Analgesic** | Redirect penalties to chosen attributes         | Double penalties to selected attributes; 30% chance of hallucinations                                | 12 hours, then Grit check every hour | Situations requiring specific abilities at full function |
+| Medication | Primary Effect | Side Effect | Duration | Best For |
+|------------|----------------|-------------|----------|----------|
+| **Kermitomine** | Removes ALL wound penalties | Unconsciousness + GRIT×5 check when expires or suffer additional wound; muscle spasms on any roll ending in 0 or 5 | Until NERVE check succeeds (checked each turn) | Critical combat situations requiring immediate action |
+| **Aplombium** | Functions despite wounds at -20% to all actions | Masks worsening symptoms | 24 hours | Long-duration missions where crash would be dangerous |
+| **Stim-Shot** | Removes ALL wound penalties | -40% penalty to all actions after effect ends; second dose risks unconsciousness on failed GRIT check | Until GRIT check succeeds (checked every 4hrs) | Medium-length operations with recovery time after |
+| **Psychotropic Analgesic** | Redirect penalties to chosen attributes | Double penalties to selected attributes; hallucinations on rolls ending in 0 or 5 while under effect | Until NERVE check succeeds (checked every 3hrs) | Situations requiring specific abilities at full function |
 
 ### TRAUMA TREATMENTS (BLUNT/PENETRATING)
 
-| Treatment                  | Best For         | Not For               | Side Effect                                |
-| -------------------------- | ---------------- | --------------------- | ------------------------------------------ |
-| **Bone-Knit Gel**    | Fractures        | Soft tissue injuries  | 20% chance of pain flare-up during stress  |
-| **Vascular Sealant** | Bleeding wounds  | Non-bleeding injuries | -20% to fine manipulation of affected area |
-| **Trauma Pak**       | General injuries | Doesn't fully heal    | Requires 1hr rest afterward                |
+| Treatment | Best For | Not For | Side Effect |
+|-----------|----------|---------|-------------|
+| **Bone-Knit Gel** | Fractures | Soft tissue injuries | Pain flare-ups on rolls ending in 0 or 5 during stress |
+| **Vascular Sealant** | Bleeding wounds | Non-bleeding injuries | -20% to fine manipulation of affected area |
+| **Trauma Pak** | General injuries | Doesn't fully heal | Requires 1hr rest afterward |
 
 ### ENERGY DAMAGE TREATMENTS
 
-| Treatment                        | Best For             | Not For              | Side Effect                                     |
-| -------------------------------- | -------------------- | -------------------- | ----------------------------------------------- |
-| **Coolant Spray**          | Fresh burns          | Old/infected burns   | -20% to flexibility in area                     |
-| **Bioelectric Stabilizer** | Nerve disruption     | Tissue damage        | 20% chance of action failure in precision tasks |
-| **Z-Ray Reconstruction**   | Severe energy damage | Don't use repeatedly | 20% chance of mutation per treatment            |
+| Treatment | Best For | Not For | Side Effect |
+|-----------|----------|---------|-------------|
+| **Coolant Spray** | Fresh burns | Old/infected burns | -20% to flexibility in area |
+| **Bioelectric Stabilizer** | Nerve disruption | Tissue damage | Precision tasks fail on rolls ending in 0 or 5 |
+| **Z-Ray Reconstruction** | Severe energy damage | Don't use repeatedly | Mutations develop on matching doubles during treatment |
 
 ### TOXIC/ENVIRONMENTAL TREATMENTS
 
-| Treatment                     | Best For              | Not For         | Side Effect                         |
-| ----------------------------- | --------------------- | --------------- | ----------------------------------- |
-| **Universal Antitoxin** | Most poisons          | Radiation       | 20% chance of illness in next 48hrs |
-| **Radiation Purge**     | Radiation exposure    | Other toxins    | -40% to BRAWN checks for 24hrs      |
-| **Atmospheric Adaptor** | Environmental hazards | Acute poisoning | Requires 20% more nutrition         |
+| Treatment | Best For | Not For | Side Effect |
+|-----------|----------|---------|-------------|
+| **Universal Antitoxin** | Most poisons | Radiation | Illness develops on rolls ending in 0 or 5 in next 48hrs |
+| **Radiation Purge** | Radiation exposure | Other toxins | -40% to BRAWN checks for 24hrs |
+| **Atmospheric Adaptor** | Environmental hazards | Acute poisoning | Requires 20% more nutrition |
 
 ### TRIAGE DECISION TREE
 
 1. **Is patient incapacitated (4+ wounds)?**
-
    - YES → Surgical Intervention or Z-Ray (if available), otherwise Suspended Animation
    - NO → Continue to step 2
-2. **Is immediate full function required?**
 
+2. **Is immediate full function required?**
    - YES → Kermitomine (short-term) or Stim-Shot (medium-term)
    - NO → Continue to step 3
-3. **What is injury type?**
 
+3. **What is injury type?**
    - BLUNT/PENETRATING → Trauma Pak or specific trauma treatment
    - ENERGY → Appropriate energy treatment
    - TOXIC/ENVIRONMENTAL → Appropriate toxin treatment
    - MIXED → Aplombium (safest general option)
-4. **How long until proper medical facilities?**
 
+4. **How long until proper medical facilities?**
    - <6 HOURS → Stim-Shot (if full function needed)
    - 6-24 HOURS → Aplombium
-   - > 24 HOURS → Trauma-specific treatment + plan for complication management
-     >
+   - >24 HOURS → Trauma-specific treatment + plan for complication management
 
 ### COMMON COMPLICATIONS
 
-| Complication           | Chance                  | Prevention                | Management                                           |
-| ---------------------- | ----------------------- | ------------------------- | ---------------------------------------------------- |
-| Treatment Reaction     | 30%                     | Medical specialist        | Reduce severity by one level with quick intervention |
-| Long-Term Complication | 20% per treatment       | Minimize treatments       | Various based on specific complication               |
-| Treatment Interaction  | 40% when using multiple | Use compatible treatments | Emergency medical intervention if severe             |
-| Stimulant Dependency   | 20% for 2nd use         | Wait 72hrs between uses   | 1 week detox required                                |
-| Z-Ray Mutation         | 20% per treatment       | Limit to 2 treatments max | Some beneficial; suppression medication for harmful  |
+| Complication | Trigger | Prevention | Management |
+|--------------|--------|------------|------------|
+| Treatment Reaction | Special failure during treatment | Medical specialist | Reduce severity by one level with quick intervention |
+| Long-Term Complication | Critical failure during recovery | Minimize treatments | Various based on specific complication |
+| Treatment Interaction | Special failure when using multiple treatments | Use compatible treatments | Emergency medical intervention if severe |
+| Stimulant Dependency | Special failure on 2nd use within 72hrs | Wait 72hrs between uses | 1 week detox required |
+| Z-Ray Mutation | Any failure during Z-Ray treatment | Limit to 2 treatments max | Some beneficial; suppression medication for harmful |
 
 ### MEDICAL SPECIALIST ADVANTAGES
 

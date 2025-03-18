@@ -356,7 +356,7 @@ If the Structure system reaches Disabled (4):
 
 When all seems lost, the crew can attempt one final desperate measure:
 
-- Captain rolls against NERVE × 5
+- Captain rolls a NERVE check
 - Success allows coordinated action from entire crew
 - Critical success grants +20% to all crew actions for this final effort
 - Special success grants +10% to all crew actions for this effort

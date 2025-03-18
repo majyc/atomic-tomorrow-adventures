@@ -320,6 +320,7 @@ Roll on the Signature Gadget table to create a unique device that defines your c
 **DERIVED STATISTICS**:
 
 - Initiative: 75 (REFLEX 15 × 5)
+- Attribute Checks are Attribute × 5.  In the rules whenever you see something like GRIT check, that means roll against GRIT × 5
 
 **KEY SKILLS**:
 

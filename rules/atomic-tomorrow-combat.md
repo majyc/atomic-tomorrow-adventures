@@ -4,7 +4,7 @@
 
 ### INITIATIVE AND TURN SEQUENCE
 
-1. **Roll Initiative**: Roll percentile dice against REFLEX × 5
+1. **Roll Initiative**: Roll percentile dice against INIT
 2. **Turn Order**: Highest successful roll acts first, next highest, and so on
 3. **Failed Rolls**: Act after all successful rolls, ordered highest to lowest
 4. **Ties**: Resolved by higher REFLEX score
@@ -111,7 +111,7 @@ At 4 Wounds, a character is incapacitated but not out of the fight:
 
 A character at 5 Wounds is dying but may attempt one final heroic act:
 
-- Roll against NERVE × 5
+- Roll NERVE check
 - Success allows one final action before collapsing
 - Critical success allows the action at no penalty and stabilizes at 4 Wounds
 - Special success allows the action and character remains conscious for tens die more rounds

@@ -29,15 +29,15 @@ Psychic ability is represented by a single percentile skill:
 
 ### RESISTANCE
 
-When psionic powers are used against unwilling targets, the target resists with the most appropriate attribute:
+When psionic powers are used against unwilling targets, the target resists with checks against the most appropriate attribute:
 
-- **BRAWN × 5%**: Against telekinetic forces trying to physically move or restrain
-- **REFLEX × 5%**: Against powers requiring quick mental reactions or evasion
-- **NERVE × 5%**: Against fear projection, emotional manipulation, or psychic pressure
-- **SAVVY × 5%**: Against illusions, false sensory input, or deceptive suggestions
-- **CHARM × 5%**: Against attempts to manipulate social dynamics or personal connections
-- **GRIT × 5%**: Against direct mental attacks, pain induction, or psychic domination
-- **GUILE × 5%**: Against mind reading, memory extraction, or deception detection
+- **BRAWN**: Against telekinetic forces trying to physically move or restrain
+- **REFLEX**: Against powers requiring quick mental reactions or evasion
+- **NERVE**: Against fear projection, emotional manipulation, or psychic pressure
+- **SAVVY**: Against illusions, false sensory input, or deceptive suggestions
+- **CHARM**: Against attempts to manipulate social dynamics or personal connections
+- **GRIT**: Against direct mental attacks, pain induction, or psychic domination
+- **GUILE**: Against mind reading, memory extraction, or deception detection
 
 This creates an opposed roll situation:
 
@@ -105,7 +105,7 @@ Recovery on this track occurs at one step per day of rest or intensive care.
 
 When a psychic reaches Burnout level on the strain track:
 
-1. Character must make a GRIT × 5% roll
+1. Character must make a GRIT check
 2. The ones die of this roll determines unconsciousness duration in hours
 3. On critical failure, unconsciousness lasts for a full day
 4. On special success or better, character remains conscious but at -60% to all actions
@@ -189,7 +189,7 @@ Powers are organized into five categories, each representing a different aspect 
   - Distant (beyond sight): -40%
 - Multiple targets: -10% per additional target
 
-**Resistance:** Typically GUILE × 5% or GRIT × 5%
+**Resistance:** Typically GUILE or GRIT check
 
 ### 2. EXTRASENSORY PERCEPTION
 
@@ -215,7 +215,7 @@ Powers are organized into five categories, each representing a different aspect 
 - Future viewing: -30% to -50%
 - Precision detail: -10% to -30%
 
-**Resistance:** Typically SAVVY × 5% or NERVE × 5%
+**Resistance:** Typically SAVVY or NERVE check
 
 ### 3. PSYCHOKINESIS
 
@@ -241,7 +241,7 @@ Powers are organized into five categories, each representing a different aspect 
   - Distant (beyond sight): -50%
 - Complex movements: -10% to -30%
 
-**Resistance:** Typically BRAWN × 5% or REFLEX × 5%
+**Resistance:** Typically BRAWN or REFLEX check
 
 ### 4. BIOFEEDBACK
 
@@ -263,7 +263,7 @@ Powers are organized into five categories, each representing a different aspect 
 - Severity of condition: -10% to -50%
 - Cross-species application: -20% to -40%
 
-**Resistance:** Typically GRIT × 5% (when used against others)
+**Resistance:** Typically GRIT check (when used against others)
 
 ### 5. ENERGY MANIPULATION
 
@@ -289,7 +289,7 @@ Powers are organized into five categories, each representing a different aspect 
   - Far (within sight): -30%
   - Distant (beyond sight): -50%
 
-**Resistance:** Typically REFLEX × 5% or GRIT × 5%
+**Resistance:** Typically REFLEX or GRIT check
 
 ## THE RHINE INSTITUTE
 
