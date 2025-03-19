@@ -1,6 +1,6 @@
 ## SPECIALIZED VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Lifeline-MK2 | Interplanetary Rescue | Specialized | Rescue Ship | 3.5-5.0 | 8 | +20 | +20 | 75×20 | 120 | DB1 | AMB, RP, ELS |
 | Scholar-Epsilon | Luna University | Specialized | Scientific Vessel | 5.0-8.0 | 10-12 | +0 | +0 | 90×25 | 200 | MR2, DB1 | CLF, SCD, ESS |
@@ -15,7 +15,7 @@
 
 ## PATROL & LAW ENFORCEMENT VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Sentinel-X | Olympus Mons | Patrol | Patrol Ship | 2.5-4.0 | 4-6 | +20 | +20 | 65×17 | 90 | MR2, MT2 | PC, EPD, ALD |
 | Interceptor-MK2 | Solar Military | Patrol | Interceptor | 2.0-3.0 | 3 | +40 | +40 | 40×11 | 30 | MR2, FB1 | CTS, RH, AT |
@@ -28,7 +28,7 @@
 
 ## MILITARY VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Protector-A | Terra Defense | Military | Defense Cruiser | 15.0-25.0 | 20-30 | +0 | +0 | 180×45 | 180 | HR3, MB3 | CC, FB, MB |
 | Dreadnought-MK5 | Mars Republic | Military | Battleship | 30.0-40.0 | 40-50 | -20 | -20 | 250×60 | 240 | SR4, HMB4 | AB, AT, MDB |
@@ -38,7 +38,7 @@
 
 ## MYSTERIAN CRAFT
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Unknown Saucer | Mysterian | Mysterian | Recon Saucer | Unknown | 3-5 | +40 | +60 | 20×5 | 60 | DB3, TA | CC, SCE, AGG |
 | Harvester Vessel | Mysterian | Mysterian | Harvester Ship | Unknown | 5-8 | +0 | +20 | 50×20 | 180 | MDB3, PB | SCC, AC, HEC |
@@ -54,7 +54,7 @@
 
 Most ships in active service have at least minor modifications from their factory specifications. Consider adding 1-3 of the following to any ship to make it more distinctive:
 
-1. **AE**: Aftermarket Engines: +1 thrust rating category but requires maintenance checks after extended burns
+1. **AE**: Aftermarket Engines: +1 Thrust category but requires maintenance checks after extended burns
 2. **CP**: Custom Paint Job: Distinctive colors, patterns, or insignia for recognition
 3. **HC**: Hidden Compartments: Concealed cargo spaces that defeat standard scanners
 4. **RH+**: Reinforced Hull Sections: +1 armor in specific areas at cost of slight speed reduction
@@ -73,7 +73,7 @@ Most ships in active service have at least minor modifications from their factor
 - +20: Nimble
 - +40: Lightning
 
-### Thrust Rating (TR)
+### Thrust (TH)
 - -20: Underpowered (Bulk freighters, orbital tugs)
 - +0: Standard (Civilian vessels, patrol ships)
 - +20: High-Thrust (Courier ships, interceptors)
@@ -207,7 +207,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## CIVILIAN PERSONAL VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Dove-Standard | General Atomics | Civilian | Family Cruiser | 0.2-0.5 | 1-2 + fam | +0 | +0 | 20×8 | 30 | N | PVL, CSF, ESS |
 | Breeze-Alpha | PanAm Personal | Civilian | Personal Transport | 0.15-0.3 | 1+3 | +20 | +20 | 15×4 | 20 | N | SC, ANA, CLQ |
@@ -227,7 +227,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## MERCHANT VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Trader-Standard | General Atomics | Merchant | Merchant Vessel | 1.5-2.5 | 5 | +0 | +0 | 70×18 | 120 | DB1, PD | MCB, TC, ELS |
 | Excavator-Heavy | Belt Resources | Merchant | Mining Vessel | 2.5-3.5 | 6-8 | +0 | +0 | 80×22 | 150 | ML2 | OPL, MS, DMP |
@@ -244,7 +244,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## SCOUT VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Dragonfly-Alpha | Mitsubishi | Scout | Survey Vessel | 0.75-1.5 | 1-3 | +40 | +20 | 25×7 | 60 | LR1, DB1 | ASS, RRB, GLC |
 | Cardinal-MK2 | PanAm | Scout | Courier | 0.6-1.1 | 1-2 | +20 | +40 | 20×6 | 30 | DB1 | ECA, SDS, LRC |
@@ -261,7 +261,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## SPECIALIZED VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Lifeline-MK2 | Interplanetary Rescue | Specialized | Rescue Ship | 3.5-5.0 | 8 | +20 | 3 | 75×20 | 120 | DB1 | AMB, RP, ELS |
 | Scholar-Epsilon | Luna University | Specialized | Scientific Vessel | 5.0-8.0 | 10-12 | +0 | 2 | 90×25 | 200 | MR2, DB1 | CLF, SCD, ESS |
@@ -276,7 +276,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## PATROL & LAW ENFORCEMENT VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Sentinel-X | Olympus Mons | Patrol | Patrol Ship | 2.5-4.0 | 4-6 | +20 | 3 | 65×17 | 90 | MR2, MT2 | PC, EPD, ALD |
 | Interceptor-MK2 | Solar Military | Patrol | Interceptor | 2.0-3.0 | 3 | +40 | 4 | 40×11 | 30 | MR2, FB1 | CTS, RH, AT |
@@ -289,7 +289,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## MILITARY VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Protector-A | Terra Defense | Military | Defense Cruiser | 15.0-25.0 | 20-30 | +0 | 2 | 180×45 | 180 | HR3, MB3 | CC, FB, MB |
 | Dreadnought-MK5 | Mars Republic | Military | Battleship | 30.0-40.0 | 40-50 | -20 | 1 | 250×60 | 240 | SR4, HMB4 | AB, AT, MDB |
@@ -299,7 +299,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## MYSTERIAN CRAFT
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Unknown Saucer | Mysterian | Mysterian | Recon Saucer | Unknown | 3-5 | +40 | 5 | 20×5 | 60 | DB3, TA | CC, SCE, AGG |
 | Harvester Vessel | Mysterian | Mysterian | Harvester Ship | Unknown | 5-8 | +0 | 3 | 50×20 | 180 | MDB3, PB | SCC, AC, HEC |
@@ -315,7 +315,7 @@ Most ships in active service have at least minor modifications from their factor
 
 Most ships in active service have at least minor modifications from their factory specifications. Consider adding 1-3 of the following to any ship to make it more distinctive:
 
-1. **AE**: Aftermarket Engines: +1 TR but requires maintenance checks after extended burns
+1. **AE**: Aftermarket Engines: +1 TH but requires maintenance checks after extended burns
 2. **CP**: Custom Paint Job: Distinctive colors, patterns, or insignia for recognition
 3. **HC**: Hidden Compartments: Concealed cargo spaces that defeat standard scanners
 4. **RH+**: Reinforced Hull Sections: +1 armor in specific areas at cost of slight speed reduction
@@ -328,7 +328,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## PATROL & LAW ENFORCEMENT VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Valkyrie-X | Olympus Mons | Patrol | Patrol Ship | 2.5-4.0 | 4-6 | NI | 3 | 65×17 | 90 | MR, MT | PC, EPD, ALD |
 | Thunderbolt-MK2 | Solar Military | Patrol | Interceptor | 2.0-3.0 | 3 | LI | 4 | 40×11 | 30 | MR, FB | CTS, RH, AT |
@@ -341,7 +341,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## MILITARY VESSELS
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Guardian-A | Terra Defense | Military | Defense Cruiser | 15.0-25.0 | 20-30 | ST | 2 | 180×45 | 180 | HR, MB | CC, FB, MB |
 | Vindicator-MK5 | Mars Republic | Military | Battleship | 30.0-40.0 | 40-50 | SL | 1 | 250×60 | 240 | SR, HMB | AB, AT, MDB |
@@ -351,7 +351,7 @@ Most ships in active service have at least minor modifications from their factor
 
 ## MYSTERIAN CRAFT
 
-| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TR | Size (m) | Range (days) | Weapons | Special |
+| Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |
 |------|-------------|------|------|--------------|------|-----|----|---------|----|-----------|---------|
 | Unknown Saucer | Mysterian | Mysterian | Recon Saucer | Unknown | 3-5 | LI | 5 | 20×5 | 60 | DB, TA | CC, SCE, AGG |
 | Harvester Vessel | Mysterian | Mysterian | Harvester Ship | Unknown | 5-8 | ST | 3 | 50×20 | 180 | MDB, PB | SCC, AC, HEC |
@@ -367,7 +367,7 @@ Most ships in active service have at least minor modifications from their factor
 
 Most ships in active service have at least minor modifications from their factory specifications. Consider adding 1-3 of the following to any ship to make it more distinctive:
 
-1. **AE**: Aftermarket Engines: +1A TR but requires maintenance checks after extended burns
+1. **AE**: Aftermarket Engines: +1A TH but requires maintenance checks after extended burns
 2. **CP**: Custom Paint Job: Distinctive colors, patterns, or insignia for recognition
 3. **HC**: Hidden Compartments: Concealed cargo spaces that defeat standard scanners
 4. **RH+**: Reinforced Hull Sections: +1 armor in specific areas at cost of slight speed reduction

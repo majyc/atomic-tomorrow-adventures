@@ -153,8 +153,8 @@ When a character achieves a critical success with a skill during an adventure:
 ### Vehicle Statistics
 - **Maneuverability**: Affects Vector Change (directional ability)
   - Sluggish (-20%), Standard (0%), Nimble (+20%), Lightning (+40%)
-- **Thrust Rating**: Affects Velocity Change (acceleration)
-  - TR 1 (-20%), TR 2 (0%), TR 3 (+20%), TR 4 (+40%), TR 5 (+60%)
+- **Thrust**: Affects Velocity Change (acceleration)
+  - TH 1 (-20%), TH 2 (0%), TH 3 (+20%), TH 4 (+40%), TH 5 (+60%)
 - **Size**: Affects durability and target profile
 - **Systems**: Each has damage track from Operational to Destroyed
 
@@ -170,8 +170,8 @@ All vehicles use a 5-step damage system for major systems:
 ### Vector Combat
 - Opposed rolls against enemy pilot
 - **Vector Change**: Directional heading maneuvers (modified by Maneuverability)
-- **Velocity Change**: Speed maneuvers (modified by Thrust Rating)
-- **Pursuit/Evasion**: Uses worse of Maneuverability or Thrust Rating
+- **Velocity Change**: Thrust maneuvers (modified by Thrust)
+- **Pursuit/Evasion**: Uses worse of Maneuverability or Thrust
 - **Success Quality**: Affects distance (ordinary +1, special +2, critical +3)
 
 ## SPECIAL CIRCUMSTANCES

@@ -25,14 +25,14 @@ Represents a ship's agility and turning capability:
 - **Nimble** (Scout ships, interceptors): +20% to evasive maneuvers
 - **Lightning** (Racing craft, fighter-class vessels): +40% to evasive maneuvers
 
-### THRUST RATING
+### Thrust
 
 Represents a ship's acceleration capability:
 
-- **Underpowered** (Bulk freighters, orbital tugs): -20% to speed-related maneuvers
+- **Underpowered** (Bulk freighters, orbital tugs): -20% to Thrust-related maneuvers
 - **Standard** (Civilian vessels, patrol ships): No modifier
-- **High-Thrust** (Courier ships, interceptors): +20% to speed-related maneuvers
-- **Afterburner** (Racing craft, military pursuit vessels): +40% to speed-related maneuvers
+- **High-Thrust** (Courier ships, interceptors): +20% to Thrust-related maneuvers
+- **Afterburner** (Racing craft, military pursuit vessels): +40% to Thrust-related maneuvers
 - **Experimental**: +60%, but a special failure reduces it +20% until repaired, and a critical failure renders it non-operational.
 
 ### SHIP SCALE
@@ -76,7 +76,7 @@ Each weapon has the following characteristics:
 
 ## CREW STATIONS AND ACTIONS
 
-Each station on a ship requires specific skills. Characters use their own skill ratings for these actions.
+Each station on a ship requires specific skills. Characters use their own skill ratings for these actions, but can only take one key action per turn.
 
 ### PILOT STATION
 
@@ -84,7 +84,7 @@ Each station on a ship requires specific skills. Characters use their own skill 
 
 - **Evasive Maneuvers**: Roll Piloting (Spacecraft). Success allows defense against incoming attacks.
 - **Attack Run**: Roll Piloting (Spacecraft). Success gives gunners +20% to hit (special success: +40%).
-- **Hard Burn**: Roll Piloting (Spacecraft). Success dramatically increases speed at risk of 1 damage to Propulsion.
+- **Hard Burn**: Roll Piloting (Spacecraft). Success dramatically increases Thrust at risk of 1 damage to Propulsion.
 - **Threading the Needle**: Roll Piloting (Spacecraft). Success navigates hazardous terrain to lose pursuers.
 
 ### NAVIGATION STATION
@@ -102,8 +102,8 @@ Each station on a ship requires specific skills. Characters use their own skill 
 
 - **Power Shunt**: Roll Engineering (Ship Systems). Success gives +20% to one ship system for one round.
 - **Emergency Repair**: Roll Repair (Ship Repair). Success reduces damage to one system by one step.
-- **Damage Control**: When the ship takes damage, roll Engineering (Ship Systems). Success reduces total incoming damage by 1 point, special success by 2 points, critical success by 3 points. The Engineer decides which systems benefit from this reduction. This represents emergency force fields, automated damage control systems, and the Engineer's team rushing to affected areas.
-- **Containment Protocol**: Roll Engineering (Ship Systems). Success prevents automatic damage escalation on critically damaged systems.
+- **Damage Control**: May act as Crew for any unmanned stations, making the Engineering (Ship Systems) roll but suffering damage on a failure, just as if they had been standing there.
+- **Containment Protocol**: Roll Engineering (Ship Systems). Success prevents automatic damage escalation on any critically damaged systems that turn.
 
 ### WEAPONS STATION
 
@@ -219,28 +219,20 @@ When an attack hits a ship, follow this sequence:
 
   *Note: Roll d10 when determining which system takes damage. A result of 0 represents 10 (Crew/Passenger Quarters).*
 
-### 3. ENGINEER'S DAMAGE CONTROL (OPTIONAL)
+### 3. CREW STRUGGLES/APPLY FINAL DAMAGE
 
-If an Engineer is present, they may roll for Damage Control:
-
-- Roll Engineering (Ship Systems)
-- Success reduces damage by 1 point
-- Special success reduces damage by 2 points
-- Critical success reduces damage by 3 points
-- The Engineer decides which systems benefit from this reduction
-
-### 4. APPLY FINAL DAMAGE
-
+- Crew member controlling the damaged system makes an appropriate systems check, success quality reduces the wounds (possibly to zero) as normal.
 - Mark the appropriate damage level on each affected system
+- Crew takes the same amount of damage as personal wounds
 - Apply the corresponding effects for damaged systems
 - If any system reaches Disabled or Destroyed, announce the consequences
 
-### 5. CHECK FOR CASCADE FAILURE
+### 4. CHECK FOR CASCADE FAILURE
 
 If two or more systems are at Critical or worse:
 
-- Engineer must make a Containment Protocol check
-- Failure means additional systems begin to fail
+- Engineer must make a single Containment Protocol check
+- Failure means additional systems begin to fail, apply one System damage to a random system. If this hits an already destroyed system, the cascade stops.  Otherwise, if causes another system to enter Critical, or a system that's already Critical to become worse, another Containment Protocol check must be made.  Repeat until the Engineer either succeeds in containing it, the new damage doesn't take a system to critical or worsen an already critical system, or the ship is destroyed.  Remember, the ship is only destroyed if the Structure is destroyed.
 
 ### EXAMPLE
 
@@ -259,8 +251,8 @@ Each system provides specific functions and has specific effects when damaged:
 - **Propulsion**
 
   - **Stressed**: -20% to Piloting (Spacecraft) checks
-  - **Damaged**: -40% to Piloting (Spacecraft) checks, maximum speed reduced by 25%
-  - **Critical**: -60% to Piloting (Spacecraft) checks, maximum speed reduced by 50%
+  - **Damaged**: -40% to Piloting (Spacecraft) checks, maximum Thrust reduced by 25%
+  - **Critical**: -60% to Piloting (Spacecraft) checks, maximum Thrust reduced by 50%
   - **Disabled**: Ship cannot maneuver, drifts on current vector
   - **Destroyed**: Requires dockyard repairs
 - **Weapons**
@@ -301,8 +293,8 @@ Each system provides specific functions and has specific effects when damaged:
 - **Structure**
 
   - **Stressed**: Minor hull stress, no significant effect
-  - **Damaged**: Small breaches sealed automatically, -20% to all actions during combat
-  - **Critical**: Multiple breaches, decompression risk, -40% to all actions
+  - **Damaged**: Small breaches sealed automatically, -20% to all actions during combat, except engineering actions.
+  - **Critical**: Multiple breaches, decompression risk, -40% to all actions, except engineering actions.
   - **Disabled**: Catastrophic hull failure, ship breaking apart
   - **Destroyed**: Ship completely destroyed
 
@@ -337,11 +329,13 @@ Taking cover behind celestial bodies or debris reduces incoming damage:
 
 ### SYSTEM CASCADE FAILURE
 
-When two or more systems are at Critical or worse:
+Each round when two or more systems are at Critical or worse:
 
-- Engineer must roll Engineering (Ship Systems) each round
-- Failure means one additional system takes 1 damage level
-- Critical failure means ship suffers catastrophic structure damage
+1. Engineer must roll Engineering (Ship Systems)
+2. Success means no Cascade or the Cascade stops.
+3. Failure means one additional random system takes 1 damage level
+4. If this hits an already destroyed system, the cascade stops.
+5. If it hits a system that becomes critical as a result, or hits an already critical system making it worse, go back to 1.
 
 ### CATASTROPHIC SHIP FAILURE
 
@@ -370,18 +364,18 @@ Space combat isn't just about firing weapons—it's about the complex dance of v
 Each pair of ships in combat uses two ten-sided dice to represent their positional relationship:
 
 - **Vector Die (V₁)**: Represents the difference in directional heading between ships (0-9)
-- **Velocity Die (V₂)**: Represents the difference in speed between ships (0-9)
+- **Velocity Die (V₂)**: Represents the difference in Thrust between ships (0-9)
 
 When combat begins, the referee sets these dice based on the initial situation:
 
-- Ships passing each other at high speed: High Vector, High Velocity (8,8)
+- Ships passing each other at high Thrust: High Vector, High Velocity (8,8)
 - Ships in similar orbits but separated: Low Vector, Medium Velocity (2,5)
 - Ships on intercept course: Medium Vector, Low Velocity (4,2)
 - Ships at a standoff: Medium Vector, Medium Velocity (5,5)
 
 ### INTERPRETING THE DICE
 
-- **Vector 0, Velocity 0**: Ships are matched in course and speed, allowing docking or boarding
+- **Vector 0, Velocity 0**: Ships are matched in course and Thrust, allowing docking or boarding
 - **Vector 0, Velocity 1+**: Ships are on parallel courses but at different speeds
   - This allows ramming if desired, causing structural damage equal to the Velocity value to both ships
 - **Vector + Velocity ≥ 16**: Ships break contact, combat ends unless pursuit is initiated
@@ -396,7 +390,7 @@ When combat begins, the referee sets these dice based on the initial situation:
 
 ### MANEUVER ACTIONS
 
-On the Pilot's turn, they can perform maneuvers to alter the Vector and Velocity dice.  Vector and Velocity represent **relative** speed and velocity compared to another ship, so a roll that fails  doesn't mean the ship refused to turn or accelerate/deccelerate, only that the pilot didn't manage to outfly the opposing pilot trying to compensate for the manuever.  If the opposing ship is not resisting, for instance it's a drifting hulk or a friendly that wants to dock, failure still allows changing by 1, and there are no consequences for special or critical failure.
+On the Pilot's turn, they can perform maneuvers to alter the Vector and Velocity dice.  Vector and Velocity represent **relative** Thrust and velocity compared to another ship, so a roll that fails  doesn't mean the ship refused to turn or accelerate/deccelerate, only that the pilot didn't manage to outfly the opposing pilot trying to compensate for the manuever.  If the opposing ship is not resisting, for instance it's a drifting hulk or a friendly that wants to dock, failure still allows changing by 1, and there are no consequences for special or critical failure.
 
 #### VECTOR CHANGE MANEUVER
 
@@ -413,7 +407,7 @@ Focuses on changing directional heading:
 
 Focuses on changing relative speed:
 
-1. Roll Piloting (Spacecraft), modified by THRUST RATING
+1. Roll Piloting (Spacecraft), modified by Thrust
 2. Based on success level, gain Velocity Maneuver Points:
    - Ordinary Success: 1 Velocity Point
    - Special Success: 2 Velocity Points
@@ -424,7 +418,7 @@ Focuses on changing relative speed:
 
 Attempts to change both vector and velocity simultaneously:
 
-1. Roll Piloting (Spacecraft) with the worse of MANEUVERABILITY or THRUST RATING
+1. Roll Piloting (Spacecraft) with the worse of MANEUVERABILITY or Thrust
 2. Based on success level, gain Maneuver Points:
    - Ordinary Success: 1 Point
    - Special Success: 2 Points
@@ -437,7 +431,7 @@ Attempts to change both vector and velocity simultaneously:
 
 When an opponent's Vector + Velocity exceeds your pursuit threshold:
 
-- Roll Piloting (Spacecraft) modified by both MANEUVERABILITY and THRUST RATING
+- Roll Piloting (Spacecraft) modified by both MANEUVERABILITY and Thrust
 - Success means reducing the combined value to just below your ship's pursuit threshold
 - Failure means the other ship escapes
 - Each ship's maneuverability determines its pursuit threshold:
@@ -451,7 +445,7 @@ When an opponent's Vector + Velocity exceeds your pursuit threshold:
 To rapidly close with another ship:
 
 - Dedicate a full turn to closing distance
-- Roll Piloting (Spacecraft) modified by THRUST RATING
+- Roll Piloting (Spacecraft) modified by Thrust
 - Success reduces both Vector and Velocity by 1
 - Special success reduces both by 2
 - Critical success reduces both by 3
@@ -469,7 +463,7 @@ To make your ship harder to hit:
 
 To synchronize with another ship for boarding:
 
-- With Vector already at 0, roll Piloting (Spacecraft) modified by THRUST RATING
+- With Vector already at 0, roll Piloting (Spacecraft) modified by Thrust
 - Success reduces Velocity by 2
 - Special success reduces Velocity by 3
 - Critical success reduces Velocity to 0
@@ -487,7 +481,7 @@ To align with another ship's course:
 
 With Vector at 0, deliberately impact another ship:
 
-- Roll Piloting (Spacecraft) modified by THRUST RATING
+- Roll Piloting (Spacecraft) modified by Thrust
 - Success means ramming occurs
 - Both ships take Structure damage equal to current Velocity
 - Ramming ship can reduce its damage by 1 on special success, by 2 on critical success
@@ -513,7 +507,7 @@ With Vector at 0, deliberately impact another ship:
 ### SCOUT SHIP
 
 - Maneuverability: Lightning (+40%)
-- Thrust Rating: High-Thrust (+20%)
+- Thrust: High-Thrust (+20%)
 - Armor: Light (-1)
 - Weapons: Light Ray Cannon (Destruction Rating 1), Defensive Beam (Destruction Rating 1)
 - Special: Enhanced Sensors (+20% to sensor operations), Stealth Capabilities (-20% to enemy detection)
@@ -522,7 +516,7 @@ With Vector at 0, deliberately impact another ship:
 ### PATROL VESSEL
 
 - Maneuverability: Nimble (+20%)
-- Thrust Rating: Standard (0%)
+- Thrust: Standard (0%)
 - Armor: Medium (-2)
 - Weapons: Medium Ray Cannon (Destruction Rating 2), Missile Tubes (Destruction Rating 2, area effect)
 - Special: Pursuit Engines (+20% to chases), Holding Cells (prisoner containment)
@@ -531,7 +525,7 @@ With Vector at 0, deliberately impact another ship:
 ### MERCHANT VESSEL
 
 - Maneuverability: Standard (0%)
-- Thrust Rating: Underpowered (-20%)
+- Thrust: Underpowered (-20%)
 - Armor: Medium (-2)
 - Weapons: Defensive Beam (Destruction Rating 1), Point Defense (automatically targets incoming missiles)
 - Special: Cargo Capacity (large holds), Life Support Redundancy (backup systems)
@@ -540,7 +534,7 @@ With Vector at 0, deliberately impact another ship:
 ### BATTLESHIP
 
 - Maneuverability: Sluggish (-20%)
-- Thrust Rating: Standard (0%)
+- Thrust: Standard (0%)
 - Armor: Heavy (-3)
 - Weapons: Heavy Ray Cannon (Destruction Rating 3), Missile Batteries (Destruction Rating 3, area effect), Multiple Beam Arrays (Destruction Rating 2)
 - Special: Command Center (+20% to coordination), Fighter Bay (carries small craft)
@@ -551,7 +545,7 @@ With Vector at 0, deliberately impact another ship:
 ### FLYING SAUCER
 
 - Maneuverability: Lightning (+40%)
-- Thrust Rating: Afterburner (+40%)
+- Thrust: Afterburner (+40%)
 - Armor: Medium (-2)
 - Weapons: Disintegrator Beam (Destruction Rating 3, armor-piercing), Tractor Beam (can immobilize smaller ships)
 - Special: Antigravity Drive, Cloaking Capability (-40% to detection)
@@ -560,7 +554,7 @@ With Vector at 0, deliberately impact another ship:
 ### MOTHER SHIP
 
 - Maneuverability: Standard (0%)
-- Thrust Rating: High-Thrust (+20%)
+- Thrust: High-Thrust (+20%)
 - Armor: Heavy (-3)
 - Weapons: Multiple Disintegrator Arrays (Destruction Rating 3), Energy Pulse (Destruction Rating 4, area effect)
 - Special: Saucer Launch Bay (carries multiple saucers), Experimental Drive

@@ -18,7 +18,7 @@ The Game Master may adjust these parameters for different scenarios:
 
 - Use for major story pursuits, complex urban environments, or when multiple hazards should be encountered
 - Results in longer chases (6-8 rounds) with more opportunities for dramatic twists
-- Better showcases vehicles with superior speed and maneuverability
+- Better showcases vehicles with superior speed and Handling
 
 **Quick Pursuits** (Start: 4, Escape: 8):
 
@@ -50,8 +50,8 @@ Each round begins with an opposed Vehicle Operation roll between drivers:
 
 ### VEHICLE FACTORS
 
-- Add Speed Rating (SR) and Maneuverability (MR) modifiers to Vehicle Operation rolls
-- Terrain Speed Caps limit effective SR advantage in certain environments
+- Add Speed (S) and Handling (HA) modifiers to Vehicle Operation rolls
+- Terrain Speed Caps limit effective SP advantage in certain environments
 
 ## PHASE 2: HAZARD RESPONSE
 
@@ -61,7 +61,7 @@ After determining distance change in Phase 1, the referee randomly generates a h
 
 - Referee rolls d10 to determine hazard type
 - Lead driver selects Risk Level (1-3)
-- Lead driver makes Vehicle Operation roll with modifiers for Risk Level and MR
+- Lead driver makes Vehicle Operation roll with modifiers for Risk Level and HA
 - **Success**: No additional effect (already accounted for in Phase 1)
 - **Failure**: Lead vehicle rolls on Mishap Table with modifier based on Risk Level
 
@@ -196,37 +196,37 @@ Each hazard can be attempted at different risk levels:
 
 ## VEHICLE CHARACTERISTICS
 
-### SPEED RATING (SR)
+### Speed (S)
 
 **Core Function**: Determines how quickly a vehicle can accelerate and its maximum speed
 
-- **SR 1**: Slow (Cargo vehicles, construction equipment)
-- **SR 2**: Standard (Family cruisers, jeeps, light aircraft)
-- **SR 3**: Fast (Sports cars, military aircraft, racing boats)
-- **SR 4**: Ultra (Racing vehicles, interceptor aircraft)
-- **SR 5**: Experimental (Prototype vehicles, rocket cars)
+- **SP 1**: Slow (Cargo vehicles, construction equipment)
+- **SP 2**: Standard (Family cruisers, jeeps, light aircraft)
+- **SP 3**: Fast (Sports cars, military aircraft, racing boats)
+- **SP 4**: Ultra (Racing vehicles, interceptor aircraft)
+- **SP 5**: Experimental (Prototype vehicles, rocket cars)
 
-**Skill Modifier**: Each SR point adds +10% to Vehicle Operation for Phase 1 driving contest
+**Skill Modifier**: Each SP point adds +10% to Vehicle Operation for Phase 1 driving contest
 
 **Terrain Speed Caps**:
 
-- **Open Terrain**: No cap (full SR applies)
-- **Highway**: Maximum effective SR 4
-- **Suburban/Light Urban**: Maximum effective SR 3
-- **Dense Urban**: Maximum effective SR 2
-- **Extreme/Hazardous**: Maximum effective SR 1
+- **Open Terrain**: No cap (full SP applies)
+- **Highway**: Maximum effective SP 4
+- **Suburban/Light Urban**: Maximum effective SP 3
+- **Dense Urban**: Maximum effective SP 2
+- **Extreme/Hazardous**: Maximum effective SP 1
 
-### MANEUVERABILITY (MR)
+### Handling (H)
 
 **Core Function**: Determines how well a vehicle handles tight turns and complex maneuvers
 
-- **MR 1**: Clumsy (-20% to maneuver rolls)
-- **MR 2**: Standard (No modifier)
-- **MR 3**: Responsive (+20% to maneuver rolls)
-- **MR 4**: Precision (+40% to maneuver rolls)
-- **MR 5**: Exceptional (+60% to maneuver rolls)
+- **HA 1**: Clumsy (-20% to maneuver rolls)
+- **HA 2**: Standard (No modifier)
+- **HA 3**: Responsive (+20% to maneuver rolls)
+- **HA 4**: Precision (+40% to maneuver rolls)
+- **HA 5**: Exceptional (+60% to maneuver rolls)
 
-**Effect**: MR directly modifies all hazard navigation rolls in Phase 2
+**Effect**: HA directly modifies all hazard navigation rolls in Phase 2
 
 ## DAMAGE AND MISHAPS
 
@@ -264,16 +264,16 @@ When a vehicle takes damage to a system:
 
 **PROPULSION SYSTEM**
 
-- **Stressed (1)**: -1 SR for 1 round
-- **Damaged (2)**: -1 SR until repaired
-- **Critical (3)**: -2 SR until repaired
+- **Stressed (1)**: -1 SP for 1 round
+- **Damaged (2)**: -1 SP until repaired
+- **Critical (3)**: -2 SP until repaired
 - **Disabled (4)**: Vehicle immobilized
 
 **STEERING SYSTEM**
 
-- **Stressed (1)**: -1 MR for 1 round
-- **Damaged (2)**: -1 MR until repaired
-- **Critical (3)**: -2 MR until repaired
+- **Stressed (1)**: -1 HA for 1 round
+- **Damaged (2)**: -1 HA until repaired
+- **Critical (3)**: -2 HA until repaired
 - **Disabled (4)**: Vehicle cannot turn effectively (-60% to all maneuver rolls)
 
 **STRUCTURE**
@@ -305,7 +305,7 @@ When a vehicle takes damage to a system:
 
 ### ATOMIC COOLING SYSTEM
 
-- **Normal Function**: SR cannot be reduced by system damage
+- **Normal Function**: SP cannot be reduced by system damage
 - **Description**: Specialized cooling apparatus with glowing blue conduits and distinctive fins
 - **Catastrophe**: Pressurized cooling fluid erupts from ruptured pipes, instantly flash-freezing exposed components. Vehicle stalls completely and requires a successful Engineering (Propulsion) check to restart.
 
@@ -329,9 +329,9 @@ When a vehicle takes damage to a system:
 
 ### ULTRA-PERFORMANCE EXHAUST COMPENSATOR
 
-- **Normal Function**: Provides +1 SR when the vehicle is damaged; system needs 10 minutes to recharge after use
+- **Normal Function**: Provides +1 SP when the vehicle is damaged; system needs 10 minutes to recharge after use
 - **Description**: Specialized thrust enhancers that glow with vibrant blue light when activated, producing a distinctive whooshing sound
-- **Catastrophe**: The atomic exhaust system backfires catastrophically, leaving a trail of burning atomic particles and partially melted components. Vehicle loses 1 Speed Rating permanently until a complete exhaust system replacement is installed.
+- **Catastrophe**: The atomic exhaust system backfires catastrophically, leaving a trail of burning atomic particles and partially melted components. Vehicle loses 1 Speed permanently until a complete exhaust system replacement is installed.
 
 ### AUTOMATED NAVIGATION ASSIST
 
@@ -341,7 +341,7 @@ When a vehicle takes damage to a system:
 
 ### MODULAR ARMOR PLATING
 
-- **Normal Function**: Each piece of armor absorbs one point of system damage before becoming useless; vehicle starts with 2 armor plates that must be replaced after use, Reduces SR and MR by one each.
+- **Normal Function**: Each piece of armor absorbs one point of system damage before becoming useless; vehicle starts with 2 armor plates that must be replaced after use, Reduces SP and HA by one each.
 - **Description**: Honeycombed shock-absorbing panels with distinctive riveted seams that can be quickly replaced after damage
 - **Catastrophe**: The armor plates detach from their mounting points and cascade off the vehicle like metallic autumn leaves. Vehicle loses all armor benefits and all new damage taken is increased by 1 until repairs are completed.
 
@@ -351,8 +351,8 @@ When a vehicle takes damage to a system:
 
 **ROCKET-TAIL TURBO** (Luxury Sports Car)
 
-- Speed Rating: 4 (Ultra)
-- Maneuverability: 4 (Precision)
+- Speed: 4 (Ultra)
+- Handling: 4 (Precision)
 - Durability: 3 (Standard)
 - Terrain: Standard
 - Special Systems: Chemical X Injection, Gyroscopic Stabilization
@@ -360,8 +360,8 @@ When a vehicle takes damage to a system:
 
 **MARTIAN EXPEDITION VEHICLE** (All-Terrain Explorer)
 
-- Speed Rating: 2 (Standard)
-- Maneuverability: 3 (Responsive)
+- Speed: 2 (Standard)
+- Handling: 3 (Responsive)
 - Durability: 5 (Reinforced)
 - Terrain: Extreme
 - Special Systems: Advanced Traction System, Reinforced Frame
@@ -369,8 +369,8 @@ When a vehicle takes damage to a system:
 
 **ATOMIC CYCLONE** (Racing Motorcycle)
 
-- Speed Rating: 5 (Experimental)
-- Maneuverability: 5 (Exceptional)
+- Speed: 5 (Experimental)
+- Handling: 5 (Exceptional)
 - Durability: 2 (Fragile)
 - Terrain: Standard
 - Special Systems: Chemical X Injection
@@ -378,8 +378,8 @@ When a vehicle takes damage to a system:
 
 **URBAN MINICAR** (Compact City Vehicle)
 
-- Speed Rating: 2 (Standard)
-- Maneuverability: 5 (Exceptional)
+- Speed: 2 (Standard)
+- Handling: 5 (Exceptional)
 - Durability: 2 (Fragile)
 - Terrain: Limited
 - Special Systems: Advanced Traction System
@@ -387,8 +387,8 @@ When a vehicle takes damage to a system:
 
 **ATOMIC FREIGHT HAULER** (Heavy Transport)
 
-- Speed Rating: 1 (Slow)
-- Maneuverability: 1 (Clumsy)
+- Speed: 1 (Slow)
+- Handling: 1 (Clumsy)
 - Durability: 7 (Armored)
 - Terrain: Standard
 - Special Systems: Reinforced Frame
@@ -398,8 +398,8 @@ When a vehicle takes damage to a system:
 
 **STRATOJUMPER** (VTOL Aircraft)
 
-- Speed Rating: 4 (Ultra)
-- Maneuverability: 3 (Responsive)
+- Speed: 4 (Ultra)
+- Handling: 3 (Responsive)
 - Durability: 3 (Standard)
 - Terrain: Limited (air only)
 - Special Systems: Atomic Radar
@@ -407,8 +407,8 @@ When a vehicle takes damage to a system:
 
 **CLOUDSKIMMER** (Luxury Airship)
 
-- Speed Rating: 2 (Standard)
-- Maneuverability: 2 (Standard)
+- Speed: 2 (Standard)
+- Handling: 2 (Standard)
 - Durability: 5 (Reinforced)
 - Terrain: Limited (air only)
 - Special Systems: Gyroscopic Stabilization
@@ -416,8 +416,8 @@ When a vehicle takes damage to a system:
 
 **LIGHTNING-7 INTERCEPTOR** (Military Aircraft)
 
-- Speed Rating: 5 (Experimental)
-- Maneuverability: 4 (Precision)
+- Speed: 5 (Experimental)
+- Handling: 4 (Precision)
 - Durability: 4 (Standard)
 - Terrain: Limited (air only)
 - Special Systems: Chemical X Injection, Atomic Cooling System
@@ -431,15 +431,15 @@ The default chase configuration uses a starting distance of 5, with escape occur
 
 ## EXAMPLE CHASE SEQUENCE
 
-**Referee**: "The sleek black Lunox-8 Diplomat with suspicious embassy markings (SR 3, MR 3) tears away from the Tranquility Embassy dome as your Comet-Streak Turbo (SR 4, MR 4) follows in hot pursuit. You're at distance 5 as they enter the busy pressure-tunnels of New Armstrong. The chase begins!"
+**Referee**: "The sleek black Lunox-8 Diplomat with suspicious embassy markings (SP 3, HA 3) tears away from the Tranquility Embassy dome as your Comet-Streak Turbo (SP 4, HA 4) follows in hot pursuit. You're at distance 5 as they enter the busy pressure-tunnels of New Armstrong. The chase begins!"
 
-*The terrain is dense lunar urban with a speed cap of SR 2, so both vehicles effectively have SR 2 for the driving contest*
+*The terrain is dense lunar urban with a speed cap of SP 2, so both vehicles effectively have SP 2 for the driving contest*
 
-**Referee**: "You're both in pressurized transit tunnels, which caps effective SR at 2 due to pedestrian traffic and lunar safety regulations. Let's start with Phase 1 - the driving contest."
+**Referee**: "You're both in pressurized transit tunnels, which caps effective SP at 2 due to pedestrian traffic and lunar safety regulations. Let's start with Phase 1 - the driving contest."
 
 *Both players roll Vehicle Operation:
-Lead vehicle: 60% + 20% (SR 2) + 20% (MR 3) = 100%, rolls 43 - success
-Pursuit vehicle: 80% + 20% (SR 2) + 40% (MR 4) = 140%, rolls 25 - special success*
+Lead vehicle: 60% + 20% (SP 2) + 20% (HA 3) = 100%, rolls 43 - success
+Pursuit vehicle: 80% + 20% (SP 2) + 40% (HA 4) = 140%, rolls 25 - special success*
 
 **Referee**: "Your superior handling helps you close the gap! The Comet-Streak's gyroscopic stabilization system adjusts perfectly to the 1/6 gravity as you navigate the curved tunnel. The pursuer wins with a special success vs. a regular success, gaining -2 distance. You're now at distance 3, within close range!"
 
@@ -449,7 +449,7 @@ Pursuit vehicle: 80% + 20% (SR 2) + 40% (MR 4) = 140%, rolls 25 - special succes
 
 "The Lunox-8 is approaching a busy transit hub where automated cargo pods cross paths with commuter trams! They'll need to weave between magnetic rail carriages with precision. They choose Risk Level 2 for this hazard."
 
-*Lead vehicle rolls Vehicle Operation: 60% + 20% (MR 3) - 20% (RL 2) = 60%, rolls 72 - failure*
+*Lead vehicle rolls Vehicle Operation: 60% + 20% (HA 3) - 20% (RL 2) = 60%, rolls 72 - failure*
 
 "The Diplomat clips a hydroponic supply pod as it passes! The collision sends leafy greens and nutrient solution spraying across the polished tunnel floor. They'll need to roll on the Mishap Table with +20 for Risk Level 2."
 
@@ -459,21 +459,21 @@ Pursuit vehicle: 80% + 20% (SR 2) + 40% (MR 4) = 140%, rolls 25 - special succes
 
 **Referee**: "This hazard allows for an Alternate Route option. Will you follow through the same hazard, play it safe, or find an alternate route?"
 
-**Player**: "I'll follow through! My Vehicle Operation is solid with my MR bonus, and my Comet-Streak's micro-thrusters are calibrated perfectly for lunar conditions."
+**Player**: "I'll follow through! My Vehicle Operation is solid with my HA bonus, and my Comet-Streak's micro-thrusters are calibrated perfectly for lunar conditions."
 
-*Rolls Vehicle Operation: 80% + 40% (MR 4) - 20% (RL 2) = 100%, rolls 22 - critical success with matching doubles!*
+*Rolls Vehicle Operation: 80% + 40% (HA 4) - 20% (RL 2) = 100%, rolls 22 - critical success with matching doubles!*
 
 **Referee**: "Your Comet-Streak zips through the transit hub with breathtaking precision! Your atomic-powered reaction wheels compensate instantaneously for the low gravity as you navigate between trams and hover-carts. Your critical success lets you maintain the current distance of 3."
 
 **Referee**: "Phase 1 of the next round. Both vehicles make their driving contest rolls."
 
 *Lead vehicle must make an additional Vehicle Operation roll to resolve the Control Issue from last round:
-Lead vehicle control check: 60% + 20% (MR 3) = 80%, rolls 92 - failure
+Lead vehicle control check: 60% + 20% (HA 3) = 80%, rolls 92 - failure
 This means they lose 1 additional distance automatically*
 
 *Driving contest rolls:
-Lead vehicle: 60% + 20% (SR 2) + 20% (MR 3) = 100%, rolls 83 - failure
-Pursuit vehicle: 80% + 20% (SR 2) + 40% (MR 4) = 140%, rolls 37 - success*
+Lead vehicle: 60% + 20% (SP 2) + 20% (HA 3) = 100%, rolls 83 - failure
+Pursuit vehicle: 80% + 20% (SP 2) + 40% (HA 4) = 140%, rolls 37 - success*
 
 **Referee**: "The Diplomat is still struggling with the effects of the collision! Their vacuum-rated suspension tries to compensate, but lunar dust has gotten into the repulsion intakes. They fail their control check, losing 1 distance automatically. Then, in the driving contest, your superior handling gives you another advantage. You close to distance 1! You're right on their tail, close enough to attempt an Offensive Maneuver!"
 
@@ -481,8 +481,8 @@ Pursuit vehicle: 80% + 20% (SR 2) + 40% (MR 4) = 140%, rolls 37 - success*
 
 **Referee**: "Roll Vehicle Operation against their Vehicle Operation."
 
-*Player rolls 43 on Vehicle Operation (80% + 40% MR = 120%) - success
-Opponent rolls 75 on Vehicle Operation (60% + 20% MR = 80%) - failure*
+*Player rolls 43 on Vehicle Operation (80% + 40% HA = 120%) - success
+Opponent rolls 75 on Vehicle Operation (60% + 20% HA = 80%) - failure*
 
 **Referee**: "Your aggressive maneuver works! As the Diplomat tries to navigate the smooth lunar-concrete curve, you expertly cut them off, forcing them to swerve sharply toward the emergency airlocks. They must make a Vehicle Operation roll or take damage."
 
