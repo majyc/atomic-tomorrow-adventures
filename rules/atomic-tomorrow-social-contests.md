@@ -1,4 +1,5 @@
 # ATOMIC TOMORROW ADVENTURES
+
 ## SOCIAL CONTESTS
 
 In the retro-future world of Atomic Tomorrow, fast talking, seduction, and persuasion are skills as valuable as marksmanship or piloting. This system provides guidelines for handling social interactions as meaningful contests without undermining player agency.
@@ -13,63 +14,124 @@ In the retro-future world of Atomic Tomorrow, fast talking, seduction, and persu
 ## TYPES OF SOCIAL CONTESTS
 
 ### Persuasion
+
 *Convincing someone that a course of action is logical, moral, or beneficial*
+
 - Uses CHARM vs. GUILE
 - Success means the target believes you are sincere and your argument has merit
 - Doesn't override strong ethical objections or survival instincts
 
 ### Deception
+
 *Convincing someone to believe something that isn't true*
+
 - Uses GUILE vs. GUILE
 - Success means the target believes your falsehood
 - Extreme claims still receive appropriate skepticism even on success
 
 ### Intimidation
+
 *Frightening someone into compliance*
+
 - Uses BRAWN (physical) or NERVE (psychological) vs. GRIT
 - Success means the target feels genuinely threatened
 - Temporary compliance only; may create resentment and future retaliation
 
 ### Seduction
+
 *Appealing to someone's attraction or desire*
+
 - Uses CHARM vs. CHARM
 - Success means the target finds you genuinely appealing
 - Doesn't override professional ethics, loyalty, or self-preservation
 
 ## DETERMINING OUTCOMES
 
-### For NPCs
-When a player character succeeds at a social skill against an NPC:
+## THE CONVICTION TRACK
 
-**Ordinary Success**:
-- NPC is influenced but needs strong reasoning
-- May require additional incentives
-- Will not act against strong values or interests
+| Level | State     | Description                 |
+| ----- | --------- | --------------------------- |
+| 1     | Convinced | Fully accepts the position  |
+| 2     | Receptive | Inclined to agree           |
+| 3     | Neutral   | Undecided, weighing options |
+| 4     | Skeptical | Doubtful but listening      |
+| 5     | Opposed   | Firmly against the position |
 
-**Special Success**:
-- NPC is meaningfully influenced
-- Will consider proposals favorably
-- Requires minimal additional incentive
-- Still won't act against core values
+## STARTING POSITION
 
-**Critical Success**:
-- NPC is strongly influenced
-- Will go out of their way to help (within reason)
-- Might bend minor rules or policies
-- Still preserves core values and self-interest
+NPCs begin at different positions based on their initial attitude and the request's nature:
 
-### For Player Characters
-When an NPC (or another PC) succeeds at a social skill against a player character:
+* **Friendly/Reasonable Request** : Start at 2 (Receptive)
+* **Neutral/Moderate Request** : Start at 3 (Neutral)
+* **Unfriendly/Unreasonable Request** : Start at 4 (Skeptical)
+* **Hostile/Outrageous Request** : Start at 5 (Opposed)
 
-**The GM should**:
-- Describe how convincing, intimidating, or charming the attempt seems
-- Outline any observable facts that support the social attempt
-- Note any inconsistencies the character might detect
+## SYMMETRICAL SUCCESS/FAILURE EFFECTS
 
-**The player retains the right to**:
-- Decide their character's ultimate response
-- Consider their character's personality and values
-- Determine how much they're influenced
+When attempting social influence:
+
+1. Make an opposed roll using the appropriate social skill against their resistance
+2. Movement on the Conviction Track is symmetrical:
+   * **Critical Success** : Move 3 steps toward Convinced
+   * **Special Success** : Move 2 steps toward Convinced
+   * **Regular Success** : Move 1 step toward Convinced
+   * **Regular Failure** : Move 1 step toward Opposed
+   * **Special Failure** : Move 2 steps toward Opposed
+   * **Critical Failure** : Move 3 steps toward Opposed
+
+## PLAYER CHARACTER TARGETS
+
+When NPCs attempt to influence player characters:
+
+1. The GM rolls the NPC's social skill against the player's resistance attribute
+2. The GM reports the success quality and current position on the Conviction Track
+3. The player decides how their character responds, guided by the Conviction Track
+4. **Experience Reward** : When a player goes along with social influence that leads to suboptimal choices based on the Conviction Track, they automatically receive a skill advancement check for that adventure
+
+This creates a rewarding gameplay loop where players gain mechanical benefits when they embrace roleplaying over pure tactical advantage.
+
+## INTERACTION LIMITS
+
+To prevent endless attempts:
+
+* Each social interaction scene allows a maximum of 3 influence attempts
+* After the third attempt, the target's position becomes fixed until circumstances significantly change
+* Each subsequent attempt within a scene incurs a cumulative -20% penalty
+
+## EXAMPLE OF PLAY
+
+ **Player** : "I need to convince this security officer to let me into the restricted zone."
+
+ **GM** : "This is an unfriendly context with an unreasonable request, so he starts at position 4 (Skeptical)."
+
+ **Player** : "I'll flash my Atomic Energy Commission credentials and explain the urgency of my inspection."
+
+*Player rolls 76 on Persuasion (65%) - a failure*
+*Security officer rolls 43 on SAVVY (55%) - a success*
+
+ **GM** : "Your failure against his success moves his position 1 step from Skeptical (4) to Opposed (5). He looks at your credentials suspiciously and says, 'These don't authorize access to this section. You'll need proper clearance from the director.'"
+
+ **Player** : "I'll try a different approach. I'll use my Deception skill to imply I'm working directly with the facility director."
+
+*Player rolls 22 on Deception (70%) - a critical success*
+*Security officer rolls 67 on SAVVY (55%) - a failure*
+
+ **GM** : "Your critical success against his failure moves his position 3 steps from Opposed (5) to Neutral (3). He hesitates, then says, 'The director didn't notify me, but things have been chaotic today. I can let you in for a quick inspection, but stay with me at all times.'"
+
+### PLAYER AS TARGET EXAMPLE
+
+ **GM** : "The mysterious woman in the red dress approaches your table. 'I couldn't help noticing your ship in the docking bay,' she says with a hint of a Venusian accent. 'I'd be willing to pay handsomely for a... discreet transport of certain items to Europa. No questions asked.' She's attempting to persuade you to smuggle contraband."
+
+*GM rolls 15 on her Persuasion (70%) - a special success*
+*Player's character has SAVVY 60%, rolls 82 - a failure*
+
+ **GM** : "Her special success against your failure moves your Conviction position 2 steps from Neutral (3) to Receptive (2). The offer is tempting—the credits would cover your ship payments for months, and her charm is compelling. Your character feels genuinely inclined to accept the job."
+
+ **Player** : "Even though I know it's risky, I'll go with my character's inclination and accept the job. After all, we need the money, and she seems trustworthy enough."
+
+ **GM** : "Since you're playing along with the social influence despite the potential danger, mark your Deception skill for an advancement check at the end of this adventure."
+
+This approach creates meaningful social interactions while rewarding players for embracing dramatic turns in the story!
 
 ## EXPERIENCE REWARD
 
@@ -82,6 +144,7 @@ When a player goes along with a successful social attempt that leads their chara
 - The advancement works according to the standard skill advancement rules
 
 This reward applies when:
+
 - The character takes actions they wouldn't normally take
 - These actions create additional complications or challenges
 - The player embraces these complications for storytelling purposes
@@ -101,48 +164,18 @@ When one player character attempts to influence another:
 Social contests are heavily influenced by context:
 
 ### Favorable Circumstances (+20%)
+
 - Using leverage the target cares about
 - Offering something the target genuinely needs
 - Having reputation or credentials relevant to the request
 - Previous positive relationship with the target
 
 ### Unfavorable Circumstances (-20%)
+
 - Target has prior negative experience with you
 - Request clearly conflicts with target's interests
 - Significant status difference (when attempting to influence superiors)
 - Target is suspicious or on guard
-
-## EXAMPLE: PERSUADING THE CAPTAIN
-
-**Scenario**: Lieutenant Rodriguez wants to convince Captain Harris to delay the mission departure to investigate an anomalous signal.
-
-**Lieutenant**: "I'd like to use my Persuasion skill to convince the captain this signal deserves investigation."
-
-**GM**: "The captain's on a tight schedule from Space Command. Roll your Persuasion."
-
-*Lieutenant rolls 25 on Persuasion (70%) - a special success*
-
-**GM**: "Captain Harris listens intently to your explanation. He seems convinced by your technical analysis and the potential significance of the signal. However, he remains concerned about mission parameters. He's inclined to give you some time, but needs to know exactly how long and what resources you'll need."
-
-*The GM is conveying that the persuasion was very effective, but the captain still has legitimate concerns and constraints*
-
-## EXAMPLE: DECEPTION BETWEEN PLAYERS
-
-**Scenario**: Dr. Chen (PC) lies to Security Chief Williams (PC) about unauthorized experiments.
-
-**Dr. Chen**: "I'll try to convince Williams that my late-night lab access was authorized. I'll use my Deception skill."
-
-**GM**: "Go ahead and roll."
-
-*Dr. Chen rolls 42 on Deception (65%) - an ordinary success*
-
-**GM to Williams**: "Dr. Chen's explanation seems plausible. The paperwork he shows you appears to be in order, though you notice it lacks the usual administrative timestamp. His demeanor seems mostly calm, but you detect slight nervousness."
-
-*The GM provides all relevant information, leaving the final judgment to Williams' player*
-
-**Williams' Player**: "I'm suspicious, but I don't have enough evidence to call him out directly. I'll pretend to accept his explanation but flag his lab for additional monitoring."
-
-**GM**: "That's a reasonable response given the information you have."
 
 ## LONG-TERM INFLUENCE
 

@@ -363,8 +363,8 @@ Space combat isn't just about firing weapons—it's about the complex dance of v
 
 Each pair of ships in combat uses two ten-sided dice to represent their positional relationship:
 
-- **Vector Die (V₁)**: Represents the difference in directional heading between ships (0-9)
-- **Velocity Die (V₂)**: Represents the difference in Thrust between ships (0-9)
+- **Vector Die (V₁)**: Represents the *difference* in directional heading and distance between ships (0-9)
+- **Velocity Die (V₂)**: Represents the *difference* in Thrust between ships (0-9)
 
 When combat begins, the referee sets these dice based on the initial situation:
 
