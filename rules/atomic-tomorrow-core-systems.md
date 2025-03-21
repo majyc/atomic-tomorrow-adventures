@@ -96,27 +96,11 @@ Seven core attributes, ranging from 3-18 for normal humans:
 
 For attribute checks, multiply the attribute by 5 to get the target percentage.
 
-## SKILL SYSTEM
+## Skills
 
-### Skill Ratings from Professions
-
-* **Completely Untrained** : Attribute × 2
-* **Core Skill** : (Attribute × 2) + 5%.  Skills that are dominated by one attribute
-* **Specialization** : Core Skill % + Specialization Bonus
-* **Flex Skill**: 20%. Skills that are aided by a mix of attributes, where training matters more than raw talent
-* **Flex Specialization**: Flex Skill % + Specialization Bonus
-
-When a profession grants a specialization, it also implicitly grants the core skill or the Flex skill:
-
-* **Primary Specialization (+40%)** : Core skill at +20%
-* **Secondary Specialization (+20%)** : Core skill at +10%
-* **Tertiary Specialization (+10%)** : Core skill at +5%
-
-### Using Skills Under Pressure
-
-- **Combat**: One major skill action per round
-- **Timed**: Skill attempts require defined timeframe
-- **Crisis**: Skill attempts under immediate threat take -20% penalty unless they are FLEX skills.  Historians can still remember history in battle, medic's training will see them through even as the ray-beams fly.
+* Each skill has a % rating, roll less than or equal to the rating to succeed.
+* Professions, Origins, and Backgrounds may grant you starting skills at various ratings, added together if they are duplicates
+* Skills may be improved during play by scoring critical successes or by training
 
 ## DAMAGE AND WOUNDS
 
