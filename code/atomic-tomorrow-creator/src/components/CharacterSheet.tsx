@@ -76,17 +76,6 @@ const CharacterSheet = ({ character, updateCharacter }) => {
       .sort(([, a], [, b]) => b.value - a.value);
   };
   
-  // Get attribute modifier for display
-  const getAttributeModifier = (value) => {
-    if (value >= 16) return "+3";
-    if (value >= 14) return "+2";
-    if (value >= 12) return "+1";
-    if (value >= 9) return "±0";
-    if (value >= 7) return "-1";
-    if (value >= 5) return "-2";
-    return "-3";
-  };
-  
   // Get color for attribute value
   const getAttributeColor = (value) => {
     if (value >= 14) return "text-green-700";
@@ -193,7 +182,6 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                         {character.attributes?.[attr] || 10}
                       </div>
                       <div className={`text-sm ${getAttributeColor(character.attributes?.[attr] || 10)}`}>
-                        {getAttributeModifier(character.attributes?.[attr] || 10)}
                       </div>
                     </div>
                   </div>
