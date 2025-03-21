@@ -250,21 +250,15 @@ Your background reflects your upbringing, education, and personal history before
 
 *Choose one background that best represents your character's upbringing.*
 
-## DERIVED STATISTICS
-
-Based on your attributes, calculate the following:
-
-- **Initiative** = REFLEX × 5
-
-*Note: All attribute checks (including resistance to damage, psionics, etc.) use the formula Attribute × 5 to determine success percentage.*
-
 ## CALCULATING SKILLS
 
-Your skill percentages are determined by combining your attribute contribution with bonuses from Profession, Origin, and Background:
+Your skill percentages are determined by combining your Core (attribute contribution or FLEXX) with bonuses from Profession, Origin, and Background:
 
 ### Skill Formula:
 
-**Final Skill %** = (Related Attribute × 2) + Professional Bonus + Origin Bonus + Background Bonus
+**Core** = either Attribute × 2 or 20% for FLEX skills, +5%
+
+**Final Skill %** = Core + Professional Bonus + Origin Bonus + Background Bonus
 
 ### Skill Level Guide:
 
@@ -309,6 +303,10 @@ Start with:
 ### Signature Gadget (Optional)
 
 Roll on the Signature Gadget table to create a unique device that defines your character's style and capabilities.
+
+### Hobby (Optional)
+
+Pick one skill that you know at Core + 5% that's something of a hobby of yours.
 
 ## SAMPLE CHARACTER: STELLA "LUCKY" BLACKSTAR
 

@@ -221,41 +221,30 @@ Skills come in two fundamental types:
 
 1. **Attribute-Based Skills**: Skills directly tied to a specific attribute
 
-   - Base value = (Attribute × 2) + 5%
+   - **Untrained**: Attribute × 2
+   - **Core Value** = (Attribute × 2) + 5%
    - Example: Athletics is based on BRAWN
 2. **FLEX Skills**: Skills representing knowledge that relies more on training than raw talent
 
-   - Base value = 25% (equivalent to having an attribute of 10)
+   - **Untrained**: 15%
+   - **Core Value** = 25% (equivalent to having an attribute of 10)
    - Example: Academics represents scholarly knowledge independent of natural aptitude
 
 ### Professional Training
 
 A character's profession provides additional training in specific skills:
 
-- **Primary Professional Bonus**: a specialization bonus of base value + 15%
-- **Secondary Professional Bonus**: a specialization bonus of base value + 10%
-- **Tertiary Professional Bonus**: a specialization bonus of base value + 5%
+- **Primary Professional Bonus**: +15%
+- **Secondary Professional Bonus**: +10%
+- **Tertiary Professional Bonus**: +5%
 
 These bonuses stack with the base skill values to create your final skill percentages.
 
 ## SKILL CALCULATION
 
-### Attribute-Based Skills
-
-- **Untrained**: Attribute × 2
-- **Base Formula**: (Attribute × 2) + 5%
-- **With Professional Bonus**: (Attribute × 2) + 5% + Professional Bonus
-
-### FLEX Core Skills
-
-- **Untrained**: 15%
-- **Base Value**: 25%
-- **With Professional Bonus**: 25% + Professional Bonus
-
 ### Specializations
 
-- **Attribute-Based**: (Attribute × 2) + 5% + Professional Bonus + Specialization Bonus
-- **FLEX-Based**: 25% + Professional Bonus + Specialization Bonus
+- **Final Skill =** Core + Professional Bonus
 
 ### Examples
 
@@ -263,14 +252,14 @@ These bonuses stack with the base skill values to create your final skill percen
 
 - Character with SAVVY 14
 - Navigation as Secondary Professional skill
-- Base Core Skill: (14 × 2) + 5% = 33%
+- Core Skill: (14 × 2) + 5% = 33%
 - With Secondary Professional Bonus: 33% + 10% = 43%
 
 **Example 2: Academics (History)**
 
 - Skill with no special attribute influence (FLEX skill)
 - Academics as Primary Professional skill
-- Base Core Skill: 25%
+- Core Skill: 25%
 - With Primary Professional Bonus: 25% + 15% = 40%
 
 ## USING SKILLS
@@ -484,9 +473,13 @@ Every character starts with Solar Scouts Training, representing general self-def
 - It covers unnarmed combat, pistols, rifles, and first aid
 - It never improves directly, but critical successes while using Solar Scouts Training can lead to developing the full specialized skill
 
+### Hobbies (Optional)
+
+To further round out a character, the GM may allow them to pick any one skill they like that starts at Core + 5%. (Basically a free Tertiary skill.)
+
 ### Supporting Specializations
 
-When one specialization would logically support another, grant a +10% bonus:
+When one specialization would logically support another, grant a +10% bonus, this takes an action so you can't use it on yourself or use more than one of your specializations in one turn:
 
 - Using Navigation (Space) to support Piloting (Spacecraft)
 - Using Medicine (Emergency) to support Medicine (Surgery)
@@ -494,22 +487,22 @@ When one specialization would logically support another, grant a +10% bonus:
 
 ## SKILL ADVANCEMENT
 
-During an adventure, mark a specialization for potential advancement whenever:
+During an adventure, mark a skill for potential advancement whenever:
 
-1. You roll a critical success with the specialization
-2. You succeed at a particularly difficult or dramatic use of the specialization
-3. You succeed with the specialization in a life-threatening or high-stakes situation
+1. You roll a critical success with the skill
+2. You succeed at a particularly difficult or dramatic use of the skill
+3. You succeed with the skill in a life-threatening or high-stakes situation
 
 At the end of the adventure:
 
-1. For each marked specialization, roll d100 against your current percentage
+1. For each marked skill, roll d100 against your current percentage
 2. If you fail the roll (roll above your current percentage), you've found room for improvement
-3. Increase the specialization by the value of the ones die on your failed roll
+3. Increase the skill by the value of the ones die on your failed roll, unless it was a Solar Scouts Training or Core Skill
 
 If you earn an advancement check using Solar Scouts Training or a Core Skill:
 
 1. You may establish a new specialization at the Core Skill % + 5%
-2. You must specify which specialization you're developing
+2. You must specify which specialization you're developing, based on what you used it for
 
 ### Skill Plateaus
 
