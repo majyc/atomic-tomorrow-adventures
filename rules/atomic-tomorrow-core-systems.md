@@ -16,7 +16,7 @@
 
 - **Ordinary Success**: Roll under your skill percentage
 - **Special Success**: Roll ending in 0 or 5 and under your skill percentage
-- **Critical Success**: Matching doubles (11, 22, etc.) that are below your skill percentage
+- **Critical Success**: doubles (11, 22, etc.) that are below your skill percentage
 - **Automatic Success**: Roll of 01-05 (succeeds regardless of skill level)
 - **Automatic Failure**: Roll of 96-00 (fails regardless of skill level)
 

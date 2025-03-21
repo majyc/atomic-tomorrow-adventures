@@ -461,7 +461,7 @@ Pursuit vehicle: 80% + 20% (SP 2) + 40% (HA 4) = 140%, rolls 25 - special succes
 
 **Player**: "I'll follow through! My Vehicle Operation is solid with my HA bonus, and my Comet-Streak's micro-thrusters are calibrated perfectly for lunar conditions."
 
-*Rolls Vehicle Operation: 80% + 40% (HA 4) - 20% (RL 2) = 100%, rolls 22 - critical success with matching doubles!*
+*Rolls Vehicle Operation: 80% + 40% (HA 4) - 20% (RL 2) = 100%, rolls 22 - critical success with doubles!*
 
 **Referee**: "Your Comet-Streak zips through the transit hub with breathtaking precision! Your atomic-powered reaction wheels compensate instantaneously for the low gravity as you navigate between trams and hover-carts. Your critical success lets you maintain the current distance of 3."
 

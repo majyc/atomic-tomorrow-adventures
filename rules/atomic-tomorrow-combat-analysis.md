@@ -7,7 +7,7 @@
 - Success quality determined by roll:
   - **Regular Success**: Roll under skill
   - **Special Success**: Roll ends in 0 or 5 and is under skill
-  - **Critical Success**: Matching doubles (11, 22, etc.) under skill
+  - **Critical Success**: doubles (11, 22, etc.) under skill
 
 ### Damage System
 - Damage based on weapon type + success quality:

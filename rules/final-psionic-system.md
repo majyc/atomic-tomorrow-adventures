@@ -50,12 +50,12 @@ This creates an opposed roll situation:
 
 Psionic actions follow the same success quality system as other skills:
 
-- **Critical Success** (matching doubles under skill): Enhanced effect with no strain
+- **Critical Success** (doubles under skill): Enhanced effect with no strain
 - **Special Success** (roll ending in 0 or 5 under skill): Enhanced effect with half strain
 - **Ordinary Success** (roll under skill): Standard effect with normal strain
 - **Failure** (roll over skill): No effect, -5% Psi Skill strain
 - **Special Failure** (roll ending in 0 or 5 over skill): No effect, -10% Psi Skill strain
-- **Critical Failure** (matching doubles over skill): Psionic feedback (see below)
+- **Critical Failure** (doubles over skill): Psionic feedback (see below)
 
 ## PSI STRAIN AND RECOVERY
 

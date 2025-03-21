@@ -62,7 +62,7 @@ Success quality matters and contributes different amounts toward task completion
 
 - **Ordinary Success**: Contributes 1 point toward completion
 - **Special Success** (roll ending in 0 or 5): Contributes 2 points toward completion
-- **Critical Success** (matching doubles under skill percentage): Contributes 3 points toward completion
+- **Critical Success** (doubles under skill percentage): Contributes 3 points toward completion
 
 ## TIMEFRAMES
 

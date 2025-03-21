@@ -59,9 +59,9 @@ The Atomic Tomorrow trading system simulates the challenge of finding profitable
    - Roll percentile dice against your Trading skill
    - Regular Success: +1 to your highest die
    - Special Success (roll ending in 0 or 5): +2 to your highest die
-   - Critical Success (matching doubles under skill): +3 to your highest die
+   - Critical Success (doubles under skill): +3 to your highest die
    - Failure: No bonus
-   - Critical Failure (matching doubles over skill): -1 to your highest die
+   - Critical Failure (doubles over skill): -1 to your highest die
 
 2. **Acquisition Roll**:
    - Roll two d10s for your Trading attempt

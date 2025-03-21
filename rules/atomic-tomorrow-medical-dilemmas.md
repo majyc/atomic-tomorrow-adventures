@@ -129,8 +129,8 @@ When complications occur, they create ongoing challenges rather than just simple
 Complications occur based on special or critical failures during treatment or recovery:
 
 * Special Failures (roll ending in 0 or 5): Standard complication occurs
-* Critical Failures (matching doubles): Severe complication occurs
-* Critical Failure + Special Failure (matching doubles ending in 0 or 5): Critical complication occurs
+* Critical Failures (doubles): Severe complication occurs
+* Critical Failure + Special Failure (doubles ending in 0 or 5): Critical complication occurs
 
 ### COMPLICATION SEVERITY
 

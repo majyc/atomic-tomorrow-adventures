@@ -170,7 +170,7 @@ When administering any treatment, the physician must make a Medicine skill check
 - **Success**: Treatment works as expected with no complications
 - **Failure**: Minor Reaction - Mild discomfort, no mechanical effect
 - **Special Failure** (roll ending in 0 or 5): Moderate Reaction - Patient experiences -20% to all actions until medicine check success, 1 check per hour
-- **Critical Failure** (matching doubles over skill): Severe Reaction - Treatment effectiveness reduced by half
+- **Critical Failure** (doubles over skill): Severe Reaction - Treatment effectiveness reduced by half
 
 If a severe reaction occurs, the patient makes a GRIT check:
 

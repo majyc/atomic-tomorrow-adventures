@@ -30,7 +30,7 @@
 |-----------|----------|---------|-------------|
 | **Coolant Spray** | Fresh burns | Old/infected burns | -20% to flexibility in area |
 | **Bioelectric Stabilizer** | Nerve disruption | Tissue damage | Precision tasks fail on rolls ending in 0 or 5 |
-| **Z-Ray Reconstruction** | Severe energy damage | Don't use repeatedly | Mutations develop on matching doubles during treatment |
+| **Z-Ray Reconstruction** | Severe energy damage | Don't use repeatedly | Mutations develop on doubles during treatment |
 
 ### TOXIC/ENVIRONMENTAL TREATMENTS
 
