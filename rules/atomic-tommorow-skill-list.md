@@ -134,7 +134,7 @@ Every character starts with Solar Scouts Training, representing general self-def
 
  **Specializations** : Electronics, Improvised, Mechanical, Ship Systems, Vehicles
 
-### SCIENCE (FLEX)
+### SCIENCE (SAVVY)
 
 *Knowledge of natural sciences*
 

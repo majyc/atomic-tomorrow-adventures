@@ -106,7 +106,7 @@ Some skills represent broad knowledge bases that don't clearly align with a sing
 
 - **Specializations:** Emergency Medicine, Surgery, Xenomedicine, Battlefield Medicine, Psychiatry
 
-#### Science (FLEX)
+#### Science (SAVVY)
 
 *Knowledge of scientific principles and methods*
 
@@ -256,11 +256,11 @@ When updating profession entries, convert specific skills to appropriate core sk
 
 ### Using FLEX Skills
 
-FLEX skills operate independently of attributes, using only their skill percentage for checks. This reflects how knowledge-based skills rely more on accumulated learning than on natural aptitude:
+FLEX skills operate independently of attributes, using only their skill percentage for checks. This reflects how some skills rely more on training and accumulated learning than on natural aptitude.
 
-- A scientist with Science (Physics) +60% rolls against 60% regardless of their SAVVY score
+- An artist with Art (sculpture) +60% rolls against 60% regardless of their attributes
 - A trader with Trade (Market Analysis) +50% rolls against 50% regardless of their attributes
-- An academic with Academics (History) +40% rolls against 40% even under stress or pressure
+- An academic with Academics (History) +40% rolls against 40% regardless of their attributes
 
 ### Supporting Specializations
 
