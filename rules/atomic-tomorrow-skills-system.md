@@ -291,7 +291,7 @@ Characters can attempt skills even without training:
 
 - **Combat**: One major skill action per round
 - **Timed**: Skill attempts require defined timeframe
-- **Crisis**: Attribute-based skill attempts under immediate threat take -20% penalty
+- **Crisis**: Attribute-based skill attempts under immediate threat take -20% penalty; immediate threat doesn't mean merely in combat, it means somebody has fired at you in the past round, or you're defusing a bomb with the timer at less than 60 seconds left.
 - **FLEX Skills Under Pressure**: No penalty in crisis situations, representing how training prevails under stress
 
 ## COMPLETE SKILL LIST

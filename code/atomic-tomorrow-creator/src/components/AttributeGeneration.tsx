@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Shuffle, ArrowRight, Info, AlertCircle, RotateCcw, Zap } from 'lucide-react';
 
+// Value object interface for typed array values
+interface ValueObject {
+  value: number;
+  position: number;
+}
+
 // Revised Attribute Generation Screen
 const AttributeGeneration = ({ character, updateCharacter }) => {
   // State for attribute values
@@ -14,11 +20,14 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
     GUILE: character.attributes.GUILE || 10
   });
   
-  // For all origins: Generate attribute values
-  const [generatedValues, setGeneratedValues] = useState([]);
+  // For all origins: Generate attribute values with positions
+  const [generatedValues, setGeneratedValues] = useState<ValueObject[]>([]);
   
-  // For attribute assignments
-  const [assignedValues, setAssignedValues] = useState({});
+  // For attribute assignments - track the value
+  const [assignedValues, setAssignedValues] = useState<Record<string, number>>({});
+  
+  // For attribute assignments - track the position of the assigned value
+  const [assignedPositions, setAssignedPositions] = useState<Record<string, number>>({});
   
   // Track animation effects
   const [isRolling, setIsRolling] = useState(false);
@@ -32,6 +41,12 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
   
   // Standard Array for Terrans
   const standardArray = [15, 14, 12, 11, 10, 9, 8];
+  
+  // Create typed standardArrayWithPositions
+  const standardArrayWithPositions: ValueObject[] = standardArray.map((value, index) => ({
+    value,
+    position: index
+  }));
   
   // Effect to apply origin modifiers to attributes
   useEffect(() => {
@@ -76,13 +91,17 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
     // Simulate rolling animation
     let rollCount = 0;
     const interval = setInterval(() => {
-      const newValues = [];
+      const newValues: ValueObject[] = [];
       for (let i = 0; i < 7; i++) {
         const die1 = Math.floor(Math.random() * 10) + 1;
         const die2 = Math.floor(Math.random() * 10) + 1;
-        newValues.push(Math.max(3, Math.min(18, die1 + die2)));
+        newValues.push({
+          value: Math.max(3, Math.min(18, die1 + die2)),
+          position: i
+        });
       }
-      setGeneratedValues([...newValues].sort((a, b) => b - a)); // Sort in descending order
+      // Sort by value in descending order but maintain position property
+      setGeneratedValues([...newValues].sort((a, b) => b.value - a.value));
       
       rollCount++;
       if (rollCount >= 10) {
@@ -95,6 +114,7 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
   // Reset assignments
   const resetAssignments = () => {
     setAssignedValues({});
+    setAssignedPositions({});
     setAttributes({
       BRAWN: 10,
       REFLEX: 10,
@@ -106,43 +126,53 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
     });
   };
   
-  // Assign a value to an attribute
-  const assignValueToAttribute = (attribute, value) => {
-    // Check if value is already assigned to another attribute
-    const attributeWithValue = Object.entries(assignedValues).find(([attr, val]) => val === value && attr !== attribute);
-    
-    if (attributeWithValue) {
-      // If this value is already assigned to another attribute, swap them
-      const [otherAttr, otherVal] = attributeWithValue;
-      setAssignedValues(prev => ({
+  // Assign a value to an attribute - updated to handle positions
+  const assignValueToAttribute = (attribute: string, valueObj: ValueObject) => {
+    // If clicking on a value that's already assigned to this attribute, unassign it
+    if (assignedPositions[attribute] === valueObj.position) {
+      setAssignedPositions(prev => {
+        const newPositions = {...prev};
+        delete newPositions[attribute];
+        return newPositions;
+      });
+      
+      setAssignedValues(prev => {
+        const newValues = {...prev};
+        delete newValues[attribute];
+        return newValues;
+      });
+      
+      // Reset the attribute value to default
+      setAttributes(prev => ({
         ...prev,
-        [attribute]: value,
-        [otherAttr]: assignedValues[attribute] || null
+        [attribute]: 10
       }));
-    } else {
-      // Just assign the value to this attribute
-      setAssignedValues(prev => ({
-        ...prev,
-        [attribute]: value
-      }));
+      
+      return;
     }
+    
+    // Otherwise, assign the value to this attribute
+    setAssignedPositions(prev => ({
+      ...prev,
+      [attribute]: valueObj.position
+    }));
+    
+    setAssignedValues(prev => ({
+      ...prev,
+      [attribute]: valueObj.value
+    }));
     
     // Update the attributes state
     setAttributes(prev => ({
       ...prev,
-      [attribute]: value
+      [attribute]: valueObj.value
     }));
   };
   
-  // Highlight available attribute values
-  const isValueAvailable = (value) => {
-    if (isTerran) {
-      return standardArray.includes(value) && 
-        !Object.values(assignedValues).includes(value);
-    } else {
-      return generatedValues.includes(value) && 
-        !Object.values(assignedValues).includes(value);
-    }
+  // Revised isValueAvailable function that checks positions rather than values
+  const isValueAvailable = (valueObj: ValueObject) => {
+    // A position is available if it's not assigned to any attribute
+    return !Object.values(assignedPositions).includes(valueObj.position);
   };
   
   // Format attribute name with description
@@ -184,38 +214,38 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
             {/* Value selectors - different for Terrans vs non-Terrans */}
             {isTerran ? (
               // Terran: Select from standard array
-              standardArray.map(value => (
+              standardArrayWithPositions.map(valueObj => (
                 <button
-                  key={value}
-                  onClick={() => assignValueToAttribute(attribute, value)}
+                  key={valueObj.position}
+                  onClick={() => assignValueToAttribute(attribute, valueObj)}
                   className={`w-10 h-10 flex items-center justify-center rounded-full 
-                    ${assignedValues[attribute] === value 
+                    ${assignedPositions[attribute] === valueObj.position 
                       ? 'bg-blue-600 text-white' 
-                      : isValueAvailable(value)
+                      : isValueAvailable(valueObj)
                         ? 'bg-blue-100 text-blue-800 hover:bg-blue-200' 
                         : 'bg-gray-200 text-gray-500 cursor-not-allowed'}
                     font-bold transition-colors`}
-                  disabled={!isValueAvailable(value) && assignedValues[attribute] !== value}
+                  disabled={!isValueAvailable(valueObj) && assignedPositions[attribute] !== valueObj.position}
                 >
-                  {value}
+                  {valueObj.value}
                 </button>
               ))
             ) : (
               // Non-Terran: Select from generated values
-              generatedValues.map((value, index) => (
+              generatedValues.map(valueObj => (
                 <button
-                  key={index}
-                  onClick={() => assignValueToAttribute(attribute, value)}
+                  key={valueObj.position}
+                  onClick={() => assignValueToAttribute(attribute, valueObj)}
                   className={`w-10 h-10 flex items-center justify-center rounded-full 
-                    ${assignedValues[attribute] === value 
+                    ${assignedPositions[attribute] === valueObj.position 
                       ? 'bg-blue-600 text-white' 
-                      : isValueAvailable(value)
+                      : isValueAvailable(valueObj)
                         ? 'bg-blue-100 text-blue-800 hover:bg-blue-200' 
                         : 'bg-gray-200 text-gray-500 cursor-not-allowed'}
                     font-bold transition-colors`}
-                  disabled={!isValueAvailable(value) && assignedValues[attribute] !== value}
+                  disabled={!isValueAvailable(valueObj) && assignedPositions[attribute] !== valueObj.position}
                 >
-                  {value}
+                  {valueObj.value}
                 </button>
               ))
             )}

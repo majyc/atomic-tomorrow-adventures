@@ -5,9 +5,9 @@ import { Search, AlertCircle, Info } from 'lucide-react';
 const SKILL_DATA = {
   // Core skill categories with their governing attributes
   coreSkills: {
-    'ACADEMICS': 'SAVVY',
+    'ACADEMICS': 'FLEX',
     'ANIMAL HANDLING': 'CHARM',
-    'ARTISTRY': 'SAVVY',
+    'ARTISTRY': 'FLEX',
     'ATHLETICS': 'BRAWN',
     'COMBAT': 'REFLEX',
     'COMPUTER SYSTEMS': 'SAVVY',
@@ -15,7 +15,7 @@ const SKILL_DATA = {
     'DEMOLITIONS': 'SAVVY',
     'ENGINEERING': 'SAVVY',
     'INVESTIGATION': 'SAVVY',
-    'MEDICINE': 'SAVVY',
+    'MEDICINE': 'FLEX',
     'NAVIGATION': 'SAVVY',
     'PERCEPTION': 'SAVVY',
     'PERFORMANCE': 'CHARM',
@@ -31,8 +31,8 @@ const SKILL_DATA = {
     'SURVIVAL': 'GRIT',
     'TACTICS': 'SAVVY',
     'TECHNOLOGY': 'SAVVY',
-    'TRADE': 'CHARM',
-    'XENOLOGY': 'SAVVY'
+    'TRADE': 'FLEX',
+    'XENOLOGY': 'FLEX'
   },
   
   // Sample specializations for each core skill
@@ -92,7 +92,13 @@ const SkillCalculation = ({ character, updateCharacter }) => {
     // Calculate for each core skill
     Object.entries(SKILL_DATA.coreSkills).forEach(([coreName, attribute]) => {
       // Base value from attribute
-      const attributeBase = character.attributes[attribute] * 2;
+      var attributeBase = 0;
+      if (attribute === 'FLEX') {
+        // Flexibility skills are based on flat 20%
+        attributeBase = 20;
+      } else {
+        attributeBase = character.attributes[attribute] * 2;
+      }
       
       // Core skill value (attribute × 2 + 5%)
       const coreValue = attributeBase + 5;
@@ -135,7 +141,8 @@ const SkillCalculation = ({ character, updateCharacter }) => {
         'Unarmed Combat': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
         'Pistols': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
         'Rifles': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
-        'First Aid': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 }
+        'Survival': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
+        'First Aid': { value: 35, professionBonus: 0, originBonus: 0, backgroundBonus: 0 }
       }
     };
     
