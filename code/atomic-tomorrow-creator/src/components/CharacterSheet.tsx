@@ -61,7 +61,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
         value: Math.min(99, ((character.attributes.SAVVY || 10) * 2) + 5),
         source: character.background?.name || "Background"
       },
-      "Basic Training (Combat)": {
+      "Solar Scouts Training (Combat)": {
         value: ((character.attributes.REFLEX || 10) * 2) + 15,
         source: "Standard Training"
       }
@@ -220,7 +220,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 </div>
                 
                 <div className="flex justify-between items-center p-2 bg-white rounded shadow-sm">
-                  <div className="font-medium">Basic Training</div>
+                  <div className="font-medium">Solar Scouts Training</div>
                   <div className="text-xl font-bold">{((character.attributes?.REFLEX || 10) * 2) + 15}%</div>
                 </div>
                 

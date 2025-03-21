@@ -126,8 +126,8 @@ const SkillCalculation = ({ character, updateCharacter }) => {
       });
     });
     
-    // Basic Training calculation
-    newCalculatedSkills['BASIC TRAINING'] = {
+    // Solar Scouts Training calculation
+    newCalculatedSkills['Solar Scouts Training'] = {
       baseValue: character.attributes.REFLEX * 2,
       coreValue: (character.attributes.REFLEX * 2) + 15,
       attribute: 'REFLEX',
@@ -217,7 +217,7 @@ const SkillCalculation = ({ character, updateCharacter }) => {
       
       if (activeTab === 'combat' && 
           skillName !== 'COMBAT' && 
-          skillName !== 'BASIC TRAINING') {
+          skillName !== 'Solar Scouts Training') {
         return false;
       }
       
@@ -365,7 +365,7 @@ const SkillCalculation = ({ character, updateCharacter }) => {
                 <span className="text-sm">Combat Skills</span>
                 <span className="font-medium">
                   {Object.entries(calculatedSkills)
-                    .filter(([name]) => name === 'COMBAT' || name === 'BASIC TRAINING')
+                    .filter(([name]) => name === 'COMBAT' || name === 'Solar Scouts Training')
                     .length} skills
                 </span>
               </div>

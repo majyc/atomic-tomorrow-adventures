@@ -39,11 +39,11 @@ Select one option from each column to create your character concept:
 | Silver-Tongued            | Space Ranger                     |                  |                          |
 | Enigmatic                 | Solar Marine                     |                  |                          |
 | Veteran                   | Bounty Hunter                    |                  |                          |
-|                           | Mercenary                        |                  |                          |
-|                           | Bodyguard                        |                  |                          |
-|                           | **MECHANICS & ENGINEERS:** |                  |                          |
-|                           | Wrench Monkey                    |                  |                          |
-|                           | Atomech                          |                  |                          |
+| **CHARMING**        | Mercenary                        |                  |                          |
+| Plucky                    | Bodyguard                        |                  |                          |
+| Seductive                 | **MECHANICS & ENGINEERS:** |                  |                          |
+| Stunning                  | Wrench Monkey                    |                  |                          |
+| Suave                     | Atomech                          |                  |                          |
 |                           | Gadgeteer                        |                  |                          |
 |                           | Salvager                         |                  |                          |
 |                           | Roboticist                       |                  |                          |

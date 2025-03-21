@@ -101,10 +101,12 @@ For attribute checks, multiply the attribute by 5 to get the target percentage.
 ### Skill Ratings from Professions
 
 * **Completely Untrained** : Attribute × 2
-* **Core Skill** : (Attribute × 2) + 5%
+* **Core Skill** : (Attribute × 2) + 5%.  Skills that are dominated by one attribute
 * **Specialization** : Core Skill % + Specialization Bonus
+* **Flex Skill**: 20%. Skills that are aided by a mix of attributes, where training matters more than raw talent
+* **Flex Specialization**: Flex Skill % + Specialization Bonus
 
-When a profession grants a specialization, it also implicitly grants the core skill:
+When a profession grants a specialization, it also implicitly grants the core skill or the Flex skill:
 
 * **Primary Specialization (+40%)** : Core skill at +20%
 * **Secondary Specialization (+20%)** : Core skill at +10%

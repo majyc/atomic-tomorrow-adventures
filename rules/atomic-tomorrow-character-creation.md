@@ -15,7 +15,7 @@ Characters in Atomic Tomorrow Adventures are created by selecting one option fro
 | **EPITHET**                | **PROFESSION** | **ORIGIN**      | **BACKGROUND**        |
 | *What makes you extraordinary* | *What you do*      | *Where you're from* | *Your upbringing or past* |
 
-By combining these four elements, you'll create a distinctive character with a clear concept, like "Two-Fisted Rocket Jockey from Mars with a Military Family background" or "Brilliant Scientist from Venus with Academic Training."
+By combining these four elements, you'll create a distinctive character with a clear concept, like "Two-Fisted Rocket Jockey from  Martian Military Family" or "Brilliant Scientist from Venus with Academic Training."
 
 ## GENERATING ATTRIBUTES
 
@@ -24,7 +24,7 @@ Your seven core attributes form the foundation of your character's capabilities.
 ### ATTRIBUTE GENERATION BY ORIGIN
 
 - **TERRANS**: Must use the Standard Array of 15, 14, 12, 11, 10, 9, 8 (distributed as desired)
-- **ALL OTHER ORIGINS**: Roll 2d10 for each attribute, with results below 3 becoming 3 and results above 18 becoming 18
+- **ALL OTHER ORIGINS**: Roll 2d10 for each attribute and arrange, with results below 3 becoming 3 and results above 18 becoming 18
 - **TERRAN EXILES**: May roll attributes like other origins instead of using the Standard Array
 
 The only way to have attributes outside the 3-18 range is through Origin or Background modifiers, which are applied after the initial generation.
@@ -86,6 +86,15 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 | **Silver-Tongued** | +2 CHARM                                                                                   | Persuasion attempts that succeed create lasting belief changes rather than temporary compliance                             |
 | **Enigmatic**      | People find it difficult to read you (-20% to others' attempts to analyze your intentions) | Strangers often confide in you, sharing secrets they normally wouldn't                                                      |
 | **Veteran**        | +1 GRIT, +1 SAVVY                                                                          | Better situational awareness; you can detect ambushes on any successful roll, not just critical success                     |
+
+### CHARMING EPITHETS
+
+| Epithet             | Primary Benefit    | Benefit                                                                                                                                                                                                      |
+| ------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Plucky**    | +1 CHARM, +1 NERVE | In any Social Contest trying to intimidate, frighten or overawe you, you reduce the degree of success score against you by 1.                                                                                |
+| **Seductive** | +1 CHARM, +1 GUILE | In Seduction Social Contests, Opposed wraps back around to Receptive (skipping Convinced). It's still not mind control, and NPCs can want you and still betray you or refuse you out of loyalty or scruples. |
+| **Stunning**  | +2 CHARM           | You command attention. You are noticed wherever you go, unless heavily disguised. Villains prefer to capture or spare you rather than mar your beauty.                                                       |
+| **Suave**     | +1 CHARM, +1 SAVVY | Special and Critical failures on Social skills become ordinary failures.                                                                                                                                     |
 
 *Choose one epithet that best represents your character's extraordinary quality.*
 
@@ -267,12 +276,13 @@ Your skill percentages are determined by combining your attribute contribution w
 
 ## FINISHING TOUCHES
 
-### Basic Training
+### Solar Scouts Training
 
-Every character starts with Basic Training, which represents self-defense training (or school of hard knocks) that they've been given in their upbringing
+Every character starts with Solar Scouts Training, which represents self-defense training (or school of hard knocks) that they've been given in their upbringing
 
-* Basic Training is Reflex x 2 + 15%.  It never goes up, but you should track critical success checks normally
-* When making advancement checks if you have a Basic Training check to make, success will grant you the appropriate specialization, e.g. Combat (Pistols) and you'll stop using Basic Training for that skill, while still using it for other combat modes.
+* Solar Scouts Training is Reflex x 2 + 15%.  It never goes up, but you should track critical success checks normally
+* Solar Scouts Training covers unarmed combat, pistols, rifles, survival, and first aid
+* When making advancement checks if you have a Solar Scouts Training check to make, success will grant you the appropriate specialization, e.g. Combat (Pistols) and you'll stop using Solar Scouts Training for that skill, while still using it for other combat modes.
 
 ### Personal Details
 

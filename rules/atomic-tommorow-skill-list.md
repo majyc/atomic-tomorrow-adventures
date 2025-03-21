@@ -16,17 +16,17 @@ When a profession grants a specialization, it also implicitly grants the core sk
 
 > **Important** : Core skills cannot be improved directly. Only specializations can be advanced through experience. The core skill serves as a foundation that represents basic familiarity with the general field.
 
-### Basic Training
+### Solar Scouts Training
 
-Every character starts with Basic Training, representing general self-defense training they received in their youth:
+Every character starts with Solar Scouts Training, representing general self-defense training they received in their youth:
 
-* Basic Training is (REFLEX × 2) + 15%
+* Solar Scouts Training is (REFLEX × 2) + 15%
 * It covers unnarmed combat, pistols, rifles, and first aid
-* It never improves directly, but critical successes while using Basic Training can lead to developing the full specialized skill
+* It never improves directly, but critical successes while using Solar Scouts Training can lead to developing the full specialized skill
 
 ## CONSOLIDATED SKILL LIST
 
-### ACADEMICS (SAVVY)
+### ACADEMICS (FLEX)
 
 *Knowledge of scholarly and theoretical subjects*
 
@@ -38,13 +38,13 @@ Every character starts with Basic Training, representing general self-defense tr
 
  **Specializations** : Alien Creatures, Domestic Animals, Wild Beasts, Robot Psychology
 
-### ARTISTRY (CHARM/SAVVY)
+### ARTISTRY (FLEX)
 
 *Creating and evaluating artistic works*
 
  **Specializations** : Art Appreciation, Music, Photography, Sculpture, Visual Arts, Writing
 
-### ATHLETICS (BRAWN/REFLEX)
+### ATHLETICS (FLEX)
 
 *Physical movement and coordination*
 
@@ -86,7 +86,7 @@ Every character starts with Basic Training, representing general self-defense tr
 
  **Specializations** : Analysis, Crime Scene Analysis, Interviewing, Research, Surveying, Tracking
 
-### MEDICINE (SAVVY)
+### MEDICINE (FLEX)
 
 *Diagnosis and treatment of injuries and illness*
 
@@ -134,7 +134,7 @@ Every character starts with Basic Training, representing general self-defense tr
 
  **Specializations** : Electronics, Improvised, Mechanical, Ship Systems, Vehicles
 
-### SCIENCE (SAVVY)
+### SCIENCE (FLEX)
 
 *Knowledge of natural sciences*
 
@@ -182,13 +182,13 @@ Every character starts with Basic Training, representing general self-defense tr
 
  **Specializations** : Communications, Diagnostics, Electronics, Laboratory Equipment, Sensors, Ship Systems, Weapons Systems
 
-### TRADE (CHARM/SAVVY)
+### TRADE (FLEX)
 
 *Commercial and business activities*
 
  **Specializations** : Appraisal, Business Administration, Market Analysis, Negotiation, Resource Management
 
-### XENOLOGY (SAVVY)
+### XENOLOGY (FLEX)
 
 *Knowledge of alien cultures and artifacts*
 
@@ -214,7 +214,7 @@ These skills are highly specialized and don't fall under broader categories. Eac
 
 *Mental discipline and focus techniques*
 
-### MILITARY PROTOCOL (SAVVY)
+### MILITARY PROTOCOL (FLEX)
 
 *Knowledge of military regulations and procedures*
 
@@ -236,9 +236,9 @@ At the end of the adventure:
 2. If you fail the roll (roll above your current percentage), you've found room for improvement
 3. Increase the specialization by the value of the ones die on your failed roll (for higher skills only if it is <= the threshhold)
 
-If you earn an advancement check using Basic Training or a Core Skill:
+If you earn an advancement check using Solar Scouts Training or a Core Skill:
 
-1. You may establish a new specialization at Basic Training Skill % + 5%.
+1. You may establish a new specialization at Solar Scouts Training Skill % + 5%.
 2. You must specify which specialization you're developing
 
 ### Skill Plateaus

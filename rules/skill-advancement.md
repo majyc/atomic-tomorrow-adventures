@@ -53,9 +53,9 @@ Alternatively, characters can spend downtime between adventures learning new ski
 2. Begin with a base chance equal to attribute × 2
 3. After suitable training time (GM's discretion), gain the skill at attribute × 2 + 10%
 
-### BASIC TRAINING
+### Solar Scouts Training
 
-All characters have Basic Training representing the self-defense and militia combat training they've been given in their youth.  Basic Training covers unnarmed combat, pistols, rifles, and first aid.  Basic Training is Reflex × 2 + 15%, and never improves.  If you crit while using Basic Training you mark an improvement check on the specific skill; if you pass the improvement check after the adventure (by failing the skill roll) then you get the full skill at the Basic Training level + the ones die % from the check.  E.g. if you earned a check by getting a critical success with a pistol, and then qualify for improvment you now have Ranged Combat (Pistol) at the new percent, and retain Basic Training at its usual level for any remaining skills it covers. You never improve Basic Training itself.
+All characters have Solar Scouts Training representing the self-defense and militia combat training they've been given in their youth.  Solar Scouts Training covers unnarmed combat, pistols, rifles, survival, and first aid.  Solar Scouts Training is Reflex × 2 + 15%, and never improves.  If you crit while using Solar Scouts Training you mark an improvement check on the specific skill; if you pass the improvement check after the adventure (by failing the skill roll) then you get the full skill at the Solar Scouts Training level + the ones die % from the check.  E.g. if you earned a check by getting a critical success with a pistol, and then qualify for improvment you now have Ranged Combat (Pistol) at the new percent, and retain Solar Scouts Training at its usual level for any remaining skills it covers. You never improve Solar Scouts Training itself.
 
 ### ATTRIBUTE ADVANCEMENT
 

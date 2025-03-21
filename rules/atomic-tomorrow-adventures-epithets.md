@@ -76,7 +76,7 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 
 *Your masterful abilities in your chosen field are unmatched across the Solar System*
 
-- **Primary**: One professional skill at +20% above normal maximum
+- **Primary**: One professional skill at +20% above normal
 - **Benefit**: Critical successes on professional skill rolls create lasting positive reputation
 
 ### LEGENDARY
@@ -128,7 +128,7 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 *You take risks that make others blanch, and somehow make them pay off*
 
 - **Primary**: +20% to genuinely dangerous actions
-- **Benefit**: Never suffer special or critical failures when attempting risky actions
+- **Benefit**: Never suffer special or critical failures when attempting risky actions (those that may injure you if you fail, GM will call them out)
 
 ### AUDACIOUS
 
@@ -202,7 +202,7 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 *You stop traffic as you stroll down the boulevard.*
 
 * **Primary**: +2 CHARM
-* **Benefit**: You command attention. Villains prefer to capture or spare you rather than mar your beauty. Henchmen may free you rather than see you come to harm
+* **Benefit**: You command attention. You are noticed wherever you go, unless heavily disguised. Villains prefer to capture or spare you rather than mar your beauty. 
 
 ### SUAVE
 

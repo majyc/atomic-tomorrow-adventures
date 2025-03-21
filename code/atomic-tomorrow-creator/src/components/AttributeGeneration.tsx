@@ -323,7 +323,7 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
             <div className="absolute -top-3 -right-3 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
               <Zap size={16} className="text-white" />
             </div>
-            <div className="text-sm text-gray-600">Basic Training</div>
+            <div className="text-sm text-gray-600">Solar Scouts Training</div>
             <div className="text-2xl font-bold text-blue-800">
               {modifiedAttributes.REFLEX ? (modifiedAttributes.REFLEX * 2) + 15 : '??'}%
             </div>
