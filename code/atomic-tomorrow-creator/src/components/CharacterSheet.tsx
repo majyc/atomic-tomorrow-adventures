@@ -1,26 +1,82 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Download, Printer, Share2, Edit, AlertCircle, Shield, Zap, Crosshair, Brain, Eye, Database } from 'lucide-react';
 
 // Final Character Sheet Component
 const CharacterSheet = ({ character, updateCharacter }) => {
-  // Format skill list for display
-  const formatSkillList = () => {
-    // This would process the skills from the character object
-    // For demonstration, we'll return a mock-up
-    return [
-      { name: 'Piloting (Spacecraft)', value: 70, source: 'Rocket Jockey' },
-      { name: 'Technology (Ship Systems)', value: 50, source: 'Rocket Jockey' },
-      { name: 'Navigation (Space)', value: 40, source: 'Rocket Jockey' },
-      { name: 'Combat (Pistols)', value: 40, source: 'Rocket Jockey' },
-      { name: 'Zero-G Operations', value: 45, source: 'Belter' },
-      { name: 'Asteroid Navigation', value: 30, source: 'Belter' },
-      { name: 'Resource Management', value: 40, source: 'Belter/Merchant Clan' },
-      { name: 'Negotiation', value: 44, source: 'Merchant Clan' },
-      { name: 'Market Analysis', value: 40, source: 'Merchant Clan' },
-      { name: 'Appraisal', value: 35, source: 'Merchant Clan' }
-    ];
+  // State for calculated skills
+  const [calculatedSkills, setCalculatedSkills] = useState({});
+  
+  // Calculate skills based on character choices
+  useEffect(() => {
+    if (!character.attributes || !character.profession || !character.origin || !character.background) return;
+    
+    // This would be replaced with actual skill calculation logic
+    // For now, we'll provide mock data
+    const skills = calculateSkills(character);
+    setCalculatedSkills(skills);
+  }, [character]);
+  
+  // Mock function to calculate skills based on character attributes, profession, origin, and background
+  const calculateSkills = (character) => {
+    // This is a simplified mock function - in practice, you'd have more comprehensive logic
+    const skills = {
+      // Example for a Rocket Jockey from the Belt with a Merchant Clan background
+      "Piloting (Spacecraft)": {
+        value: Math.min(99, ((character.attributes.REFLEX || 10) * 2) + 40),
+        source: character.profession?.name || "Profession"
+      },
+      "Technology (Ship Systems)": {
+        value: Math.min(99, ((character.attributes.SAVVY || 10) * 2) + 20),
+        source: character.profession?.name || "Profession"
+      },
+      "Navigation (Space)": {
+        value: Math.min(99, ((character.attributes.SAVVY || 10) * 2) + 10),
+        source: character.profession?.name || "Profession"
+      },
+      "Combat (Pistols)": {
+        value: Math.min(99, ((character.attributes.REFLEX || 10) * 2) + 10),
+        source: character.profession?.name || "Profession"
+      },
+      "Zero-G Operations": {
+        value: Math.min(99, ((character.attributes.REFLEX || 10) * 2) + 15),
+        source: character.origin?.name || "Origin"
+      },
+      "Resource Management": {
+        value: Math.min(99, ((character.attributes.SAVVY || 10) * 2) + 10),
+        source: character.origin?.name || "Origin"
+      },
+      "Asteroid Navigation": {
+        value: Math.min(99, ((character.attributes.SAVVY || 10) * 2) + 5),
+        source: character.origin?.name || "Origin"
+      },
+      "Negotiation": {
+        value: Math.min(99, ((character.attributes.CHARM || 10) * 2) + 10),
+        source: character.background?.name || "Background"
+      },
+      "Market Analysis": {
+        value: Math.min(99, ((character.attributes.SAVVY || 10) * 2) + 10),
+        source: character.background?.name || "Background"
+      },
+      "Appraisal": {
+        value: Math.min(99, ((character.attributes.SAVVY || 10) * 2) + 5),
+        source: character.background?.name || "Background"
+      },
+      "Basic Training (Combat)": {
+        value: ((character.attributes.REFLEX || 10) * 2) + 15,
+        source: "Standard Training"
+      }
+    };
+    
+    return skills;
   };
   
+  // Format the skills for display - sort by value in descending order
+  const formattedSkills = () => {
+    return Object.entries(calculatedSkills)
+      .sort(([, a], [, b]) => b.value - a.value);
+  };
+  
+  // Get attribute modifier for display
   const getAttributeModifier = (value) => {
     if (value >= 16) return "+3";
     if (value >= 14) return "+2";
@@ -31,6 +87,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
     return "-3";
   };
   
+  // Get color for attribute value
   const getAttributeColor = (value) => {
     if (value >= 14) return "text-green-700";
     if (value >= 12) return "text-green-600";
@@ -60,12 +117,11 @@ const CharacterSheet = ({ character, updateCharacter }) => {
   };
   
   // Sample equipment list
-  const equipmentList = [
+  const equipmentList = character.equipment || [
     "Custom flight jacket with personal insignia",
     "Pilot's chronometer (precision timepiece)",
     "Personal navigation computer",
     "Light Ray Pistol",
-    "Encrypted communicator",
     "Emergency survival kit",
     "Trade guild credentials"
   ];
@@ -76,15 +132,15 @@ const CharacterSheet = ({ character, updateCharacter }) => {
       <div className="bg-blue-900 py-3 px-6 text-white flex justify-between items-center sticky top-0 z-10">
         <h1 className="text-xl font-bold">Character Sheet</h1>
         <div className="flex space-x-4">
-          <button className="flex items-center px-3 py-1.5 bg-blue-700 rounded hover:bg-blue-600">
+          <button className="raygun-button flex items-center px-3 py-1.5">
             <Printer size={16} className="mr-1" />
             Print
           </button>
-          <button className="flex items-center px-3 py-1.5 bg-blue-700 rounded hover:bg-blue-600">
+          <button className="raygun-button flex items-center px-3 py-1.5">
             <Download size={16} className="mr-1" />
             Save PDF
           </button>
-          <button className="flex items-center px-3 py-1.5 bg-blue-700 rounded hover:bg-blue-600">
+          <button className="raygun-button flex items-center px-3 py-1.5">
             <Share2 size={16} className="mr-1" />
             Share
           </button>
@@ -218,7 +274,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                   </div>
                   
                   <ul className="space-y-1 text-sm">
-                    {(character.equipment || equipmentList).map((item, idx) => (
+                    {equipmentList.map((item, idx) => (
                       <li key={idx} className="flex items-start">
                         <span className="text-green-800 mr-2">•</span>
                         <span>{typeof item === 'string' ? item : item.name}</span>
@@ -234,26 +290,28 @@ const CharacterSheet = ({ character, updateCharacter }) => {
           <div className="col-span-8">
             {/* Skills Panel */}
             <div className="bg-gray-100 rounded-lg overflow-hidden mb-6 border border-gray-300">
-              <div className="bg-blue-800 text-white py-2 px-4 font-bold flex items-center">
-                <Crosshair size={18} className="mr-2" />
-                SKILLS
+              <div className="bg-blue-800 text-white py-2 px-4 font-bold flex items-center justify-between">
+                <div className="flex items-center">
+                  <Crosshair size={18} className="mr-2" />
+                  SKILLS (AUTOMATICALLY CALCULATED)
+                </div>
               </div>
               
               <div className="p-4">
                 <div className="grid grid-cols-2 gap-4">
-                  {formatSkillList().map((skill, idx) => (
+                  {formattedSkills().map(([skillName, skillData], idx) => (
                     <div 
                       key={idx} 
                       className="flex justify-between items-center p-2 bg-white rounded shadow-sm hover:bg-blue-50"
                     >
                       <div>
-                        <div className="font-medium">{skill.name}</div>
-                        <div className="text-xs text-gray-500">{skill.source}</div>
+                        <div className="font-medium">{skillName}</div>
+                        <div className="text-xs text-gray-500">From: {skillData.source}</div>
                       </div>
                       <div className="flex flex-col items-end">
-                        <div className="font-bold text-lg">{skill.value}%</div>
-                        <div className={`text-xs ${getSkillLevelColor(skill.value)}`}>
-                          {getSkillLevelName(skill.value)}
+                        <div className="font-bold text-lg">{skillData.value}%</div>
+                        <div className={`text-xs ${getSkillLevelColor(skillData.value)}`}>
+                          {getSkillLevelName(skillData.value)}
                         </div>
                       </div>
                     </div>
@@ -262,9 +320,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 
                 <div className="mt-4 pt-4 border-t border-gray-300">
                   <div className="bg-blue-50 p-3 rounded text-sm text-blue-800">
-                    <strong>Special Note:</strong> When making advancement checks, skills at 50-69% improve on a roll with 
-                    a ones digit of 1-5, skills at 70-89% improve on a roll with a ones digit of 1-3, and skills at 90%+ 
-                    improve on a roll with a ones digit of 1.
+                    <strong>About Skills:</strong> Skills are automatically calculated based on your character's attributes, profession, origin, and background. They use the formula: (Attribute × 2) + Bonus from Source.
                   </div>
                 </div>
               </div>

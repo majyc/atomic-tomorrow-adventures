@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Shuffle, Calculator, AlertCircle } from 'lucide-react';
+import { Shuffle, ArrowRight, Info, AlertCircle, RotateCcw, Zap } from 'lucide-react';
 
-// Attribute Generation Screen
+// Revised Attribute Generation Screen
 const AttributeGeneration = ({ character, updateCharacter }) => {
   // State for attribute values
   const [attributes, setAttributes] = useState({
@@ -14,21 +14,29 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
     GUILE: character.attributes.GUILE || 10
   });
   
-  // For Terrans: Standard Array assignment
-  const [standardArray, setStandardArray] = useState([15, 14, 12, 11, 10, 9, 8]);
+  // For all origins: Generate attribute values
+  const [generatedValues, setGeneratedValues] = useState([]);
+  
+  // For attribute assignments
   const [assignedValues, setAssignedValues] = useState({});
   
-  // For non-Terrans: Digital dice rolls
-  const [diceResults, setDiceResults] = useState({});
-  const [isRolling, setIsRolling] = useState({});
+  // Track animation effects
+  const [isRolling, setIsRolling] = useState(false);
+  const [rollingAttribute, setRollingAttribute] = useState(null);
   
   // Modified attributes after Origin modifiers
   const [modifiedAttributes, setModifiedAttributes] = useState({...attributes});
   
+  // Determine if the character is Terran
+  const isTerran = character.origin?.id === 'terran';
+  
+  // Standard Array for Terrans
+  const standardArray = [15, 14, 12, 11, 10, 9, 8];
+  
   // Effect to apply origin modifiers to attributes
   useEffect(() => {
     if (character.origin) {
-      // This would be replaced with actual origin modifiers from data
+      // Get origin modifiers
       const modifiers = getOriginModifiers(character.origin.id);
       
       // Calculate the modified attributes
@@ -61,145 +69,172 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
     return modifierMap[originId] || {};
   };
   
-  // Roll dice for an attribute (non-Terrans)
-  const rollDice = (attribute) => {
-    if (character.origin?.id === 'terran') return;
+  // Generate all attribute values at once for non-Terrans
+  const generateAllValues = () => {
+    setIsRolling(true);
     
-    setIsRolling(prev => ({...prev, [attribute]: true}));
-    
-    // Simulate dice rolling animation
+    // Simulate rolling animation
     let rollCount = 0;
     const interval = setInterval(() => {
-      const die1 = Math.floor(Math.random() * 10) + 1;
-      const die2 = Math.floor(Math.random() * 10) + 1;
-      setDiceResults(prev => ({
-        ...prev, 
-        [attribute]: { die1, die2, total: die1 + die2 }
-      }));
+      const newValues = [];
+      for (let i = 0; i < 7; i++) {
+        const die1 = Math.floor(Math.random() * 10) + 1;
+        const die2 = Math.floor(Math.random() * 10) + 1;
+        newValues.push(Math.max(3, Math.min(18, die1 + die2)));
+      }
+      setGeneratedValues([...newValues].sort((a, b) => b - a)); // Sort in descending order
       
       rollCount++;
       if (rollCount >= 10) {
         clearInterval(interval);
-        setIsRolling(prev => ({...prev, [attribute]: false}));
-        
-        // Final roll - ensure value is between 3-18
-        const finalDie1 = Math.floor(Math.random() * 10) + 1;
-        const finalDie2 = Math.floor(Math.random() * 10) + 1;
-        const total = Math.max(3, Math.min(18, finalDie1 + finalDie2));
-        
-        setDiceResults(prev => ({
-          ...prev, 
-          [attribute]: { die1: finalDie1, die2: finalDie2, total }
-        }));
-        
-        // Update attribute value
-        setAttributes(prev => ({
-          ...prev,
-          [attribute]: total
-        }));
+        setIsRolling(false);
       }
     }, 100);
   };
   
-  // For Terrans: Assign standard array value to attribute
-  const assignStandardValue = (attribute, value) => {
-    if (character.origin?.id !== 'terran') return;
+  // Reset assignments
+  const resetAssignments = () => {
+    setAssignedValues({});
+    setAttributes({
+      BRAWN: 10,
+      REFLEX: 10,
+      NERVE: 10,
+      SAVVY: 10,
+      CHARM: 10,
+      GRIT: 10,
+      GUILE: 10
+    });
+  };
+  
+  // Assign a value to an attribute
+  const assignValueToAttribute = (attribute, value) => {
+    // Check if value is already assigned to another attribute
+    const attributeWithValue = Object.entries(assignedValues).find(([attr, val]) => val === value && attr !== attribute);
     
-    // Check if value is already assigned
-    const isValueAssigned = Object.values(assignedValues).includes(value);
-    
-    // If attribute already has a value, make that value available again
-    if (assignedValues[attribute]) {
-      setStandardArray(prev => [...prev, assignedValues[attribute]].sort((a, b) => b - a));
+    if (attributeWithValue) {
+      // If this value is already assigned to another attribute, swap them
+      const [otherAttr, otherVal] = attributeWithValue;
+      setAssignedValues(prev => ({
+        ...prev,
+        [attribute]: value,
+        [otherAttr]: assignedValues[attribute] || null
+      }));
+    } else {
+      // Just assign the value to this attribute
+      setAssignedValues(prev => ({
+        ...prev,
+        [attribute]: value
+      }));
     }
     
-    // If value is already assigned to another attribute, don't allow assignment
-    if (isValueAssigned && assignedValues[attribute] !== value) return;
-    
-    // Assign value to attribute
-    setAssignedValues(prev => ({...prev, [attribute]: value}));
-    setAttributes(prev => ({...prev, [attribute]: value}));
-    
-    // Remove value from available array
-    if (!isValueAssigned) {
-      setStandardArray(prev => prev.filter(v => v !== value));
+    // Update the attributes state
+    setAttributes(prev => ({
+      ...prev,
+      [attribute]: value
+    }));
+  };
+  
+  // Highlight available attribute values
+  const isValueAvailable = (value) => {
+    if (isTerran) {
+      return standardArray.includes(value) && 
+        !Object.values(assignedValues).includes(value);
+    } else {
+      return generatedValues.includes(value) && 
+        !Object.values(assignedValues).includes(value);
     }
   };
   
-  // Roll all dice at once
-  const rollAllDice = () => {
-    if (character.origin?.id === 'terran') return;
+  // Format attribute name with description
+  const getAttributeDescription = (attribute) => {
+    const descriptions = {
+      BRAWN: "Physical strength and toughness",
+      REFLEX: "Agility and reaction speed",
+      NERVE: "Mental composure and courage",
+      SAVVY: "Intelligence and perception",
+      CHARM: "Charisma and persuasiveness",
+      GRIT: "Endurance and willpower",
+      GUILE: "Cunning and deception"
+    };
     
-    const attributes = ['BRAWN', 'REFLEX', 'NERVE', 'SAVVY', 'CHARM', 'GRIT', 'GUILE'];
-    attributes.forEach(attr => rollDice(attr));
+    return descriptions[attribute] || "";
   };
+  
+  // Initialize with empty array and generate values if non-Terran
+  useEffect(() => {
+    if (!isTerran && generatedValues.length === 0) {
+      generateAllValues();
+    }
+  }, [character.origin]);
   
   // Render attribute row with different UI based on origin
-  const renderAttributeRow = (attribute, label, description) => {
-    const isTerran = character.origin?.id === 'terran';
+  const renderAttributeRow = (attribute) => {
     const originModifier = getOriginModifiers(character.origin?.id)[attribute] || 0;
+    const description = getAttributeDescription(attribute);
     
     return (
-      <div className="flex items-center p-3 border-b border-gray-200">
+      <div className="flex items-center p-4 border-b border-gray-200 hover:bg-blue-50 transition-colors">
         <div className="w-1/4">
-          <div className="font-bold text-blue-900">{label}</div>
+          <div className="font-bold text-blue-900">{attribute}</div>
           <div className="text-xs text-gray-600">{description}</div>
         </div>
         
-        {isTerran ? (
-          <div className="w-2/4">
-            <div className="flex flex-wrap gap-2">
-              {standardArray.map(value => (
+        <div className="w-1/2">
+          <div className="flex flex-wrap gap-2">
+            {/* Value selectors - different for Terrans vs non-Terrans */}
+            {isTerran ? (
+              // Terran: Select from standard array
+              standardArray.map(value => (
                 <button
                   key={value}
-                  onClick={() => assignStandardValue(attribute, value)}
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white font-bold hover:bg-blue-700 transition-colors"
+                  onClick={() => assignValueToAttribute(attribute, value)}
+                  className={`w-10 h-10 flex items-center justify-center rounded-full 
+                    ${assignedValues[attribute] === value 
+                      ? 'bg-blue-600 text-white' 
+                      : isValueAvailable(value)
+                        ? 'bg-blue-100 text-blue-800 hover:bg-blue-200' 
+                        : 'bg-gray-200 text-gray-500 cursor-not-allowed'}
+                    font-bold transition-colors`}
+                  disabled={!isValueAvailable(value) && assignedValues[attribute] !== value}
                 >
                   {value}
                 </button>
-              ))}
-            </div>
+              ))
+            ) : (
+              // Non-Terran: Select from generated values
+              generatedValues.map((value, index) => (
+                <button
+                  key={index}
+                  onClick={() => assignValueToAttribute(attribute, value)}
+                  className={`w-10 h-10 flex items-center justify-center rounded-full 
+                    ${assignedValues[attribute] === value 
+                      ? 'bg-blue-600 text-white' 
+                      : isValueAvailable(value)
+                        ? 'bg-blue-100 text-blue-800 hover:bg-blue-200' 
+                        : 'bg-gray-200 text-gray-500 cursor-not-allowed'}
+                    font-bold transition-colors`}
+                  disabled={!isValueAvailable(value) && assignedValues[attribute] !== value}
+                >
+                  {value}
+                </button>
+              ))
+            )}
           </div>
-        ) : (
-          <div className="w-2/4">
-            <div className="flex items-center space-x-3">
-              <button
-                onClick={() => rollDice(attribute)}
-                disabled={isRolling[attribute]}
-                className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:bg-gray-400 flex items-center"
-              >
-                <Shuffle size={16} className="mr-1" />
-                Roll
-              </button>
-              
-              {diceResults[attribute] && (
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-white border-2 border-blue-500 rounded flex items-center justify-center text-lg font-bold">
-                    {diceResults[attribute].die1}
-                  </div>
-                  <span>+</span>
-                  <div className="w-8 h-8 bg-white border-2 border-blue-500 rounded flex items-center justify-center text-lg font-bold">
-                    {diceResults[attribute].die2}
-                  </div>
-                  <span>=</span>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
+        </div>
         
         <div className="w-1/4 flex items-center justify-end">
           <div className="flex items-center space-x-2">
-            <div className="w-12 h-12 rounded-full bg-gray-100 border-2 border-blue-400 flex items-center justify-center text-xl font-bold">
-              {attributes[attribute] || '?'}
+            <div className={`w-12 h-12 rounded-full ${assignedValues[attribute] ? 'bg-blue-100 border-2 border-blue-400' : 'bg-gray-100 border-2 border-gray-300'} flex items-center justify-center text-xl font-bold`}>
+              {assignedValues[attribute] || '?'}
             </div>
             
             {originModifier !== 0 && (
               <>
-                <span>{originModifier > 0 ? '+' : ''}{originModifier}</span>
-                <span>=</span>
-                <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold">
-                  {modifiedAttributes[attribute]}
+                <ArrowRight size={20} className="text-gray-400" />
+                <div className={`w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold relative ${rollingAttribute === attribute ? 'animate-pulse' : ''}`}>
+                  {assignedValues[attribute] ? (Math.max(3, Math.min(18, assignedValues[attribute] + originModifier))) : '?'}
+                  {originModifier > 0 && <span className="absolute -top-1 -right-1 w-5 h-5 bg-green-500 rounded-full text-xs flex items-center justify-center font-bold">+{originModifier}</span>}
+                  {originModifier < 0 && <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full text-xs flex items-center justify-center font-bold">{originModifier}</span>}
                 </div>
               </>
             )}
@@ -211,82 +246,115 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
   
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-6 text-center text-blue-900">Step 2: Generate Attributes</h2>
+      <h2 className="text-2xl font-bold mb-6 text-center text-blue-900">Step 2: Assign Attributes</h2>
       
-      <div className="bg-white p-6 rounded-xl shadow-lg mb-8">
-        <div className="flex justify-between items-center mb-6">
-          <h3 className="text-xl font-bold text-blue-800">
-            Attribute Generation for {character.origin?.name || 'Character'}
-          </h3>
-          
-          {character.origin?.id !== 'terran' && (
-            <button
-              onClick={rollAllDice}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center"
-            >
-              <Shuffle size={18} className="mr-2" />
-              Roll All Attributes
-            </button>
-          )}
-        </div>
-        
-        {character.origin?.id === 'terran' ? (
-          <div className="bg-yellow-50 p-4 rounded-lg mb-6 border border-yellow-200">
-            <h4 className="font-bold text-yellow-700 flex items-center">
-              <AlertCircle size={18} className="mr-2" /> 
-              Terran Standard Array
-            </h4>
-            <p>As a Terran, you must distribute the Standard Array values: 15, 14, 12, 11, 10, 9, 8</p>
-            <p className="text-sm mt-2">Click on the values to assign them to your attributes</p>
+      {/* Origin-specific instructions */}
+      <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 mb-6">
+        <div className="flex items-start">
+          <AlertCircle size={20} className="text-blue-600 mr-2 mt-1 flex-shrink-0" />
+          <div>
+            <h3 className="font-bold text-blue-800">Attribute Assignment for {character.origin?.name || 'Character'}</h3>
+            {isTerran ? (
+              <p className="text-sm">As a Terran, you must distribute the Standard Array values (15, 14, 12, 11, 10, 9, 8) among your attributes. Click on a value to assign it to an attribute.</p>
+            ) : (
+              <p className="text-sm">As a {character.origin?.name || 'non-Terran'}, you have the flexibility to assign the generated values to your attributes as you see fit. Click on a value to assign it to an attribute.</p>
+            )}
           </div>
-        ) : (
-          <div className="bg-blue-50 p-4 rounded-lg mb-6 border border-blue-200">
-            <h4 className="font-bold text-blue-700 flex items-center">
-              <AlertCircle size={18} className="mr-2" /> 
-              {character.origin?.name || 'Non-Terran'} Attribute Rolling
-            </h4>
-            <p>Roll 2d10 for each attribute. Results below 3 become 3, and results above 18 become 18.</p>
-            <p className="text-sm mt-2">You can roll each attribute individually or all at once.</p>
-          </div>
-        )}
-        
-        <div className="space-y-1 border rounded-lg overflow-hidden">
-          {renderAttributeRow('BRAWN', 'BRAWN', 'Physical strength and toughness')}
-          {renderAttributeRow('REFLEX', 'REFLEX', 'Agility and reaction speed')}
-          {renderAttributeRow('NERVE', 'NERVE', 'Mental composure and courage')}
-          {renderAttributeRow('SAVVY', 'SAVVY', 'Intelligence and perception')}
-          {renderAttributeRow('CHARM', 'CHARM', 'Charisma and persuasiveness')}
-          {renderAttributeRow('GRIT', 'GRIT', 'Endurance and willpower')}
-          {renderAttributeRow('GUILE', 'GUILE', 'Cunning and deception')}
         </div>
       </div>
       
-      <div className="bg-gray-100 p-6 rounded-xl border border-gray-300">
+      {/* Roll controls for non-Terrans */}
+      {!isTerran && (
+        <div className="mb-6 flex justify-between items-center">
+          <h3 className="text-lg font-semibold text-gray-700">Generated Attribute Values:</h3>
+          <div className="flex gap-2">
+            <button
+              onClick={resetAssignments}
+              className="flex items-center px-4 py-2 border border-gray-300 rounded hover:bg-gray-100"
+              disabled={isRolling}
+            >
+              <RotateCcw size={16} className="mr-2" />
+              Reset
+            </button>
+            <button
+              onClick={generateAllValues}
+              className="raygun-button flex items-center"
+              disabled={isRolling}
+            >
+              <Shuffle size={16} className="mr-2" />
+              {isRolling ? 'Rolling...' : 'Roll New Values'}
+            </button>
+          </div>
+        </div>
+      )}
+      
+      {/* Attribute rows */}
+      <div className="bg-white rounded-lg shadow overflow-hidden">
+        <div className="bg-gray-100 p-4 border-b border-gray-200 font-semibold text-gray-700">
+          Assign Values to Attributes
+        </div>
+        
+        {renderAttributeRow('BRAWN')}
+        {renderAttributeRow('REFLEX')}
+        {renderAttributeRow('NERVE')}
+        {renderAttributeRow('SAVVY')}
+        {renderAttributeRow('CHARM')}
+        {renderAttributeRow('GRIT')}
+        {renderAttributeRow('GUILE')}
+      </div>
+      
+      {/* Derived Statistics */}
+      <div className="mt-8 bg-gray-100 p-6 rounded-xl border border-gray-300">
         <h3 className="text-lg font-bold mb-4 text-blue-900">Derived Statistics</h3>
         
         <div className="grid grid-cols-3 gap-6">
-          <div className="bg-white p-4 rounded-lg shadow">
+          <div className="bg-white p-4 rounded-lg shadow relative">
+            <div className="absolute -top-3 -right-3 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+              <Zap size={16} className="text-white" />
+            </div>
             <div className="text-sm text-gray-600">Initiative</div>
             <div className="text-2xl font-bold text-blue-800">
-              {modifiedAttributes.REFLEX * 5}%
+              {modifiedAttributes.REFLEX ? modifiedAttributes.REFLEX * 5 : '??'}%
             </div>
             <div className="text-xs mt-1 text-gray-500">REFLEX × 5</div>
           </div>
           
-          <div className="bg-white p-4 rounded-lg shadow">
+          <div className="bg-white p-4 rounded-lg shadow relative">
+            <div className="absolute -top-3 -right-3 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+              <Zap size={16} className="text-white" />
+            </div>
             <div className="text-sm text-gray-600">Basic Training</div>
             <div className="text-2xl font-bold text-blue-800">
-              {(modifiedAttributes.REFLEX * 2) + 15}%
+              {modifiedAttributes.REFLEX ? (modifiedAttributes.REFLEX * 2) + 15 : '??'}%
             </div>
             <div className="text-xs mt-1 text-gray-500">(REFLEX × 2) + 15%</div>
           </div>
           
-          <div className="bg-white p-4 rounded-lg shadow">
+          <div className="bg-white p-4 rounded-lg shadow relative">
+            <div className="absolute -top-3 -right-3 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+              <Zap size={16} className="text-white" />
+            </div>
             <div className="text-sm text-gray-600">Damage Soak</div>
             <div className="text-2xl font-bold text-blue-800">
-              {modifiedAttributes.GRIT * 5}%
+              {modifiedAttributes.GRIT ? modifiedAttributes.GRIT * 5 : '??'}%
             </div>
             <div className="text-xs mt-1 text-gray-500">GRIT × 5</div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Origin Attributes Info */}
+      <div className="mt-6 bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+        <div className="flex">
+          <Info size={20} className="text-yellow-600 mr-2 flex-shrink-0 mt-0.5" />
+          <div>
+            <h4 className="font-bold text-yellow-800">Origin Attribute Modifiers: {character.origin?.name}</h4>
+            <p className="text-sm text-yellow-700">
+              {character.origin?.attributeMods || "Select an origin to see attribute modifiers"}
+            </p>
+            <p className="text-xs mt-2 text-yellow-600">
+              These modifiers are automatically applied after you assign your base attributes.
+            </p>
           </div>
         </div>
       </div>
