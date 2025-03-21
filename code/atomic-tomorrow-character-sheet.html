@@ -375,6 +375,11 @@
             font-weight: bold;
         }
         
+        .solar-scouts .skill-note {
+            font-weight: bold;
+            font-size: x-small;
+        }
+        
         .skill-row {
             display: flex;
             align-items: center;
@@ -617,7 +622,7 @@
                     <div class="skills-content">
                         <!-- Solar Scouts Training Row -->
                         <div class="skill-row solar-scouts">
-                            <span class="skill-name">Solar Scouts Training</span>
+                            <span class="skill-name">Solar Scouts Training <span class="skill-note">(REFLEX × 2) + 15</span></span>
                             <div class="skill-value"></div>
                         </div>
                         
@@ -688,9 +693,9 @@
                             <h3>Basic Skill Resolution</h3>
                             <ul class="rules-list">
                                 <li><strong>Roll d100</strong>: Roll percentile dice (d100) and try to roll <strong>under</strong> your skill percentage</li>
-                                <li><strong>Critical Success</strong>: Matching doubles (11, 22, etc.) below your skill %</li>
-                                <li><strong>Special Success</strong>: Roll ending in 0 or 5 below your skill %</li>
-                                <li><strong>Critical Failure</strong>: Matching doubles above your skill %</li>
+                                <li><strong>Critical Success</strong>: Doubles (11, 22, etc.) &lt;= your skill %</li>
+                                <li><strong>Special Success</strong>: Roll ending in 0 or 5 &lt;= skill %</li>
+                                <li><strong>Critical Failure</strong>: Doubles above your skill %</li>
                                 <li><strong>Special Failure</strong>: Roll ending in 0 or 5 above your skill %</li>
                                 <li><strong>Automatic Success</strong>: Rolls of 01-05 regardless of skill</li>
                                 <li><strong>Automatic Failure</strong>: Rolls of 96-00 regardless of skill</li>
