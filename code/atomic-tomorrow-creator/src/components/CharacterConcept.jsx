@@ -11,7 +11,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
   const [focusedProfession, setFocusedProfession] = useState(0);
   const [focusedOrigin, setFocusedOrigin] = useState(0);
   const [focusedBackground, setFocusedBackground] = useState(0);
-  
+
   // Update character when selections change
   useEffect(() => {
     updateCharacter({
@@ -36,9 +36,9 @@ const CharacterConcept = ({ character, updateCharacter }) => {
       <div className="flex flex-col h-full">
         {/* Column Header */}
         <h3 className={`text-lg font-semibold mb-3 text-center ${color} text-white py-2 rounded-t-lg`}>
-          COLUMN {title.charAt(0)}: {title.toUpperCase()}
+          {title.toUpperCase()}
         </h3>
-        
+
         {/* Retro Terminal Display */}
         <div className="bg-black border-2 border-gray-700 rounded-md mb-4 flex justify-center items-center p-4 h-16 relative overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-green-900 to-green-700"></div>
@@ -46,22 +46,22 @@ const CharacterConcept = ({ character, updateCharacter }) => {
             {data[focusedIndex]?.name || "SELECT OPTION"}
           </p>
         </div>
-        
+
         {/* Slider Control with Current Index/Total */}
         <div className="flex items-center mb-4 space-x-2">
-          <button 
+          <button
             className="p-2 bg-gray-800 text-white rounded-md hover:bg-gray-700"
             onClick={() => setFocusedIndex((prev) => (prev > 0 ? prev - 1 : prev))}
           >
             <ChevronLeft size={20} />
           </button>
-          
+
           <div className="flex-grow relative">
             {/* Actual slider control */}
-            <input 
-              type="range" 
-              min="0" 
-              max="100" 
+            <input
+              type="range"
+              min="0"
+              max="100"
               value={(focusedIndex / (data.length - 1)) * 100}
               onChange={handleSliderChange}
               className={`w-full h-2 appearance-none rounded-lg ${colorToSliderTrack(color)} outline-none`}
@@ -70,7 +70,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
                 background: `linear-gradient(to right, ${colorToSliderFill(color)} 0%, ${colorToSliderFill(color)} ${(focusedIndex / (data.length - 1)) * 100}%, #d1d5db ${(focusedIndex / (data.length - 1)) * 100}%, #d1d5db 100%)`,
               }}
             />
-            
+
             {/* Custom thumb styling */}
             <style jsx>{`
               input[type=range]::-webkit-slider-thumb {
@@ -106,53 +106,52 @@ const CharacterConcept = ({ character, updateCharacter }) => {
               }
             `}</style>
           </div>
-          
-          <button 
+
+          <button
             className="p-2 bg-gray-800 text-white rounded-md hover:bg-gray-700"
             onClick={() => setFocusedIndex((prev) => (prev < data.length - 1 ? prev + 1 : prev))}
           >
             <ChevronRight size={20} />
           </button>
-          
+
           <div className="text-sm font-mono bg-gray-100 px-2 py-1 rounded border border-gray-300">
             {focusedIndex + 1}/{data.length}
           </div>
         </div>
-        
+
         {/* Selected Option Details Card */}
-        <div className={`flex-grow p-4 border-2 rounded-lg transition-all ${
-          data[focusedIndex] ? colorToBorder(color) : 'border-gray-300'
-        }`}>
+        <div className={`flex-grow p-4 border-2 rounded-lg transition-all overflow-y-auto h-52 ${data[focusedIndex] ? colorToBorder(color) : 'border-gray-300'
+          }`}>
           {data[focusedIndex] ? (
             <>
               <h3 className="text-lg font-bold mb-2">{data[focusedIndex].name}</h3>
               <p className="text-sm mb-3">{data[focusedIndex].description}</p>
-              
+
               <div className="pt-3 border-t border-gray-200 text-xs">
                 {title === 'Epithet' && (
                   <>
-                    <div className="flex items-center mb-1">
-                      <Zap size={14} className="mr-1 text-yellow-600" />
-                      <strong>Effect:</strong> {data[focusedIndex].attributeEffect}
+                    <div className="flex items-start mb-1">
+                      <Zap size={14} className="mr-1 text-yellow-600 flex-shrink-0 mt-0.5" />
+                      <div><strong>Effect:</strong> {data[focusedIndex].attributeEffect}</div>
                     </div>
-                    <div className="flex items-center">
-                      <Zap size={14} className="mr-1 text-purple-600" />
-                      <strong>Benefit:</strong> {data[focusedIndex].benefit}
+                    <div className="flex items-start">
+                      <Zap size={14} className="mr-1 text-purple-600 flex-shrink-0 mt-0.5" />
+                      <div><strong>Benefit:</strong> {data[focusedIndex].benefit}</div>
                     </div>
                   </>
                 )}
-                
+
                 {(title === 'Profession' || title === 'Origin' || title === 'Background') && (
-                  <div className="flex items-center">
-                    <Zap size={14} className="mr-1 text-blue-600" />
-                    <strong>Skills:</strong> {data[focusedIndex].skills}
+                  <div className="flex items-start">
+                    <Zap size={14} className="mr-1 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div><strong>Skills:</strong> {data[focusedIndex].skills}</div>
                   </div>
                 )}
-                
+
                 {title === 'Origin' && (
-                  <div className="flex items-center mt-1">
-                    <Zap size={14} className="mr-1 text-green-600" />
-                    <strong>Attributes:</strong> {data[focusedIndex].attributeMods}
+                  <div className="flex items-start mt-1">
+                    <Zap size={14} className="mr-1 text-green-600 flex-shrink-0 mt-0.5" />
+                    <div><strong>Attributes:</strong> {data[focusedIndex].attributeMods}</div>
                   </div>
                 )}
               </div>
@@ -161,18 +160,17 @@ const CharacterConcept = ({ character, updateCharacter }) => {
             <p className="text-center text-gray-500 italic">Select an option to see details</p>
           )}
         </div>
-        
-        {/* Option Hint List - small name previews */}
-        <div className="mt-2 flex flex-wrap gap-1">
+
+        {/* Option Hint List - with fixed height */}
+        <div className="mt-2 flex flex-wrap gap-1 h-24 overflow-y-auto">
           {data.map((item, idx) => (
-            <div 
+            <div
               key={idx}
               onClick={() => setFocusedIndex(idx)}
-              className={`text-xs px-1.5 py-1 rounded cursor-pointer transition-all ${
-                idx === focusedIndex
+              className={`text-xs px-1.5 py-1 rounded cursor-pointer transition-all ${idx === focusedIndex
                   ? `${colorToOptionBg(color)} text-white font-bold`
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
+                }`}
             >
               {item.name}
             </div>
@@ -190,7 +188,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
     if (color.includes('red')) return 'border-red-500 bg-red-50';
     return 'border-gray-300';
   };
-  
+
   // Helper to convert color class to slider track color
   const colorToSliderTrack = (color) => {
     if (color.includes('blue')) return 'bg-blue-200';
@@ -199,7 +197,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
     if (color.includes('red')) return 'bg-red-200';
     return 'bg-gray-200';
   };
-  
+
   // Helper to convert color class to slider fill color
   const colorToSliderFill = (color) => {
     if (color.includes('blue')) return '#2563eb'; // blue-600
@@ -208,7 +206,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
     if (color.includes('red')) return '#dc2626'; // red-600
     return '#4b5563'; // gray-600
   };
-  
+
   // Helper to convert color class to option background
   const colorToOptionBg = (color) => {
     if (color.includes('blue')) return 'bg-blue-600';
@@ -221,7 +219,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
   return (
     <div>
       <h2 className="text-2xl font-bold mb-6 text-center text-blue-900">Step 1: Choose Your Character Concept</h2>
-      
+
       <div className="grid grid-cols-4 gap-6">
         {/* Each column rendered with appropriate data and focused index */}
         {renderSelectionColumn('Epithet', EPITHETS, focusedEpithet, setFocusedEpithet, 'bg-blue-700')}
@@ -229,13 +227,13 @@ const CharacterConcept = ({ character, updateCharacter }) => {
         {renderSelectionColumn('Origin', ORIGINS, focusedOrigin, setFocusedOrigin, 'bg-yellow-600')}
         {renderSelectionColumn('Background', BACKGROUNDS, focusedBackground, setFocusedBackground, 'bg-red-700')}
       </div>
-      
+
       {/* Character summary */}
       <div className="mt-8 p-4 bg-gray-100 rounded-lg border border-gray-300">
         <h3 className="text-xl font-bold mb-2 text-center text-gray-800">Character Concept</h3>
         {character.epithet && character.profession && character.origin && character.background ? (
           <p className="text-center text-lg">
-            <span className="font-medium text-blue-800">{character.epithet.name}</span> <span className="font-medium text-green-800">{character.profession.name}</span> from <span className="font-medium text-yellow-700">{character.origin.name}</span> with a <span className="font-medium text-red-700">{character.background.name}</span> background
+            <span className="font-medium text-blue-800">{character.epithet.name}</span> <span className="font-medium text-green-800">{character.profession.name}</span> from a <span className="font-medium text-yellow-700">{character.origin.name}</span> <span className="font-medium text-red-700">{character.background.name}</span> background
           </p>
         ) : (
           <p className="text-center text-gray-500 italic">Select one option from each column to complete your character concept</p>
