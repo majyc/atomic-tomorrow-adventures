@@ -116,7 +116,7 @@ When a profession grants a specialization, it also implicitly grants the core sk
 
 - **Combat**: One major skill action per round
 - **Timed**: Skill attempts require defined timeframe
-- **Crisis**: Skill attempts under immediate threat take -20% penalty
+- **Crisis**: Skill attempts under immediate threat take -20% penalty unless they are FLEX skills.  Historians can still remember history in battle, medic's training will see them through even as the ray-beams fly.
 
 ## DAMAGE AND WOUNDS
 

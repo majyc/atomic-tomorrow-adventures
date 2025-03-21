@@ -5,9 +5,9 @@ title: Core Skills System
 
 ## Core Skills Framework
 
-This system organizes character capabilities into **Core Skills** with **Specializations**. When a profession grants a specialization, characters gain both the specialization at the listed value and the core skill at 20% lower.
+This system organizes character capabilities into **Core Skills** with **Specializations**. When a profession grants a specialization, characters gain both the specialization at the listed value and the core skill at 20% lower, or the Flex skill at a flat 20%.
 
-**Example:** A Xenodoc with Specialization: Xenomedicine +40% would have Medicine (core skill) at +20%.
+**Example:** An Engineer with Specialization: Atomic +50% would have Engineering (core skill) at +30%.  An Academic with specialization History at +40% would have Academics at 20%
 
 ## Skill Rating Principles
 
@@ -15,11 +15,12 @@ This system maintains the profession-based skill progression (primary +40%, seco
 
 ### Specialization vs. Core Relationship
 
-When a profession grants a specialization, the character automatically gains the associated core skill at a lower rating:
+When a profession grants a specialization, the character automatically gains the associated core or flex skill at a lower rating:
 
 - **Specialization at +40%** → Core skill at +20%
 - **Specialization at +20%** → Core skill at +10%
-- **Specialization at +10%** → Core skill at +0% (attribute-only)
+- **Specialization at +10%** → Core skill at +5% (attribute-only)
+- **Flex Skill** → automatically 20%
 
 ### Different Profession Patterns
 
@@ -27,11 +28,12 @@ Professions can grant skills in several patterns:
 
 1. **Specialization-Heavy**: Primary: Core+Specialization, Secondary: Core+Specialization, Tertiary: Core+Specialization
 
-   - Example: *Xenodoc with Medicine (Xenomedicine) +40%, Medicine (Surgery) +20%, Medicine (Diagnostics) +10%*
-   - Resulting in Medicine (core) at +20%
+   - Example: *Engineer with Engineering (Atomic) +40%, Engineering (Ships Systems) +20%, Engineering (Jury Rig) +10%*
+   - Resulting in Engineering (core) at +20%
 2. **Core-Heavy**: Primary: Core+Specialization, Secondary: Core skill, Tertiary: Different Core skill
 
    - Example: *Pilot with Piloting (Spacecraft) +40%, Navigation +20%, Technology +10%*
+   - Resulting in Piloting at +20%, Navigation at +20%, and Technology at +10%
 3. **Mixed Approach**: Primary: Core+Specialization, Secondary: FLEX skill, Tertiary: Core+Specialization
 
    - Example: *Scientist with Science (Physics) +40%, Academics +20%, Engineering (Experimental) +10%*
@@ -47,7 +49,7 @@ Characters can attempt any reasonable skill without training:
 
 - **Attribute-Linked Core Skill**: (Attribute × 2) + Core Skill Bonus
 - **Attribute-Linked Specialization**: (Attribute × 2) + Specialization Bonus
-- **FLEX Core Skill**: Core Skill Bonus + 20%
+- **FLEX Skill**: Core Skill Bonus + 20%
 - **FLEX Specialization**: Specialization Bonus + 20%
 
 ### Using Skills Without Specialization
