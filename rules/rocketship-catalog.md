@@ -219,7 +219,7 @@ During Vector Combat:
 **Special Features:** Extended life support, backup systems for all critical components, cryogenic storage
 **Notes:** Designed for extended missions to the outer planets and beyond, these ships feature multiple redundancies for all critical systems. The high Thrust allows for relatively quick transit to distant locations, saving valuable expedition time.
 
-### DAEDALUS-CLASS COLONY TRANSPORT (Terran Authority Colony Initiative)
+### DAEDALUS-CLASS COLONY TRANSPORT (Terran Establishment Colony Initiative)
 
 **Cost:** 15 MegaCr
 **Crew:** 20 (Full bridge crew plus colony administration)

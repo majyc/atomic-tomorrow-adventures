@@ -2,6 +2,8 @@
 
 ## CORE MECHANICS: TWO-PHASE PURSUIT
 
+Each round, track the current distance between vehicles using a die or marker. When distance reaches or exceeds the escape threshold, the lead vehicle successfully escapes. When distance drops to the contact threshold or below, the pursuer has caught up to the lead vehicle.
+
 ### DISTANCE TRACKING
 
 - **Distance 1-2**: Contact range (ramming, boarding possible)
@@ -34,7 +36,18 @@ The Game Master may adjust these parameters for different scenarios:
 
 Whatever parameters you choose, remember that distance is abstract—it represents relative positioning rather than exact measurements. The drama of the chase matters more than precise distances!
 
-Each round, track the current distance between vehicles using a die or marker. When distance reaches or exceeds the escape threshold, the lead vehicle successfully escapes. When distance drops to the contact threshold or below, the pursuer has caught up to the lead vehicle.## PHASE 1: DRIVING CONTEST
+### ALTITUDE BANDS FOR FLYING VEHICLES
+
+When chases involve flying vehicles, consider these additional parameters:
+
+- **Ground-Effect Band (0-20ft)**: Max Speed reduced by 2, but +1 Handling due to ground effect
+- **Low Altitude Band (20-200ft)**: Normal Speed and Handling
+- **High Altitude Band (200-1000ft)**: +1 Speed, -1 Handling due to wind patterns
+- **Restricted Altitude (1000ft+)**: Requires special permits, military clearance
+
+Flying vehicles have the advantage of vertical separation, allowing them to bypass ground traffic and obstacles. Changing to a higher band increases Distance by 1, while dropping to a lower band has no effect on Distance.
+
+## PHASE 1: DRIVING CONTEST
 
 Each round begins with an opposed Vehicle Operation roll between drivers:
 

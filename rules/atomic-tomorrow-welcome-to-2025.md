@@ -14,9 +14,11 @@ Even the most advanced computers use vacuum tubes and mechanical relays rather t
 
 This analog approach extends to spacecraft design as well. Ships have actual viewports alongside video screens, manual hatches that can be cranked open when power fails, and systems designed to be repaired by human hands rather than automated diagnostics.
 
+The discovery of Nth metal in the wreckage of Mysterian craft - a material with unique gravitational properties - has enabled practical flying cars without rewriting the laws of physics. Nth metal interacts with gravitational fields, reducing an object's effective mass by up to 90% near planetary surfaces (though this effect diminishes in space). Combined with conventional propulsion systems, Nth metal allows for sleek flying vehicles with all the chrome and tailfins the atomic age aesthetic demands, while maintaining the analog control systems of dials, pedals, and manual stabilizer adjustments that characterize this technological path.
+
 ## SAFE, CLEAN NUCLEAR POWER
 
-The atomic tomorrow is powered by the atom itself. Pebble-bed reactors that fail safe have proliferated throughout the Solar System, providing abundant energy with minimal risk. These reactors cannot melt down—increased reaction produces negative feedback that dampens the reaction rather than accelerates it.
+The atomic tomorrow is powered by the atom itself. Pebble-bed and miniature foam-core reactors that fail safe have proliferated throughout the Solar System, providing abundant energy with minimal risk. These reactors cannot melt down—increased reaction produces negative feedback that dampens the reaction rather than accelerates it.
 
 Rockets, space stations, and even many personal vehicles are powered by small, safe atomic power plants. Solar panels and mirrors supplement these where practical, but it's the atom that truly powers civilization.
 

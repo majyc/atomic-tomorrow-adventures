@@ -5,7 +5,7 @@
 | Lifeline-MK2 | Interplanetary Rescue | Specialized | Rescue Ship | 3.5-5.0 | 8 | +20 | +20 | 75×20 | 120 | DB1 | AMB, RP, ELS |
 | Scholar-Epsilon | Luna University | Specialized | Scientific Vessel | 5.0-8.0 | 10-12 | +0 | +0 | 90×25 | 200 | MR2, DB1 | CLF, SCD, ESS |
 | Voyager-X | Ganymede Deep Space | Specialized | Long-Range Explorer | 7.0-10.0 | 10 | +0 | +20 | 110×30 | 365 | DB1, RP1 | BSC, CS, ELS |
-| Genesis-A | Terran Authority | Specialized | Colony Transport | 12.0-18.0 | 15-20 | -20 | -20 | 200×50 | 300 | DB1, PD | MCE, ASS, CCI |
+| Genesis-A | Terran Establishment | Specialized | Colony Transport | 12.0-18.0 | 15-20 | -20 | -20 | 200×50 | 300 | DB1, PD | MCE, ASS, CCI |
 | Mercy-Beta | Titan Transport | Specialized | Hospital Ship | 6.0-9.0 | 6-8 | +0 | +0 | 100×27 | 180 | N | AMB, FH, ELS |
 | Observer-MK4 | Europa Expeditionary | Specialized | Survey Craft | 4.0-7.0 | 12 | +0 | +0 | 90×25 | 200 | DB1 | ESS, SCD, GLC |
 | Laboratory-Limited | Neptune Deep | Specialized | Research Platform | 8.0-12.0 | 8-10 | +0 | +0 | 90×25 | 200 | DB1, RP1 | CLF, SPC, DSC |
@@ -266,7 +266,7 @@ Most ships in active service have at least minor modifications from their factor
 | Lifeline-MK2 | Interplanetary Rescue | Specialized | Rescue Ship | 3.5-5.0 | 8 | +20 | 3 | 75×20 | 120 | DB1 | AMB, RP, ELS |
 | Scholar-Epsilon | Luna University | Specialized | Scientific Vessel | 5.0-8.0 | 10-12 | +0 | 2 | 90×25 | 200 | MR2, DB1 | CLF, SCD, ESS |
 | Voyager-X | Ganymede Deep Space | Specialized | Long-Range Explorer | 7.0-10.0 | 10 | +0 | 3 | 110×30 | 365 | DB1, RP1 | BSC, CS, ELS |
-| Genesis-A | Terran Authority | Specialized | Colony Transport | 12.0-18.0 | 15-20 | -20 | 1 | 200×50 | 300 | DB1, PD | MCE, ASS, CCI |
+| Genesis-A | Terran Establishment | Specialized | Colony Transport | 12.0-18.0 | 15-20 | -20 | 1 | 200×50 | 300 | DB1, PD | MCE, ASS, CCI |
 | Mercy-Beta | Titan Transport | Specialized | Hospital Ship | 6.0-9.0 | 6-8 | +0 | 2 | 100×27 | 180 | N | AMB, FH, ELS |
 | Observer-MK4 | Europa Expeditionary | Specialized | Survey Craft | 4.0-7.0 | 12 | +0 | 2 | 90×25 | 200 | DB1 | ESS, SCD, GLC |
 | Laboratory-Limited | Neptune Deep | Specialized | Research Platform | 8.0-12.0 | 8-10 | +0 | 2 | 90×25 | 200 | DB1, RP1 | CLF, SPC, DSC |
