@@ -1,6 +1,6 @@
 # ATOMIC TOMORROW ADVENTURES: PSIONIC SYSTEM
 
-## CORE CONCEPT
+## CONCEPT
 
 In the Atomic Tomorrow universe, psychic potential exists in all humans but usually remains dormant. Only through training, genetic predisposition, or extraordinary circumstances does this latent ability manifest. The Rhine Institute was established to identify, train, and monitor those with active psionic capabilities—both for their safety and society's.
 

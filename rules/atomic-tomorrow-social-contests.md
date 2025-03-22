@@ -4,7 +4,7 @@
 
 In the retro-future world of Atomic Tomorrow, fast talking, seduction, and persuasion are skills as valuable as marksmanship or piloting. This system provides guidelines for handling social interactions as meaningful contests without undermining player agency.
 
-## CORE PRINCIPLES
+## PRINCIPLES
 
 1. **Social Skills Are Not Mind Control**: Even critical successes cannot force others to act against their core values or self-interest
 2. **Preserve Agency**: Player characters always retain the right to determine their own actions

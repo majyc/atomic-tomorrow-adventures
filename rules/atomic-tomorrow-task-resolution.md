@@ -4,7 +4,7 @@
 
 This system handles non-combat challenges that characters face, from bypassing security systems to performing emergency surgery or deciphering alien artifacts.
 
-## CORE PRINCIPLES
+## PRINCIPLES
 
 1. **Roll When It Matters**: Only roll when success is uncertain and failure has consequences
 2. **Direct Contribution**: All participants contribute directly to tasks rather than providing abstract bonuses

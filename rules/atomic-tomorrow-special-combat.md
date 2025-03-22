@@ -64,7 +64,7 @@ Flanking, back-stabbing, attacking from a higher position, attacking with surpri
 
 This elegant system allows for tactical depth without additional complexity. With any successful attack, the attacker can declare a desired effect instead of doing damage.
 
-**Core Mechanic:**
+**Super Simple Mechanic:**
 
 1. Attacker declares desired effect along with attack
 2. If attack succeeds, defender chooses:

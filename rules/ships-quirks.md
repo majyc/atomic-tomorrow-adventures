@@ -40,7 +40,7 @@ Roll 2-4 times on this table. If you get duplicate results, either reroll or int
 | 16                                          | **Alien Encounter**- Had confirmed contact with non-human intelligence; incident report sealed in captain's safe                   |
 | 17                                          | **Unreliable Registry**- Documentation claims impossible launch date or origin; registry numbers don't match database              |
 | 18                                          | **Prototype Model**- First or last of its particular design; contains experimental features                                        |
-| 19                                          | **Retrofitted Antique**- Core hull significantly older than its systems; visible generation gap in technology                      |
+| 19                                          | **Retrofitted Antique**- Main hull significantly older than its systems; visible generation gap in technology                     |
 | 20                                          | **Unknown Origins**- Records mysteriously missing from all databases; previous owners untraceable                                  |
 | **AMBIENT PHENOMENA (21-40)**         |                                                                                                                                          |
 | 21                                          | **Distinctive Odor**- Ship has persistent, not unpleasant but recognizable smell that defies source identification                 |

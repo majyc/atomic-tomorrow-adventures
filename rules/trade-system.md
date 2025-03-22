@@ -1,9 +1,10 @@
 # ATOMIC TOMORROW ADVENTURES
+
 ## INTERPLANETARY COMMERCE SYSTEM
 
 *The dusty spaceport bars of Mars and the gleaming commerce centers of Earth all echo with the same tales: daring traders who struck it rich hauling exotic tech from Venus to the Belt, or desperate captains who lost everything on a hold full of Venusian silk that nobody would buy. In the atomic age, interplanetary commerce offers both opportunity and risk for those bold enough to stake their claim among the stars.*
 
-## CORE MECHANICS
+## TRADE MECHANICS
 
 The Atomic Tomorrow trading system simulates the challenge of finding profitable cargo routes across the Solar System. Players use their Trading skill to acquire goods at one location and sell them at another, navigating the economic complexities of different worlds.
 
@@ -56,14 +57,15 @@ The Atomic Tomorrow trading system simulates the challenge of finding profitable
 ### BUYING CARGO
 
 1. **Trading Skill Check**:
+
    - Roll percentile dice against your Trading skill
    - Regular Success: +1 to your highest die
    - Special Success (roll ending in 0 or 5): +2 to your highest die
    - Critical Success (doubles under skill): +3 to your highest die
    - Failure: No bonus
    - Critical Failure (doubles over skill): -1 to your highest die
-
 2. **Acquisition Roll**:
+
    - Roll two d10s for your Trading attempt
    - Roll two d10s for the cargo's availability
    - Add the cargo's Value Rating to each cargo die
@@ -72,17 +74,18 @@ The Atomic Tomorrow trading system simulates the challenge of finding profitable
    - If in a Restricted area for this cargo: -3 to your highest die
    - If in a wealthy Production area (Wealth 8+): +1 to your highest die
    - Apply cargo size modifiers if applicable
-
 3. **Resolution**:
+
    - If your highest die equals or exceeds the cargo's highest die, you can purchase it
    - Purchase price = cargo's lowest die × 100 Credits
 
 ### SELLING CARGO
 
 1. **Trading Skill Check**:
-   - Roll percentile dice against your Trading skill (as above)
 
+   - Roll percentile dice against your Trading skill (as above)
 2. **Selling Roll**:
+
    - Roll two d10s for your cargo's appeal
    - Roll two d10s for the location's wealth
    - Add the cargo's Value Rating to each cargo die
@@ -93,8 +96,8 @@ The Atomic Tomorrow trading system simulates the challenge of finding profitable
    - If in a Restricted area for this cargo: -3 to your highest cargo die
    - If selling Very High Value goods (7-10) at Wealthy location (8+): +1 to your highest cargo die
    - Apply cargo size modifiers if applicable
-
 3. **Resolution**:
+
    - If your cargo's highest die equals or exceeds the location's highest die, you find a buyer
    - Selling price = location's lowest die × 100 Credits
    - If selling at a Poor location (Wealth 1-3) that Consumes this cargo: +1 to the price die
@@ -117,6 +120,7 @@ The Atomic Tomorrow trading system simulates the challenge of finding profitable
 ### EMERGENCY OFFLOADING
 
 If a trader cannot sell cargo after multiple attempts:
+
 - They can accept a lowball offer for 70% of their purchase price
 - They can trade the cargo for other goods of equivalent value
 - They can store the cargo at a licensed warehouse for 10% of its value per month
@@ -124,13 +128,15 @@ If a trader cannot sell cargo after multiple attempts:
 ## SAMPLE LOCATIONS AND ECONOMIC PROFILES
 
 ### EARTH
+
 - **Wealth Rating**: 10
-- **Market Specialty**: 
+- **Market Specialty**:
   * Production: Luxury Items, Technology
   * Consumption: Raw Materials, Exotic Materials
   * Restricted: Military Hardware
 
 ### LUNA
+
 - **Wealth Rating**: 8
 - **Market Specialty**:
   * Production: Technology, Military Hardware
@@ -138,6 +144,7 @@ If a trader cannot sell cargo after multiple attempts:
   * Restricted: None
 
 ### VENUS
+
 - **Wealth Rating**: 7
 - **Market Specialty**:
   * Production: Agricultural Products, Exotic Materials
@@ -145,6 +152,7 @@ If a trader cannot sell cargo after multiple attempts:
   * Restricted: Military Hardware
 
 ### MARS
+
 - **Wealth Rating**: 6
 - **Market Specialty**:
   * Production: Raw Materials, Military Hardware
@@ -152,6 +160,7 @@ If a trader cannot sell cargo after multiple attempts:
   * Restricted: Exotic Materials
 
 ### BELT COLONIES
+
 - **Wealth Rating**: 4
 - **Market Specialty**:
   * Production: Raw Materials, Military Hardware
@@ -159,6 +168,7 @@ If a trader cannot sell cargo after multiple attempts:
   * Restricted: None
 
 ### JUPITER MOONS
+
 - **Wealth Rating**: 3
 - **Market Specialty**:
   * Production: Raw Materials, Exotic Materials
@@ -166,6 +176,7 @@ If a trader cannot sell cargo after multiple attempts:
   * Restricted: Technology
 
 ### FRONTIER OUTPOST
+
 - **Wealth Rating**: 2
 - **Market Specialty**:
   * Production: Exotic Materials
@@ -176,16 +187,16 @@ If a trader cannot sell cargo after multiple attempts:
 
 Roll d10 when entering a new market:
 
-| Roll | Event |
-|------|-------|
-| 1    | **Market Crash**: All goods sell for 50% less than normal |
-| 2    | **Supply Shortage**: One random category of goods has Value Rating increased by 2 |
-| 3    | **Trade Regulations**: Authorities inspecting all cargos, -20% to all trading rolls |
-| 4    | **Festival/Holiday**: Luxury goods in high demand (+2 Value Rating) |
-| 5-6  | **Normal Market Conditions**: No special modifications |
-| 7    | **Economic Boom**: All goods sell for 25% more than normal |
-| 8    | **Corporate Buyout**: One random category being purchased at +30% |
-| 9    | **Technological Breakthrough**: Technology goods in high demand (+2 Value Rating) |
+| Roll | Event                                                                                            |
+| ---- | ------------------------------------------------------------------------------------------------ |
+| 1    | **Market Crash**: All goods sell for 50% less than normal                                  |
+| 2    | **Supply Shortage**: One random category of goods has Value Rating increased by 2          |
+| 3    | **Trade Regulations**: Authorities inspecting all cargos, -20% to all trading rolls        |
+| 4    | **Festival/Holiday**: Luxury goods in high demand (+2 Value Rating)                        |
+| 5-6  | **Normal Market Conditions**: No special modifications                                     |
+| 7    | **Economic Boom**: All goods sell for 25% more than normal                                 |
+| 8    | **Corporate Buyout**: One random category being purchased at +30%                          |
+| 9    | **Technological Breakthrough**: Technology goods in high demand (+2 Value Rating)          |
 | 10   | **War/Crisis Preparation**: Military and Medical supplies in high demand (+3 Value Rating) |
 
 ## SPECIAL CARGO OPPORTUNITIES
@@ -193,19 +204,20 @@ Roll d10 when entering a new market:
 ### INSIDE INFORMATION
 
 Players may obtain inside information about upcoming market changes:
+
 - **Knowledge Cost**: Usually requires contacts, bribes (50-500 credits), or favors
 - **Verification**: Trading skill roll to confirm reliability (55% base chance)
 - **Time Sensitivity**: Information typically valid for 1-4 weeks
 
 ### UNIQUE CARGO TYPES
 
-| Cargo Type | Value | Description | Special Rule |
-|------------|-------|-------------|-------------|
-| Mysterian Artifacts | 10 | Recovered alien technology | Double selling price, but -30% to selling roll |
-| Experimental Technology | 9 | Cutting-edge prototypes | +3 to price die, 10% chance of malfunction during transit |
-| Diplomatic Packages | 8 | Sealed diplomatic materials | Guaranteed delivery contract, severe penalties for inspection |
-| Perishable Luxuries | 7 | Time-sensitive valuable goods | +2 to price die if delivered within one week, worthless after two weeks |
-| Frontier Essentials | 3 | Specialized frontier supplies | +3 to price die at Frontier Outposts only |
+| Cargo Type              | Value | Description                   | Special Rule                                                            |
+| ----------------------- | ----- | ----------------------------- | ----------------------------------------------------------------------- |
+| Mysterian Artifacts     | 10    | Recovered alien technology    | Double selling price, but -30% to selling roll                          |
+| Experimental Technology | 9     | Cutting-edge prototypes       | +3 to price die, 10% chance of malfunction during transit               |
+| Diplomatic Packages     | 8     | Sealed diplomatic materials   | Guaranteed delivery contract, severe penalties for inspection           |
+| Perishable Luxuries     | 7     | Time-sensitive valuable goods | +2 to price die if delivered within one week, worthless after two weeks |
+| Frontier Essentials     | 3     | Specialized frontier supplies | +3 to price die at Frontier Outposts only                               |
 
 ## TRADING STRATEGIES
 
@@ -214,39 +226,41 @@ Based on extensive simulations, certain trade approaches are more profitable tha
 ### OPTIMAL STRATEGIES
 
 1. **Low Value Goods at Medium Wealth Consumption Areas**
+
    - Example: Agricultural Products from Mars to Belt Colonies
    - Highest reliability (40%+ success rate)
    - Moderate profits per trip (200-300 credits)
-
 2. **Medium Value Goods at Medium-High Wealth Consumption Areas**
+
    - Example: Raw Materials from Mars to Earth
    - Good balance of reliability (25-30% success rate)
    - Good profits per trip (300-500 credits)
-
 3. **Location Hopping with Multiple Selling Options**
+
    - Acquire cargo at Production areas
    - Try selling at different locations in order of preference
    - Much more profitable than fixed routes
-
 4. **Persistence at Wealthy Locations**
+
    - Make multiple attempts to sell at wealthy locations
    - Can increase profits by 100-500% compared to single attempts
 
 ### TRADE SEQUENCE EXAMPLE
 
 1. Captain Zhang acquires Agricultural Products (Value 2) at Venus (Production area)
+
    - Trading skill 65%, rolls 43 (success, +1 bonus)
    - Rolls 7, 3 for Trading; with +1 bonus and +2 Production bonus = 10, 3
    - Rolls 5+2, 3+2 for cargo = 7, 5
    - Successfully acquires cargo for 500 credits (lowest cargo die × 100)
-
 2. She flies to Mars (Consumption area) to sell
+
    - Trading skill 65%, rolls 25 (special success, +2 bonus)
    - Rolls 4+2, 1+2 for cargo; with +2 bonus and +2 Consumption bonus = 8, 3
    - Rolls 7+6, 4+6 for location wealth = 13, 10
    - Fails to find a buyer (8 < 13)
-
 3. She tries again a few days later
+
    - Trading skill 65%, rolls 65 (success, +1 bonus)
    - Rolls 8+2, 2+2 for cargo; with +1 bonus and +2 Consumption bonus = 11, 4
    - Rolls 5+6, 3+6 for location wealth = 11, 9
