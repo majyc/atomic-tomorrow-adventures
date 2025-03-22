@@ -1,0 +1,32 @@
+{
+    "male" : [
+        "Robert Stack", "Lee Marvin", "Charlton Heston", "James Stewart", 
+        "Humphrey Bogart", "Cary Grant", "Gregory Peck", "Burt Lancaster", 
+        "James Dean", "Rock Hudson", "Kirk Douglas", "William Holden", 
+        "Clark Gable", "Sidney Poitier", "John Wayne", "Gene Kelly",
+        "Henry Fonda", "Spencer Tracy", "James Cagney", "Orson Welles", 
+        "Fred Astaire", "Peter Lorre", "Vincent Price", "Edward G. Robinson", 
+        "Gary Cooper", "Yul Brynner", "James Mason", "Errol Flynn", "Boris Karloff",
+        "Steve McQueen", "Jack Palance", "Anthony Quinn", "Jimmy Durante", 
+        "Basil Rathbone", "Dean Martin", "Rudolph Valentino", "George Sanders", 
+        "Walter Pidgeon", "Victor Mature", "Lionel Barrymore", "Leslie Howard", 
+        "Bela Lugosi", "Glenn Ford", "Ronald Reagan", "Alan Ladd", "Tyrone Power", 
+        "Dana Andrews", "Jack Webb", "Peter Sellers", "Paul Newman", "Tony Curtis"
+    ],
+
+    "female" : [
+        "Agnes Moorehead", "Grace Kelly", "Lauren Bacall", "Audrey Hepburn",
+        "Katharine Hepburn", "Barbara Stanwyck", "Marilyn Monroe", 
+        "Elizabeth Taylor", "Doris Day", "Judy Garland", "Rita Hayworth",
+        "Debbie Reynolds", "Ingrid Bergman", "Vivien Leigh", "Joan Crawford", 
+        "Bette Davis", "Ginger Rogers", "Lana Turner", "Sophia Loren", 
+        "Veronica Lake", "Jane Russell", "Gloria Swanson", "Ava Gardner", 
+        "Jayne Mansfield", "Greta Garbo", "Marlene Dietrich", "Lucille Ball", 
+        "Kim Novak", "Rosalind Russell", "Jean Simmons", "Hedy Lamarr", 
+        "Maureen O'Hara", "Shirley Temple", "Joan Fontaine", "Claudette Colbert", 
+        "Donna Reed", "June Allyson", "Myrna Loy", "Olivia de Havilland", 
+        "Loretta Young", "Tallulah Bankhead", "Ida Lupino", "Claire Trevor", 
+        "Anne Baxter", "Carole Lombard", "Janet Leigh", "Shelley Winters", 
+        "Natalie Wood", "Deborah Kerr"
+    ]
+}
