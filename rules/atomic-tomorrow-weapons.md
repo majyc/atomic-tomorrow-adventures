@@ -25,13 +25,13 @@ The Wound Rating represents the weapon's baseline lethality:
 
 ### LIGHT RANGED WEAPONS (Wound Rating 1)
 
-| Weapon                     | Range | Special Properties                                                                        |
-| -------------------------- | ----- | ----------------------------------------------------------------------------------------- |
-| **Hold-out Blaster** | Near  | Concealable (+20% to hide)                                                                |
-| **Dart Pistol**      | Near  | Silent, can deliver toxins                                                                |
-| **Flechette Gun**    | Near  | On special: target -20% to next action                                                    |
-| **Stun Ray**         | Near  | Non-lethal, target must make GRIT×3 or be stunned until Grit success, 1 check per mintue |
-| **Signal Pistol**    | Far   | Illuminates area, can start fires                                                         |
+| Weapon                     | Range | Special Properties                                                                                                                                                         |
+| -------------------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hold-out Blaster** | Near  | Concealable (+20% to hide)                                                                                                                                                 |
+| **Dart Pistol**      | Near  | Silent, can deliver toxins                                                                                                                                                 |
+| **Flechette Gun**    | Near  | On special: target -20% to next action                                                                                                                                     |
+| **Stunner**          | Near  | Non-lethal, target must make GRIT check or be stunned until GRIT success, 1 check per hour.<br />Can be woken with stim shot, but that counts as a dose for complications. |
+| **Signal Pistol**    | Far   | Illuminates area, can start fires                                                                                                                                          |
 
 ### MEDIUM RANGED WEAPONS (Wound Rating 2)
 
@@ -77,13 +77,13 @@ The Wound Rating represents the weapon's baseline lethality:
 
 ### MEDIUM MELEE WEAPONS (Wound Rating 2)
 
-| Weapon                       | Special Properties                                             |
-| ---------------------------- | -------------------------------------------------------------- |
-| **Vibro-blade**        | Negates 1 level of armor reduction                             |
-| **Shock Baton**        | On special: target must make GRIT×3 or be stunned for 1 round |
-| **Mono-filament Whip** | Reach, on special: can disarm or entangle                      |
-| **Force Blade**        | Negates 2 levels of armor reduction, requires power cell       |
-| **Combat Staff**       | Can be used defensively (+10% to Block)                        |
+| Weapon                       | Special Properties                                                                        |
+| ---------------------------- | ----------------------------------------------------------------------------------------- |
+| **Vibro-blade**        | Negates 1 level of armor reduction                                                        |
+| **Shock Baton**        | On special: target must make GRIT check or be stunned until GRIT success, once per round |
+| **Mono-filament Whip** | Reach, on special: can disarm or entangle                                                 |
+| **Force Blade**        | Negates 2 levels of armor reduction, requires power cell                                  |
+| **Combat Staff**       | Can be used defensively (+10% to Block)                                                   |
 
 ### HEAVY MELEE WEAPONS (Wound Rating 3)
 
