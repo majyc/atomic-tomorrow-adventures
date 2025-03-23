@@ -244,6 +244,10 @@ Skill Level Key:
 
   - Skills: Performance (CHARM) +40%, Crowd Reading (NERVE) +20%, Artistic Ability (REFLEX) +10%, Showmanship (CHARM) +10%
   - Equipment: Instrument or performance tools, promotional materials, stage makeup
+- **DILETTANTE**
+
+  - Social (Etiquette) +10%, Business +10%, the first four skills you use +10% each (you can elect to skip it, but can't change your mind if it comes up again)
+  - Family trust fund (monthly allowance of 200 credits), access to exclusive clubs and social circles across the Solar System
 
 ## SKILL RANGES FOR REFERENCE
 

@@ -11,11 +11,11 @@ title: Starter Gear
 |-----|------|----------|
 | **SPACER'S KIT** | 1,200 Cr | Standard Vacuum Suit, Neural Stunner, Multi-Scanner, Emergency Medikit, Atomic Torch, Interplanetary Radio (Compact), Survival Rations (2 weeks), Atomic Chronometer (Basic), Emergency Beacon, Repair Tool Set |
 | **EXPLORER'S KIT** | 1,500 Cr | Frontier Explorer Suit, Neural Stunner, Multi-Scanner, Lookie-Lou Hoverscout, Solo Insta-Tent with Airlock Module, Water Reclaimer, Survival Rations (3 weeks), Multi-Terrain Boots, Expedition Backpack, Magnetic Grapple |
-| **SCIENTIST'S KIT** | 2,000 Cr | Standard Vacuum Suit, Neural Stunner, Portable Laboratory, Portable Atomic Analyzer, Multi-Scanner, Universal Data Reader, Holographic Recorder, Pocket Secretary, Stabilizing Compound (3 doses), Brain Accelerator (2 doses) |
+| **SCIENTIST'S KIT** | $100 cr | Standard Vacuum Suit, Neural Stunner, Portable Laboratory, Portable Atomic Analyzer, Multi-Scanner, Universal Data Reader, Holographic Recorder, Pocket Secretary, Stabilizing Compound (3 doses), Brain Accelerator (2 doses) |
 | **MEDIC'S KIT** | 1,800 Cr | Standard Vacuum Suit, Neural Stunner, Advanced Emergency Medikit, Portable Z-Ray Wand, Z-Ray Emergency Patches (2 packs), Radiation Purge (5 doses), Synth-Adrenaline (3 doses), Suspended Animation Drug (1 dose), Anesthetic Grenades (3), Medical Reference Database |
 | **SCOUNDREL'S KIT** | 1,350 Cr | Standard Vacuum Suit, Neural Stunner, Deluxe Lookie-Lou, Micro-Spy, Holographic Displacer, Insta-Bind Cuffs, Universal Data Reader, Reflex Booster (3 doses), Signal Jammer (Pocket-Sized), Atomic Lockpick |
 | **SECURITY KIT** | 1,700 Cr | Combat Vacuum Armor, Atomic Blaster Pistol, Tanglefoot Projector, Dazzler Device, Security Sentinel, Insta-Bind Cuffs (3 pairs), Multi-Scanner, Neural Stunner, Spot: The Wonder Drone, Emergency Medikit |
-| **ADVENTURER'S KIT** | 1,000 Cr | Standard Vacuum Suit, Neural Stunner, Atomic Torch, Multi-Scanner, Emergency Medikit, Survival Rations (1 week), Expedition Backpack, Magnetic Grapple, Emergency Beacon, Water Reclaimer |
+| **ADVENTURER'S KIT** | $100 cr | Standard Vacuum Suit, Neural Stunner, Atomic Torch, Multi-Scanner, Emergency Medikit, Survival Rations (1 week), Expedition Backpack, Magnetic Grapple, Emergency Beacon, Water Reclaimer |
 
 ## PLANETARY EXPLORATION KITS
 

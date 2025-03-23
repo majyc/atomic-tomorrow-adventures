@@ -163,8 +163,8 @@ The absence of a unified Solar System government means that "interplanetary law"
 * **Piracy**  Armed attacks on vessels in space
 * **Kidnapping**: Unlawful detention and transport of persons against their will
 * **Slavery**: Holding sapient beings in involuntary servitude
-* **Grand Theft**: Theft of property valued over 1,000 credits
-* **Grand Fraud**: Deception resulting in losses exceeding 1,000 credits
+* **Grand Theft**: Theft of property valued over $100 credits
+* **Grand Fraud**: Deception resulting in losses exceeding $100 credits
 * **Creating Navigational Hazards**: Deliberately endangering space travel
 * **Endangerment of Habitats**: Actions that threaten the integrity of space habitats
 * **Interference with Protected Species**: Harming recognized sapient species
