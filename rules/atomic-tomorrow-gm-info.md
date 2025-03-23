@@ -1,4 +1,6 @@
-# CORPORATIONS
+# GAME MASTER BRIEFING
+
+## CORPORATIONS
 
 The Solar System's economy is driven by numerous corporations providing goods and services across the planets. These range from massive conglomerates to specialized operations.
 
