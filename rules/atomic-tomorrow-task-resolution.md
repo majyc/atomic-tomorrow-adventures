@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Task Resolution
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## TASK RESOLUTION SYSTEM

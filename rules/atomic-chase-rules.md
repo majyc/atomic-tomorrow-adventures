@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Chase Rules
+---
+
 # ATOMIC TOMORROW ADVENTURES: VEHICLE CHASE SYSTEM
 
 ## CORE MECHANICS: TWO-PHASE PURSUIT

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Signature Gadget Generator
+---
+
 # SIGNATURE GADGET GENERATOR
 
 Roll once on each column to determine your retro-futuristic device's name, then add your base item (Pistol, Analyzer, Sword, etc.) and check the corresponding effects.

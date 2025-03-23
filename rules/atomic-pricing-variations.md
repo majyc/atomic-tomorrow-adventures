@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Pricing Variations
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## PLANETARY PRICING VARIATIONS

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Trade System
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## INTERPLANETARY COMMERCE SYSTEM

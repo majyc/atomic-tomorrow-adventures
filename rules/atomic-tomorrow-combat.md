@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Combat
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## CORE COMBAT SYSTEM

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Gm Info
+---
+
 # GAME MASTER BRIEFING
 
 ## CORPORATIONS

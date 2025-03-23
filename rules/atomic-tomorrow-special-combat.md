@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Special Combat
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## SPECIAL COMBAT CIRCUMSTANCES

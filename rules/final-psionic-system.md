@@ -1,3 +1,8 @@
+---
+layout: default
+title: Final Psionic System
+---
+
 # ATOMIC TOMORROW ADVENTURES: PSIONIC SYSTEM
 
 ## CONCEPT

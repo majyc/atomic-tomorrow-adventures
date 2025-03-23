@@ -1,3 +1,8 @@
+---
+layout: default
+title: Tabular Rocketship Catalog
+---
+
 ## SPECIALIZED VESSELS
 
 | Name | Manufacturer | Type | Role | Cost (MegaCr) | Crew | Man | TH | Size (m) | Range (days) | Weapons | Special |

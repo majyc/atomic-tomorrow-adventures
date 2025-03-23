@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Character Creation
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## CHARACTER CREATION

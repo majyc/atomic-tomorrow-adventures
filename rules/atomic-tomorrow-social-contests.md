@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Social Contests
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## SOCIAL CONTESTS

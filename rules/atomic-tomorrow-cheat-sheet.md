@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Cheat Sheet
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## CHARACTER CREATION CHEAT SHEET

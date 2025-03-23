@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Gear Catalog
+---
+
 ## POWER SYSTEMS & ENERGY
 
 ### STANDARD POWER UNITS

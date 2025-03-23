@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Services Catalog
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## SERVICE CATALOG

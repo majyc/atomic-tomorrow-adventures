@@ -1,3 +1,8 @@
+---
+layout: default
+title: Chemical X Description
+---
+
 # CHEMICAL X: THE MIRACLE FUEL
 
 ## TECHNICAL SPECIFICATIONS

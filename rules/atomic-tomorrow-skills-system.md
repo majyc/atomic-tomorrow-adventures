@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Skills System
+---
+
 # ATOMIC TOMORROW ADVENTURES: REVISED PROFESSIONS
 
 ## ACES & PILOTS

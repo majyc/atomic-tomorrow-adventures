@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Medical Dilemmas
+---
+
 # ATOMIC TOMORROW ADVENTURES
 ## MEDICAL DILEMMAS SYSTEM
 

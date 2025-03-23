@@ -1,3 +1,8 @@
+---
+layout: default
+title: Rocketship Combat
+---
+
 # ATOMIC TOMORROW ADVENTURES: ROCKETSHIP COMBAT
 
 ## PRINCIPLES

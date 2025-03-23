@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Welcome To 2025
+---
+
 # WELCOME TO THE SOLAR SYSTEM IN THE FARFLUNG YEAR OF... 2025
 
 ## THE ATOMIC AGE REALIZED

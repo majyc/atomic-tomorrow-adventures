@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ship Complications
+---
+
 # ATOMIC TOMORROW ADVENTURES: SHIP COMPLICATIONS
 
 Each complication reduces a ship's cost by 25%. Four or more complications means the ship is essentially available for scrap value. Many complications involve engineering checks or specific interpretations of the percentile dice:

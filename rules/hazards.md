@@ -1,3 +1,8 @@
+---
+layout: default
+title: Hazards
+---
+
 # The Hundred Hazards of Interplanetary Space
 
 ## Natural Phenomena (01-20)

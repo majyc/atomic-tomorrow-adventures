@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Combat Analysis
+---
+
 # Atomic Tomorrow Adventures: Combat System Analysis
 
 ## Core Combat Mechanics

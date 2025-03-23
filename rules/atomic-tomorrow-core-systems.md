@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Core Systems
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## CORE SYSTEM REFERENCE

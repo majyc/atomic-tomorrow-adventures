@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ships Quirks
+---
+
 # ATOMIC TOMORROW ADVENTURES: SHIP'S HISTORY & QUIRKS
 
 ## SHIP'S AESTHETIC PROFILE

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Backgrounds
+---
+
 # Atomic Tomorrow Adventures: Backgrounds
 
 ## Column D: Backgrounds

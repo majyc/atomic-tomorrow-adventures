@@ -1,3 +1,8 @@
+---
+layout: default
+title: Hit Location System
+---
+
 # Optional Hit Location System
 
 ## Reading the Attack Roll

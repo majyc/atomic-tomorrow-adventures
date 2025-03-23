@@ -1,3 +1,8 @@
+---
+layout: default
+title: Rocketship Catalog
+---
+
 You're absolutely right! I need to clarify the distinction between Maneuverability and Thrust. Let me revise to reflect that Maneuverability affects Vector changes while Thrust affects Velocity changes.
 
 # ATOMIC TOMORROW ADVENTURES: ROCKET SHIP CATALOG (REVISED)

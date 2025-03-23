@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Medical System
+---
+
 # ATOMIC TOMORROW ADVENTURES: MEDICAL SYSTEM
 
 ## CORE WOUND MECHANICS

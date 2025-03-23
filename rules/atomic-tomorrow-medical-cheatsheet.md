@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atomic Tomorrow Medical Cheatsheet
+---
+
 # ATOMIC TOMORROW ADVENTURES
 ## FIELD MEDIC'S EMERGENCY REFERENCE
 

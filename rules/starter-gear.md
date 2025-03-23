@@ -1,3 +1,8 @@
+---
+layout: default
+title: Starter Gear
+---
+
 # ATOMIC TOMORROW ADVENTURES: STARTER PACKS
 
 ## STANDARD KITS

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Orbital Distance Table
+---
+
 ## SPECIAL LOCATIONS
 
 ### VENUS EQUILATERAL STATION

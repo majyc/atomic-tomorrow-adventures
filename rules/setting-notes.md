@@ -1,3 +1,8 @@
+---
+layout: default
+title: Setting Notes
+---
+
 ## Martian Fauna
 
 Most Martian fauna are hexapodal or decapodal.

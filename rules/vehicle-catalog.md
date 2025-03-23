@@ -1,3 +1,8 @@
+---
+layout: default
+title: Vehicle Catalog
+---
+
 # ATOMIC TOMORROW ADVENTURES: VEHICLE CATALOG
 
 ## ABBREVIATION GUIDE

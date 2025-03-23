@@ -1,3 +1,8 @@
+---
+layout: default
+title: Revised Equipment Catalog
+---
+
 # ATOMIC TOMORROW ADVENTURES
 
 ## REVISED EQUIPMENT CATALOG
