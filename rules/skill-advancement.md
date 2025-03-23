@@ -49,7 +49,7 @@ Characters can attempt to use skills they don't formally possess at the base att
 
 Alternatively, characters can spend downtime between adventures learning new skills:
 
-1. Choose a skill and a suitable teacher or learning resource (generally this will cost about 2000 Cr and a month's time)
+1. Choose a skill and a suitable teacher or learning resource (generally this will cost about 200 Cr and a month's time)
 2. Begin with a base chance equal to attribute × 2
 3. After suitable training time (GM's discretion), gain the skill at attribute × 2 + 10%
 

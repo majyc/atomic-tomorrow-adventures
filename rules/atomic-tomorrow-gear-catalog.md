@@ -266,13 +266,13 @@ title: Atomic Tomorrow Gear Catalog
 | Item                     | Cost (Cr) | Notes                                                            |
 | ------------------------ | --------- | ---------------------------------------------------------------- |
 | Nerve Tonic              | 7.5/dose  | Immunity to stun weapons, 1-hour duration                        |
-| Reflex Booster           | 10/dose   | Enhanced reaction time (+20% initiative), 2-hour duration        |
+| Reflex Booster           | 1/dose   | Enhanced reaction time (+20% initiative), 2-hour duration        |
 | Brain Accelerator        | 15/dose   | Enhanced mental processing (+20% BRAINS skills), 4-hour duration |
 | Stabilizing Compound     | 12/dose   | Counteracts zero-G disorientation, 8-hour duration               |
-| Radiation Purge          | 20/dose   | Flushes radiation exposure, unpleasant side effects              |
-| Suspended Animation Drug | 50/dose   | Induces hibernation, 1-30 day duration                           |
+| Radiation Purge          | 2/dose   | Flushes radiation exposure, unpleasant side effects              |
+| Suspended Animation Drug | 5/dose   | Induces hibernation, 1-30 day duration                           |
 | Memorex                  | 25/dose   | Enhances memory formation/recall, 6-hour duration                |
-| Truth Serum XJ7          | 30/dose   | Reduces ability to lie, 30-minute duration, restricted           |
+| Truth Serum XJ7          | 3/dose   | Reduces ability to lie, 30-minute duration, restricted           |
 | Synth-Adrenaline         | 18/dose   | Emergency enhancer, +2 BRAWN for 5 minutes, crash after          |
 
 ## SPECIALIZED PLANETARY GEAR

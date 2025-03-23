@@ -34,7 +34,7 @@ During Vector Combat:
 
 ### DRAGONFLY-CLASS SCOUT (Mitsubishi Rocket Works)
 
-**Cost:** 1.25 MegaCr
+**Cost:** 1.25 KiloCr
 **Crew:** 2-3 (Pilot, Navigator/Scientist, optional Engineer)
 **Maneuverability:** Lightning (+40%)
 **Thrust:** TH 3
@@ -47,7 +47,7 @@ During Vector Combat:
 
 ### FIREFLY-CLASS COURIER (PanAm SpaceCraft Division)
 
-**Cost:** 0.9 MegaCr
+**Cost:** 0.9 KiloCr
 **Crew:** 1-2 (Pilot, optional Navigator)
 **Maneuverability:** Nimble (+20%)
 **Thrust:** TH 4
@@ -60,7 +60,7 @@ During Vector Combat:
 
 ### HUMMINGBIRD-CLASS RECONNAISSANCE CRAFT (Luna Orbital Industries)
 
-**Cost:** 1.8 MegaCr
+**Cost:** 1.8 KiloCr
 **Crew:** 2 (Pilot, Sensor Operator)
 **Maneuverability:** Lightning (+40%)
 **Thrust:** TH 3
@@ -75,7 +75,7 @@ During Vector Combat:
 
 ### VALKYRIE-CLASS PATROL SHIP (Olympus Mons Shipyards)
 
-**Cost:** 3.5 MegaCr
+**Cost:** 3.5 KiloCr
 **Crew:** 6 (Captain, Pilot, Navigator, Engineer, 2 Gunners)
 **Maneuverability:** Nimble (+20%)
 **Thrust:** TH 3
@@ -88,7 +88,7 @@ During Vector Combat:
 
 ### THUNDERBOLT-CLASS INTERCEPTOR (Solar Military Systems)
 
-**Cost:** 2.8 MegaCr
+**Cost:** 2.8 KiloCr
 **Crew:** 3 (Pilot, Engineer/Gunner, Navigator/Communications)
 **Maneuverability:** Lightning (+40%)
 **Thrust:** TH 4
@@ -101,7 +101,7 @@ During Vector Combat:
 
 ### PEACEKEEPER-CLASS HEAVY PATROL VESSEL (Mars Defense Collective)
 
-**Cost:** 5.2 MegaCr
+**Cost:** 5.2 KiloCr
 **Crew:** 10 (Full bridge crew plus marines)
 **Maneuverability:** Standard (0%)
 **Thrust:** TH 3
@@ -114,7 +114,7 @@ During Vector Combat:
 
 ### HAMMERHEAD-CLASS MISSILE FRIGATE (Ganymede Naval Construction)
 
-**Cost:** 7.8 MegaCr
+**Cost:** 7.8 KiloCr
 **Crew:** 12 (Full bridge crew plus weapons specialists)
 **Maneuverability:** Standard (0%)
 **Thrust:** TH 2
@@ -129,7 +129,7 @@ During Vector Combat:
 
 ### NOMAD-CLASS MERCHANT VESSEL (General Atomics Trading)
 
-**Cost:** 2.3 MegaCr
+**Cost:** 2.3 KiloCr
 **Crew:** 5 (Captain/Pilot, Navigator, Engineer, Communications/Cargo Master, Medic)
 **Maneuverability:** Standard (0%)
 **Thrust:** TH 2
@@ -143,7 +143,7 @@ During Vector Combat:
 
 ### PROSPECTOR-CLASS MINING VESSEL (Belt Resources Corporation)
 
-**Cost:** 3.1 MegaCr
+**Cost:** 3.1 KiloCr
 **Crew:** 7 (Captain, Pilot, Navigator, 2 Engineers, 2 Mining Specialists)
 **Maneuverability:** Standard (0%)
 **Thrust:** TH 2
@@ -157,7 +157,7 @@ During Vector Combat:
 
 ### DYNAMO-CLASS BULK HAULER (Lunar Freight Lines)
 
-**Cost:** 8.5 MegaCr
+**Cost:** 8.5 KiloCr
 **Crew:** 8-12 (Full bridge crew plus cargo specialists)
 **Maneuverability:** Sluggish (-20%)
 **Thrust:** TH 1
@@ -171,7 +171,7 @@ During Vector Combat:
 
 ### WYVERN-CLASS LUXURY LINER (PanAm Interplanetary)
 
-**Cost:** 12 MegaCr
+**Cost:** 12 KiloCr
 **Crew:** 15 (Bridge crew plus hospitality staff)
 **Passengers:** Up to 50 in luxury accommodations
 **Maneuverability:** Standard (0%)
@@ -187,7 +187,7 @@ During Vector Combat:
 
 ### PHOENIX-CLASS RESCUE SHIP (Interplanetary Rescue Service)
 
-**Cost:** 4.2 MegaCr
+**Cost:** 4.2 KiloCr
 **Crew:** 8 (Pilot, Navigator, 2 Engineers, Medical Officer, 3 Rescue Specialists)
 **Maneuverability:** Nimble (+20%)
 **Thrust:** TH 3
@@ -200,7 +200,7 @@ During Vector Combat:
 
 ### PEGASUS-CLASS SCIENTIFIC VESSEL (Luna University Research Division)
 
-**Cost:** 6.8 MegaCr
+**Cost:** 6.8 KiloCr
 **Crew:** 12 (Bridge crew plus scientific staff)
 **Maneuverability:** Standard (0%)
 **Thrust:** TH 2
@@ -213,7 +213,7 @@ During Vector Combat:
 
 ### STARBRINGER-CLASS LONG-RANGE EXPLORER (Ganymede Deep Space Initiative)
 
-**Cost:** 9.2 MegaCr
+**Cost:** 9.2 KiloCr
 **Crew:** 10 (Full bridge crew plus specialists)
 **Maneuverability:** Standard (0%)
 **Thrust:** TH 3
@@ -226,7 +226,7 @@ During Vector Combat:
 
 ### DAEDALUS-CLASS COLONY TRANSPORT (Terran Establishment Colony Initiative)
 
-**Cost:** 15 MegaCr
+**Cost:** 15 KiloCr
 **Crew:** 20 (Full bridge crew plus colony administration)
 **Colonists:** Up to 200 in hibernation capsules
 **Maneuverability:** Sluggish (-20%)
@@ -242,7 +242,7 @@ During Vector Combat:
 
 ### GUARDIAN-CLASS DEFENSE CRUISER (Terra Defense Fleet)
 
-**Cost:** 22 MegaCr
+**Cost:** 22 KiloCr
 **Crew:** 30 (Full bridge crew plus weapons teams and marines)
 **Maneuverability:** Standard (0%)
 **Thrust:** TH 2
@@ -255,7 +255,7 @@ During Vector Combat:
 
 ### VINDICATOR-CLASS BATTLESHIP (Mars Republic Navy)
 
-**Cost:** 35 MegaCr
+**Cost:** 35 KiloCr
 **Crew:** 50 (Full command crew plus weapon specialists, engineers, and marines)
 **Maneuverability:** Sluggish (-20%)
 **Thrust:** TH 1
@@ -270,7 +270,7 @@ During Vector Combat:
 
 ### WASP-CLASS ASSAULT SHUTTLE (Solar Marine Corps)
 
-**Cost:** 1.1 MegaCr
+**Cost:** 1.1 KiloCr
 **Crew:** 2 (Pilot, Gunner/Engineer)
 **Troops:** 10 fully-equipped marines
 **Maneuverability:** Nimble (+20%)
@@ -284,7 +284,7 @@ During Vector Combat:
 
 ### OSPREY-CLASS ELECTRONIC WARFARE VESSEL (Terran Intelligence Service)
 
-**Cost:** 5.6 MegaCr
+**Cost:** 5.6 KiloCr
 **Crew:** 8 (Bridge crew plus electronic warfare specialists)
 **Maneuverability:** Nimble (+20%)
 **Thrust:** TH 3
@@ -299,7 +299,7 @@ During Vector Combat:
 
 ### METEOR-CLASS RACING ROCKET (Moonbased Racing Consortium)
 
-**Cost:** 0.7 MegaCr
+**Cost:** 0.7 KiloCr
 **Crew:** 1-2 (Pilot, optional Engineer)
 **Maneuverability:** Lightning (+40%)
 **Thrust:** TH 5
@@ -312,7 +312,7 @@ During Vector Combat:
 
 ### SPARROW-CLASS FAMILY CRUISER (General Atomics Consumer Division)
 
-**Cost:** 0.4 MegaCr
+**Cost:** 0.4 KiloCr
 **Crew:** 1 (Pilot)
 **Passengers:** Up to 6
 **Maneuverability:** Standard (0%)
@@ -326,7 +326,7 @@ During Vector Combat:
 
 ### SWIFT-CLASS PERSONAL TRANSPORT (PanAm Personal Division)
 
-**Cost:** 0.25 MegaCr
+**Cost:** 0.25 KiloCr
 **Crew:** 1 (Pilot)
 **Passengers:** Up to 3
 **Maneuverability:** Nimble (+20%)
