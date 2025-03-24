@@ -2,7 +2,6 @@
 layout: default
 title: Signature Gadget Generator
 ---
-
 # SIGNATURE GADGET GENERATOR
 
 Roll once on each column to determine your retro-futuristic device's name, then add your base item (Pistol, Analyzer, Sword, etc.) and check the corresponding effects.
@@ -80,7 +79,7 @@ Roll on the Signature Gadget Generator table above.
 
 ### 3. Driving Motivation
 
-Roll 1d8 or select:
+Roll 1d10 or select:
 
 1. **Redemption** - You need to make amends for a past mistake
 2. **Recognition** - You're determined to make your mark on the galaxy
@@ -90,6 +89,8 @@ Roll 1d8 or select:
 6. **Fortune** - You need credits, and plenty of them, for a specific purpose
 7. **Protection** - Someone or something needs your safeguarding
 8. **Mystery** - You're searching for answers to a personal enigma
+9. **Mission** - You have a lofty task or goal that you must complete
+10. **Thirst for Adventure** - You're an adrenaline junkie
 
 ### 4. Pulp Complication
 

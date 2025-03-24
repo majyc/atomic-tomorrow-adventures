@@ -83,22 +83,22 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 
 ### CLEVER/SMART EPITHETS
 
-| Epithet                  | Primary Benefit                                                                            | Benefit                                                                                                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
-| **Brilliant**      | +2 SAVVY                                                                                   | When examining clues or evidence, you can make <br />correlations others miss (+20% to deduction and analysis)                    |
-| **Ingenious**      | Can create impromptu tools from available materials on any successful SAVVY roll           | Your jury-rigged solutions ignore the first Special Failure, <br />breaking only on Critical Failures or a second Special Failure |
-| **Silver-Tongued** | +2 CHARM                                                                                   | Persuasion attempts that succeed create lasting belief <br />changes rather than temporary compliance                             |
-| **Enigmatic**      | People find it difficult to read you (-20% to others' attempts to analyze your intentions) | Strangers often confide in you, sharing secrets they normally<br /> wouldn't                                                      |
-| **Veteran**        | +1 GRIT, +1 SAVVY                                                                          | Better situational awareness; you can detect ambushes on <br />any successful roll, not just critical success                     |
+| Epithet                  | Primary Benefit                                                                            | Benefit                                                                                                                          |
+| ------------------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Brilliant**      | +2 SAVVY                                                                                   | When examining clues or evidence, you can make<br />correlations others miss (+20% to deduction and analysis)                    |
+| **Ingenious**      | Can create impromptu tools from available materials on any successful SAVVY roll           | Your jury-rigged solutions ignore the first Special Failure,<br />breaking only on Critical Failures or a second Special Failure |
+| **Silver-Tongued** | +2 CHARM                                                                                   | Persuasion attempts that succeed create lasting belief<br />changes rather than temporary compliance                             |
+| **Enigmatic**      | People find it difficult to read you (-20% to others' attempts to analyze your intentions) | Strangers often confide in you, sharing secrets they normally<br /> wouldn't                                                     |
+| **Veteran**        | +1 GRIT, +1 SAVVY                                                                          | Better situational awareness; you can detect ambushes on<br />any successful roll, not just critical success                     |
 
 ### CHARMING EPITHETS
 
-| Epithet               | Primary Benefit    | Benefit                                                                                                                                                                                                                                                                                                |
-| --------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Plucky**      | +1 CHARM, +1 NERVE | In any Social Contest trying to intimidate, frighten or overawe you, you reduce the degree of success score against you by 1.                                                                                                                                                                          |
-| **Seductive**   | +1 CHARM, +1 GUILE | In Seduction Social Contests, Opposed wraps back around to Receptive (skipping Convinced). It's still not mind control,<br />and NPCs can want you and still betray you or refuse you out of loyalty or scruples.                                                                                      |
-| **Stunning**    | +2 CHARM           | You command attention. You are noticed wherever you go, unless heavily disguised. Villains prefer to capture or spare you<br />rather than mar your beauty.                                                                                                                                            |
-| **Suave**       | +1 CHARM, +1 SAVVY | Special and Critical failures on Social skills become ordinary failures.                                                                                                                                                                                                                               |
+| Epithet               | Primary Benefit    | Benefit                                                                                                                                                                                                                           |
+| --------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Plucky**      | +1 CHARM, +1 NERVE | In any Social Contest trying to intimidate, frighten or overawe you, you reduce the degree of success score against you by 1.                                                                                                     |
+| **Seductive**   | +1 CHARM, +1 GUILE | In Seduction Social Contests, Opposed wraps back around to Receptive (skipping Convinced). It's still not mind control,<br />and NPCs can want you and still betray you or refuse you out of loyalty or scruples.                 |
+| **Stunning**    | +2 CHARM           | You command attention. You are noticed wherever you go, unless heavily disguised. Villains prefer to capture or spare you<br />rather than mar your beauty.                                                                       |
+| **Suave**       | +1 CHARM, +1 SAVVY | Special and Critical failures on Social skills become ordinary failures.                                                                                                                                                          |
 | **Well-Heeled** | +1 CHARM, GUILE    | When failing a roll that could be resolved with money, you may immediately make a GUILE check. Success means you find a way to throw credits at the problem and turn your failure into a success - but at double the normal cost. |
 
 *Choose one epithet that best represents your character's extraordinary quality.*
@@ -107,96 +107,105 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 
 Your profession represents your training, expertise, and the career that has shaped your capabilities. It determines your primary skill set and starting equipment.
 
-### PROFESSION CATEGORIES
+## ACES & PILOTS
 
-#### EXPLORERS & SCOUTS
+| Profession               | Skills                                                                                                                                                                                 |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ROCKET JOCKEY**  | Piloting (Spacecraft) (REFLEX) +40%, Technology (Ship Systems) (SAVVY) +20%, Navigation (Space) (SAVVY) +10%, Combat (Pistols) (REFLEX) +10%                         |
+| **ASTROGATOR**     | Navigation (Space) (SAVVY) +40%, Academics (Mathematics) (FLEX) +20%, Science (Astronomy) (SAVVY) +10%, Computer Systems (Programming) (SAVVY) +10%                  |
+| **ASTRO RACER**    | Piloting (Racing) (REFLEX) +40%, Repair (Vehicle) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Athletics (Reflexes) (REFLEX) +10%                      |
+| **ORBITAL JUMPER** | Athletics (Zero-G Movement) (REFLEX) +40%, Athletics (Jumping) (BRAWN) +20%, Technology (Vacuum Equipment) (SAVVY) +10%, Perception (Spatial Awareness) (SAVVY) +10% |
+| **STUNT PILOT**    | Piloting (Aircraft) (REFLEX) +40%, Performance (Showmanship) (CHARM) +20%, Repair (Vehicle) (SAVVY) +10%, Perception (Threat Assessment) (SAVVY) +10%                |
 
-- **SCOUT**: First into unknown territory, survival expert
-- **TRAILBLAZER**: Pathfinder and mapping specialist
-- **RUIN DELVER**: Investigator of ancient structures and artifacts
-- **PLANETARY SCOUT**: Expert in surveying new worlds
-- **XENO-TRACKER**: Specialist in tracking alien life forms
+## SCIENTISTS & INNOVATORS
 
-#### ACES & PILOTS
+| Profession              | Skills                                                                                                                                                                                |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BRAINIAC**      | Science (Choose Specialty) (SAVVY) +40%, Investigation (Research) (SAVVY) +20%, Technology (Laboratory Equipment) (SAVVY) +10%, Academics (Mathematics) (FLEX) +10% |
+| **ATOMICIST**     | Science (Physics) (SAVVY) +40%, Engineering (Atomic) (SAVVY) +20%, Engineering (Structural) (SAVVY) +10%, Academics (Mathematics) (FLEX) +10%                       |
+| **XENOBIOLOGIST** | Science (Xenobiology) (SAVVY) +40%, Medicine (Field Medicine) (SAVVY) +20%, Perception (Observation) (SAVVY) +10%, Technology (Sampling Equipment) (SAVVY) +10%     |
+| **MAD GENIUS**    | Engineering (Experimental) (SAVVY) +40%, Science (Theoretical Physics) (SAVVY) +20%, Deception (Misdirection) (GUILE) +10%, Perception (Intuition) (SAVVY) +10%     |
+| **TECH WIZARD**   | Repair (Improvised) (SAVVY) +40%, Technology (Electronics) (SAVVY) +20%, Engineering (Mechanical) (SAVVY) +10%, Perception (Technical Intuition) (SAVVY) +10%       |
 
-- **ROCKET JOCKEY**: Expert spacecraft pilot
-- **ASTROGATOR**: Navigation and stellar cartography specialist
-- **ASTRO RACER**: Competitive spacecraft racing professional
-- **ORBITAL JUMPER**: Zero-G movement specialist
-- **STUNT PILOT**: Expert in aerial acrobatics
+## EXPLORERS & SCOUTS
 
-#### SCIENTISTS & INNOVATORS
+| Profession                | Skills                                                                                                                                                                                      |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SCOUT**           | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Perception (Environmental Awareness) (SAVVY) +10%, Combat (Rifles) (REFLEX) +10%         |
+| **TRAILBLAZER**     | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Technology (Cartography) (SAVVY) +10%, Perception (Environmental Awareness) (SAVVY) +10% |
+| **RUIN DELVER**     | Academics (Archaeology) (FLEX) +40%, Academics (Ancient Languages) (FLEX) +20%, Perception (Trap Detection) (SAVVY) +10%, Academics (History) (FLEX) +10%                 |
+| **PLANETARY SCOUT** | Investigation (Surveying) (SAVVY) +40%, Science (Geology) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Stealth (Camouflage) (REFLEX) +10%                   |
+| **XENO-TRACKER**    | Investigation (Tracking) (SAVVY) +40%, Animal Handling (Alien Creatures) (CHARM) +20%, Stealth (Camouflage) (REFLEX) +10%, Survival (Wilderness) (GRIT) +10%              |
 
-- **BRAINIAC**: Broad scientific knowledge and expertise
-- **ATOMICIST**: Specialist in atomic energy and physics
-- **XENOBIOLOGIST**: Expert in alien life forms
-- **MAD GENIUS**: Unorthodox inventor and theorist
-- **TECH WIZARD**: Master of improvised technology
+## SOLDIERS & ENFORCERS
 
-#### COMMERCE & TRADE
+| Profession              | Skills                                                                                                                                                                                        |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SPACE RANGER**  | Security (Law Enforcement) (SAVVY) +40%, Investigation (Crime Scene Analysis) (SAVVY) +20%, Combat (Rifles) (REFLEX) +10%, Academics (Regulations) (FLEX) +10%              |
+| **SOLAR MARINE**  | Combat (Heavy Weapons) (REFLEX) +40%, Combat (Bladed Weapons) (REFLEX) +20%, Athletics (Strength) (BRAWN) +10%, Survival (Combat Zone) (GRIT) +10%                          |
+| **BOUNTY HUNTER** | Investigation (Tracking) (SAVVY) +40%, Streetwise (Information Gathering) (GUILE) +20%, Combat (Pistols) (REFLEX) +10%, Persuasion (Intimidation) (CHARM) +10%              |
+| **MERCENARY**     | Combat (Rifles) (REFLEX) +40%, Persuasion (Negotiation) (CHARM) +20%, Tactics (Combat) (SAVVY) +10%, Survival (Combat Zone) (GRIT) +10%                                     |
+| **BODYGUARD**     | Perception (Threat Assessment) (SAVVY) +40%, Combat (Unarmed Combat) (REFLEX) +20%, Perception (Situational Awareness) (SAVVY) +10%, Security (VIP Protection) (SAVVY) +10% |
 
-- **SPACE TRADER**: Interplanetary merchant and commerce expert
-- **CARTEL BROKER**: Negotiator for powerful commercial interests
-- **INSURANCE ADJUSTER**: Risk evaluator and claims investigator
-- **ADVENTURE CAPITALIST**: Investor in high-risk, high-reward ventures
-- **EXOTIC DEALER**: Specialist in rare and unusual goods
+## MECHANICS & ENGINEERS
 
-#### SOLDIERS & ENFORCERS
+| Profession              | Skills                                                                                                                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WRENCH MONKEY** | Repair (Ship Systems) (SAVVY) +40%, Technology (Diagnostics) (SAVVY) +20%, Engineering (Mechanical) (SAVVY) +10%, Streetwise (Scrounging) (GUILE) +10%                    |
+| **ATOMECH**       | Engineering (Atomic) (SAVVY) +40%, Technology (Radiation Equipment) (SAVVY) +20%, Engineering (Power Systems) (SAVVY) +10%, Repair (Ship Systems) (SAVVY) +10%            |
+| **GADGETEER**     | Engineering (Experimental) (SAVVY) +40%, Technology (Electronics) (SAVVY) +20%, Combat (Exotic Weapons) (REFLEX) +10%, Streetwise (Scrounging) (GUILE) +10%               |
+| **SALVAGER**      | Repair (Ship Systems) (SAVVY) +40%, Technology (Ship Systems) (SAVVY) +20%, Streetwise (Scrounging) (GUILE) +10%, Persuasion (Negotiation) (CHARM) +10%                   |
+| **ROBOTICIST**    | Engineering (Robotics) (SAVVY) +40%, Technology (Positronic Systems) (SAVVY) +20%, Engineering (Mechanical) (SAVVY) +10%, Animal Handling (Robot Psychology) (CHARM) +10% |
 
-- **SPACE RANGER**: Law enforcement officer
-- **SOLAR MARINE**: Military combat specialist
-- **BOUNTY HUNTER**: Professional fugitive tracker
-- **MERCENARY**: Soldier for hire
-- **BODYGUARD**: Personal protection specialist
+## SCOUNDRELS & OPPORTUNISTS
 
-#### MECHANICS & ENGINEERS
+| Profession            | Skills                                                                                                                                                                      |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SPACE RAT**   | Streetwise (Scrounging) (GUILE) +40%, Deception (Bluffing) (GUILE) +20%, Stealth (Hiding) (REFLEX) +10%, Social (Rumor Collection) (CHARM) +10%           |
+| **GRIFTER**     | Deception (Con Artistry) (GUILE) +40%, Perception (Reading People) (SAVVY) +20%, Persuasion (Fast Talk) (CHARM) +10%, Deception (Disguise) (GUILE) +10%   |
+| **SMUGGLER**    | Deception (Misdirection) (GUILE) +40%, Piloting (Spacecraft) (REFLEX) +20%, Navigation (Secret Routes) (SAVVY) +10%, Streetwise (Contraband) (GUILE) +10% |
+| **CAT BURGLAR** | Security (Lock Picking) (SAVVY) +40%, Stealth (Silent Movement) (REFLEX) +20%, Athletics (Climbing) (BRAWN) +10%, Stealth (Hiding) (REFLEX) +10%          |
+| **GAMBLER**     | Science (Probability) (SAVVY) +40%, Deception (Bluffing) (GUILE) +20%, Perception (Reading People) (SAVVY) +10%, Social (Etiquette) (CHARM) +10%          |
 
-- **WRENCH MONKEY**: Spacecraft repair specialist
-- **ATOMECH**: Atomic engine technician
-- **GADGETEER**: Creator of specialized devices
-- **SALVAGER**: Expert in recovering and repurposing technology
-- **ROBOTICIST**: Robot programmer and engineer
+## PSYCHICS & ESPERS
 
-#### SCOUNDRELS & OPPORTUNISTS
+| Profession            | Skills                                                                                                                                                                     |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **MENTALIST**   | Psi (Telepathy) (NERVE) +40%, Psi (Mental Defense) (NERVE) +20%, Survival (Mental Discipline) (GRIT) +10%, Science (Psychology) (SAVVY) +10%             |
+| **TELEKINETIC** | Psi (Psychokinesis) (NERVE) +40%, Athletics (Fine Control) (REFLEX) +20%, Survival (Mental Discipline) (GRIT) +10%, Science (Psi Theory) (SAVVY) +10%    |
+| **PRECOG**      | Psi (Precognition) (NERVE) +40%, Perception (Intuition) (SAVVY) +20%, Science (Probability) (SAVVY) +10%, Academics (Dream Interpretation) (FLEX) +10%   |
+| **EMPATH**      | Psi (Empathy) (NERVE) +40%, Survival (Mental Discipline) (GRIT) +20%, Perception (Reading People) (SAVVY) +10%, Persuasion (Counseling) (CHARM) +10%     |
+| **WILD TALENT** | Psi (Choose Specialty) (NERVE) +40%, Survival (Mental Discipline) (GRIT) +20%, Psi (Energy Manipulation) (NERVE) +10%, Science (Psi Theory) (SAVVY) +10% |
 
-- **SPACE RAT**: Street-smart survivor
-- **GRIFTER**: Professional con artist
-- **SMUGGLER**: Transporter of illegal goods
-- **CAT BURGLAR**: Professional thief
-- **GAMBLER**: Professional risk-taker
+## DIPLOMATS & COMMUNICATORS
 
-#### PSYCHICS & ESPERS
+| Profession              | Skills                                                                                                                                                                              |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **XENO-LINGUIST** | Academics (Linguistics) (FLEX) +40%, Xenology (Alien Cultures) (FLEX) +20%, Science (Pattern Recognition) (SAVVY) +10%, Social (Diplomatic Protocol) (CHARM) +10% |
+| **NEGOTIATOR**    | Persuasion (Negotiation) (CHARM) +40%, Perception (Reading People) (SAVVY) +20%, Social (Mediation) (CHARM) +10%, Academics (Contract Law) (FLEX) +10%            |
+| **AMBASSADOR**    | Social (Diplomacy) (CHARM) +40%, Academics (Politics) (FLEX) +20%, Social (Etiquette) (CHARM) +10%, Perception (Cultural Sensitivity) (SAVVY) +10%                |
+| **NEWSHOUND**     | Investigation (Interviewing) (SAVVY) +40%, Persuasion (Fast Talk) (CHARM) +20%, Academics (Writing) (FLEX) +10%, Artistry (Photography) (FLEX) +10%               |
+| **SOCIALITE**     | Social (Networking) (CHARM) +40%, Social (Etiquette) (CHARM) +20%, Streetwise (Rumor Collection) (GUILE) +10%, Social (Fashion Sense) (CHARM) +10%                |
 
-- **MENTALIST**: Telepath and mind reader
-- **TELEKINETIC**: Moves objects with mental power
-- **PRECOG**: Sees potential futures
-- **EMPATH**: Senses and influences emotions
-- **WILD TALENT**: Unpredictable psychic abilities
+## MEDICAL EXPERTS
 
-#### DIPLOMATS & COMMUNICATORS
+| Profession               | Skills                                                                                                                                                                                 |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SAWBONES**       | Medicine (Emergency Medicine) (SAVVY) +40%, Perception (Triage) (SAVVY) +20%, Medicine (Improvised Treatment) (SAVVY) +10%, Persuasion (Bedside Manner) (CHARM) +10% |
+| **XENODOC**        | Medicine (Xenomedicine) (SAVVY) +40%, Science (Comparative Physiology) (SAVVY) +20%, Medicine (Diagnostics) (SAVVY) +10%, Medicine (Surgery) (SAVVY) +10%            |
+| **PSYCHIATRIST**   | Medicine (Psychiatry) (SAVVY) +40%, Science (Behavioral Science) (SAVVY) +20%, Persuasion (Counseling) (CHARM) +10%, Medicine (Medication) (SAVVY) +10%              |
+| **COMBAT MEDIC**   | Medicine (Battlefield Medicine) (SAVVY) +40%, Perception (Combat Awareness) (SAVVY) +20%, Medicine (Triage) (SAVVY) +10%, Medicine (Emergency Medicine) (SAVVY) +10% |
+| **LIFE SCIENTIST** | Science (Biology) (SAVVY) +40%, Science (Chemistry) (SAVVY) +20%, Investigation (Research Methodology) (SAVVY) +10%, Technology (Laboratory Equipment) (SAVVY) +10%  |
 
-- **XENO-LINGUIST**: Alien language specialist
-- **NEGOTIATOR**: Professional deal-maker
-- **AMBASSADOR**: Official representative
-- **NEWSHOUND**: Journalist and investigator
-- **SOCIALITE**: Connected networker
+## COMMERCE & TRADE
 
-#### MEDICAL EXPERTS
-
-- **SAWBONES**: Emergency medical practitioner
-- **XENODOC**: Specialist in alien physiology
-- **PSYCHIATRIST**: Mental health specialist
-- **COMBAT MEDIC**: Battlefield medicine expert
-- **LIFE SCIENTIST**: Biological researcher
-
-#### SPECIALIZED ROLES
-
-- **PROSPECTOR**: Mineral and resource hunter
-- **ASTEROID MINER**: Extracts resources from asteroids
-- **CHRONICLER**: Records events and knowledge
-- **TERRAFORM TECH**: Planetary environmental engineer
-- **ENTERTAINER**: Professional performer
-- **DILETTANTE**: Consummate dabbler
+| Profession                     | Skills                                                                                                                                                                                           |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **SPACE TRADER**         | Persuasion (Negotiation) (CHARM) +40%, Trade (Market Analysis) (FLEX) +20%, Trade (Appraisal) (FLEX) +10%, Social (Networking) (CHARM) +10%                                    |
+| **CARTEL BROKER**        | Streetwise (Black Market) (GUILE) +40%, Persuasion (Intimidation) (CHARM) +20%, Perception (Threat Assessment) (SAVVY) +10%, Navigation (Secret Routes) (SAVVY) +10%           |
+| **INSURANCE ADJUSTER**   | Investigation (Crime Scene Analysis) (SAVVY) +40%, Perception (Risk Assessment) (SAVVY) +20%, Deception (Forgery Detection) (GUILE) +10%, Academics (Contract Law) (FLEX) +10% |
+| **ADVENTURE CAPITALIST** | Trade (Business) (FLEX) +40%, Investigation (Treasure Hunting) (SAVVY) +20%, Persuasion (Negotiation) (CHARM) +10%, Trade (Resource Evaluation) (FLEX) +10%                    |
+| **EXOTIC DEALER**        | Xenology (Alien Artifacts) (FLEX) +40%, Xenology (Alien Cultures) (FLEX) +20%, Investigation (Authentication) (SAVVY) +10%, Social (Discretion) (CHARM) +10%                   |
 
 *Choose one profession that best represents your character's career and expertise.*
 
@@ -227,33 +236,33 @@ Your background reflects your upbringing, education, and personal history before
 
 ### BACKGROUND SELECTION
 
-| Background                       | Description                                              | Attribute Effects   | Additional Skills                                                                                             | Resources & Connections                                                                                                                                                                                                                 |
-| -------------------------------- | -------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **MILITARY FAMILY**        | Raised in the discipline of service                      | GRIT +1, CHARM -1   | Tactics +10%, Military Protocol +10%, Firearms +5%                                                            | Military contacts, access to surplus equipment                                                                                                                                                                                          |
-| **MERCHANT CLAN**          | Raised in the trading business                           | CHARM +1, GRIT -1   | Negotiation +10%, Market Analysis +10%, Appraisal +5%                                                         | Trading contacts, credit line with merchant houses                                                                                                                                                                                      |
-| **FRONTIER HOMESTEAD**     | Raised on the edges of civilization                      | GRIT +1, CHARM -1   | Survival +10%, Repair +10%, Animal Handling +5%                                                               | Wilderness skills, network of frontier contacts                                                                                                                                                                                         |
-| **ACADEMIC TRAINING**      | Formal education in institutions                         | SAVVY +1, BRAWN -1  | Research +10%, Mathematics +10%, History +5%                                                                  | Academic credentials, university connections                                                                                                                                                                                            |
-| **STREET URCHIN**          | Raised in urban underbellies                             | GUILE +1, CHARM -1  | Streetwise +10%, Theft +10%, Urban Navigation +5%                                                             | Criminal contacts, knowledge of urban secrets                                                                                                                                                                                           |
-| **CORPORATE UPBRINGING**   | Raised in corporate culture                              | SAVVY +1, NERVE -1  | Business +10%, Computer Operation +10%, Corporate Politics +5%                                                | Corporate connections, understanding of business structures                                                                                                                                                                             |
-| **ARISTOCRATIC FAMILY**    | Born to privilege and power                              | CHARM +1, GRIT -1   | Etiquette +10%, Politics +10%, Art Appreciation +5%                                                           | Wealthy connections, social status, financial resources                                                                                                                                                                                 |
-| **SPACER FAMILY**          | Raised aboard ships and stations                         | REFLEX +1, BRAWN -1 | Zero-G Operations +10%, Ship Systems +10%, Vacuum Survival +5%                                                | Network of spacers, familiarity with various vessels                                                                                                                                                                                    |
-| **RELIGIOUS ORDER**        | Raised in spiritual tradition                            | NERVE +1, GUILE -1  | Theology +10%, Meditation +10%, Ancient Languages +5%                                                         | Religious contacts, respected status in religious communities                                                                                                                                                                           |
-| **LABORATORY SUBJECT**     | Subject of scientific experimentation                    | GRIT +1, CHARM -1   | Medical Knowledge +10%, Laboratory Procedures +10%, Psychology +5%                                            | Unique physical capabilities, connections to scientific community                                                                                                                                                                       |
-| **MEGACITY NATIVE**        | Raised in the towering urban centers of Earth            | SAVVY +1, GRIT -1   | Urban Navigation +10%, Technology (Infrastructure) +10%, Social (Crowd Management) +5%                        | Knowledge of urban shortcuts, contacts in city services, access to hard-to-find goods                                                                                                                                                   |
-| **POLITICAL DYNASTY**      | Born into a family of political influence                | CHARM +1, NERVE -1  | Politics +10%, Persuasion (Public Speaking) +10%, History +5%                                                 | Political connections, family name recognition, access to restricted information                                                                                                                                                        |
-| **UNDERWORLD FAMILY**      | Raised in organized crime or black market circles        | GUILE +1, SAVVY -1  | Streetwise +10%, Deception +10%, Security (Alarm Systems) +5%                                                 | Criminal contacts, knowledge of illegal operations, access to black market goods                                                                                                                                                        |
-| **SHOWBIZ FAMILY**         | Raised in the entertainment industry                     | CHARM +1, NERVE -1  | Performance +10%, Social (Networking) +10%, Artistry +5%                                                      | Media contacts, performance venues, celebrity recognition                                                                                                                                                                               |
-| **REGRESSED/BARBARIAN**    | Raised in an isolated community rejecting technology     | BRAWN +1, SAVVY -1  | Survival +10%, Combat (Primitive Weapons) +10%, Nature Lore +5%                                               | Extraordinary physical capabilities, non-technological survival skills, tribe connections                                                                                                                                               |
-| **COLONIST**               | Raised in a newly established off-world colony           | GRIT +1, CHARM -1   | Resource Management +10%, Technical Improvisation +10%, Community Relations +5%                               | Colony network, self-sufficiency skills, adaptability to harsh conditions                                                                                                                                                               |
-| **REFUGEE**                | Displaced from home by disaster or conflict              | NERVE +1, CHARM -1  | Survival (Urban) +10%, Bartering +10%, Situational Awareness +5%                                              | Network of fellow refugees, ability to adapt to new environments, resource acquisition skills                                                                                                                                           |
-| **SHIP-BORN**              | Born and raised on long-voyage spacecraft                | REFLEX +1, BRAWN -1 | Ship Systems +10%, Navigation (Spacecraft) +10%, Social (Confined Communities) +5%                            | Extensive knowledge of ship operations, contacts among space transport crews, familiarity with multiple ports                                                                                                                           |
-| **NOBLE HOUSE**            | Member of an established aristocratic lineage            | CHARM +1, GRIT -1   | Etiquette +10%, History (Lineages) +10%, Social (Influence) +5%                                               | Family wealth and prestige, political connections, access to exclusive venues                                                                                                                                                           |
-| **ATOMICORP EMPLOYEE**     | Raised in corporate atomic energy sector                 | SAVVY +1, NERVE -1  | Science (Nuclear Physics) +10%, Engineering (Atomic) +10%, Corporate Politics +5%                             | Corporate security clearance, technical knowledge of atomic systems, industry contacts                                                                                                                                                  |
-| **ORBITAL HABITAT**        | Raised in artificial orbital colonies                    | REFLEX +1, BRAWN -1 | Zero-G Operations +10%, Engineering (Life Support) +10%, Psychology (Confined Spaces) +5%                     | Understanding of habitat operations, orbital community contacts, recycling expertise                                                                                                                                                    |
-| **VENUSIAN CLOUD DRIFTER** | Raised in nomadic airships above Venus                   | REFLEX +1, SAVVY -1 | Piloting (Airship) +10%, Survival (High Atmosphere) +10%, Meteorology +5%                                     | Navigation in cloud layers, contacts among nomadic communities, unique cultural knowledge                                                                                                                                               |
-| **BELT PROSPECTOR FAMILY** | Raised by asteroid miners and resource hunters           | GRIT +1, CHARM -1   | Mineral Identification +10%, Zero-G Operations +10%, Jury-Rigging +5%                                         | Knowledge of valuable asteroid locations, assessment of mineral worth, mining contact network                                                                                                                                           |
-| **STATION BRAT**           | Raised on a space station with minimal adult supervision | REFLEX +1, NERVE -1 | Zero-G Acrobatics +10%, Station Layouts +10%, Scrounging +5%                                                  | Knowledge of station maintenance shafts and hidden areas, station crew contacts, improvisation skills                                                                                                                                   |
-| **FILTHY RICH**            | Born with a platinum spoon in your mouth                 | +1 CHARM, -1 GRIT   | Business +15%, Social (Etiquette) +15%, Persuasion (Negotiation) +10%, Streetwise (Information Gathering) +5% | When making a purchase over $100 credits, roll percentile dice. On a roll ending in 0 or 5, the item is acquired at half price due to family connections or bulk discount arrangements. |
+| Background                       | Description                                              | Attribute Effects   | Additional Skills                                                                                             | Resources & Connections                                                                                                                                                                                                                      |
+| -------------------------------- | -------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **MILITARY FAMILY**        | Raised in the discipline of service                      | GRIT +1, CHARM -1   | Tactics +10%, Military Protocol +10%, Firearms +5%                                                            | Military contacts, access to surplus equipment                                                                                                                                                                                               |
+| **MERCHANT CLAN**          | Raised in the trading business                           | CHARM +1, GRIT -1   | Negotiation +10%, Market Analysis +10%, Appraisal +5%                                                         | Trading contacts, credit line with merchant houses                                                                                                                                                                                           |
+| **FRONTIER HOMESTEAD**     | Raised on the edges of civilization                      | GRIT +1, CHARM -1   | Survival +10%, Repair +10%, Animal Handling +5%                                                               | Wilderness skills, network of frontier contacts                                                                                                                                                                                              |
+| **ACADEMIC TRAINING**      | Formal education in institutions                         | SAVVY +1, BRAWN -1  | Research +10%, Mathematics +10%, History +5%                                                                  | Academic credentials, university connections                                                                                                                                                                                                 |
+| **STREET URCHIN**          | Raised in urban underbellies                             | GUILE +1, CHARM -1  | Streetwise +10%, Theft +10%, Urban Navigation +5%                                                             | Criminal contacts, knowledge of urban secrets                                                                                                                                                                                                |
+| **CORPORATE UPBRINGING**   | Raised in corporate culture                              | SAVVY +1, NERVE -1  | Business +10%, Computer Operation +10%, Corporate Politics +5%                                                | Corporate connections, understanding of business structures                                                                                                                                                                                  |
+| **ARISTOCRATIC FAMILY**    | Born to privilege and power                              | CHARM +1, GRIT -1   | Etiquette +10%, Politics +10%, Art Appreciation +5%                                                           | Wealthy connections, social status, financial resources                                                                                                                                                                                      |
+| **SPACER FAMILY**          | Raised aboard ships and stations                         | REFLEX +1, BRAWN -1 | Zero-G Operations +10%, Ship Systems +10%, Vacuum Survival +5%                                                | Network of spacers, familiarity with various vessels                                                                                                                                                                                         |
+| **RELIGIOUS ORDER**        | Raised in spiritual tradition                            | NERVE +1, GUILE -1  | Theology +10%, Meditation +10%, Ancient Languages +5%                                                         | Religious contacts, respected status in religious communities                                                                                                                                                                                |
+| **LABORATORY SUBJECT**     | Subject of scientific experimentation                    | GRIT +1, CHARM -1   | Medical Knowledge +10%, Laboratory Procedures +10%, Psychology +5%                                            | Unique physical capabilities, connections to scientific community                                                                                                                                                                            |
+| **MEGACITY NATIVE**        | Raised in the towering urban centers of Earth            | SAVVY +1, GRIT -1   | Urban Navigation +10%, Technology (Infrastructure) +10%, Social (Crowd Management) +5%                        | Knowledge of urban shortcuts, contacts in city services, access to hard-to-find goods                                                                                                                                                        |
+| **POLITICAL DYNASTY**      | Born into a family of political influence                | CHARM +1, NERVE -1  | Politics +10%, Persuasion (Public Speaking) +10%, History +5%                                                 | Political connections, family name recognition, access to restricted information                                                                                                                                                             |
+| **UNDERWORLD FAMILY**      | Raised in organized crime or black market circles        | GUILE +1, SAVVY -1  | Streetwise +10%, Deception +10%, Security (Alarm Systems) +5%                                                 | Criminal contacts, knowledge of illegal operations, access to black market goods                                                                                                                                                             |
+| **SHOWBIZ FAMILY**         | Raised in the entertainment industry                     | CHARM +1, NERVE -1  | Performance +10%, Social (Networking) +10%, Artistry +5%                                                      | Media contacts, performance venues, celebrity recognition                                                                                                                                                                                    |
+| **REGRESSED/BARBARIAN**    | Raised in an isolated community rejecting technology     | BRAWN +1, SAVVY -1  | Survival +10%, Combat (Primitive Weapons) +10%, Nature Lore +5%                                               | Extraordinary physical capabilities, non-technological survival skills, tribe connections                                                                                                                                                    |
+| **COLONIST**               | Raised in a newly established off-world colony           | GRIT +1, CHARM -1   | Resource Management +10%, Technical Improvisation +10%, Community Relations +5%                               | Colony network, self-sufficiency skills, adaptability to harsh conditions                                                                                                                                                                    |
+| **REFUGEE**                | Displaced from home by disaster or conflict              | NERVE +1, CHARM -1  | Survival (Urban) +10%, Bartering +10%, Situational Awareness +5%                                              | Network of fellow refugees, ability to adapt to new environments, resource acquisition skills                                                                                                                                                |
+| **SHIP-BORN**              | Born and raised on long-voyage spacecraft                | REFLEX +1, BRAWN -1 | Ship Systems +10%, Navigation (Spacecraft) +10%, Social (Confined Communities) +5%                            | Extensive knowledge of ship operations, contacts among space transport crews, familiarity with multiple ports                                                                                                                                |
+| **NOBLE HOUSE**            | Member of an established aristocratic lineage            | CHARM +1, GRIT -1   | Etiquette +10%, History (Lineages) +10%, Social (Influence) +5%                                               | Family wealth and prestige, political connections, access to exclusive venues                                                                                                                                                                |
+| **ATOMICORP EMPLOYEE**     | Raised in corporate atomic energy sector                 | SAVVY +1, NERVE -1  | Science (Nuclear Physics) +10%, Engineering (Atomic) +10%, Corporate Politics +5%                             | Corporate security clearance, technical knowledge of atomic systems, industry contacts                                                                                                                                                       |
+| **ORBITAL HABITAT**        | Raised in artificial orbital colonies                    | REFLEX +1, BRAWN -1 | Zero-G Operations +10%, Engineering (Life Support) +10%, Psychology (Confined Spaces) +5%                     | Understanding of habitat operations, orbital community contacts, recycling expertise                                                                                                                                                         |
+| **VENUSIAN CLOUD DRIFTER** | Raised in nomadic airships above Venus                   | REFLEX +1, SAVVY -1 | Piloting (Airship) +10%, Survival (High Atmosphere) +10%, Meteorology +5%                                     | Navigation in cloud layers, contacts among nomadic communities, unique cultural knowledge                                                                                                                                                    |
+| **BELT PROSPECTOR FAMILY** | Raised by asteroid miners and resource hunters           | GRIT +1, CHARM -1   | Mineral Identification +10%, Zero-G Operations +10%, Jury-Rigging +5%                                         | Knowledge of valuable asteroid locations, assessment of mineral worth, mining contact network                                                                                                                                                |
+| **STATION BRAT**           | Raised on a space station with minimal adult supervision | REFLEX +1, NERVE -1 | Zero-G Acrobatics +10%, Station Layouts +10%, Scrounging +5%                                                  | Knowledge of station maintenance shafts and hidden areas, station crew contacts, improvisation skills                                                                                                                                        |
+| **FILTHY RICH**            | Born with a platinum spoon in your mouth                 | +1 CHARM, -1 GRIT   | Business +15%, Social (Etiquette) +15%, Persuasion (Negotiation) +10%, Streetwise (Information Gathering) +5% | You get a 300 cr/month stipend from your folks.<br />When making a purchase over $100 credits, roll percentile dice. On a roll ending in 0 or 5, the item is acquired at half price due to family connections or bulk discount arrangements. |
 
 *Choose one background that best represents your character's upbringing.*
 
