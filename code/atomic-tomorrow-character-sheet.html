@@ -361,7 +361,55 @@
             display: flex;
             flex-direction: column;
             overflow: auto;
-            max-height: calc(100% - 0.4in); /* Account for header */
+            max-height: calc(100% - 1.5in); /* Account for header and core values table */
+        }
+        
+        /* NEW Core Values Table Styling */
+        .core-values-container {
+            margin-bottom: 0.15in;
+            border: 1px solid #27ae60;
+            border-radius: 3px;
+            background-color: rgba(39, 174, 96, 0.1);
+        }
+        
+        .core-values-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.11in;
+            padding: 0.03in;
+            background-color: rgba(39, 174, 96, 0.2);
+            border-bottom: 1px solid #27ae60;
+        }
+        
+        .core-values-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.11in;
+        }
+        
+        .core-values-table th {
+            text-align: center;
+            padding: 0.02in;
+            background-color: rgba(39, 174, 96, 0.1);
+            border-bottom: 1px solid rgba(39, 174, 96, 0.3);
+        }
+        
+        .core-values-table td {
+            text-align: center;
+            padding: 0.02in;
+            border-right: 1px dotted rgba(39, 174, 96, 0.3);
+        }
+        
+        .core-values-table td:last-child {
+            border-right: none;
+        }
+        
+        .core-values-caption {
+            text-align: center;
+            font-size: 0.1in;
+            padding: 0.02in;
+            color: #196f3d;
+            border-top: 1px dotted rgba(39, 174, 96, 0.3);
         }
         
         /* Solar Scouts Row Styling */
@@ -614,6 +662,37 @@
             <div class="right-column">
                 <div class="skills section">
                     <h2 class="section-title skills-title">Skills</h2>
+                    
+                    <!-- NEW Core Values Table -->
+                    <div class="core-values-container">
+                        <div class="core-values-title">CORE SKILL VALUES</div>
+                        <table class="core-values-table">
+                            <tr>
+                                <th>ATTR</th>
+                                <th>BRAWN</th>
+                                <th>REFLEX</th>
+                                <th>NERVE</th>
+                                <th>SAVVY</th>
+                                <th>CHARM</th>
+                                <th>GRIT</th>
+                                <th>GUILE</th>
+                                <th>FLEX</th>
+                            </tr>
+                            <tr>
+                                <td>VALUE</td>
+                                <td class="brawn-core"></td>
+                                <td class="reflex-core"></td>
+                                <td class="nerve-core"></td>
+                                <td class="savvy-core"></td>
+                                <td class="charm-core"></td>
+                                <td class="grit-core"></td>
+                                <td class="guile-core"></td>
+                                <td>25%</td>
+                            </tr>
+                        </table>
+                        <div class="core-values-caption">Core Skill Value = (Attribute × 2) + 5%</div>
+                    </div>
+                    
                     <div class="skills-header">
                         <div></div>
                         <span style="font-size: 0.8em; margin-right: 0.6in;">Value</span>
@@ -679,6 +758,7 @@
                             <input type="text" class="skill-input">
                             <div class="skill-value"></div>
                         </div>
+                        <!--
                         <div class="skill-row">
                             <input type="text" class="skill-input">
                             <div class="skill-value"></div>
@@ -687,7 +767,7 @@
                             <input type="text" class="skill-input">
                             <div class="skill-value"></div>
                         </div>
-                        
+                        -->
                         <!-- Rules Cheat Sheet -->
                         <div class="rules-cheat-sheet">
                             <h3>Basic Skill Resolution</h3>
@@ -710,6 +790,33 @@
         <div class="footer">
             ATOMIC TOMORROW ADVENTURES © 2025 | Character Sheet v1.0 | Equipment on Reverse
         </div>
+        
+        <!-- JavaScript to calculate and display core values -->
+        <script>
+            // Function to calculate core skill values based on attribute values
+            function updateCoreValues() {
+                // Get all attribute values
+                const attributeValues = document.querySelectorAll('.attribute-value');
+                const attributes = ['brawn', 'reflex', 'nerve', 'savvy', 'charm', 'grit', 'guile'];
+                
+                // Update core values for each attribute
+                attributes.forEach((attr, index) => {
+                    const value = attributeValues[index].textContent.trim();
+                    if (value) {
+                        const coreValue = (parseInt(value) * 2) + 5;
+                        document.querySelector(`.${attr}-core`).textContent = coreValue + '%';
+                    }
+                });
+            }
+            
+            // Add event listeners to attribute value fields
+            document.querySelectorAll('.attribute-value').forEach(input => {
+                input.addEventListener('input', updateCoreValues);
+            });
+            
+            // Initialize with any existing values
+            updateCoreValues();
+        </script>
     </div>
 </body>
 </html>

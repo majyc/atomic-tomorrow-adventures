@@ -109,8 +109,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## ACES & PILOTS
 
-| Profession               | Skills                                                                                                                                                                                 |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profession               | Skills                                                                                                                                                               |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **ROCKET JOCKEY**  | Piloting (Spacecraft) (REFLEX) +40%, Technology (Ship Systems) (SAVVY) +20%, Navigation (Space) (SAVVY) +10%, Combat (Pistols) (REFLEX) +10%                         |
 | **ASTROGATOR**     | Navigation (Space) (SAVVY) +40%, Academics (Mathematics) (FLEX) +20%, Science (Astronomy) (SAVVY) +10%, Computer Systems (Programming) (SAVVY) +10%                  |
 | **ASTRO RACER**    | Piloting (Racing) (REFLEX) +40%, Repair (Vehicle) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Athletics (Reflexes) (REFLEX) +10%                      |
@@ -119,8 +119,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## SCIENTISTS & INNOVATORS
 
-| Profession              | Skills                                                                                                                                                                                |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profession              | Skills                                                                                                                                                              |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **BRAINIAC**      | Science (Choose Specialty) (SAVVY) +40%, Investigation (Research) (SAVVY) +20%, Technology (Laboratory Equipment) (SAVVY) +10%, Academics (Mathematics) (FLEX) +10% |
 | **ATOMICIST**     | Science (Physics) (SAVVY) +40%, Engineering (Atomic) (SAVVY) +20%, Engineering (Structural) (SAVVY) +10%, Academics (Mathematics) (FLEX) +10%                       |
 | **XENOBIOLOGIST** | Science (Xenobiology) (SAVVY) +40%, Medicine (Field Medicine) (SAVVY) +20%, Perception (Observation) (SAVVY) +10%, Technology (Sampling Equipment) (SAVVY) +10%     |
@@ -129,8 +129,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## EXPLORERS & SCOUTS
 
-| Profession                | Skills                                                                                                                                                                                      |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profession                | Skills                                                                                                                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **SCOUT**           | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Perception (Environmental Awareness) (SAVVY) +10%, Combat (Rifles) (REFLEX) +10%         |
 | **TRAILBLAZER**     | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Technology (Cartography) (SAVVY) +10%, Perception (Environmental Awareness) (SAVVY) +10% |
 | **RUIN DELVER**     | Academics (Archaeology) (FLEX) +40%, Academics (Ancient Languages) (FLEX) +20%, Perception (Trap Detection) (SAVVY) +10%, Academics (History) (FLEX) +10%                 |
@@ -139,8 +139,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## SOLDIERS & ENFORCERS
 
-| Profession              | Skills                                                                                                                                                                                        |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profession              | Skills                                                                                                                                                                      |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **SPACE RANGER**  | Security (Law Enforcement) (SAVVY) +40%, Investigation (Crime Scene Analysis) (SAVVY) +20%, Combat (Rifles) (REFLEX) +10%, Academics (Regulations) (FLEX) +10%              |
 | **SOLAR MARINE**  | Combat (Heavy Weapons) (REFLEX) +40%, Combat (Bladed Weapons) (REFLEX) +20%, Athletics (Strength) (BRAWN) +10%, Survival (Combat Zone) (GRIT) +10%                          |
 | **BOUNTY HUNTER** | Investigation (Tracking) (SAVVY) +40%, Streetwise (Information Gathering) (GUILE) +20%, Combat (Pistols) (REFLEX) +10%, Persuasion (Intimidation) (CHARM) +10%              |
@@ -149,8 +149,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## MECHANICS & ENGINEERS
 
-| Profession              | Skills                                                                                                                                                                                      |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profession              | Skills                                                                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **WRENCH MONKEY** | Repair (Ship Systems) (SAVVY) +40%, Technology (Diagnostics) (SAVVY) +20%, Engineering (Mechanical) (SAVVY) +10%, Streetwise (Scrounging) (GUILE) +10%                    |
 | **ATOMECH**       | Engineering (Atomic) (SAVVY) +40%, Technology (Radiation Equipment) (SAVVY) +20%, Engineering (Power Systems) (SAVVY) +10%, Repair (Ship Systems) (SAVVY) +10%            |
 | **GADGETEER**     | Engineering (Experimental) (SAVVY) +40%, Technology (Electronics) (SAVVY) +20%, Combat (Exotic Weapons) (REFLEX) +10%, Streetwise (Scrounging) (GUILE) +10%               |
@@ -159,8 +159,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## SCOUNDRELS & OPPORTUNISTS
 
-| Profession            | Skills                                                                                                                                                                      |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profession            | Skills                                                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **SPACE RAT**   | Streetwise (Scrounging) (GUILE) +40%, Deception (Bluffing) (GUILE) +20%, Stealth (Hiding) (REFLEX) +10%, Social (Rumor Collection) (CHARM) +10%           |
 | **GRIFTER**     | Deception (Con Artistry) (GUILE) +40%, Perception (Reading People) (SAVVY) +20%, Persuasion (Fast Talk) (CHARM) +10%, Deception (Disguise) (GUILE) +10%   |
 | **SMUGGLER**    | Deception (Misdirection) (GUILE) +40%, Piloting (Spacecraft) (REFLEX) +20%, Navigation (Secret Routes) (SAVVY) +10%, Streetwise (Contraband) (GUILE) +10% |
@@ -169,8 +169,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## PSYCHICS & ESPERS
 
-| Profession            | Skills                                                                                                                                                                     |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profession            | Skills                                                                                                                                                   |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **MENTALIST**   | Psi (Telepathy) (NERVE) +40%, Psi (Mental Defense) (NERVE) +20%, Survival (Mental Discipline) (GRIT) +10%, Science (Psychology) (SAVVY) +10%             |
 | **TELEKINETIC** | Psi (Psychokinesis) (NERVE) +40%, Athletics (Fine Control) (REFLEX) +20%, Survival (Mental Discipline) (GRIT) +10%, Science (Psi Theory) (SAVVY) +10%    |
 | **PRECOG**      | Psi (Precognition) (NERVE) +40%, Perception (Intuition) (SAVVY) +20%, Science (Probability) (SAVVY) +10%, Academics (Dream Interpretation) (FLEX) +10%   |
@@ -179,8 +179,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## DIPLOMATS & COMMUNICATORS
 
-| Profession              | Skills                                                                                                                                                                              |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profession              | Skills                                                                                                                                                            |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **XENO-LINGUIST** | Academics (Linguistics) (FLEX) +40%, Xenology (Alien Cultures) (FLEX) +20%, Science (Pattern Recognition) (SAVVY) +10%, Social (Diplomatic Protocol) (CHARM) +10% |
 | **NEGOTIATOR**    | Persuasion (Negotiation) (CHARM) +40%, Perception (Reading People) (SAVVY) +20%, Social (Mediation) (CHARM) +10%, Academics (Contract Law) (FLEX) +10%            |
 | **AMBASSADOR**    | Social (Diplomacy) (CHARM) +40%, Academics (Politics) (FLEX) +20%, Social (Etiquette) (CHARM) +10%, Perception (Cultural Sensitivity) (SAVVY) +10%                |
@@ -189,8 +189,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## MEDICAL EXPERTS
 
-| Profession               | Skills                                                                                                                                                                                 |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Profession               | Skills                                                                                                                                                               |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **SAWBONES**       | Medicine (Emergency Medicine) (SAVVY) +40%, Perception (Triage) (SAVVY) +20%, Medicine (Improvised Treatment) (SAVVY) +10%, Persuasion (Bedside Manner) (CHARM) +10% |
 | **XENODOC**        | Medicine (Xenomedicine) (SAVVY) +40%, Science (Comparative Physiology) (SAVVY) +20%, Medicine (Diagnostics) (SAVVY) +10%, Medicine (Surgery) (SAVVY) +10%            |
 | **PSYCHIATRIST**   | Medicine (Psychiatry) (SAVVY) +40%, Science (Behavioral Science) (SAVVY) +20%, Persuasion (Counseling) (CHARM) +10%, Medicine (Medication) (SAVVY) +10%              |
@@ -199,8 +199,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 ## COMMERCE & TRADE
 
-| Profession                     | Skills                                                                                                                                                                                           |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Profession                     | Skills                                                                                                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **SPACE TRADER**         | Persuasion (Negotiation) (CHARM) +40%, Trade (Market Analysis) (FLEX) +20%, Trade (Appraisal) (FLEX) +10%, Social (Networking) (CHARM) +10%                                    |
 | **CARTEL BROKER**        | Streetwise (Black Market) (GUILE) +40%, Persuasion (Intimidation) (CHARM) +20%, Perception (Threat Assessment) (SAVVY) +10%, Navigation (Secret Routes) (SAVVY) +10%           |
 | **INSURANCE ADJUSTER**   | Investigation (Crime Scene Analysis) (SAVVY) +40%, Perception (Risk Assessment) (SAVVY) +20%, Deception (Forgery Detection) (GUILE) +10%, Academics (Contract Law) (FLEX) +10% |
