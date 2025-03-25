@@ -3,20 +3,6 @@ layout: default
 title: Orbital Distance Table
 ---
 
-## SPECIAL LOCATIONS
-
-### VENUS EQUILATERAL STATION
-
-One of the most important communication hubs in the system, Venus Equilateral Station maintains a position 60° ahead of Venus in its orbit, forming an equilateral triangle with Venus and the Sun. This position ensures it can maintain constant communication with both Earth and Venus regardless of their orbital positions, while also having line-of-sight to Mercury and Mars for most of their orbits.
-
-### L5 COLONY
-
-The largest human settlement not on a planetary body, the L5 Colony orbits at the Earth-Moon Lagrange point. Home to over 100,000 people, it serves as a manufacturing center, transit hub, and showcase for space architecture. Its spinning habitats provide Earth-normal gravity for residents.
-
-### CERES
-
-The largest body in the Asteroid Belt, Ceres hosts the Belt's administrative headquarters and primary trade center. Its relatively mild gravity (compared to other asteroids) and substantial water resources made it an ideal location for early Belt colonization.
-
 # ORBITAL DISTANCE & TRANSIT TABLES
 
 ## PLANETARY PROXIMITY TABLE
@@ -138,6 +124,18 @@ These transit times align reasonably closely with what physics would predict for
 For more technical details, see the Chemical X specifications document.
 
 ## SPECIAL LOCATIONS
+
+### VENUS EQUILATERAL STATION
+
+One of the most important communication hubs in the system, Venus Equilateral Station maintains a position 60° ahead of Venus in its orbit, forming an equilateral triangle with Venus and the Sun. This position ensures it can maintain constant communication with both Earth and Venus regardless of their orbital positions, while also having line-of-sight to Mercury and Mars for most of their orbits.
+
+### L5 COLONIES
+
+The largest human settlement not on a planetary body, the L5 "ELfland" Colony is a pair of counter-rotating cylinders that orbit at the Earth-Moon Lagrange point. Home to slighly under 1,00,000 people, it serves as a manufacturing center, transit hub, and showcase for space architecture. Its spinning habitats provide Earth-normal gravity for residents.
+
+### CERES
+
+The largest body in the Asteroid Belt, Ceres hosts the Belt's administrative headquarters and primary trade center. Its relatively mild gravity (compared to other asteroids) and substantial water resources made it an ideal location for early Belt colonization.
 
 ### HOSPITAL STATION
 
