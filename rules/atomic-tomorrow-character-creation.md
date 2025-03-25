@@ -79,7 +79,7 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 | **Bold**          | After any failure, gain +20% to your next roll if attempting a different approach                                             | Recover from setbacks twice as quickly as normal characters             |
 | **Daring**        | +20% to genuinely dangerous actions                                                                                           | Never suffer special or critical failures when attempting risky actions |
 | **Audacious**     | Can attempt normally impossible stunts at -40% instead of being automatically impossible                                      | Your daring inspires allies, granting them +10% to their next action    |
-| **Lucky**         | When you fail a roll, any result ending in 7 allows you to reroll (you can continue rerolling as long as you keep getting 7s) | +20% to games of chance and randomized situations                       |
+| **Lucky**         | When you fail a roll, any result ending in a 7 allows you to reroll (you can continue rerolling as long as you keep getting 7s) | +20% to games of chance and randomized situations                       |
 
 ### CLEVER/SMART EPITHETS
 
@@ -99,7 +99,7 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 | **Seductive**   | +1 CHARM, +1 GUILE | In Seduction Social Contests, Opposed wraps back around to Receptive (skipping Convinced). It's still not mind control,<br />and NPCs can want you and still betray you or refuse you out of loyalty or scruples.                 |
 | **Stunning**    | +2 CHARM           | You command attention. You are noticed wherever you go, unless heavily disguised. Villains prefer to capture or spare you<br />rather than mar your beauty.                                                                       |
 | **Suave**       | +1 CHARM, +1 SAVVY | Special and Critical failures on Social skills become ordinary failures.                                                                                                                                                          |
-| **Well-Heeled** | +1 CHARM, GUILE    | When failing a roll that could be resolved with money, you may immediately make a GUILE check. Success means you find a way to throw credits at the problem and turn your failure into a success - but at double the normal cost. |
+| **Well-Heeled** | +1 CHARM, +1 GUILE | When failing a roll that could be resolved with money, you may immediately make a GUILE check. Success means you find a way to throw credits at the problem and turn your failure into a success - but at double the normal cost. |
 
 *Choose one epithet that best represents your character's extraordinary quality.*
 
@@ -215,18 +215,18 @@ Your origin reflects where you were born and raised, shaping your physical adapt
 
 ### ORIGIN SELECTION
 
-| Origin                | Description                                                 | Attribute Mods                                 | Cultural Skills                                                           | Environmental Adaptations                                               |
-| --------------------- | ----------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| **TERRAN**      | Born on Earth, shaped by generations of genetic engineering | SAVVY +1, GRIT -1                              | Bureaucracy +15%, Technology +10%, History +5%                            | Genetically Optimized, Social Programming, Environmental Sensitivity    |
-| **LOONIE**      | Raised in the low gravity of Luna                           | BRAWN -1, REFLEX +1, GUILE +1                  | Zero-G Operations +15%, Mechanics +10%, Local Knowledge: Luna +5%         | Low-G Adaptation, Radiation Resistance, Bone Density Issues             |
-| **MARTIAN**     | Child of the red planet, frontier hardiness                 | BRAWN +1, GRIT +1, CHARM -1                    | Survival: Mars +15%, Ancient History +10%, Geology +5%                    | Dust Lungs, Cold Tolerance, Water Efficiency                            |
-| **VENUSIAN**    | Raised in Venus's steaming jungles and cloud cities         | BRAWN +1, NERVE +1, SAVVY -1                   | Survival: Jungle +15%, Weather Prediction +10%, Xenobiology +5%           | Heat Tolerance, Enhanced Lung Capacity, Venus Eyes                      |
-| **BELTER**      | Born among the asteroids of the Belt                        | BRAWN -1, GUILE +1, GRIT +1                    | Zero-G Operations +15%, Resource Management +10%, Asteroid Navigation +5% | Vacuum Sense, Low Consumption Metabolism, Spatial Awareness             |
-| **JOVIAN**      | Raised in habitats orbiting Jupiter                         | SAVVY +1, REFLEX +1, CHARM -1                  | Engineering +15%, Radiation Safety +10%, Zero-G Operations +5%            | Radiation Resistant, Artificial Gravity Adaptation, Technical Intuition |
-| **SATURIAN**    | Born in the shadow of Saturn's rings                        | REFLEX +1, CHARM +1, BRAWN -1                  | Artistic Expression +15%, Astronomy +10%, Cultural History +5%            | Enhanced Visual Acuity, Cold Adaptation, Heightened Color Perception    |
-| **DEEP SPACER** | Born aboard long-haul vessels between stars                 | GRIT +1, NERVE +1, CHARM -1                    | Astrogation +15%, Ship Systems +10%, Entertainment +5%                    | Space Legs, Temporal Flexibility, Confined Space Comfort                |
-| **GENMODDED**   | Engineered for specific purposes or environments            | +2 to one attribute, -1 to different attribute | Genetics +15%, Medical Self-Care +10%, Social Adaptation +5%              | Choice of adaptations based on engineering purpose                      |
-| **RED MARTIAN** | Descendant of ancient Martian civilization                  | PSI +30%, BRAWN -1, CHARM +1                   | Telepathy +15%, Ancient Martian History +10%, Cultural Diplomacy +5%      | Natural Telepathy, Martian Physiology, Limited Oxygen Needs             |
+| Origin                | Description                                                 | Attribute Mods                                 | Cultural Skills                                                                                                | Environmental Adaptations                                               |
+| --------------------- | ----------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **TERRAN**      | Born on Earth, shaped by generations of genetic engineering | SAVVY +1, GRIT -1                              | Academics (Bureaucracy) (FLEX) +15%, Technology (Infrastructure) (SAVVY) +10%, Academics (History) (FLEX) +5% | Genetically Optimized, Social Programming, Environmental Sensitivity    |
+| **LOONIE**      | Raised in the low gravity of Luna                           | BRAWN -1, REFLEX +1, GUILE +1                  | Athletics (Zero-G Operations) (REFLEX) +15%, Repair (Mechanics) (SAVVY) +10%, Streetwise (Luna) (GUILE) +5%   | Low-G Adaptation, Radiation Resistance, Bone Density Issues             |
+| **MARTIAN**     | Child of the red planet, frontier hardiness                 | BRAWN +1, GRIT +1, CHARM -1                    | Survival (Mars) (GRIT) +15%, Academics (Ancient History) (FLEX) +10%, Science (Geology) (SAVVY) +5%           | Dust Lungs, Cold Tolerance, Water Efficiency                            |
+| **VENUSIAN**    | Raised in Venus's steaming jungles and cloud cities         | BRAWN +1, NERVE +1, SAVVY -1                   | Survival (Jungle) (GRIT) +15%, Science (Meteorology) (SAVVY) +10%, Science (Xenobiology) (SAVVY) +5%           | Heat Tolerance, Enhanced Lung Capacity, Venus Eyes                      |
+| **BELTER**      | Born among the asteroids of the Belt                        | BRAWN -1, GUILE +1, GRIT +1                    | Athletics (Zero-G Operations) (REFLEX) +15%, Trade (Resource Management) (FLEX) +10%, Navigation (Asteroid) (SAVVY) +5% | Vacuum Sense, Low Consumption Metabolism, Spatial Awareness             |
+| **JOVIAN**      | Raised in habitats orbiting Jupiter                         | SAVVY +1, REFLEX +1, CHARM -1                  | Engineering (Habitat Systems) (SAVVY) +15%, Technology (Radiation Safety) (SAVVY) +10%, Athletics (Zero-G Operations) (REFLEX) +5% | Radiation Resistant, Artificial Gravity Adaptation, Technical Intuition |
+| **SATURNIAN**    | Born in the shadow of Saturn's rings                       | REFLEX +1, CHARM +1, BRAWN -1                  | Artistry (Expression) (FLEX) +15%, Science (Astronomy) (SAVVY) +10%, Academics (Cultural History) (FLEX) +5%   | Enhanced Visual Acuity, Cold Adaptation, Heightened Color Perception    |
+| **DEEP SPACER** | Born aboard long-haul vessels between stars                 | GRIT +1, NERVE +1, CHARM -1                    | Navigation (Astrogation) (SAVVY) +15%, Technology (Ship Systems) (SAVVY) +10%, Performance (Entertainment) (CHARM) +5% | Space Legs, Temporal Flexibility, Confined Space Comfort                |
+| **GENMODDED**   | Engineered for specific purposes or environments            | +2 to one attribute, -1 to different attribute | Science (Genetics) (SAVVY) +15%, Medicine (Self-Care) (SAVVY) +10%, Social (Adaptation) (CHARM) +5%             | Choice of adaptations based on engineering purpose                      |
+| **RED MARTIAN** | Descendant of ancient Martian civilization                  | PSI +30%, BRAWN -1, CHARM +1                   | Psi (Telepathy) (NERVE) +15%, Academics (Ancient Martian History) (FLEX) +10%, Social (Cultural Diplomacy) (CHARM) +5% | Natural Telepathy, Martian Physiology, Limited Oxygen Needs             |
 
 *Choose one origin that best represents where your character comes from.*
 
@@ -236,136 +236,30 @@ Your background reflects your upbringing, education, and personal history before
 
 ### BACKGROUND SELECTION
 
-| Background                       | Description                                              | Attribute Effects   | Additional Skills                                                                                             | Resources & Connections                                                                                                                                                                                                                      |
-| -------------------------------- | -------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **MILITARY FAMILY**        | Raised in the discipline of service                      | GRIT +1, CHARM -1   | Tactics +10%, Military Protocol +10%, Firearms +5%                                                            | Military contacts, access to surplus equipment                                                                                                                                                                                               |
-| **MERCHANT CLAN**          | Raised in the trading business                           | CHARM +1, GRIT -1   | Negotiation +10%, Market Analysis +10%, Appraisal +5%                                                         | Trading contacts, credit line with merchant houses                                                                                                                                                                                           |
-| **FRONTIER HOMESTEAD**     | Raised on the edges of civilization                      | GRIT +1, CHARM -1   | Survival +10%, Repair +10%, Animal Handling +5%                                                               | Wilderness skills, network of frontier contacts                                                                                                                                                                                              |
-| **ACADEMIC TRAINING**      | Formal education in institutions                         | SAVVY +1, BRAWN -1  | Research +10%, Mathematics +10%, History +5%                                                                  | Academic credentials, university connections                                                                                                                                                                                                 |
-| **STREET URCHIN**          | Raised in urban underbellies                             | GUILE +1, CHARM -1  | Streetwise +10%, Theft +10%, Urban Navigation +5%                                                             | Criminal contacts, knowledge of urban secrets                                                                                                                                                                                                |
-| **CORPORATE UPBRINGING**   | Raised in corporate culture                              | SAVVY +1, NERVE -1  | Business +10%, Computer Operation +10%, Corporate Politics +5%                                                | Corporate connections, understanding of business structures                                                                                                                                                                                  |
-| **ARISTOCRATIC FAMILY**    | Born to privilege and power                              | CHARM +1, GRIT -1   | Etiquette +10%, Politics +10%, Art Appreciation +5%                                                           | Wealthy connections, social status, financial resources                                                                                                                                                                                      |
-| **SPACER FAMILY**          | Raised aboard ships and stations                         | REFLEX +1, BRAWN -1 | Zero-G Operations +10%, Ship Systems +10%, Vacuum Survival +5%                                                | Network of spacers, familiarity with various vessels                                                                                                                                                                                         |
-| **RELIGIOUS ORDER**        | Raised in spiritual tradition                            | NERVE +1, GUILE -1  | Theology +10%, Meditation +10%, Ancient Languages +5%                                                         | Religious contacts, respected status in religious communities                                                                                                                                                                                |
-| **LABORATORY SUBJECT**     | Subject of scientific experimentation                    | GRIT +1, CHARM -1   | Medical Knowledge +10%, Laboratory Procedures +10%, Psychology +5%                                            | Unique physical capabilities, connections to scientific community                                                                                                                                                                            |
-| **MEGACITY NATIVE**        | Raised in the towering urban centers of Earth            | SAVVY +1, GRIT -1   | Urban Navigation +10%, Technology (Infrastructure) +10%, Social (Crowd Management) +5%                        | Knowledge of urban shortcuts, contacts in city services, access to hard-to-find goods                                                                                                                                                        |
-| **POLITICAL DYNASTY**      | Born into a family of political influence                | CHARM +1, NERVE -1  | Politics +10%, Persuasion (Public Speaking) +10%, History +5%                                                 | Political connections, family name recognition, access to restricted information                                                                                                                                                             |
-| **UNDERWORLD FAMILY**      | Raised in organized crime or black market circles        | GUILE +1, SAVVY -1  | Streetwise +10%, Deception +10%, Security (Alarm Systems) +5%                                                 | Criminal contacts, knowledge of illegal operations, access to black market goods                                                                                                                                                             |
-| **SHOWBIZ FAMILY**         | Raised in the entertainment industry                     | CHARM +1, NERVE -1  | Performance +10%, Social (Networking) +10%, Artistry +5%                                                      | Media contacts, performance venues, celebrity recognition                                                                                                                                                                                    |
-| **REGRESSED/BARBARIAN**    | Raised in an isolated community rejecting technology     | BRAWN +1, SAVVY -1  | Survival +10%, Combat (Primitive Weapons) +10%, Nature Lore +5%                                               | Extraordinary physical capabilities, non-technological survival skills, tribe connections                                                                                                                                                    |
-| **COLONIST**               | Raised in a newly established off-world colony           | GRIT +1, CHARM -1   | Resource Management +10%, Technical Improvisation +10%, Community Relations +5%                               | Colony network, self-sufficiency skills, adaptability to harsh conditions                                                                                                                                                                    |
-| **REFUGEE**                | Displaced from home by disaster or conflict              | NERVE +1, CHARM -1  | Survival (Urban) +10%, Bartering +10%, Situational Awareness +5%                                              | Network of fellow refugees, ability to adapt to new environments, resource acquisition skills                                                                                                                                                |
-| **SHIP-BORN**              | Born and raised on long-voyage spacecraft                | REFLEX +1, BRAWN -1 | Ship Systems +10%, Navigation (Spacecraft) +10%, Social (Confined Communities) +5%                            | Extensive knowledge of ship operations, contacts among space transport crews, familiarity with multiple ports                                                                                                                                |
-| **NOBLE HOUSE**            | Member of an established aristocratic lineage            | CHARM +1, GRIT -1   | Etiquette +10%, History (Lineages) +10%, Social (Influence) +5%                                               | Family wealth and prestige, political connections, access to exclusive venues                                                                                                                                                                |
-| **ATOMICORP EMPLOYEE**     | Raised in corporate atomic energy sector                 | SAVVY +1, NERVE -1  | Science (Nuclear Physics) +10%, Engineering (Atomic) +10%, Corporate Politics +5%                             | Corporate security clearance, technical knowledge of atomic systems, industry contacts                                                                                                                                                       |
-| **ORBITAL HABITAT**        | Raised in artificial orbital colonies                    | REFLEX +1, BRAWN -1 | Zero-G Operations +10%, Engineering (Life Support) +10%, Psychology (Confined Spaces) +5%                     | Understanding of habitat operations, orbital community contacts, recycling expertise                                                                                                                                                         |
-| **VENUSIAN CLOUD DRIFTER** | Raised in nomadic airships above Venus                   | REFLEX +1, SAVVY -1 | Piloting (Airship) +10%, Survival (High Atmosphere) +10%, Meteorology +5%                                     | Navigation in cloud layers, contacts among nomadic communities, unique cultural knowledge                                                                                                                                                    |
-| **BELT PROSPECTOR FAMILY** | Raised by asteroid miners and resource hunters           | GRIT +1, CHARM -1   | Mineral Identification +10%, Zero-G Operations +10%, Jury-Rigging +5%                                         | Knowledge of valuable asteroid locations, assessment of mineral worth, mining contact network                                                                                                                                                |
-| **STATION BRAT**           | Raised on a space station with minimal adult supervision | REFLEX +1, NERVE -1 | Zero-G Acrobatics +10%, Station Layouts +10%, Scrounging +5%                                                  | Knowledge of station maintenance shafts and hidden areas, station crew contacts, improvisation skills                                                                                                                                        |
-| **FILTHY RICH**            | Born with a platinum spoon in your mouth                 | +1 CHARM, -1 GRIT   | Business +15%, Social (Etiquette) +15%, Persuasion (Negotiation) +10%, Streetwise (Information Gathering) +5% | You get a 300 cr/month stipend from your folks.<br />When making a purchase over $100 credits, roll percentile dice. On a roll ending in 0 or 5, the item is acquired at half price due to family connections or bulk discount arrangements. |
-
-*Choose one background that best represents your character's upbringing.*
-
-## CALCULATING SKILLS
-
-Your skill percentages are determined by combining your Core (attribute contribution or FLEXX) with bonuses from Profession, Origin, and Background:
-
-### Skill Formula
-
-**Core** = either Attribute × 2 or 20% for FLEX skills, +5%
-
-**Final Skill %** = Core + Professional Bonus + Origin Bonus + Background Bonus
-
-### Skill Level Guide
-
-- **0-25%**: Novice (basic understanding)
-- **26-50%**: Competent (reliable in most situations)
-- **51-75%**: Professional (expert in the field)
-- **76-95%**: Master (among the best in the Solar System)
-- **96%+**: Legendary (stuff of future stories)
-
-## FINISHING TOUCHES
-
-### Solar Scouts Training
-
-Every character starts with Solar Scouts Training, which represents self-defense training (or school of hard knocks) that they've been given in their upbringing
-
-- Solar Scouts Training is Reflex x 2 + 15%.  It never goes up, but you should track critical success checks normally
-- Solar Scouts Training covers unarmed combat, pistols, rifles, survival, and first aid
-- When making advancement checks if you have a Solar Scouts Training check to make, success will grant you the appropriate specialization, e.g. Combat (Pistols) and you'll stop using Solar Scouts Training for that skill, while still using it for other combat modes.
-
-### Personal Details
-
-- **Name**: Choose a name appropriate to your character's origin and background
-- **Appearance**: Describe distinctive features, style, and presence
-- **Age**: Typically 20-50 for human adventurers
-- **Personality**: Define core traits and attitudes
-
-### Connections
-
-- **Contacts**: People who can provide information or assistance
-- **Enemies**: Those who oppose or dislike your character
-- **Obligations**: Responsibilities your character carries
-
-### Equipment
-
-Start with:
-
-- All equipment listed for your Profession
-- One signature item related to your Epithet
-- Standard environmental suit appropriate to your Origin
-- 2d10 × 10 Credits for additional purchases
-
-### Signature Gadget (Optional)
-
-Roll on the Signature Gadget table to create a unique device that defines your character's style and capabilities.
-
-### Hobby (Optional)
-
-Pick one skill that you know at Core + 5% that's something of a hobby of yours.
-
-## SAMPLE CHARACTER: STELLA "LUCKY" BLACKSTAR
-
-**EPITHET**: Lucky (When failed rolls end in 7, can reroll once)
-**PROFESSION**: Rocket Jockey (Spacecraft pilot)
-**ORIGIN**: Belter (Born in the asteroid belt)
-**BACKGROUND**: Merchant Clan (Raised in trading business)
-
-**ATTRIBUTES**:
-
-- BRAWN: 9 (-1 from Belter origin = 8)
-- REFLEX: 15
-- NERVE: 11
-- SAVVY: 10
-- CHARM: 11 (+1 from Merchant Clan = 12)
-- GRIT: 10 (+1 from Belter, -1 from Merchant Clan = 10)
-- GUILE: 12 (+1 from Belter = 13)
-
-**DERIVED STATISTICS**:
-
-- Initiative: 75 (REFLEX 15 × 5)
-- Attribute Checks are Attribute × 5.  In the rules whenever you see something like GRIT check, that means roll against GRIT × 5
-
-**KEY SKILLS**:
-
-- Pilot: 70% (REFLEX 15 × 2 = 30 + 40 professional)
-- Zero-G Operations: 45% (REFLEX 15 × 2 = 30 + 15 origin)
-- Ship Systems: 40% (SAVVY 10 × 2 = 20 + 10 professional + 10 background)
-- Negotiation: 44% (CHARM 12 × 2 = 24 + 10 background + 10 background)
-- Asteroid Navigation: 30% (SAVVY 10 × 2 = 20 + 10 origin)
-
-**EQUIPMENT**:
-
-- Custom flight jacket with Belter clan insignia
-- Pilot's precision chronometer
-- Personal navigation computer
-- Hidden lucky charm (severed circuit board from her first crash)
-- Environmental suit with Belter modifications
-- Trading contacts list and merchant credit chip
-- 140 Credits (rolled 2d10 = 7, so 7 × 10 = 70 + Merchant Clan bonus)
-
-**SIGNATURE GADGET**: Cosmo-Field Paragon Navigation System
-
-- Projects force field that filters out radiation interference
-- Increases effective sensor range by 50%
-- Gains +15% on initiative when using this device
+| Background                       | Description                                              | Attribute Effects   | Additional Skills                                                                                                                           | Resources & Connections                                                                                                                                                                                                                      |
+| -------------------------------- | -------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **MILITARY FAMILY**        | Raised in the discipline of service                      | GRIT +1, CHARM -1   | Tactics (Combat) (SAVVY) +10%, Academics (Military Protocol) (FLEX) +10%, Combat (Firearms) (REFLEX) +5%                                    | Military contacts, access to surplus equipment                                                                                                                                                                                               |
+| **MERCHANT CLAN**          | Raised in the trading business                           | CHARM +1, GRIT -1   | Persuasion (Negotiation) (CHARM) +10%, Trade (Market Analysis) (FLEX) +10%, Trade (Appraisal) (FLEX) +5%                                    | Trading contacts, credit line with merchant houses                                                                                                                                                                                           |
+| **FRONTIER HOMESTEAD**     | Raised on the edges of civilization                      | GRIT +1, CHARM -1   | Survival (Wilderness) (GRIT) +10%, Repair (Improvised) (SAVVY) +10%, Animal Handling (Domestic Animals) (CHARM) +5%                         | Wilderness skills, network of frontier contacts                                                                                                                                                                                              |
+| **ACADEMIC TRAINING**      | Formal education in institutions                         | SAVVY +1, BRAWN -1  | Investigation (Research) (SAVVY) +10%, Science (Mathematics) (SAVVY) +10%, Academics (History) (FLEX) +5%                                   | Academic credentials, university connections                                                                                                                                                                                                 |
+| **STREET URCHIN**          | Raised in urban underbellies                             | GUILE +1, CHARM -1  | Streetwise (Information Gathering) (GUILE) +10%, Security (Lock Picking) (SAVVY) +10%, Navigation (Urban) (SAVVY) +5%                       | Criminal contacts, knowledge of urban secrets                                                                                                                                                                                                |
+| **CORPORATE UPBRINGING**   | Raised in corporate culture                              | SAVVY +1, NERVE -1  | Trade (Business) (FLEX) +10%, Computer Systems (Operation) (SAVVY) +10%, Social (Corporate Politics) (CHARM) +5%                           | Corporate connections, understanding of business structures                                                                                                                                                                                  |
+| **ARISTOCRATIC FAMILY**    | Born to privilege and power                              | CHARM +1, GRIT -1   | Social (Etiquette) (CHARM) +10%, Academics (Politics) (FLEX) +10%, Artistry (Appreciation) (FLEX) +5%                                       | Wealthy connections, social status, financial resources                                                                                                                                                                                      |
+| **SPACER FAMILY**          | Raised aboard ships and stations                         | REFLEX +1, BRAWN -1 | Athletics (Zero-G Operations) (REFLEX) +10%, Technology (Ship Systems) (SAVVY) +10%, Survival (Space) (GRIT) +5%                            | Network of spacers, familiarity with various vessels                                                                                                                                                                                         |
+| **RELIGIOUS ORDER**        | Raised in spiritual tradition                            | NERVE +1, GUILE -1  | Academics (Theology) (FLEX) +10%, Survival (Meditation) (GRIT) +10%, Academics (Ancient Languages) (FLEX) +5%                               | Religious contacts, respected status in religious communities                                                                                                                                                                                |
+| **LABORATORY SUBJECT**     | Subject of scientific experimentation                    | GRIT +1, CHARM -1   | Medicine (Knowledge) (SAVVY) +10%, Science (Laboratory Procedures) (SAVVY) +10%, Science (Psychology) (SAVVY) +5%                           | Unique physical capabilities, connections to scientific community                                                                                                                                                                            |
+| **MEGACITY NATIVE**        | Raised in the towering urban centers of Earth            | SAVVY +1, GRIT -1   | Navigation (Urban) (SAVVY) +10%, Technology (Infrastructure) (SAVVY) +10%, Social (Crowd Management) (CHARM) +5%                            | Knowledge of urban shortcuts, contacts in city services, access to hard-to-find goods                                                                                                                                                        |
+| **POLITICAL DYNASTY**      | Born into a family of political influence                | CHARM +1, NERVE -1  | Academics (Politics) (FLEX) +10%, Persuasion (Public Speaking) (CHARM) +10%, Academics (History) (FLEX) +5%                                 | Political connections, family name recognition, access to restricted information                                                                                                                                                             |
+| **UNDERWORLD FAMILY**      | Raised in organized crime or black market circles        | GUILE +1, SAVVY -1  | Streetwise (Information Gathering) (GUILE) +10%, Deception (Bluffing) (GUILE) +10%, Security (Alarm Systems) (SAVVY) +5%                    | Criminal contacts, knowledge of illegal operations, access to black market goods                                                                                                                                                             |
+| **SHOWBIZ FAMILY**         | Raised in the entertainment industry                     | CHARM +1, NERVE -1  | Performance (Acting) (CHARM) +10%, Social (Networking) (CHARM) +10%, Artistry (Choose One) (FLEX) +5%                                       | Media contacts, performance venues, celebrity recognition                                                                                                                                                                                    |
+| **REGRESSED/BARBARIAN**    | Raised in an isolated community rejecting technology     | BRAWN +1, SAVVY -1  | Survival (Wilderness) (GRIT) +10%, Combat (Primitive Weapons) (REFLEX) +10%, Medicine (Natural Remedies) (SAVVY) +5%                        | Extraordinary physical capabilities, non-technological survival skills, tribe connections                                                                                                                                                    |
+| **COLONIST**               | Raised in a newly established off-world colony           | GRIT +1, CHARM -1   | Trade (Resource Management) (FLEX) +10%, Engineering (Improvisation) (SAVVY) +10%, Social (Community Relations) (CHARM) +5%                 | Colony network, self-sufficiency skills, adaptability to harsh conditions                                                                                                                                                                    |
+| **REFUGEE**                | Displaced from home by disaster or conflict              | NERVE +1, CHARM -1  | Survival (Urban) (GRIT) +10%, Persuasion (Bargaining) (CHARM) +10%, Perception (Situational Awareness) (SAVVY) +5%                          | Network of fellow refugees, ability to adapt to new environments, resource acquisition skills                                                                                                                                                |
+| **SHIP-BORN**              | Born and raised on long-voyage spacecraft                | REFLEX +1, BRAWN -1 | Technology (Ship Systems) (SAVVY) +10%, Navigation (Spacecraft) (SAVVY) +10%, Social (Confined Communities) (CHARM) +5%                     | Extensive knowledge of ship operations, contacts among space transport crews, familiarity with multiple ports                                                                                                                                |
+| **NOBLE HOUSE**            | Member of an established aristocratic lineage            | CHARM +1, GRIT -1   | Social (Etiquette) (CHARM) +10%, Academics (Lineage History) (FLEX) +10%, Social (Influence) (CHARM) +5%                                    | Family wealth and prestige, political connections, access to exclusive venues                                                                                                                                                                |
+| **ATOMICORP EMPLOYEE**     | Raised in corporate atomic energy sector                 | SAVVY +1, NERVE -1  | Science (Nuclear Physics) (SAVVY) +10%, Engineering (Atomic) (SAVVY) +10%, Social (Corporate Politics) (CHARM) +5%                          | Corporate security clearance, technical knowledge of atomic systems, industry contacts                                                                                                                                                       |
+| **ORBITAL HABITAT**        | Raised in artificial orbital colonies                    | REFLEX +1, BRAWN -1 | Athletics (Zero-G Operations) (REFLEX) +10%, Engineering (Life Support) (SAVVY) +10%, Science (Psychology of Confined Spaces) (SAVVY) +5%   | Understanding of habitat operations, orbital community contacts, recycling expertise                                                                                                                                                         |
+| **VENUSIAN CLOUD DRIFTER** | Raised in nomadic airships above Venus                   | REFLEX +1, SAVVY -1 | Piloting (Airship) (REFLEX) +10%, Survival (High Atmosphere) (GRIT) +10%, Science (Meteorology) (SAVVY) +5%                                 | Navigation in cloud layers, contacts among nomadic communities, unique cultural knowledge                                                                                                                                                    |
+| **BELT PROSPECTOR FAMILY** | Raised by asteroid miners and resource hunters           | GRIT +1, CHARM -1   | Science (Mineral Identification) (SAVVY) +10%, Athletics (Zero-G Operations) (REFLEX) +10%, Repair (Improvised) (SAVVY) +5%                 | Knowledge of valuable asteroid locations, assessment of mineral worth, mining contact network                                                                                                                                                |
+| **STATION BRAT**           | Raised on a space station with minimal adult supervision | REFLEX +1, NERVE -1 | Athletics (Zero-G Acrobatics) (REFLEX) +10%, Investigation (Station Layouts) (SAVVY) +10%, Streetwise (Scrounging) (GUILE) +5%               | Knowledge of station maintenance shafts and hidden areas, station crew contacts, improvisation skills                                                                                                                                        |
+| **FILTHY RICH**            | Born with a platinum spoon in your mouth                 | +1 CHARM, -1 GRIT   | Trade (Business) (FLEX) +15%, Social (Etiquette) (CHARM) +15%, Persuasion (Negotiation) (CHARM) +10%, Streetwise (Information Gathering) (GUILE) +5% | You get a 300 cr/month stipend from your folks.<br />When making a purchase over $100 credits, roll percentile dice. On a roll ending in 0 or 5, the item is acquired at half price due to family connections or bulk discount arrangements. |
