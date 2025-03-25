@@ -29,9 +29,10 @@ At the end of each adventure:
 
 As skills reach higher levels, advancement becomes more difficult, representing the increasing challenge of improving already exceptional abilities:
 
-- **Skilled (50-69%)**: Skills at this level only improve a maximum of 5%, even if the one's die is higher
-- **Expert (70-89%)**: Skills at this level only improve on a roll of 3% on the improvement die
-- **Master (90%+)**: Skills at this level only improve on a roll of 1 on the improvement die
+- **Beginner (<50%)**: +5%
+- **Skilled (50-69%)**: +3%
+- **Expert (70-89%)**: +2%
+- **Master (90%+)**: +1%
 
 ### ADVANCEMENT EXAMPLE
 
@@ -55,7 +56,7 @@ Alternatively, characters can spend downtime between adventures learning new ski
 
 ### Solar Scouts Training
 
-All characters have Solar Scouts Training representing the self-defense and militia combat training they've been given in their youth.  Solar Scouts Training covers unnarmed combat, pistols, rifles, survival, and first aid.  Solar Scouts Training is Reflex × 2 + 15%, and never improves.  If you crit while using Solar Scouts Training you mark an improvement check on the specific skill; if you pass the improvement check after the adventure (by failing the skill roll) then you get the full skill at the Solar Scouts Training level + the ones die % from the check.  E.g. if you earned a check by getting a critical success with a pistol, and then qualify for improvment you now have Ranged Combat (Pistol) at the new percent, and retain Solar Scouts Training at its usual level for any remaining skills it covers. You never improve Solar Scouts Training itself.
+All characters have Solar Scouts Training representing the self-defense and militia combat training they've been given in their youth.  Solar Scouts Training covers unnarmed combat, pistols, rifles, survival, and first aid.  Solar Scouts Training is 35%, and never improves.  If you crit while using Solar Scouts Training you mark an improvement check on the specific skill; if you pass the improvement check after the adventure (by failing the skill roll) then you get the full skill at the better of the regular skill Core +5% or 40%.  E.g. if you earned a check by getting a critical success with a pistol, and then qualify for improvment you now have Ranged Combat (Pistol) at either (Core: Reflex x 2 +5%) +5% or 40% if your REFLEX is low.  You still use Solar Scouts Training at its usual level for any remaining skills it covers. You never improve Solar Scouts Training itself.
 
 ### ATTRIBUTE ADVANCEMENT
 

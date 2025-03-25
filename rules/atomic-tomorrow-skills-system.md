@@ -214,8 +214,8 @@ This document establishes the standardized skill mechanics for Atomic Tomorrow A
 
 Skills in Atomic Tomorrow are organized into two layers:
 
-- **Core Skills**: Broad categories representing general competence in a field
-- **Specializations**: Specific applications that represent focused expertise
+* **Core Skills**: Broad categories representing general competence in a field
+* **Specializations**: Specific applications that represent focused expertise
 
 All characters have access to  skills based on their attributes, with specializations representing additional training in specific applications.
 
@@ -225,67 +225,65 @@ Skills come in two fundamental types:
 
 1. **Attribute-Based Skills**: Skills directly tied to a specific attribute
 
-   - **Untrained**: Attribute × 2
-   - **Core Value** = (Attribute × 2) + 5%
-   - Example: Athletics is based on BRAWN
+   * **Untrained**: Attribute × 2
+   * **Core Value** = (Attribute × 2) + 5%
+   * Example: Athletics is based on BRAWN
 2. **FLEX Skills**: Skills representing knowledge that relies more on training than raw talent
 
-   - **Untrained**: 15%
-   - **Core Value** = 25% (equivalent to having an attribute of 10)
-   - Example: Academics represents scholarly knowledge independent of natural aptitude
+   * **Untrained**: 15%
+   * **Core Value** = 25% (equivalent to having an attribute of 10)
+   * Example: Academics represents scholarly knowledge independent of natural aptitude
 
 ### Professional Training
 
 A character's profession provides additional training in specific skills:
 
-- **Primary Professional Bonus**: +15%
-- **Secondary Professional Bonus**: +10%
-- **Tertiary Professional Bonus**: +5%
+* **Primary Professional Bonus**: +15%
+* **Secondary Professional Bonus**: +10%
+* **Tertiary Professional Bonus**: +5%
 
 These bonuses stack with the base skill values to create your final skill percentages.
 
 ## SKILL CALCULATION
 
-### Specializations
-
-- **Final Skill =** Core + Professional Bonus
+**Final Skill =** Core + Professional Bonus
 
 ### Examples
 
-**Example 1: Navigation (Space)**
+#### Example 1: Navigation (Space)
 
-- Character with SAVVY 14
-- Navigation as Secondary Professional skill
-- Core Skill: (14 × 2) + 5% = 33%
-- With Secondary Professional Bonus: 33% + 10% = 43%
+* Character with SAVVY 14
+* Navigation as Secondary Professional skill
+* Core Skill: (14 × 2) + 5% = 33%
+* With Secondary Professional Bonus: 33% + 10% = 43%
 
-**Example 2: Academics (History)**
+#### Example 2: Academics (History)**
 
-- Skill with no special attribute influence (FLEX skill)
-- Academics as Primary Professional skill
-- Core Skill: 25%
-- With Primary Professional Bonus: 25% + 15% = 40%
+* Skill with no special attribute influence (FLEX skill)
+* Academics as Primary Professional skill
+* Core Skill: 25%
+* With Primary Professional Bonus: 25% + 15% = 40%
 
 ## USING SKILLS
 
 ### Skills vs Specializations
 
-- **When to Use Core Skill**: When attempting a broad application or something not covered by your specializations
-- **When to Use Specialization**: When attempting a task that directly aligns with your specialized training
+* **When to Use Core Skill**: When attempting a broad application or something not covered by your specializations
+* **When to Use Specialization**: When attempting a task that directly aligns with your specialized training
 
 ### Default Attempts
 
 Characters can attempt skills even without training:
 
-- For attribute-based skills without training: Roll against (Attribute × 2)
-- For FLEX skills without training: Roll against 15%
+* For attribute-based skills without training: Roll against (Attribute × 2)
+* For FLEX skills without training: Roll against 15%
 
 ### Using Skills Under Pressure
 
-- **Combat**: One major skill action per round
-- **Timed**: Skill attempts require defined timeframe
-- **Crisis**: Attribute-based skill attempts under immediate threat take -20% penalty; immediate threat doesn't mean merely in combat, it means somebody has fired at you in the past round, or you're defusing a bomb with the timer at less than 60 seconds left.
-- **FLEX Skills Under Pressure**: No penalty in crisis situations, representing how training prevails under stress
+* **Combat**: One major skill action per round
+* **Timed**: Skill attempts require defined timeframe
+* **Crisis**: Attribute-based skill attempts under immediate threat take -20% penalty; immediate threat doesn't mean merely in combat, it means somebody has fired at you in the past round, or you're defusing a bomb with the timer at less than 60 seconds left.
+* **FLEX Skills Under Pressure**: No penalty in crisis situations, representing how training prevails under stress
 
 ## COMPLETE SKILL LIST
 
@@ -295,31 +293,31 @@ Characters can attempt skills even without training:
 
 *Physical feats of strength, endurance and coordination*
 
-- **Specializations:** Climbing, Swimming, Running, Jumping, Zero-G Movement, Acrobatics
+* **Specializations:** Climbing, Swimming, Running, Jumping, Zero-G Movement, Acrobatics
 
 #### Combat (REFLEX)
 
 *General fighting ability*
 
-- **Specializations:** Unarmed Combat, Bladed Weapons, Exotic Weapons, Heavy Weapons, Pistols, Rifles, Ship Weapons
+* **Specializations:** Unarmed Combat, Bladed Weapons, Exotic Weapons, Heavy Weapons, Pistols, Rifles, Ship Weapons
 
 #### Stealth (REFLEX)
 
 *Moving without being detected*
 
-- **Specializations:** Hiding, Camouflage, Silent Movement, Shadowing
+* **Specializations:** Hiding, Camouflage, Silent Movement, Shadowing
 
 #### Piloting (REFLEX)
 
 *Operating vehicles and vessels*
 
-- **Specializations:** Spacecraft, Aircraft, Ground Vehicles, Racing, Watercraft
+* **Specializations:** Spacecraft, Aircraft, Ground Vehicles, Racing, Watercraft
 
 #### Survival (GRIT)
 
 *Enduring harsh conditions and finding necessities*
 
-- **Specializations:** Combat Zone, Desert, Jungle, Mental Discipline, Space, Urban, Wilderness
+* **Specializations:** Combat Zone, Desert, Jungle, Mental Discipline, Space, Urban, Wilderness
 
 ### TECHNICAL SKILLS
 
@@ -327,37 +325,37 @@ Characters can attempt skills even without training:
 
 *Designing and building technical systems*
 
-- **Specializations:** Atomic, Environmental, Experimental, Mechanical, Robotics, Ship Systems, Structural
+* **Specializations:** Atomic, Environmental, Experimental, Mechanical, Robotics, Ship Systems, Structural
 
 #### Medicine (SAVVY)
 
 *Treating injuries and illness*
 
-- **Specializations:** Battlefield Medicine, Diagnostics, Emergency Medicine, Field Medicine, Medication, Psychiatry, Surgery, Triage, Xenomedicine
+* **Specializations:** Battlefield Medicine, Diagnostics, Emergency Medicine, Field Medicine, Medication, Psychiatry, Surgery, Triage, Xenomedicine
 
 #### Science (SAVVY)
 
 *Knowledge of scientific principles and methods*
 
-- **Specializations:** Astronomy, Biology, Chemistry, Geology, Physics, Psychology, Xenobiology, Mathematics, Research
+* **Specializations:** Astronomy, Biology, Chemistry, Geology, Physics, Psychology, Xenobiology, Mathematics, Research
 
 #### Technology (SAVVY)
 
 *Operation and maintenance of equipment*
 
-- **Specializations:** Communications, Diagnostics, Electronics, Laboratory Equipment, Sensors, Ship Systems, Weapons Systems
+* **Specializations:** Communications, Diagnostics, Electronics, Laboratory Equipment, Sensors, Ship Systems, Weapons Systems
 
 #### Navigation (SAVVY)
 
 *Finding paths through various environments*
 
-- **Specializations:** Asteroid Belt, Planetary, Secret Routes, Space, Urban, Wilderness
+* **Specializations:** Asteroid Belt, Planetary, Secret Routes, Space, Urban, Wilderness
 
 #### Repair (SAVVY)
 
 *Fixing broken systems and equipment*
 
-- **Specializations:** Electronics, Improvised, Mechanical, Ship Systems, Vehicles
+* **Specializations:** Electronics, Improvised, Mechanical, Ship Systems, Vehicles
 
 ### KNOWLEDGE SKILLS
 
@@ -365,31 +363,31 @@ Characters can attempt skills even without training:
 
 *Formal education and theoretical knowledge*
 
-- **Specializations:** Ancient History, Ancient Languages, Archaeology, Contract Law, Cultural History, Documentation, Linguistics, Politics, Research, Theology, Writing
+* **Specializations:** Ancient History, Ancient Languages, Archaeology, Contract Law, Cultural History, Documentation, Linguistics, Politics, Research, Theology, Writing
 
 #### Xenology (FLEX)
 
 *Knowledge of alien life and civilizations*
 
-- **Specializations:** Alien Artifacts, Alien Cultures, Alien Technology, Forerunner Studies
+* **Specializations:** Alien Artifacts, Alien Cultures, Alien Technology, Forerunner Studies
 
 #### Investigation (SAVVY)
 
 *Finding information and solving mysteries*
 
-- **Specializations:** Analysis, Crime Scene Analysis, Interviewing, Research, Surveying, Tracking
+* **Specializations:** Analysis, Crime Scene Analysis, Interviewing, Research, Surveying, Tracking
 
 #### Streetwise (GUILE)
 
 *Knowledge of the underbelly of society*
 
-- **Specializations:** Black Market, Contraband, Information Gathering, Scrounging, Underground Navigation
+* **Specializations:** Black Market, Contraband, Information Gathering, Scrounging, Underground Navigation
 
 #### Trade (FLEX)
 
 *Commercial knowledge and practices*
 
-- **Specializations:** Appraisal, Business Administration, Market Analysis, Negotiation, Resource Management
+* **Specializations:** Appraisal, Business Administration, Market Analysis, Negotiation, Resource Management
 
 ### SOCIAL SKILLS
 
@@ -397,31 +395,31 @@ Characters can attempt skills even without training:
 
 *Convincing others through social means*
 
-- **Specializations:** Bargaining, Counseling, Fast Talk, Intimidation, Negotiation, Seduction
+* **Specializations:** Bargaining, Counseling, Fast Talk, Intimidation, Negotiation, Seduction
 
 #### Deception (GUILE)
 
 *Misleading or tricking others*
 
-- **Specializations:** Bluffing, Con Artistry, Disguise, Forgery, Misdirection
+* **Specializations:** Bluffing, Con Artistry, Disguise, Forgery, Misdirection
 
 #### Perception (SAVVY)
 
 *Noticing details and reading situations*
 
-- **Specializations:** Combat Awareness, Cultural Sensitivity, Environmental Awareness, Intuition, Observation, Reading People, Threat Assessment
+* **Specializations:** Combat Awareness, Cultural Sensitivity, Environmental Awareness, Intuition, Observation, Reading People, Threat Assessment
 
 #### Performance (CHARM)
 
 *Entertaining or impressing others*
 
-- **Specializations:** Acting, Music, Oratory, Public Speaking, Showmanship, Storytelling
+* **Specializations:** Acting, Music, Oratory, Public Speaking, Showmanship, Storytelling
 
 #### Social (CHARM)
 
 *Navigating social situations and hierarchies*
 
-- **Specializations:** Diplomacy, Etiquette, Leadership, Mediation, Networking, Rumor Collection
+* **Specializations:** Diplomacy, Etiquette, Leadership, Mediation, Networking, Rumor Collection
 
 ### SPECIALIZED SKILLS
 
@@ -429,43 +427,43 @@ Characters can attempt skills even without training:
 
 *Bypassing or enforcing protective measures*
 
-- **Specializations:** Alarm Systems, Law Enforcement, Lock Picking, Surveillance, VIP Protection
+* **Specializations:** Alarm Systems, Law Enforcement, Lock Picking, Surveillance, VIP Protection
 
 #### Psi (NERVE)
 
 *Mental abilities beyond normal human range*
 
-- **Specializations:** Empathy, Energy Manipulation, Mental Defense, Precognition, Psychokinesis, Telepathy
+* **Specializations:** Empathy, Energy Manipulation, Mental Defense, Precognition, Psychokinesis, Telepathy
 
 #### Artistry (FLEX)
 
 *Creating aesthetic works*
 
-- **Specializations:** Art Appreciation, Music, Photography, Sculpture, Visual Arts, Writing
+* **Specializations:** Art Appreciation, Music, Photography, Sculpture, Visual Arts, Writing
 
 #### Animal Handling (CHARM)
 
 *Working with and controlling non-sentient creatures*
 
-- **Specializations:** Alien Creatures, Domestic Animals, Robot Psychology, Wild Beasts
+* **Specializations:** Alien Creatures, Domestic Animals, Robot Psychology, Wild Beasts
 
 #### Computer Systems (SAVVY)
 
 *Working with information technology*
 
-- **Specializations:** Computer Operation, Cryptography, Data Analysis, Programming, System Administration
+* **Specializations:** Computer Operation, Cryptography, Data Analysis, Programming, System Administration
 
 #### Demolitions (SAVVY)
 
 *Working with explosives*
 
-- **Specializations:** Controlled Demolition, Defusing, Explosive Crafting, Mining Charges, Sabotage
+* **Specializations:** Controlled Demolition, Defusing, Explosive Crafting, Mining Charges, Sabotage
 
 #### Tactics (SAVVY)
 
 *Strategic planning and coordination*
 
-- **Specializations:** Combat, Infiltration, Military Operations, Security Planning, Skirmish
+* **Specializations:** Combat, Infiltration, Military Operations, Security Planning, Skirmish
 
 ## SPECIAL CASES
 
@@ -473,9 +471,9 @@ Characters can attempt skills even without training:
 
 Every character starts with Solar Scouts Training, representing general self-defense training they received in their youth:
 
-- Solar Scouts Training is (REFLEX × 2) + 15%
-- It covers unnarmed combat, pistols, rifles, and first aid
-- It never improves directly, but critical successes while using Solar Scouts Training can lead to developing the full specialized skill
+* Solar Scouts Training is 35%
+* It covers unnarmed combat, pistols, rifles, and first aid
+* It never improves directly, but critical successes while using Solar Scouts Training can lead to developing the full specialized skill
 
 ### Hobbies (Optional)
 
@@ -485,9 +483,9 @@ To further round out a character, the GM may allow them to pick any one skill th
 
 When one specialization would logically support another, grant a +10% bonus, this takes an action so you can't use it on yourself or use more than one of your specializations in one turn:
 
-- Using Navigation (Space) to support Piloting (Spacecraft)
-- Using Medicine (Emergency) to support Medicine (Surgery)
-- Using Science (Chemistry) to support Demolitions
+* Using Navigation (Space) to support Piloting (Spacecraft)
+* Using Medicine (Emergency) to support Medicine (Surgery)
+* Using Science (Chemistry) to support Demolitions
 
 ## SKILL ADVANCEMENT
 
@@ -501,17 +499,17 @@ At the end of the adventure:
 
 1. For each marked skill, roll d100 against your current percentage
 2. If you fail the roll (roll above your current percentage), you've found room for improvement
-3. Increase the skill by the value of the ones die on your failed roll, unless it was a Solar Scouts Training or a Core Skill
+3. For regular skills, increase the skill by the following values:
 
-If you earn an advancement check using Solar Scouts Training or a Core Skill:
+* **Beginner (<50%)**: improve by 5%
+* **Skilled (50-69%)**: improve by 3%
+* **Expert (70-89%)**: improve by 2%
+* **Master (90%+)**: improve by 1 %
 
-1. You may establish a new specialization at the  Skill % + 5%
-2. You must specify which specialization you're developing, based on what you used it for
+4. If it was a Solar Scouts Training or a Core Skill:
+   * You may establish a new specialization at the the better of the appropriate Core Skill % + 5% or 40%.
+   * You must specify which specialization you're developing, based on what you used it for
 
 ### Skill Plateaus
 
 As specializations reach higher levels, advancement becomes more difficult:
-
-- **Skilled (50-69%)**: Skills at this level only improve on a ones digit of 1-5
-- **Expert (70-89%)**: Skills at this level only improve on a ones digit of 1-3
-- **Master (90%+)**: Skills at this level only improve on a ones digit of 1
