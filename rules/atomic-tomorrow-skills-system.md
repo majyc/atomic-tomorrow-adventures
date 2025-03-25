@@ -2,7 +2,6 @@
 layout: default
 title: Atomic Tomorrow Skills System
 ---
-
 # ATOMIC TOMORROW ADVENTURES: REVISED PROFESSIONS
 
 ## ACES & PILOTS
@@ -11,7 +10,7 @@ title: Atomic Tomorrow Skills System
   * Skills: Piloting (Spacecraft) +15%, Technology (Ship Systems) +10%, Navigation (Space) +5%, Combat (Pistols) +5%
   * Equipment: Custom flight jacket, pilot's chronometer, personal navigation computer
 * **ASTROGATOR**
-  * Skills: Navigation (Space) +15%, Academics (Mathematics) +10%, Science (Astronomy) +5%, Computer Systems (Programming) +5%
+  * Skills: Navigation (Space) +15%, Science (Mathematics) (SAVVY) +10%, Science (Astronomy) +5%, Computer Systems (Programming) +5%
   * Equipment: Star charts, advanced computational slide rule, celestial reference guide
 * **ASTRO RACER**
   * Skills: Piloting (Racing) +15%, Repair (Vehicle) +10%, Perception (Threat Assessment) +5%, Athletics (Reflexes) +5%
@@ -26,10 +25,10 @@ title: Atomic Tomorrow Skills System
 ## SCIENTISTS & INNOVATORS
 
 * **BRAINIAC**
-  * Skills: Science (choose specialty) +15%, Investigation (Research) +10%, Technology (Laboratory Equipment) +5%, Academics (Mathematics) +5%
+  * Skills: Science (choose specialty) +15%, Investigation (Research) +10%, Technology (Laboratory Equipment) +5%, Science (Mathematics) (SAVVY) +5%
   * Equipment: Portable laboratory kit, scientific journal, reference library data chips
 * **ATOMICIST**
-  * Skills: Science (Physics) +15%, Engineering (Atomic) +10%, Engineering (Structural) +5%, Academics (Mathematics) +5%
+  * Skills: Science (Physics) +15%, Engineering (Atomic) +10%, Engineering (Structural) +5%, Science (Mathematics) (SAVVY) +5%
   * Equipment: Radiation detector, lead-lined sample case, isotope identification guide
 * **XENOBIOLOGIST**
   * Skills: Science (Xenobiology) +15%, Medicine (Field Medicine) +10%, Perception (Observation) +5%, Technology (Sampling Equipment) +5%
@@ -340,7 +339,7 @@ Characters can attempt skills even without training:
 
 *Knowledge of scientific principles and methods*
 
-- **Specializations:** Astronomy, Biology, Chemistry, Geology, Physics, Psychology, Xenobiology
+- **Specializations:** Astronomy, Biology, Chemistry, Geology, Physics, Psychology, Xenobiology, Mathematics, Research
 
 #### Technology (SAVVY)
 
@@ -366,7 +365,7 @@ Characters can attempt skills even without training:
 
 *Formal education and theoretical knowledge*
 
-- **Specializations:** Ancient History, Ancient Languages, Archaeology, Contract Law, Cultural History, Documentation, Linguistics, Mathematics, Politics, Research, Theology, Writing
+- **Specializations:** Ancient History, Ancient Languages, Archaeology, Contract Law, Cultural History, Documentation, Linguistics, Politics, Research, Theology, Writing
 
 #### Xenology (FLEX)
 

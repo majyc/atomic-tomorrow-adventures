@@ -112,7 +112,7 @@ Your profession represents your training, expertise, and the career that has sha
 | Profession               | Skills                                                                                                                                                               |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **ROCKET JOCKEY**  | Piloting (Spacecraft) (REFLEX) +40%, Technology (Ship Systems) (SAVVY) +20%, Navigation (Space) (SAVVY) +10%, Combat (Pistols) (REFLEX) +10%                         |
-| **ASTROGATOR**     | Navigation (Space) (SAVVY) +40%, Academics (Mathematics) (FLEX) +20%, Science (Astronomy) (SAVVY) +10%, Computer Systems (Programming) (SAVVY) +10%                  |
+| **ASTROGATOR**     | Navigation (Space) (SAVVY) +40%, Science (Mathematics) (SAVVY) +20%, Science (Astronomy) (SAVVY) +10%, Computer Systems (Programming) (SAVVY) +10%                  |
 | **ASTRO RACER**    | Piloting (Racing) (REFLEX) +40%, Repair (Vehicle) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Athletics (Reflexes) (REFLEX) +10%                      |
 | **ORBITAL JUMPER** | Athletics (Zero-G Movement) (REFLEX) +40%, Athletics (Jumping) (BRAWN) +20%, Technology (Vacuum Equipment) (SAVVY) +10%, Perception (Spatial Awareness) (SAVVY) +10% |
 | **STUNT PILOT**    | Piloting (Aircraft) (REFLEX) +40%, Performance (Showmanship) (CHARM) +20%, Repair (Vehicle) (SAVVY) +10%, Perception (Threat Assessment) (SAVVY) +10%                |
@@ -121,8 +121,8 @@ Your profession represents your training, expertise, and the career that has sha
 
 | Profession              | Skills                                                                                                                                                              |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **BRAINIAC**      | Science (Choose Specialty) (SAVVY) +40%, Investigation (Research) (SAVVY) +20%, Technology (Laboratory Equipment) (SAVVY) +10%, Academics (Mathematics) (FLEX) +10% |
-| **ATOMICIST**     | Science (Physics) (SAVVY) +40%, Engineering (Atomic) (SAVVY) +20%, Engineering (Structural) (SAVVY) +10%, Academics (Mathematics) (FLEX) +10%                       |
+| **BRAINIAC**      | Science (Choose Specialty) (SAVVY) +40%, Investigation (Research) (SAVVY) +20%, Technology (Laboratory Equipment) (SAVVY) +10%, Science (Mathematics) (SAVVY) +10% |
+| **ATOMICIST**     | Science (Physics) (SAVVY) +40%, Engineering (Atomic) (SAVVY) +20%, Engineering (Structural) (SAVVY) +10%, Science (Mathematics) (SAVVY) +10%                       |
 | **XENOBIOLOGIST** | Science (Xenobiology) (SAVVY) +40%, Medicine (Field Medicine) (SAVVY) +20%, Perception (Observation) (SAVVY) +10%, Technology (Sampling Equipment) (SAVVY) +10%     |
 | **MAD GENIUS**    | Engineering (Experimental) (SAVVY) +40%, Science (Theoretical Physics) (SAVVY) +20%, Deception (Misdirection) (GUILE) +10%, Perception (Intuition) (SAVVY) +10%     |
 | **TECH WIZARD**   | Repair (Improvised) (SAVVY) +40%, Technology (Electronics) (SAVVY) +20%, Engineering (Mechanical) (SAVVY) +10%, Perception (Technical Intuition) (SAVVY) +10%       |
