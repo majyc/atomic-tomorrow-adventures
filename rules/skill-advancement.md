@@ -52,7 +52,7 @@ Alternatively, characters can spend downtime between adventures learning new ski
 
 1. Choose a skill and a suitable teacher or learning resource (generally this will cost about 200 Cr and a month's time)
 2. Begin with a base chance equal to attribute × 2
-3. After suitable training time (GM's discretion), gain the skill at attribute × 2 + 10%
+3. After suitable training time (GM's discretion), gain the skill at Core + 5%
 
 ### Solar Scouts Training
 
