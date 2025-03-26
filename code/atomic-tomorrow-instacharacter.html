@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Tomorrow Insta-Character Sheet</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+        
+        :root {
+            --primary: #ff6b35;
+            --secondary: #142850;
+            --accent: #2ec4b6;
+            --light: #f9f9f9;
+            --dark: #272727;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 10px;
+            line-height: 1.2;
+            color: var(--dark);
+            background-color: var(--light);
+            max-width: 8.5in;
+            margin: 0.25in auto;
+            padding: 0.1in;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 0.1in;
+        }
+        
+        h1 {
+            font-family: 'Oxanium', cursive;
+            font-size: 18px;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.05in;
+            text-shadow: 1px 1px 0 var(--dark);
+        }
+        
+        h2 {
+            font-family: 'Oxanium', cursive;
+            font-size: 12px;
+            color: var(--secondary);
+            margin-bottom: 0.05in;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.05in;
+        }
+        
+        .instruction {
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 0.1in;
+        }
+        
+        .columns-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 0.1in;
+        }
+        
+        .column {
+            width: 24%;
+            border: 1px solid var(--secondary);
+            padding: 0.05in;
+            background-color: rgba(46, 196, 182, 0.1);
+        }
+        
+        .column h3 {
+            font-family: 'Oxanium', cursive;
+            font-size: 14px;
+            text-align: center;
+            background-color: var(--secondary);
+            color: var(--light);
+            padding: 0.05in;
+            margin-bottom: 0.05in;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin-left: 0.05in;
+        }
+        
+        li {
+            margin-bottom: 0.05in;
+        }
+        
+        .category {
+            font-weight: bold;
+            margin-top: 0.05in;
+            margin-bottom: 0.05in;
+            border-bottom: 1px dashed var(--accent);
+        }
+        
+        .examples {
+            border: 1px dashed var(--primary);
+            padding: 0.05in;
+            margin-top: 0.1in;
+            background-color: rgba(255, 107, 53, 0.1);
+        }
+        
+        .examples h3 {
+            text-align: center;
+            font-size: 11px;
+            margin-bottom: 0.05in;
+        }
+        
+        .examples ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .examples li {
+            width: 32%;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .character-sheet {
+            border: 2px solid var(--secondary);
+            padding: 0.1in;
+            margin-top: 0.1in;
+        }
+        
+        .attributes {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.1in;
+        }
+        
+        .attribute {
+            text-align: center;
+            border: 1px solid var(--accent);
+            padding: 0.05in;
+            width: 13%;
+            background-color: rgba(20, 40, 80, 0.1);
+        }
+        
+        .attribute-label {
+            font-weight: bold;
+            font-size: 11px;
+        }
+        
+        .notes {
+            border: 1px solid var(--primary);
+            padding: 0.05in;
+            margin-top: 0.1in;
+            min-height: 0.5in;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ATOMIC TOMORROW ADVENTURES</h1>
+        <div class="instruction">Choose one option from each column to create your character!</div>
+    </header>
+    
+    <div class="columns-container">
+        <div class="column">
+            <h3>EPITHET</h3>
+            <div class="category">GRITTY/TOUGH</div>
+            <ul>
+                <li>Grizzled</li>
+                <li>Hard-Bitten</li>
+                <li>Battle-Scarred</li>
+                <li>Steely-Eyed</li>
+                <li>Hardboiled</li>
+                <li>Iron-Willed</li>
+                <li>Two-Fisted</li>
+            </ul>
+            <div class="category">SKILLED/EXPERT</div>
+            <ul>
+                <li>Crack</li>
+                <li>Hotshot</li>
+                <li>Virtuoso</li>
+                <li>Legendary</li>
+                <li>Peerless</li>
+                <li>Uncanny</li>
+            </ul>
+            <div class="category">ADVENTUROUS</div>
+            <ul>
+                <li>Intrepid</li>
+                <li>Swashbuckling</li>
+                <li>Bold</li>
+                <li>Daring</li>
+                <li>Audacious</li>
+                <li>Lucky</li>
+            </ul>
+            <div class="category">CLEVER/SMART</div>
+            <ul>
+                <li>Brilliant</li>
+                <li>Ingenious</li>
+                <li>Silver-Tongued</li>
+                <li>Enigmatic</li>
+                <li>Veteran</li>
+            </ul>
+            <div class="category">CHARMING</div>
+            <ul>
+                <li>Plucky</li>
+                <li>Seductive</li>
+                <li>Stunning</li>
+                <li>Suave</li>
+                <li>Well-Heeled</li>
+            </ul>
+        </div>
+        
+        <div class="column">
+            <h3>PROFESSION</h3>
+            <div class="category">ACES & PILOTS</div>
+            <ul>
+                <li>Rocket Jockey</li>
+                <li>Astrogator</li>
+                <li>Astro Racer</li>
+                <li>Orbital Jumper</li>
+                <li>Stunt Pilot</li>
+            </ul>
+            <div class="category">SCIENTISTS</div>
+            <ul>
+                <li>Brainiac</li>
+                <li>Atomicist</li>
+                <li>Xenobiologist</li>
+                <li>Mad Genius</li>
+                <li>Tech Wizard</li>
+            </ul>
+            <div class="category">TRADE & COMMERCE</div>
+            <ul>
+                <li>Space Trader</li>
+                <li>Cartel Broker</li>
+                <li>Insurance Adjuster</li>
+                <li>Adventure Capitalist</li>
+                <li>Exotic Dealer</li>
+            </ul>
+            <div class="category">EXPLORERS & SCOUTS</div>
+            <ul>
+                <li>Scout</li>
+                <li>Trailblazer</li>
+                <li>Ruin Delver</li>
+                <li>Planetary Scout</li>
+                <li>Xeno-Tracker</li>
+            </ul>
+            <div class="category">SOLDIERS & ENFORCERS</div>
+            <ul>
+                <li>Space Ranger</li>
+                <li>Solar Marine</li>
+                <li>Bounty Hunter</li>
+                <li>Mercenary</li>
+                <li>Bodyguard</li>
+            </ul>
+            <div class="category">MECHANICS & ENGINEERS</div>
+            <ul>
+                <li>Wrench Monkey</li>
+                <li>Atomech</li>
+                <li>Gadgeteer</li>
+                <li>Salvager</li>
+                <li>Roboticist</li>
+            </ul>
+            <div class="category">SCOUNDRELS</div>
+            <ul>
+                <li>Space Rat</li>
+                <li>Grifter</li>
+                <li>Smuggler</li>
+                <li>Cat Burglar</li>
+                <li>Gambler</li>
+            </ul>
+            <div class="category">PSYCHICS & ESPERS</div>
+            <ul>
+                <li>Mentalist</li>
+                <li>Telekinetic</li>
+                <li>Precog</li>
+                <li>Empath</li>
+                <li>Wild Talent</li>
+            </ul>
+            <div class="category">COMMUNICATORS</div>
+            <ul>
+                <li>Xeno-Linguist</li>
+                <li>Negotiator</li>
+                <li>Ambassador</li>
+                <li>Newshound</li>
+                <li>Socialite</li>
+            </ul>
+            <div class="category">MEDICAL EXPERTS</div>
+            <ul>
+                <li>Sawbones</li>
+                <li>Xenodoc</li>
+                <li>Psychiatrist</li>
+                <li>Combat Medic</li>
+                <li>Life Scientist</li>
+            </ul>
+        </div>
+        
+        <div class="column">
+            <h3>ORIGIN</h3>
+            <ul>
+                <li>Terran</li>
+                <li>Loonie</li>
+                <li>Martian</li>
+                <li>Venusian</li>
+                <li>Belter</li>
+                <li>Jovian</li>
+                <li>Saturnian</li>
+                <li>Deep Spacer</li>
+                <li>Genmodded</li>
+                <li>Red Martian</li>
+            </ul>
+        </div>
+        
+        <div class="column">
+            <h3>BACKGROUND</h3>
+            <ul>
+                <li>Military Family</li>
+                <li>Merchant Clan</li>
+                <li>Frontier Homestead</li>
+                <li>Academic Training</li>
+                <li>Street Urchin</li>
+                <li>Corporate Upbringing</li>
+                <li>Aristocratic Family</li>
+                <li>Spacer Family</li>
+                <li>Religious Order</li>
+                <li>Laboratory Subject</li>
+                <li>Megacity Native</li>
+                <li>Political Dynasty</li>
+                <li>Colonist Child</li>
+                <li>Underworld Family</li>
+                <li>Showbiz Family</li>
+                <li>Regressed/Barbarian</li>
+                <li>Refugee</li>
+                <li>Ship-Born</li>
+                <li>Noble House</li>
+                <li>Atomicorp Employee</li>
+                <li>Orbital Habitat</li>
+                <li>Venusian Cloud Drifter</li>
+                <li>Belt Prospector Family</li>
+                <li>Station Brat</li>
+                <li>Filthy Rich</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
