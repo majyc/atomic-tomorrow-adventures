@@ -430,3 +430,139 @@
 | Racing Legend       | Hermes Speed       | 5  | 5  | CX, UE, GS   | 18.000     | 1+1      | 20 units       | Championship-winning vehicle replica         |
 | Explorer's Heritage | Mars Frontier      | 2  | 3  | AT, RF, AR   | 11.000     | 6+2      | 30 units       | Based on famous Mars expedition vehicle      |
 | First Contact       | Orbital Dynamics   | 4  | 4  | AR, GS, CS   | 20.000     | 2+1      | 10 units       | Commemorating first Mysterian encounter      |
+
+## MANUFACTURER PROFILES
+
+### ATOM MOTORS
+
+Founded in 1995 as the first company to successfully miniaturize atomic power for consumer vehicles. Specializes in high-performance vehicles with distinctive atomic styling including glowing blue engine components and radiation-inspired design elements. Known for naming vehicles after atomic elements, particles, and nuclear phenomena.
+
+**Manufacturing Centers:** Detroit (Earth), Copernicus City (Luna)
+**Signature Features:** Blue atomic exhaust, cooling fins, radiation-inspired styling
+**Price Range:** Premium to Ultra-Premium
+**Known For:** Pioneering atomic engine technology, distinctive atomic aesthetic
+
+### VENUSIAN CLOUD ENGINEERING
+
+Established in Venus's Upper Atmosphere Habitats in 2010. Specializes in vehicles adapted to extreme environments, particularly high-pressure and acidic conditions. Designs feature organic curves inspired by Venusian life forms and often include advanced atmospheric adaptations.
+
+**Manufacturing Centers:** Cloud City Alpha (Venus), New Singapore (Earth)
+**Signature Features:** Streamlined curves, pressure-resistant cabins, acid-resistant coatings
+**Price Range:** Mid-range to Premium
+**Known For:** Environmental adaptability, weather-resilient design
+
+### MARS FRONTIER VEHICLES
+
+Founded by early Mars colonists in 2003. Creates rugged, practical vehicles designed for the harsh Martian environment. Utilizes distinctive red and orange color schemes with angular, utilitarian designs focused on function over form.
+
+**Manufacturing Centers:** Olympus City (Mars), Arizona Facility (Earth)
+**Signature Features:** Dust filters, reinforced frames, pressurized cabins
+**Price Range:** Economy to Mid-range
+**Known For:** Reliability in harsh conditions, frontier practicality
+
+### LUNA PRECISION WORKS
+
+Lunar manufacturer established in 1998, specializing in vacuum-rated, low-gravity optimized vehicles. Known for elegant, minimal designs with exceptional engineering precision. Vehicles often feature silver and blue color schemes with celestial themes.
+
+**Manufacturing Centers:** Tranquility Base (Luna), Zurich (Earth)
+**Signature Features:** Vacuum sealing, regolith-resistant components, astronomical styling
+**Price Range:** Premium to Ultra-Premium
+**Known For:** Engineering precision, space-optimized design
+
+### HERMES SPEED INDUSTRIES
+
+Racing vehicle specialist founded in 2000. Creates ultra-fast vehicles for both competition and wealthy enthusiasts. Designs feature sleek, aerodynamic styling with mythological and speed-themed naming conventions.
+
+**Manufacturing Centers:** Monaco (Earth), Elysium Racing Complex (Mars)
+**Signature Features:** Aerodynamic styling, lightweight materials, minimal aesthetics
+**Price Range:** Premium to Ultra-Premium
+**Known For:** Racing championships, speed records
+
+### ALLIED CONTINENTAL
+
+Conservative Earth-based manufacturer founded in 1980. Produces reliable, practical vehicles for commercial and family use. Design philosophy emphasizes safety, comfort, and conventional styling with gradual technological adoption.
+
+**Manufacturing Centers:** Chicago (Earth), Mumbai (Earth), Lunar Business Park (Luna)
+**Signature Features:** Comfortable interiors, chrome accents, conventional styling
+**Price Range:** Economy to Mid-range
+**Known For:** Reliability, family-friendly design, conservative styling
+
+### NEW DETROIT ELECTRIC
+
+Founded in the revitalized Detroit of 2001. Specializes in electric and hybrid vehicles combining retro styling with cutting-edge technology. Known for vibrant color schemes and distinctive lightning bolt branding.
+
+**Manufacturing Centers:** Detroit (Earth), Valles Marineris (Mars)
+**Signature Features:** Electric blue accents, lightning motifs, retro-modern fusion
+**Price Range:** Mid-range to Premium
+**Known For:** Electric innovation, distinctive styling
+
+### BELL AEROSPACE
+
+Traditional aerospace company that transitioned to atomic age designs in 1995. Creates conventional and VTOL aircraft with military and civilian applications. Known for functional design with emphasis on reliability and performance.
+
+**Manufacturing Centers:** Seattle (Earth), Armstrong City (Luna)
+**Signature Features:** Practical design, military influences, extensive safety systems
+**Price Range:** Mid-range to Premium
+**Known For:** Reliable aircraft, military contracts
+
+### ORBITAL DYNAMICS
+
+Space-focused vehicle manufacturer founded in 2004. Specializes in vehicles that can operate in multiple environments, particularly near-vacuum conditions. Design aesthetic emphasizes spherical and orbital motifs.
+
+**Manufacturing Centers:** L5 Colony, Deimos Station (Mars orbit)
+**Signature Features:** Space-optimized design, orbital motifs, multi-environment capability
+**Price Range:** Premium to Ultra-Premium
+**Known For:** Experimental technology, space-ready vehicles
+
+### TITAN HEAVY INDUSTRIES
+
+Established on Titan in 2008 with Earth headquarters. Specializes in industrial-scale vehicles and heavy transport. Designs emphasize durability, capacity, and long operational lifespans with minimal maintenance requirements.
+
+**Manufacturing Centers:** New Kronos (Titan), Houston (Earth)
+**Signature Features:** Reinforced construction, modular components, industrial styling
+**Price Range:** Mid-range to Premium (for category)
+**Known For:** Durability, load capacity, industrial reliability
+
+## BUYING GUIDE: CHOOSING THE RIGHT VEHICLE
+
+### FOR THE SPACE TRAVELER
+
+- **Luna Precision** vehicles offer reliability in vacuum environments
+- **Orbital Dynamics** models excel in multi-environment operation
+- Look for RF and CS enhancements for safety in unpredictable conditions
+- Consider atmospheric capability if traveling between worlds
+
+### FOR THE MARS SETTLER
+
+- **Mars Frontier** vehicles are purpose-built for Martian conditions
+- AT enhancement is essential for navigating Martian terrain
+- Dust filtration systems prevent maintenance issues
+- Pressurized cabins with emergency systems are worth the investment
+
+### FOR THE VENUSIAN ADVENTURER
+
+- **Venusian Cloud** vehicles are designed for atmospheric challenges
+- Acid-resistant coatings are standard on all Venusian vehicles
+- GS enhancement helps navigate unpredictable wind conditions
+- High-pressure reinforcement adds safety in lower atmospheric levels
+
+### FOR THE BELT PROSPECTOR
+
+- Look for RF enhancement to withstand micrometeoroid impacts
+- **Luna Precision** or **Titan Heavy** vehicles offer vacuum reliability
+- AR enhancement helps locate valuable resources
+- Consider cargo capacity for hauling discoveries
+
+### FOR THE EARTH BUSINESS EXECUTIVE
+
+- **Allied Continental** and **Luna Precision** offer prestigious options
+- Look for CS enhancement for comfort and safety
+- NA enhancement helps navigate congested urban centers
+- Consider AR enhancement for maximum efficiency in transit
+
+### FOR THE THRILL SEEKER
+
+- **Hermes Speed** vehicles deliver maximum performance
+- **Atom Motors** offers distinctive styling with atomic power
+- CX enhancement provides bursts of acceleration when needed
+- UE enhancement maintains performance even after minor damage

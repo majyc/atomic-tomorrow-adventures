@@ -2,7 +2,6 @@
 layout: default
 title: Rocketship Combat
 ---
-
 # ATOMIC TOMORROW ADVENTURES: ROCKETSHIP COMBAT
 
 ## PRINCIPLES
@@ -13,7 +12,7 @@ In Atomic Tomorrow Adventures, a ship's performance in combat depends entirely o
 
 ### NARRATIVE POSITIONING
 
-Space combat emphasizes position, vectors, and tactical choices over precise movement tracking. The referee describes the relative positions of ships, while players describe their intended maneuvers. This creates a dynamic, cinematic experience without getting bogged down in complex movement calculations.
+Space combat emphasizes position, vectors, and tactical choices over precise movement tracking. The referee describes the relative positions of ships, while players describe their intended maneuvers.
 
 ### DAMAGE TO SHIPS
 

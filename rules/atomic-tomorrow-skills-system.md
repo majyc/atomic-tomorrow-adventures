@@ -509,7 +509,3 @@ At the end of the adventure:
 4. If it was a Solar Scouts Training or a Core Skill:
    * You may establish a new specialization at the the better of the appropriate Core Skill % + 5% or 40%.
    * You must specify which specialization you're developing, based on what you used it for
-
-### Skill Plateaus
-
-As specializations reach higher levels, advancement becomes more difficult:
