@@ -184,25 +184,12 @@
             width: 0.9in;
         }
         
-        .attribute-value-header {
-            width: 0.5in;
-            text-align: center;
-            font-weight: bold;
-        }
-        
         .attribute-value {
             width: 0.5in;
             text-align: center;
             font-weight: bold;
             border: 1px solid #888;
             background: #fff;
-        }
-        
-        .attribute-check-header {
-            width: 0.7in;
-            text-align: center;
-            border: 1px solid #888;
-            background: #f8f8f8;
         }
         
         .attribute-check {
@@ -362,9 +349,24 @@
             color: #27ae60;
         }
         
-        /* Core Values Table Styling */
+        .skills-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.05in;
+        }
+        
+        .skills-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            max-height: calc(100% - 1.5in); /* Account for header and core values table */
+        }
+        
+        /* NEW Core Values Table Styling */
         .core-values-container {
-            margin-bottom: 0.1in;
+            margin-bottom: 0.15in;
             border: 1px solid #27ae60;
             border-radius: 3px;
             background-color: rgba(39, 174, 96, 0.1);
@@ -410,57 +412,53 @@
             border-top: 1px dotted rgba(39, 174, 96, 0.3);
         }
         
-        /* Detailed Skills Table */
-        .skills-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9em;
+        /* Solar Scouts Row Styling */
+        .solar-scouts {
+            padding: 0.03in 0;
+            margin-bottom: 0.05in;
+            border-bottom: 1px dashed #27ae60;
         }
         
-        .skills-table th {
-            text-align: center;
-            padding: 0.02in;
-            background-color: rgba(39, 174, 96, 0.15);
-            border-bottom: 1px solid rgba(39, 174, 96, 0.5);
-            font-size: 0.8em;
-        }
-        
-        .skills-table td {
-            padding: 0.02in;
-            border-bottom: 1px dotted rgba(39, 174, 96, 0.3);
-            height: 0.25in;
-        }
-        
-        .skills-table td input {
-            width: 100%;
-            border: none;
-            border-bottom: 1px solid #aaa;
-            background: transparent;
-            font-family: inherit;
-            font-size: inherit;
-            height: 0.2in;
-        }
-        
-        .skills-table .value-cell {
-            text-align: center;
-            width: 0.4in;
-        }
-        
-        .skills-table .value-cell div {
-            width: 95%;
-            margin: 0 auto;
-            border: 1px solid #888;
-            background: #fff;
-            height: 0.2in;
-        }
-        
-        /* Solar Scouts Row */
-        .solar-scouts td {
-            background-color: rgba(39, 174, 96, 0.1);
+        .solar-scouts .skill-name {
             font-weight: bold;
         }
         
-        /* Rules Cheat Sheet */
+        .solar-scouts .skill-note {
+            font-weight: bold;
+            font-size: x-small;
+        }
+        
+        .skill-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.08in;
+        }
+        
+        .skill-name {
+            flex: 1;
+            padding: 0.02in;
+        }
+        
+        .skill-input {
+            flex: 1;
+            border: none;
+            border-bottom: 1px solid #aaa;
+            background: transparent;
+            padding: 0.02in;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        
+        .skill-value {
+            width: 0.6in;
+            height: 0.25in;
+            text-align: center;
+            border: 1px solid #888;
+            background: #fff;
+            margin-left: 0.1in;
+        }
+        
+        /* Rules Cheat Sheet Styling */
         .rules-cheat-sheet {
             margin-top: 0.1in;
             padding: 0.1in;
@@ -565,12 +563,6 @@
                     <h2 class="section-title attributes-title">Attributes</h2>
                     <table class="attribute-table">
                         <tr>
-                            <td class="attribute-name"></td>
-                            <td class="attribute-value-header"></td>
-                            <td class="attribute-check-header">Check</td>
-                            <td class="attribute-mod"></td>
-                        </tr>
-                        <tr>
                             <td class="attribute-name">BRAWN</td>
                             <td class="attribute-value"></td>
                             <td class="attribute-check"></td>
@@ -671,7 +663,7 @@
                 <div class="skills section">
                     <h2 class="section-title skills-title">Skills</h2>
                     
-                    <!-- Core Values Table -->
+                    <!-- NEW Core Values Table -->
                     <div class="core-values-container">
                         <div class="core-values-title">CORE SKILL VALUES</div>
                         <table class="core-values-table">
@@ -699,175 +691,90 @@
                         <div class="core-values-caption">Core Skill Value = (Attribute × 2) + 5%</div>
                     </div>
                     
-                    <!-- Skills Table with Detailed Calculation -->
+                    <div class="skills-header">
+                        <div></div>
+                        <span style="font-size: 0.8em; margin-right: 0.6in;">Value</span>
+                    </div>
+                    
                     <div class="skills-content">
-                        <table class="skills-table">
-                            <tr>
-                                <th style="width: 38%;">Skill (Specialization)</th>
-                                <th style="width: 12%;">Core</th>
-                                <th style="width: 12%;">Prof</th>
-                                <th style="width: 12%;">Origin</th>
-                                <th style="width: 12%;">Back</th>
-                                <th style="width: 14%;">Total</th>
-                            </tr>
-                            <!-- Solar Scouts Row -->
-                            <tr class="solar-scouts">
-                                <td>Solar Scouts Training</td>
-                                <td class="value-cell">—</td>
-                                <td class="value-cell">—</td>
-                                <td class="value-cell">—</td>
-                                <td class="value-cell">—</td>
-                                <td class="value-cell"><div>35%</div></td>
-                            </tr>
-                            
-                            <!-- Regular Skill Rows - 12 rows -->
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Skill (Specialization)"></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                                <td class="value-cell"><div></div></td>
-                            </tr>
-                        </table>
+                        <!-- Solar Scouts Training Row -->
+                        <div class="skill-row solar-scouts">
+                            <span class="skill-name">Solar Scouts Training</span>
+                            <div class="skill-value">35%</div>
+                        </div>
                         
+                        <!-- Regular Skills - 15 rows as requested -->
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <!--
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        <div class="skill-row">
+                            <input type="text" class="skill-input">
+                            <div class="skill-value"></div>
+                        </div>
+                        -->
                         <!-- Rules Cheat Sheet -->
                         <div class="rules-cheat-sheet">
-                            <h3>SKILL RESOLUTION</h3>
+                            <h3>Basic Skill Resolution</h3>
                             <ul class="rules-list">
-                                <li><strong>Roll d100</strong>: Roll under your skill percentage to succeed</li>
-                                <li><strong>Critical Success</strong>: Doubles (11, 22, etc.) <= skill %</li>
-                                <li><strong>Special Success</strong>: Roll ending in 0 or 5 <= skill %</li>
+                                <li><strong>Roll d100</strong>: Roll percentile dice (d100) and try to roll <strong>under</strong> your skill percentage</li>
+                                <li><strong>Critical Success</strong>: Doubles (11, 22, etc.) &lt;= your skill %</li>
+                                <li><strong>Special Success</strong>: Roll ending in 0 or 5 &lt;= skill %</li>
                                 <li><strong>Critical Failure</strong>: Doubles above your skill %</li>
-                                <li><strong>Special Failure</strong>: Roll ending in 0 or 5 above skill %</li>
+                                <li><strong>Special Failure</strong>: Roll ending in 0 or 5 above your skill %</li>
                                 <li><strong>Automatic Success</strong>: Rolls of 01-05 regardless of skill</li>
                                 <li><strong>Automatic Failure</strong>: Rolls of 96-00 regardless of skill</li>
                             </ul>
