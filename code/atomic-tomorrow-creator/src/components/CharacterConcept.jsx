@@ -422,7 +422,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
         </div>
 
         {/* Option Hint List - now in Access Panel */}
-        <AccessPanel title={`${title} DATABASE`}>
+        <AccessPanel title={`ACCESS PANEL`}>
           <div className="flex flex-wrap gap-1">
             {data.map((item, idx) => (
               <div
