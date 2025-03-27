@@ -1,9 +1,248 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Zap } from 'lucide-react';
 import { EPITHETS } from '../data/epithets';
 import { PROFESSIONS } from '../data/professions';
 import { ORIGINS } from '../data/origins';
 import { BACKGROUNDS } from '../data/backgrounds';
+
+// Custom AtomicKnob component
+const AtomicKnob = ({ value, onChange, steps, color }) => {
+  const knobRef = useRef(null);
+  
+  // Get color based on the category
+  const getColors = () => {
+    switch (color) {
+      case 'bg-blue-700':
+        return {
+          primary: '#1e40af',
+          secondary: '#3b82f6',
+          highlight: '#60a5fa',
+          text: '#dbeafe'
+        };
+      case 'bg-green-700':
+        return {
+          primary: '#166534',
+          secondary: '#22c55e',
+          highlight: '#4ade80',
+          text: '#dcfce7'
+        };
+      case 'bg-yellow-600':
+        return {
+          primary: '#854d0e',
+          secondary: '#eab308',
+          highlight: '#facc15',
+          text: '#fef9c3'
+        };
+      case 'bg-red-700':
+        return {
+          primary: '#991b1b',
+          secondary: '#ef4444',
+          highlight: '#f87171',
+          text: '#fee2e2'
+        };
+      default:
+        return {
+          primary: '#4b5563',
+          secondary: '#9ca3af',
+          highlight: '#d1d5db',
+          text: '#f3f4f6'
+        };
+    }
+  };
+  
+  const colors = getColors();
+  
+  // Calculate rotation angle from value - for midnight position (12 o'clock)
+  const angle = Math.round((value / (steps - 1)) * 270) - 90;
+  
+  // Click handler
+  const handleMouseDown = (e) => {
+    if (!knobRef.current) return;
+    
+    // Get knob center
+    const rect = knobRef.current.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    // Calculate angle from center to initial click point
+    const initialX = e.clientX - centerX;
+    const initialY = e.clientY - centerY;
+    const initialAngleDeg = Math.atan2(initialY, initialX) * 180 / Math.PI;
+    
+    // Get current value's angle (in degrees, 0-360 range)
+    const currentValueAngle = ((value / (steps - 1)) * 270) - 225;
+    
+    // Calculate the offset between the click angle and the current value angle
+    const angleOffset = initialAngleDeg - currentValueAngle;
+    
+    // Calculate value from raw angle
+    const valueFromAngle = (angle) => {
+      // Convert radians to degrees and normalize to 0-360
+      let degrees = (angle * 180 / Math.PI) % 360;
+      if (degrees < 0) degrees += 360;
+      
+      // For a 270-degree range where 0 is at the top (12 o'clock):
+      // We want to map angles from 45° to 315° to our value range
+      // with 45° = value 0 and 315° = value (steps-1)
+      
+      if (degrees >= 45 && degrees <= 315) {
+        const normalizedDegrees = degrees - 45;
+        const mappedPercentage = normalizedDegrees / 270;
+        return Math.max(0, Math.min(steps - 1, Math.round(mappedPercentage * (steps - 1))));
+      } else {
+        // Outside the valid range, return current value
+        return value;
+      }
+    };
+    
+    // Handle mouse move for dragging
+    const handleMouseMove = (moveEvent) => {
+      // Calculate new angle from center
+      const newX = moveEvent.clientX - centerX;
+      const newY = moveEvent.clientY - centerY;
+      let newAngleDeg = Math.atan2(newY, newX) * 180 / Math.PI;
+      
+      // Adjust the angle using the offset to maintain relative position
+      let targetAngle = newAngleDeg - angleOffset;
+      
+      // Normalize to 0-360 range
+      if (targetAngle < 0) targetAngle += 360;
+      if (targetAngle >= 360) targetAngle %= 360;
+      
+      // Use the valueFromAngle function to calculate the new value
+      const newValue = valueFromAngle(targetAngle * Math.PI / 180);
+      onChange(newValue);
+    };
+    
+    // Set up cleanup
+    const handleMouseUp = () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+    };
+    
+    // Add event listeners
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+    
+    // Prevent default to avoid text selection
+    e.preventDefault();
+  };
+  
+  // Generate tick marks
+  const renderTicks = () => {
+    const ticks = [];
+    const numTicks = Math.min(steps, 10); // Max 10 ticks for visual clarity
+    
+    for (let i = 0; i < numTicks; i++) {
+      const tickAngle = (i / (numTicks - 1)) * 270 ;
+      const isActive = i <= (value / (steps - 1)) * (numTicks - 1);
+      
+      ticks.push(
+        <div
+          key={i}
+          style={{
+            position: 'absolute',
+            width: '2px',
+            height: '10px',
+            backgroundColor: isActive ? colors.highlight : '#4b5563',
+            transform: `rotate(${tickAngle}deg) translateY(-32px)`,
+            transformOrigin: 'bottom center',
+            transition: 'background-color 0.2s'
+          }}
+        />
+      );
+    }
+    
+    return ticks;
+  };
+  
+  return (
+    <div
+      ref={knobRef}
+      onMouseDown={handleMouseDown}
+      style={{
+        position: 'relative',
+        width: '80px',
+        height: '80px',
+        borderRadius: '50%',
+        backgroundColor: '#111827',
+        border: '4px solid #1f2937',
+        boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3)',
+        cursor: 'grab',
+        userSelect: 'none',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+      role="slider"
+      aria-valuemin={0}
+      aria-valuemax={steps - 1}
+      aria-valuenow={value}
+      aria-label="Selection knob"
+    >
+      {/* Tick marks */}
+      <div
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        {renderTicks()}
+      </div>
+      
+      {/* Inner knob */}
+      <div
+        style={{
+          position: 'absolute',
+          width: '70%',
+          height: '70%',
+          borderRadius: '50%',
+          backgroundColor: colors.primary,
+          boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+        }}
+      />
+      
+      {/* Indicator line */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          width: '40%',
+          height: '4px',
+          backgroundColor: colors.secondary,
+          transform: `rotate(${angle}deg)`,
+          transformOrigin: 'left center',
+          borderRadius: '2px'
+        }}
+      />
+      
+      {/* Center cap with value */}
+      <div
+        style={{
+          position: 'absolute',
+          width: '40%',
+          height: '40%',
+          borderRadius: '50%',
+          backgroundColor: '#1f2937',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          color: colors.text,
+          fontSize: '10px',
+          fontFamily: 'monospace',
+          boxShadow: 'inset 0 1px 2px rgba(0,0,0,0.3)'
+        }}
+      >
+        {value + 1}/{steps}
+      </div>
+    </div>
+  );
+};
 
 const CharacterConcept = ({ character, updateCharacter }) => {
   // State for currently focused item in each column
@@ -25,13 +264,6 @@ const CharacterConcept = ({ character, updateCharacter }) => {
 
   // Render a selection column
   const renderSelectionColumn = (title, data, focusedIndex, setFocusedIndex, color) => {
-    // Calculate the slider position as a percentage
-    const handleSliderChange = (e) => {
-      // Convert the slider value (0-100) to an index in the data array
-      const newIndex = Math.round((e.target.value / 100) * (data.length - 1));
-      setFocusedIndex(newIndex);
-    };
-
     return (
       <div className="flex flex-col h-full">
         {/* Column Header */}
@@ -47,8 +279,8 @@ const CharacterConcept = ({ character, updateCharacter }) => {
           </p>
         </div>
 
-        {/* Slider Control with Current Index/Total */}
-        <div className="flex items-center mb-4 space-x-2">
+        {/* Knob Control with buttons */}
+        <div className="flex items-center justify-center mb-4 space-x-4">
           <button
             className="p-2 bg-gray-800 text-white rounded-md hover:bg-gray-700"
             onClick={() => setFocusedIndex((prev) => (prev > 0 ? prev - 1 : prev))}
@@ -56,56 +288,12 @@ const CharacterConcept = ({ character, updateCharacter }) => {
             <ChevronLeft size={20} />
           </button>
 
-          <div className="flex-grow relative">
-            {/* Actual slider control */}
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value={(focusedIndex / (data.length - 1)) * 100}
-              onChange={handleSliderChange}
-              className={`w-full h-2 appearance-none rounded-lg ${colorToSliderTrack(color)} outline-none`}
-              style={{
-                // Custom slider styling for better aesthetics
-                background: `linear-gradient(to right, ${colorToSliderFill(color)} 0%, ${colorToSliderFill(color)} ${(focusedIndex / (data.length - 1)) * 100}%, #d1d5db ${(focusedIndex / (data.length - 1)) * 100}%, #d1d5db 100%)`,
-              }}
-            />
-
-            {/* Custom thumb styling */}
-            <style jsx>{`
-              input[type=range]::-webkit-slider-thumb {
-                -webkit-appearance: none;
-                appearance: none;
-                width: 16px;
-                height: 16px;
-                border-radius: 50%;
-                background: #fff;
-                border: 2px solid ${colorToSliderFill(color)};
-                cursor: pointer;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-                transition: all 0.15s ease;
-              }
-              
-              input[type=range]::-webkit-slider-thumb:hover {
-                transform: scale(1.2);
-              }
-              
-              input[type=range]::-moz-range-thumb {
-                width: 16px;
-                height: 16px;
-                border-radius: 50%;
-                background: #fff;
-                border: 2px solid ${colorToSliderFill(color)};
-                cursor: pointer;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-                transition: all 0.15s ease;
-              }
-              
-              input[type=range]::-moz-range-thumb:hover {
-                transform: scale(1.2);
-              }
-            `}</style>
-          </div>
+          <AtomicKnob
+            value={focusedIndex}
+            onChange={setFocusedIndex}
+            steps={data.length}
+            color={color}
+          />
 
           <button
             className="p-2 bg-gray-800 text-white rounded-md hover:bg-gray-700"
@@ -113,10 +301,6 @@ const CharacterConcept = ({ character, updateCharacter }) => {
           >
             <ChevronRight size={20} />
           </button>
-
-          <div className="text-sm font-mono bg-gray-100 px-2 py-1 rounded border border-gray-300">
-            {focusedIndex + 1}/{data.length}
-          </div>
         </div>
 
         {/* Selected Option Details Card */}
@@ -187,24 +371,6 @@ const CharacterConcept = ({ character, updateCharacter }) => {
     if (color.includes('yellow')) return 'border-yellow-500 bg-yellow-50';
     if (color.includes('red')) return 'border-red-500 bg-red-50';
     return 'border-gray-300';
-  };
-
-  // Helper to convert color class to slider track color
-  const colorToSliderTrack = (color) => {
-    if (color.includes('blue')) return 'bg-blue-200';
-    if (color.includes('green')) return 'bg-green-200';
-    if (color.includes('yellow')) return 'bg-yellow-200';
-    if (color.includes('red')) return 'bg-red-200';
-    return 'bg-gray-200';
-  };
-
-  // Helper to convert color class to slider fill color
-  const colorToSliderFill = (color) => {
-    if (color.includes('blue')) return '#2563eb'; // blue-600
-    if (color.includes('green')) return '#16a34a'; // green-600
-    if (color.includes('yellow')) return '#ca8a04'; // yellow-600
-    if (color.includes('red')) return '#dc2626'; // red-600
-    return '#4b5563'; // gray-600
   };
 
   // Helper to convert color class to option background

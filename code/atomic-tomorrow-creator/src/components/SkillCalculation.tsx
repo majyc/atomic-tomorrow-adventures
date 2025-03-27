@@ -1,5 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Search, AlertCircle, Info } from 'lucide-react';
+interface SpecializationData {
+  value: number;
+  professionBonus: number;
+  originBonus: number;
+  backgroundBonus: number;
+}
+interface SkillData {
+  baseValue: number;
+  coreValue: number;
+  attribute: string;
+  specializations: {
+    [key: string]: SpecializationData;
+  };
+}
+interface CalculatedSkills {
+  [key: string]: SkillData;
+}
 
 // Sample skill data structure
 const SKILL_DATA = {
@@ -708,7 +725,7 @@ const SkillRatingBadge = ({ rating }) => {
 const SkillCalculation = ({ character, updateCharacter }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedSkills, setExpandedSkills] = useState({});
-  const [calculatedSkills, setCalculatedSkills] = useState({});
+  const [calculatedSkills, setCalculatedSkills] = useState<CalculatedSkills>({});
   const [activeTab, setActiveTab] = useState('all');
 
   // Calculate skills based on attributes, profession, origin, and background
@@ -836,35 +853,37 @@ const SkillCalculation = ({ character, updateCharacter }) => {
   };
 
   // Filter skills based on search term and active tab
-  const filteredSkills = () => {
-    return Object.entries(calculatedSkills).filter(([skillName, skillData]) => {
-      // Filter by search term
-      if (searchTerm && !skillName.toLowerCase().includes(searchTerm.toLowerCase())) {
-        // Also check specializations
-        const hasMatchingSpecialization = Object.keys(skillData.specializations).some(
-          spec => spec.toLowerCase().includes(searchTerm.toLowerCase())
-        );
+  // The filter callback returns a boolean
+  const filteredSkills = (): [string, SkillData][] => {
+    return Object.entries(calculatedSkills).filter(
+      ([skillName, skillData]: [string, SkillData]): boolean => {
+        // Filter by search term
+        if (searchTerm && !skillName.toLowerCase().includes(searchTerm.toLowerCase())) {
+          // Also check specializations
+          const hasMatchingSpecialization = Object.keys(skillData.specializations).some(
+            spec => spec.toLowerCase().includes(searchTerm.toLowerCase())
+          );
 
-        if (!hasMatchingSpecialization) return false;
+          if (!hasMatchingSpecialization) return false;
+        }
+
+        // Filter by active tab
+        if (activeTab === 'profession' && !Object.values(skillData.specializations).some(
+          spec => spec.professionBonus > 0
+        )) {
+          return false;
+        }
+
+        if (activeTab === 'combat' &&
+          skillName !== 'COMBAT' &&
+          skillName !== 'Solar Scouts Training') {
+          return false;
+        }
+
+        return true;
       }
-
-      // Filter by active tab
-      if (activeTab === 'profession' && !Object.values(skillData.specializations).some(
-        spec => spec.professionBonus > 0
-      )) {
-        return false;
-      }
-
-      if (activeTab === 'combat' &&
-        skillName !== 'COMBAT' &&
-        skillName !== 'Solar Scouts Training') {
-        return false;
-      }
-
-      return true;
-    });
+    );
   };
-
   return (
     <div>
       <h2 className="text-2xl font-bold mb-6 text-center text-blue-900">Step 3: Skills</h2>
