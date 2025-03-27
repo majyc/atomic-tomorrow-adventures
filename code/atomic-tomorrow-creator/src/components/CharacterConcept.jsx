@@ -4,6 +4,7 @@ import { EPITHETS } from '../data/epithets';
 import { PROFESSIONS } from '../data/professions';
 import { ORIGINS } from '../data/origins';
 import { BACKGROUNDS } from '../data/backgrounds';
+import AccessPanel from './AccessPanel';
 
 // Custom AtomicKnob component
 const AtomicKnob = ({ value, onChange, steps, color }) => {
@@ -420,29 +421,31 @@ const CharacterConcept = ({ character, updateCharacter }) => {
           )}
         </div>
 
-        {/* Option Hint List - with fixed height */}
-        <div className="mt-2 flex flex-wrap gap-1 h-24 overflow-y-auto p-2 rounded-lg" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-          {data.map((item, idx) => (
-            <div
-              key={idx}
-              onClick={() => setFocusedIndex(idx)}
-              className={`text-xs px-1.5 py-1 rounded cursor-pointer transition-all ${idx === focusedIndex
-                  ? `${colorToOptionBg(color)} text-white font-bold`
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              style={idx === focusedIndex ? getGlowStyle(color) : {}}
-            >
-              {item.name}
-            </div>
-          ))}
-        </div>
+        {/* Option Hint List - now in Access Panel */}
+        <AccessPanel title={`${title} DATABASE`}>
+          <div className="flex flex-wrap gap-1">
+            {data.map((item, idx) => (
+              <div
+                key={idx}
+                onClick={() => setFocusedIndex(idx)}
+                className={`text-xs px-1.5 py-1 rounded cursor-pointer transition-all ${idx === focusedIndex
+                    ? `${colorToOptionBg(color)} text-white font-bold`
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                style={idx === focusedIndex ? getGlowStyle(color) : {}}
+              >
+                {item.name}
+              </div>
+            ))}
+          </div>
+        </AccessPanel>
       </div>
     );
   };
 
   return (
     <div className="bg-gray-900 p-5 rounded-xl">
-      <style>{`
+      <style jsx>{`
         @keyframes scanlines {
           0% { background-position: 0 0; }
           100% { background-position: 0 4px; }
