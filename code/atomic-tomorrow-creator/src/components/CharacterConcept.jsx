@@ -53,6 +53,7 @@ const AtomicKnob = ({ value, onChange, steps, color }) => {
   const colors = getColors();
   
   // Calculate rotation angle from value - for midnight position (12 o'clock)
+  // This maps value 0 to -90 degrees (12 o'clock) and max value to 180 degrees (9 o'clock)
   const angle = Math.round((value / (steps - 1)) * 270) - 90;
   
   // Click handler
@@ -64,54 +65,57 @@ const AtomicKnob = ({ value, onChange, steps, color }) => {
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
     
-    // Calculate angle from center to initial click point
+    // Calculate initial angle in radians and convert to degrees
     const initialX = e.clientX - centerX;
     const initialY = e.clientY - centerY;
-    const initialAngleDeg = Math.atan2(initialY, initialX) * 180 / Math.PI;
+    const initialAngleRad = Math.atan2(initialY, initialX);
+    let initialAngleDeg = initialAngleRad * (180 / Math.PI);
     
-    // Get current value's angle (in degrees, 0-360 range)
-    const currentValueAngle = ((value / (steps - 1)) * 270) - 225;
+    // Track the cumulative angle change
+    let cumulativeAngleChange = 0;
     
-    // Calculate the offset between the click angle and the current value angle
-    const angleOffset = initialAngleDeg - currentValueAngle;
+    // Store the last angle to calculate deltas
+    let lastAngleDeg = initialAngleDeg;
     
-    // Calculate value from raw angle
-    const valueFromAngle = (angle) => {
-      // Convert radians to degrees and normalize to 0-360
-      let degrees = (angle * 180 / Math.PI) % 360;
-      if (degrees < 0) degrees += 360;
-      
-      // For a 270-degree range where 0 is at the top (12 o'clock):
-      // We want to map angles from 45° to 315° to our value range
-      // with 45° = value 0 and 315° = value (steps-1)
-      
-      if (degrees >= 45 && degrees <= 315) {
-        const normalizedDegrees = degrees - 45;
-        const mappedPercentage = normalizedDegrees / 270;
-        return Math.max(0, Math.min(steps - 1, Math.round(mappedPercentage * (steps - 1))));
-      } else {
-        // Outside the valid range, return current value
-        return value;
-      }
-    };
+    // Store initial value
+    const startValue = value;
     
     // Handle mouse move for dragging
     const handleMouseMove = (moveEvent) => {
-      // Calculate new angle from center
+      // Calculate new angle in radians and convert to degrees
       const newX = moveEvent.clientX - centerX;
       const newY = moveEvent.clientY - centerY;
-      let newAngleDeg = Math.atan2(newY, newX) * 180 / Math.PI;
+      const newAngleRad = Math.atan2(newY, newX);
+      let newAngleDeg = newAngleRad * (180 / Math.PI);
       
-      // Adjust the angle using the offset to maintain relative position
-      let targetAngle = newAngleDeg - angleOffset;
+      // Calculate the delta angle (how much it changed since last move)
+      let deltaAngleDeg = newAngleDeg - lastAngleDeg;
       
-      // Normalize to 0-360 range
-      if (targetAngle < 0) targetAngle += 360;
-      if (targetAngle >= 360) targetAngle %= 360;
+      // Fix for angle wrapping
+      if (deltaAngleDeg > 180) deltaAngleDeg -= 360;
+      if (deltaAngleDeg < -180) deltaAngleDeg += 360;
       
-      // Use the valueFromAngle function to calculate the new value
-      const newValue = valueFromAngle(targetAngle * Math.PI / 180);
-      onChange(newValue);
+      // Update cumulative angle change
+      cumulativeAngleChange += deltaAngleDeg;
+      
+      // Map the angle change to a value change
+      // 270 degrees = full range of steps
+      const valuePerDegree = (steps - 1) / 270;
+      const valueChange = Math.round(cumulativeAngleChange * valuePerDegree);
+      
+      // Calculate the new value
+      let newValue = startValue + valueChange;
+      
+      // Clamp value to valid range
+      newValue = Math.max(0, Math.min(steps - 1, newValue));
+      
+      // Update value if changed
+      if (newValue !== value) {
+        onChange(newValue);
+      }
+      
+      // Store current angle for next move event
+      lastAngleDeg = newAngleDeg;
     };
     
     // Set up cleanup
@@ -134,7 +138,7 @@ const AtomicKnob = ({ value, onChange, steps, color }) => {
     const numTicks = Math.min(steps, 10); // Max 10 ticks for visual clarity
     
     for (let i = 0; i < numTicks; i++) {
-      const tickAngle = (i / (numTicks - 1)) * 270 ;
+      const tickAngle = (i / (numTicks - 1)) * 270;
       const isActive = i <= (value / (steps - 1)) * (numTicks - 1);
       
       ticks.push(
@@ -243,7 +247,6 @@ const AtomicKnob = ({ value, onChange, steps, color }) => {
     </div>
   );
 };
-
 const CharacterConcept = ({ character, updateCharacter }) => {
   // State for currently focused item in each column
   const [focusedEpithet, setFocusedEpithet] = useState(0);
