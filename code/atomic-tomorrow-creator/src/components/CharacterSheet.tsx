@@ -62,7 +62,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
         source: character.background?.name || "Background"
       },
       "Solar Scouts Training (Combat)": {
-        value: ((character.attributes.REFLEX || 10) * 2) + 15,
+        value: 35,
         source: "Standard Training"
       }
     };

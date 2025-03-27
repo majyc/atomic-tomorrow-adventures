@@ -502,9 +502,9 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
             <div className="text-sm text-gray-400">Solar Scouts Training</div>
             <div className="text-2xl font-bold text-green-400"
                  style={{ textShadow: '0 0 8px rgba(74, 222, 128, 0.9)' }}>
-              {modifiedAttributes.REFLEX ? (modifiedAttributes.REFLEX * 2) + 15 : '??'}%
+              35%
             </div>
-            <div className="text-xs mt-1 text-gray-500">(REFLEX × 2) + 15%</div>
+            <div className="text-xs mt-1 text-gray-500">Flat Skill %</div>
           </div>
           
           <div className="bg-gray-900 p-4 rounded-lg relative"

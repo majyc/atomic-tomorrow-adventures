@@ -779,9 +779,9 @@ const SkillCalculation = ({ character, updateCharacter }) => {
 
     // Solar Scouts Training calculation
     newCalculatedSkills['Solar Scouts Training'] = {
-      baseValue: character.attributes.REFLEX * 2,
-      coreValue: (character.attributes.REFLEX * 2) + 15,
-      attribute: 'REFLEX',
+      baseValue: 35,
+      coreValue: 35,
+      attribute: 'FLEX',
       specializations: {
         'Unarmed Combat': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
         'Pistols': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
