@@ -1,0 +1,243 @@
+/* Atomic Tomorrow Main Styles */
+
+/* Base styling for the app */
+body {
+  background-color: #040714;
+  color: #e0e0e0;
+}
+
+/* CRT and Terminal Effects */
+.crt-screen {
+  position: relative;
+  overflow: hidden;
+}
+
+.crt-screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 2;
+  animation: scanlines 1s linear infinite;
+}
+
+.crt-screen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0.7) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Terminal text with flicker effect */
+.terminal-text {
+  color: #4ade80;
+  text-shadow: 0 0 10px rgba(51, 255, 51, 0.9), 0 0 15px rgba(51, 255, 51, 0.6);
+  animation: textFlicker 0.01s infinite;
+  font-family: 'Courier New', monospace;
+}
+
+/* Atomic glow effects for various elements */
+.atomic-glow-blue {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.8), inset 0 0 10px rgba(59, 130, 246, 0.4);
+  border: 2px solid #1e40af;
+}
+
+.atomic-glow-green {
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.8), inset 0 0 10px rgba(34, 197, 94, 0.4);
+  border: 2px solid #14532d;
+}
+
+.atomic-glow-yellow {
+  box-shadow: 0 0 15px rgba(234, 179, 8, 0.8), inset 0 0 10px rgba(234, 179, 8, 0.4);
+  border: 2px solid #854d0e;
+}
+
+.atomic-glow-red {
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.8), inset 0 0 10px rgba(239, 68, 68, 0.4);
+  border: 2px solid #991b1b;
+}
+
+.atomic-glow-purple {
+  box-shadow: 0 0 15px rgba(126, 34, 206, 0.8), inset 0 0 10px rgba(126, 34, 206, 0.4);
+  border: 2px solid #581c87;
+}
+
+/* Retro-futuristic Card Styling */
+.raygun-card {
+  border-radius: 8px;
+  background-color: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(59, 130, 246, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.raygun-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #1e40af, #3b82f6, #1e40af);
+  z-index: 1;
+}
+
+/* Atom Particle Animation */
+@keyframes orbitRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.atomic-orbit {
+  position: absolute;
+  border: 1px dashed rgba(59, 130, 246, 0.4);
+  border-radius: 50%;
+  animation: orbitRotate 20s linear infinite;
+}
+
+.atomic-orbit:nth-child(2) {
+  animation-duration: 30s;
+  animation-direction: reverse;
+}
+
+.atomic-orbit:nth-child(3) {
+  animation-duration: 25s;
+}
+
+.atomic-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  box-shadow: 0 0 10px #60a5fa;
+}
+
+/* Space background gradients */
+.space-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #040714 0%, #061025 50%, #040714 100%);
+  z-index: -20;
+}
+
+/* Decorative grid lines */
+.grid-lines {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -15;
+  opacity: 0.3;
+}
+
+/* Enhanced control panel styling */
+.control-panel {
+  background-color: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.control-panel-header {
+  padding: 12px 16px;
+  background: linear-gradient(to right, #0f172a, #1e3a8a, #0f172a);
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+/* Animations */
+@keyframes scanlines {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 4px; }
+}
+
+@keyframes textFlicker {
+  0% { opacity: 0.94; }
+  5% { opacity: 1; }
+  10% { opacity: 0.98; }
+  15% { opacity: 0.94; }
+  20% { opacity: 0.99; }
+  25% { opacity: 1; }
+  30% { opacity: 0.98; }
+  35% { opacity: 0.96; }
+  40% { opacity: 1; }
+  45% { opacity: 0.99; }
+  50% { opacity: 0.98; }
+  55% { opacity: 1; }
+  60% { opacity: 0.97; }
+  65% { opacity: 0.99; }
+  70% { opacity: 1; }
+  75% { opacity: 0.99; }
+  80% { opacity: 0.99; }
+  85% { opacity: 0.99; }
+  90% { opacity: 1; }
+  95% { opacity: 0.99; }
+  100% { opacity: 1; }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+  50% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+}
+
+.glow-animation {
+  animation: glow 3s infinite;
+}
+
+/* Improved buttons for better visibility against the starfield */
+.raygun-button {
+  background-color: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(59, 130, 246, 0.7);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  transition: all 0.3s ease;
+}
+
+.raygun-button:hover {
+  background-color: rgba(30, 64, 175, 0.8);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.8);
+}
+
+/* Header and footer enhanced styling */
+.atomic-header {
+  background: linear-gradient(to right, #0f172a, #1e3a8a, #0f172a);
+  border-bottom: 2px solid rgba(59, 130, 246, 0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 100;
+}
+
+.atomic-footer {
+  background: linear-gradient(to right, #0f172a, #1e3a8a, #0f172a);
+  border-top: 2px solid rgba(59, 130, 246, 0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 100;
+}

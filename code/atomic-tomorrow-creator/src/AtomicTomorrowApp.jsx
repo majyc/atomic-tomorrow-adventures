@@ -7,11 +7,14 @@ import AttributeGeneration from './components/AttributeGeneration';
 import EquipmentDetails from './components/EquipmentDetails';
 import CharacterSheet from './components/CharacterSheet';
 import AtomicProgressIndicator from './components/AtomicProgressIndicator';
+import AtomicStarfield from './components/AtomicStarfield';
+import RetroFloatingElements from './components/RetroFloatingElements';
 
 // Import CSS stylesheets
 import './styles/raygun-buttons.css';
 import './styles/vacuum-tube-cards.css';
 import './styles/retro-terminal.css';
+import './styles/atomic-styles.css';
 
 const AtomicTomorrowApp = () => {
   // State for current step
@@ -80,7 +83,7 @@ const AtomicTomorrowApp = () => {
     return currentStep === 1;
   };
   
-  // Steps configuration for progress indicator (now reduced to 4)
+  // Steps configuration for progress indicator
   const steps = [
     "Character Concept",
     "Attributes",
@@ -104,33 +107,65 @@ const AtomicTomorrowApp = () => {
     }
   };
   
-  return (
-    <div className="min-h-screen bg-gray-50 flex flex-col relative">
-      {/* Simple space background - works in all environments */}
-      <div className="space-background"></div>
+  // Generate random atomic particle orbit elements
+  const generateAtomicOrbits = () => {
+    const orbits = [];
+    for (let i = 0; i < 3; i++) {
+      const size = 100 + (i * 50);
+      const top = Math.random() * 80;
+      const right = Math.random() * 80;
       
-      {/* SVG Background Decorations */}
-      {isMounted && (
-        <>
-          <div className="absolute top-20 right-0 opacity-10 pointer-events-none">
-            <img src="/atomic-orbit.svg" alt="" />
-          </div>
-          
-          <div className="absolute bottom-40 left-0 opacity-10 pointer-events-none transform rotate-180">
-            <img src="/atomic-orbit.svg" alt="" />
-          </div>
-        </>
-      )}
+      orbits.push(
+        <div 
+          key={i}
+          className="atomic-orbit"
+          style={{
+            width: `${size}px`,
+            height: `${size}px`,
+            top: `${top}%`,
+            right: `${right}%`,
+            transform: `rotate(${Math.random() * 360}deg)`
+          }}
+        >
+          <div 
+            className="atomic-particle"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`
+            }}
+          />
+        </div>
+      );
+    }
+    return orbits;
+  };
+  
+  return (
+    <div className="min-h-screen flex flex-col relative">
+      {/* Dynamic starfield background */}
+      <AtomicStarfield />
+      
+      {/* Space gradient overlay */}
+      <div className="space-gradient"></div>
+      
+      {/* Decorative grid lines */}
+      <div className="grid-lines"></div>
+      
+      {/* Atomic particle orbits */}
+      {isMounted && generateAtomicOrbits()}
+      
+      {/* Floating retro elements */}
+      {isMounted && <RetroFloatingElements />}
       
       {/* Header with Starburst */}
-      <header className="bg-blue-900 text-white p-4 relative overflow-hidden">
+      <header className="atomic-header text-white p-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full opacity-20 pointer-events-none">
           <img src="/starburst.svg" alt="" />
         </div>
         
         <div className="flex justify-between items-center relative z-10">
           <div className="flex items-center">
-            <Atom size={24} className="mr-2 text-blue-300" />
+            <Atom size={24} className="mr-2 text-blue-300 glow-animation" />
             <h1 className="text-2xl font-bold">ATOMIC TOMORROW ADVENTURES</h1>
           </div>
           <div className="flex space-x-4">
@@ -160,14 +195,14 @@ const AtomicTomorrowApp = () => {
 
       {/* Main content */}
       <main className="flex-grow container mx-auto p-6 relative z-10">
-        <div className="vacuum-tube-card">
+        <div className="raygun-card crt-screen">
           {renderStep()}
         </div>
       </main>
 
       {/* Footer navigation - hide on character sheet view */}
       {currentStep !== 4 && (
-        <footer className="bg-gray-100 border-t border-gray-300 p-4 relative z-10 shadow-inner">
+        <footer className="atomic-footer p-4 relative z-10">
           <div className="container mx-auto flex justify-between items-center">
             <button 
               onClick={prevStep}
@@ -179,8 +214,8 @@ const AtomicTomorrowApp = () => {
             </button>
             
             <div className="text-center">
-              <div className="text-sm text-gray-500">Step {currentStep} of 4</div>
-              <div className="font-medium">
+              <div className="text-sm text-blue-300">Step {currentStep} of 4</div>
+              <div className="font-medium text-white">
                 {steps[currentStep - 1]}
               </div>
             </div>
