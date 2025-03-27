@@ -247,6 +247,7 @@ const AtomicKnob = ({ value, onChange, steps, color }) => {
     </div>
   );
 };
+
 const CharacterConcept = ({ character, updateCharacter }) => {
   // State for currently focused item in each column
   const [focusedEpithet, setFocusedEpithet] = useState(0);
@@ -264,20 +265,87 @@ const CharacterConcept = ({ character, updateCharacter }) => {
       background: BACKGROUNDS[focusedBackground]
     });
   }, [focusedEpithet, focusedProfession, focusedOrigin, focusedBackground]);
+  
+  // CRT effect styles
+  const crtStyles = {
+    scanline: {
+      background: 'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%)',
+      backgroundSize: '100% 4px',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'none',
+      zIndex: 1,
+      animation: 'scanlines 1s linear infinite'
+    },
+    terminal: {
+      boxShadow: '0 0 15px rgba(0, 255, 0, 0.6), inset 0 0 20px rgba(0, 255, 0, 0.4)',
+      border: '2px solid #14532d',
+      backgroundColor: '#0a0a0a',
+      borderRadius: '0.375rem',
+      position: 'relative'
+    },
+    greenText: {
+      color: '#4ade80',
+      textShadow: '0 0 8px rgba(0, 255, 0, 0.9), 0 0 15px rgba(0, 255, 0, 0.7)',
+      fontFamily: 'monospace'
+    }
+  };
+
+  // Helper to convert color class to border class with glow
+  const colorToBorder = (color) => {
+    if (color.includes('blue')) return 'border-blue-500';
+    if (color.includes('green')) return 'border-green-500';
+    if (color.includes('yellow')) return 'border-yellow-500';
+    if (color.includes('red')) return 'border-red-500';
+    return 'border-gray-300';
+  };
+  
+  // Helper to get glowing border style
+  const getBorderGlowStyle = (color) => {
+    if (color.includes('blue')) return { boxShadow: '0 0 10px rgba(59, 130, 246, 0.7)' };
+    if (color.includes('green')) return { boxShadow: '0 0 10px rgba(34, 197, 94, 0.7)' };
+    if (color.includes('yellow')) return { boxShadow: '0 0 10px rgba(234, 179, 8, 0.7)' };
+    if (color.includes('red')) return { boxShadow: '0 0 10px rgba(239, 68, 68, 0.7)' };
+    return {};
+  };
+
+  // Helper to convert color class to option background
+  const colorToOptionBg = (color) => {
+    if (color.includes('blue')) return 'bg-blue-600';
+    if (color.includes('green')) return 'bg-green-600';
+    if (color.includes('yellow')) return 'bg-yellow-600';
+    if (color.includes('red')) return 'bg-red-600';
+    return 'bg-gray-600';
+  };
+  
+  // Helper to get glow style based on color
+  const getGlowStyle = (color) => {
+    if (color.includes('blue')) return { boxShadow: '0 0 15px rgba(59, 130, 246, 0.9)' };
+    if (color.includes('green')) return { boxShadow: '0 0 15px rgba(34, 197, 94, 0.9)' };
+    if (color.includes('yellow')) return { boxShadow: '0 0 15px rgba(234, 179, 8, 0.9)' };
+    if (color.includes('red')) return { boxShadow: '0 0 15px rgba(239, 68, 68, 0.9)' };
+    return { boxShadow: '0 0 15px rgba(107, 114, 128, 0.9)' };
+  };
 
   // Render a selection column
   const renderSelectionColumn = (title, data, focusedIndex, setFocusedIndex, color) => {
     return (
       <div className="flex flex-col h-full">
         {/* Column Header */}
-        <h3 className={`text-lg font-semibold mb-3 text-center ${color} text-white py-2 rounded-t-lg`}>
+        <h3 className={`text-lg font-semibold mb-3 text-center ${color} text-white py-2 rounded-t-lg`} 
+            style={{ textShadow: '0 0 8px rgba(255, 255, 255, 0.7)' }}>
           {title.toUpperCase()}
         </h3>
 
         {/* Retro Terminal Display */}
-        <div className="bg-black border-2 border-gray-700 rounded-md mb-4 flex justify-center items-center p-4 h-16 relative overflow-hidden">
+        <div className="mb-4 flex justify-center items-center p-4 h-16 relative overflow-hidden" style={crtStyles.terminal}>
           <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-green-900 to-green-700"></div>
-          <p className="font-mono text-green-500 text-xl tracking-wider glow-text">
+          {/* Scanline effect overlay */}
+          <div style={crtStyles.scanline}></div>
+          <p className="text-xl tracking-wider relative z-10 terminal-text" style={crtStyles.greenText}>
             {data[focusedIndex]?.name || "SELECT OPTION"}
           </p>
         </div>
@@ -308,13 +376,17 @@ const CharacterConcept = ({ character, updateCharacter }) => {
 
         {/* Selected Option Details Card */}
         <div className={`flex-grow p-4 border-2 rounded-lg transition-all overflow-y-auto h-52 ${data[focusedIndex] ? colorToBorder(color) : 'border-gray-300'
-          }`}>
+          }`} style={{ 
+            backgroundColor: '#1a1a1a', 
+            color: '#e0e0e0', 
+            ...(data[focusedIndex] ? getBorderGlowStyle(color) : {}) 
+          }}>
           {data[focusedIndex] ? (
             <>
-              <h3 className="text-lg font-bold mb-2">{data[focusedIndex].name}</h3>
-              <p className="text-sm mb-3">{data[focusedIndex].description}</p>
+              <h3 className="text-lg font-bold mb-2 text-white">{data[focusedIndex].name}</h3>
+              <p className="text-sm mb-3 text-gray-300">{data[focusedIndex].description}</p>
 
-              <div className="pt-3 border-t border-gray-200 text-xs">
+              <div className="pt-3 border-t border-gray-600 text-xs">
                 {title === 'Epithet' && (
                   <>
                     <div className="flex items-start mb-1">
@@ -349,7 +421,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
         </div>
 
         {/* Option Hint List - with fixed height */}
-        <div className="mt-2 flex flex-wrap gap-1 h-24 overflow-y-auto">
+        <div className="mt-2 flex flex-wrap gap-1 h-24 overflow-y-auto p-2 rounded-lg" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
           {data.map((item, idx) => (
             <div
               key={idx}
@@ -358,6 +430,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
                   ? `${colorToOptionBg(color)} text-white font-bold`
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
+              style={idx === focusedIndex ? getGlowStyle(color) : {}}
             >
               {item.name}
             </div>
@@ -367,27 +440,49 @@ const CharacterConcept = ({ character, updateCharacter }) => {
     );
   };
 
-  // Helper to convert color class to border class
-  const colorToBorder = (color) => {
-    if (color.includes('blue')) return 'border-blue-500 bg-blue-50';
-    if (color.includes('green')) return 'border-green-500 bg-green-50';
-    if (color.includes('yellow')) return 'border-yellow-500 bg-yellow-50';
-    if (color.includes('red')) return 'border-red-500 bg-red-50';
-    return 'border-gray-300';
-  };
-
-  // Helper to convert color class to option background
-  const colorToOptionBg = (color) => {
-    if (color.includes('blue')) return 'bg-blue-600';
-    if (color.includes('green')) return 'bg-green-600';
-    if (color.includes('yellow')) return 'bg-yellow-600';
-    if (color.includes('red')) return 'bg-red-600';
-    return 'bg-gray-600';
-  };
-
   return (
-    <div>
-      <h2 className="text-2xl font-bold mb-6 text-center text-blue-900">Step 1: Choose Your Character Concept</h2>
+    <div className="bg-gray-900 p-5 rounded-xl">
+      <style jsx>{`
+        @keyframes scanlines {
+          0% { background-position: 0 0; }
+          100% { background-position: 0 4px; }
+        }
+        @keyframes textFlicker {
+          0% { opacity: 0.94; }
+          5% { opacity: 1; }
+          10% { opacity: 0.98; }
+          15% { opacity: 0.94; }
+          20% { opacity: 0.99; }
+          25% { opacity: 1; }
+          30% { opacity: 0.98; }
+          35% { opacity: 0.96; }
+          40% { opacity: 1; }
+          45% { opacity: 0.99; }
+          50% { opacity: 0.98; }
+          55% { opacity: 1; }
+          60% { opacity: 0.97; }
+          65% { opacity: 0.99; }
+          70% { opacity: 1; }
+          75% { opacity: 0.99; }
+          80% { opacity: 0.99; }
+          85% { opacity: 0.99; }
+          90% { opacity: 1; }
+          95% { opacity: 0.99; }
+          100% { opacity: 1; }
+        }
+        .terminal-text {
+          color: #4ade80;
+          text-shadow: 0 0 10px rgba(51, 255, 51, 0.9), 0 0 15px rgba(51, 255, 51, 0.6);
+          animation: textFlicker 0.01s infinite;
+          font-family: monospace;
+        }
+        body {
+          background-color: #111827;
+        }
+      `}</style>
+      <div className="p-6 rounded-lg bg-gray-900">
+      </div>
+      <h2 className="text-2xl font-bold mb-6 text-center text-green-400" style={{ textShadow: '0 0 10px rgba(74, 222, 128, 0.6)' }}>STEP 1: CHOOSE YOUR CHARACTER CONCEPT</h2>
 
       <div className="grid grid-cols-4 gap-6">
         {/* Each column rendered with appropriate data and focused index */}
@@ -397,15 +492,39 @@ const CharacterConcept = ({ character, updateCharacter }) => {
         {renderSelectionColumn('Background', BACKGROUNDS, focusedBackground, setFocusedBackground, 'bg-red-700')}
       </div>
 
-      {/* Character summary */}
-      <div className="mt-8 p-4 bg-gray-100 rounded-lg border border-gray-300">
-        <h3 className="text-xl font-bold mb-2 text-center text-gray-800">Character Concept</h3>
+      {/* Character summary - with enhanced terminal styling */}
+      <div className="mt-8 p-5 rounded-lg relative" style={{
+        ...crtStyles.terminal,
+        boxShadow: '0 0 20px rgba(0, 255, 0, 0.8), inset 0 0 30px rgba(0, 255, 0, 0.5)',
+        border: '3px solid #14532d'
+      }}>
+        {/* Terminal header bar */}
+        <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-green-900 to-green-700"></div>
+        {/* Scanline effect overlay */}
+        <div style={crtStyles.scanline}></div>
+        
+        <h3 className="text-2xl font-bold mb-4 text-center terminal-text" style={{
+          textShadow: '0 0 15px rgba(51, 255, 51, 1), 0 0 20px rgba(51, 255, 51, 0.8)'
+        }}>
+          FINAL CHARACTER CONCEPT
+        </h3>
+        
         {character.epithet && character.profession && character.origin && character.background ? (
-          <p className="text-center text-lg">
-            <span className="font-medium text-blue-800">{character.epithet.name}</span> <span className="font-medium text-green-800">{character.profession.name}</span> from a <span className="font-medium text-yellow-700">{character.origin.name}</span> <span className="font-medium text-red-700">{character.background.name}</span> background
+          <p className="text-center text-lg terminal-text" style={{ lineHeight: 1.8, letterSpacing: '0.05em' }}>
+            <span className="font-medium" style={{ color: '#93c5fd', textShadow: '0 0 10px rgba(59, 130, 246, 1), 0 0 15px rgba(59, 130, 246, 0.8)' }}>
+              {character.epithet.name}
+            </span> <span className="font-medium" style={{ color: '#86efac', textShadow: '0 0 10px rgba(34, 197, 94, 1), 0 0 15px rgba(34, 197, 94, 0.8)' }}>
+              {character.profession.name}
+            </span> from a <span className="font-medium" style={{ color: '#fde047', textShadow: '0 0 10px rgba(234, 179, 8, 1), 0 0 15px rgba(234, 179, 8, 0.8)' }}>
+              {character.origin.name}
+            </span> <span className="font-medium" style={{ color: '#fca5a5', textShadow: '0 0 10px rgba(239, 68, 68, 1), 0 0 15px rgba(239, 68, 68, 0.8)' }}>
+              {character.background.name}
+            </span> background
           </p>
         ) : (
-          <p className="text-center text-gray-500 italic">Select one option from each column to complete your character concept</p>
+          <p className="text-center italic terminal-text">
+            AWAITING INPUT: Select one option from each column to complete your character concept
+          </p>
         )}
       </div>
     </div>
