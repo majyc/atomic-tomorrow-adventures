@@ -273,7 +273,7 @@ def generate_name():
         # Pulp Sci-Fi Last Names
         "Rocketson", "Atomworth", "Stargazer", "Moonraker", "Cosmopoulos", "Galaxon", "Nebula", "Quasar", "Jetson", "Orbital",
         "Blaster", "Proton", "Neutron", "Steel", "Electron", "Fusion", "Thunder", "Voltage", "Quantum", "Pulsar",
-        "Nova", "Astro", "Skywalker", "Comet", "Laserbeam", "Radium", "Meteorite", "Isotope", "Vortex", "Stratosphere",
+        "Nova", "Astro", "Moonwalker", "Comet", "Laserbeam", "Radium", "Meteorite", "Isotope", "Vortex", "Stratosphere",
         "Moonshot", "Stardust", "Solaris", "Velocity", "Horizon", "Eclipse", "Neon", "Centauri", "Lightyear", "Cosmic",
     ]
    
