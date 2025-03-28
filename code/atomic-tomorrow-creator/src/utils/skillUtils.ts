@@ -254,10 +254,10 @@ export function calculateDetailedSkills(character) {
     coreValue: 35,
     attribute: 'FLEX',
     specializations: {
-      'Unarmed Combat': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
-      'Pistols': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
-      'Rifles': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
-      'Survival': { value: (character.attributes.REFLEX * 2) + 15, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
+      'Unarmed Combat': { value: 35, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
+      'Pistols': { value: 35, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
+      'Rifles': { value: 35, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
+      'Survival': { value: 35, professionBonus: 0, originBonus: 0, backgroundBonus: 0 },
       'First Aid': { value: 35, professionBonus: 0, originBonus: 0, backgroundBonus: 0 }
     }
   };
