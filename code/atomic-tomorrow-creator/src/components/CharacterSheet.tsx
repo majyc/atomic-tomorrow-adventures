@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Download, Printer, Share2, AlertCircle, Shield, Zap, Crosshair, Brain, Eye, Database, Skull, Heart } from 'lucide-react';
 
 // Import utility functions
@@ -14,9 +14,6 @@ import {
 } from '../utils/skillUtils';
 import { printCharacterSheet } from '../utils/printUtils';
 
-// Import components
-import ImportDialog from './ImportDialog';
-
 /**
  * Character Sheet component that displays all character information
  */
@@ -25,7 +22,6 @@ const CharacterSheet = ({ character, updateCharacter }) => {
   const [calculatedSkills, setCalculatedSkills] = useState({});
   const [isEditing, setIsEditing] = useState(false);
   const [notes, setNotes] = useState('');
-  const [showImportDialog, setShowImportDialog] = useState(false);
   const sheetRef = useRef(null);
   
   // Calculate skills based on character choices
@@ -47,14 +43,9 @@ const CharacterSheet = ({ character, updateCharacter }) => {
     { id: "default-6", name: "Trade guild credentials", category: "Miscellaneous", quantity: 1 }
   ];
   
-  // Handler for Print button - uses the utility function from printUtils
+  // Handler for Print/PDF button - uses the utility function from printUtils
   const handlePrint = () => {
     printCharacterSheet(character, notes);
-  };
-  
-  // Handler for Save PDF button (same as print)
-  const handleSavePDF = () => {
-    handlePrint();
   };
   
   // Handler for Export button
@@ -76,23 +67,6 @@ const CharacterSheet = ({ character, updateCharacter }) => {
       alert('Failed to export character: ' + error.message);
     }
   };
-  
-  // Handler for Import button
-  const handleImport = () => {
-    setShowImportDialog(true);
-  };
-  
-  // Handler for when a character is imported
-  const handleImportComplete = (importedCharacter, importedNotes) => {
-    // Update the character in the parent component
-    updateCharacter(importedCharacter);
-    
-    // Set notes
-    setNotes(importedNotes);
-    
-    // Success message
-    alert('Character imported successfully!');
-  };
 
   return (
     <div id="character-sheet-container" ref={sheetRef}>
@@ -108,14 +82,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
             onClick={handlePrint}
           >
             <Printer size={16} className="mr-1" />
-            Print
-          </button>
-          <button 
-            className="raygun-button flex items-center px-3 py-1.5"
-            onClick={handleSavePDF}
-          >
-            <Download size={16} className="mr-1" />
-            Save PDF
+            Print/PDF
           </button>
           <button 
             className="raygun-button flex items-center px-3 py-1.5"
@@ -124,23 +91,10 @@ const CharacterSheet = ({ character, updateCharacter }) => {
             <Share2 size={16} className="mr-1" />
             Export
           </button>
-          <button 
-            className="raygun-button flex items-center px-3 py-1.5"
-            onClick={handleImport}
-          >
-            <Download size={16} className="mr-1" />
-            Import
-          </button>
         </div>
       </div>
       
-      {/* Import Character Dialog */}
-      {showImportDialog && (
-        <ImportDialog 
-          onClose={() => setShowImportDialog(false)} 
-          onImport={handleImportComplete} 
-        />
-      )}
+      {/* Import Character Dialog - Removed */}
       
       {/* Character Sheet Content */}
       <div id="character-sheet-content" className="max-w-5xl mx-auto px-6 py-6 bg-gray-900 text-gray-100">
@@ -217,7 +171,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
                   <div className="font-medium">Solar Scouts Training</div>
-                  <div className="text-xl font-bold">35%</div>
+                  <div className="text-xl font-bold">{((character.attributes?.REFLEX || 10) * 2) + 15}%</div>
                 </div>
                 
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
@@ -443,7 +397,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
       </div>
 
       {/* CSS for page break control */}
-      <style jsx>{`
+      <style >{`
         .page-break-avoid {
           page-break-inside: avoid;
         }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, HelpCircle, Download, Save, Zap, Atom } from 'lucide-react';
+import { ChevronLeft, ChevronRight, HelpCircle, Download, Save, Zap, Atom, Upload } from 'lucide-react';
 
 // Import components
 import CharacterConcept from './components/CharacterConcept';
@@ -9,6 +9,10 @@ import CharacterSheet from './components/CharacterSheet';
 import AtomicProgressIndicator from './components/AtomicProgressIndicator';
 import AtomicStarfield from './components/AtomicStarfield';
 import RetroFloatingElements from './components/RetroFloatingElements';
+import ImportDialog from './components/ImportDialog';
+
+// Import utility functions
+import { importCharacter } from './utils/characterIOUtils';
 
 // Import CSS stylesheets
 import './styles/raygun-buttons.css';
@@ -20,6 +24,7 @@ const AtomicTomorrowApp = () => {
   // State for current step
   const [currentStep, setCurrentStep] = useState(1);
   const [isMounted, setIsMounted] = useState(false);
+  const [showImportDialog, setShowImportDialog] = useState(false);
   
   // Effect to handle mounting state
   useEffect(() => {
@@ -69,6 +74,23 @@ const AtomicTomorrowApp = () => {
       setCurrentStep(currentStep - 1);
       window.scrollTo(0, 0);
     }
+  };
+  
+  // Handler for Import button
+  const handleImport = () => {
+    setShowImportDialog(true);
+  };
+  
+  // Handler for when a character is imported
+  const handleImportComplete = (importedCharacter, importedNotes) => {
+    // Update the character data
+    setCharacter(importedCharacter);
+    
+    // Set current step to the character sheet (final step)
+    setCurrentStep(4);
+    
+    // Success message
+    alert('Character imported successfully!');
   };
   
   // Validation checks
@@ -157,6 +179,14 @@ const AtomicTomorrowApp = () => {
       {/* Floating retro elements */}
       {isMounted && <RetroFloatingElements />}
       
+      {/* Import Character Dialog */}
+      {showImportDialog && (
+        <ImportDialog 
+          onClose={() => setShowImportDialog(false)} 
+          onImport={handleImportComplete} 
+        />
+      )}
+      
       {/* Header with Starburst */}
       <header className="atomic-header text-white p-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full opacity-20 pointer-events-none">
@@ -169,13 +199,13 @@ const AtomicTomorrowApp = () => {
             <h1 className="text-2xl font-bold">ATOMIC TOMORROW ADVENTURES</h1>
           </div>
           <div className="flex space-x-4">
+            <button className="raygun-button" onClick={handleImport}>
+              <Upload size={18} className="mr-1" />
+              Import Character
+            </button>
             <button className="raygun-button">
               <Save size={18} className="mr-1" />
               Save
-            </button>
-            <button className="raygun-button">
-              <Download size={18} className="mr-1" />
-              Export
             </button>
             <button className="raygun-button">
               <HelpCircle size={18} />
