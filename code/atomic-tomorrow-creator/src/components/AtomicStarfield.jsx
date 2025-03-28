@@ -33,7 +33,7 @@ const AtomicStarfield = () => {
       stars.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        radius: Math.random() * 1.5 + 0.5,
+        radius: Math.random() * 1.2 + 0.3, // Smaller radius for pinpoint stars
         color: starColors[Math.floor(Math.random() * starColors.length)],
         velocity: Math.random() * 0.05 + 0.01,
         twinkle: {
@@ -89,29 +89,20 @@ const AtomicStarfield = () => {
         // Calculate opacity for twinkling effect
         const twinkleAmount = star.twinkle.min + (Math.sin(time * star.twinkle.speed + star.twinkle.phase) + 1) / 2 * (star.twinkle.max - star.twinkle.min);
         
+        // Draw simple star dots
         ctx.globalAlpha = twinkleAmount;
-        
-        // Draw the star
         ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius * (star.pulse ? (0.7 + Math.sin(time * 2) * 0.3) : 1), 0, Math.PI * 2);
+        ctx.arc(
+          star.x, 
+          star.y, 
+          star.radius * (star.pulse ? (0.7 + Math.sin(time * 2) * 0.3) : 1), 
+          0, 
+          Math.PI * 2
+        );
         ctx.fillStyle = star.color;
         ctx.fill();
         
-        // Add glow effect
-        const gradient = ctx.createRadialGradient(
-          star.x, star.y, 0,
-          star.x, star.y, star.radius * 4
-        );
-        gradient.addColorStop(0, star.color);
-        gradient.addColorStop(1, 'transparent');
-        
-        ctx.globalAlpha = twinkleAmount * 0.4;
-        ctx.fillStyle = gradient;
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius * 4, 0, Math.PI * 2);
-        ctx.fill();
-        
-        ctx.globalAlpha = 1;
+        ctx.globalAlpha = 1.0;
         
         // Move star slightly for subtle drift effect
         star.y += star.velocity;
@@ -128,12 +119,20 @@ const AtomicStarfield = () => {
           particle.angle += orbit.rotation;
         });
         
+        // Draw faint orbital path
+        ctx.globalAlpha = 0.1;
+        ctx.beginPath();
+        ctx.arc(orbit.x, orbit.y, orbit.radius, 0, Math.PI * 2);
+        ctx.strokeStyle = orbit.color;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+        
         // Draw orbital particles
         orbit.particles.forEach(particle => {
           const x = orbit.x + Math.cos(particle.angle) * particle.radius;
           const y = orbit.y + Math.sin(particle.angle) * particle.radius;
           
-          // Draw particle
+          // Draw simple particle dot
           ctx.globalAlpha = 0.7;
           ctx.beginPath();
           ctx.arc(x, y, 2, 0, Math.PI * 2);
@@ -148,38 +147,20 @@ const AtomicStarfield = () => {
           ctx.strokeStyle = orbit.color;
           ctx.lineWidth = 1.5;
           ctx.stroke();
-          
-          // Add glow
-          const gradient = ctx.createRadialGradient(x, y, 0, x, y, 10);
-          gradient.addColorStop(0, orbit.color);
-          gradient.addColorStop(1, 'transparent');
-          
-          ctx.globalAlpha = 0.3;
-          ctx.fillStyle = gradient;
-          ctx.beginPath();
-          ctx.arc(x, y, 10, 0, Math.PI * 2);
-          ctx.fill();
         });
         
-        // Draw faint orbital path
-        ctx.globalAlpha = 0.1;
-        ctx.beginPath();
-        ctx.arc(orbit.x, orbit.y, orbit.radius, 0, Math.PI * 2);
-        ctx.strokeStyle = orbit.color;
-        ctx.lineWidth = 0.5;
-        ctx.stroke();
-        
-        ctx.globalAlpha = 1;
+        ctx.globalAlpha = 1.0;
       });
       
       requestAnimationFrame(animate);
     };
     
     // Start animation
-    animate();
+    const animationId = animate();
     
     // Cleanup function
     return () => {
+      cancelAnimationFrame(animationId);
       window.removeEventListener('resize', resizeCanvas);
     };
   }, []);
@@ -187,8 +168,11 @@ const AtomicStarfield = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10"
-      style={{ pointerEvents: 'none' }}
+      className="fixed top-0 left-0 w-full h-full"
+      style={{ 
+        pointerEvents: 'none',
+        zIndex: -10
+      }}
     />
   );
 };

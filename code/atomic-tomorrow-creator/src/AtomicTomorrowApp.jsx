@@ -8,7 +8,6 @@ import EquipmentDetails from './components/EquipmentDetails';
 import CharacterSheet from './components/CharacterSheet';
 import AtomicProgressIndicator from './components/AtomicProgressIndicator';
 import AtomicStarfield from './components/AtomicStarfield';
-import RetroFloatingElements from './components/RetroFloatingElements';
 import ImportDialog from './components/ImportDialog';
 
 // Import utility functions
@@ -175,9 +174,6 @@ const AtomicTomorrowApp = () => {
       
       {/* Atomic particle orbits */}
       {isMounted && generateAtomicOrbits()}
-      
-      {/* Floating retro elements */}
-      {isMounted && <RetroFloatingElements />}
       
       {/* Import Character Dialog */}
       {showImportDialog && (

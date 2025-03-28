@@ -26,13 +26,13 @@ const RetroFloatingElements = () => {
       'text-cyan-400'
     ];
     
-    const glows = [
-      '0 0 10px rgba(96, 165, 250, 0.8)',
-      '0 0 10px rgba(74, 222, 128, 0.8)',
-      '0 0 10px rgba(192, 132, 252, 0.8)',
-      '0 0 10px rgba(250, 204, 21, 0.8)',
-      '0 0 10px rgba(248, 113, 113, 0.8)',
-      '0 0 10px rgba(34, 211, 238, 0.8)'
+    const shadowColors = [
+      'rgba(96, 165, 250, 0.8)', // blue
+      'rgba(74, 222, 128, 0.8)', // green
+      'rgba(192, 132, 252, 0.8)', // purple
+      'rgba(250, 204, 21, 0.8)', // yellow
+      'rgba(248, 113, 113, 0.8)', // red
+      'rgba(34, 211, 238, 0.8)'  // cyan
     ];
     
     for (let i = 0; i < elementCount; i++) {
@@ -61,7 +61,7 @@ const RetroFloatingElements = () => {
         position,
         icon: icons[iconIndex],
         color: colors[colorIndex],
-        glow: glows[colorIndex],
+        shadowColor: shadowColors[colorIndex],
         duration,
         delay,
         rotation,
@@ -77,25 +77,35 @@ const RetroFloatingElements = () => {
       {elements.map(element => (
         <div
           key={element.id}
-          className={`fixed ${element.color} floating-element`}
+          className={`floating-element ${element.color}`}
           style={{
+            position: 'fixed',
             top: `${element.top}%`,
             [element.side]: `${element.position}%`,
-            transform: `rotate(${element.rotation}deg)`,
             width: `${element.size}px`,
             height: `${element.size}px`,
-            filter: `drop-shadow(${element.glow})`,
+            opacity: 0.6,
+            zIndex: -5,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
             animation: `float-horizontal 
               ${element.duration}s 
               ${element.delay}s 
               infinite alternate ease-in-out,
-              pulse 3s infinite alternate ease-in-out
-            `,
-            opacity: 0.6,
-            zIndex: -5
+              pulse 3s infinite alternate ease-in-out`
           }}
         >
-          {element.icon}
+          <div 
+            className="icon-wrapper"
+            style={{
+              animation: 'shadow-pulse 3s infinite alternate ease-in-out',
+              filter: `drop-shadow(0 0 5px ${element.shadowColor})`, // Starting size of shadow
+              transition: 'filter 0.3s ease'
+            }}
+          >
+            {element.icon}
+          </div>
         </div>
       ))}
       
@@ -118,6 +128,15 @@ const RetroFloatingElements = () => {
           }
         }
         
+        @keyframes shadow-pulse {
+          0% {
+            filter: drop-shadow(0 0 5px currentColor);
+          }
+          100% {
+            filter: drop-shadow(0 0 15px currentColor);
+          }
+        }
+        
         .floating-element {
           transition: all 0.3s ease;
         }
@@ -125,6 +144,11 @@ const RetroFloatingElements = () => {
         .floating-element:hover {
           transform: scale(1.5);
           opacity: 1;
+        }
+        
+        .icon-wrapper {
+          display: inline-flex;
+          will-change: filter; /* Optimize for animation */
         }
       `}</style>
     </>
