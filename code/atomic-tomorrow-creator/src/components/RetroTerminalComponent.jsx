@@ -206,7 +206,7 @@ const RetroTerminal = ({
         )}
       </pre>
       
-      <style jsx>{`
+      <style >{`
         @keyframes scanlines {
           0% { background-position: 0 0; }
           100% { background-position: 0 4px; }

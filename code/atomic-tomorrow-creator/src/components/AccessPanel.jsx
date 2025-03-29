@@ -56,7 +56,7 @@ const AccessPanel = ({ title, children }) => {
       </div>
       
       {/* CSS */}
-      <style jsx>{`
+      <style >{`
         .access-panel-container {
           position: relative;
         }

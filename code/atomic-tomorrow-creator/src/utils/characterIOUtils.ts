@@ -4,7 +4,7 @@ import { EPITHETS } from '../data/epithets';
 import { PROFESSIONS } from '../data/professions';
 import { ORIGINS } from '../data/origins';
 import { BACKGROUNDS } from '../data/backgrounds';
-import { PORTRAITS } from '../data/portraits';
+import { PORTRAITS } from '../utils/portraits';
 
 /**
  * Export a character to a serialized string format
