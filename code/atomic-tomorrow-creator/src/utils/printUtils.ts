@@ -1,11 +1,11 @@
 // Enhanced utility functions for printing character sheets
 
 // Import centralized skill calculation functions
-import { 
-  calculateSimplifiedSkills, 
-  getSkillAttribute, 
-  getSkillDerivation, 
-  getSkillLevelName 
+import {
+  calculateSimplifiedSkills,
+  getSkillAttribute,
+  getSkillDerivation,
+  getSkillLevelName
 } from './skillUtils';
 
 /**
@@ -21,16 +21,16 @@ export const printCharacterSheet = (character, notes = '') => {
   printFrame.style.left = '-9999px';
   printFrame.id = 'printFrame';
   document.body.appendChild(printFrame);
-  
+
   // Generate the printable content
   const printDoc = printFrame.contentDocument || (printFrame.contentWindow ? printFrame.contentWindow.document : null);
   if (!printDoc) {
     console.error('Unable to access the print document.');
     return;
   }
-  
+
   printDoc.open();
-  
+
   // Create a simplified, print-friendly version of the character sheet
   let printContent = `
     <!DOCTYPE html>
@@ -146,6 +146,16 @@ export const printCharacterSheet = (character, notes = '') => {
     </head>
     <body>
       <div class="character-header">
+      ${character.portrait ? `
+        <div style="text-align: right; margin-top: -60px; margin-bottom: 10px;">
+          <div style="display: inline-block; width: 80px; height: 80px; border-radius: 50%; border: 2px solid #333; overflow: hidden; background-color: #f0f0f0;">
+            <!-- We use a div with the character initial as a placeholder since we can't actually print the image -->
+            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #e0e0e0; font-size: 36px; font-weight: bold; color: #333;">
+              ${character.name ? character.name.charAt(0) : 'C'}
+            </div>
+          </div>
+        </div>
+      ` : ''}      
         <h1>${character.name || 'Unnamed Character'}</h1>
         <h3>
           ${character.epithet?.name || 'Epithet'} 
@@ -164,7 +174,7 @@ export const printCharacterSheet = (character, notes = '') => {
             <div class="section-content">
               <div class="attr-grid">
                 ${['BRAWN', 'REFLEX', 'NERVE', 'SAVVY', 'CHARM', 'GRIT', 'GUILE']
-                  .map(attr => `
+      .map(attr => `
                     <div class="attribute">
                       <span>${attr}</span>
                       <span>${character.attributes?.[attr] || 10}</span>
@@ -291,12 +301,12 @@ export const printCharacterSheet = (character, notes = '') => {
     </body>
     </html>
   `;
-  
+
   printDoc.write(printContent);
   printDoc.close();
-  
+
   // Wait for the iframe to load before printing
-  printFrame.onload = function() {
+  printFrame.onload = function () {
     setTimeout(() => {
       try {
         if (printFrame.contentWindow) {
@@ -308,7 +318,7 @@ export const printCharacterSheet = (character, notes = '') => {
       } catch (e) {
         console.error('Print error:', e);
       }
-      
+
       // Clean up after printing
       setTimeout(() => {
         document.body.removeChild(printFrame);
@@ -324,11 +334,11 @@ export const printCharacterSheet = (character, notes = '') => {
 const renderSkillsForPrint = (character) => {
   // Calculate skills using the centralized function
   const skills = calculateSimplifiedSkills(character);
-  
+
   // Sort skills by value
   const sortedSkills = Object.entries(skills)
     .sort(([, a], [, b]) => b.value - a.value);
-  
+
   return sortedSkills.map(([skillName, skillData]) => `
     <div class="skill">
       <div>

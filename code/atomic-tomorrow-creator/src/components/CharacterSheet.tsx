@@ -3,14 +3,14 @@ import { Download, Printer, Share2, AlertCircle, Shield, Zap, Crosshair, Brain, 
 
 // Import utility functions
 import { exportCharacter, copyToClipboard } from '../utils/characterIOUtils';
-import { 
-  calculateSimplifiedSkills, 
-  formatSkillsForDisplay, 
-  getSkillAttribute, 
-  getSkillDerivation, 
-  getSkillLevelName, 
-  getSkillLevelColor, 
-  getAttributeColor 
+import {
+  calculateSimplifiedSkills,
+  formatSkillsForDisplay,
+  getSkillAttribute,
+  getSkillDerivation,
+  getSkillLevelName,
+  getSkillLevelColor,
+  getAttributeColor
 } from '../utils/skillUtils';
 import { printCharacterSheet } from '../utils/printUtils';
 
@@ -23,16 +23,16 @@ const CharacterSheet = ({ character, updateCharacter }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [notes, setNotes] = useState('');
   const sheetRef = useRef(null);
-  
+
   // Calculate skills based on character choices
   React.useEffect(() => {
     if (!character.attributes || !character.profession || !character.origin || !character.background) return;
-    
+
     // Use utility function to calculate skills
     const skills = calculateSimplifiedSkills(character);
     setCalculatedSkills(skills);
   }, [character]);
-  
+
   // Equipment list - fallback to defaults if not provided
   const equipmentList = character.equipment || [
     { id: "default-1", name: "Custom flight jacket with personal insignia", category: "Armor", quantity: 1 },
@@ -42,21 +42,21 @@ const CharacterSheet = ({ character, updateCharacter }) => {
     { id: "default-5", name: "Emergency survival kit", category: "Survival Gear", quantity: 1 },
     { id: "default-6", name: "Trade guild credentials", category: "Miscellaneous", quantity: 1 }
   ];
-  
+
   // Handler for Print/PDF button - uses the utility function from printUtils
   const handlePrint = () => {
     printCharacterSheet(character, notes);
   };
-  
+
   // Handler for Export button
   const handleExport = () => {
     try {
       // Use utility function to export character
       const exportString = exportCharacter(character, notes);
-      
+
       // Copy to clipboard
       const successful = copyToClipboard(exportString);
-      
+
       if (successful) {
         alert('Character exported to clipboard! You can paste and save this code to import your character later.');
       } else {
@@ -77,14 +77,14 @@ const CharacterSheet = ({ character, updateCharacter }) => {
           Character Sheet
         </h1>
         <div className="flex space-x-4">
-          <button 
+          <button
             className="raygun-button flex items-center px-3 py-1.5"
             onClick={handlePrint}
           >
             <Printer size={16} className="mr-1" />
             Print/PDF
           </button>
-          <button 
+          <button
             className="raygun-button flex items-center px-3 py-1.5"
             onClick={handleExport}
           >
@@ -93,9 +93,9 @@ const CharacterSheet = ({ character, updateCharacter }) => {
           </button>
         </div>
       </div>
-      
+
       {/* Import Character Dialog - Removed */}
-      
+
       {/* Character Sheet Content */}
       <div id="character-sheet-content" className="max-w-5xl mx-auto px-6 py-6 bg-gray-900 text-gray-100">
         {/* Header Section - ensure it stays with content */}
@@ -112,12 +112,48 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 <span className="text-red-400">{character.background?.name || "Background"}</span>
               </h2>
             </div>
-            
-            <div className="w-24 h-24 bg-gray-700 rounded-full overflow-hidden flex items-center justify-center border-2 border-blue-700 glow-effect">
-              <div className={`w-full h-full ${character.portrait?.style || 'bg-blue-600'}`}></div>
+
+            <div className="w-24 h-24 bg-gray-700 rounded-full overflow-hidden flex items-center justify-center border-2 border-blue-700 glow-effect relative">
+              {character.portrait ? (
+                <div className="w-full h-full relative">
+                  <img
+                    src={character.portrait.path}
+                    alt={character.portrait.name || "Character portrait"}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Hide the image and show the fallback
+                      const imgElement = e.target as HTMLImageElement;
+                      imgElement.style.display = 'none';
+
+                      // If there's already a fallback element, don't create another
+                      const parent = imgElement.parentElement;
+                      if (parent && !parent.querySelector('.portrait-fallback')) {
+                        const fallback = document.createElement('div');
+                        fallback.className = 'portrait-fallback absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-600 to-blue-900';
+
+                        const letter = document.createElement('span');
+                        letter.textContent = (character.name || 'C').charAt(0);
+                        letter.className = 'text-white text-3xl font-bold';
+
+                        fallback.appendChild(letter);
+                        parent.appendChild(fallback);
+                      }
+                    }}
+                  />
+                </div>
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-gray-600 to-blue-900 flex items-center justify-center">
+                  <span className="text-white text-3xl font-bold">
+                    {character.name ? character.name.charAt(0) : 'C'}
+                  </span>
+                </div>
+              )}
+
+              {/* Retro glowing rim effect */}
+              <div className="absolute inset-0 rounded-full pointer-events-none glow-rim"></div>
             </div>
           </div>
-          
+
           {/* CLASSIFIED Stamp - Decorative */}
           <div className="absolute top-24 right-10 transform rotate-12 opacity-20 pointer-events-none no-print">
             <div className="border-8 border-red-600 text-red-600 px-6 py-2 rounded-md">
@@ -125,7 +161,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
             </div>
           </div>
         </div>
-          
+
         {/* Main Content Grid */}
         <div className="grid grid-cols-12 gap-6">
           {/* Left Column - Attributes and Core Stats */}
@@ -136,7 +172,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 <Brain size={18} className="mr-2" />
                 ATTRIBUTES
               </div>
-              
+
               <div className="p-4 space-y-2">
                 {['BRAWN', 'REFLEX', 'NERVE', 'SAVVY', 'CHARM', 'GRIT', 'GUILE'].map(attr => (
                   <div key={attr} className="flex justify-between items-center p-2 bg-gray-900 rounded">
@@ -150,37 +186,37 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 ))}
               </div>
             </div>
-            
+
             {/* Derived Statistics */}
             <div className="rounded-lg overflow-hidden mb-6 border bg-gray-800 border-blue-900 page-break-avoid">
               <div className="bg-blue-900 text-white py-2 px-4 font-bold flex items-center section-header">
                 <Database size={18} className="mr-2" />
                 DERIVED STATISTICS
               </div>
-              
+
               <div className="p-4 space-y-2">
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
                   <div className="font-medium">Initiative</div>
                   <div className="text-xl font-bold">{(character.attributes?.REFLEX || 10) * 5}%</div>
                 </div>
-                
+
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
                   <div className="font-medium">Damage Soak</div>
                   <div className="text-xl font-bold">{(character.attributes?.GRIT || 10) * 5}%</div>
                 </div>
-                
+
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
                   <div className="font-medium">Solar Scouts Training</div>
                   <div className="text-xl font-bold">{((character.attributes?.REFLEX || 10) * 2) + 15}%</div>
                 </div>
-                
+
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
                   <div className="font-medium">Wound Track</div>
                   <div className="text-xl flex items-center">
                     {/* Wound track boxes */}
                     {Array.from({ length: character.epithet?.id === 'grizzled' ? 5 : 4 }).map((_, i) => (
-                      <div 
-                        key={i} 
+                      <div
+                        key={i}
                         className="wound-track-box border-2 border-red-500 rounded w-6 h-6 mr-1 flex items-center justify-center"
                         style={{ boxShadow: i === 0 ? '0 0 10px rgba(239, 68, 68, 0.6)' : 'none' }}
                       >
@@ -194,14 +230,14 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 </div>
               </div>
             </div>
-            
+
             {/* Special Abilities */}
             <div className="rounded-lg overflow-hidden mb-6 border bg-gray-800 border-purple-900 page-break-avoid">
               <div className="bg-purple-900 text-white py-2 px-4 font-bold flex items-center section-header">
                 <Zap size={18} className="mr-2" />
                 SPECIAL ABILITIES
               </div>
-              
+
               <div className="p-4">
                 <div className="rounded p-3 border bg-gray-900 border-purple-800">
                   <h3 className="font-bold text-purple-300 mb-1">
@@ -211,7 +247,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                     {character.epithet?.benefit || "Select an epithet to see its special ability"}
                   </p>
                 </div>
-                
+
                 {character.signatureGadget && (
                   <div className="rounded p-3 border mt-4 bg-gray-900 border-blue-800">
                     <h3 className="font-bold text-blue-300 mb-1">
@@ -226,21 +262,21 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 )}
               </div>
             </div>
-            
+
             {/* Equipment List */}
             <div className="rounded-lg overflow-hidden border bg-gray-800 border-green-900 page-break-avoid">
               <div className="bg-green-900 text-white py-2 px-4 font-bold flex items-center section-header">
                 <Shield size={18} className="mr-2" />
                 EQUIPMENT
               </div>
-              
+
               <div className="p-4">
                 <div className="rounded-lg p-3 border bg-gray-900 border-green-800">
                   <div className="flex justify-between mb-2">
                     <span className="font-medium text-green-400">Credits</span>
                     <span className="font-bold text-green-300">{character.credits || 0} Cr</span>
                   </div>
-                  
+
                   <ul className="space-y-1 text-sm">
                     {equipmentList.map((item, idx) => (
                       <li key={item.id || idx} className="flex items-start">
@@ -253,7 +289,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
               </div>
             </div>
           </div>
-          
+
           {/* Right Column - Skills and Character Details */}
           <div className="col-span-8">
             {/* Skills Panel */}
@@ -264,33 +300,36 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                   SKILLS (AUTOMATICALLY CALCULATED)
                 </div>
               </div>
-              
+
               <div className="p-4">
                 <div className="grid grid-cols-2 gap-4">
-                  {formatSkillsForDisplay(calculatedSkills).map(([skillName, skillData], idx) => (
-                    <div 
-                      key={idx} 
-                      className="flex justify-between items-center p-2 bg-gray-900 rounded"
-                    >
-                      <div>
-                        <div className="font-medium">{skillName}</div>
-                        <div className="text-xs text-gray-400">
-                          From: {skillData.source}
+                  {formatSkillsForDisplay(calculatedSkills).map(([skillName, skillData], idx) => {
+                    const typedSkillData = skillData as { source: string; value: number }; // Type assertion
+                    return (
+                      <div
+                        key={idx}
+                        className="flex justify-between items-center p-2 bg-gray-900 rounded"
+                      >
+                        <div>
+                          <div className="font-medium">{skillName}</div>
+                          <div className="text-xs text-gray-400">
+                            From: {typedSkillData.source}
+                          </div>
+                          <div className="text-xs text-gray-400" title="Skill Derivation">
+                            Formula: {getSkillDerivation(typedSkillData, getSkillAttribute(skillName), character)}
+                          </div>
                         </div>
-                        <div className="text-xs text-gray-400" title="Skill Derivation">
-                          Formula: {getSkillDerivation(skillData, getSkillAttribute(skillName), character)}
+                        <div className="flex flex-col items-end">
+                          <div className="font-bold text-lg">{typedSkillData.value}%</div>
+                          <div className={`text-xs ${getSkillLevelColor(typedSkillData.value)}`}>
+                            {getSkillLevelName(typedSkillData.value)}
+                          </div>
                         </div>
                       </div>
-                      <div className="flex flex-col items-end">
-                        <div className="font-bold text-lg">{skillData.value}%</div>
-                        <div className={`text-xs ${getSkillLevelColor(skillData.value)}`}>
-                          {getSkillLevelName(skillData.value)}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
-                
+
                 <div className="mt-4 pt-4 border-t border-gray-700">
                   <div className="p-3 rounded text-sm bg-gray-900 text-blue-300">
                     <strong>About Skills:</strong> Skills are automatically calculated based on your character's attributes, profession, origin, and background. They use the formula: (Attribute × 2) + Bonus from Source.
@@ -298,14 +337,14 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 </div>
               </div>
             </div>
-            
+
             {/* Character Details */}
             <div className="rounded-lg overflow-hidden mb-6 border bg-gray-800 border-blue-900 page-break-avoid">
               <div className="bg-blue-900 text-white py-2 px-4 font-bold flex items-center section-header">
                 <Eye size={18} className="mr-2" />
                 CHARACTER DETAILS
               </div>
-              
+
               <div className="p-4">
                 <div className="grid grid-cols-2 gap-6">
                   {/* Left Details */}
@@ -316,7 +355,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                         {character.appearance || "No appearance details provided."}
                       </p>
                     </div>
-                    
+
                     <div>
                       <h3 className="font-bold text-blue-400 mb-1">Personality</h3>
                       <p className="p-2 rounded border bg-gray-900 border-blue-800 text-sm">
@@ -324,7 +363,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                       </p>
                     </div>
                   </div>
-                  
+
                   {/* Right Details */}
                   <div>
                     <div className="mb-4">
@@ -335,7 +374,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                         {character.origin?.description || "No origin selected."}
                       </p>
                     </div>
-                    
+
                     <div>
                       <h3 className="font-bold text-blue-400 mb-1">
                         Background: {character.background?.name}
@@ -348,7 +387,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 </div>
               </div>
             </div>
-            
+
             {/* Notes Section */}
             <div className="rounded-lg overflow-hidden border bg-gray-800 border-blue-900 page-break-avoid">
               <div className="bg-blue-900 text-white py-2 px-4 font-bold flex items-center justify-between section-header">
@@ -356,18 +395,18 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                   <AlertCircle size={18} className="mr-2" />
                   NOTES & CONNECTIONS
                 </div>
-                
-                <button 
+
+                <button
                   className="text-sm bg-blue-800 hover:bg-blue-700 px-2 py-1 rounded flex items-center no-print"
                   onClick={() => setIsEditing(!isEditing)}
                 >
                   {isEditing ? 'Save' : 'Edit'}
                 </button>
               </div>
-              
+
               <div className="p-4">
                 {isEditing ? (
-                  <textarea 
+                  <textarea
                     className="w-full border rounded p-3 h-32 focus:outline-none focus:ring-2 
                       bg-gray-900 border-blue-800 text-white focus:ring-blue-500"
                     placeholder="Record important notes, connections, and campaign events here..."
@@ -384,7 +423,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
             </div>
           </div>
         </div>
-        
+
         {/* Footer */}
         <div className="mt-8 text-center">
           <div className="text-sm text-gray-400">
@@ -400,6 +439,14 @@ const CharacterSheet = ({ character, updateCharacter }) => {
       <style >{`
         .page-break-avoid {
           page-break-inside: avoid;
+        }
+        .glow-effect {
+          box-shadow: 0 0 15px rgba(37, 99, 235, 0.6), inset 0 0 5px rgba(37, 99, 235, 0.4);
+        }
+        .glow-rim {
+            box-shadow: inset 0 0 5px rgba(59, 130, 246, 0.8);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 50%;
         }
       `}</style>
     </div>

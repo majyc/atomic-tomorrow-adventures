@@ -71,20 +71,22 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait }) => {
   const handleImageError = (e) => {
     // Instead of trying to load another image that might not exist,
     // just display a styled div as fallback
-    e.target.style.display = 'none';
+    const imgElement = e.target;
+    if (!(imgElement instanceof HTMLImageElement)) return;
+    imgElement.style.display = 'none';
     
     // Get the parent container to add a fallback element
-    const container = e.target.parentNode;
+    const container = imgElement.parentElement;
     
-    // Only add fallback if it doesn't exist yet
-    if (!container.querySelector('.portrait-fallback')) {
+    // Only add fallback if it doesn't exist yet and parent exists
+    if (container && !container.querySelector('.portrait-fallback')) {
       // Create fallback element
       const fallback = document.createElement('div');
       fallback.className = 'portrait-fallback absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-300 to-gray-600';
       
       // Add a letter indicator (first letter of the portrait name)
       const letter = document.createElement('span');
-      const portraitName = e.target.alt || 'Portrait';
+      const portraitName = imgElement.alt || 'Portrait';
       letter.textContent = portraitName.charAt(0);
       letter.className = 'text-white text-3xl font-bold';
       
@@ -95,98 +97,247 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait }) => {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="bg-gray-900 p-6 rounded-xl border border-blue-900 space-y-6">
+      {/* Retro-atomic control panel styling */}
+      <style jsx>{`
+        /* Button styling */
+        .atomic-button {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #b91c1c;
+          border: 4px solid #9ca3af;
+          position: relative;
+          transition: all 0.2s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 15px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .atomic-button::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 45%;
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
+          border-radius: 50% 50% 0 0;
+          pointer-events: none;
+        }
+        
+        .atomic-button.pressed {
+          background-color: #7f1d1d;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.5);
+          transform: translateY(2px);
+        }
+        
+        /* Button label styling */
+        .button-label {
+          background-color: #1e293b;
+          color: #e2e8f0;
+          border: 2px solid #475569;
+          border-radius: 4px;
+          padding: 3px 6px;
+          font-size: 12px;
+          text-align: center;
+          position: relative;
+          margin-top: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          font-weight: 500;
+          min-width: 70px;
+          width: 100%;
+        }
+        
+        /* Rivets on button labels */
+        .button-label::before,
+        .button-label::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          background-color: #64748b;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .button-label::before {
+          left: 3px;
+        }
+        
+        .button-label::after {
+          right: 3px;
+        }
+        
+        /* Indicator light styling - dome lights */
+        .dome-light {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #4b5563;
+          border: 2px solid #6b7280;
+          position: absolute;
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          overflow: hidden;
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .dome-light::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 50%;
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
+          border-radius: 50% 50% 0 0;
+        }
+        
+        .dome-light.active {
+          background-color: #ef4444;
+          box-shadow: 0 0 10px rgba(239, 68, 68, 0.7), inset 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Portrait indicator lights */
+        .portrait-indicator {
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: #4b5563;
+          border: 2px solid #6b7280;
+          overflow: hidden;
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .portrait-indicator::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 40%;
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
+          border-radius: 50% 50% 0 0;
+        }
+        
+        .portrait-indicator.active {
+          background-color: #ef4444;
+          box-shadow: 0 0 10px rgba(239, 68, 68, 0.7), inset 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        @keyframes glow {
+          0% { opacity: 0.7; }
+          50% { opacity: 1; }
+          100% { opacity: 0.7; }
+        }
+        
+        .glowing {
+          animation: glow 2s infinite;
+        }
+      `}</style>
+      
       <div className="flex justify-between items-center">
-        <h3 className="text-xl font-bold mb-4 text-blue-800">Character Portrait</h3>
+        <h3 className="text-xl font-bold text-blue-400" style={{ textShadow: '0 0 10px rgba(96, 165, 250, 0.6)' }}>
+          Character Portrait
+        </h3>
 
-        <div className="flex space-x-2">
-          {/* Gender filter buttons */}
-          <div className="flex items-center space-x-1 mr-2">
-            <User size={14} className="text-gray-500" />
-            <div className="flex space-x-1">
-              <button
-                onClick={() => setGenderFilter('all')}
-                className={`px-2 py-0.5 text-xs rounded ${
-                  genderFilter === 'all' 
-                    ? 'bg-purple-600 text-white' 
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                }`}
-              >
-                All
-              </button>
+        {/* Refresh button - with retro styling */}
+        <button
+          onClick={generatePortraits}
+          className="px-4 py-2 bg-gray-800 text-blue-400 border border-blue-600 rounded hover:bg-gray-700 flex items-center"
+          disabled={loading}
+          style={{
+            boxShadow: '0 0 5px rgba(59, 130, 246, 0.4), inset 0 0 3px rgba(59, 130, 246, 0.4)'
+          }}
+        >
+          <Shuffle size={16} className={`mr-2 ${loading ? 'animate-spin' : ''}`} />
+          {loading ? 'Loading...' : 'New Options'}
+        </button>
+      </div>
+
+      {/* Gender selection control panel */}
+      <div className="bg-gray-800 p-6 rounded-lg border border-blue-900 flex items-center justify-center mb-4">
+        <div className="relative flex items-center">
+          <div className="flex items-end justify-center w-full space-x-12">
+            <div className="flex flex-col items-center">
               <button
                 onClick={() => setGenderFilter('male')}
-                className={`px-2 py-0.5 text-xs rounded ${
-                  genderFilter === 'male' 
-                    ? 'bg-blue-600 text-white' 
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                }`}
+                className={`atomic-button ${genderFilter === 'male' ? 'pressed' : ''}`}
               >
-                Male
+                <span className="text-2xl font-bold" style={{ textShadow: '1px 1px 1px rgba(0,0,0,0.5)', color: '#f1f1f1' }}>♂</span>
               </button>
+              <div className="button-label">Male</div>
+            </div>
+            
+            <div className="flex flex-col items-center">
               <button
                 onClick={() => setGenderFilter('female')}
-                className={`px-2 py-0.5 text-xs rounded ${
-                  genderFilter === 'female' 
-                    ? 'bg-pink-600 text-white' 
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                }`}
+                className={`atomic-button ${genderFilter === 'female' ? 'pressed' : ''}`}
               >
-                Female
+                <span className="text-2xl font-bold" style={{ textShadow: '1px 1px 1px rgba(0,0,0,0.5)', color: '#f1f1f1' }}>♀</span>
               </button>
+              <div className="button-label">Female</div>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <button
+                onClick={() => setGenderFilter('all')}
+                className={`atomic-button ${genderFilter === 'all' ? 'pressed' : ''}`}
+              >
+                <span className="text-2xl font-bold" style={{ textShadow: '1px 1px 1px rgba(0,0,0,0.5)', color: '#f1f1f1' }}>?</span>
+              </button>
+              <div className="button-label">Random</div>
             </div>
           </div>
-
-          {/* Refresh button */}
-          <button
-            onClick={generatePortraits}
-            className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm flex items-center"
-            disabled={loading}
-          >
-            <Shuffle size={16} className={`mr-1 ${loading ? 'animate-spin' : ''}`} />
-            {loading ? 'Loading...' : 'New Options'}
-          </button>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
+      {/* Portraits grid */}
+      <div className="grid grid-cols-3 gap-4">
         {portraits.map(portrait => (
           <div
             key={portrait.id}
             onClick={() => onSelectPortrait(portrait)}
-            className={`cursor-pointer rounded-lg overflow-hidden border-2 transition-all ${
-              selectedPortrait?.id === portrait.id ? 'border-blue-500 shadow-md' : 'border-gray-200'
-            }`}
-            style={
-              selectedPortrait?.id === portrait.id
-                ? { boxShadow: '0 0 10px rgba(59, 130, 246, 0.7)' }
-                : {}
-            }
+            className="relative overflow-hidden bg-gray-800 border-2 border-gray-700 rounded-md transition-all cursor-pointer"
           >
-            <div className="w-full h-32 overflow-hidden bg-gray-100 relative">
+            {/* Portrait image */}
+            <div className="w-full h-44 overflow-hidden relative">
               <img
                 src={portrait.path}
                 alt={portrait.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
                 onError={handleImageError}
               />
-              
-              {/* Gender indicator - optional */}
-              <div className={`absolute top-2 right-2 w-6 h-6 rounded-full flex items-center justify-center ${
-                portrait.gender === 'male' ? 'bg-blue-500' : 'bg-pink-500'
-              }`}>
-                <span className="text-white text-xs">{portrait.gender === 'male' ? 'M' : 'F'}</span>
-              </div>
             </div>
-
-            <div className="p-2 text-center text-sm bg-white">{portrait.name}</div>
+            
+            {/* Cockpit indicator light below portrait */}
+            <div className="flex justify-center mb-3 relative">
+              <div 
+                className={`portrait-indicator relative top-auto right-auto ${selectedPortrait?.id === portrait.id ? 'active glowing' : ''}`}
+                style={{ 
+                  position: 'relative', 
+                  display: 'block',
+                  width: '14px',
+                  height: '14px',
+                  marginTop: '12px' 
+                }}
+              ></div>
+            </div>
           </div>
         ))}
       </div>
       
-      {/* Instructions for missing images */}
-      <div className="text-xs text-gray-500 italic mt-1 p-2 bg-gray-100 rounded border border-gray-200">
-        <strong>Image Setup:</strong> Place portrait images in your project's <code>public/portraits/</code> folder using the naming convention m_1.jpg to m_20.jpg for male portraits and f_1.jpg to f_20.jpg for female portraits. If images are missing, placeholder blocks will be shown.
+      {/* Instructions panel */}
+      <div className="bg-gray-800 p-3 rounded border border-blue-800 text-gray-400 text-xs">
+        <p><strong className="text-blue-400">Image Setup:</strong> Place portrait images in your project's <code className="bg-gray-900 px-1 rounded">public/portraits/</code> folder using the naming convention m_1.jpg to m_20.jpg for male portraits and f_1.jpg to f_20.jpg for female portraits.</p>
       </div>
     </div>
   );
