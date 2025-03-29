@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import GenderSelector from './GenderSelector';
-import NameInput from './NameInput';
+import NameInput from './NameInput'; // Proper import of our NameInput component
 import AtomicKnob from './AtomicKnob';
 import RetroToggleSwitch from './RetroToggleSwitch';
+import RetroTerminalInput from './RetroTerminalInput';
 import { PERSONALITY_TRAITS, APPEARANCE_TRAITS } from '../data/descriptions';
 
 /**
  * Character Details Panel Component
  * Manages character name, age, appearance, and personality
- * Uses the fixed RetroToggleSwitch for trait suggestions
+ * Now properly using the NameInput component
  */
 const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, onGenderChange }) => {
   // State for character details
@@ -61,30 +62,6 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
     setAppearance(newAppearance);
   };
 
-  // CRT effect styles
-  const crtStyles = {
-    scanline: {
-      background: 'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%)',
-      backgroundSize: '100% 4px',
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      pointerEvents: 'none',
-      zIndex: 1,
-      animation: 'scanlines 1s linear infinite'
-    },
-    terminal: {
-      boxShadow: '0 0 15px rgba(0, 255, 0, 0.6), inset 0 0 20px rgba(0, 255, 0, 0.4)',
-      border: '2px solid #14532d',
-      backgroundColor: '#0a0a0a',
-      borderRadius: '0.375rem',
-      position: 'relative',
-      overflow: 'hidden'
-    }
-  };
-
   return (
     <div className="rounded-lg overflow-hidden mb-6 bg-gray-800 border border-blue-900"
          style={{ boxShadow: '0 0 15px rgba(37, 99, 235, 0.4), inset 0 0 10px rgba(37, 99, 235, 0.2)' }}>
@@ -100,8 +77,8 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
       />
 
       <div className="p-4 space-y-4">
-        {/* Name with Generator Button */}
-        <NameInput
+        {/* Name Input with proper component */}
+        <NameInput 
           name={name}
           setName={setName}
           genderPreference={genderPreference}
@@ -110,18 +87,12 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
         {/* Age */}
         <div className="relative">
           <div className="text-blue-400 mb-1 font-medium">Age</div>
-          <div className="relative" style={{ ...crtStyles.terminal }}>
-            <div style={crtStyles.scanline}></div>
-            <input
-              type="number"
-              value={age}
-              onChange={(e) => setAge(parseInt(e.target.value) || 30)}
-              min="18"
-              max="100"
-              className="w-full px-3 py-2 bg-transparent text-green-400 relative z-10 focus:outline-none"
-              style={{ textShadow: '0 0 5px rgba(74, 222, 128, 0.7)', fontFamily: 'monospace' }}
-            />
-          </div>
+          <RetroTerminalInput
+            value={age}
+            onChange={(e) => setAge(parseInt(e.target.value) || 30)}
+            type="number"
+            multiline={false}
+          />
         </div>
 
         {/* Appearance with Trait Suggestions Toggle */}
@@ -138,17 +109,13 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
             </div>
           </div>
           
-          <div className="relative" style={{ ...crtStyles.terminal }}>
-            <div style={crtStyles.scanline}></div>
-            <textarea
-              value={appearance}
-              onChange={(e) => setAppearance(e.target.value)}
-              className="w-full px-3 py-2 bg-transparent text-green-400 relative z-10 focus:outline-none"
-              rows={3}
-              placeholder="Describe your character's appearance..."
-              style={{ textShadow: '0 0 5px rgba(74, 222, 128, 0.7)', fontFamily: 'monospace' }}
-            ></textarea>
-          </div>
+          <RetroTerminalInput
+            value={appearance}
+            onChange={(e) => setAppearance(e.target.value)}
+            placeholder="Describe your character's appearance..."
+            multiline={true}
+            rows={3}
+          />
           
           {/* Appearance Trait Knob Selector */}
           {showAppearanceSelector && (
@@ -211,17 +178,13 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
             </div>
           </div>
           
-          <div className="relative" style={{ ...crtStyles.terminal }}>
-            <div style={crtStyles.scanline}></div>
-            <textarea
-              value={personality}
-              onChange={(e) => setPersonality(e.target.value)}
-              className="w-full px-3 py-2 bg-transparent text-green-400 relative z-10 focus:outline-none"
-              rows={3}
-              placeholder="Describe your character's personality traits..."
-              style={{ textShadow: '0 0 5px rgba(74, 222, 128, 0.7)', fontFamily: 'monospace' }}
-            ></textarea>
-          </div>
+          <RetroTerminalInput
+            value={personality}
+            onChange={(e) => setPersonality(e.target.value)}
+            placeholder="Describe your character's personality traits..."
+            multiline={true}
+            rows={3}
+          />
           
           {/* Personality Trait Knob Selector */}
           {showPersonalitySelector && (
@@ -273,32 +236,15 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
       
       <style jsx>{`
         .terminal-text {
-          font-family: monospace;
-          animation: textFlicker 0.01s infinite;
+          font-family: "VT323", monospace;
+          color: #4ade80;
+          text-shadow: 0 0 8px rgba(74, 222, 128, 0.9);
+          letter-spacing: 0.05em;
         }
         
-        @keyframes textFlicker {
-          0% { opacity: 0.94; }
-          5% { opacity: 1; }
-          10% { opacity: 0.98; }
-          15% { opacity: 0.94; }
-          20% { opacity: 0.99; }
-          25% { opacity: 1; }
-          30% { opacity: 0.98; }
-          35% { opacity: 0.96; }
-          40% { opacity: 1; }
-          45% { opacity: 0.99; }
-          50% { opacity: 0.98; }
-          55% { opacity: 1; }
-          60% { opacity: 0.97; }
-          65% { opacity: 0.99; }
-          70% { opacity: 1; }
-          75% { opacity: 0.99; }
-          80% { opacity: 0.99; }
-          85% { opacity: 0.99; }
-          90% { opacity: 1; }
-          95% { opacity: 0.99; }
-          100% { opacity: 1; }
+        .panel-header {
+          background: linear-gradient(to right, #0f172a, #1e3a8a, #0f172a);
+          text-shadow: 0 0 10px rgba(96, 165, 250, 0.8);
         }
       `}</style>
     </div>

@@ -42,7 +42,7 @@ const EquipmentDetails = ({ character, updateCharacter }) => {
 
   return (
     <div className="bg-gray-900 p-5 rounded-xl">
-      <style jsx>{`
+      <style>{`
         @keyframes scanlines {
           0% { background-position: 0 0; }
           100% { background-position: 0 4px; }

@@ -252,7 +252,7 @@ const EquipmentPanel = ({ character, updateCharacter }) => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .glowing-button {
           transition: all 0.3s ease;
         }

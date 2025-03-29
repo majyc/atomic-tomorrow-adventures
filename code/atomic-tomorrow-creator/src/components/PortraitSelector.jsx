@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Shuffle } from 'lucide-react';
+import RetroPushButton from './RetroPushButton';
 import { PORTRAITS, PORTRAIT_TYPES } from '../utils/portraits';
 
 /**
- * PortraitSelector - Now using external gender preference
- * Keeps the same styling as the original but without the gender buttons
+ * Enhanced PortraitSelector with retro-atomic styling and generation button
+ * 
+ * @param {Object} props
+ * @param {Object} props.selectedPortrait - Currently selected portrait
+ * @param {Function} props.onSelectPortrait - Function to call when portrait is selected
+ * @param {string} props.genderPreference - Gender preference from parent component
  */
 const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference }) => {
   const [portraits, setPortraits] = useState([]);
@@ -73,10 +77,8 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
   
   // Handle image loading error
   const handleImageError = (e) => {
-    // Instead of trying to load another image that might not exist,
-    // just display a styled div as fallback
+    // Replace with fallback
     const imgElement = e.target;
-    if (!(imgElement instanceof HTMLImageElement)) return;
     imgElement.style.display = 'none';
     
     // Get the parent container to add a fallback element
@@ -101,64 +103,22 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
   };
 
   return (
-    <div className="bg-gray-900 p-6 rounded-xl border border-blue-900 space-y-6">
-      {/* Retro-atomic control panel styling */}
-      <style jsx>{`
-        /* Portrait indicator lights */
-        .portrait-indicator {
-          width: 14px;
-          height: 14px;
-          border-radius: 50%;
-          background-color: #4b5563;
-          border: 2px solid #6b7280;
-          overflow: hidden;
-          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-        }
-        
-        .portrait-indicator::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 40%;
-          background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
-          border-radius: 50% 50% 0 0;
-        }
-        
-        .portrait-indicator.active {
-          background-color: #ef4444;
-          box-shadow: 0 0 10px rgba(239, 68, 68, 0.7), inset 0 1px 3px rgba(0, 0, 0, 0.3);
-        }
-        
-        @keyframes glow {
-          0% { opacity: 0.7; }
-          50% { opacity: 1; }
-          100% { opacity: 0.7; }
-        }
-        
-        .glowing {
-          animation: glow 2s infinite;
-        }
-      `}</style>
-      
-      <div className="flex justify-between items-center">
+    <div className="p-6 rounded-xl border border-blue-900 space-y-6" style={{ 
+      backgroundColor: '#111827',
+      boxShadow: '0 0 15px rgba(37, 99, 235, 0.4), inset 0 0 10px rgba(37, 99, 235, 0.2)'
+    }}>
+      <div className="flex justify-between items-start">
         <h3 className="text-xl font-bold text-blue-400" style={{ textShadow: '0 0 10px rgba(96, 165, 250, 0.6)' }}>
           Character Portrait
         </h3>
 
-        {/* Refresh button - with retro styling */}
-        <button
+        {/* Retro Push Button for generating new options */}
+        <RetroPushButton
           onClick={generatePortraits}
-          className="px-4 py-2 bg-gray-800 text-blue-400 border border-blue-600 rounded hover:bg-gray-700 flex items-center"
-          disabled={loading}
-          style={{
-            boxShadow: '0 0 5px rgba(59, 130, 246, 0.4), inset 0 0 3px rgba(59, 130, 246, 0.4)'
-          }}
-        >
-          <Shuffle size={16} className={`mr-2 ${loading ? 'animate-spin' : ''}`} />
-          {loading ? 'Loading...' : 'New Options'}
-        </button>
+          label="New Faces"
+          icon="refresh"
+          color="blue"
+        />
       </div>
 
       {/* Portraits grid */}
@@ -167,7 +127,16 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
           <div
             key={portrait.id}
             onClick={() => onSelectPortrait(portrait)}
-            className="relative overflow-hidden bg-gray-800 border-2 border-gray-700 rounded-md transition-all cursor-pointer"
+            className={`relative overflow-hidden bg-gray-800 border-2 ${
+              selectedPortrait?.id === portrait.id 
+                ? 'border-blue-500' 
+                : 'border-gray-700'
+            } rounded-md transition-all cursor-pointer`}
+            style={{
+              boxShadow: selectedPortrait?.id === portrait.id 
+                ? '0 0 15px rgba(59, 130, 246, 0.7)' 
+                : 'none'
+            }}
           >
             {/* Portrait image */}
             <div className="w-full h-44 overflow-hidden relative">
@@ -177,24 +146,57 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
                 className="w-full h-full object-cover object-top"
                 onError={handleImageError}
               />
+              
+              {/* Holographic overlay for selected portrait */}
+              {selectedPortrait?.id === portrait.id && (
+                <div 
+                  className="absolute inset-0 pointer-events-none" 
+                  style={{
+                    background: 'linear-gradient(45deg, rgba(96, 165, 250, 0) 0%, rgba(96, 165, 250, 0.2) 50%, rgba(96, 165, 250, 0) 100%)',
+                    animation: 'holographic-scan 2s linear infinite'
+                  }}
+                />
+              )}
             </div>
             
             {/* Cockpit indicator light below portrait */}
             <div className="flex justify-center mb-3 relative">
               <div 
-                className={`portrait-indicator relative top-auto right-auto ${selectedPortrait?.id === portrait.id ? 'active glowing' : ''}`}
+                className={`relative top-auto right-auto ${selectedPortrait?.id === portrait.id ? 'active glowing' : ''}`}
                 style={{ 
                   position: 'relative', 
                   display: 'block',
                   width: '14px',
                   height: '14px',
-                  marginTop: '12px' 
+                  marginTop: '12px',
+                  borderRadius: '50%',
+                  backgroundColor: selectedPortrait?.id === portrait.id ? '#ef4444' : '#4b5563',
+                  border: '2px solid #6b7280',
+                  boxShadow: selectedPortrait?.id === portrait.id ? '0 0 10px rgba(239, 68, 68, 0.7)' : 'none',
+                  transition: 'all 0.3s ease'
                 }}
-              ></div>
+              />
             </div>
           </div>
         ))}
       </div>
+      
+      <style>{`
+        @keyframes holographic-scan {
+          0% { transform: translateY(-100%); }
+          100% { transform: translateY(100%); }
+        }
+        
+        .glowing {
+          animation: glow 2s infinite;
+        }
+        
+        @keyframes glow {
+          0% { opacity: 0.7; }
+          50% { opacity: 1; }
+          100% { opacity: 0.7; }
+        }
+      `}</style>
     </div>
   );
 };

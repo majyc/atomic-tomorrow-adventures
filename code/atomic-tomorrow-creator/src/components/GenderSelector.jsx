@@ -8,7 +8,7 @@ const GenderSelector = ({ selectedGender, onSelectGender }) => {
   return (
     <div className="bg-gray-800 p-6 rounded-lg border border-blue-900 flex items-center justify-center mb-4">
       {/* Retro-atomic control panel styling */}
-      <style jsx>{`
+      <style>{`
         /* Button styling */
         .atomic-button {
           width: 50px;
