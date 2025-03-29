@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { Shuffle, RotateCcw } from 'lucide-react';
+import React, { useState } from 'react';
 
 /**
- * RetroPushButton - A retro-futuristic button that appears to physically depress when clicked
- * Perfect for randomization/generation actions in the atomic control panel
+ * RetroPushButton - A retro-futuristic rectangular button with guards that visually depresses
  * 
  * @param {Object} props
  * @param {Function} props.onClick - Function to call when button is clicked
  * @param {string} props.label - Text label for the button
- * @param {string} props.icon - Icon to use (shuffle or refresh)
- * @param {string} props.color - Color theme (blue, green, red, etc.)
+ * @param {React.ReactNode} props.icon - Icon component to display
+ * @param {string} props.color - Color theme (blue, green, red, purple, amber)
+ * @param {string} props.size - Size of the button ('sm', 'md', or 'lg')
  */
 const RetroPushButton = ({ 
   onClick, 
-  label = "Generate", 
-  icon = "shuffle",
-  color = "blue" 
+  label = "Generate",
+  icon = null,
+  color = "blue",
+  size = "md"
 }) => {
   // State for button animation
   const [isPressed, setIsPressed] = useState(false);
@@ -27,38 +27,76 @@ const RetroPushButton = ({
         return {
           primary: '#166534',
           secondary: '#22c55e',
-          light: '#4ade80',
           glow: 'rgba(74, 222, 128, 0.8)',
-          dark: '#064e3b'
+          text: '#4ade80'
         };
       case 'red':
         return {
           primary: '#991b1b',
           secondary: '#ef4444',
-          light: '#f87171',
           glow: 'rgba(248, 113, 113, 0.8)',
-          dark: '#7f1d1d'
+          text: '#f87171'
         };
       case 'purple':
         return {
           primary: '#581c87',
           secondary: '#a855f7',
-          light: '#c084fc',
           glow: 'rgba(192, 132, 252, 0.8)',
-          dark: '#4c1d95'
+          text: '#c084fc'
+        };
+      case 'amber':
+        return {
+          primary: '#92400e',
+          secondary: '#f59e0b',
+          glow: 'rgba(251, 191, 36, 0.8)',
+          text: '#fbbf24'
         };
       default: // blue
         return {
           primary: '#1e40af',
           secondary: '#3b82f6',
-          light: '#60a5fa',
           glow: 'rgba(96, 165, 250, 0.8)',
-          dark: '#1e3a8a'
+          text: '#60a5fa'
         };
     }
   };
   
   const colors = getColorScheme();
+  
+  // Get dimensions based on size prop
+  const getDimensions = () => {
+    switch (size) {
+      case 'sm':
+        return {
+          width: 70,
+          height: 28,
+          guardWidth: 6,
+          fontSize: 10,
+          iconSize: 12,
+          padding: '4px 8px'
+        };
+      case 'lg':
+        return {
+          width: 120,
+          height: 48,
+          guardWidth: 12,
+          fontSize: 16,
+          iconSize: 22,
+          padding: '10px 16px'
+        };
+      default: // md
+        return {
+          width: 90,
+          height: 36,
+          guardWidth: 8,
+          fontSize: 13,
+          iconSize: 16,
+          padding: '6px 12px'
+        };
+    }
+  };
+  
+  const dimensions = getDimensions();
   
   // Handle button click with animation
   const handleClick = () => {
@@ -75,119 +113,117 @@ const RetroPushButton = ({
     }, 200);
   };
   
-  // Get the appropriate icon
-  const IconComponent = icon === 'refresh' ? RotateCcw : Shuffle;
-  
   return (
-    <div className="flex flex-col items-center">
-      {/* Button housing with metallic frame */}
+    <div 
+      className="relative"
+      style={{
+        width: dimensions.width + 'px',
+        height: dimensions.height + 'px'
+      }}
+    >
+      {/* Left guard */}
       <div 
-        className="relative"
+        className="absolute top-0 bottom-0 left-0"
         style={{
-          width: '90px',
-          height: '90px',
-          background: 'linear-gradient(145deg, #2a2a2a, #1a1a1a)',
-          borderRadius: '8px',
-          border: '2px solid #333',
-          boxShadow: '0 2px 10px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1)',
-          padding: '5px'
+          width: dimensions.guardWidth + 'px',
+          background: 'linear-gradient(90deg, #1a1a1a, #333)',
+          borderRadius: '3px 0 0 3px',
+          boxShadow: 'inset -1px 0 1px rgba(255, 255, 255, 0.1)',
+          borderTop: '1px solid #444',
+          borderLeft: '1px solid #444',
+          borderBottom: '1px solid #222',
+          zIndex: 1
+        }}
+      />
+      
+      {/* Right guard */}
+      <div 
+        className="absolute top-0 bottom-0 right-0"
+        style={{
+          width: dimensions.guardWidth + 'px',
+          background: 'linear-gradient(90deg, #333, #1a1a1a)',
+          borderRadius: '0 3px 3px 0',
+          boxShadow: 'inset 1px 0 1px rgba(255, 255, 255, 0.1)',
+          borderTop: '1px solid #444',
+          borderRight: '1px solid #444',
+          borderBottom: '1px solid #222',
+          zIndex: 1
+        }}
+      />
+      
+      {/* Button housing (background/inset) */}
+      <div 
+        className="absolute"
+        style={{
+          left: dimensions.guardWidth + 'px',
+          top: '0',
+          width: (dimensions.width - (dimensions.guardWidth * 2)) + 'px',
+          height: dimensions.height + 'px',
+          background: '#131313',
+          boxShadow: 'inset 0 0 3px rgba(0, 0, 0, 0.9)',
+          borderTop: '1px solid #0a0a0a',
+          borderBottom: '1px solid #333'
+        }}
+      />
+      
+      {/* Button itself */}
+      <button
+        onClick={handleClick}
+        className="absolute flex items-center justify-center focus:outline-none transition-all duration-75"
+        style={{
+          left: dimensions.guardWidth + 'px',
+          top: '0',
+          width: (dimensions.width - (dimensions.guardWidth * 2)) + 'px',
+          height: dimensions.height + 'px',
+          padding: dimensions.padding,
+          background: isPressed
+            ? `linear-gradient(to bottom, ${colors.primary}, ${colors.secondary})`
+            : `linear-gradient(to bottom, ${colors.secondary}, ${colors.primary})`,
+          boxShadow: isPressed
+            ? 'inset 0 2px 5px rgba(0, 0, 0, 0.5)'
+            : `0 0 10px ${colors.glow}, inset 0 1px 1px rgba(255, 255, 255, 0.5)`,
+          transform: isPressed ? 'translateY(2px)' : 'translateY(0)',
+          border: '1px solid rgba(0, 0, 0, 0.2)',
+          color: 'white',
+          textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)',
+          zIndex: 0,
+          fontSize: dimensions.fontSize + 'px',
+          fontWeight: 'bold',
+          letterSpacing: '0.5px',
+          overflow: 'hidden'
         }}
       >
-        {/* Button itself */}
-        <button
-          onClick={handleClick}
-          className="relative w-full h-full rounded-md focus:outline-none transition-all duration-75"
+        {/* Icon and Label */}
+        <div 
+          className="flex items-center justify-center space-x-1 relative z-10"
           style={{
-            background: isPressed
-              ? `linear-gradient(to bottom, ${colors.dark}, ${colors.primary})`
-              : `linear-gradient(to bottom, ${colors.secondary}, ${colors.primary})`,
-            boxShadow: isPressed
-              ? 'inset 0 3px 8px rgba(0, 0, 0, 0.5)'
-              : `0 3px 8px rgba(0, 0, 0, 0.3), 0 0 15px ${colors.glow}`,
-            transform: isPressed ? 'translateY(3px)' : 'translateY(0)',
-            border: '1px solid rgba(0, 0, 0, 0.2)',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            color: 'white',
-            textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)'
+            transform: isPressed ? 'scale(0.98)' : 'scale(1)',
+            transition: 'transform 0.1s'
           }}
         >
-          <IconComponent 
-            size={25} 
-            className={`transition-transform ${isPressed ? 'scale-95' : 'scale-100'}`}
-            style={{
-              filter: `drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3))`
-            }}
-          />
-          <span 
-            className="mt-1 text-sm font-bold"
-            style={{
-              textTransform: 'uppercase',
-              letterSpacing: '0.05em'
-            }}
-          >
-            {label}
-          </span>
-          
-          {/* Light reflection overlay */}
-          <div 
-            className="absolute top-0 left-0 right-0 h-1/3 rounded-t-md pointer-events-none"
-            style={{
-              background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.15), transparent)',
-              opacity: isPressed ? 0.1 : 0.3
-            }}
-          />
-        </button>
+          {icon && (
+            <span 
+              className="mr-1"
+              style={{
+                fontSize: dimensions.iconSize + 'px'
+              }}
+            >
+              {icon}
+            </span>
+          )}
+          <span>{label}</span>
+        </div>
         
-        {/* Mounting screws */}
+        {/* Light reflection overlay */}
         <div 
-          className="absolute -top-1 -left-1 w-2 h-2 rounded-full"
+          className="absolute top-0 left-0 right-0 pointer-events-none"
           style={{
-            background: 'radial-gradient(circle at 30% 30%, #9ca3af, #4b5563)',
-            boxShadow: 'inset 0 1px 1px rgba(255, 255, 255, 0.3)'
+            height: '40%',
+            background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.15), transparent)',
+            opacity: isPressed ? 0.1 : 0.3
           }}
         />
-        <div 
-          className="absolute -top-1 -right-1 w-2 h-2 rounded-full"
-          style={{
-            background: 'radial-gradient(circle at 30% 30%, #9ca3af, #4b5563)',
-            boxShadow: 'inset 0 1px 1px rgba(255, 255, 255, 0.3)'
-          }}
-        />
-        <div 
-          className="absolute -bottom-1 -left-1 w-2 h-2 rounded-full"
-          style={{
-            background: 'radial-gradient(circle at 30% 30%, #9ca3af, #4b5563)',
-            boxShadow: 'inset 0 1px 1px rgba(255, 255, 255, 0.3)'
-          }}
-        />
-        <div 
-          className="absolute -bottom-1 -right-1 w-2 h-2 rounded-full"
-          style={{
-            background: 'radial-gradient(circle at 30% 30%, #9ca3af, #4b5563)',
-            boxShadow: 'inset 0 1px 1px rgba(255, 255, 255, 0.3)'
-          }}
-        />
-      </div>
-      
-      {/* Label plate below button */}
-      <div 
-        className="mt-2 px-3 py-1 rounded text-xs text-center"
-        style={{
-          backgroundColor: '#1a1a1a',
-          color: '#d1d5db',
-          border: '1px solid #333',
-          boxShadow: 'inset 0 1px 3px rgba(0, 0, 0, 0.5)',
-          textShadow: '0 0 2px rgba(255, 255, 255, 0.3)',
-          textTransform: 'uppercase',
-          letterSpacing: '0.05em',
-          width: '90px'
-        }}
-      >
-        {label}
-      </div>
+      </button>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RetroPushButton from './RetroPushButton';
 import { PORTRAITS, PORTRAIT_TYPES } from '../utils/portraits';
-
+import { Shuffle } from 'lucide-react';
 /**
  * Enhanced PortraitSelector with retro-atomic styling and generation button
  * 
@@ -116,8 +116,9 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
         <RetroPushButton
           onClick={generatePortraits}
           label="New Faces"
-          icon="refresh"
+          icon={<Shuffle size={16} />}
           color="blue"
+          size='lg'
         />
       </div>
 

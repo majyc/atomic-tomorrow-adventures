@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import RetroTerminalInput from './RetroTerminalInput';
 import RetroPushButton from './RetroPushButton';
 import { NAMES } from '../data/names';
+import { Shuffle } from 'lucide-react';
 
 /**
  * Final working NameInput component with direct data access
@@ -69,12 +70,15 @@ const NameInput = ({ name, setName, genderPreference }) => {
           />
         </div>
         <div className="mt-1">
+        <div>
           <RetroPushButton
             onClick={handleGenerateName}
-            label={isGenerating ? "Working..." : "Random"}
-            icon="shuffle"
+            label="Random"
+            icon={<Shuffle size={16} />}
             color="blue"
+            size="lg"
           />
+        </div>
         </div>
       </div>
     </div>
