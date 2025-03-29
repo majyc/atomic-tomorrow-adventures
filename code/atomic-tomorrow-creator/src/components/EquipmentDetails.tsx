@@ -7,6 +7,7 @@ import PortraitSelector from './PortraitSelector';
 /**
  * Equipment & Details Screen Component
  * Main container for character details, equipment and signature gadget
+ * With shared gender selector for names and portraits
  */
 const EquipmentDetails = ({ character, updateCharacter }) => {
   // State for character data
@@ -14,6 +15,9 @@ const EquipmentDetails = ({ character, updateCharacter }) => {
   
   // State for portrait selection
   const [selectedPortrait, setSelectedPortrait] = useState(character.portrait || null);
+  
+  // State for gender preference - shared between name generator and portrait selector
+  const [genderPreference, setGenderPreference] = useState('random');
   
   // Update character in parent component when data changes
   useEffect(() => {
@@ -101,7 +105,9 @@ const EquipmentDetails = ({ character, updateCharacter }) => {
           {/* Character Details Panel */}
           <CharacterDetailsPanel 
             character={characterData} 
-            updateCharacter={handleUpdateCharacterData} 
+            updateCharacter={handleUpdateCharacterData}
+            genderPreference={genderPreference}
+            onGenderChange={setGenderPreference}
           />
 
           {/* Character Portrait Panel */}
@@ -109,7 +115,8 @@ const EquipmentDetails = ({ character, updateCharacter }) => {
                style={{ boxShadow: '0 0 15px rgba(37, 99, 235, 0.4), inset 0 0 10px rgba(37, 99, 235, 0.2)' }}>
             <PortraitSelector 
               selectedPortrait={selectedPortrait} 
-              onSelectPortrait={setSelectedPortrait} 
+              onSelectPortrait={setSelectedPortrait}
+              genderPreference={genderPreference}
             />
           </div>
         </div>
