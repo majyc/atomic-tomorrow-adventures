@@ -3,12 +3,13 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import GenderSelector from './GenderSelector';
 import NameInput from './NameInput';
 import AtomicKnob from './AtomicKnob';
+import RetroToggleSwitch from './RetroToggleSwitch';
 import { PERSONALITY_TRAITS, APPEARANCE_TRAITS } from '../data/descriptions';
 
 /**
  * Character Details Panel Component
  * Manages character name, age, appearance, and personality
- * Uses a shared gender selector for name generation
+ * Uses the fixed RetroToggleSwitch for trait suggestions
  */
 const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, onGenderChange }) => {
   // State for character details
@@ -92,14 +93,14 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
         CHARACTER DETAILS
       </div>
       
-      {/* Gender Selector - Now a standalone component */}
+      {/* Gender Selector */}
       <GenderSelector 
         selectedGender={genderPreference}
         onSelectGender={onGenderChange}
       />
 
       <div className="p-4 space-y-4">
-        {/* Name with Generator Button - using NameInput component */}
+        {/* Name with Generator Button */}
         <NameInput
           name={name}
           setName={setName}
@@ -123,23 +124,18 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
           </div>
         </div>
 
-        {/* Appearance */}
+        {/* Appearance with Trait Suggestions Toggle */}
         <div className="relative">
-          <div className="flex justify-between items-center">
-            <div className="text-blue-400 mb-1 font-medium">Appearance</div>
-            <button
-              onClick={() => setShowAppearanceSelector(!showAppearanceSelector)}
-              className="text-xs glowing-button px-2 py-1 rounded flex items-center"
-              style={{
-                backgroundColor: '#202020',
-                color: '#4ade80',
-                border: '1px solid #14532d',
-                boxShadow: '0 0 10px rgba(0, 255, 0, 0.4)',
-                textShadow: '0 0 5px rgba(0, 255, 0, 0.8)'
-              }}
-            >
-              {showAppearanceSelector ? 'Hide Suggestions' : 'Show Trait Suggestions'}
-            </button>
+          <div className="grid grid-cols-2 gap-4 mb-1">
+            <div className="text-blue-400 font-medium">Appearance</div>
+            <div className="flex justify-end">
+              <RetroToggleSwitch 
+                isOn={showAppearanceSelector}
+                onToggle={() => setShowAppearanceSelector(!showAppearanceSelector)}
+                label="Trait Suggestions"
+                color="green"
+              />
+            </div>
           </div>
           
           <div className="relative" style={{ ...crtStyles.terminal }}>
@@ -201,23 +197,18 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
           )}
         </div>
 
-        {/* Personality */}
+        {/* Personality with Trait Suggestions Toggle */}
         <div className="relative">
-          <div className="flex justify-between items-center">
-            <div className="text-blue-400 mb-1 font-medium">Personality</div>
-            <button
-              onClick={() => setShowPersonalitySelector(!showPersonalitySelector)}
-              className="text-xs glowing-button px-2 py-1 rounded flex items-center"
-              style={{
-                backgroundColor: '#202020',
-                color: '#4ade80',
-                border: '1px solid #14532d',
-                boxShadow: '0 0 10px rgba(0, 255, 0, 0.4)',
-                textShadow: '0 0 5px rgba(0, 255, 0, 0.8)'
-              }}
-            >
-              {showPersonalitySelector ? 'Hide Suggestions' : 'Show Trait Suggestions'}
-            </button>
+          <div className="grid grid-cols-2 gap-4 mb-1">
+            <div className="text-blue-400 font-medium">Personality</div>
+            <div className="flex justify-end">
+              <RetroToggleSwitch 
+                isOn={showPersonalitySelector}
+                onToggle={() => setShowPersonalitySelector(!showPersonalitySelector)}
+                label="Trait Suggestions"
+                color="green"
+              />
+            </div>
           </div>
           
           <div className="relative" style={{ ...crtStyles.terminal }}>
@@ -281,19 +272,6 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
       </div>
       
       <style jsx>{`
-        .glowing-button {
-          transition: all 0.3s ease;
-        }
-        
-        .glowing-button:hover {
-          background-color: #303030;
-          box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
-        }
-        
-        .trait-suggestion {
-          transition: all 0.3s ease;
-        }
-        
         .terminal-text {
           font-family: monospace;
           animation: textFlicker 0.01s infinite;
