@@ -522,7 +522,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
               {character.origin.name}
             </span> <span className="font-medium" style={{ color: '#fca5a5', textShadow: '0 0 10px rgba(239, 68, 68, 1), 0 0 15px rgba(239, 68, 68, 0.8)' }}>
               {character.background.name}
-            </span> background
+            </span> 
           </p>
         ) : (
           <p className="text-center italic terminal-text">

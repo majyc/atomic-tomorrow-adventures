@@ -107,8 +107,8 @@ const CharacterSheet = ({ character, updateCharacter }) => {
               </h1>
               <h2 className="text-xl text-gray-300 mt-1">
                 <span className="text-blue-400">{character.epithet?.name || "Epithet"}</span>{" "}
-                <span className="text-green-400">{character.profession?.name || "Profession"}</span> from{" "}
-                <span className="text-yellow-400">{character.origin?.name || "Origin"}</span> with a{" "}
+                <span className="text-green-400">{character.profession?.name || "Profession"}</span> from a{" "}
+                <span className="text-yellow-400">{character.origin?.name || "Origin"}</span>{" "}
                 <span className="text-red-400">{character.background?.name || "Background"}</span>
               </h2>
             </div>
