@@ -14,6 +14,9 @@ import {
 } from '../utils/skillUtils';
 import { printCharacterSheet } from '../utils/printUtils';
 
+// Import RetroTerminalInput component
+import RetroTerminalInput from './RetroTerminalInput';
+
 /**
  * Character Sheet component that displays all character information
  */
@@ -22,6 +25,8 @@ const CharacterSheet = ({ character, updateCharacter }) => {
   const [calculatedSkills, setCalculatedSkills] = useState({});
   const [isEditing, setIsEditing] = useState(false);
   const [notes, setNotes] = useState('');
+  const [hasExported, setHasExported] = useState(false);
+  const [hasPrinted, setHasPrinted] = useState(false);
   const sheetRef = useRef(null);
   
   // Calculate skills based on character choices
@@ -32,6 +37,28 @@ const CharacterSheet = ({ character, updateCharacter }) => {
     const skills = calculateSimplifiedSkills(character);
     setCalculatedSkills(skills);
   }, [character]);
+  
+  // Update character in parent component only when exported or printed
+  useEffect(() => {
+    if ((hasExported || hasPrinted) && updateCharacter) {
+      // Update character with a flag indicating completion
+      updateCharacter({
+        ...character,
+        _isCompleted: true
+      });
+    }
+  }, [hasExported, hasPrinted]);
+  
+  // Ensure that completion state is not set automatically when reaching this step
+  useEffect(() => {
+    // If we're at this step but haven't exported or printed yet, ensure flag is false
+    if (!hasExported && !hasPrinted && character._isCompleted) {
+      updateCharacter({
+        ...character,
+        _isCompleted: false
+      });
+    }
+  }, []);
   
   // Equipment list - fallback to defaults if not provided
   const equipmentList = character.equipment || [
@@ -46,6 +73,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
   // Handler for Print/PDF button - uses the utility function from printUtils
   const handlePrint = () => {
     printCharacterSheet(character, notes);
+    setHasPrinted(true); // Mark as printed for progress indicator
   };
   
   // Handler for Export button
@@ -59,6 +87,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
       
       if (successful) {
         alert('Character exported to clipboard! You can paste and save this code to import your character later.');
+        setHasExported(true); // Mark as exported for progress indicator
       } else {
         alert('Failed to copy to clipboard. Here\'s your character code:\n\n' + exportString);
       }
@@ -78,40 +107,78 @@ const CharacterSheet = ({ character, updateCharacter }) => {
         </h1>
         <div className="flex space-x-4">
           <button 
-            className="raygun-button flex items-center px-3 py-1.5"
+            className={`raygun-button flex items-center px-3 py-1.5 ${hasPrinted ? 'bg-green-700' : ''}`}
             onClick={handlePrint}
           >
             <Printer size={16} className="mr-1" />
-            Print/PDF
+            {hasPrinted ? 'Print Again' : 'Print/PDF'}
           </button>
           <button 
-            className="raygun-button flex items-center px-3 py-1.5"
+            className={`raygun-button flex items-center px-3 py-1.5 ${hasExported ? 'bg-green-700' : ''}`}
             onClick={handleExport}
           >
             <Share2 size={16} className="mr-1" />
-            Export
+            {hasExported ? 'Export Again' : 'Export'}
           </button>
         </div>
       </div>
 
       {/* Character Sheet Content */}
       <div id="character-sheet-content" className="max-w-5xl mx-auto px-6 py-6 bg-gray-900 text-gray-100">
-        {/* Header Section - ensure it stays with content */}
-        <div className="page-break-avoid">
-          <div className="mb-8 flex justify-between items-start border-b border-blue-800 pb-4">
-            <div className="flex-1">
-              <h1 className="text-4xl font-bold text-blue-400" style={{ textShadow: '0 0 10px rgba(96, 165, 250, 0.6)' }}>
-                {character.name || "UNNAMED CHARACTER"}
-              </h1>
-              <h2 className="text-xl text-gray-300 mt-1">
-                <span className="text-blue-400">{character.epithet?.name || "Epithet"}</span>{" "}
-                <span className="text-green-400">{character.profession?.name || "Profession"}</span> from{" "}
-                <span className="text-yellow-400">{character.origin?.name || "Origin"}</span> with a{" "}
-                <span className="text-red-400">{character.background?.name || "Background"}</span>
-              </h2>
+        {/* Header Section with simplified styling */}
+        <div className="page-break-avoid relative">
+          <div className="mb-10 relative">
+            {/* Header content */}
+            <div className="flex justify-between items-start">
+              <div className="flex-1">
+                <h1 className="text-4xl font-bold text-blue-400" style={{ textShadow: '0 0 10px rgba(96, 165, 250, 0.6)' }}>
+                  {character.name || "UNNAMED CHARACTER"}
+                </h1>
+                <h2 className="text-xl text-gray-300 mt-1 pb-4">
+                  <span className="text-blue-400">{character.epithet?.name || "Epithet"}</span>{" "}
+                  <span className="text-green-400">{character.profession?.name || "Profession"}</span> from{" "}
+                  <span className="text-yellow-400">{character.origin?.name || "Origin"}</span> with a{" "}
+                  <span className="text-red-400">{character.background?.name || "Background"}</span>
+                </h2>
+              </div>
+              
+              {/* Space reserved for portrait */}
+              <div className="w-44"></div>
             </div>
             
-            <div className="w-24 h-24 bg-gray-700 rounded-full overflow-hidden flex items-center justify-center border-2 border-blue-700 glow-effect relative">
+            {/* Simple bottom border that spans only part of the header */}
+            <div className="border-b border-blue-800 absolute bottom-0 left-0" style={{ width: 'calc(100% - 180px)' }}></div>
+            
+            {/* Concentric circles for portrait frame */}
+            <div className="absolute" style={{ 
+              width: '140px', 
+              height: '140px', 
+              border: '2px solid #1e40af',
+              borderRadius: '50%',
+              right: '20px',
+              top: '-20px',
+              opacity: 0.7
+            }}></div>
+            
+            <div className="absolute" style={{ 
+              width: '150px', 
+              height: '150px', 
+              border: '1px solid #1e40af',
+              borderRadius: '50%',
+              right: '15px',
+              top: '-25px',
+              opacity: 0.4
+            }}></div>
+            
+            {/* Portrait */}
+            <div 
+              className="w-32 h-32 bg-gray-700 rounded-full overflow-hidden flex items-center justify-center border-4 border-blue-700 glow-effect absolute z-10"
+              style={{ 
+                boxShadow: '0 0 25px rgba(37, 99, 235, 0.7)', 
+                top: '-16px',
+                right: '24px',
+              }}
+            >
               {character.portrait ? (
                 <div className="w-full h-full relative">
                   <img
@@ -131,7 +198,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
 
                         const letter = document.createElement('span');
                         letter.textContent = (character.name || 'C').charAt(0);
-                        letter.className = 'text-white text-3xl font-bold';
+                        letter.className = 'text-white text-4xl font-bold';
 
                         fallback.appendChild(letter);
                         parent.appendChild(fallback);
@@ -141,7 +208,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 </div>
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-gray-600 to-blue-900 flex items-center justify-center">
-                  <span className="text-white text-3xl font-bold">
+                  <span className="text-white text-4xl font-bold">
                     {character.name ? character.name.charAt(0) : 'C'}
                   </span>
                 </div>
@@ -386,7 +453,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
               </div>
             </div>
             
-            {/* Notes Section */}
+            {/* Notes Section - Now using RetroTerminalInput */}
             <div className="rounded-lg overflow-hidden border bg-gray-800 border-blue-900 page-break-avoid">
               <div className="bg-blue-900 text-white py-2 px-4 font-bold flex items-center justify-between section-header">
                 <div className="flex items-center">
@@ -404,17 +471,45 @@ const CharacterSheet = ({ character, updateCharacter }) => {
               
               <div className="p-4">
                 {isEditing ? (
-                  <textarea 
-                    className="w-full border rounded p-3 h-32 focus:outline-none focus:ring-2 
-                      bg-gray-900 border-blue-800 text-white focus:ring-blue-500"
-                    placeholder="Record important notes, connections, and campaign events here..."
+                  <RetroTerminalInput
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
-                  ></textarea>
+                    placeholder="Record important notes, connections, and campaign events here..."
+                    multiline={true}
+                    rows={5}
+                    type="text"
+                  />
                 ) : (
-                  <div className="w-full border rounded p-3 h-32 
-                    bg-gray-900 border-blue-800">
-                    {notes || "No notes recorded. Click 'Edit' to add your notes here."}
+                  <div className="relative w-full p-5 rounded" style={{ 
+                    backgroundColor: '#0c1a36',
+                    border: '2px solid #1e40af',
+                    boxShadow: '0 0 15px rgba(59, 130, 246, 0.6), inset 0 0 10px rgba(59, 130, 246, 0.3)',
+                    minHeight: '120px'
+                  }}>
+                    {/* Scanline effect overlay */}
+                    <div className="absolute top-0 left-0 width-full height-full pointer-events-none" style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      background: 'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%)',
+                      backgroundSize: '100% 4px',
+                      animation: 'scanlines 1s linear infinite',
+                      zIndex: 1
+                    }}></div>
+                    
+                    {/* Terminal text with glow effect */}
+                    <div style={{ 
+                      position: 'relative',
+                      zIndex: 2,
+                      color: '#93c5fd',
+                      textShadow: '0 0 5px rgba(59, 130, 246, 0.8)',
+                      fontFamily: '"Courier New", monospace',
+                      whiteSpace: 'pre-wrap'
+                    }}>
+                      {notes || "No notes recorded. Click 'Edit' to add your notes here."}
+                    </div>
                   </div>
                 )}
               </div>
@@ -433,8 +528,9 @@ const CharacterSheet = ({ character, updateCharacter }) => {
         </div>
       </div>
 
-      {/* CSS for page break control */}
-      <style>{`
+      {/* CSS for page break control and effects */}
+      <style>
+        {`
         .page-break-avoid {
           page-break-inside: avoid;
         }
@@ -446,7 +542,35 @@ const CharacterSheet = ({ character, updateCharacter }) => {
             border: 1px solid rgba(59, 130, 246, 0.3);
             border-radius: 50%;
         }
-      `}</style>
+        @keyframes scanlines {
+          0% { background-position: 0 0; }
+          100% { background-position: 0 4px; }
+        }
+        @keyframes textFlicker {
+          0% { opacity: 0.94; }
+          5% { opacity: 1; }
+          10% { opacity: 0.98; }
+          15% { opacity: 0.94; }
+          20% { opacity: 0.99; }
+          25% { opacity: 1; }
+          30% { opacity: 0.98; }
+          35% { opacity: 0.96; }
+          40% { opacity: 1; }
+          45% { opacity: 0.99; }
+          50% { opacity: 0.98; }
+          55% { opacity: 1; }
+          60% { opacity: 0.97; }
+          65% { opacity: 0.99; }
+          70% { opacity: 1; }
+          75% { opacity: 0.99; }
+          80% { opacity: 0.99; }
+          85% { opacity: 0.99; }
+          90% { opacity: 1; }
+          95% { opacity: 0.99; }
+          100% { opacity: 1; }
+        }
+        `}
+      </style>
     </div>
   );
 };

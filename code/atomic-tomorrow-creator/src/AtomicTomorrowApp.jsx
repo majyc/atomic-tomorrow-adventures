@@ -6,7 +6,7 @@ import CharacterConcept from './components/CharacterConcept';
 import AttributeGeneration from './components/AttributeGeneration';
 import EquipmentDetails from './components/EquipmentDetails';
 import CharacterSheet from './components/CharacterSheet';
-import AtomicProgressIndicator from './components/AtomicProgressIndicator';
+import AtomicProgressIndicator from './components/AtomicProgressIndicator'; // Make sure to use the simplified version
 import AtomicStarfield from './components/AtomicStarfield';
 import ImportDialog from './components/ImportDialog';
 
@@ -52,12 +52,21 @@ const AtomicTomorrowApp = () => {
     personality: '',
     age: 30,
     portrait: null,
-    signatureGadget: null
+    signatureGadget: null,
+    _isCompleted: false // Flag to indicate completion
   });
   
-  // Update character data
+  // Update character data with completion tracking in DOM
   const updateCharacter = (newData) => {
-    setCharacter({ ...character, ...newData });
+    const updatedCharacter = { ...character, ...newData };
+    setCharacter(updatedCharacter);
+    
+    // Update DOM attribute for completion tracking (used by AtomicProgressIndicator)
+    if (updatedCharacter._isCompleted) {
+      document.querySelector('body').setAttribute('data-character-completed', 'true');
+    } else {
+      document.querySelector('body').removeAttribute('data-character-completed');
+    }
   };
   
   // Navigation functions
@@ -71,6 +80,15 @@ const AtomicTomorrowApp = () => {
   const prevStep = () => {
     if (currentStep > 1) {
       setCurrentStep(currentStep - 1);
+      window.scrollTo(0, 0);
+    }
+  };
+  
+  // Handler for step click in progress indicator
+  const handleStepClick = (stepNumber) => {
+    // Only allow navigation to completed steps or current step
+    if (stepNumber <= currentStep) {
+      setCurrentStep(stepNumber);
       window.scrollTo(0, 0);
     }
   };
@@ -175,6 +193,8 @@ const AtomicTomorrowApp = () => {
       {/* Atomic particle orbits */}
       {isMounted && generateAtomicOrbits()}
       
+      {/* We've removed the RetroFloatingElements for a more realistic starfield */}
+      
       {/* Import Character Dialog */}
       {showImportDialog && (
         <ImportDialog 
@@ -210,12 +230,14 @@ const AtomicTomorrowApp = () => {
         </div>
       </header>
 
-      {/* Progress Indicator */}
+      {/* Progress Indicator with click navigation */}
       <div className="container mx-auto px-6 mt-6">
         <AtomicProgressIndicator 
           currentStep={currentStep} 
           totalSteps={4}
           steps={steps}
+          onStepClick={handleStepClick}
+          isCompleted={character._isCompleted}
         />
       </div>
 
@@ -226,8 +248,8 @@ const AtomicTomorrowApp = () => {
         </div>
       </main>
 
-      {/* Footer navigation - hide on character sheet view */}
-      {currentStep !== 4 && (
+      {/* Footer navigation - hide on character sheet view or show different options if completed */}
+      {(currentStep !== 4 || character._isCompleted) && (
         <footer className="atomic-footer p-4 relative z-10">
           <div className="container mx-auto flex justify-between items-center">
             <button 
@@ -246,14 +268,23 @@ const AtomicTomorrowApp = () => {
               </div>
             </div>
             
-            <button 
-              onClick={nextStep}
-              disabled={isNextDisabled()}
-              className={`raygun-button ${isNextDisabled() ? 'opacity-50 cursor-not-allowed' : ''}`}
-            >
-              {currentStep === 3 ? 'Finish' : 'Next'}
-              {currentStep !== 3 && <ChevronRight size={18} className="ml-1" />}
-            </button>
+            {currentStep < 4 ? (
+              <button 
+                onClick={nextStep}
+                disabled={isNextDisabled()}
+                className={`raygun-button ${isNextDisabled() ? 'opacity-50 cursor-not-allowed' : ''}`}
+              >
+                {currentStep === 3 ? 'Finish' : 'Next'}
+                {currentStep !== 3 && <ChevronRight size={18} className="ml-1" />}
+              </button>
+            ) : character._isCompleted ? (
+              <button 
+                onClick={() => setCurrentStep(1)}
+                className="raygun-button"
+              >
+                New Character
+              </button>
+            ) : null}
           </div>
         </footer>
       )}
