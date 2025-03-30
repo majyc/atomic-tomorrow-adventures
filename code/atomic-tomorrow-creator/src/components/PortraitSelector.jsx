@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import RetroPushButton from './RetroPushButton';
 import { PORTRAITS, PORTRAIT_TYPES } from '../utils/portraits';
 import { Shuffle } from 'lucide-react';
+
 /**
  * Enhanced PortraitSelector with retro-atomic styling and generation button
  * 
@@ -116,9 +117,8 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
         <RetroPushButton
           onClick={generatePortraits}
           label="New Faces"
-          icon={<Shuffle size={16} />}
+          icon={<Shuffle className="w-4 h-4" />}
           color="blue"
-          size='lg'
         />
       </div>
 
@@ -146,18 +146,15 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
                 alt={portrait.name}
                 className="w-full h-full object-cover object-top"
                 onError={handleImageError}
+                style={{
+                  filter: selectedPortrait && selectedPortrait.id !== portrait.id
+                    ? 'brightness(0.6)' 
+                    : 'brightness(1)',
+                  transition: 'filter 0.3s ease'
+                }}
               />
               
-              {/* Holographic overlay for selected portrait */}
-              {selectedPortrait?.id === portrait.id && (
-                <div 
-                  className="absolute inset-0 pointer-events-none" 
-                  style={{
-                    background: 'linear-gradient(45deg, rgba(96, 165, 250, 0) 0%, rgba(96, 165, 250, 0.2) 50%, rgba(96, 165, 250, 0) 100%)',
-                    animation: 'holographic-scan 2s linear infinite'
-                  }}
-                />
-              )}
+              {/* Removed the holographic overlay animation */}
             </div>
             
             {/* Cockpit indicator light below portrait */}
@@ -182,12 +179,8 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
         ))}
       </div>
       
-      <style>{`
-        @keyframes holographic-scan {
-          0% { transform: translateY(-100%); }
-          100% { transform: translateY(100%); }
-        }
-        
+      <style>
+        {`
         .glowing {
           animation: glow 2s infinite;
         }
@@ -197,7 +190,8 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
           50% { opacity: 1; }
           100% { opacity: 0.7; }
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };
