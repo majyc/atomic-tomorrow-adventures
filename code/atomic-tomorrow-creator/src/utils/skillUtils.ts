@@ -405,9 +405,9 @@ export function getBackgroundBonus(character, coreName, specName) {
  * @param skills Object containing calculated skills
  * @returns Array of sorted skill entries
  */
-export const formatSkillsForDisplay = (skills) => {
+export const formatSkillsForDisplay = (skills: Record<string, { value: number }>) => {
   return Object.entries(skills)
-    .sort(([, a], [, b]) => b.value - a.value);
+    .sort(([, a], [, b]) => (b.value || 0) - (a.value || 0));
 };
 
 /**

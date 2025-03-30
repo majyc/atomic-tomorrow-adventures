@@ -63,7 +63,7 @@ const SkillCalculation = ({ character, updateCharacter }) => {
   };
 
   // Filter skills based on search term and active tab
-  const filteredSkills = (): [string, any][] => {
+  const filteredSkills = () => {
     return Object.entries(calculatedSkills).filter(
       ([skillName, skillData]) => {
         // Filter by search term
@@ -103,7 +103,7 @@ const SkillCalculation = ({ character, updateCharacter }) => {
           <AlertCircle size={20} className="text-blue-600 mr-2 mt-1 flex-shrink-0" />
           <div>
             <h3 className="font-bold text-blue-800">Skill Calculation</h3>
-            <p className="text-sm">Skills are calculated using this formula: (Attribute × 2) + Core Skill Bonus + Professional Bonus + Origin Bonus + Background Bonus</p>
+            <p className="text-sm">Skills are calculated using this formula: (Attribute × 2) + 5 + Core Skill Bonus + Professional Bonus + Origin Bonus + Background Bonus</p>
             <p className="text-sm mt-1">Core skills are automatically 5% higher than the base attribute value.</p>
           </div>
         </div>
