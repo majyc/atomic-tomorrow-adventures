@@ -413,7 +413,7 @@ Each of these institutions could be located anywhere in the Solar System - they 
 
 ## Political & Business Elite
 
-**Governor Eliana Zhao** - The appointed Earth representative who officially oversees Venusian affairs. Known for her lavish parties at the Maxwell Peak gubernatorial mansion and rumored to have extensive investments in pressure mining operations she's supposed to be regulating.
+**First Administrator Eliana Zhao** - Elected official who oversees Venusian affairs. Known for her lavish parties at the Maxwell Peak gubernatorial mansion and rumored to have extensive investments in pressure mining operations she's supposed to be regulating.
 
 **Raj Singh** - The "Chemical King" who revolutionized Endural production by synthesizing the key compounds. His pharmaceutical empire spans from research labs in the highlands to processing facilities in the lowlands. Despite his wealth, he's known for wearing jungle-harvester clothing and speaking in a thick frontier accent.
 

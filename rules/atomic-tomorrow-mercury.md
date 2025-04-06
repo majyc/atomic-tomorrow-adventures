@@ -207,3 +207,79 @@ The Mercury Dragons have altered their migratory path for the first time in reco
 A band of raiders has developed technology to briefly withstand the extreme heat of Mercury's day side, using this advantage to strike mining operations and disappear where no one can follow. The characters are hired to track them to their hiding place—somewhere in the sun-blasted forbidden zone.
 
 This revised Mercury feels more cohesive with the Atomic Tomorrow setting, emphasizing mining rather than energy production while incorporating indigenous life and underground habitation. The pulp elements remain strong with mysterious Forerunner influences, extreme environments, and adventure hooks tied to the unique planetary conditions.
+
+# MOVERS, SHAKERS, CELEBS AND FAKERS OF MERCURY
+
+## MINING MAGNATES & INDUSTRIALISTS
+
+**Thaddeus Ironwright** - The "Thorium King" who controls the deepest mining operations in the Caloris Basin. His family has been on Mercury for four generations, and his distinctively dense Mercurian physique makes him look like he was carved from the planet itself. Known for testing potential executives by taking them on surface expeditions without environmental suits.
+
+**Victoria Zhao** - CEO of Rare Earth Refineries Ltd., the most sophisticated processing operation on Mercury. A brilliant metallurgist who developed the thermal cascading technique that revolutionized extraction efficiency. Rumored to have undergone experimental silicon grafting to better withstand temperature extremes.
+
+**The Chiba Twins** - Identical siblings who run mirror mining operations on opposite sides of the planet. They communicate through an unexplained form of telepathy that works despite Mercury's unusual electromagnetic properties. Their rivalry is legendary, yet they always unite against outside competition.
+
+**Baron Henrik Voss** - The eccentric German aristocrat who owns the lucrative Dragon's Path mining rights—the route followed by Mercury Dragons whose movements somehow concentrate rare elements in the soil beneath them. Lives in a mobile palace that follows the terminator line, hosting decadent parties for off-world visitors.
+
+**Solomon Deep** - The mysterious founder of DeepShaft Corp who hasn't been seen in public for decades but still issues periodic directives from somewhere in the lowest levels of Mercury's mines. Some claim he's discovered a method of silicon-based life extension, while others believe "he" is now a positronic brain running the company autonomously.
+
+## POLITICAL & MILITARY FIGURES
+
+**Prime Minister Diana Steele** -  Representative elected by the House of Commons, officially in charge of Mercury's civilian affairs but practically limited to managing relations with off-world entities. Her reputation for incorruptibility makes her respected but unpopular among local power brokers.
+
+**General Marcus Stone** - Commander of Mercury Defense Forces, a grizzled veteran who lost an arm to a heat storm and had it replaced with an experimental mercury-fluid prosthetic that can change shape at will. His forces are small but elite, trained to fight in Mercury's extreme conditions.
+
+**"Mayor" Jackson Crater** - Self-appointed leader of Shafttown, Mercury's largest independent mine-city. A former drill operator who led a successful strike against PlanetCorp and parlayed that into political power. Rules through a combination of genuine popularity and strategically placed loyalists.
+
+**Ambassador Silica** - The first officially recognized representative of Mercury's silicon-based lifeforms. A Crystal Tortoise of unusual size and apparent intelligence, it communicates through a specialized interface developed by xenobiologists. Many remain skeptical about whether it truly speaks for native life or is merely responding to stimuli.
+
+**The Shadow Council** - A semi-legendary group of the oldest mining clan patriarchs and matriarchs who supposedly make the real decisions on Mercury from deep underground chambers. Their existence is officially denied, but many policies mysteriously shift after the quarterly "Old Timers' Reunion" events.
+
+## CULTURAL ICONS
+
+**Helix Jones** - The System's most popular pulp adventure star whose "Mercury Jack" holofilms glamorize the dangerous life of surface prospectors. Though filmed mostly on lunar sets, he insists on doing one genuine Mercury surface stunt per film to maintain authenticity.
+
+**Dr. Serena Bright** - Celebrity xenobiologist whose "Silicon Diaries" broadcasts document her life among Mercury's native creatures. Her controversial approach involves temporarily modifying her own biochemistry to better understand their perception. Critics question her objectivity; fans admire her dedication.
+
+**The Thermal Trio** - Mercury's most famous musical group, who perform on instruments made from resonant crystal formations found only in the Shadow Canyons. Their compositions utilize temperature differentials to create sounds impossible elsewhere in the System. Performances are rare and tickets astronomically priced.
+
+**"Old Mercury" Martens** - Folklorist and storyteller who travels between mining settlements preserving the oral traditions of early Mercury colonists. His memory contains thousands of stories, songs, and historical accounts not recorded elsewhere. His age is unknown but estimated well over 100.
+
+**Talia Quicksilver** - Mercury's champion in the Solar System Games for fifteen consecutive years, undefeated in the Extreme Environment Endurance category. Her specially adapted physiology allows her to withstand temperature changes that would kill unmodified humans. Retirement rumors persist despite her continued dominance.
+
+## SCIENTISTS & EXPLORERS
+
+**Professor Emil Sunstrider** - The only human known to have completed a full circumnavigation of Mercury on foot, following the terminator line. His journal of the three-year journey became a System-wide bestseller. Now leads the Department of Mercurian Studies at University Luna, returning annually for research expeditions.
+
+**Dr. Olivia Chen** - Forerunner technology specialist whose controversial theories suggest the pyramids are not atmospheric generators but components of a planet-wide computation system. Recently disappeared into the largest pyramid complex after claiming a breakthrough in communication with the structures.
+
+**Ryker Blaze** - Legendary heat diver who has penetrated further into Mercury's day side than anyone else, using a suit of his own design. Has recovered artifacts and materials thought impossible to reach. Missing three fingers and with skin permanently darkened from radiation, he continues pushing the boundaries despite medical warnings.
+
+**The Shimada Research Collective** - A team of Japanese scientists who've established the deepest research station on Mercury, supposedly studying geological anomalies. Their publications are renowned, but rumors persist of classified discoveries involving unusual spacetime properties at Mercury's core.
+
+**Zara Eclipse** - Cartographer creating the most detailed map of Mercury's constantly changing surface. Her adaptive algorithms predict erosion patterns and surface transformations with uncanny accuracy. Travels in a specially modified survey vehicle that can briefly endure day-side conditions.
+
+## UNDERWORLD FIGURES & OUTLAWS
+
+**"The Smelter"** - Notorious crime boss who controls black market rare earth distribution, named for his preferred method of eliminating rivals. Operates from a constantly moving headquarters somewhere in the thermal transition zone. Never seen in person; communicates through proxies with distinctive burn scars.
+
+**Quicksilver Kate** - Master thief specializing in stealing newly refined exotic metals. Her trademark liquid-metal exosuit allows her to slip through security systems and survive brief exposure to extreme temperatures. Always leaves a small mercury bead as her calling card.
+
+**The Red Horizon Gang** - Surface raiders who strike from the day side using stolen military cooling technology. Their distinctive vehicles can briefly withstand solar exposure no commercial equipment can manage. Led by a mysterious figure known only as "Sunrise" who may be a former Mercury Defense Force commander.
+
+**Director Kane** - Officially the security chief for Midas Mining Corporation, unofficially Mercury's most effective problem-solver for those who can afford his services. His network of informants extends into every significant settlement. Rumored to have eyes modified to record everything he sees.
+
+**The Silicon Syndicate** - A smuggling operation specializing in moving modified silicon lifeforms off-world for collectors and research organizations. They've developed methods to sustain these creatures in non-Mercurian environments. Strongly opposed by both environmental groups and native life advocates.
+
+## CHARLATANS & FAKERS
+
+**"Professor" Theodore Maxwell** - No relation to the mountain range, but claims his family were the first humans on Mercury and have special resistance to its conditions. Sells "genuine Mercurian adaptation treatments" to gullible tourists that are actually just colored water with trace minerals.
+
+**Madam Crystal** - Self-proclaimed psychic who conducts séances claiming to channel the collective consciousness of silicon-based lifeforms. Her predictions about mining opportunities have occasionally been accurate enough to maintain a wealthy clientele, though scientific investigation suggests industrial espionage rather than psychic powers.
+
+**Dr. Raymond Solaris** - Celebrity "thermal physician" offering expensive treatments that supposedly use Mercury's unique radiation patterns to cure anything from common colds to cancer. His clinic in Caloris City attracts wealthy patients from throughout the System despite warnings from medical authorities.
+
+**The Pyramid Prophet** - Charismatic leader of the "Children of Silicon" cult who believes Mercury's native life and humans are destined to merge into a superior silicon-carbon hybrid species. His transformation ceremonies involve expensive "silicon infusion treatments" that produce only temporary skin discoloration.
+
+**Captain "Mercury" Jones** - Flamboyant tour guide who promises "authentic surface experiences" to tourists but actually takes them to carefully constructed environments in abandoned mine shafts. His exaggerated tales of personal heroism fall apart under scrutiny, but his theatrical presentations remain wildly popular.
+
+Each of these characters embodies some aspect of Mercury's harsh but fascinating world, from the genuine pioneers to the opportunists exploiting its mystique. They could serve as patrons, allies, adversaries, or colorful background characters in Atomic Tomorrow adventures!
