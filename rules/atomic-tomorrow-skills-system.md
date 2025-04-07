@@ -7,202 +7,202 @@ title: Atomic Tomorrow Skills System
 ## ACES & PILOTS
 
 * **ROCKET JOCKEY**
-  * Skills: Piloting (Spacecraft) +15%, Technology (Ship Systems) +10%, Navigation (Space) +5%, Combat (Pistols) +5%
+  * Skills: Piloting (Spacecraft) +40%, Technology (Ship Systems) +20%, Navigation (Space) +10%, Combat (Pistols) +10%
   * Equipment: Custom flight jacket, pilot's chronometer, personal navigation computer
 * **ASTROGATOR**
-  * Skills: Navigation (Space) +15%, Science (Mathematics) (SAVVY) +10%, Science (Astronomy) +5%, Computer Systems (Programming) +5%
+  * Skills: Navigation (Space) +40%, Science (Mathematics) (SAVVY) +20%, Science (Astronomy) +10%, Computer Systems (Programming) +10%
   * Equipment: Star charts, advanced computational slide rule, celestial reference guide
 * **ASTRO RACER**
-  * Skills: Piloting (Racing) +15%, Repair (Vehicle) +10%, Perception (Threat Assessment) +5%, Athletics (Reflexes) +5%
+  * Skills: Piloting (Racing) +40%, Repair (Vehicle) +20%, Perception (Threat Assessment) +10%, Athletics (Reflexes) +10%
   * Equipment: Racing goggles, lucky charm, personalized flight suit
 * **ORBITAL JUMPER**
-  * Skills: Athletics (Zero-G Movement) +15%, Athletics (Jumping) +10%, Technology (Vacuum Equipment) +5%, Perception (Spatial Awareness) +5%
+  * Skills: Athletics (Zero-G Movement) +40%, Athletics (Jumping) +20%, Technology (Vacuum Equipment) +10%, Perception (Spatial Awareness) +10%
   * Equipment: Custom vacuum suit with thruster pack, magnetic boots, emergency beacon
 * **STUNT PILOT**
-  * Skills: Piloting (Aircraft) +15%, Performance (Showmanship) +10%, Repair (Vehicle) +5%, Perception (Threat Assessment) +5%
+  * Skills: Piloting (Aircraft) +40%, Performance (Showmanship) +20%, Repair (Vehicle) +10%, Perception (Threat Assessment) +10%
   * Equipment: Personalized helmet, recording equipment for stunts, flight suit with sponsor patches
 
 ## SCIENTISTS & INNOVATORS
 
 * **BRAINIAC**
-  * Skills: Science (choose specialty) +15%, Investigation (Research) +10%, Technology (Laboratory Equipment) +5%, Science (Mathematics) (SAVVY) +5%
+  * Skills: Science (choose specialty) +40%, Investigation (Research) +20%, Technology (Laboratory Equipment) +10%, Science (Mathematics) (SAVVY) +10%
   * Equipment: Portable laboratory kit, scientific journal, reference library data chips
 * **ATOMICIST**
-  * Skills: Science (Physics) +15%, Engineering (Atomic) +10%, Engineering (Structural) +5%, Science (Mathematics) (SAVVY) +5%
+  * Skills: Science (Physics) +40%, Engineering (Atomic) +20%, Engineering (Structural) +10%, Science (Mathematics) (SAVVY) +10%
   * Equipment: Radiation detector, lead-lined sample case, isotope identification guide
 * **XENOBIOLOGIST**
-  * Skills: Science (Xenobiology) +15%, Medicine (Field Medicine) +10%, Perception (Observation) +5%, Technology (Sampling Equipment) +5%
+  * Skills: Science (Xenobiology) +40%, Medicine (Field Medicine) +20%, Perception (Observation) +10%, Technology (Sampling Equipment) +10%
   * Equipment: Specimen collection kit, holo-microscope, adaptable dissection tools
 * **MAD GENIUS**
-  * Skills: Engineering (Experimental) +15%, Science (Theoretical Physics) +10%, Deception (Misdirection) +5%, Perception (Intuition) +5%
+  * Skills: Engineering (Experimental) +40%, Science (Theoretical Physics) +20%, Deception (Misdirection) +10%, Perception (Intuition) +10%
   * Equipment: Workshop-in-a-box, notebook of bizarre ideas, assorted "components"
 * **TECH WIZARD**
-  * Skills: Repair (Improvised) +15%, Technology (Electronics) +10%, Engineering (Mechanical) +5%, Perception (Technical Intuition) +5%
+  * Skills: Repair (Improvised) +40%, Technology (Electronics) +20%, Engineering (Mechanical) +10%, Perception (Technical Intuition) +10%
   * Equipment: Multi-tool with unusual attachments, parts scavenged from various devices, diagnostic scanner
 
 ## EXPLORERS & SCOUTS
 
 * **SCOUT**
-  * Skills: Navigation (Wilderness) +15%, Survival (choose environment) +10%, Perception (Environmental Awareness) +5%, Combat (Rifles) +5%
+  * Skills: Navigation (Wilderness) +40%, Survival (choose environment) +20%, Perception (Environmental Awareness) +10%, Combat (Rifles) +10%
   * Equipment: All-terrain boots, professional mapping tools, multi-planet compass
 * **TRAILBLAZER**
-  * Skills: Navigation (Wilderness) +15%, Survival (choose environment) +10%, Technology (Cartography) +5%, Perception (Environmental Awareness) +5%
+  * Skills: Navigation (Wilderness) +40%, Survival (choose environment) +20%, Technology (Cartography) +10%, Perception (Environmental Awareness) +10%
   * Equipment: All-terrain boots, professional mapping tools, compass that works on any world
 * **RUIN DELVER**
-  * Skills: Academics (Archaeology) +15%, Academics (Ancient Languages) +10%, Perception (Trap Detection) +5%, Academics (History) +5%
+  * Skills: Academics (Archaeology) +40%, Academics (Ancient Languages) +20%, Perception (Trap Detection) +10%, Academics (History) +10%
   * Equipment: Archaeologist's toolkit, sketchbook of ruins, artifact analysis device
 * **PLANETARY SCOUT**
-  * Skills: Investigation (Surveying) +15%, Science (Geology) +10%, Perception (Threat Assessment) +5%, Stealth (Camouflage) +5%
+  * Skills: Investigation (Surveying) +40%, Science (Geology) +20%, Perception (Threat Assessment) +10%, Stealth (Camouflage) +10%
   * Equipment: Terrain scanner, adaptable environmental gear, collapsible shelter
 * **XENO-TRACKER**
-  * Skills: Investigation (Tracking) +15%, Animal Handling (Alien Creatures) +10%, Stealth (Camouflage) +5%, Survival (Wilderness) +5%
+  * Skills: Investigation (Tracking) +40%, Animal Handling (Alien Creatures) +20%, Stealth (Camouflage) +10%, Survival (Wilderness) +10%
   * Equipment: Species identification guide, sound mimicry device, non-lethal restraints
 
 ## SOLDIERS & ENFORCERS
 
 * **SPACE RANGER**
-  * Skills: Security (Law Enforcement) +15%, Investigation (Crime Scene Analysis) +10%, Combat (Rifles) +5%, Academics (Regulations) +5%
+  * Skills: Security (Law Enforcement) +40%, Investigation (Crime Scene Analysis) +20%, Combat (Rifles) +10%, Academics (Regulations) +10%
   * Equipment: Ranger badge, regulation sidearm, handcuffs, patrol vehicle authorization
 * **SOLAR MARINE**
-  * Skills: Combat (Heavy Weapons) +15%, Combat (Bladed Weapons) +10%, Athletics (Strength) +5%, Survival (Combat Zone) +5%
+  * Skills: Combat (Heavy Weapons) +40%, Combat (Bladed Weapons) +20%, Athletics (Strength) +10%, Survival (Combat Zone) +10%
   * Equipment: Combat armor, service sidearm, combat knife, military ID
 * **BOUNTY HUNTER**
-  * Skills: Investigation (Tracking) +15%, Streetwise (Information Gathering) +10%, Combat (Pistols) +5%, Persuasion (Intimidation) +5%
+  * Skills: Investigation (Tracking) +40%, Streetwise (Information Gathering) +20%, Combat (Pistols) +10%, Persuasion (Intimidation) +10%
   * Equipment: Bounty database, restraints, non-lethal capture tools, target profiles
 * **MERCENARY**
-  * Skills: Combat (Rifles) +15%, Persuasion (Negotiation) +10%, Tactics (Combat) +5%, Survival (Combat Zone) +5%
+  * Skills: Combat (Rifles) +40%, Persuasion (Negotiation) +20%, Tactics (Combat) +10%, Survival (Combat Zone) +10%
   * Equipment: Custom weapon, contract datapad, body armor, medkit
 * **BODYGUARD**
-  * Skills: Perception (Threat Assessment) +15%, Combat (Unarmed Combat) +10%, Perception (Situational Awareness) +5%, Security (VIP Protection) +5%
+  * Skills: Perception (Threat Assessment) +40%, Combat (Unarmed Combat) +20%, Perception (Situational Awareness) +10%, Security (VIP Protection) +10%
   * Equipment: Concealable armor, earpiece communicator, defensive gadgets
 
 ## MECHANICS & ENGINEERS
 
 * **WRENCH MONKEY**
-  * Skills: Repair (Ship Systems) +15%, Technology (Diagnostics) +10%, Engineering (Mechanical) +5%, Streetwise (Scrounging) +5%
+  * Skills: Repair (Ship Systems) +40%, Technology (Diagnostics) +20%, Engineering (Mechanical) +10%, Streetwise (Scrounging) +10%
   * Equipment: Multi-tool kit, pocket diagnostic computer, emergency patch materials
 * **ATOMECH**
-  * Skills: Engineering (Atomic) +15%, Technology (Radiation Equipment) +10%, Engineering (Power Systems) +5%, Repair (Ship Systems) +5%
+  * Skills: Engineering (Atomic) +40%, Technology (Radiation Equipment) +20%, Engineering (Power Systems) +10%, Repair (Ship Systems) +10%
   * Equipment: Shielded toolkit, miniature Geiger counter, atomic reference manual
 * **GADGETEER**
-  * Skills: Engineering (Experimental) +15%, Technology (Electronics) +10%, Combat (Exotic Weapons) +5%, Streetwise (Scrounging) +5%
+  * Skills: Engineering (Experimental) +40%, Technology (Electronics) +20%, Combat (Exotic Weapons) +10%, Streetwise (Scrounging) +10%
   * Equipment: Portable workshop, collection of half-finished gadgets, component storage belt
 * **SALVAGER**
-  * Skills: Repair (Ship Systems) +15%, Technology (Ship Systems) +10%, Streetwise (Scrounging) +5%, Persuasion (Negotiation) +5%
+  * Skills: Repair (Ship Systems) +40%, Technology (Ship Systems) +20%, Streetwise (Scrounging) +10%, Persuasion (Negotiation) +10%
   * Equipment: Cutting tools, value analyzer, collapsible cargo hauler
 * **ROBOTICIST**
-  * Skills: Engineering (Robotics) +15%, Technology (Positronic Systems) +10%, Engineering (Mechanical) +5%, Animal Handling (Robot Psychology) +5%
+  * Skills: Engineering (Robotics) +40%, Technology (Positronic Systems) +20%, Engineering (Mechanical) +10%, Animal Handling (Robot Psychology) +10%
   * Equipment: Robot repair kit, programming interface, spare positronic components
 
 ## SCOUNDRELS & OPPORTUNISTS
 
 * **SPACE RAT**
-  * Skills: Streetwise (Scrounging) +15%, Deception (Bluffing) +10%, Stealth (Hiding) +5%, Social (Rumor Collection) +5%
+  * Skills: Streetwise (Scrounging) +40%, Deception (Bluffing) +20%, Stealth (Hiding) +10%, Social (Rumor Collection) +10%
   * Equipment: Hidden compartments in clothing, collection of "acquired" trinkets, forged IDs
 * **GRIFTER**
-  * Skills: Deception (Con Artistry) +15%, Perception (Reading People) +10%, Persuasion (Fast Talk) +5%, Deception (Disguise) +5%
+  * Skills: Deception (Con Artistry) +40%, Perception (Reading People) +20%, Persuasion (Fast Talk) +10%, Deception (Disguise) +10%
   * Equipment: Various fake IDs, confidence props, makeup kit, voice modulator
 * **SMUGGLER**
-  * Skills: Deception (Misdirection) +15%, Piloting (Spacecraft) +10%, Navigation (Secret Routes) +5%, Streetwise (Contraband) +5%
+  * Skills: Deception (Misdirection) +40%, Piloting (Spacecraft) +20%, Navigation (Secret Routes) +10%, Streetwise (Contraband) +10%
   * Equipment: Ship with hidden compartments, falsified shipping documents, bribe money
 * **CAT BURGLAR**
-  * Skills: Security (Lock Picking) +15%, Stealth (Silent Movement) +10%, Athletics (Climbing) +5%, Stealth (Hiding) +5%
+  * Skills: Security (Lock Picking) +40%, Stealth (Silent Movement) +20%, Athletics (Climbing) +10%, Stealth (Hiding) +10%
   * Equipment: Lock picks, grappling equipment, sound dampeners, night vision goggles
 * **GAMBLER**
-  * Skills: Science (Probability) +15%, Deception (Bluffing) +10%, Perception (Reading People) +5%, Social (Etiquette) +5%
+  * Skills: Science (Probability) +40%, Deception (Bluffing) +20%, Perception (Reading People) +10%, Social (Etiquette) +10%
   * Equipment: Lucky deck of cards, hidden emergency money, trick devices
 
 ## PSYCHICS & ESPERS
 
 * **MENTALIST**
-  * Skills: Psi (Telepathy) +15%, Psi (Mental Defense) +10%, Survival (Mental Discipline) +5%, Science (Psychology) +5%
+  * Skills: Psi (Telepathy) +40%, Psi (Mental Defense) +20%, Survival (Mental Discipline) +10%, Science (Psychology) +10%
   * Equipment: Rhine Institute certification, meditation aids, psi focus crystal
 * **TELEKINETIC**
-  * Skills: Psi (Psychokinesis) +15%, Athletics (Fine Control) +10%, Survival (Mental Discipline) +5%, Science (Psi Theory) +5%
+  * Skills: Psi (Psychokinesis) +40%, Athletics (Fine Control) +20%, Survival (Mental Discipline) +10%, Science (Psi Theory) +10%
   * Equipment: Practice objects, energy focusing crystal, stabilization harness
 * **PRECOG**
-  * Skills: Psi (Precognition) +15%, Perception (Intuition) +10%, Science (Probability) +5%, Academics (Dream Interpretation) +5%
+  * Skills: Psi (Precognition) +40%, Perception (Intuition) +20%, Science (Probability) +10%, Academics (Dream Interpretation) +10%
   * Equipment: Dream journal, temporal anchor charm, headache remedies
 * **EMPATH**
-  * Skills: Psi (Empathy) +15%, Survival (Mental Discipline) +10%, Perception (Reading People) +5%, Persuasion (Counseling) +5%
+  * Skills: Psi (Empathy) +40%, Survival (Mental Discipline) +20%, Perception (Reading People) +10%, Persuasion (Counseling) +10%
   * Equipment: Emotional dampeners, calming aids, psychological reference materials
 * **WILD TALENT**
-  * Skills: Psi (choose specialty) +15%, Survival (Mental Discipline) +10%, Psi (Energy Manipulation) +5%, Science (Psi Theory) +5%
+  * Skills: Psi (choose specialty) +40%, Survival (Mental Discipline) +20%, Psi (Energy Manipulation) +10%, Science (Psi Theory) +10%
   * Equipment: Psi-dampening headband, Rhine Institute monitoring device, mutation diary
 
 ## COMMUNICATORS
 
 * **XENO-LINGUIST**
-  * Skills: Academics (Linguistics) +15%, Xenology (Alien Cultures) +10%, Science (Pattern Recognition) +5%, Social (Diplomatic Protocol) +5%
+  * Skills: Academics (Linguistics) +40%, Xenology (Alien Cultures) +20%, Science (Pattern Recognition) +10%, Social (Diplomatic Protocol) +10%
   * Equipment: Universal translator prototype, language recording devices, cultural guidebook
 * **NEGOTIATOR**
-  * Skills: Persuasion (Negotiation) +15%, Perception (Reading People) +10%, Social (Mediation) +5%, Academics (Contract Law) +5%
+  * Skills: Persuasion (Negotiation) +40%, Perception (Reading People) +20%, Social (Mediation) +10%, Academics (Contract Law) +10%
   * Equipment: Digital contract templates, impressive business attire, diplomatic credentials
 * **AMBASSADOR**
-  * Skills: Social (Diplomacy) +15%, Academics (Politics) +10%, Social (Etiquette) +5%, Perception (Cultural Sensitivity) +5%
+  * Skills: Social (Diplomacy) +40%, Academics (Politics) +20%, Social (Etiquette) +10%, Perception (Cultural Sensitivity) +10%
   * Equipment: Diplomatic credentials, cultural reference guide, secure communications device
 * **NEWSHOUND**
-  * Skills: Investigation (Interviewing) +15%, Persuasion (Fast Talk) +10%, Academics (Writing) +5%, Artistry (Photography) +5%
+  * Skills: Investigation (Interviewing) +40%, Persuasion (Fast Talk) +20%, Academics (Writing) +10%, Artistry (Photography) +10%
   * Equipment: Recording equipment, press credentials, concealed backup recorder
 * **SOCIALITE**
-  * Skills: Social (Networking) +15%, Social (Etiquette) +10%, Streetwise (Rumor Collection) +5%, Social (Fashion Sense) +5%
+  * Skills: Social (Networking) +40%, Social (Etiquette) +20%, Streetwise (Rumor Collection) +10%, Social (Fashion Sense) +10%
   * Equipment: Invitation collection, impressive wardrobe, social calendar database
 
 ## MEDICAL EXPERTS
 
 * **SAWBONES**
-  * Skills: Medicine (Emergency Medicine) +15%, Perception (Triage) +10%, Medicine (Improvised Treatment) +5%, Persuasion (Bedside Manner) +5%
+  * Skills: Medicine (Emergency Medicine) +40%, Perception (Triage) +20%, Medicine (Improvised Treatment) +10%, Persuasion (Bedside Manner) +10%
   * Equipment: Medical bag, emergency stimulants, surgical tools, painkillers
 * **XENODOC**
-  * Skills: Medicine (Xenomedicine) +15%, Science (Comparative Physiology) +10%, Medicine (Diagnostics) +5%, Medicine (Surgery) +5%
+  * Skills: Medicine (Xenomedicine) +40%, Science (Comparative Physiology) +20%, Medicine (Diagnostics) +10%, Medicine (Surgery) +10%
   * Equipment: Multi-species medical scanner, adaptable surgical tools, xenobiology reference
 * **PSYCHIATRIST**
-  * Skills: Medicine (Psychiatry) +15%, Science (Behavioral Science) +10%, Persuasion (Counseling) +5%, Medicine (Medication) +5%
+  * Skills: Medicine (Psychiatry) +40%, Science (Behavioral Science) +20%, Persuasion (Counseling) +10%, Medicine (Medication) +10%
   * Equipment: Therapeutic aids, pharmaceutical kit, patient records device
 * **COMBAT MEDIC**
-  * Skills: Medicine (Battlefield Medicine) +15%, Perception (Combat Awareness) +10%, Medicine (Triage) +5%, Medicine (Emergency Medicine) +5%
+  * Skills: Medicine (Battlefield Medicine) +40%, Perception (Combat Awareness) +20%, Medicine (Triage) +10%, Medicine (Emergency Medicine) +10%
   * Equipment: Reinforced medical kit, stim injectors, battlefield stretcher
 * **LIFE SCIENTIST**
-  * Skills: Science (Biology) +15%, Science (Chemistry) +10%, Investigation (Research Methodology) +5%, Technology (Laboratory Equipment) +5%
+  * Skills: Science (Biology) +40%, Science (Chemistry) +20%, Investigation (Research Methodology) +10%, Technology (Laboratory Equipment) +10%
   * Equipment: Portable lab equipment, specimen preservation tools, field microscope
 
 ## COMMERCE & TRADE
 
 * **SPACE TRADER**
-  * Skills: Persuasion (Negotiation) +15%, Trade (Market Analysis) +10%, Trade (Appraisal) +5%, Social (Networking) +5%
+  * Skills: Persuasion (Negotiation) +40%, Trade (Market Analysis) +20%, Trade (Appraisal) +10%, Social (Networking) +10%
   * Equipment: Mercantile datapad, authenticator kit, sample case of trade goods
 * **CARTEL BROKER**
-  * Skills: Streetwise (Black Market) +15%, Persuasion (Intimidation) +10%, Perception (Threat Assessment) +5%, Navigation (Secret Routes) +5%
+  * Skills: Streetwise (Black Market) +40%, Persuasion (Intimidation) +20%, Perception (Threat Assessment) +10%, Navigation (Secret Routes) +10%
   * Equipment: Encrypted communicator, concealed weapon, false identity papers
 * **INSURANCE ADJUSTER**
-  * Skills: Investigation (Crime Scene Analysis) +15%, Perception (Risk Assessment) +10%, Deception (Forgery Detection) +5%, Academics (Contract Law) +5%
+  * Skills: Investigation (Crime Scene Analysis) +40%, Perception (Risk Assessment) +20%, Deception (Forgery Detection) +10%, Academics (Contract Law) +10%
   * Equipment: Claim analyzer, suspicious damage detector, comprehensive policy handbook
 * **ADVENTURE CAPITALIST**
-  * Skills: Trade (Business) +15%, Investigation (Treasure Hunting) +10%, Persuasion (Negotiation) +5%, Trade (Resource Evaluation) +5%
+  * Skills: Trade (Business) +40%, Investigation (Treasure Hunting) +20%, Persuasion (Negotiation) +10%, Trade (Resource Evaluation) +10%
   * Equipment: Portable wealth analyzer, prospector's kit, lucrative opportunity ledger
 * **EXOTIC DEALER**
-  * Skills: Xenology (Alien Artifacts) +15%, Xenology (Alien Cultures) +10%, Investigation (Authentication) +5%, Social (Discretion) +5%
+  * Skills: Xenology (Alien Artifacts) +40%, Xenology (Alien Cultures) +20%, Investigation (Authentication) +10%, Social (Discretion) +10%
   * Equipment: Specimen cases, authentication scanner, exotic showroom holograms
 
 ## SPECIALIZED ROLES
 
 * **PROSPECTOR**
-  * Skills: Science (Geology) +15%, Investigation (Surveying) +10%, Technology (Mineral Analysis) +5%, Academics (Mining) +5%
+  * Skills: Science (Geology) +40%, Investigation (Surveying) +20%, Technology (Mineral Analysis) +10%, Academics (Mining) +10%
   * Equipment: Mineral analyzer, digging tools, sample collection kit, claim documents
 * **ASTEROID MINER**
-  * Skills: Academics (Mining) +15%, Demolitions (Mining Charges) +10%, Engineering (Ore Processing) +5%, Survival (Space) +5%
+  * Skills: Academics (Mining) +40%, Demolitions (Mining Charges) +20%, Engineering (Ore Processing) +10%, Survival (Space) +10%
   * Equipment: Mining laser, sample collection bags, emergency pressure patch kit
 * **CHRONICLER**
-  * Skills: Academics (Documentation) +15%, Perception (Observation) +10%, Investigation (Analysis) +5%, Performance (Storytelling) +5%
+  * Skills: Academics (Documentation) +40%, Perception (Observation) +20%, Investigation (Analysis) +10%, Performance (Storytelling) +10%
   * Equipment: Recording devices, archival-quality journal, reference library
 * **TERRAFORM TECH**
-  * Skills: Engineering (Environmental) +15%, Science (Atmospheric) +10%, Science (Biology) +5%, Science (Geology) +5%
+  * Skills: Engineering (Environmental) +40%, Science (Atmospheric) +20%, Science (Biology) +10%, Science (Geology) +10%
   * Equipment: Environmental testing kit, atmospheric sampler, terraforming simulations
 * **ENTERTAINER**
-  * Skills: Performance (choose specialty) +15%, Perception (Crowd Reading) +10%, Artistry (choose specialty) +5%, Social (Showmanship) +5%
+  * Skills: Performance (choose specialty) +40%, Perception (Crowd Reading) +20%, Artistry (choose specialty) +10%, Social (Showmanship) +10%
   * Equipment: Instrument or performance tools, promotional materials, stage makeup
 
-This revision preserves all the professions and their equipment lists while updating the skill bonus notation to align with the skills system document. The notation "+15%" indicates adding 15% to the  skill value, rather than using a flat bonus, which better integrates with the unified skills system
+This revision preserves all the professions and their equipment lists while updating the skill bonus notation to align with the skills system document. The notation "+40%" indicates adding 40% to the  skill value, rather than using a flat bonus, which better integrates with the unified skills system
 
 ## UNIFIED SKILLS SYSTEM
 
@@ -226,11 +226,11 @@ Skills come in two fundamental types:
 1. **Attribute-Based Skills**: Skills directly tied to a specific attribute
 
    * **Untrained**: Attribute × 2
-   * **Core Value** = (Attribute × 2) + 5%
+   * **Core Value** = (Attribute × 2) + 10%
    * Example: Athletics is based on BRAWN
 2. **FLEX Skills**: Skills representing knowledge that relies more on training than raw talent
 
-   * **Untrained**: 15%
+   * **Untrained**: 10%
    * **Core Value** = 25% (equivalent to having an attribute of 10)
    * Example: Academics represents scholarly knowledge independent of natural aptitude
 
@@ -238,9 +238,9 @@ Skills come in two fundamental types:
 
 A character's profession provides additional training in specific skills:
 
-* **Primary Professional Bonus**: +15%
-* **Secondary Professional Bonus**: +10%
-* **Tertiary Professional Bonus**: +5%
+* **Primary Professional Bonus**: +40%
+* **Secondary Professional Bonus**: +20%
+* **Tertiary Professional Bonus**: +10%
 
 These bonuses stack with the base skill values to create your final skill percentages.
 
@@ -255,14 +255,14 @@ These bonuses stack with the base skill values to create your final skill percen
 * Character with SAVVY 14
 * Navigation as Secondary Professional skill
 * Core Skill: (14 × 2) + 5% = 33%
-* With Secondary Professional Bonus: 33% + 10% = 43%
+* With Secondary Professional Bonus: 33% + 20% = 53%
 
 #### Example 2: Academics (History)**
 
 * Skill with no special attribute influence (FLEX skill)
 * Academics as Primary Professional skill
 * Core Skill: 25%
-* With Primary Professional Bonus: 25% + 15% = 40%
+* With Primary Professional Bonus: 25% + 40% = 65%
 
 ## USING SKILLS
 
@@ -276,7 +276,7 @@ These bonuses stack with the base skill values to create your final skill percen
 Characters can attempt skills even without training:
 
 * For attribute-based skills without training: Roll against (Attribute × 2)
-* For FLEX skills without training: Roll against 15%
+* For FLEX skills without training: Roll against 10%
 
 ### Using Skills Under Pressure
 
@@ -471,17 +471,17 @@ Characters can attempt skills even without training:
 
 Every character starts with Solar Scouts Training, representing general self-defense training they received in their youth:
 
-* Solar Scouts Training is 35%
+* Solar Scouts Training is 310%
 * It covers unnarmed combat, pistols, rifles, and first aid
 * It never improves directly, but critical successes while using Solar Scouts Training can lead to developing the full specialized skill
 
 ### Hobbies (Optional)
 
-To further round out a character, the GM may allow them to pick any one skill they like that starts at  + 5%. (Basically a free Tertiary skill.)
+To further round out a character, the GM may allow them to pick any one skill they like that starts at  + 10%. (Basically a free Tertiary skill.)
 
 ### Supporting Specializations
 
-When one specialization would logically support another, grant a +10% bonus, this takes an action so you can't use it on yourself or use more than one of your specializations in one turn:
+When one specialization would logically support another, grant a +20% bonus, this takes an action so you can't use it on yourself or use more than one of your specializations in one turn:
 
 * Using Navigation (Space) to support Piloting (Spacecraft)
 * Using Medicine (Emergency) to support Medicine (Surgery)
@@ -501,11 +501,11 @@ At the end of the adventure:
 2. If you fail the roll (roll above your current percentage), you've found room for improvement
 3. For regular skills, increase the skill by the following values:
 
-* **Beginner (<50%)**: improve by 5%
+* **Beginner (<50%)**: improve by 10%
 * **Skilled (50-69%)**: improve by 3%
 * **Expert (70-89%)**: improve by 2%
 * **Master (90%+)**: improve by 1 %
 
 4. If it was a Solar Scouts Training or a Core Skill:
-   * You may establish a new specialization at the the better of the appropriate Core Skill % + 5% or 40%.
+   * You may establish a new specialization at the the better of the appropriate Core Skill % + 10% or 40%.
    * You must specify which specialization you're developing, based on what you used it for
