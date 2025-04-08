@@ -382,11 +382,11 @@ When combat begins, the referee sets these dice based on the initial situation:
 - **Vector 0, Velocity 0**: Ships are matched in course and Thrust, allowing docking or boarding
 - **Vector 0, Velocity 1+**: Ships are on parallel courses but at different speeds
   - This allows ramming if desired, causing structural damage equal to the Velocity value to both ships
-- **Vector + Velocity ≥ 16**: Ships break contact, combat ends unless pursuit is initiated
-  - Lightning maneuverable ships can pursue at 16-17
-  - Nimble ships can pursue at 16
-  - Standard ships can pursue at ≤ 15
-  - Sluggish ships can pursue at ≤ 14
+- **Vector + Velocity ≥ 10**: Ships break contact, combat ends unless pursuit is initiated
+  - Lightning maneuverable ships can pursue at 9-10
+  - Nimble ships can pursue at ≤ 8
+  - Standard ships can pursue at ≤ 7
+  - Sluggish ships can pursue at ≤ 6
 - **Low Vector (1-3)**: Ships are in optimal firing position (+20% to weapon attacks)
 - **High Vector (7-8)**: Ships are in difficult firing position (-20% to weapon attacks)
 - **Low Velocity (1-3)**: Ships are moving at similar speeds, allowing sustained targeting
@@ -411,7 +411,7 @@ Focuses on changing directional heading:
 
 Focuses on changing relative speed:
 
-1. Roll Piloting (Spacecraft), modified by Thrust
+1. Roll Piloting (Spacecraft), modified by THRUST
 2. Based on success level, gain Velocity Maneuver Points:
    - Ordinary Success: 1 Velocity Point
    - Special Success: 2 Velocity Points
@@ -422,7 +422,7 @@ Focuses on changing relative speed:
 
 Attempts to change both vector and velocity simultaneously:
 
-1. Roll Piloting (Spacecraft) with the worse of MANEUVERABILITY or Thrust
+1. Roll Piloting (Spacecraft) with the worse of MANEUVERABILITY or THRUST
 2. Based on success level, gain Maneuver Points:
    - Ordinary Success: 1 Point
    - Special Success: 2 Points
@@ -439,17 +439,17 @@ When an opponent's Vector + Velocity exceeds your pursuit threshold:
 - Success means reducing the combined value to just below your ship's pursuit threshold
 - Failure means the other ship escapes
 - Each ship's maneuverability determines its pursuit threshold:
-  - **Lightning**: Can pursue at Vector + Velocity ≤ 17
-  - **Nimble**: Can pursue at Vector + Velocity ≤ 16
-  - **Standard**: Can pursue at Vector + Velocity ≤ 15
-  - **Sluggish**: Can pursue at Vector + Velocity ≤ 14
+  - **Lightning**: Can pursue at Vector + Velocity ≤ 10
+  - **Nimble**: Can pursue at Vector + Velocity ≤ 9
+  - **Standard**: Can pursue at Vector + Velocity ≤ 8
+  - **Sluggish**: Can pursue at Vector + Velocity ≤ 7
 
 #### INTERCEPT COURSE
 
 To rapidly close with another ship:
 
 - Dedicate a full turn to closing distance
-- Roll Piloting (Spacecraft) modified by Thrust
+- Roll Piloting (Spacecraft), unmodified by ship's characteristics.
 - Success reduces both Vector and Velocity by 1
 - Special success reduces both by 2
 - Critical success reduces both by 3
@@ -492,17 +492,17 @@ With Vector at 0, deliberately impact another ship:
 
 ### EXAMPLE OF VECTOR DYNAMICS
 
-**Starting Position**: A patrol ship and a Mysterian saucer begin combat with Vector 6, Velocity 7.
+**Starting Position**: A patrol ship and a Mysterian saucer begin combat with Vector 6, Velocity 7.  As this is >10 if either ship intends to break off, they could, but they're in it to win it.
 
 **Round 1**: The patrol ship's pilot performs a Vector Change Maneuver, rolls a special success (2 Maneuver Points), and reduces Vector to 4. The ships are now at Vector 4, Velocity 7.
 
-**Round 2**: The saucer's pilot tries to escape, using 2 Maneuver Points from a special success to increase Vector to 6 and Velocity to 8. The ships are now at Vector 6, Velocity 8.
+**Round 2**: The saucer's pilot tries to close, using 2 Maneuver Points from a special success to decrease Vector to by 2. The ships are now at Vector 2, Velocity 7.
 
-**Round 3**: The patrol ship's pilot performs an Intercept Course, rolls a critical success, and reduces both values by 3. The ships are now at Vector 3, Velocity 5, putting the patrol ship in optimal firing position (+20% to weapon attacks).
+**Round 3**: The patrol ship's pilot performs an Intercept Course, rolls a critical success, and reduces both values by 3. The ships are now at Vector 0, Velocity 4, putting the patrol ship in optimal firing position (+20% to weapon attacks).
 
-**Round 4**: The patrol ship's gunner fires with the bonus, scoring a solid hit. The saucer, damaged, attempts to synchronize for boarding to capture the patrol ship. With a special success, the saucer's pilot reduces Vector to 0. The ships are now at Vector 0, Velocity 5.
+**Round 4**: The patrol ship's gunner fires with the bonus, scoring a solid hit. The saucer, damaged, attempts to synchronize for boarding to capture the patrol ship. With a special success, the saucer's pilot reduces Velocity by 2. The ships are now at Vector 0, Velocity 2.
 
-**Round 5**: The saucer attempts Matching Velocity, rolls a special success, and reduces Velocity to 2. The patrol ship, seeing the saucer's intention, decides to attempt Ramming Speed next round if boarding is attempted.
+**Round 5**: The saucer attempts Matching Velocity, rolls a special success, and reduces Velocity to 0. The patrol ship, seeing the saucer's intention, decides to attempt Ramming Speed next round if boarding is attempted.
 
 **Round 6**: The patrol ship successfully executes Ramming Speed. Both ships take 2 Structure damage, but the boarding is disrupted.
 

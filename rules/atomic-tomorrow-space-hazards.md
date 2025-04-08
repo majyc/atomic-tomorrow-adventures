@@ -2,14 +2,15 @@
 layout: default
 title: Hazards
 ---
-
+<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD036 -->
 # The Hundred Hazards of Interplanetary Space
 
 ## Natural Phenomena (01-20)
 
-| Roll | Hazard                                                                               |
-| ---- | ------------------------------------------------------------------------------------ |
-| 01   | **Solar Flare**- Massive eruption sending radiation waves across system        |
+| Roll | Hazard                                                                         |
+| ---- | ------------------------------------------------------------------------------ |
+| 01   | Solar Flare - Massive eruption sending radiation waves across system           |
 | 02   | **Cosmic Ray Shower**- Intense particle radiation from deep space              |
 | 03   | **Micro-Black Hole**- Tiny gravitational anomaly passing through the area      |
 | 04   | **Stellar Wind Storm**- Intensified particle flow from nearby star             |
@@ -321,3 +322,5 @@ Space-capable alien creatures transiting between planetary bodies:
 * Spectacular visual phenomenon drawing tourist vessels
 
 *"The dragons aren't actually breathing fire in space—that's their bioelectric field interacting with solar radiation. Still, you don't want to get too close during migration season. They're peaceful unless they think you're threatening their young, in which case your ship becomes a chew toy."*
+<!-- markdownlint-enable MD036 -->
+<!-- markdownlint-enable MD025 -->
