@@ -1,23 +1,15 @@
 import React from 'react';
 import { Check, BookOpen, Dna, Briefcase, FileText } from 'lucide-react';
 
-interface AtomicProgressIndicatorProps {
-  currentStep: number;
-  totalSteps: number;
-  steps: string[];
-  onStepClick?: (stepNumber: number) => void;
-  isCompleted?: boolean;
-}
-
-const AtomicProgressIndicator: React.FC<AtomicProgressIndicatorProps> = ({
-  currentStep,
-  totalSteps,
+const AtomicProgressIndicator = ({ 
+  currentStep, 
+  totalSteps, 
   steps,
   onStepClick,
   isCompleted = false
 }) => {
   // Get the appropriate icon for each step
-  const getStepIcon = (step: number) => {
+  const getStepIcon = (step) => {
     switch (step) {
       case 1: return <BookOpen size={18} />;
       case 2: return <Dna size={18} />;
@@ -26,17 +18,18 @@ const AtomicProgressIndicator: React.FC<AtomicProgressIndicatorProps> = ({
       default: return null;
     }
   };
-
-  // Handler for step click - only go to completed steps
-  const handleStepClick = (stepNumber: number) => {
-    if (stepNumber < currentStep && onStepClick) {
+  
+  // Handler for step click - only go to completed or current steps
+  const handleStepClick = (stepNumber) => {
+    // Allow clicking to previous steps or current step only
+    if (stepNumber <= currentStep && onStepClick) {
       onStepClick(stepNumber);
     }
   };
 
   return (
     <div className="py-4 px-2 bg-gray-900 bg-opacity-70 backdrop-blur-sm rounded-lg border border-blue-900"
-      style={{ boxShadow: '0 0 20px rgba(30, 64, 175, 0.4)', overflow: 'hidden' }}>
+         style={{ boxShadow: '0 0 20px rgba(30, 64, 175, 0.4)', overflow: 'hidden' }}>
       <div className="flex items-center justify-between relative">
         {/* Step indicators */}
         <div className="flex items-center justify-between w-full relative z-10">
@@ -47,33 +40,35 @@ const AtomicProgressIndicator: React.FC<AtomicProgressIndicatorProps> = ({
             const isLastStepCompleted = idx + 1 === totalSteps && isCompleted;
             // Active class
             const isActive = idx + 1 === currentStep && !isLastStepCompleted;
-
+            // Determine if this step can be clicked (current or previous steps)
+            const isClickable = idx + 1 <= currentStep;
+            
             return (
-              <div
-                key={idx}
-                className="flex flex-col items-center"
+              <div 
+                key={idx} 
+                className="flex flex-col items-center" 
                 onClick={() => handleStepClick(idx + 1)}
-                style={{ cursor: isStepCompleted ? 'pointer' : 'default' }}
+                style={{ cursor: isClickable ? 'pointer' : 'default' }}
               >
-                <div
+                <div 
                   className={`w-10 h-10 rounded-full border-2 flex items-center justify-center relative 
-                      ${isStepCompleted || isLastStepCompleted ? 'text-black border-green-400 bg-green-400' :
+                    ${isStepCompleted || isLastStepCompleted ? 'text-green-400 border-green-400' : 
                       isActive ? 'text-blue-400 border-blue-400' : 'text-gray-500 border-gray-500'}`}
                   style={{
-                    boxShadow: isStepCompleted || isLastStepCompleted ? '0 0 10px rgba(74, 222, 128, 0.8)' :
-                      isActive ? '0 0 15px rgba(96, 165, 250, 0.8)' : 'none',
-                    background: isStepCompleted || isLastStepCompleted ? 'rgba(74, 222, 128, 1)' : 'rgba(0, 0, 0, 1)'
+                    boxShadow: isStepCompleted || isLastStepCompleted ? '0 0 10px rgba(74, 222, 128, 0.8)' : 
+                              isActive ? '0 0 15px rgba(96, 165, 250, 0.8)' : 'none',
+                    background: 'rgba(0, 0, 0, 1)'
                   }}
                 >
                   {isStepCompleted || isLastStepCompleted ? (
-                    getStepIcon(idx + 1)
+                    <Check size={18} className="text-green-400" />
                   ) : (
                     getStepIcon(idx + 1)
                   )}
-
+                  
                   {/* Pulsing animation for current step only */}
                   {isActive && (
-                    <div
+                    <div 
                       className="pulse-ring"
                       style={{
                         position: 'absolute',
@@ -88,17 +83,19 @@ const AtomicProgressIndicator: React.FC<AtomicProgressIndicatorProps> = ({
                     />
                   )}
                 </div>
-
+                
                 <div className="text-center mt-2">
-                  <div className={`text-xs font-medium ${isActive ? 'text-blue-400' :
-                      isStepCompleted || isLastStepCompleted ? 'text-green-400' :
-                        'text-gray-500'}`}
+                  <div className={`text-xs font-medium ${
+                    isActive ? 'text-blue-400' : 
+                    isStepCompleted || isLastStepCompleted ? 'text-green-400' : 
+                    'text-gray-500'}`}
                   >
                     Step {idx + 1}
                   </div>
-                  <div className={`text-sm ${isActive ? 'text-white font-bold' :
-                      isStepCompleted || isLastStepCompleted ? 'text-green-300' :
-                        'text-gray-400'}`}
+                  <div className={`text-sm ${
+                    isActive ? 'text-white font-bold' : 
+                    isStepCompleted || isLastStepCompleted ? 'text-green-300' : 
+                    'text-gray-400'}`}
                   >
                     {steps[idx]}
                   </div>
@@ -107,24 +104,24 @@ const AtomicProgressIndicator: React.FC<AtomicProgressIndicatorProps> = ({
             );
           })}
         </div>
-
+        
         {/* Container for all the track lines and pulses - with overflow hidden */}
         <div className="absolute top-0 bottom-0 left-0 right-0 z-0" style={{ overflow: 'hidden' }}>
           {/* Base track line - behind the indicators */}
-          <div
-            className="absolute h-0.5 bg-gray-700"
-            style={{
+          <div 
+            className="absolute h-0.5 bg-gray-700" 
+            style={{ 
               top: '20px',
               left: '45px',
               right: '45px'
             }}
           ></div>
-
+          
           {/* Completed track line */}
           {currentStep > 1 && (
-            <div
-              className="absolute h-0.5 bg-green-500 transition-all"
-              style={{
+            <div 
+              className="absolute h-0.5 bg-green-500 transition-all" 
+              style={{ 
                 top: '20px',
                 left: '45px',
                 width: `calc(${Math.min(100, ((currentStep - 1) / (totalSteps - 1) * 100))}% - ${currentStep > 2 ? 90 : 45}px)`,
@@ -132,11 +129,11 @@ const AtomicProgressIndicator: React.FC<AtomicProgressIndicatorProps> = ({
               }}
             ></div>
           )}
-
+          
           {/* Traveling pulses along the completed path - contained within parent div */}
           {currentStep > 1 && (
             <div className="absolute" style={{ top: '0', left: '0', right: '0', bottom: '0', overflow: 'hidden' }}>
-              <div
+              <div 
                 className="traveling-pulse1"
                 style={{
                   position: 'absolute',
@@ -150,8 +147,8 @@ const AtomicProgressIndicator: React.FC<AtomicProgressIndicatorProps> = ({
                   opacity: 0
                 }}
               ></div>
-
-              <div
+              
+              <div 
                 className="traveling-pulse2"
                 style={{
                   position: 'absolute',
@@ -170,7 +167,7 @@ const AtomicProgressIndicator: React.FC<AtomicProgressIndicatorProps> = ({
           )}
         </div>
       </div>
-
+      
       <style>{`
         @keyframes pulse-ring {
           0% {

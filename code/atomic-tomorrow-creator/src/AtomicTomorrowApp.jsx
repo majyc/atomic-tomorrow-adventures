@@ -24,6 +24,12 @@ const AtomicTomorrowApp = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [isMounted, setIsMounted] = useState(false);
   const [showImportDialog, setShowImportDialog] = useState(false);
+  const [stepsInitialized, setStepsInitialized] = useState({
+    1: false,
+    2: false,
+    3: false,
+    4: false
+  }); 
   
   // Effect to handle mounting state
   useEffect(() => {
@@ -56,17 +62,37 @@ const AtomicTomorrowApp = () => {
     _isCompleted: false // Flag to indicate completion
   });
   
-  // Update character data with completion tracking in DOM
+  // Update character data with deep merging for nested objects
   const updateCharacter = (newData) => {
-    const updatedCharacter = { ...character, ...newData };
-    setCharacter(updatedCharacter);
+    setCharacter(prevState => {
+      // Create a fresh copy to avoid modification issues
+      const updatedCharacter = { ...prevState };
+      
+      // Handle objects that need special merging
+      Object.keys(newData).forEach(key => {
+        if (key === 'attributes' && newData.attributes) {
+          // Merge attributes object
+          updatedCharacter.attributes = {
+            ...updatedCharacter.attributes,
+            ...newData.attributes
+          };
+        } else if (key === 'equipment' && Array.isArray(newData.equipment)) {
+          // Replace equipment array
+          updatedCharacter.equipment = [...newData.equipment];
+        } else {
+          // Regular assignment for other properties
+          updatedCharacter[key] = newData[key];
+        }
+      });
+      
+      return updatedCharacter;
+    });
     
-    // Update DOM attribute for completion tracking (used by AtomicProgressIndicator)
-    if (updatedCharacter._isCompleted) {
-      document.querySelector('body').setAttribute('data-character-completed', 'true');
-    } else {
-      document.querySelector('body').removeAttribute('data-character-completed');
-    }
+    // Mark current step as initialized
+    setStepsInitialized(prev => ({
+      ...prev,
+      [currentStep]: true
+    }));
   };
   
   // Navigation functions
@@ -103,6 +129,14 @@ const AtomicTomorrowApp = () => {
     // Update the character data
     setCharacter(importedCharacter);
     
+    // Mark all steps as initialized
+    setStepsInitialized({
+      1: true,
+      2: true,
+      3: true,
+      4: false // We'll initialize this when we get there
+    });
+    
     // Set current step to the character sheet (final step)
     setCurrentStep(4);
     
@@ -130,17 +164,33 @@ const AtomicTomorrowApp = () => {
     "Character Sheet"
   ];
   
-  // Render the current step
+  // Render the current step - now with isInitialized prop
   const renderStep = () => {
     switch (currentStep) {
       case 1:
-        return <CharacterConcept character={character} updateCharacter={updateCharacter} />;
+        return <CharacterConcept 
+          character={character} 
+          updateCharacter={updateCharacter} 
+          isInitialized={true}
+        />;
       case 2:
-        return <AttributeGeneration character={character} updateCharacter={updateCharacter} />;
+        return <AttributeGeneration 
+          character={character} 
+          updateCharacter={updateCharacter} 
+          isInitialized={true}
+        />;
       case 3:
-        return <EquipmentDetails character={character} updateCharacter={updateCharacter} />;
+        return <EquipmentDetails 
+          character={character} 
+          updateCharacter={updateCharacter} 
+          isInitialized={true}
+        />;
       case 4:
-        return <CharacterSheet character={character} updateCharacter={updateCharacter} />;
+        return <CharacterSheet 
+          character={character} 
+          updateCharacter={updateCharacter} 
+          isInitialized={true}
+        />;
       default:
         return <div>Unknown step</div>;
     }

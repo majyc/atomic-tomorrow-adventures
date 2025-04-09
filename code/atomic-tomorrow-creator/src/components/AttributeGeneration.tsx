@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { AlertCircle, ArrowRight, Shuffle, RotateCcw } from 'lucide-react';
 import DerivedStatsPanel from './DerivedStatsPanel';
 import {
@@ -26,6 +26,19 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
   const [modifiedAttributes, setModifiedAttributes] = useState<Record<string, number>>({...character.attributes});
   const [isRolling, setIsRolling] = useState<boolean>(false);
   const [componentInitialized, setComponentInitialized] = useState<boolean>(false);
+  
+  // References to prevent infinite loops
+  const characterRef = useRef(character);
+  const originIdRef = useRef(character.origin?.id);
+  const attributesInitializedRef = useRef(character._attributesInitialized);
+  const attributeUpdateTimeoutRef = useRef<number | null>(null);
+  
+  // Update refs when props change (without triggering effects)
+  useEffect(() => {
+    characterRef.current = character;
+    originIdRef.current = character.origin?.id;
+    attributesInitializedRef.current = character._attributesInitialized;
+  });
 
   // Determine if the character is Terran
   const isTerran = character.origin?.id === 'terran';
@@ -50,26 +63,30 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
     }
   }, [isTerran]);
 
-  // Check if attributes have been saved previously
+  // Check if attributes have been saved previously - use the ref
   const attributesAreSaved = useCallback(() => {
-    return character._attributesInitialized === true;
-  }, [character._attributesInitialized]);
+    return attributesInitializedRef.current === true;
+  }, []);
 
-  // Initialize component on first render
+  // Initialize component on first render (only once)
   useEffect(() => {
     if (componentInitialized) return;
+    
+    // Use the refs for initialization to avoid infinite loop
+    const char = characterRef.current;
+    const attrInitialized = attributesInitializedRef.current;
 
-    if (attributesAreSaved()) {
+    if (attrInitialized) {
       // If we have saved values and positions, restore them
-      if (character.initialRolls && character.attributesAndPositions) {
-        setAvailableValues(character.initialRolls);
-        setAssignedPositions(character.attributesAndPositions);
+      if (char.initialRolls && char.attributesAndPositions) {
+        setAvailableValues(char.initialRolls);
+        setAssignedPositions(char.attributesAndPositions);
         
         // Recalculate base attributes from positions
         const newAttributes: Record<string, number> = {};
-        Object.entries(character.attributesAndPositions).forEach(([attr, position]) => {
-          if (typeof position === 'number' && character.initialRolls[position] !== undefined) {
-            newAttributes[attr] = character.initialRolls[position];
+        Object.entries(char.attributesAndPositions).forEach(([attr, position]) => {
+          if (typeof position === 'number' && char.initialRolls[position] !== undefined) {
+            newAttributes[attr] = char.initialRolls[position];
           } else {
             newAttributes[attr] = 0;
           }
@@ -79,16 +96,16 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
         // Calculate modified attributes with origin modifiers
         const newModifiedAttributes = calculateModifiedAttributes(
           newAttributes,
-          character.origin?.id
+          char.origin?.id
         );
         setModifiedAttributes(newModifiedAttributes);
       } else {
         // If we have attributes but no saved positions/rolls, try to reconstruct
-        const originModifiers = getOriginModifiers(character.origin?.id);
+        const originModifiers = getOriginModifiers(char.origin?.id);
         
         // Calculate base values by subtracting origin modifiers
         const baseValues: Record<string, number> = {};
-        Object.entries(character.attributes).forEach(([attr, value]) => {
+        Object.entries(char.attributes).forEach(([attr, value]) => {
           const modifier = originModifiers[attr] || 0;
           if (typeof value === 'number') {
             baseValues[attr] = value - modifier;
@@ -130,13 +147,14 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
       }
     } else {
       // First time visiting this screen, generate new values
-      const freshValues = generateFreshValues();
+      const freshValues = isTerran ? [...standardArray] : generateDiceValues();
       
-      // Save these initial rolls to the character
-      updateCharacter({
-        ...character,
+      // Save these initial rolls to the character (using a separate update)
+      const characterUpdate = {
+        ...char,
         initialRolls: freshValues
-      });
+      };
+      updateCharacter(characterUpdate);
       
       setAvailableValues(freshValues);
       
@@ -145,32 +163,50 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
     }
     
     setComponentInitialized(true);
-  }, [character, generateFreshValues, updateCharacter, attributesAreSaved, componentInitialized]);
+  }, [componentInitialized, generateFreshValues, updateCharacter, isTerran]);
 
-  // Update modified attributes whenever base attributes change
+  // Update modified attributes whenever attributes or assignments change - not tied to character
   useEffect(() => {
     if (!componentInitialized) return;
     
-    // Calculate attributes with origin modifiers
+    // Calculate attributes with origin modifiers using the ref to avoid dependency on character
     const newModifiedAttributes = calculateModifiedAttributes(
       attributes,
-      character.origin?.id
+      originIdRef.current
     );
     
     setModifiedAttributes(newModifiedAttributes);
+  }, [attributes, componentInitialized]);
+  
+  // Separate effect to update the character - throttled with a ref
+  useEffect(() => {
+    if (!componentInitialized || Object.keys(assignedPositions).length < 7) return;
     
-    // Only update parent if all attributes are assigned
-    if (Object.keys(assignedPositions).length === 7) {
+    // Cancel any existing timeout
+    if (attributeUpdateTimeoutRef.current !== null) {
+      window.clearTimeout(attributeUpdateTimeoutRef.current);
+    }
+    
+    // Set up a new timeout to update character after a delay
+    attributeUpdateTimeoutRef.current = window.setTimeout(() => {
       updateCharacter({
-        ...character,
-        attributes: newModifiedAttributes,
+        ...characterRef.current,
+        attributes: modifiedAttributes,
         attributesAndPositions: {...assignedPositions},
         _attributesInitialized: true
       });
-    }
-  }, [attributes, character.origin?.id, assignedPositions, updateCharacter, componentInitialized]);
+      attributeUpdateTimeoutRef.current = null;
+    }, 300); // Throttle updates to prevent infinite loops
+    
+    // Clean up timeout on unmount
+    return () => {
+      if (attributeUpdateTimeoutRef.current !== null) {
+        window.clearTimeout(attributeUpdateTimeoutRef.current);
+      }
+    };
+  }, [assignedPositions, modifiedAttributes, componentInitialized, updateCharacter]);
 
-  // Roll new attribute values
+  // Roll new values
   const rollNewValues = () => {
     setIsRolling(true);
 
@@ -187,7 +223,7 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
 
         // Save the final rolls
         updateCharacter({
-          ...character,
+          ...characterRef.current,
           initialRolls: newValues
         });
 
@@ -227,9 +263,9 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
     
     setAttributes(defaultAttributes);
     
-    // Update character to remove saved positions
+    // Update character to remove saved positions - using the ref
     updateCharacter({
-      ...character,
+      ...characterRef.current,
       attributesAndPositions: {}
     });
   };
@@ -255,6 +291,36 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
       ...prev,
       [attribute]: baseValue // Store the BASE value in attributes
     }));
+  };
+
+  // Unassign a value from an attribute (new function)
+  const unassignAttributeValue = (attribute: string) => {
+    // Check if the attribute is assigned
+    if (!assignedPositions.hasOwnProperty(attribute)) {
+      return;
+    }
+
+    // Create a copy of assigned positions and remove this attribute
+    const newAssignedPositions = { ...assignedPositions };
+    delete newAssignedPositions[attribute];
+    setAssignedPositions(newAssignedPositions);
+
+    // Set the attribute value to zero
+    setAttributes(prev => ({
+      ...prev,
+      [attribute]: 0
+    }));
+  };
+
+  // Handle click on an attribute value button
+  const handleAttributeValueClick = (attribute: string, position: number) => {
+    // If the attribute already has this position assigned, unassign it
+    if (assignedPositions[attribute] === position) {
+      unassignAttributeValue(attribute);
+    } else {
+      // Otherwise, assign the value
+      assignValueToAttribute(attribute, position);
+    }
   };
 
   // Check if all attributes have been assigned
@@ -300,7 +366,7 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
             {availableValues.map((value, index) => (
               <button
                 key={index}
-                onClick={() => assignValueToAttribute(attribute, index)}
+                onClick={() => handleAttributeValueClick(attribute, index)}
                 className={`w-10 h-10 flex items-center justify-center rounded-full 
                   ${assignedPositions[attribute] === index
                     ? 'bg-blue-600 text-white'
@@ -321,12 +387,21 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
 
         <div className="w-1/4 flex items-center justify-end">
           <div className="flex items-center space-x-2">
-            <div className={`w-12 h-12 rounded-full ${baseValue !== 0 ? 'bg-gray-800 border-2 border-blue-600' : 'bg-gray-800 border-2 border-gray-600'} flex items-center justify-center text-xl font-bold`}
+            <div 
+              className={`w-12 h-12 rounded-full ${baseValue !== 0 ? 'bg-gray-800 border-2 border-blue-600' : 'bg-gray-800 border-2 border-gray-600'} flex items-center justify-center text-xl font-bold`}
               style={{
                 boxShadow: baseValue !== 0 ? '0 0 10px rgba(37, 99, 235, 0.6)' : 'none',
                 color: baseValue !== 0 ? '#93c5fd' : '#6b7280',
-                textShadow: baseValue !== 0 ? '0 0 5px rgba(147, 197, 253, 0.8)' : 'none'
-              }}>
+                textShadow: baseValue !== 0 ? '0 0 5px rgba(147, 197, 253, 0.8)' : 'none',
+                cursor: baseValue !== 0 ? 'pointer' : 'default'
+              }}
+              onClick={() => {
+                if (baseValue !== 0) {
+                  unassignAttributeValue(attribute);
+                }
+              }}
+              title={baseValue !== 0 ? "Click to unassign" : ""}
+            >
               {baseValue || "-"}
             </div>
 
@@ -413,12 +488,12 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
             {isTerran ? (
               <p className="text-sm text-green-300" style={{ textShadow: '0 0 5px rgba(134, 239, 172, 0.7)' }}>
                 As a Terran, you must distribute the Standard Array values (15, 14, 12, 11, 10, 9, 8) among your attributes.
-                Click on a value to assign it to an attribute.
+                Click on a value to assign it to an attribute. Click on an assigned value again to unassign it.
               </p>
             ) : (
               <p className="text-sm text-green-300" style={{ textShadow: '0 0 5px rgba(134, 239, 172, 0.7)' }}>
                 As a {character.origin?.name || 'non-Terran'}, you have the flexibility to assign the generated values
-                to your attributes as you see fit. Click on a value to assign it to an attribute.
+                to your attributes as you see fit. Click on a value to assign it to an attribute. Click on an assigned value again to unassign it.
               </p>
             )}
             <p className="text-sm text-yellow-300 mt-2" style={{ textShadow: '0 0 5px rgba(250, 204, 21, 0.7)' }}>
