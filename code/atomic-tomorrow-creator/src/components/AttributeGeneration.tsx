@@ -1,52 +1,266 @@
-import React, { useState, useEffect } from 'react';
-import { Shuffle, ArrowRight, Info, AlertCircle, RotateCcw, Zap } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { AlertCircle, ArrowRight, Shuffle, RotateCcw } from 'lucide-react';
+import DerivedStatsPanel from './DerivedStatsPanel';
+import {
+  standardArray,
+  calculateModifiedAttributes,
+  getAttributeDescription,
+  getOriginModifiers
+} from '../utils/attributeUtils';
 
-// Value object interface for typed array values
-interface ValueObject {
-  value: number;
-  position: number;
+interface AttributeGenerationProps {
+  character: any;
+  updateCharacter: (characterData: any) => void;
+  isInitialized?: boolean;
 }
 
-// Revised Attribute Generation Screen with CRT/Terminal styling
-const AttributeGeneration = ({ character, updateCharacter }) => {
-  // State for attribute values
-  const [attributes, setAttributes] = useState({
-    BRAWN: character.attributes.BRAWN || 10,
-    REFLEX: character.attributes.REFLEX || 10,
-    NERVE: character.attributes.NERVE || 10,
-    SAVVY: character.attributes.SAVVY || 10,
-    CHARM: character.attributes.CHARM || 10,
-    GRIT: character.attributes.GRIT || 10,
-    GUILE: character.attributes.GUILE || 10
-  });
-  
-  // For all origins: Generate attribute values with positions
-  const [generatedValues, setGeneratedValues] = useState<ValueObject[]>([]);
-  
-  // For attribute assignments - track the value
-  const [assignedValues, setAssignedValues] = useState<Record<string, number>>({});
-  
-  // For attribute assignments - track the position of the assigned value
+const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
+  character,
+  updateCharacter,
+  isInitialized = false
+}) => {
+  // State for base attributes and UI
+  const [attributes, setAttributes] = useState<Record<string, number>>({...character.attributes});
+  const [availableValues, setAvailableValues] = useState<number[]>([]);
   const [assignedPositions, setAssignedPositions] = useState<Record<string, number>>({});
-  
-  // Track animation effects
-  const [isRolling, setIsRolling] = useState(false);
-  const [rollingAttribute, setRollingAttribute] = useState(null);
-  
-  // Modified attributes after Origin modifiers
-  const [modifiedAttributes, setModifiedAttributes] = useState({...attributes});
-  
+  const [modifiedAttributes, setModifiedAttributes] = useState<Record<string, number>>({...character.attributes});
+  const [isRolling, setIsRolling] = useState<boolean>(false);
+  const [componentInitialized, setComponentInitialized] = useState<boolean>(false);
+
   // Determine if the character is Terran
   const isTerran = character.origin?.id === 'terran';
-  
-  // Standard Array for Terrans
-  const standardArray = [15, 14, 12, 11, 10, 9, 8];
-  
-  // Create typed standardArrayWithPositions
-  const standardArrayWithPositions: ValueObject[] = standardArray.map((value, index) => ({
-    value,
-    position: index
-  }));
+
+  // Generate dice values (for non-Terran characters)
+  const generateDiceValues = () => {
+    const diceValues = Array.from({ length: 7 }, () => {
+      const die1 = Math.floor(Math.random() * 10) + 1;
+      const die2 = Math.floor(Math.random() * 10) + 1;
+      return Math.max(3, Math.min(18, die1 + die2));
+    });
+    return diceValues.sort((a, b) => b - a);
+  };
+
+  // Generate fresh attribute values based on character origin
+  const generateFreshValues = useCallback(() => {
+    if (isTerran) {
+      // Use standard array for Terran characters
+      return [...standardArray];
+    } else {
+      return generateDiceValues();
+    }
+  }, [isTerran]);
+
+  // Check if attributes have been saved previously
+  const attributesAreSaved = useCallback(() => {
+    return character._attributesInitialized === true;
+  }, [character._attributesInitialized]);
+
+  // Initialize component on first render
+  useEffect(() => {
+    if (componentInitialized) return;
+
+    if (attributesAreSaved()) {
+      // If we have saved values and positions, restore them
+      if (character.initialRolls && character.attributesAndPositions) {
+        setAvailableValues(character.initialRolls);
+        setAssignedPositions(character.attributesAndPositions);
+        
+        // Recalculate base attributes from positions
+        const newAttributes: Record<string, number> = {};
+        Object.entries(character.attributesAndPositions).forEach(([attr, position]) => {
+          if (typeof position === 'number' && character.initialRolls[position] !== undefined) {
+            newAttributes[attr] = character.initialRolls[position];
+          } else {
+            newAttributes[attr] = 0;
+          }
+        });
+        setAttributes(newAttributes);
+        
+        // Calculate modified attributes with origin modifiers
+        const newModifiedAttributes = calculateModifiedAttributes(
+          newAttributes,
+          character.origin?.id
+        );
+        setModifiedAttributes(newModifiedAttributes);
+      } else {
+        // If we have attributes but no saved positions/rolls, try to reconstruct
+        const originModifiers = getOriginModifiers(character.origin?.id);
+        
+        // Calculate base values by subtracting origin modifiers
+        const baseValues: Record<string, number> = {};
+        Object.entries(character.attributes).forEach(([attr, value]) => {
+          const modifier = originModifiers[attr] || 0;
+          if (typeof value === 'number') {
+            baseValues[attr] = value - modifier;
+          } else {
+            baseValues[attr] = 0;
+          }
+        });
+        
+        // Get unique base values in order
+        const sortedUniqueValues = Array.from(new Set(Object.values(baseValues))).sort((a, b) => b - a);
+        
+        // If some values are missing, fill with new ones
+        if (sortedUniqueValues.length < 7) {
+          const freshValues = generateFreshValues();
+          for (let i = sortedUniqueValues.length; i < 7; i++) {
+            sortedUniqueValues.push(freshValues[i]);
+          }
+        }
+        
+        // Reconstruct positions
+        const reconstructedPositions: Record<string, number> = {};
+        const baseAttributes = ['BRAWN', 'REFLEX', 'NERVE', 'SAVVY', 'CHARM', 'GRIT', 'GUILE'];
+        
+        baseAttributes.forEach(attr => {
+          // Find position of this attribute's value in sortedUniqueValues
+          const value = baseValues[attr];
+          const index = sortedUniqueValues.indexOf(value);
+          
+          if (index !== -1) {
+            reconstructedPositions[attr] = index;
+            // Replace this index with something unique to avoid duplicates
+            sortedUniqueValues[index] = -999 - index;
+          }
+        });
+        
+        setAvailableValues([...sortedUniqueValues.filter(v => v > -999)]);
+        setAttributes(baseValues);
+        setAssignedPositions(reconstructedPositions);
+      }
+    } else {
+      // First time visiting this screen, generate new values
+      const freshValues = generateFreshValues();
+      
+      // Save these initial rolls to the character
+      updateCharacter({
+        ...character,
+        initialRolls: freshValues
+      });
+      
+      setAvailableValues(freshValues);
+      
+      // If we don't have any prior attribute assignments, don't set any positions
+      setAssignedPositions({});
+    }
+    
+    setComponentInitialized(true);
+  }, [character, generateFreshValues, updateCharacter, attributesAreSaved, componentInitialized]);
+
+  // Update modified attributes whenever base attributes change
+  useEffect(() => {
+    if (!componentInitialized) return;
+    
+    // Calculate attributes with origin modifiers
+    const newModifiedAttributes = calculateModifiedAttributes(
+      attributes,
+      character.origin?.id
+    );
+    
+    setModifiedAttributes(newModifiedAttributes);
+    
+    // Only update parent if all attributes are assigned
+    if (Object.keys(assignedPositions).length === 7) {
+      updateCharacter({
+        ...character,
+        attributes: newModifiedAttributes,
+        attributesAndPositions: {...assignedPositions},
+        _attributesInitialized: true
+      });
+    }
+  }, [attributes, character.origin?.id, assignedPositions, updateCharacter, componentInitialized]);
+
+  // Roll new attribute values
+  const rollNewValues = () => {
+    setIsRolling(true);
+
+    // Animation: show multiple rolls
+    let rollCount = 0;
+    const interval = setInterval(() => {
+      const newValues = generateFreshValues();
+      setAvailableValues(newValues);
+
+      rollCount++;
+      if (rollCount >= 10) {
+        clearInterval(interval);
+        setIsRolling(false);
+
+        // Save the final rolls
+        updateCharacter({
+          ...character,
+          initialRolls: newValues
+        });
+
+        // Reset assignments
+        setAssignedPositions({});
+
+        // Reset attributes to default
+        const defaultAttributes: Record<string, number> = {
+          BRAWN: 0,
+          REFLEX: 0,
+          NERVE: 0,
+          SAVVY: 0,
+          CHARM: 0,
+          GRIT: 0,
+          GUILE: 0
+        };
+        
+        setAttributes(defaultAttributes);
+      }
+    }, 100);
+  };
+
+  // Reset assignments
+  const resetAssignments = () => {
+    setAssignedPositions({});
+
+    // Reset attributes to default
+    const defaultAttributes: Record<string, number> = {
+      BRAWN: 0,
+      REFLEX: 0,
+      NERVE: 0,
+      SAVVY: 0,
+      CHARM: 0,
+      GRIT: 0,
+      GUILE: 0
+    };
+    
+    setAttributes(defaultAttributes);
+    
+    // Update character to remove saved positions
+    updateCharacter({
+      ...character,
+      attributesAndPositions: {}
+    });
+  };
+
+  // Check if a value position is available for assignment
+  const isValueAvailable = (position: number) => {
+    return !Object.values(assignedPositions).includes(position);
+  };
+
+  // Assign a value to an attribute
+  const assignValueToAttribute = (attribute: string, position: number) => {
+    // Get the base value from the available values array
+    const baseValue = availableValues[position];
+
+    // Update assigned positions
+    setAssignedPositions(prev => ({
+      ...prev,
+      [attribute]: position
+    }));
+
+    // Update base attributes
+    setAttributes(prev => ({
+      ...prev,
+      [attribute]: baseValue // Store the BASE value in attributes
+    }));
+  };
+
+  // Check if all attributes have been assigned
+  const allAttributesAssigned = useCallback(() => {
+    return Object.keys(assignedPositions).length === 7;
+  }, [assignedPositions]);
 
   // CRT effect styles
   const crtStyles = {
@@ -61,194 +275,16 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
       pointerEvents: 'none',
       zIndex: 1,
       animation: 'scanlines 1s linear infinite'
-    },
-    terminal: {
-      boxShadow: '0 0 15px rgba(0, 255, 0, 0.6), inset 0 0 20px rgba(0, 255, 0, 0.4)',
-      border: '2px solid #14532d',
-      backgroundColor: '#0a0a0a',
-      borderRadius: '0.375rem',
-      position: 'relative',
-      overflow: 'hidden'
-    },
-    greenText: {
-      color: '#4ade80',
-      textShadow: '0 0 8px rgba(0, 255, 0, 0.9), 0 0 15px rgba(0, 255, 0, 0.7)',
-      fontFamily: 'monospace'
-    }
-  };
-  
-  // Effect to apply origin modifiers to attributes
-  useEffect(() => {
-    if (character.origin) {
-      // Get origin modifiers
-      const modifiers = getOriginModifiers(character.origin.id);
-      
-      // Calculate the modified attributes
-      const newModifiedAttributes = {...attributes};
-      Object.keys(modifiers).forEach(attr => {
-        newModifiedAttributes[attr] = Math.max(3, Math.min(18, attributes[attr] + modifiers[attr]));
-      });
-      
-      setModifiedAttributes(newModifiedAttributes);
-      
-      // Update parent component
-      updateCharacter({
-        ...character,
-        attributes: newModifiedAttributes
-      });
-    }
-  }, [attributes, character.origin]);
-  
-  // Helper function to get origin modifiers
-  const getOriginModifiers = (originId) => {
-    // This would come from a data source in a real app
-    const modifierMap = {
-      'terran': { SAVVY: 1, GRIT: -1 },
-      'loonie': { BRAWN: -1, REFLEX: 1, GUILE: 1 },
-      'martian': { BRAWN: 1, GRIT: 1, CHARM: -1 },
-      'belter': { BRAWN: -1, GUILE: 1, GRIT: 1 },
-      // Add other origins here
-    };
-    
-    return modifierMap[originId] || {};
-  };
-  
-  // Generate all attribute values at once for non-Terrans
-  const generateAllValues = () => {
-    setIsRolling(true);
-    
-    // Simulate rolling animation
-    let rollCount = 0;
-    const interval = setInterval(() => {
-      const newValues: ValueObject[] = [];
-      for (let i = 0; i < 7; i++) {
-        const die1 = Math.floor(Math.random() * 10) + 1;
-        const die2 = Math.floor(Math.random() * 10) + 1;
-        newValues.push({
-          value: Math.max(3, Math.min(18, die1 + die2)),
-          position: i
-        });
-      }
-      // Sort by value in descending order but maintain position property
-      setGeneratedValues([...newValues].sort((a, b) => b.value - a.value));
-      
-      rollCount++;
-      if (rollCount >= 10) {
-        clearInterval(interval);
-        setIsRolling(false);
-      }
-    }, 100);
-  };
-  
-  // Reset assignments
-  const resetAssignments = () => {
-    setAssignedValues({});
-    setAssignedPositions({});
-    setAttributes({
-      BRAWN: 10,
-      REFLEX: 10,
-      NERVE: 10,
-      SAVVY: 10,
-      CHARM: 10,
-      GRIT: 10,
-      GUILE: 10
-    });
-  };
-  
-  // Assign a value to an attribute - updated to handle positions
-  const assignValueToAttribute = (attribute: string, valueObj: ValueObject) => {
-    // If clicking on a value that's already assigned to this attribute, unassign it
-    if (assignedPositions[attribute] === valueObj.position) {
-      setAssignedPositions(prev => {
-        const newPositions = {...prev};
-        delete newPositions[attribute];
-        return newPositions;
-      });
-      
-      setAssignedValues(prev => {
-        const newValues = {...prev};
-        delete newValues[attribute];
-        return newValues;
-      });
-      
-      // Reset the attribute value to default
-      setAttributes(prev => ({
-        ...prev,
-        [attribute]: 10
-      }));
-      
-      return;
-    }
-    
-    // Otherwise, assign the value to this attribute
-    setAssignedPositions(prev => ({
-      ...prev,
-      [attribute]: valueObj.position
-    }));
-    
-    setAssignedValues(prev => ({
-      ...prev,
-      [attribute]: valueObj.value
-    }));
-    
-    // Update the attributes state
-    setAttributes(prev => ({
-      ...prev,
-      [attribute]: valueObj.value
-    }));
-  };
-  
-  // Revised isValueAvailable function that checks positions rather than values
-  const isValueAvailable = (valueObj: ValueObject) => {
-    // A position is available if it's not assigned to any attribute
-    return !Object.values(assignedPositions).includes(valueObj.position);
-  };
-  
-  // Format attribute name with description
-  const getAttributeDescription = (attribute) => {
-    const descriptions = {
-      BRAWN: "Physical strength and toughness",
-      REFLEX: "Agility and reaction speed",
-      NERVE: "Mental composure and courage",
-      SAVVY: "Intelligence and perception",
-      CHARM: "Charisma and persuasiveness",
-      GRIT: "Endurance and willpower",
-      GUILE: "Cunning and deception"
-    };
-    
-    return descriptions[attribute] || "";
-  };
-  
-  // Initialize with empty array and generate values if non-Terran
-  useEffect(() => {
-    if (!isTerran && generatedValues.length === 0) {
-      generateAllValues();
-    }
-  }, [character.origin]);
-  
-  // Get attribute color based on value
-  const getAttributeColor = (value) => {
-    if (value >= 14) return "text-green-500";
-    if (value >= 12) return "text-green-400";
-    if (value >= 9) return "text-blue-400";
-    if (value >= 7) return "text-yellow-400";
-    return "text-red-400";
+    } as React.CSSProperties
   };
 
-  // Get attribute glow based on value
-  const getAttributeGlow = (value) => {
-    if (value >= 14) return "0 0 10px rgba(34, 197, 94, 0.9)";
-    if (value >= 12) return "0 0 10px rgba(74, 222, 128, 0.9)";
-    if (value >= 9) return "0 0 10px rgba(96, 165, 250, 0.9)";
-    if (value >= 7) return "0 0 10px rgba(250, 204, 21, 0.9)";
-    return "0 0 10px rgba(248, 113, 113, 0.9)";
-  };
-  
-  // Render attribute row with different UI based on origin
-  const renderAttributeRow = (attribute) => {
+  // Render an attribute row
+  const renderAttributeRow = (attribute: string) => {
     const originModifier = getOriginModifiers(character.origin?.id)[attribute] || 0;
     const description = getAttributeDescription(attribute);
-    
+    const baseValue = attributes[attribute] || 0;
+    const modifiedValue = modifiedAttributes[attribute] || 0;
+
     return (
       <div className="flex items-center p-4 border-b border-gray-700 hover:bg-gray-800 transition-colors">
         <div className="w-1/4">
@@ -257,81 +293,57 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
           </div>
           <div className="text-xs text-gray-400">{description}</div>
         </div>
-        
+
         <div className="w-1/2">
           <div className="flex flex-wrap gap-2">
-            {/* Value selectors - different for Terrans vs non-Terrans */}
-            {isTerran ? (
-              // Terran: Select from standard array
-              standardArrayWithPositions.map(valueObj => (
-                <button
-                  key={valueObj.position}
-                  onClick={() => assignValueToAttribute(attribute, valueObj)}
-                  className={`w-10 h-10 flex items-center justify-center rounded-full 
-                    ${assignedPositions[attribute] === valueObj.position 
-                      ? 'bg-blue-600 text-white' 
-                      : isValueAvailable(valueObj)
-                        ? 'bg-gray-800 text-blue-400 hover:bg-gray-700 border border-blue-600' 
-                        : 'bg-gray-800 text-gray-500 cursor-not-allowed border border-gray-600'}
-                    font-bold transition-colors`}
-                  style={{
-                    boxShadow: assignedPositions[attribute] === valueObj.position ? '0 0 10px rgba(37, 99, 235, 0.8)' : 'none'
-                  }}
-                  disabled={!isValueAvailable(valueObj) && assignedPositions[attribute] !== valueObj.position}
-                >
-                  {valueObj.value}
-                </button>
-              ))
-            ) : (
-              // Non-Terran: Select from generated values
-              generatedValues.map(valueObj => (
-                <button
-                  key={valueObj.position}
-                  onClick={() => assignValueToAttribute(attribute, valueObj)}
-                  className={`w-10 h-10 flex items-center justify-center rounded-full 
-                    ${assignedPositions[attribute] === valueObj.position 
-                      ? 'bg-blue-600 text-white' 
-                      : isValueAvailable(valueObj)
-                        ? 'bg-gray-800 text-blue-400 hover:bg-gray-700 border border-blue-600' 
-                        : 'bg-gray-800 text-gray-500 cursor-not-allowed border border-gray-600'}
-                    font-bold transition-colors`}
-                  style={{
-                    boxShadow: assignedPositions[attribute] === valueObj.position ? '0 0 10px rgba(37, 99, 235, 0.8)' : 'none'
-                  }}
-                  disabled={!isValueAvailable(valueObj) && assignedPositions[attribute] !== valueObj.position}
-                >
-                  {valueObj.value}
-                </button>
-              ))
-            )}
+            {/* Available values */}
+            {availableValues.map((value, index) => (
+              <button
+                key={index}
+                onClick={() => assignValueToAttribute(attribute, index)}
+                className={`w-10 h-10 flex items-center justify-center rounded-full 
+                  ${assignedPositions[attribute] === index
+                    ? 'bg-blue-600 text-white'
+                    : isValueAvailable(index)
+                      ? 'bg-gray-800 text-blue-400 hover:bg-gray-700 border border-blue-600'
+                      : 'bg-gray-800 text-gray-500 cursor-not-allowed border border-gray-600'}
+                  font-bold transition-colors`}
+                style={{
+                  boxShadow: assignedPositions[attribute] === index ? '0 0 10px rgba(37, 99, 235, 0.8)' : 'none'
+                }}
+                disabled={!isValueAvailable(index) && assignedPositions[attribute] !== index}
+              >
+                {value}
+              </button>
+            ))}
           </div>
         </div>
-        
+
         <div className="w-1/4 flex items-center justify-end">
           <div className="flex items-center space-x-2">
-            <div className={`w-12 h-12 rounded-full ${assignedValues[attribute] ? 'bg-gray-800 border-2 border-blue-600' : 'bg-gray-800 border-2 border-gray-600'} flex items-center justify-center text-xl font-bold`}
-                 style={{
-                   boxShadow: assignedValues[attribute] ? '0 0 10px rgba(37, 99, 235, 0.6)' : 'none',
-                   color: assignedValues[attribute] ? '#93c5fd' : '#6b7280',
-                   textShadow: assignedValues[attribute] ? '0 0 5px rgba(147, 197, 253, 0.8)' : 'none'
-                 }}>
-              {assignedValues[attribute] || '?'}
+            <div className={`w-12 h-12 rounded-full ${baseValue !== 0 ? 'bg-gray-800 border-2 border-blue-600' : 'bg-gray-800 border-2 border-gray-600'} flex items-center justify-center text-xl font-bold`}
+              style={{
+                boxShadow: baseValue !== 0 ? '0 0 10px rgba(37, 99, 235, 0.6)' : 'none',
+                color: baseValue !== 0 ? '#93c5fd' : '#6b7280',
+                textShadow: baseValue !== 0 ? '0 0 5px rgba(147, 197, 253, 0.8)' : 'none'
+              }}>
+              {baseValue || "-"}
             </div>
-            
+
             {originModifier !== 0 && (
               <>
                 <ArrowRight size={20} className="text-green-400" />
-                <div className={`w-12 h-12 rounded-full bg-gray-800 border-2 border-green-600 flex items-center justify-center text-xl font-bold relative ${rollingAttribute === attribute ? 'animate-pulse' : ''}`}
-                     style={{
-                       boxShadow: '0 0 10px rgba(34, 197, 94, 0.6)',
-                       color: '#4ade80',
-                       textShadow: '0 0 5px rgba(74, 222, 128, 0.8)'
-                     }}>
-                  {assignedValues[attribute] ? (Math.max(3, Math.min(18, assignedValues[attribute] + originModifier))) : '?'}
+                <div className={`w-12 h-12 rounded-full bg-gray-800 border-2 border-green-600 flex items-center justify-center text-xl font-bold relative`}
+                  style={{
+                    boxShadow: '0 0 10px rgba(34, 197, 94, 0.6)',
+                    color: '#4ade80',
+                    textShadow: '0 0 5px rgba(74, 222, 128, 0.8)'
+                  }}>
+                  {modifiedValue || "-"}
                   {originModifier > 0 && <span className="absolute -top-1 -right-1 w-5 h-5 bg-green-600 rounded-full text-xs flex items-center justify-center font-bold"
-                                               style={{ boxShadow: '0 0 8px rgba(22, 163, 74, 0.8)' }}>+{originModifier}</span>}
+                    style={{ boxShadow: '0 0 8px rgba(22, 163, 74, 0.8)' }}>+{originModifier}</span>}
                   {originModifier < 0 && <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-600 rounded-full text-xs flex items-center justify-center font-bold"
-                                               style={{ boxShadow: '0 0 8px rgba(220, 38, 38, 0.8)' }}>{originModifier}</span>}
+                    style={{ boxShadow: '0 0 8px rgba(220, 38, 38, 0.8)' }}>{originModifier}</span>}
                 </div>
               </>
             )}
@@ -340,10 +352,11 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
       </div>
     );
   };
-  
+
   return (
     <div className="bg-gray-900 p-5 rounded-xl">
-      <style>{`
+      <style>
+        {`
         @keyframes scanlines {
           0% { background-position: 0 0; }
           100% { background-position: 0 4px; }
@@ -377,48 +390,49 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
           animation: textFlicker 0.01s infinite;
           font-family: monospace;
         }
-        .attribute-glow {
-          box-shadow: 0 0 15px rgba(0, 255, 0, 0.8), inset 0 0 10px rgba(0, 255, 0, 0.4);
-        }
-      `}</style>
+        `}
+      </style>
 
       <h2 className="text-2xl font-bold mb-6 text-center text-green-400" style={{ textShadow: '0 0 10px rgba(74, 222, 128, 0.6)' }}>
         STEP 2: ASSIGN ATTRIBUTES
       </h2>
-      
-      {/* Origin-specific instructions */}
+
+      {/* Instructions */}
       <div className="bg-gray-800 p-4 rounded-lg border border-green-900 mb-6 relative overflow-hidden"
-           style={{ boxShadow: '0 0 15px rgba(0, 255, 0, 0.4), inset 0 0 10px rgba(0, 255, 0, 0.2)' }}>
+        style={{ boxShadow: '0 0 15px rgba(0, 255, 0, 0.4), inset 0 0 10px rgba(0, 255, 0, 0.2)' }}>
         {/* Scanline effect overlay */}
         <div style={crtStyles.scanline}></div>
-        
+
         <div className="flex items-start relative z-10">
-          <AlertCircle size={20} className="text-green-400 mr-2 mt-1 flex-shrink-0" 
-                       style={{ filter: 'drop-shadow(0 0 5px rgba(74, 222, 128, 0.8))' }} />
+          <AlertCircle size={20} className="text-green-400 mr-2 mt-1 flex-shrink-0"
+            style={{ filter: 'drop-shadow(0 0 5px rgba(74, 222, 128, 0.8))' }} />
           <div>
             <h3 className="font-bold text-green-400 terminal-text">
-              ATTRIBUTE ASSIGNMENT FOR {character.origin?.name.toUpperCase() || 'CHARACTER'}
+              ATTRIBUTE ASSIGNMENT FOR {character.origin?.name?.toUpperCase() || 'CHARACTER'}
             </h3>
             {isTerran ? (
               <p className="text-sm text-green-300" style={{ textShadow: '0 0 5px rgba(134, 239, 172, 0.7)' }}>
-                As a Terran, you must distribute the Standard Array values (15, 14, 12, 11, 10, 9, 8) among your attributes. 
+                As a Terran, you must distribute the Standard Array values (15, 14, 12, 11, 10, 9, 8) among your attributes.
                 Click on a value to assign it to an attribute.
               </p>
             ) : (
               <p className="text-sm text-green-300" style={{ textShadow: '0 0 5px rgba(134, 239, 172, 0.7)' }}>
-                As a {character.origin?.name || 'non-Terran'}, you have the flexibility to assign the generated values 
+                As a {character.origin?.name || 'non-Terran'}, you have the flexibility to assign the generated values
                 to your attributes as you see fit. Click on a value to assign it to an attribute.
               </p>
             )}
+            <p className="text-sm text-yellow-300 mt-2" style={{ textShadow: '0 0 5px rgba(250, 204, 21, 0.7)' }}>
+              You must assign a value to every attribute before proceeding to the next step.
+            </p>
           </div>
         </div>
       </div>
-      
-      {/* Roll controls for non-Terrans */}
+
+      {/* Controls for non-Terrans */}
       {!isTerran && (
         <div className="mb-6 flex justify-between items-center">
-          <h3 className="text-lg font-semibold text-blue-400" 
-              style={{ textShadow: '0 0 8px rgba(96, 165, 250, 0.7)' }}>
+          <h3 className="text-lg font-semibold text-blue-400"
+            style={{ textShadow: '0 0 8px rgba(96, 165, 250, 0.7)' }}>
             GENERATED ATTRIBUTE VALUES:
           </h3>
           <div className="flex gap-2">
@@ -432,28 +446,29 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
               RESET
             </button>
             <button
-              onClick={generateAllValues}
+              onClick={rollNewValues}
               className="flex items-center px-4 py-2 bg-blue-900 border border-blue-600 text-blue-300 rounded hover:bg-blue-800"
               disabled={isRolling}
-              style={{ 
+              style={{
                 boxShadow: '0 0 10px rgba(37, 99, 235, 0.5), inset 0 0 5px rgba(37, 99, 235, 0.3)',
                 textShadow: '0 0 5px rgba(147, 197, 253, 0.8)'
               }}
             >
               <Shuffle size={16} className="mr-2" />
-              {isRolling ? 'ROLLING...' : 'ROLL NEW VALUES'}
+              {isRolling ? 'ROLLING...' : 'ROLL VALUES'}
             </button>
           </div>
         </div>
       )}
-      
-      {/* Attribute rows */}
+
+      {/* Attributes Panel */}
       <div className="bg-gray-800 rounded-lg overflow-hidden border border-blue-900 mb-8"
-           style={{ boxShadow: '0 0 15px rgba(30, 64, 175, 0.4), inset 0 0 10px rgba(30, 64, 175, 0.2)' }}>
+        style={{ boxShadow: '0 0 15px rgba(30, 64, 175, 0.4), inset 0 0 10px rgba(30, 64, 175, 0.2)' }}
+      >
         <div className="bg-gray-900 p-4 border-b border-gray-700 font-semibold text-blue-400 terminal-text">
-          ASSIGN VALUES TO ATTRIBUTES
+          {isTerran ? 'TERRAN ATTRIBUTE ASSIGNMENT' : 'NON-TERRAN ATTRIBUTE ASSIGNMENT'}
         </div>
-        
+
         {renderAttributeRow('BRAWN')}
         {renderAttributeRow('REFLEX')}
         {renderAttributeRow('NERVE')}
@@ -462,90 +477,27 @@ const AttributeGeneration = ({ character, updateCharacter }) => {
         {renderAttributeRow('GRIT')}
         {renderAttributeRow('GUILE')}
       </div>
-      
-      {/* Derived Statistics */}
-      <div className="mt-8 bg-gray-800 p-6 rounded-xl border border-purple-900 relative overflow-hidden"
-           style={{ boxShadow: '0 0 15px rgba(88, 28, 135, 0.5), inset 0 0 10px rgba(88, 28, 135, 0.3)' }}>
-        <div style={crtStyles.scanline}></div>
-        
-        <h3 className="text-lg font-bold mb-4 text-purple-400 terminal-text relative z-10">
-          DERIVED STATISTICS
-        </h3>
-        
-        <div className="grid grid-cols-3 gap-6 relative z-10">
-          <div className="bg-gray-900 p-4 rounded-lg relative"
-               style={{ 
-                 boxShadow: '0 0 10px rgba(37, 99, 235, 0.6), inset 0 0 8px rgba(37, 99, 235, 0.3)',
-                 border: '1px solid rgba(37, 99, 235, 0.5)'
-               }}>
-            <div className="absolute -top-3 -right-3 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center"
-                 style={{ boxShadow: '0 0 8px rgba(37, 99, 235, 0.8)' }}>
-              <Zap size={16} className="text-white" />
-            </div>
-            <div className="text-sm text-gray-400">Initiative</div>
-            <div className="text-2xl font-bold text-blue-400"
-                 style={{ textShadow: '0 0 8px rgba(96, 165, 250, 0.9)' }}>
-              {modifiedAttributes.REFLEX ? modifiedAttributes.REFLEX * 5 : '??'}%
-            </div>
-            <div className="text-xs mt-1 text-gray-500">REFLEX × 5</div>
-          </div>
-          
-          <div className="bg-gray-900 p-4 rounded-lg relative"
-               style={{ 
-                 boxShadow: '0 0 10px rgba(22, 163, 74, 0.6), inset 0 0 8px rgba(22, 163, 74, 0.3)',
-                 border: '1px solid rgba(22, 163, 74, 0.5)'
-               }}>
-            <div className="absolute -top-3 -right-3 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center"
-                 style={{ boxShadow: '0 0 8px rgba(22, 163, 74, 0.8)' }}>
-              <Zap size={16} className="text-white" />
-            </div>
-            <div className="text-sm text-gray-400">Solar Scouts Training</div>
-            <div className="text-2xl font-bold text-green-400"
-                 style={{ textShadow: '0 0 8px rgba(74, 222, 128, 0.9)' }}>
-              35%
-            </div>
-            <div className="text-xs mt-1 text-gray-500">Flat Skill %</div>
-          </div>
-          
-          <div className="bg-gray-900 p-4 rounded-lg relative"
-               style={{ 
-                 boxShadow: '0 0 10px rgba(126, 34, 206, 0.6), inset 0 0 8px rgba(126, 34, 206, 0.3)',
-                 border: '1px solid rgba(126, 34, 206, 0.5)'
-               }}>
-            <div className="absolute -top-3 -right-3 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center"
-                 style={{ boxShadow: '0 0 8px rgba(126, 34, 206, 0.8)' }}>
-              <Zap size={16} className="text-white" />
-            </div>
-            <div className="text-sm text-gray-400">Damage Soak</div>
-            <div className="text-2xl font-bold text-purple-400"
-                 style={{ textShadow: '0 0 8px rgba(192, 132, 252, 0.9)' }}>
-              {modifiedAttributes.GRIT ? modifiedAttributes.GRIT * 5 : '??'}%
-            </div>
-            <div className="text-xs mt-1 text-gray-500">GRIT × 5</div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Origin Attributes Info */}
-      <div className="mt-6 bg-gray-800 p-4 rounded-lg border border-yellow-900 relative overflow-hidden"
-           style={{ boxShadow: '0 0 15px rgba(161, 98, 7, 0.4), inset 0 0 10px rgba(161, 98, 7, 0.2)' }}>
-        <div style={crtStyles.scanline}></div>
-        
-        <div className="flex relative z-10">
-          <Info size={20} className="text-yellow-400 mr-2 flex-shrink-0 mt-0.5" 
-                style={{ filter: 'drop-shadow(0 0 5px rgba(250, 204, 21, 0.8))' }} />
-          <div>
-            <h4 className="font-bold text-yellow-400 terminal-text">
-              ORIGIN ATTRIBUTE MODIFIERS: {character.origin?.name.toUpperCase() || "UNKNOWN"}
-            </h4>
-            <p className="text-sm text-yellow-300" style={{ textShadow: '0 0 5px rgba(253, 224, 71, 0.7)' }}>
-              {character.origin?.attributeMods || "Select an origin to see attribute modifiers"}
-            </p>
-            <p className="text-xs mt-2 text-yellow-200" style={{ textShadow: '0 0 5px rgba(254, 240, 138, 0.7)' }}>
-              These modifiers are automatically applied after you assign your base attributes.
-            </p>
-          </div>
-        </div>
+
+      {/* Derived Stats Panel */}
+      <DerivedStatsPanel
+        character={character}
+        modifiedAttributes={modifiedAttributes}
+      />
+
+      {/* Status message about completion */}
+      <div className={`mt-6 p-4 rounded-lg text-center transition-all duration-300 ${allAttributesAssigned()
+        ? 'bg-green-900 border border-green-600'
+        : 'bg-yellow-900 border border-yellow-600'
+        }`}>
+        {allAttributesAssigned() ? (
+          <p className="text-green-300 font-bold">
+            All attributes assigned! You can proceed to the next step.
+          </p>
+        ) : (
+          <p className="text-yellow-300 font-bold">
+            You must assign values to all attributes before proceeding.
+          </p>
+        )}
       </div>
     </div>
   );
