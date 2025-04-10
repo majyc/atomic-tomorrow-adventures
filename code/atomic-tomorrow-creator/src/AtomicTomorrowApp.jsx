@@ -18,6 +18,10 @@ import './styles/raygun-buttons.css';
 import './styles/vacuum-tube-cards.css';
 import './styles/retro-terminal.css';
 import './styles/atomic-styles.css';
+import { EPITHETS } from './data/epithets';
+import { PROFESSIONS } from './data/professions';
+import { ORIGINS } from './data/origins'; 
+import { BACKGROUNDS } from './data/backgrounds';
 
 const AtomicTomorrowApp = () => {
   // State for current step
@@ -38,10 +42,10 @@ const AtomicTomorrowApp = () => {
   
   // State for character data
   const [character, setCharacter] = useState({
-    epithet: null,
-    profession: null,
-    origin: null,
-    background: null,
+    epithet: EPITHETS[0],
+    profession: PROFESSIONS[0],
+    origin: ORIGINS[0],
+    background: BACKGROUNDS[0],
     attributes: {
       BRAWN: 10,
       REFLEX: 10,

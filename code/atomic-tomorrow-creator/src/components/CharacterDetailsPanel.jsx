@@ -234,7 +234,7 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
         </div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         .terminal-text {
           font-family: "VT323", monospace;
           color: #4ade80;

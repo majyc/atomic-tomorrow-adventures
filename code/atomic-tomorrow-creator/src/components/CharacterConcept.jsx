@@ -31,21 +31,35 @@ const CharacterConcept = ({ character, updateCharacter }) => {
       if (character.epithet) {
         const index = EPITHETS.findIndex(e => e.id === character.epithet.id);
         if (index !== -1) newIndices.epithet = index;
+      } else {
+        updateCharacter(
+          { ...character, epithet: EPITHETS[0] } // Set default epithet if none exists
+        )
       }
       
       if (character.profession) {
         const index = PROFESSIONS.findIndex(p => p.id === character.profession.id);
         if (index !== -1) newIndices.profession = index;
+      } else {
+        updateCharacter(
+          { ...character, profession: PROFESSIONS[0] } // Set default profession if none exists
+        )
       }
       
       if (character.origin) {
         const index = ORIGINS.findIndex(o => o.id === character.origin.id);
         if (index !== -1) newIndices.origin = index;
+      } else {
+        updateCharacter(
+          { ...character, origin: ORIGINS[0] } // Set default origin if none exists
+        )
       }
       
       if (character.background) {
         const index = BACKGROUNDS.findIndex(b => b.id === character.background.id);
         if (index !== -1) newIndices.background = index;
+      } else {
+        
       }
       
       // Update state without triggering character update
@@ -55,7 +69,7 @@ const CharacterConcept = ({ character, updateCharacter }) => {
       setFocusedBackground(newIndices.background);
       setInitialized(true);
     }
-  }, [character, initialized]);
+  }, [character, initialized, updateCharacter]);
 
   // Handle epithet selection change
   const handleEpithetChange = (newIndex) => {
