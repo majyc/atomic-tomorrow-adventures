@@ -1,26 +1,33 @@
-// Character portrait data for Atomic Tomorrow
-// Defines the available portraits using a consistent file naming convention
-
-// Portrait naming scheme:
-// - Male portraits: m_1.jpg through m_20.jpg 
-// - Female portraits: f_1.jpg through f_20.jpg
-// Located in: public/portraits/ folder
+// Constants for portrait counts
+export const PORTRAIT_COUNTS = {
+  male: 30,   // Now 30 male portraits (previously 20)
+  female: 30  // Now 30 female portraits (previously 20)
+};
 
 // Portrait types and descriptions
-const PORTRAIT_TYPES = {
+// Extended to support additional portraits with meaningful descriptions
+export const PORTRAIT_TYPES = {
   male: [
     "Space Explorer", "Martian Pioneer", "Atomic Scientist", "Naval Captain",
     "Belt Prospector", "Lunar Engineer", "Galactic Trader", "Quantum Mechanic",
     "Rocket Pilot", "Void Scout", "Martian Ranger", "Astro-Diplomat",
     "Atomic Racer", "Solar Marine", "Orbital Engineer", "Security Agent",
-    "Xenobiologist", "Corporate Executive", "Interplanetary Spy", "Astro-Physician"
+    "Xenobiologist", "Corporate Executive", "Interplanetary Spy", "Astro-Physician",
+    // New descriptions for the additional 10 male portraits
+    "Void Jumper", "Cosmic Archaeologist", "Stellar Cartographer", "Asteroid Miner", 
+    "Cybernetic Engineer", "AI Specialist", "Space Marshal", "Atmospheric Scientist",
+    "Gravity Technician", "Radiation Expert"
   ],
   female: [
     "Space Explorer", "Martian Pioneer", "Atomic Scientist", "Fleet Commander",
     "Belt Prospector", "Lunar Engineer", "Galactic Trader", "Quantum Physicist",
     "Rocket Pilot", "Void Scout", "Martian Ranger", "Astro-Diplomat",
     "Atomic Racer", "Solar Marine", "Orbital Engineer", "Security Agent",
-    "Xenobiologist", "Corporate Executive", "Interplanetary Spy", "Astro-Physician"
+    "Xenobiologist", "Corporate Executive", "Interplanetary Spy", "Astro-Physician",
+    // New descriptions for the additional 10 female portraits
+    "Zero-G Specialist", "Alien Linguist", "Planetary Geologist", "Orbital Architect",
+    "Void Doctor", "Deep Space Pilot", "Quantum Navigator", "Terraform Engineer",
+    "Solar System Ambassador", "Galactic Strategist"
   ]
 };
 
@@ -28,12 +35,11 @@ const PORTRAIT_TYPES = {
 export const generatePortraitData = () => {
   const portraits = [];
   
-  // In a React app, static assets in the 'public' folder are accessible at the root URL
-  // So we'll use the following pattern for portrait paths
+  // Base path for portrait assets
   const basePath = '/portraits/';
   
   // Generate male portraits
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= PORTRAIT_COUNTS.male; i++) {
     if (i <= PORTRAIT_TYPES.male.length) {
       portraits.push({
         id: `male-${i}`,
@@ -45,7 +51,7 @@ export const generatePortraitData = () => {
   }
   
   // Generate female portraits
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= PORTRAIT_COUNTS.female; i++) {
     if (i <= PORTRAIT_TYPES.female.length) {
       portraits.push({
         id: `female-${i}`,
@@ -59,6 +65,5 @@ export const generatePortraitData = () => {
   return portraits;
 };
 
-// Export both PORTRAIT_TYPES (for dynamic generation) and PORTRAITS (for reference)
-export { PORTRAIT_TYPES };
+// Export the constants and portrait data
 export const PORTRAITS = generatePortraitData();

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import RetroPushButton from './RetroPushButton';
-import { PORTRAITS, PORTRAIT_TYPES } from '../utils/portraits';
-import { Shuffle } from 'lucide-react';
+import { Shuffle, ChevronLeft, ChevronRight } from 'lucide-react';
+
+// Import the updated portrait configuration
+import { PORTRAIT_COUNTS, PORTRAIT_TYPES } from '../utils/portraits';
 
 /**
- * Enhanced PortraitSelector with retro-atomic styling and generation button
+ * Enhanced PortraitSelector with retro-atomic styling and dynamic portrait support
  * 
  * @param {Object} props
  * @param {Object} props.selectedPortrait - Currently selected portrait
@@ -14,10 +15,24 @@ import { Shuffle } from 'lucide-react';
 const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference }) => {
   const [portraits, setPortraits] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [page, setPage] = useState(0);
+  const PORTRAITS_PER_PAGE = 6;
+  
+  // Calculate the maximum number of pages based on gender preference
+  const getMaxPages = () => {
+    // If random gender, we have access to all portraits
+    if (genderPreference === 'random') {
+      return Math.ceil((PORTRAIT_COUNTS.male + PORTRAIT_COUNTS.female) / PORTRAITS_PER_PAGE);
+    }
+    // Otherwise just the portraits for the selected gender
+    const count = genderPreference === 'male' ? PORTRAIT_COUNTS.male : PORTRAIT_COUNTS.female;
+    return Math.ceil(count / PORTRAITS_PER_PAGE);
+  };
   
   // Generate portraits on mount and when gender preference changes
   useEffect(() => {
     generatePortraits();
+    setPage(0); // Reset to first page when gender changes
   }, [genderPreference]);
 
   // Generate random portrait selection based on gender preference
@@ -27,12 +42,23 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
     // Slight delay to show loading effect
     setTimeout(() => {
       // Get gender to filter by (using the genderPreference prop)
-      // Map 'random' to null for the filter
       const gender = genderPreference !== 'random' ? genderPreference : null;
       
-      // Create a new random selection of portrait indices
-      const maxIndex = gender === 'male' || gender === 'female' ? 20 : 40;
-      const availableIndices = Array.from({ length: maxIndex }, (_, i) => i + 1);
+      // Create a array of portrait indices based on gender
+      let availableIndices = [];
+      
+      if (gender === 'male') {
+        // Only male portraits (1 to PORTRAIT_COUNTS.male)
+        availableIndices = Array.from({ length: PORTRAIT_COUNTS.male }, (_, i) => ({ gender: 'male', index: i + 1 }));
+      } else if (gender === 'female') {
+        // Only female portraits (1 to PORTRAIT_COUNTS.female)
+        availableIndices = Array.from({ length: PORTRAIT_COUNTS.female }, (_, i) => ({ gender: 'female', index: i + 1 }));
+      } else {
+        // Both genders
+        const maleIndices = Array.from({ length: PORTRAIT_COUNTS.male }, (_, i) => ({ gender: 'male', index: i + 1 }));
+        const femaleIndices = Array.from({ length: PORTRAIT_COUNTS.female }, (_, i) => ({ gender: 'female', index: i + 1 }));
+        availableIndices = [...maleIndices, ...femaleIndices];
+      }
       
       // Shuffle the array
       for (let i = availableIndices.length - 1; i > 0; i--) {
@@ -40,40 +66,43 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
         [availableIndices[i], availableIndices[j]] = [availableIndices[j], availableIndices[i]];
       }
       
-      // Take first 6 indices
-      const selectedIndices = availableIndices.slice(0, 6);
+      // Take first PORTRAITS_PER_PAGE indices (or fewer if not enough)
+      const selectedIndices = availableIndices.slice(0, PORTRAITS_PER_PAGE);
       
       // Generate portrait data for these indices
-      const selectedPortraits = [];
-      
-      selectedIndices.forEach(index => {
-        // For mixed gender selection, first half of indices are male, second half female
-        if (gender === 'female' || (gender === null && index > 20)) {
-          const femaleIndex = gender === null ? index - 20 : index;
-          if (femaleIndex <= PORTRAIT_TYPES.female.length) {
-            selectedPortraits.push({
-              id: `female-${femaleIndex}`,
-              name: PORTRAIT_TYPES.female[femaleIndex - 1],
-              path: `/portraits/f_${femaleIndex}.jpg`,
-              gender: 'female'
-            });
-          }
-        } else {
-          // Male portraits
-          if (index <= PORTRAIT_TYPES.male.length) {
-            selectedPortraits.push({
-              id: `male-${index}`,
-              name: PORTRAIT_TYPES.male[index - 1],
-              path: `/portraits/m_${index}.jpg`,
-              gender: 'male'
-            });
-          }
-        }
+      const selectedPortraits = selectedIndices.map(({ gender, index }) => {
+        const portraitTypes = gender === 'male' ? PORTRAIT_TYPES.male : PORTRAIT_TYPES.female;
+        const portraitName = index <= portraitTypes.length 
+          ? portraitTypes[index - 1] 
+          : `${gender === 'male' ? 'Male' : 'Female'} Character ${index}`;
+        
+        return {
+          id: `${gender}-${index}`,
+          name: portraitName,
+          path: `/portraits/${gender === 'male' ? 'm' : 'f'}_${index}.jpg`,
+          gender
+        };
       });
       
       setPortraits(selectedPortraits);
       setLoading(false);
     }, 300);
+  };
+  
+  // Navigate to next page
+  const nextPage = () => {
+    if (page < getMaxPages() - 1) {
+      setPage(page + 1);
+      generatePortraits();
+    }
+  };
+  
+  // Navigate to previous page
+  const prevPage = () => {
+    if (page > 0) {
+      setPage(page - 1);
+      generatePortraits();
+    }
   };
   
   // Handle image loading error
@@ -113,13 +142,41 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
           Character Portrait
         </h3>
 
-        {/* Retro Push Button for generating new options */}
-        <RetroPushButton
-          onClick={generatePortraits}
-          label="New Faces"
-          icon={<Shuffle className="w-4 h-4" />}
-          color="blue"
-        />
+        <div className="flex space-x-2">
+          {/* Page Navigation (only show if we have multiple pages) */}
+          {getMaxPages() > 1 && (
+            <div className="flex items-center mr-2 bg-gray-800 rounded-lg border border-gray-600 px-1">
+              <button 
+                onClick={prevPage}
+                disabled={page === 0 || loading}
+                className={`p-1 ${page === 0 ? 'text-gray-600' : 'text-gray-300 hover:text-blue-300'}`}
+              >
+                <ChevronLeft size={16} />
+              </button>
+              <span className="text-xs text-gray-400 mx-1">Page {page + 1}/{getMaxPages()}</span>
+              <button 
+                onClick={nextPage}
+                disabled={page >= getMaxPages() - 1 || loading}
+                className={`p-1 ${page >= getMaxPages() - 1 ? 'text-gray-600' : 'text-gray-300 hover:text-blue-300'}`}
+              >
+                <ChevronRight size={16} />
+              </button>
+            </div>
+          )}
+          
+          {/* Generate Button */}
+          <button
+            onClick={generatePortraits}
+            disabled={loading}
+            className="flex items-center px-3 py-1.5 bg-blue-800 text-blue-200 rounded hover:bg-blue-700 transition-colors"
+            style={{
+              boxShadow: '0 0 10px rgba(37, 99, 235, 0.5), inset 0 0 5px rgba(37, 99, 235, 0.3)',
+            }}
+          >
+            <Shuffle size={14} className="mr-1" />
+            {loading ? 'Loading...' : 'New Faces'}
+          </button>
+        </div>
       </div>
 
       {/* Portraits grid */}
@@ -153,11 +210,14 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
                   transition: 'filter 0.3s ease'
                 }}
               />
-              
-              {/* Removed the holographic overlay animation */}
             </div>
             
-            {/* Cockpit indicator light below portrait */}
+            {/* Portrait label */}
+            <div className="p-2 text-center">
+              <span className="text-xs text-gray-300">{portrait.name}</span>
+            </div>
+            
+            {/* Selection indicator */}
             <div className="flex justify-center mb-3 relative">
               <div 
                 className={`relative top-auto right-auto ${selectedPortrait?.id === portrait.id ? 'active glowing' : ''}`}
@@ -166,7 +226,7 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
                   display: 'block',
                   width: '14px',
                   height: '14px',
-                  marginTop: '12px',
+                  marginTop: '-6px',
                   borderRadius: '50%',
                   backgroundColor: selectedPortrait?.id === portrait.id ? '#ef4444' : '#4b5563',
                   border: '2px solid #6b7280',
