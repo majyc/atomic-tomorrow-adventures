@@ -7,7 +7,7 @@ The Mysterian attack on The Aphrodite's Pearl liner wasn't random - they were sp
 When your players investigate (either through their own initiative or official channels), they discover a crucial anomaly:
 
 * Highport's observatory tracked the attacking vessels entering Venus's atmosphere rather than departing the system
-* Deep-space monitoring stations report no Mysterian craft leaving Venus's vicinity after the attack
+* SID 2000 reports no Mysterian craft leaving Venus's vicinity after the attack
 * This breaks the established pattern of Mysterian "hit-and-run" tactics observed for decades
 
 ## Investigation Threads
