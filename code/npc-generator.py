@@ -104,15 +104,15 @@ professions = {
 
 origins = [
     "Terran", "Loonie", "Martian", "Venusian", "Belter", "Jovian", "Saturnian", 
-    "Deep Spacer", "Genmodded", "Red Martian", "Mercury Native", "Titan Colonist", 
-    "Neptunian", "Ceres Engineer", "Pluto Outpost"
+    "Deep Spacer", "Genmodded", "Red Martian", "Mercurian", "Titanian", 
+    "Neptunian", "Ceresian", "Plutonian"
 ]
 
 backgrounds = [
-    "Military Family", "Merchant Clan", "Frontier Homestead", "Academic Training", 
-    "Street Urchin", "Corporate Upbringing", "Aristocratic Family", "Spacer Family", 
-    "Religious Order", "Laboratory Subject", "Megacity Native", "Political Dynasty", 
-    "Colonist Child", "Underworld Family", "Entertainment Background"
+    "Military Family", "Merchant Clan", "Frontier Family", "Academic Family", 
+    "the Streets", "Corporate Drone Family", "Aristocratic Family", "Spacer Family", 
+    "Religious Order", "Research Laboratory", "Megacity Family", "Political Dynasty", 
+    "Colonist Family", "Underworld Family", "Showbiz Family"
 ]
 
 # Skill descriptions by profession categories

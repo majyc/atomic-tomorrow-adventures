@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import GenderSelector from './GenderSelector';
-import NameInput from './NameInput'; // Proper import of our NameInput component
+import NameInput from './NameInput';
 import AtomicKnob from './AtomicKnob';
 import RetroToggleSwitch from './RetroToggleSwitch';
 import RetroTerminalInput from './RetroTerminalInput';
+import RandomTraitButton from './RandomTraitButton';
 import { PERSONALITY_TRAITS, APPEARANCE_TRAITS } from '../data/descriptions';
 
 /**
  * Character Details Panel Component
  * Manages character name, age, appearance, and personality
- * Now properly using the NameInput component
+ * Now with trait randomization functionality
  */
 const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, onGenderChange }) => {
   // State for character details
@@ -120,7 +121,15 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
           {/* Appearance Trait Knob Selector */}
           {showAppearanceSelector && (
             <div className="mt-4 p-4 bg-gray-900 rounded-lg border border-indigo-900 trait-suggestion">
-              <div className="mb-2 text-indigo-400 font-medium text-center">Appearance Trait Suggestions</div>
+              <div className="flex justify-between items-center mb-2">
+                <div className="text-indigo-400 font-medium">Appearance Trait Suggestions</div>
+                {/* Add Random Trait Button */}
+                <RandomTraitButton 
+                  onRandomize={setFocusedAppearanceIndex}
+                  maxIndex={APPEARANCE_TRAITS.length - 1}
+                  color="indigo"
+                />
+              </div>
               
               <div className="flex justify-center items-center mb-3">
                 <button
@@ -189,7 +198,15 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
           {/* Personality Trait Knob Selector */}
           {showPersonalitySelector && (
             <div className="mt-4 p-4 bg-gray-900 rounded-lg border border-purple-900 trait-suggestion">
-              <div className="mb-2 text-purple-400 font-medium text-center">Personality Trait Suggestions</div>
+              <div className="flex justify-between items-center mb-2">
+                <div className="text-purple-400 font-medium">Personality Trait Suggestions</div>
+                {/* Add Random Trait Button */}
+                <RandomTraitButton 
+                  onRandomize={setFocusedPersonalityIndex}
+                  maxIndex={PERSONALITY_TRAITS.length - 1}
+                  color="purple"
+                />
+              </div>
               
               <div className="flex justify-center items-center mb-3">
                 <button
@@ -234,7 +251,7 @@ const CharacterDetailsPanel = ({ character, updateCharacter, genderPreference, o
         </div>
       </div>
       
-      <style>{`
+      <style jsx>{`
         .terminal-text {
           font-family: "VT323", monospace;
           color: #4ade80;

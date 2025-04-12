@@ -84,9 +84,9 @@ professions = {
 }
 
 origins = [
-    "Terran", "Loonie", "Martian", "Venusian", "Belter", "Jovian", "Saturnian", 
-    "Deep Spacer", "Genmodded", "Red Martian", "Mercury Native", "Titan Colonist", 
-    "Neptunian", "Ceres Engineer", "Pluto Outpost"
+    "Terra", "Luna", "Mars", "Venus", "the Belt", "Jupiter", "Saturn", 
+    "Deep Space", "a Genmodded", "a Red Martian", "Mercury", "Titan", 
+    "Neptune", "Ceres", "Pluto"
 ]
 
 backgrounds = [
