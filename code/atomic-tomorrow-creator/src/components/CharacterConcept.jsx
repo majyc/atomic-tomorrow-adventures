@@ -6,6 +6,7 @@ import { ORIGINS } from '../data/origins';
 import { BACKGROUNDS } from '../data/backgrounds';
 import AccessPanel from './AccessPanel';
 import AtomicKnob from './AtomicKnob';
+import RandomConceptButton from './RandomConceptButton'; // Import the new component
 
 const CharacterConcept = ({ character, updateCharacter }) => {
   // State for currently focused item in each column
@@ -104,6 +105,29 @@ const CharacterConcept = ({ character, updateCharacter }) => {
     updateCharacter({
       ...character,
       background: BACKGROUNDS[newIndex]
+    });
+  };
+  
+  // Handle randomization of all concept selections
+  const handleRandomizeConcept = (randomSelections) => {
+    // Update the focus states for knob displays
+    const epithetIndex = EPITHETS.findIndex(e => e.id === randomSelections.epithet.id);
+    const professionIndex = PROFESSIONS.findIndex(p => p.id === randomSelections.profession.id);
+    const originIndex = ORIGINS.findIndex(o => o.id === randomSelections.origin.id);
+    const backgroundIndex = BACKGROUNDS.findIndex(b => b.id === randomSelections.background.id);
+    
+    setFocusedEpithet(epithetIndex !== -1 ? epithetIndex : 0);
+    setFocusedProfession(professionIndex !== -1 ? professionIndex : 0);
+    setFocusedOrigin(originIndex !== -1 ? originIndex : 0);
+    setFocusedBackground(backgroundIndex !== -1 ? backgroundIndex : 0);
+    
+    // Update the character data
+    updateCharacter({
+      ...character,
+      epithet: randomSelections.epithet,
+      profession: randomSelections.profession,
+      origin: randomSelections.origin,
+      background: randomSelections.background
     });
   };
 
@@ -348,7 +372,16 @@ const CharacterConcept = ({ character, updateCharacter }) => {
       
       <div className="p-6 rounded-lg bg-gray-900">
       </div>
-      <h2 className="text-2xl font-bold mb-6 text-center text-green-400" style={{ textShadow: '0 0 10px rgba(74, 222, 128, 0.6)' }}>STEP 1: CHOOSE YOUR CHARACTER CONCEPT</h2>
+      
+      {/* Header with title and Random Concept Button */}
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold text-green-400" style={{ textShadow: '0 0 10px rgba(74, 222, 128, 0.6)' }}>
+          STEP 1: CHOOSE YOUR CHARACTER CONCEPT
+        </h2>
+        
+        {/* Add the Random Concept Button to the header */}
+        <RandomConceptButton onRandomize={handleRandomizeConcept} />
+      </div>
 
       <div className="grid grid-cols-4 gap-6">
         {/* Each column rendered with appropriate data and focused index */}
