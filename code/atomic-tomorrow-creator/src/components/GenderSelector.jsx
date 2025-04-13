@@ -1,123 +1,88 @@
 import React from 'react';
 
 /**
- * Gender Selector Component
- * Uses the same atomic-button styling as the original PortraitSelector
+ * Enhanced GenderSelector component with red dome light indicators
+ * and round silver buttons for a retro-futuristic aesthetic
+ * 
+ * @param {Object} props
+ * @param {string} props.selectedGender - The currently selected gender ('male', 'female', or 'random')
+ * @param {Function} props.onSelectGender - Function to call when a gender is selected
  */
 const GenderSelector = ({ selectedGender, onSelectGender }) => {
+  const genderOptions = [
+    { id: 'male', label: 'Male', symbol: '♂' },
+    { id: 'female', label: 'Female', symbol: '♀' },
+    { id: 'random', label: 'Random', symbol: '?' }
+  ];
+
   return (
-    <div className="bg-gray-800 p-6 rounded-lg border border-blue-900 flex items-center justify-center mb-4">
-      {/* Retro-atomic control panel styling */}
-      <style>{`
-        /* Button styling */
-        .atomic-button {
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          background-color: #b91c1c;
-          border: 4px solid #9ca3af;
-          position: relative;
-          transition: all 0.2s;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 15px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
+    <div className="flex justify-center p-4 gap-6 bg-gray-900 rounded-b-lg mb-4 border-t border-blue-900">
+      {genderOptions.map(option => {
+        const isSelected = selectedGender === option.id;
         
-        .atomic-button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 45%;
-          background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
-          border-radius: 50% 50% 0 0;
-          pointer-events: none;
-        }
-        
-        .atomic-button.pressed {
-          background-color: #7f1d1d;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.5);
-          transform: translateY(2px);
-        }
-        
-        /* Button label styling */
-        .button-label {
-          background-color: #1e293b;
-          color: #e2e8f0;
-          border: 2px solid #475569;
-          border-radius: 4px;
-          padding: 3px 6px;
-          font-size: 12px;
-          text-align: center;
-          position: relative;
-          margin-top: 10px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          font-weight: 500;
-          min-width: 70px;
-          width: 100%;
-        }
-        
-        /* Rivets on button labels */
-        .button-label::before,
-        .button-label::after {
-          content: '';
-          position: absolute;
-          width: 6px;
-          height: 6px;
-          background-color: #64748b;
-          border-radius: 50%;
-          top: 50%;
-          transform: translateY(-50%);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
-        }
-        
-        .button-label::before {
-          left: 3px;
-        }
-        
-        .button-label::after {
-          right: 3px;
-        }
-      `}</style>
-      
-      <div className="relative flex items-center">
-        <div className="flex items-end justify-center w-full space-x-12">
-          <div className="flex flex-col items-center">
+        return (
+          <div key={option.id} className="flex flex-col items-center relative">
+            {/* Dome light indicator above the button - always red */}
+            <div className="relative mb-1">
+              <div 
+                className="w-4 h-4 rounded-full mb-1 transition-all duration-300"
+                style={{ 
+                  backgroundColor: isSelected ? '#ef4444' : '#1f2937',
+                  boxShadow: isSelected ? '0 0 10px rgba(239, 68, 68, 0.7)' : 'none'
+                }}
+              >
+                {/* Inner light reflection */}
+                {isSelected && (
+                  <div 
+                    className="absolute top-0.5 left-0.5 w-1.5 h-1.5 bg-white rounded-full opacity-60"
+                  ></div>
+                )}
+              </div>
+            </div>
+            
+            {/* Round silver button with retro style */}
             <button
-              onClick={() => onSelectGender('male')}
-              className={`atomic-button ${selectedGender === 'male' ? 'pressed' : ''}`}
+              onClick={() => onSelectGender(option.id)}
+              className="relative flex items-center justify-center w-16 h-16 rounded-full transition-all duration-200 ease-in-out"
+              style={{
+                background: isSelected 
+                  ? 'linear-gradient(135deg, #4b5563, #1f2937)' 
+                  : 'linear-gradient(135deg, #9ca3af, #4b5563)',
+                border: isSelected
+                  ? '2px solid #374151'
+                  : '2px solid #6b7280',
+                boxShadow: isSelected
+                  ? 'inset 0 3px 6px rgba(0, 0, 0, 0.5), 0 0 5px rgba(255, 255, 255, 0.1)'
+                  : 'inset 0 -2px 5px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.1)',
+                transform: isSelected ? 'translateY(2px)' : 'translateY(0)'
+              }}
             >
-              <span className="text-2xl font-bold" style={{ textShadow: '1px 1px 1px rgba(0,0,0,0.5)', color: '#f1f1f1' }}>♂</span>
+              {/* Metal rim */}
+              <div className="absolute inset-0.5 rounded-full pointer-events-none" 
+                style={{
+                  borderTop: isSelected ? '1px solid rgba(255, 255, 255, 0.2)' : '1px solid rgba(255, 255, 255, 0.5)',
+                  borderBottom: isSelected ? '1px solid rgba(0, 0, 0, 0.3)' : '1px solid rgba(0, 0, 0, 0.1)'
+                }}
+              />
+              
+              {/* Symbol */}
+              <span className="text-3xl font-bold" 
+                style={{ 
+                  color: isSelected ? '#d1d5db' : '#f3f4f6',
+                  textShadow: '0 1px 2px rgba(0, 0, 0, 0.5)'
+                }}
+              >
+                {option.symbol}
+              </span>
             </button>
-            <div className="button-label">Male</div>
+            
+            {/* Label */}
+            <span className={`mt-2 text-sm font-medium ${isSelected ? 'text-white' : 'text-gray-400'}`}>
+              {option.label}
+            </span>
           </div>
-          
-          <div className="flex flex-col items-center">
-            <button
-              onClick={() => onSelectGender('female')}
-              className={`atomic-button ${selectedGender === 'female' ? 'pressed' : ''}`}
-            >
-              <span className="text-2xl font-bold" style={{ textShadow: '1px 1px 1px rgba(0,0,0,0.5)', color: '#f1f1f1' }}>♀</span>
-            </button>
-            <div className="button-label">Female</div>
-          </div>
-          
-          <div className="flex flex-col items-center">
-            <button
-              onClick={() => onSelectGender('random')}
-              className={`atomic-button ${selectedGender === 'random' ? 'pressed' : ''}`}
-            >
-              <span className="text-2xl font-bold" style={{ textShadow: '1px 1px 1px rgba(0,0,0,0.5)', color: '#f1f1f1' }}>?</span>
-            </button>
-            <div className="button-label">Random</div>
-          </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 };
