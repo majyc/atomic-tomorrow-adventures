@@ -1,4 +1,3 @@
-
 # GANYMEDE: CORNUCOPIA OF THE OUTER SYSTEM
 
 ## THE FORERUNNER LEGACY
@@ -111,7 +110,6 @@ The ancient machinery beneath Galileo Regia is showing signs of activating new s
 | Earth to Ganymede  | 120-160 hours           | 35-52 minutes        |
 | Mars to Ganymede   | 110-150 hours           | 25-45 minutes        |
 | Ganymede to Saturn | 70-90 hours             | 68-84 minutes        |
-
 
 ## WHERE THE FISH ARE JUMPING
 
@@ -228,4 +226,4 @@ Traditional ceremony performed before major diving expeditions or when launching
 
 This aquaculture-focused expansion of Ganymede creates a distinctive identity for the moon within the Jupiter system while maintaining the retro-futuristic pulp aesthetic of Atomic Tomorrow. The mysterious internal ocean provides endless adventure possibilities, from corporate intrigue to exploration of the unknown deep, while the practical food production aspect gives Ganymede a crucial economic role in the Solar System.
 
-As they say in the outer system marketing campaigns: "Ganymede Krill: The Skill That Your Tummies Fill!"
+As they say in the outer system marketing campaigns: "Ganymede Krill: The Swill That Will Your Tummies Fill!"

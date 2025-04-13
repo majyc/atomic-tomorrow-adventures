@@ -1,4 +1,133 @@
-# MERCURY: THE METAL PLANET
+# MERCURY: CROSSROADS OF THE SOLAR SYSTEM
+
+## PORT HERMES ORBITAL COMPLEX
+
+Port Hermes isn't a surface installation but rather a massive orbital facility in Mercury's orbit, strategically positioned to maintain constant shade from the planet while having direct access to shipping lanes to all other planets.
+
+### Physical Structure
+
+* **Ring Configuration** : A rotating wheel design with multiple docking spokes extending outward
+* **Atomic Cooling System** : Massive radiator fins extend away from the Sun, glowing blue with the energy they dissipate
+* **Reflective Surfaces** : The entire station is coated in blindingly reflective material to reject solar radiation
+* **Sectional Design** : The station is divided into planetary sectors, each mimicking the gravity and atmosphere of major worlds
+
+### Key Facilities
+
+1. **The Great Switchyard**
+   * Massive central docking complex where cargo is transferred between vessels
+   * Robotic loading systems that can rapidly move standardized cargo containers
+   * Traffic control center with a giant atomic-powered navigational calculator
+   * Customs and inspection facilities for each planetary authority
+2. **The Crossroads Market**
+   * Massive free trade zone where merchants from all planets display their wares
+   * Divided into sections for each world's products, with clear environmental boundaries
+   * Central auction hall where rare goods from across the system change hands
+   * Banking facilities representing every major planetary currency
+3. **The Navigator's Guild Hall**
+   * Where the elite pilots who navigate Mercury's challenging approach paths gather
+   * Contains the most accurate orbital charts in the system, continuously updated
+   * Training simulators for Mercury approach trajectories
+   * Memorial wall listing pilots lost to "the Mercury Run"
+4. **Diplomatic Quarter**
+   * Neutral ground where representatives from warring factions can meet
+   * Embassies from every inhabited world maintain offices here
+   * Secure communication systems to each planetary capital
+   * Treaty signing chambers where major interplanetary agreements are formalized
+
+## TRANSIT SYSTEM REVISION
+
+Let's update the Orbital Distance Table to incorporate the Mercury advantage:
+
+### Mercury Transit Calculation
+
+For any journey between two planets, compare:
+
+1. Direct transit time based on current Distance Class
+2. Combined transit time from origin to Mercury plus Mercury to destination
+
+ **Mercury's Switching Efficiency** : Due to the well-established routes and specialized facilities, transfers through Port Hermes reduce the effective distance by one class (minimum Class A).
+
+### Example Calculation
+
+* Mars to Jupiter (Distance Class F): 315 hours direct
+* Mars to Mercury (Distance Class D): 145 hours
+* Mercury to Jupiter (Distance Class C): 265 hours
+* Total via Mercury: 410 hours
+
+In this case, direct would be faster. But consider:
+
+* Mars to Jupiter (Distance Class G): 330 hours direct
+* Mars to Mercury (Distance Class C): 125 hours
+* Mercury to Jupiter (Distance Class D): 275 hours
+* Total via Mercury: 400 hours
+
+With the switching efficiency bonus, Mercury transit becomes Class C: 380 hours, making it the faster option during poor orbital alignments.
+
+## THE MERCURY SHIPPING GUILD
+
+A powerful organization that controls the vital transit hub, with influential members across the Solar System.
+
+### Guild Structure
+
+* **Grand Harbormaster** : The supreme authority over Mercury shipping lanes
+* **Route Masters** : Experts in specific interplanetary trajectories
+* **Cargo Factors** : Specialists in matching available cargo space with freight needs
+* **Guild Pilots** : Elite navigators trained specifically for Mercury's challenging approaches
+
+### Guild Benefits
+
+Characters with Mercury Shipping Guild connections gain:
+
+* Priority docking at Port Hermes
+* 20% discount on transfer fees
+* Access to classified shipping manifests
+* Warning about impending price fluctuations in various markets
+
+## MERCURY ORBITAL SOCIETY
+
+The unique environment of Port Hermes has created a distinctive culture unlike anywhere else in the Solar System.
+
+### Cultural Elements
+
+* **Status by Mobility** : One's importance is measured by how many worlds they regularly visit
+* **Chrono-Consciousness** : With vessels arriving from all parts of the system, multiple time standards operate simultaneously
+* **Fashion Fusion** : Clothing styles from all planets mix in distinctive combinations
+* **Neutral Accent** : Mercurian orbital residents develop a distinctive accent that blends all planetary dialects
+
+### Orbital Vs. Surface
+
+While Port Hermes represents the height of interplanetary civilization, Mercury's surface remains a harsh frontier:
+
+* **Surface Mining Operations** : Automated and remote-controlled for the most part
+* **Scientific Outposts** : In the more habitable twilight zone
+* **"Sunside Salvage"** : Daring operations to recover valuable materials from the scorching daylight side
+* **Night Side Energy Storage** : Facilities that store massive amounts of energy during the long night
+
+## GAME MECHANICS INTEGRATION
+
+### Mercury Connection Advantages (d10)
+
+1. **Shipping Priority** : Reduce transit time by 10% through expedited handling
+2. **Insider Information** : Learn of price disparities between planets before others
+3. **Customs Clearance** : Bypass normal inspection procedures for "sensitive" cargo
+4. **Guild Voucher** : One-time access to restricted Guild facilities
+5. **Docking Preference** : Guaranteed berth even during peak traffic periods
+6. **Cargo Allocation** : Access to space on fully-booked vessels
+7. **Manifest Access** : Information about what other ships are carrying
+8. **Transit Alert** : Advance warning of route disruptions or delays
+9. **Repair Priority** : Jump to the front of the line for shipyard services
+10. **Navigator Assignment** : Services of an elite Mercury approach pilot
+
+### Trade System Integration
+
+When using Mercury as a trading hub:
+
+* +20% to Market Analysis rolls (greater information availability)
+* Wider variety of goods (treat Availability rolls as one category better)
+* Higher competition (treat Price rolls as one category worse)
+* Special "Mercury Exclusive" goods only available at Port Hermes
+
+# THE METAL PLANET
 
 ## PLANETARY OVERVIEW
 
