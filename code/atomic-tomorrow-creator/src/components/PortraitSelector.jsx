@@ -75,11 +75,14 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
         const portraitName = index <= portraitTypes.length 
           ? portraitTypes[index - 1] 
           : `${gender === 'male' ? 'Male' : 'Female'} Character ${index}`;
-        
+        const portraitPath = `portraits/${gender === 'male' ? 'm' : 'f'}_${index}.jpg`;
+        const fullPath = `${import.meta.env.BASE_URL}portraits/${gender === 'male' ? 'm' : 'f'}_${index}.jpg`;
+
         return {
           id: `${gender}-${index}`,
           name: portraitName,
-          path: `/portraits/${gender === 'male' ? 'm' : 'f'}_${index}.jpg`,
+          path: portraitPath,
+          fullPath: fullPath,
           gender
         };
       });
@@ -200,7 +203,7 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
             <div className="w-full h-44 overflow-hidden relative">
               <img
                 src={portrait.path}
-                alt={portrait.name}
+                alt={'Character Portrait ' + portrait.id }
                 className="w-full h-full object-cover object-top"
                 onError={handleImageError}
                 style={{
@@ -213,8 +216,11 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
             </div>
             
             {/* Portrait label */}
+            {/* these are commented out for now, because they don't fit what the portrait is about
+                we'd need to add some metadata to the portraits to make this work
+                */}
             <div className="p-2 text-center">
-              <span className="text-xs text-gray-300">{portrait.name}</span>
+              {/*<span className="text-xs text-gray-300">{portrait.name}</span>*/}
             </div>
             
             {/* Selection indicator */}

@@ -3,10 +3,11 @@ layout: default
 title: Atomic Tomorrow Medical Dilemmas
 ---
 
-# ATOMIC TOMORROW ADVENTURES
+## ATOMIC TOMORROW ADVENTURES
+
 ## MEDICAL DILEMMAS SYSTEM
 
-*"Dammit Jim, I'm a doctor, not a miracle worker! I've got three treatment options, and none of them are pretty!"*
+> "Dammit Jim, I'm a doctor, not a miracle worker! I've got three treatment options, and none of them are pretty!"
 
 ### CORE MEDICAL PHILOSOPHY
 

@@ -2,7 +2,6 @@
 layout: default
 title: Atomic Tomorrow Medical System
 ---
-
 # ATOMIC TOMORROW ADVENTURES: MEDICAL SYSTEM
 
 ## CORE WOUND MECHANICS
@@ -38,10 +37,6 @@ Location can be determined using the ones digit of the attack roll, or specified
 | 5-6   | Arms                     |
 | 7-8   | Legs                     |
 | 9-0   | Extremities (hands/feet) |
-
-### WOUND SPECIFICATION TABLE (BY DAMAGE TYPE)
-
-*(Tables remain unchanged)*
 
 ## TREATMENT OPTIONS
 
@@ -190,16 +185,16 @@ After any treatment, the physician makes a Medicine check. On failure, roll on t
 
 #### LONG-TERM COMPLICATION TABLE (Roll percentile dice)
 
-| Roll % | Complication Type                | Effect                                                                                                     |
-| ------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| 01-20  | **Medication Sensitivity** | Patient develops allergy to specific treatment; future uses trigger severe reactions                       |
-| 21-40  | **Chronic Pain**           | Injury site flares up during stress; GRIT check in combat or high-pressure situations or suffer -20% penalty  |
-| 41-60  | **Weakened Structure**     | Affected area takes +1 damage from future injuries until given extended medical care                       |
-| 61-70  | **Neural Adaptation**      | Treatment becomes half as effective with each subsequent use on this patient                               |
-| 71-80  | **Psychological Trauma**   | NERVE check when in similar situations to when injury occurred or experience flashbacks                  |
-| 81-90  | **Secondary Condition**    | Develops related medical condition requiring ongoing management (referee's choice based on injury)         |
-| 91-95  | **Mysterious Symptoms**    | Strange effects with no clear cause (glowing under certain light, unusual sensitivity, etc.)               |
-| 96-00  | **Beneficial Mutation**    | Injury site develops unusual beneficial property (enhanced sensory perception, increased resilience, etc.) |
+| Roll % | Complication Type                | Effect                                                                                                       |
+| ------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| 01-20  | **Medication Sensitivity** | Patient develops allergy to specific treatment; future uses trigger severe reactions                         |
+| 21-40  | **Chronic Pain**           | Injury site flares up during stress; GRIT check in combat or high-pressure situations or suffer -20% penalty |
+| 41-60  | **Weakened Structure**     | Affected area takes +1 damage from future injuries until given extended medical care                         |
+| 61-70  | **Neural Adaptation**      | Treatment becomes half as effective with each subsequent use on this patient                                 |
+| 71-80  | **Psychological Trauma**   | NERVE check when in similar situations to when injury occurred or experience flashbacks                      |
+| 81-90  | **Secondary Condition**    | Develops related medical condition requiring ongoing management (referee's choice based on injury)           |
+| 91-95  | **Mysterious Symptoms**    | Strange effects with no clear cause (glowing under certain light, unusual sensitivity, etc.)                 |
+| 96-00  | **Beneficial Mutation**    | Injury site develops unusual beneficial property (enhanced sensory perception, increased resilience, etc.)   |
 
 ### STACKED TREATMENTS COMPLICATIONS
 
@@ -336,7 +331,3 @@ Different medical specialists have unique advantages:
 - Enables mental control over physiological processes
 - Allows Psychotropic Analgesic treatment
 - Requires 6 hours to recharge between uses
-
-## EXAMPLE MEDICAL SCENARIOS
-
-*(Scenarios remain unchanged)*

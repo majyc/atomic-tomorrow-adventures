@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD036 -->
 # Venus Streamlined Encounter Cards
 
 *These cards provide focused opportunities and hazards that can be triggered when players fully explore a hex or when you need a dramatic event. Each card presents a clear situation with meaningful choices and consequences.*

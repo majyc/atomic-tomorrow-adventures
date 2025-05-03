@@ -182,8 +182,8 @@ const CharacterSheet = ({ character, updateCharacter }) => {
               {character.portrait ? (
                 <div className="w-full h-full relative">
                   <img
-                    src={character.portrait.path}
-                    alt={character.portrait.name || "Character portrait"}
+                    src={character.portrait.fullPath}
+                    alt={"Character portrait"}
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       // Hide the image and show the fallback

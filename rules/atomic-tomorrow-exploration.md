@@ -1,4 +1,4 @@
-You're absolutely right - let's dial back the visibility to make it more streamlined and exploration-focused. Here's the revised approach with tiered visibility:
+<!-- markdownlint-disable MD036 -->
 
 # ATOMIC TOMORROW: FRONTIER HEXPLORATION SYSTEM
 
@@ -20,8 +20,8 @@ You're absolutely right - let's dial back the visibility to make it more streaml
 
 ### High Visibility Terrain (Mountains, Towers, Plateaus)
 
-* **Draw ONE feature card**
-* Can determine adjacent terrain with hex flower rolls before moving
+* **Draw ONE feature card in each "forward" direction**
+* Can determine adjacent terrain with hex flower rolls before moving, but only roll if they announce they head in that direction.
 * Strategic advantage in planning
 * Examples: Mountain peaks, observation towers, elevated plateaus
 
@@ -39,7 +39,7 @@ Based on visibility tier:
 
 * **Low** : Nothing beyond current hex
 * **Standard** : Features on ONE direction card
-* **High** : Features on ONE direction card + adjacent terrain types (hex flower rolls)
+* **High** : Features on ONE direction card in each adjacent terrain
 
 ### 3. PLAYER DECISIONS
 
@@ -47,15 +47,12 @@ Based on visibility tier:
 * Explore current hex thoroughly or move on
 * Navigate using visible features or planetary navigation aids
 
-## THE MULTI-FEATURE CARD
+## THE FEATURE CARD
 
-Each feature card shows 1-4 visible features positioned around card edges:
+Each feature card shows one visible feature, in the direction where the card is placed
 
 * Position indicates relative direction from current hex
 * Only drawn when visibility allows
-* Randomly rotated before revealing
-
-This minimalist approach creates meaningful exploration with minimal drawing while still maintaining the fog of war that makes exploration exciting.
 
 ## EXAMPLE OF PLAY
 
@@ -65,9 +62,9 @@ This minimalist approach creates meaningful exploration with minimal drawing whi
 
  **GM** : "You follow the winding canyon for several hours. I'll roll on the hex flower to determine where it leads." *Rolls* "The canyon gradually widens and opens into a broad Martian plain. This is standard visibility terrain."
 
-*Places new terrain card*
+*Places new blank terrain index card and marks it with the type and feature*
 
-*Draws and randomly rotates one multi-feature card*
+*Draws one new feature card for what's visible in the distance*
 
 "From this vantage point, you can see an abandoned outpost to the north, strange rock formations to the southeast, and what appears to be a dust storm on the horizon to the west."
 
@@ -75,11 +72,11 @@ This minimalist approach creates meaningful exploration with minimal drawing whi
 
  **GM** : "You travel north toward the outpost. I'll roll on the hex flower again." *Rolls* "As you approach, you find yourself in rocky badlands terrain with the outpost sitting atop a small rise."
 
-*Places new terrain card*
+*Places new blank index card and marks it up*
 
 "This is still standard visibility terrain, so I'll draw one feature card again."
 
-*Draws and rotates feature card*
+*Draws one feature card*
 
 "From here, you can see a glinting object that might be a crashed ship to the northeast, a dried canal to the northwest, and a strange red haze to the east."
 
@@ -101,175 +98,6 @@ This minimalist approach creates meaningful exploration with minimal drawing whi
 
 "The area to the south appears to be impact crater terrain, to the southeast is dust canyon, to the southwest is a small oasis, and the other directions are various types of rocky plains.
 
-## SUCCESS QUALITY IMPLEMENTATION
-
-Using the core d100 system with special interpretation of doubles and rolls ending in 0 or 5:
-
-* **Ordinary Success** : Basic outcome achieved
-* **Special Success** (roll ending in 0 or 5): Enhanced outcome
-* **Critical Success** (doubles under skill): Superior outcome
-* **Special Failure** (roll ending in 0 or 5 over skill): Minor complication
-* **Critical Failure** (doubles over skill): Major complication
-
-## LANDMARK ADVANTAGES & HAZARDS
-
-### ELEVATED POSITIONS (Mountains, Plateaus, Towers)
-
-**Visibility Advantage:**
-
-* **Ordinary Success** : See landmarks in 1 additional adjacent hex
-* **Special Success** : See landmarks in 2 additional adjacent hexes
-* **Critical Success** : Determine terrain types for all adjacent hexes (hex flower rolls)
-
-**Navigation Reference:**
-
-* When returning to previously visited areas, navigation checks gain +20%
-* On critical success, can establish a permanent navigation marker (automatic success when navigating toward it)
-
-**Weather Exposure Hazard:**
-
-* Each additional hour spent at elevation requires GRIT check
-* Special failure: Lose 1 Supply Point to environmental exposure
-* Critical failure: Lose 2 Supply Points and take minor injury
-
-### LOW GROUND (Canyons, Valleys, Caves)
-
-**Shelter Advantage:**
-
-* Automatically reduces environmental hazard effects by one level
-* On critical success on any Survival check, gain +1 Supply Point from found resources
-
-**Concealment Advantage:**
-
-* **Ordinary Success** : -20% to others' attempts to track you
-* **Special Success** : -40% to tracking attempts
-* **Critical Success** : Considered completely hidden from pursuit
-
-**Confinement Hazard:**
-
-* When threats appear, escape attempts require REFLEX check
-* Special failure: Delayed escape (threat gets first action)
-* Critical failure: Trapped until external help or extraordinary measures
-
-### WATER FEATURES (Rivers, Springs, Lakes)
-
-**Resource Advantage:**
-
-* **Ordinary Success** on Survival check: Replenish 1 Supply Point
-* **Special Success** : Replenish 2 Supply Points
-* **Critical Success** : Replenish 3 Supply Points plus discover useful resource
-
-**Navigation Advantage:**
-
-* Following water features requires no navigation checks
-* Special success on Geography check reveals where water leads
-* Critical success reveals entire water system on map
-
-**Environmental Hazard:**
-
-* Check water safety with Science (Biology) check
-* Special failure: Minor contamination (temporary penalties)
-* Critical failure: Serious contamination (illness requiring treatment)
-
-### RUINS & STRUCTURES (Outposts, Ancient Cities, Crashed Ships)
-
-**Discovery Advantage:**
-
-* **Ordinary Success** on Investigation: Find common supplies or information
-* **Special Success** : Discover valuable technology or data
-* **Critical Success** : Uncover rare artifact or crucial intelligence
-
-**Structural Hazard:**
-
-* When exploring extensively, make Engineering check
-* Special failure: Minor collapse (blocked passage)
-* Critical failure: Major collapse (potential injury and trapped)
-
-**Defensive Systems Hazard:**
-
-* When accessing sensitive areas, make Security check
-* Special failure: Silent alarm (attracts attention later)
-* Critical failure: Active defense system activation
-
-### UNUSUAL PHENOMENA (Thermal Vents, Crystals, Anomalies)
-
-**Scientific Value:**
-
-* **Ordinary Success** on Science check: Gain basic understanding
-* **Special Success** : Make scientific breakthrough (+20% to related future checks)
-* **Critical Success** : Major discovery (potential game-changing advantage)
-
-**Resource Potential:**
-
-* **Ordinary Success** on relevant skill: Extract 1 unique resource
-* **Special Success** : Extract 2 unique resources
-* **Critical Success** : Discover renewable resource source
-
-**Unpredictable Effects:**
-
-* When interacting directly, make NERVE check
-* Special failure: Temporary equipment malfunction
-* Critical failure: Significant equipment damage or physiological effect
-
-## MOVEMENT & NAVIGATION
-
-### FOLLOWING ESTABLISHED PATHS
-
-**Automatic Benefits:**
-
-* No navigation checks required
-* Movement is 25% faster than cross-country
-* Reduces Supply Point consumption by 1 for long journeys
-
-**Potential Complications:**
-
-* Special failure on Perception check: Miss signs of recent passage
-* Critical failure: Walk into ambush or hazard
-
-### CROSS-COUNTRY TRAVEL
-
-**Navigation Check Results:**
-
-* **Ordinary Success** : Reach intended destination
-* **Special Success** : Discover shortcut (reduce travel time by 25%)
-* **Critical Success** : Find optimal route (reduce travel time by 50%)
-* **Special Failure** : Drift 1 hex from intended course
-* **Critical Failure** : Become lost (unsure of position)
-
-### GETTING LOST RESOLUTION
-
-When lost, make Navigation checks to reorient:
-
-* **Ordinary Success** : Determine general direction of intended destination
-* **Special Success** : Determine exact position on map
-* **Critical Success** : Discover advantageous route from current position
-* **Special Failure** : Remain lost and consume extra Supply Point
-* **Critical Failure** : Travel in wrong direction, discover hazardous area
-
-## EXAMPLE OF PLAY WITH SUCCESS QUALITY
-
- **GM** : "You're faced with two options: a network of canyons leading east or a plateau to the north."
-
- **Player 1** : "I want to climb the plateau to get a better view of the surrounding area. I'll use my Athletics (Climbing) skill."
-
-*Rolls 33 on Athletics 65% - Ordinary Success*
-
- **GM** : "You make it to the top of the plateau without incident. From this elevated position, you can see one additional hex in each direction. To the northeast, you spot what appears to be some kind of structure glinting in the sunlight."
-
- **Player 2** : "I want to use my Science (Geography) skill to analyze the landscape and determine the best route forward."
-
-*Rolls 15 on Science 75% - Special Success (ends in 5)*
-
- **GM** : "With your knowledge of Martian geography, you're able to determine that the canyon system below likely leads to an ancient lake bed. Water would have flowed from the mountains to the east down toward the western plains. You also identify two additional hexes of terrain - the area to the east appears to be rocky highlands, while the southeast looks like it might be an impact crater."
-
- **Player 3** : "Before we leave the plateau, I want to set up our navigation equipment to establish this as a reference point."
-
-*Rolls 44 on Technology 60% - Critical Success (doubles under skill)*
-
- **GM** : "You set up a perfect reference marker. This plateau is now permanently marked on your navigation system, and you'll automatically succeed on any navigation checks when traveling to or from this location. Additionally, you've calibrated your equipment so well that you can determine the terrain types for all adjacent hexes."
-
-This implementation maintains the core success quality system of Atomic Tomorrow while creating meaningful decisions with tangible advantages and complications. Each landmark type offers distinct gameplay effects that make exploration strategic rather than arbitrary.
-
 ## VENUS: THE JUNGLE WORLD
 
 ### Venusian Environmental Factors
@@ -280,7 +108,7 @@ This implementation maintains the core success quality system of Atomic Tomorrow
 * **Lush Vegetation** : Thick jungle canopies limit visibility in many areas
 * **Retro-Pulp Bio-hazards** : Focus on exotic flora/fauna rather than pressure/acid hazards
 
-### Venus Navigation Methods (Revised)
+### Venus Navigation Methods
 
 * **Bio-Navigation** : Learning to read distinctive plant patterns and animal migration routes
 * **Natural Landmarks** : Massive trees, crystal formations, and distinctive geographic features
@@ -370,7 +198,3 @@ Using these Earth values as our foundation, let's adjust for the different plane
 * Day/night travel rates drastically different
 * Must plan routes around thermal shelters
 * Solar power abundance on day side can boost vehicle range
-
-This approach grounds our exploration system in realistic movement rates while accommodating the pulpy science fantasy elements of Atomic Tomorrow. The varying hex sizes create distinct exploration experiences that match the planetary environments while remaining playable and intuitive.
-
-Would you like me to expand on any particular aspect of these scales or travel methods?

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atomic Tomorrow Character Creator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <base href="<%= BASE_PATH %>">
+  <style>
+    /* Basic styles for the loading screen */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111827;
+      color: #F3F4F6;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .font-orbitron {
+      font-family: 'Orbitron', sans-serif;
+    }
+    
+    .glow-text {
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
+    }
+    
+    /* Loading screen elements */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #111827;
+      background-image: radial-gradient(circle at center, #1E3A8A 0%, #111827 70%);
+      z-index: 50;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .text-4xl {
+      font-size: 2.25rem;
+    }
+    
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+    
+    .text-lg {
+      font-size: 1.125rem;
+    }
+    
+    .text-sm {
+      font-size: 0.875rem;
+    }
+    
+    .font-bold {
+      font-weight: 700;
+    }
+    
+    .font-medium {
+      font-weight: 500;
+    }
+    
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+    
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+    
+    .text-blue-400 {
+      color: #60A5FA;
+    }
+    
+    .text-blue-300 {
+      color: #93C5FD;
+    }
+    
+    .text-blue-200 {
+      color: #BFDBFE;
+    }
+    
+    .text-gray-400 {
+      color: #9CA3AF;
+    }
+    
+    .fixed {
+      position: fixed;
+    }
+    
+    .inset-0 {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    
+    .bottom-4 {
+      bottom: 1rem;
+    }
+    
+    .left-0 {
+      left: 0;
+    }
+    
+    .right-0 {
+      right: 0;
+    }
+    
+    .flex {
+      display: flex;
+    }
+    
+    .flex-col {
+      flex-direction: column;
+    }
+    
+    .items-center {
+      align-items: center;
+    }
+    
+    .justify-center {
+      justify-content: center;
+    }
+    
+    .transition {
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+    
+    .hover\:text-blue-400:hover {
+      color: #60A5FA;
+    }
+    
+    /* Atomic loading animation */
+    .atomic-loader {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin-bottom: 1rem;
+    }
+    
+    .atom {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .atom::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #3B82F6;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 
+                  0 0 40px rgba(59, 130, 246, 0.6);
+      animation: pulse 2s infinite;
+    }
+    
+    .electron {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid rgba(59, 130, 246, 0.6);
+      animation: orbit 3s linear infinite;
+    }
+    
+    .electron::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #3B82F6;
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.8);
+    }
+    
+    .electron:nth-child(1) {
+      animation-duration: 3s;
+      transform: rotateY(70deg) rotateX(10deg);
+    }
+    
+    .electron:nth-child(2) {
+      animation-duration: 4s;
+      transform: rotateY(50deg) rotateX(60deg);
+    }
+    
+    .electron:nth-child(3) {
+      animation-duration: 5s;
+      transform: rotateY(30deg) rotateX(80deg);
+    }
+    
+    .electron:nth-child(1)::before {
+      left: calc(50% - 5px);
+      top: -5px;
+    }
+    
+    .electron:nth-child(2)::before {
+      left: calc(50% - 5px);
+      top: -5px;
+    }
+    
+    .electron:nth-child(3)::before {
+      left: calc(50% - 5px);
+      top: -5px;
+    }
+    
+    @keyframes orbit {
+      0% {
+        transform: rotateZ(0deg);
+      }
+      100% {
+        transform: rotateZ(360deg);
+      }
+    }
+    
+    @keyframes pulse {
+      0% {
+        opacity: 0.8;
+        transform: scale(0.9);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 0.8;
+        transform: scale(0.9);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app-root"></div>
+  
+  <!-- Loading screen that will be hidden once the app loads -->
+  <div id="loading-screen">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold text-blue-400 mb-4 font-orbitron glow-text">Atomic Tomorrow</h1>
+      <h2 class="text-2xl font-medium text-blue-300 mb-8 font-orbitron">Character Creator</h2>
+      
+      <div class="flex flex-col items-center">
+        <div class="atomic-loader mb-4">
+          <div class="atom">
+            <div class="electron"></div>
+            <div class="electron"></div>
+            <div class="electron"></div>
+          </div>
+        </div>
+        
+        <p class="text-blue-200 text-lg">Loading Application...</p>
+      </div>
+    </div>
+    
+    <div class="fixed bottom-4 left-0 right-0 text-center">
+      <a href="/" class="text-sm text-gray-400 hover:text-blue-400 transition">
+        &larr; Return to SFX! Games Home
+      </a>
+    </div>
+  </div>
+  
+  <script>
+    // Hide loading screen when app is loaded
+    window.addEventListener('load', function() {
+      // Give a minimum loading time for better UX (at least 1.5 seconds)
+      setTimeout(function() {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          loadingScreen.style.opacity = '0';
+          loadingScreen.style.transition = 'opacity 0.5s ease-out';
+          
+          setTimeout(function() {
+            loadingScreen.style.display = 'none';
+          }, 500);
+        }
+      }, 1500);
+    });
+  </script>
+</body>
+</html>

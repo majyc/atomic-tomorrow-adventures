@@ -120,6 +120,115 @@ The following table shows average one-way transit times based on Distance Class.
 | Rocket (minutes) | 90       |
 | Comm Window      | Constant |
 
+## MERCURY: CROSSROADS OF THE SOLAR SYSTEM
+
+## PLANETARY TRANSIT TIMES FROM MERCURY
+
+The following tables show transit times from Mercury to all major destinations in the Solar System, demonstrating why Mercury serves as the ideal trading hub despite its proximity to the Sun.
+
+### Mercury to Earth
+
+| Distance Class            | A       | B    | C      | D      | E      | F      | G     |
+| ------------------------- | ------- | ---- | ------ | ------ | ------ | ------ | ----- |
+| Light-minutes             | 5       | 6    | 8      | 9      | 10     | 11     | 12    |
+| Chemical X Rocket (hours) | 65      | 75   | 85     | 95     | 105    | 115    | 125   |
+| Comm Window               | 1.5 hrs | 1 hr | 45 min | 30 min | 20 min | 10 min | 5 min |
+| Freight Transit (days)    | 105     | 110  | 120    | 130    | 135    | 140    | 145   |
+
+### Mercury to Venus
+
+| Distance Class            | A       | B    | C      | D      | E      | F      | G     |
+| ------------------------- | ------- | ---- | ------ | ------ | ------ | ------ | ----- |
+| Light-minutes             | 3       | 5    | 8      | 10     | 12     | 14     | 16    |
+| Chemical X Rocket (hours) | 55      | 65   | 80     | 95     | 110    | 125    | 140   |
+| Comm Window               | 1.5 hrs | 1 hr | 45 min | 30 min | 20 min | 10 min | 5 min |
+| Freight Transit (days)    | 90      | 100  | 115    | 130    | 145    | 160    | 175   |
+
+### Mercury to Mars
+
+| Distance Class            | A     | B       | C    | D      | E      | F      | G     |
+| ------------------------- | ----- | ------- | ---- | ------ | ------ | ------ | ----- |
+| Light-minutes             | 7     | 10      | 14   | 17     | 20     | 23     | 26    |
+| Chemical X Rocket (hours) | 90    | 110     | 130  | 150    | 170    | 190    | 210   |
+| Comm Window               | 2 hrs | 1.5 hrs | 1 hr | 45 min | 30 min | 15 min | 5 min |
+| Freight Transit (days)    | 140   | 160     | 180  | 200    | 220    | 240    | 260   |
+
+### Mercury to Ceres
+
+| Distance Class            | A     | B     | C       | D    | E      | F      | G      |
+| ------------------------- | ----- | ----- | ------- | ---- | ------ | ------ | ------ |
+| Light-minutes             | 18    | 22    | 26      | 30   | 34     | 38     | 42     |
+| Chemical X Rocket (hours) | 160   | 180   | 200     | 220  | 240    | 260    | 280    |
+| Comm Window               | 3 hrs | 2 hrs | 1.5 hrs | 1 hr | 40 min | 20 min | 10 min |
+| Freight Transit (days)    | 180   | 200   | 220     | 240  | 260    | 280    | 300    |
+
+### Mercury to Jupiter
+
+| Distance Class            | A     | B     | C     | D     | E    | F      | G      |
+| ------------------------- | ----- | ----- | ----- | ----- | ---- | ------ | ------ |
+| Light-minutes             | 38    | 42    | 46    | 50    | 54   | 58     | 62     |
+| Chemical X Rocket (hours) | 250   | 265   | 280   | 295   | 310  | 325    | 340    |
+| Comm Window               | 5 hrs | 4 hrs | 3 hrs | 2 hrs | 1 hr | 30 min | 15 min |
+| Freight Transit (days)    | 380   | 410   | 440   | 470   | 500  | 530    | 560    |
+
+### Mercury to Saturn
+
+| Distance Class            | A     | B     | C     | D    | E      | F      | G      |
+| ------------------------- | ----- | ----- | ----- | ---- | ------ | ------ | ------ |
+| Light-minutes             | 75    | 80    | 85    | 90   | 95     | 100    | 105    |
+| Chemical X Rocket (hours) | 360   | 375   | 390   | 405  | 420    | 435    | 450    |
+| Comm Window               | 4 hrs | 3 hrs | 2 hrs | 1 hr | 40 min | 20 min | 10 min |
+| Freight Transit (days)    | 640   | 680   | 720   | 760  | 800    | 840    | 880    |
+
+### Mercury to Venus Equilateral Point
+
+| Distance Class            | A     | B       | C     | D       | E    | F      | G      |
+| ------------------------- | ----- | ------- | ----- | ------- | ---- | ------ | ------ |
+| Light-minutes             | 10    | 12      | 14    | 16      | 18   | 20     | 22     |
+| Chemical X Rocket (hours) | 100   | 115     | 130   | 145     | 160  | 175    | 190    |
+| Comm Window               | 3 hrs | 2.5 hrs | 2 hrs | 1.5 hrs | 1 hr | 30 min | 15 min |
+| Freight Transit (days)    | 130   | 145     | 160   | 175     | 190  | 205    | 220    |
+
+## THE MERCURY ADVANTAGE
+
+These tables demonstrate the "Mercury Advantage" that has made it the Solar System's premier trading hub:
+
+### AVERAGE TRANSIT TIMES (Chemical X)
+
+| From/To | Earth   | Venus   | Mars    | Jupiter | Average           |
+| ------- | ------- | ------- | ------- | ------- | ----------------- |
+| Mercury | 95 hrs  | 95 hrs  | 150 hrs | 295 hrs | **159 hrs** |
+| Earth   | -       | 110 hrs | 145 hrs | 275 hrs | **177 hrs** |
+| Venus   | 110 hrs | -       | 170 hrs | 320 hrs | **200 hrs** |
+| Mars    | 145 hrs | 170 hrs | -       | 280 hrs | **198 hrs** |
+
+### COMPARATIVE ADVANTAGES
+
+1. **Shortest Average Transit Time** : Mercury has the lowest average travel time to all other planets
+2. **Radiation Shielding** : Its proximity to the Sun created a manufacturing specialization in radiation-resistant materials
+3. **Gravitational Assist** : Many freight routes leverage Mercury's position for gravitational slingshot maneuvers
+4. **Information Hub** : Communications relayed through Mercury often arrive faster than direct transmission
+
+## ECONOMIC IMPLICATIONS
+
+Mercury's position as the closest planet (on average) to all others creates several economic realities:
+
+### TRADING PATTERNS
+
+- **High-Value Goods** : Precious metals, advanced electronics, and luxury items are routed through Mercury
+- **Specialized Markets** : Mercury hosts the Solar System's largest commodity exchanges
+- **Information Economy** : Financial and news services maintain headquarters on Mercury to leverage the transit advantage
+- **Diplomatic Importance** : Mercury serves as a neutral meeting ground for negotiations between outer and inner planets
+
+### FREIGHT TRANSIT HUBS
+
+The mass driver network has developed specialized facilities around Mercury:
+
+1. **The Grand Exchange** : Massive orbital facility where cargo can be redirected to any planet
+2. **The Hermes Network** : High-speed data relays that leverage Mercury's position for faster communication
+3. **Salvage Operations** : Services specializing in recovering off-course freight packages
+4. **Custom Manufacturing** : Facilities that modify or complete products during transit
+
 ## ABOUT INTERPLANETARY FREIGHT
 
 ### FREIGHT CATEGORIES
