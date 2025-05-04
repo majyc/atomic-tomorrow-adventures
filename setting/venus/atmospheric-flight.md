@@ -1,269 +1,153 @@
-I'd be happy to develop a flight system for Venus in Atomic Tomorrow Adventures! The retro-atomic age pulp aesthetic fits perfectly with different aircraft types exploring a steamy jungle Venus with varied atmospheric conditions.
 
-# VENUS ATMOSPHERIC FLIGHT SYSTEM
+# VENUS AERIAL ADVENTURES
 
-## ATMOSPHERIC LAYERS & FLIGHT CONDITIONS
+## AIRCRAFT TYPES & THEIR DISTINCTIVE TRAITS
 
-Venus in Atomic Tomorrow has three distinctive atmospheric zones, each with unique challenges:
-
-### UPPER ATMOSPHERE (Cloud Tops)
-
-* **Pressure** : Earth-normal to slightly higher
-* **Visibility** : Good to excellent, frequent breaks in cloud cover
-* **Weather** : Fast-moving storms, electrical discharges, sudden clear zones
-* **Hazards** : Unpredictable wind shears, radiation exposure
-
-### MID ATMOSPHERE (Twilight Zone)
-
-* **Pressure** : 2-3x Earth normal
-* **Visibility** : Limited, constant mist and cloud formations
-* **Weather** : Massive storm systems, acid rain, fog banks
-* **Hazards** : Pressure fluctuations, corrosive precipitation
-
-### LOWER ATMOSPHERE (Jungle Canopy)
-
-* **Pressure** : 5-8x Earth normal
-* **Visibility** : Poor, constant twilight conditions
-* **Weather** : Slow-moving pressure systems, intense humidity
-* **Hazards** : Dense forests, massive flying creatures, crushing pressure
-
-## AIRCRAFT TYPES
+Each aircraft type has unique capabilities without needing complex modifiers - just distinctive strengths and weaknesses that create meaningful choices.
 
 ### FIXED-WING AIRCRAFT
 
- **CAPABILITIES** :
+*The dependable workhorses of Venusian skies*
 
-* Highest speed and range
-* Best high-altitude performance
-* Most efficient for transport between settlements
+* **STRENGTHS** : Speed, range, passenger/cargo capacity
+* **WEAKNESSES** : Needs clearing for takeoff/landing, less maneuverable in dense jungle
+* **SIGNATURE ABILITY** : "Full Throttle" - On any critical success (doubles under skill), can cut travel time by 25%
+* **CRITICAL FAILURE** : "Control Surface Damage" - On critical failure, aircraft becomes increasingly difficult to control until repaired
 
- **CHALLENGES** :
+ **NOTABLE MODELS** :
 
-* Poor maneuverability in dense canopy
-* Requires runway or water landing area
-* Vulnerable to sudden pressure changes
-
- **SPECIAL SUCCESS CONDITIONS** :
-
-* Rolls ending in 5/0: Extraordinary fuel efficiency, double normal range
-* Doubles (under skill): Perfect navigation, reduce journey time by 25%
-
- **SPECIAL FAILURE CONDITIONS** :
-
-* Rolls ending in 5/0: Control surface damage, -20% to subsequent piloting checks
-* Doubles (over skill): Catastrophic pressure differential, emergency landing required
-
- **VENUSIAN ADAPTATIONS** :
-
-* Reinforced airframes to handle pressure fluctuations
-* Variable-geometry wings that adapt to different atmospheric densities
-* Sealed pressurized cabins with emergency buoyancy systems
-
- **COMMON MODELS** :
-
-* **Hermes Comet** : Sleek high-altitude courier with retractable solar array
-* **Venusian Airco DH.4** : Rugged workhorse biplane for mid-atmospheric patrol
-* **Manta Mk.3** : Exotic flying wing design specializing in canopy skimming
+* **Condor-class Transport** : Twin-engine workhorse connecting major settlements
+* **Dragonfly Scout** : Lightweight reconnaissance craft with folding wings for compact storage
+* **Neptune Amphibian** : Specialized for water landings in Venus's numerous swamps and lakes
 
 ### ROTARY-WING AIRCRAFT
 
- **CAPABILITIES** :
+*Perfect for jungle exploration and extraction missions*
 
-* Vertical takeoff and landing
-* Hover capability for extended observations
-* Precision maneuvering between canopy layers
+* **STRENGTHS** : Vertical takeoff/landing, hovering capability, precise maneuvering
+* **WEAKNESSES** : Limited range, higher fuel consumption, more maintenance
+* **SIGNATURE ABILITY** : "Perfect Hover" - On any special success (roll ending in 0 or 5), gain +20% to any action performed while hovering
+* **CRITICAL FAILURE** : "Rotor Stress" - On critical failure, must land within 10 minutes or risk catastrophic failure
 
- **CHALLENGES** :
+ **NOTABLE MODELS** :
 
-* Limited range compared to fixed-wing
-* Higher maintenance requirements
-* Vulnerable to lightning strikes
-
- **SPECIAL SUCCESS CONDITIONS** :
-
-* Rolls ending in 5/0: Perfect stability, +20% to any actions performed while hovering
-* Doubles (under skill): Masterful maneuvering, avoid all environmental hazards in zone
-
- **SPECIAL FAILURE CONDITIONS** :
-
-* Rolls ending in 5/0: Rotor imbalance, must land within 10 minutes for adjustment
-* Doubles (over skill): Catastrophic vibration, immediate autorotation landing required
-
- **VENUSIAN ADAPTATIONS** :
-
-* Contra-rotating blades for greater stability in dense atmosphere
-* Sealed, pressurized mechanical systems
-* Deployable floats for emergency water landings
-* Reinforced windscreens against flying creatures
-
- **COMMON MODELS** :
-
-* **Dragonfly Scout** : Nimble single-seat survey craft with transparent bubble canopy
-* **Horus Heavy Lifter** : Twin-rotor cargo hauler designed for jungle extraction
-* **StormRider VX** : Armored patrol craft with lightning dispersal technology
+* **Jungle Queen** : Heavy-lift model with reinforced underbelly for canopy extractions
+* **Hummingbird** : Ultra-maneuverable single-seat scout with transparent bubble canopy
+* **Skyhook** : Military variant with specialized winch system for retrieving personnel/cargo
 
 ### LIGHTER-THAN-AIR CRAFT
 
- **CAPABILITIES** :
+*The majestic nomads of Venus's sky*
 
-* Longest endurance and loiter time
-* Natural pressure equalization
-* Minimal fuel requirements
+* **STRENGTHS** : Endurance, stability, fuel efficiency, comfort
+* **WEAKNESSES** : Slow speed, vulnerability to storms, large target profile
+* **SIGNATURE ABILITY** : "Thermal Riding" - On any special success, can travel for 12 hours without fuel consumption
+* **CRITICAL FAILURE** : "Envelope Breach" - On critical failure, begins losing altitude and must be repaired before catastrophic failure
 
- **CHALLENGES** :
+ **NOTABLE MODELS** :
 
-* Slowest movement speed
-* Highly vulnerable to storms and creatures
-* Difficult to maneuver in confined spaces
+* **Cloud Drifter** : Luxury passenger vessel with observation lounges
+* **Nomad Caravan** : Self-sufficient research platform for extended expeditions
+* **Sky Harvester** : Specialized collection vessel for gathering rare high-altitude flora
 
- **SPECIAL SUCCESS CONDITIONS** :
-
-* Rolls ending in 5/0: Perfect thermal riding, 24 hours of fuel-free flight
-* Doubles (under skill): Extraordinary visibility, detect features/hazards 3x normal range
-
- **SPECIAL FAILURE CONDITIONS** :
-
-* Rolls ending in 5/0: Envelope tear, gradual altitude loss until repaired
-* Doubles (over skill): Catastrophic gas cell rupture, rapid uncontrolled descent
-
- **VENUSIAN ADAPTATIONS** :
-
-* Multi-chambered gas cells for redundancy
-* Automated pressure regulation systems
-* Reinforced mesh protective layers against predators
-* Anti-static discharge arrays
-
- **COMMON MODELS** :
-
-* **Cloud Drifter** : Luxury passenger airship with glass observation decks
-* **Nomad-Class Dirigible** : Self-sufficient research vessel for extended missions
-* **Hunter's Moon** : Stealthy specimen collection platform with silent engines
-
-## FLIGHT CHECKS & CHALLENGES
+## SIMPLIFIED FLIGHT RESOLUTION
 
 ### BASIC FLIGHT CHECK
 
-Roll against **Piloting (appropriate type)** modified by:
+Roll against **Piloting (appropriate type)** with minimal modifiers:
 
-* Weather conditions (-20% to -60%)
-* Aircraft condition (-0% to -40%)
-* Atmospheric layer (-0% to -40%)
-* Pilot's familiarity with region (+20% to -20%)
+* Standard flight: No modifiers
+* Challenging conditions (storms, darkness): -20%
+* Extreme conditions (severe storms, emergency): -40%
 
-### SKILL CHECK INTERPRETATIONS
+### SITUATION-BASED CHALLENGES
 
- **FIXED-WING CHECKS** :
+Rather than having modifiers for different atmospheric zones, create specific challenge scenarios that occur during adventures:
 
-* **Ordinary Success** : Safe, controlled flight
-* **Special Success** : Exceptional fuel efficiency or navigation
-* **Critical Success** : Perfect handling, reduce journey time by 25%
-* **Special Failure** : Minor system issue requiring attention
-* **Critical Failure** : Major mechanical failure or dangerous weather encounter
+#### CANOPY THREADING
 
- **ROTARY-WING CHECKS** :
+*Navigate through the dense jungle canopy to reach a hidden location*
 
-* **Ordinary Success** : Stable flight, accurate positioning
-* **Special Success** : Perfect hovering stability, +20% to operations while hovering
-* **Critical Success** : Masterful maneuvering through impossible spaces
-* **Special Failure** : Concerning vibration pattern, requires landing for adjustment
-* **Critical Failure** : Severe mechanical strain, emergency landing required
+* Roll Piloting (rotary-wing preferred)
+* **Ordinary Success** : Safely navigate through the canopy
+* **Special Success** : Discover an ideal landing spot near objective
+* **Critical Success** : Notice something valuable/important others would miss
+* **Failure** : Minor course deviation, try again
+* **Special Failure** : Minor collision with branches/wildlife
+* **Critical Failure** : Major collision, emergency landing required
 
- **LIGHTER-THAN-AIR CHECKS** :
+#### STORM EVASION
 
-* **Ordinary Success** : Stable, controlled drift
-* **Special Success** : Discovery of favorable air current, increased speed
-* **Critical Success** : Perfect thermal riding, minimal fuel consumption for 24 hours
-* **Special Failure** : Minor envelope tear or pressure regulation issue
-* **Critical Failure** : Severe envelope damage or dangerous thermal current
+*A massive storm system threatens your aircraft*
 
-### SPECIFIC FLYING CHALLENGES
+* Roll Piloting (any)
+* **Ordinary Success** : Navigate around or through the storm safely
+* **Special Success** : Find a gap that allows you to maintain course without delay
+* **Critical Success** : Discover calm "eye" with perfect visibility and unique observation opportunity
+* **Failure** : Forced to divert, adding time to journey
+* **Special Failure** : Caught in turbulence, passengers must make GRIT checks
+* **Critical Failure** : Severe damage from turbulence, emergency landing required
 
-#### CANOPY NAVIGATION
+#### SWAMP LANDING
 
-Flying through the dense Venusian jungle canopy:
+*Set down safely in Venus's treacherous lowland swamps*
 
-* Base difficulty: -40% to Piloting
-* Required aircraft: Rotary-wing or specialized fixed-wing
-* On ordinary success: Safe passage through gap
-* On special success: Discover hidden clearing suitable for landing
-* On critical success: Discover ancient ruins or valuable biological specimen
-* On special failure: Minor damage to aircraft from branch impact
-* On critical failure: Major damage requiring emergency landing
+* Roll Piloting (amphibious fixed-wing or rotary-wing)
+* **Ordinary Success** : Safe landing on relatively solid ground
+* **Special Success** : Find exceptional landing spot with good visibility and security
+* **Critical Success** : Discover a hidden feature (ancient ruins, rare specimen, etc.)
+* **Failure** : Rough landing, minor stress to aircraft
+* **Special Failure** : Land in unstable area, aircraft slowly sinking
+* **Critical Failure** : Land in dangerous area with immediate threats (predators, quicksand, etc.)
 
-#### STORM RIDING
+## THE ENDURAL FACTOR
 
-Navigating the massive storm systems of the mid-atmosphere:
+Pilots taking Endural have a unique relationship with Venus's atmosphere:
 
-* Base difficulty: -20% to -60% depending on storm severity
-* Required skill: Piloting (any) + Perception (Weather Patterns)
-* On ordinary success: Safe passage through storm
-* On special success: Use storm currents to boost speed by 25%
-* On critical success: Navigate to the calm "eye" for perfect observation position
-* On special failure: Aircraft damaged by turbulence, -20% to subsequent checks
-* On critical failure: Severe damage, risk of being thrown wildly off course
+* Can sense upcoming weather patterns before instruments detect them
+* Experience vivid clarity of vision in Venus's perpetual mist
+* On any roll showing doubles (whether success or failure), experience brief but vivid hallucinations that reveal something unexpected about the environment
 
-#### PRESSURE DIFFERENTIAL NAVIGATION
+## AERIAL ENCOUNTERS
 
-Transitioning between atmospheric layers:
+### FLOATY GASBAGS
 
-* Base difficulty: -20% per layer traversed in a single flight
-* Required aircraft: Any with proper Venusian modifications
-* On ordinary success: Safe transition between layers
-* On special success: Perfect pressure management, no strain on aircraft
-* On critical success: Discovery of stable transition zone for future reference
-* On special failure: Temporary system malfunction due to pressure stress
-* On critical failure: Structural damage from pressure differential
+*Massive, gentle filter-feeders drifting in Venus's upper atmosphere*
 
-## VENUS-SPECIFIC FLIGHT RULES
+* Generally harmless unless startled
+* Can be safely navigated around with successful Piloting check
+* On critical failure: Collision causes minor damage but major gas release (potentially beneficial as emergency lift)
 
-### ENDURAL FACTOR
+### HUNTING FLYERS
 
-Pilots taking Endural (the medication derived from native Venusian plants that helps humans withstand increased pressure):
+*Predatory creatures that attack in coordinated packs*
 
-* Can operate in lower atmospheric layers with reduced penalties (-20% instead of -40%)
-* Experience enhanced reaction time under pressure (+10% to all Piloting checks)
-* Risk mild hallucinations on rolls ending in 3 (GM introduces minor visual distortion)
-* Develop unique sensitivity to atmospheric patterns (can detect weather changes before instruments)
+* Require evasive maneuvers (Piloting at -20%)
+* On special success: Spectacular evasion that becomes a tale told in pilot lounges
+* On critical failure: Creatures damage control surfaces or puncture gas envelope
 
-### AIRCRAFT LIMITATIONS BY ZONE
+### LIVING CLOUDS
 
-| Aircraft Type    | Upper Atmosphere | Mid Atmosphere | Lower Atmosphere |
-| ---------------- | ---------------- | -------------- | ---------------- |
-| Fixed-Wing       | Optimum          | Standard       | Limited          |
-| Rotary-Wing      | Standard         | Optimum        | Standard         |
-| Lighter-than-Air | Standard         | Optimum        | Dangerous        |
+*Collective organisms that appear as colorful mist formations*
 
-### NATIVE CREATURE ENCOUNTERS
+* Usually docile unless threatened
+* On special success: Pilot navigates close enough for passengers to witness bioluminescent display
+* On failure: Aircraft enters cloud, experiencing mild electrical interference
+* On critical failure: Aircraft triggers defense mechanism (acid spray, electrical discharge)
 
-Venus hosts massive atmospheric creatures that may interact with aircraft:
+## ADVENTURE HOOKS
 
-**Air Whale Pods**
+1. **THE LOST EXPEDITION**
+   *A research airship has gone missing in an unexplored region. The characters must navigate treacherous weather patterns to locate potential survivors.*
+2. **EMERGENCY EXTRACTION**
+   *A valuable scientist is stranded at a remote research site as a massive storm approaches. Only a skilled rotary-wing pilot can thread through the jungle canopy for a rescue.*
+3. **THE CLOUD CITY RACE**
+   *An annual competition tests pilots' skills as they navigate a course between Venus's floating habitats and natural obstacles. Fame, fortune, and valuable contracts await the winner.*
+4. **AERIAL PHOTOGRAPHY MISSION**
+   *A scientific foundation needs high-resolution images of a newly discovered species of flying creature. The catch? They only appear during the most dangerous storm conditions.*
+5. **THE NOMAD RENDEZVOUS**
+   *The characters must intercept a Cloud Drifter Nomad vessel that follows no fixed schedule or route, relying on observational skills and local knowledge to predict its path.*
 
-* Docile unless threatened
-* Can be navigated around with successful Perception + Piloting check
-* On critical failure: Accidental collision, significant damage to aircraft
+This system maintains the pulp-adventure feel while eliminating the complexity of multiple modifiers. Each aircraft type has distinctive capabilities that create meaningful choices without requiring players to track numerous environmental modifiers. The encounter-based approach integrates the flying challenges directly into adventures rather than making them separate mechanical considerations.
 
-**Raptor Clouds**
-
-* Predatory flying creatures hunting in swarms
-* Require Piloting check at -20% to evade
-* On special success: Impressive evasive maneuver becomes tale told in spaceport bars
-* On critical failure: Swarm damages control surfaces, emergency landing required
-
-**Crystal Floaters**
-
-* Silicon-based lifeforms drifting on thermal currents
-* Beautiful but dangerous if disturbed
-* On special failure: Sharp crystal fragments damage engines or envelope
-
-## SYSTEM INTEGRATION
-
-This flight system integrates with core Atomic Tomorrow mechanics:
-
-1. Uses the d100 system with special interpretations for doubles and divisible-by-5 results
-2. Creates meaningful choices about aircraft types for different missions
-3. Establishes Venus-specific challenges that highlight the setting's unique features
-4. Provides opportunities for character specialization and equipment customization
-5. Creates multiple adventure hooks related to aerial exploration
-
-Would you like me to expand on any specific aspect of this flight system? Perhaps more detail on specific aircraft models, flight mechanics for a particular aircraft type, or adventure hooks related to aerial exploration of Venus?
+How does this revised approach align with your vision for Atomic Tomorrow's Venus?

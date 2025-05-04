@@ -6,7 +6,7 @@
 
 Victoria embodies the quintessential colonial aesthetic – a planned city of gleaming white buildings with broad avenues and manicured gardens, yet constantly threatened by encroaching jungle growth that requires daily maintenance.
 
-### Adventure Elements:
+### Victoria Adventure Elements
 
 1. **The Governor's Manor** - Center of political power on Venus, filled with ancient artifacts and guarded by sophisticated security systems that would challenge both the roboticist and telekinetic.
 2. **Expedition Outfitters' Guild** - An exclusive club for Venus's elite explorers, filled with trophies from the jungle and gatekeeping knowledge of the most valuable resource locations.
@@ -21,7 +21,7 @@ Victoria embodies the quintessential colonial aesthetic – a planned city of gl
 
 Built along a massive river delta, Port Charles is a chaotic maze of warehouses, processing plants, and floating markets. The official shipping harbor for Venus's exports, but with a thriving underground.
 
-### Adventure Elements:
+### Port Charles Adventure Elements
 
 1. **The Eternal Docks** - Miles of loading platforms where ships arrive with supplies and depart loaded with Venusian resources. Perfect for smuggling operations or stowing away, with automated loading systems a roboticist could manipulate.
 2. **The Shifting Market** - Floating bazaar that changes configuration daily, where anything can be bought or sold if you know the right people. A legendary Solar Ranger might have contacts here.
@@ -36,7 +36,7 @@ Built along a massive river delta, Port Charles is a chaotic maze of warehouses,
 
 The newest major settlement, built as a showcase of corporate wealth with artificial waterfalls, climate-controlled environments, and architecture that deliberately contrasts with the natural surroundings.
 
-### Adventure Elements:
+### New Aphrodite Adventure Elements
 
 1. **The Boardrooms** - Where the planet's economic future is decided by Earth-based corporate executives who rarely venture into the real Venus. A sophisticated diplomat would shine here.
 2. **The Pleasure Gardens** - Exclusive resort areas featuring carefully curated Venusian plants rendered safe for human interaction, but rumors persist of guests experiencing strange effects after visits.
@@ -51,7 +51,7 @@ The newest major settlement, built as a showcase of corporate wealth with artifi
 
 A massive collection of airships and floating platforms perpetually drifting through Venus's cloud layers, home to the descendants of Venus's first explorers who rejected permanent settlement.
 
-### Adventure Elements:
+### Cloud Adventure Elements
 
 1. **The Navigator's Spire** - Central hub where Cloud Haven's movement is planned using a mixture of advanced technology and traditional knowledge of Venus's weather patterns.
 2. **The Living Balloons** - Massive organic gasbags cultivated from native Venusian flora that keep the city aloft, tended by specialists with secret techniques passed down for generations.
@@ -61,8 +61,6 @@ A massive collection of airships and floating platforms perpetually drifting thr
 6. **The Archives of the Sky** - Records of atmospheric phenomena and stellar observations made continuously since Venus's colonization, containing patterns no ground-based scientist has recognized.
 
 ## NIMBUS CITY
-
-<!-- markdownlint-disable MD036 -->
 
 **Theme: Scientific Utopia in the Clouds**
 

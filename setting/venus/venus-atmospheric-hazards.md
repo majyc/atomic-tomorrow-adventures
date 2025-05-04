@@ -99,19 +99,6 @@ Venus's unique environment presents a host of dramatic aerial hazards perfect fo
 * **Special Failure** : Drift off course, emerge in unexpected location
 * **Critical Failure** : Complete disorientation, heading directly toward hazard
 
-### THE ACID BATH
-
-*Caustic rainfall that damages exposed surfaces*
-
-* **Warning Signs** : pH sensors alert, distinctive patterning on clouds
-* **Danger Level** : Moderate to Severe
-* **Resolution** : Piloting to find safe altitude, Engineering to protect systems
-* **Success** : Minimize exposure to harmful precipitation
-* **Special Success** : Find pocket of clear air within storm system
-* **Critical Success** : Discover pattern allowing complete avoidance
-* **Special Failure** : Minor corrosion damage to external surfaces
-* **Critical Failure** : Serious damage to control surfaces, handling compromised
-
 ### THE DENSITY POCKET
 
 *Sudden regions of super-compressed atmosphere*
@@ -179,7 +166,6 @@ SPECIAL OUTCOMES:
    *Once every seven years, the massive Balloon Beasts migrate across known flight paths, creating both hazard and spectacular opportunity.*
 5. **THE PERFECT STORM**
    *Multiple atmospheric phenomena converge, creating a once-in-a-lifetime chance to study their interaction—but only for pilots skilled enough to survive.*
-
 
 # GRAVITY WAVES IN THE VENUSIAN ATMOSPHERE
 
