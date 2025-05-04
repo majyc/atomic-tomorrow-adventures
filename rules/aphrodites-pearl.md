@@ -1,4 +1,37 @@
-# The Aphrodite's Pearl: Deck Layout
+# The Aphrodite's Pearl
+
+A medium-sized interplanetary passenger liner
+
+## Ship Specifications
+
+* **Length** : 110 meters (about the size of a small ocean liner)
+* **Beam (width)** : 30 meters
+* **Height** : 25 meters (8 decks)
+* **Passenger Capacity** : 120 passengers
+* **Crew Complement** : 24 staff
+* **Propulsion** : Chemical X engines (mid-ship)
+* **Classification** : Venusian Registry Luxury-class Line
+
+## Lifeboat Design
+
+* **Lifeboat Berths** : 3 per deck on decks 3, 6, 7, and 8 (port, starboard, and stern)
+* **Total Lifeboats** : 12 boats
+* **Capacity Per Lifeboat** : 12 passengers and 1 crew operator
+* **Total Evacuation Capacity** : 156 people (12 lifeboats × 13 people)
+
+The lifeboats themselves would be:
+
+* Length: 7-10 meters
+* Width: 3-4 meters
+* Range: Sufficient to reach the nearest habitable world or to maintain life support until rescue
+* 30-day life support capacity
+* Basic navigation systems
+* Emergency distress beacon
+* Compact acceleration couches that double as beds
+* Storage for emergency rations and supplies
+* Basic auto-pilot with overrides for manual flight control (requiring a skilled pilot)
+
+## Deck Layout
 
 ## Deck 1 (Bottom) - Engineering
 
@@ -22,7 +55,6 @@
 * Emergency shelter with reinforced bulkheads
 * Auxiliary life support systems
 * Environmental control systems
-* 2 Lifeboats (port and starboard)
 
 ## Deck 4 - Recreation
 
@@ -31,6 +63,15 @@
 * Entertainment center
 * Lounge areas
 * Hydroponics garden
+
+### Emergency Pool Safety System
+
+The pool's emergency containment system:
+
+* Transparent aluminum cover that deploys automatically during thrust loss
+* Water drainage system connected to surrounding tanks (as you mentioned)
+* Emergency lighting along pool edges
+* Intercom system for evacuation orders
 
 ## Deck 5 - Crew/Medical
 
@@ -46,7 +87,16 @@
 * Secondary dining area
 * Small lounges
 * Ship's stores
-* 2 Lifeboats (port and starboard)
+* 4 Lifeboats (port and starboard)
+
+The luxurious aft recreation area on Deck 6 includes:
+
+* Olympic-sized swimming pool (15m x 8m)
+* Surrounding lounge area with adjustable gravity seating
+* Automated refreshment stations serviced by butler robots
+* Panoramic viewport windows along the exterior wall
+* Changing facilities and showers
+* Direct access to hydroponics garden
 
 ## Deck 7 - Mid Passenger Accommodations
 
@@ -54,7 +104,7 @@
 * Main promenade
 * Primary dining room
 * Library and reading room
-* 2 Lifeboats (port and starboard)
+* 4 Lifeboats (port and starboard)
 
 ## Deck 8 - Upper Passenger Accommodations
 
@@ -62,7 +112,7 @@
 * Executive lounge
 * Observation gallery
 * Conference facilities
-* 2 Lifeboats (port and starboard)
+* 4 Lifeboats (port and starboard)
 
 ## Deck 9 (Top) - Command
 

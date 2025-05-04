@@ -2,6 +2,81 @@
 
 The Mysterian attack on The Aphrodite's Pearl liner wasn't random - they were specifically targeting the ship to capture it intact (before the crew's resistance forced more drastic measures). This uncharacteristic inner-system attack has raised alarms throughout the Solar System.
 
+## Emergency Routes
+
+From the aft recreation area to escape:
+
+1. Primary route: Turbolifts to Deck 8 (will be disabled during the attack)
+2. Secondary route: Emergency ladders in maintenance shafts (requiring manual override)
+3. Service corridors leading to central spine of the ship
+4. Maintenance tunnels through the water reclamation system
+
+This layout creates a perfect scenario where:
+
+* The sudden loss of thrust causes the pool cover to trap swimmers
+* The telekinetic can potentially help free them
+* The mercenary will need to navigate to Deck 1 or 2 to reach the cargo holds
+* The roboticist has butler robots to reprogram
+* The pilot will need to reach Deck 8 and determine which lifeboat is operational
+* Mysterians would logically enter from upper decks, working their way down
+
+The journey from Deck 6 to Deck 8 with ship systems compromised creates the perfect gauntlet for your adventure's opening!
+
+## Option 1: Head Downward First
+
+**Advantages:**
+
+* The mercenary can retrieve weapons from personal cargo
+* The roboticist might find useful tech components
+* They could potentially gather survival supplies for Venus
+
+**Risks:**
+
+* Longer overall journey
+* Mysterians might secure all lifeboats before they can reach them
+* More opportunities to encounter patrols
+
+## Option 2: Head Upward Immediately
+
+**Advantages:**
+
+* Secure escape before all lifeboats are gone
+* Faster evacuation from the failing ship
+* Less chance of encountering Mysterians (who are likely working top-down)
+
+**Risks:**
+
+* Minimal equipment for surviving on Venus
+* No weapons for defense
+* Fewer resources if the lifeboat is damaged during escape
+
+## Option 3: Hide and Wait It Out
+
+**Advantages:**
+
+* Avoid direct confrontation with Mysterians entirely
+* The water tanks on Deck 3 provide an excellent hiding place:
+  * Shielded from most sensors
+  * Access to water and basic life support
+  * Connected to the storm shelter with its emergency supplies
+* Could potentially rescue other passengers once Mysterians depart
+
+**Risks:**
+
+* Uncertainty about Mysterian plans (will they take the ship? destroy it?)
+* Limited information about what's happening elsewhere on the vessel
+* Possible detection if hiding place isn't secure
+* No guarantee the Mysterians will actually leave
+
+The telekinetic might sense Mysterian movement throughout the ship, creating a stealth scenario where they must stay quiet and hidden as alien search parties move nearby.
+
+If they choose this option, the GM could create tension by having:
+
+* The sound of Mysterians systematically searching decks
+* Brief glimpses through vents of paralyzed humans being collected
+* Ship systems occasionally malfunctioning, threatening to reveal their position
+* A wounded crew member they rescue who provides partial information about the attack
+
 ## The Missing Mysterians
 
 When your players investigate (either through their own initiative or official channels), they discover a crucial anomaly:
