@@ -1,5 +1,48 @@
 # VENUS: MAJOR CITIES OF THE STEAMING PARADISE
 
+* **VICTORIA** - Central northern plateau (approximately 30°N, 45°E)
+  * Elevated position at 2,000m altitude
+  * Good drainage, away from major swamp regions
+* **PORT CHARLES** - Major river delta in eastern region (approximately 15°N, 75°E)
+  * Where three major rivers converge into a large bay
+  * Natural harbor for flying boats and water traffic
+* **NEW APHRODITE** - Lowland position in the northwest (approximately 20°N, 15°W)
+  * Deep in the valuable lowland jungles
+  * Near rich biological resources but challenging terrain
+* **NEW ATHENS** - Central location on crater lake system (approximately 5°S, 25°E)
+  * Roughly equidistant from major settlements
+  * Built around interconnected crater lakes
+* **NIMBUS CITY** - Stationary position above central highlands (approximately 10°N, 35°E)
+  * Maintains position using atmospheric currents
+  * Roughly above the geographic center of inhabited Venus
+* **CLOUD HAVEN** - Drifts in a rough circle pattern
+  * Typical route: Victoria → Port Charles → New Athens → New Aphrodite → back to Victoria
+  * One complete circuit takes approximately 3-4 months
+* **FIRST LANDING** - High on Skadi Mons, in the Maxwell Montes of Ishtar Terra
+  * approximately 65°N, 3°E
+  * Permanently above the clouds, which was the reason it was selected as the first landing site, before navigation improvements made settlement of the relatively more habitable Aphrodite Terra continent practical.
+
+## First Landing (Maxwell Montes, Ishtar Terra)
+
+What was once intended as humanity's main foothold on Venus now serves a different but vital role in Venusian society:
+
+### The Sunshine Appeal
+
+* The only ground-based settlement where residents experience regular natural sunlight
+* A psychological refuge for those suffering from "Cloud Melancholy" (the Venusian version of Seasonal Affective Disorder)
+* A premium tourist destination marketed as "The Sunshine Resort of Venus"
+* Much harsher conditions requiring more robust infrastructure and regular maintenance
+* Higher costs for basic necessities but justified by the psychological benefits
+
+### First Landing Society
+
+* A mix of:
+  * Weather-hardened old-timers who never left
+  * Wealthy individuals who maintain second homes for "sun therapy"
+  * Specialists running solar observation stations and other scientific facilities
+  * Tourism industry workers catering to visitors from the cloudy regions below
+  * Artists and writers who claim the unique light quality inspires creativity
+
 ## VICTORIA
 
 **Theme: Colonial Elegance Meets Frontier Wilderness**
@@ -77,7 +120,7 @@ Nimbus City floats majestically among Venus's upper cloud layers, a marvel of en
 5. **Cloud Harvesting Station** - Massive intake facilities where specialized equipment extracts water and compounds from Venus's atmosphere. The roboticist might find opportunities to analyze or improve these critical systems.
 6. **The Nimbus Council** - Scientific governance chamber where Venus's brightest minds debate planetary policies. A natural arena for diplomatic maneuvering and information gathering.
 
-## HIGHPORT
+## HIGHPORT (Galilei Mons, Aphrodite Terra)
 
 **Theme: Space Gateway to Venus**
 
