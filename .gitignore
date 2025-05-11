@@ -3,3 +3,72 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Cache directories
+.npm/
+.eslintcache
+.stylelintcache
+.cache/
+
+# Bundler stats
+.webpack-stats.json
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Atomic Tomorrow Character Creator specific
+app/assets/user-uploads/
+
+# OS specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Dreamhost specific
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.htpasswd
