@@ -107,7 +107,7 @@ Cynical but reliable.
 
 **CHEN JOHANSSON** *(wild hair, distracted eyes)*
 Rocket Jockey/Genmodded/Street Urchin | BRAW 9 REFL 12 NERVE 15 SAVVY 12 CHARM 13 GRIT 13 GUILE 8 | Grit Check: 65%
-*Piloting* 33%, *Navigation* 30%, *Technology (Ship Systems)* 29%, *Athletics (Zero-G)* 16%
+*Piloting* 33%, *Navigation* 30%, *Technology (Ship Systems)* 29%, *Zero-G Operations (Space)* 16%
 Carries spare parts kit. Cynical but reliable.
 
 **OMAR ROBINSON** *(as played by William Holden)*

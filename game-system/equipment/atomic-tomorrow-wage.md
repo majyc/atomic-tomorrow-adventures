@@ -1,5 +1,3 @@
-You're absolutely right - the prices do look a bit inflated for the retro-futuristic aesthetic we're going for. Let me adjust the table to better align with early 20th century economics (divided roughly by 10) while maintaining the Atomic Tomorrow setting's feel:
-
 # ATOMIC TOMORROW: WAGES & SALARIES
 
 | OCCUPATION               | MONTHLY SALARY (CREDITS) | NOTES                                |

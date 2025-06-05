@@ -118,10 +118,10 @@ backgrounds = [
 # Skill descriptions by profession categories
 skill_sets = {
     "SPACERS & PILOTS": [
-        ["Piloting", "Navigation", "Technology (Ship Systems)", "Athletics (Zero-G)"],
+        ["Piloting", "Navigation", "Technology (Ship Systems)", "Zero-G Operations (Space)"],
         ["Navigation (Space)", "Science (Astronomy)", "Computer Systems", "Piloting"],
         ["Piloting (Racing)", "Repair (Vehicles)", "Perception (Spatial Awareness)", "Performance"],
-        ["Athletics (Zero-G)", "Survival (Space)", "Technology", "Perception"]
+        ["Zero-G Operations (Space)", "Survival (Space)", "Technology", "Perception"]
     ],
     "SCIENTISTS & INTELLECTUALS": [
         ["Science", "Investigation (Research)", "Medicine", "Academics"],

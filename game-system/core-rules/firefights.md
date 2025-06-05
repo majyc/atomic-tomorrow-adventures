@@ -1,3 +1,8 @@
+---
+layout: default
+title: Firefights
+---
+
 Some simple rules for firefights. The goal isn’t to turn ATA into a tactical skirmish game as much as give an advantage in a firefight to those with an appropriate backgroundThese are meant to be used in “Theater of the Mind” style, with a good deal of leeway for the GM to determine when and if they’re appropriate.
 
 ### Suppressive Fire
@@ -18,4 +23,4 @@ Use natural or artificial cover to prevent enfilading fire, or take a position s
 
 ### Overwatch
 
-Forces can take an overwatch position where they can see the terrain ahead of friendly troops and provide suppressive fire as needed.  Again, this isn’t an action that requires a roll, but requires a leader with the requisite training.  A force in overwatch can interrupt an enemy that’s beginning fire on the friendlies, initiating suppressive fire and forcing them to make their Will saves before their actions are resolved.
+Forces can take an overwatch position where they can see the terrain ahead of friendly troops and provide suppressive fire as needed.  Again, this isn’t an action that requires a roll, but requires a leader with the requisite training.  A force in overwatch can interrupt an enemy that’s beginning fire on the friendlies, initiating suppressive fire and forcing them to make their Nerve checks before their actions are resolved.

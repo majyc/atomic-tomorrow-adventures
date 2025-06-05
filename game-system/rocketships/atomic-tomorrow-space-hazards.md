@@ -315,7 +315,7 @@ Forgotten but active security measures protecting abandoned installations:
 
 Space-capable alien creatures transiting between planetary bodies:
 
-* Massive bioelectric creatures native to Venus's upper atmosphere
+* Massive bioelectric creatures native to Jupiter's upper atmosphere
 * Periodic migration between Jupiter and its trojan asteroids
 * Create distinctive energy patterns detectable on sensors
 * Generally non-aggressive unless provoked

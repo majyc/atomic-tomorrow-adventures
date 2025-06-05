@@ -22,7 +22,7 @@ export const CORE_SKILLS = {
     type: SKILL_TYPES.ATTRIBUTE,
     description: 'Physical feats of strength, endurance and coordination',
     specializations: [
-      'Climbing', 'Swimming', 'Running', 'Jumping', 'Zero-G Movement', 'Acrobatics', 'Strength', 'Reflexes'
+      'Climbing', 'Swimming', 'Running', 'Jumping', 'Zero-G Operations', 'Acrobatics', 'Strength', 'Reflexes'
     ]
   },
   'COMBAT': {
