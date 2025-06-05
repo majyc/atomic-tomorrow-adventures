@@ -1,4 +1,4 @@
-export const BACKGROUNDS = [
+const BACKGROUNDS = [
   { id: 'military-family', name: 'Military Family', description: 'Raised in the discipline of service', attributeEffect: 'GRIT +1, CHARM -1', skills: 'Tactics +10%, Athletics +10%, Firearms +5%' },
   { id: 'merchant-clan', name: 'Merchant Clan', description: 'Raised in the trading business', attributeEffect: 'CHARM +1, GRIT -1', skills: 'Negotiation +10%, Market Analysis +10%, Appraisal +5%' },
   { id: 'frontier-homestead', name: 'Frontier Homestead', description: 'Grew up on the edge of civilization', attributeEffect: 'GRIT +1, CHARM -1', skills: 'Survival +10%, Mechanics +10%, Animal Handling +5%' },
@@ -25,3 +25,6 @@ export const BACKGROUNDS = [
   { id: 'belt-prospector-family', name: 'Belt Prospector Family', description: 'Raised searching for valuable asteroids', attributeEffect: 'SAVVY +1, CHARM -1', skills: 'Asteroid Identification +10%, Mining Operations +10%, Resource Valuation +5%' },
   { id: 'station-brat', name: 'Station Brat', description: 'Grew up on crowded space stations', attributeEffect: 'GUILE +1, GRIT -1', skills: 'Station Layout Knowledge +10%, Social Engineering +10%, Resource Conservation +5%' }
 ];
+
+export { BACKGROUNDS };
+export default BACKGROUNDS;
