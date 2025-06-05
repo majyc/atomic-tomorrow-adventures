@@ -3,7 +3,7 @@ export const PROFESSIONS = [
   { id: 'rocket-jockey', name: 'Rocket Jockey', description: 'Expert spacecraft pilot who thrives on the thrill of atmospheric entry', skills: 'Piloting (Spacecraft) +40%, Technology (Ship Systems) +20%, Navigation (Space) +10%, Marksmanship (Pistols) +10%' },
   { id: 'astrogator', name: 'Astrogator', description: 'Navigation specialist who charts courses through the stars', skills: 'Navigation (Space) +40%, Academics (Mathematics) +20%, Science (Astronomy) +10%, Computer Systems (Programming) +10%' },
   { id: 'astro-racer', name: 'Astro Racer', description: 'Speed demon who competes in dangerous space races', skills: 'Piloting (Racing) +40%, Repair (Vehicle Repair) +20%, Perception (Threat Assessment) +10%, Athletics (Reflexes) +10%' },
-  { id: 'orbital-jumper', name: 'Orbital Jumper', description: 'Daredevil who specializes in zero-G maneuvers between spacecraft', skills: 'Athletics (Zero-G Movement) +40%, Athletics (Jumping) +20%, Technology (Vacuum Equipment) +10%, Perception (Spatial Awareness) +10%' },
+  { id: 'orbital-jumper', name: 'Orbital Jumper', description: 'Daredevil who specializes in zero-G maneuvers between spacecraft', skills: 'Zero-G Operations (Space) +40%, Athletics (Jumping) +20%, Technology (Vacuum Equipment) +10%, Perception (Spatial Awareness) +10%' },
   { id: 'stunt-pilot', name: 'Stunt Pilot', description: 'Performer who pushes aircraft to their absolute limits', skills: 'Piloting (Aircraft) +40%, Performance (Showmanship) +20%, Repair (Vehicle Repair) +10%, Perception (Threat Assessment) +10%' },
 
   // SCIENTISTS & INNOVATORS
@@ -43,8 +43,8 @@ export const PROFESSIONS = [
   { id: 'gambler', name: 'Gambler', description: 'Risk-taker who makes a living on games of chance and skill', skills: 'Science (Probability) +40%, Deception (Bluffing) +20%, Perception (Reading People) +10%, Social (Carousing) +10%' },
 
   // PSYCHICS & ESPERS
-  { id: 'mentalist', name: 'Mentalist', description: 'Telepath who can read and influence minds', skills: 'Psionic Powers (Telepathy) +40%, Psionic Powers (Mental Defense) +20%, Survival (Mental Discipline) +10%, Science (Psychology) +10%' },
-  { id: 'telekinetic', name: 'Telekinetic', description: 'Psychic who can move objects with the power of their mind', skills: 'Psionic Powers (Telekinesis) +40%, Athletics (Fine Control) +20%, Survival (Mental Discipline) +10%, Science (Psionic Theory) +10%' },
+  { id: 'mentalist', name: 'Mentalist', description: 'Telepath who can read and influence minds', skills: 'Psionic Powers (Telepathy) +40%, Psionic Powers (Telekinesis) -10%, Psionic Powers (Mental Defense) +20%, Survival (Mental Discipline) +10%, Science (Psychology) +10%' },
+  { id: 'telekinetic', name: 'Telekinetic', description: 'Psychic who can move objects with the power of their mind', skills: 'Psionic Powers (Telekinesis) +40%, Psionic Powers (), Athletics (Fine Control) +20%, Survival (Mental Discipline) +10%, Science (Psionic Theory) +10%' },
   { id: 'precog', name: 'Precog', description: 'Esper who experiences flashes of possible futures', skills: 'Psionic Powers (Precognition) +40%, Perception (Intuition) +20%, Science (Probability) +10%, Academics (Dream Interpretation) +10%' },
   { id: 'empath', name: 'Empath', description: 'Sensitive who can feel and influence the emotions of others', skills: 'Psionic Powers (Empathy) +40%, Survival (Mental Discipline) +20%, Perception (Reading People) +10%, Persuasion (Counseling) +10%' },
   { id: 'wild-talent', name: 'Wild Talent', description: 'Untrained but powerful psychic with unpredictable abilities', skills: 'Psionic Powers (Choose Specialty) +40%, Survival (Mental Discipline) +20%, Psionic Powers (Energy Channeling) +10%, Science (Psionic Theory) +10%' },
@@ -72,7 +72,7 @@ export const PROFESSIONS = [
 
   // SPECIALIZED ROLES
   { id: 'prospector', name: 'Prospector', description: 'Mineral hunter searching for valuable deposits', skills: 'Science (Geology) +40%, Investigation (Surveying) +20%, Technology (Mineral Analysis) +10%, Mining (Excavation) +10%' },
-  { id: 'asteroid-miner', name: 'Asteroid Miner', description: 'Specialist in extracting resources from space rocks', skills: 'Mining (Zero-G Mining) +40%, Demolitions (Mining Charges) +20%, Engineering (Ore Processing) +10%, Survival (Vacuum) +10%' },
+  { id: 'asteroid-miner', name: 'Asteroid Miner', description: 'Specialist in extracting resources from space rocks', skills: 'Zero-G Operations (Mining) +40%, Demolitions (Mining Charges) +20%, Engineering (Ore Processing) +10%, Survival (Vacuum) +10%' },
   { id: 'chronicler', name: 'Chronicler', description: 'Recorder of events and keeper of knowledge', skills: 'Academics (Documentation) +40%, Perception (Observation) +20%, Investigation (Analysis) +10%, Performance (Storytelling) +10%' },
   { id: 'terraform-tech', name: 'Terraform Tech', description: 'Engineer who transforms worlds to support human life', skills: 'Engineering (Environmental) +40%, Science (Atmospheric) +20%, Science (Biology) +10%, Science (Geology) +10%' },
   { id: 'entertainer', name: 'Entertainer', description: 'Performer who brings art and culture to the stars', skills: 'Performance (Choose Specialty) +40%, Perception (Crowd Reading) +20%, Artistry (Choose Specialty) +10%, Social (Showmanship) +10%' },

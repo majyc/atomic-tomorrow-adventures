@@ -12,7 +12,7 @@ import {
   getSkillLevelColor, 
   getAttributeColor 
 } from '../utils/skillUtils';
-import { printCharacterSheet } from '../utils/characterSheetUtils';
+import { printCharacterSheet } from '../utils/printUtils';
 
 // Import RetroTerminalInput component
 import RetroTerminalInput from './RetroTerminalInput';
