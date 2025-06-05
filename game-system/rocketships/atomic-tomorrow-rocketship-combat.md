@@ -95,7 +95,7 @@ Each station on a ship requires specific skills. Characters use their own skill 
 
 **Key Actions**:
 
-- **Plot Jump**: Roll Navigation (Space). Success allows quick hyperspace calculation.
+- **Plot Course**: Roll Navigation (Space). Success allows quick course calculation.
 - **Tactical Advantage**: Roll Navigation (Space). Success grants +20% to pilot or gunners next round.
 - **Find Cover**: Roll Navigation (Space). Success identifies celestial bodies or debris for protection.
 - **Sensor Analysis**: Roll Technology (Sensors). Success reveals vulnerable systems on target ships.

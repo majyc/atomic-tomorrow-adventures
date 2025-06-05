@@ -28,7 +28,7 @@ When a character receives a wound during gameplay:
 
 ### WOUND LOCATION CHART
 
-Location can be determined using the ones digit of the attack roll, or specified during narration:
+Location can be determined using the ones digit of the attack roll or the tens digit if the result was a special success (ending in 5 or 0), or specified during narration:
 
 | Digit | Location                 |
 | ----- | ------------------------ |
@@ -311,7 +311,7 @@ Different medical specialists have unique advantages:
 **PORTABLE AUTO-MEDIC**
 
 - Allows one full medical treatment per day outside medical facility
-- Power cell depletes with each use (3 charges)
+- Medical supplies depletes with each use (3 charges)
 - Bulky (counts as heavy equipment for encumbrance)
 
 **COMBAT MEDIC HARNESS**
@@ -320,9 +320,9 @@ Different medical specialists have unique advantages:
 - Contains integrated supplies for 3 emergency treatments
 - Provides +20% to Medicine checks in combat situations
 
-**Z-RAY WAND**
+**Z-RAY TENT**
 
-- Portable version of Z-Ray machine
+- Semi-Portable version of Z-Ray machine, takes 10 minutes to set up and tear down.
 - Single-target treatment only
 - Higher radiation exposure (adds 1-2 Radiation Points instead of 1)
 

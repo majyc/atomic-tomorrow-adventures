@@ -42,7 +42,7 @@ When two characters' skills directly oppose each other:
 - Both participants roll percentile dice
 - Higher successful roll wins (success trumps failure; better quality trumps lesser quality)
 - If both succeed with same quality, highest roll below skill wins
-- If both fail, higher roll still fails worse
+- If both fail, lower roll still fails worse
 
 ## STANDARD DIFFICULTY MODIFIERS
 
@@ -72,7 +72,7 @@ Each character gets the following actions per turn:
 
 ### Initiative
 
-- At the start of combat, all participants roll against REFLEX × 5
+- At the start of combat, all participants roll against REFLEX × 5 (i.e. a REFLEX check)
 - Results determine turn order for the entire encounter:
   - Highest successful roll acts first, then around the table.
   - Switch between clockwise and counterclockwise each encounter
@@ -97,7 +97,6 @@ Seven core attributes, ranging from 3-18 for normal humans:
 - **CHARM**: Charisma, leadership, persuasiveness
 - **GRIT**: Endurance, willpower, mental fortitude
 - **GUILE**: Cunning, deception, craftiness
-- **PSI**: Psychic potential (optional, only for psychic characters)
 
 For attribute checks, multiply the attribute by 5 to get the target percentage.
 
@@ -132,11 +131,11 @@ For attribute checks, multiply the attribute by 5 to get the target percentage.
 
 ### Task Complexity
 
-- **Standard Tasks**: Single roll against appropriate skill
-- **Complex Tasks**: Requires 3 successes
-- **Demanding Tasks**: Requires 5 successes
-- **Expert Tasks**: Requires 8 successes
-- **Master Tasks**: Requires 12+ successes
+- **Standard Tasks**: Single roll against appropriate skill (1 success)
+- **Complex Tasks**: Requires 2 successes
+- **Demanding Tasks**: Requires 3 successes
+- **Expert Tasks**: Requires 5 successes
+- **Master Tasks**: Requires 8+ successes
 
 ### Success Counting
 
@@ -216,8 +215,8 @@ All vehicles use a 5-step damage system for major systems:
 
 ### Psionic Abilities
 
-- Use PSI attribute for activation, Opposed if trying to affect another creature
+- Use PSI skill for activation, Opposed if trying to affects another creature
 - Special Success: +1 success effect
 - Critical Success: +2 success effect
-- Strain reduces current PSI skill rating temporarily
-- Powers organized in five categories (Telepathy, ESP, Psychokinesis, etc.)
+- Success depletes the Esper's Aura, rolling success higher than current Aura causes strain.
+- Powers organized in four categories (Telepathy, Telekinesis, Empathy, Teleportation) plus Wild Talents that are unique abilities.
