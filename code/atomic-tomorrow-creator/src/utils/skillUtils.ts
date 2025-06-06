@@ -178,6 +178,33 @@ export function calculateDetailedSkills(character): CalculatedSkills {
 }
 
 /**
+ * Helper function to get base skill name without specialization
+ */
+function getBaseSkillName(skillName: string): string {
+  const specMatch = skillName.match(/(.+?)\s+\(/);
+  return specMatch ? specMatch[1].trim() : skillName;
+}
+
+/**
+ * Helper function to get bonus for a skill, checking both exact match and base skill match
+ */
+function getSkillBonusFlexible(parsedSkills: any[], targetSkillName: string): number {
+  if (!parsedSkills || parsedSkills.length === 0) return 0;
+
+  // First try exact match
+  const exactMatch = parsedSkills.find(skill => skill.skillName === targetSkillName);
+  if (exactMatch) return exactMatch.bonus;
+
+  // Then try base skill match (for cases where background gives "Zero-G Operations +5%" 
+  // and we want it to apply to "Zero-G Operations (Mining)")
+  const baseSkillName = getBaseSkillName(targetSkillName);
+  const baseMatch = parsedSkills.find(skill => skill.skillName === baseSkillName);
+  if (baseMatch) return baseMatch.bonus;
+
+  return 0;
+}
+
+/**
  * Simplified skill calculator - returns a flattened list of key skills for character sheets
  * @param character The character data including attributes, profession, origin, background
  * @returns Object containing simplified skill data
@@ -187,26 +214,33 @@ export function calculateSimplifiedSkills(character): SimplifiedSkills {
     return {};
   }
 
-  // Create a standard set of skills that should be on every character sheet
   const skills: SimplifiedSkills = {};
   
+  // Parse all skills from profession, origin, and background
+  const professionSkills = parseSkills(character.profession.skills || '');
+  const originSkills = parseSkills(character.origin.skills || '');
+  const backgroundSkills = parseSkills(character.background.skills || '');
+  
+  // Collect all unique skill names
+  const allSkillNames = new Set<string>();
+  [...professionSkills, ...originSkills, ...backgroundSkills].forEach(skill => {
+    allSkillNames.add(skill.skillName);
+  });
+  
   // Calculate skill specializations with their bonuses
-  const calculateSkillWithDetail = (skillName: string, sourceName: string): SimplifiedSkill => {
+  const calculateSkillWithDetail = (skillName: string): SimplifiedSkill => {
     // Parse skill name to determine if it has a specialization
     let coreName: string;
-    let specName: string;
     let attribute: string;
     
     // Check if skill has parentheses (indicating specialization)
-    const specMatch = skillName.match(/(.+?)\s+\((.+?)\)/);
+    const specMatch = skillName.match(/(.+?)\s+\(/);
     if (specMatch) {
       coreName = specMatch[1].trim().toUpperCase();
-      specName = specMatch[2].trim();
       attribute = getSkillAttribute(coreName);
     } else {
       // Direct skill name - try to map to a core skill
       coreName = skillName.toUpperCase();
-      specName = skillName;
       attribute = getSkillAttribute(coreName);
     }
     
@@ -224,10 +258,10 @@ export function calculateSimplifiedSkills(character): SimplifiedSkills {
       coreBonus = 5; // Attribute-based skills get the +5% core bonus
     }
     
-    // Get bonuses - now simplified with exact name matching
-    const professionBonus = getProfessionBonus(character, skillName);
-    const originBonus = getOriginBonus(character, skillName);
-    const backgroundBonus = getBackgroundBonus(character, skillName);
+    // Get bonuses using flexible matching
+    const professionBonus = getSkillBonusFlexible(professionSkills, skillName);
+    const originBonus = getSkillBonusFlexible(originSkills, skillName);
+    const backgroundBonus = getSkillBonusFlexible(backgroundSkills, skillName);
     
     // Calculate total value
     const totalValue = Math.min(99, baseValue + coreBonus + professionBonus + originBonus + backgroundBonus);
@@ -242,9 +276,15 @@ export function calculateSimplifiedSkills(character): SimplifiedSkills {
       derivation = `(${attribute}: ${attrValue} × 2) + 5 + ${professionBonus > 0 ? `${professionBonus} (Profession)` : '0'} + ${originBonus > 0 ? `${originBonus} (Origin)` : '0'} + ${backgroundBonus > 0 ? `${backgroundBonus} (Background)` : '0'}`;
     }
     
+    // Determine source priority
+    let source = "Core";
+    if (professionBonus > 0) source = "Profession";
+    else if (originBonus > 0) source = "Origin";
+    else if (backgroundBonus > 0) source = "Background";
+    
     return {
       value: totalValue,
-      source: sourceName,
+      source,
       name: skillName,
       professionBonus,
       originBonus,
@@ -253,24 +293,9 @@ export function calculateSimplifiedSkills(character): SimplifiedSkills {
     };
   };
   
-  // Standard skills that appear on most character sheets
-  // These names now match exactly what's in the data files
-  const standardSkills = [
-    { name: "Piloting (Spacecraft)", source: "Profession" },
-    { name: "Technology (Ship Systems)", source: "Profession" },
-    { name: "Navigation (Space)", source: "Profession" },
-    { name: "Combat (Pistols)", source: "Profession" },
-    { name: "Zero-G Operations", source: "Origin" },
-    { name: "Resource Management", source: "Origin" },
-    { name: "Asteroid Navigation", source: "Origin" },
-    { name: "Negotiation", source: "Background" },
-    { name: "Market Analysis", source: "Background" },
-    { name: "Appraisal", source: "Background" }
-  ];
-  
-  // Calculate each standard skill
-  standardSkills.forEach(({ name, source }) => {
-    skills[name] = calculateSkillWithDetail(name, source);
+  // Calculate each skill that appears in the character's profession, origin, or background
+  Array.from(allSkillNames).forEach(skillName => {
+    skills[skillName] = calculateSkillWithDetail(skillName);
   });
   
   // Add Solar Scouts Training - special case
@@ -295,7 +320,7 @@ export function getProfessionBonus(character, skillName: string): number {
     character.profession._parsedSkills = parseSkills(character.profession.skills);
   }
 
-  return findSkillBonus(character.profession._parsedSkills, skillName);
+  return getSkillBonusFlexible(character.profession._parsedSkills, skillName);
 }
 
 export function getOriginBonus(character, skillName: string): number {
@@ -306,7 +331,7 @@ export function getOriginBonus(character, skillName: string): number {
     character.origin._parsedSkills = parseSkills(character.origin.skills);
   }
 
-  return findSkillBonus(character.origin._parsedSkills, skillName);
+  return getSkillBonusFlexible(character.origin._parsedSkills, skillName);
 }
 
 export function getBackgroundBonus(character, skillName: string): number {
@@ -317,7 +342,7 @@ export function getBackgroundBonus(character, skillName: string): number {
     character.background._parsedSkills = parseSkills(character.background.skills);
   }
 
-  return findSkillBonus(character.background._parsedSkills, skillName);
+  return getSkillBonusFlexible(character.background._parsedSkills, skillName);
 }
 
 /**

@@ -1,6 +1,6 @@
 export const PROFESSIONS = [
   // ACES & PILOTS
-  { id: 'rocket-jockey', name: 'Rocket Jockey', description: 'Expert spacecraft pilot who thrives on the thrill of atmospheric entry', skills: 'Piloting (Spacecraft) +40%, Technology (Ship Systems) +20%, Navigation (Space) +10%, Marksmanship (Pistols) +10%' },
+  { id: 'rocket-jockey', name: 'Rocket Jockey', description: 'Expert spacecraft pilot who thrives on the thrill of atmospheric entry', skills: 'Piloting (Spacecraft) +40%, Technology (Ship Systems) +20%, Navigation (Space) +10%, Combat (Pistols) +10%' },
   { id: 'astrogator', name: 'Astrogator', description: 'Navigation specialist who charts courses through the stars', skills: 'Navigation (Space) +40%, Academics (Mathematics) +20%, Science (Astronomy) +10%, Computer Systems (Programming) +10%' },
   { id: 'astro-racer', name: 'Astro Racer', description: 'Speed demon who competes in dangerous space races', skills: 'Piloting (Racing) +40%, Repair (Vehicle Repair) +20%, Perception (Threat Assessment) +10%, Athletics (Reflexes) +10%' },
   { id: 'orbital-jumper', name: 'Orbital Jumper', description: 'Daredevil who specializes in zero-G maneuvers between spacecraft', skills: 'Zero-G Operations (Space) +40%, Athletics (Jumping) +20%, Technology (Vacuum Equipment) +10%, Perception (Spatial Awareness) +10%' },
@@ -22,16 +22,16 @@ export const PROFESSIONS = [
   { id: 'deep-scout', name: 'Deep Scout', description: 'Explorer of the furthest reaches of known space', skills: 'Navigation (Deep Space) +40%, Science (Astronomy) +20%, Survival (Space) +10%, Technology (Communications) +10%' },
 
   // SOLDIERS & ENFORCERS
-  { id: 'space-ranger', name: 'Space Ranger', description: 'Law enforcement officer with interplanetary jurisdiction', skills: 'Security (Law Enforcement) +40%, Investigation (Crime Scene Analysis) +20%, Marksmanship (Rifles) +10%, Academics (Regulations) +10%' },
-  { id: 'solar-marine', name: 'Solar Marine', description: 'Elite military specialist trained for combat in space', skills: 'Marksmanship (Heavy Weapons) +40%, Melee Combat (Bladed Weapons) +20%, Athletics (Strength) +10%, Survival (Combat Zone) +10%' },
-  { id: 'bounty-hunter', name: 'Bounty Hunter', description: 'Independent tracker who brings fugitives to justice', skills: 'Investigation (Tracking) +40%, Streetwise (Information Gathering) +20%, Marksmanship (Pistols) +10%, Persuasion (Intimidation) +10%' },
-  { id: 'mercenary', name: 'Mercenary', description: 'Soldier for hire who goes where the money is', skills: 'Marksmanship (Rifles) +40%, Persuasion (Negotiation) +20%, Tactics (Combat) +10%, Survival (Combat Zone) +10%' },
-  { id: 'bodyguard', name: 'Bodyguard', description: 'Personal security specialist trained to protect VIPs', skills: 'Perception (Threat Assessment) +40%, Melee Combat (Unarmed Combat) +20%, Perception (Situational Awareness) +10%, Security (VIP Protection) +10%' },
+  { id: 'space-ranger', name: 'Space Ranger', description: 'Law enforcement officer with interplanetary jurisdiction', skills: 'Security (Law Enforcement) +40%, Investigation (Crime Scene Analysis) +20%, Combat (Rifles) +10%, Academics (Regulations) +10%' },
+  { id: 'solar-marine', name: 'Solar Marine', description: 'Elite military specialist trained for combat in space', skills: 'Combat (Heavy Weapons) +40%, Combat (Bladed Weapons) +20%, Athletics (Strength) +10%, Survival (Combat Zone) +10%' },
+  { id: 'bounty-hunter', name: 'Bounty Hunter', description: 'Independent tracker who brings fugitives to justice', skills: 'Investigation (Tracking) +40%, Streetwise (Information Gathering) +20%, Combat (Pistols) +10%, Persuasion (Intimidation) +10%' },
+  { id: 'mercenary', name: 'Mercenary', description: 'Soldier for hire who goes where the money is', skills: 'Combat (Rifles) +40%, Persuasion (Negotiation) +20%, Tactics (Combat) +10%, Survival (Combat Zone) +10%' },
+  { id: 'bodyguard', name: 'Bodyguard', description: 'Personal security specialist trained to protect VIPs', skills: 'Perception (Threat Assessment) +40%, Combat (Unarmed Combat) +20%, Perception (Situational Awareness) +10%, Security (VIP Protection) +10%' },
 
   // MECHANICS & ENGINEERS
   { id: 'wrench-monkey', name: 'Wrench Monkey', description: 'Practical engineer who keeps ships and equipment running', skills: 'Repair (Ship Repair) +40%, Technology (Diagnostics) +20%, Engineering (Mechanical) +10%, Streetwise (Scrounging) +10%' },
   { id: 'atomech', name: 'Atomech', description: 'Technician specializing in atomic power systems', skills: 'Engineering (Atomic) +40%, Technology (Radiation Equipment) +20%, Engineering (Power Systems) +10%, Repair (Ship Repair) +10%' },
-  { id: 'gadgeteer', name: 'Gadgeteer', description: 'Inventor of ingenious and often unorthodox devices', skills: 'Engineering (Experimental) +40%, Technology (Electronics) +20%, Marksmanship (Exotic Weapons) +10%, Streetwise (Scrounging) +10%' },
+  { id: 'gadgeteer', name: 'Gadgeteer', description: 'Inventor of ingenious and often unorthodox devices', skills: 'Engineering (Experimental) +40%, Technology (Electronics) +20%, Combat (Exotic Weapons) +10%, Streetwise (Scrounging) +10%' },
   { id: 'salvager', name: 'Salvager', description: 'Expert at recovering and repurposing derelict technology', skills: 'Repair (Ship Repair) +40%, Technology (Ship Systems) +20%, Streetwise (Scrounging) +10%, Persuasion (Negotiation) +10%' },
   { id: 'roboticist', name: 'Roboticist', description: 'Specialist in creating and maintaining robotic systems', skills: 'Engineering (Robotics) +40%, Technology (Positronic Systems) +20%, Engineering (Mechanical) +10%, Animal Handling (Robot Psychology) +10%' },
 
@@ -43,11 +43,11 @@ export const PROFESSIONS = [
   { id: 'gambler', name: 'Gambler', description: 'Risk-taker who makes a living on games of chance and skill', skills: 'Science (Probability) +40%, Deception (Bluffing) +20%, Perception (Reading People) +10%, Social (Carousing) +10%' },
 
   // PSYCHICS & ESPERS
-  { id: 'mentalist', name: 'Mentalist', description: 'Telepath who can read and influence minds', skills: 'Psionic Powers (Telepathy) +40%, Psionic Powers (Telekinesis) -10%, Psionic Powers (Mental Defense) +20%, Survival (Mental Discipline) +10%, Science (Psychology) +10%' },
-  { id: 'telekinetic', name: 'Telekinetic', description: 'Psychic who can move objects with the power of their mind', skills: 'Psionic Powers (Telekinesis) +40%, Psionic Powers (), Athletics (Fine Control) +20%, Survival (Mental Discipline) +10%, Science (Psionic Theory) +10%' },
-  { id: 'precog', name: 'Precog', description: 'Esper who experiences flashes of possible futures', skills: 'Psionic Powers (Precognition) +40%, Perception (Intuition) +20%, Science (Probability) +10%, Academics (Dream Interpretation) +10%' },
-  { id: 'empath', name: 'Empath', description: 'Sensitive who can feel and influence the emotions of others', skills: 'Psionic Powers (Empathy) +40%, Survival (Mental Discipline) +20%, Perception (Reading People) +10%, Persuasion (Counseling) +10%' },
-  { id: 'wild-talent', name: 'Wild Talent', description: 'Untrained but powerful psychic with unpredictable abilities', skills: 'Psionic Powers (Choose Specialty) +40%, Survival (Mental Discipline) +20%, Psionic Powers (Energy Channeling) +10%, Science (Psionic Theory) +10%' },
+  { id: 'mentalist', name: 'Mentalist', description: 'Telepath who can read and influence minds', skills: 'Psi (Telepathy) +40%, Psi (Mental Defense) +20%, Survival (Mental Discipline) +10%, Science (Psychology) +10%' },
+  { id: 'telekinetic', name: 'Telekinetic', description: 'Psychic who can move objects with the power of their mind', skills: 'Psi (Psychokinesis) +40%, Athletics (Fine Control) +20%, Survival (Mental Discipline) +10%, Science (Psi Theory) +10%' },
+  { id: 'precog', name: 'Precog', description: 'Esper who experiences flashes of possible futures', skills: 'Psi (Precognition) +40%, Perception (Intuition) +20%, Science (Probability) +10%, Academics (Dream Interpretation) +10%' },
+  { id: 'empath', name: 'Empath', description: 'Sensitive who can feel and influence the emotions of others', skills: 'Psi (Empathy) +40%, Survival (Mental Discipline) +20%, Perception (Reading People) +10%, Persuasion (Counseling) +10%' },
+  { id: 'wild-talent', name: 'Wild Talent', description: 'Untrained but powerful psychic with unpredictable abilities', skills: 'Psi (Choose Specialty) +40%, Survival (Mental Discipline) +20%, Psi (Energy Manipulation) +10%, Science (Psi Theory) +10%' },
 
   // DIPLOMATS & COMMUNICATORS
   { id: 'xeno-linguist', name: 'Xeno-Linguist', description: 'Expert in alien languages and communication methods', skills: 'Academics (Linguistics) +40%, Xenology (Alien Cultures) +20%, Science (Pattern Recognition) +10%, Social (Diplomatic Protocol) +10%' },
