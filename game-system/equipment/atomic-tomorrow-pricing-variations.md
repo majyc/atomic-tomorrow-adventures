@@ -104,7 +104,7 @@ title: Atomic Pricing Variations
 |-----------|----------------|----------------|
 | Solar Flare Activity | +10-50% | Communications disruptions, safety procedures |
 | Local Political Unrest | +25-100% | Security concerns, supply interruptions |
-| Mysterian Activity | +50-200% | Heightened alert, restricted movement |
+| Mysterion Activity | +50-200% | Heightened alert, restricted movement |
 | Resource Shortages | +25-200% | Supply limitations, rationing measures |
 | Technological Breakthrough | -10-30% | Efficiency improvements, new capabilities |
 | System Holiday | +25-100% | High demand, staff availability |

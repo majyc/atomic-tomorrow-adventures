@@ -94,7 +94,7 @@ When things go wrong, these daring professionals step in:
 2. **Slingshot Sabotage**
    * A key transfer station in the Belt has experienced suspicious "accidents"
    * Critical shipments of Martian grain to the Jovian moons are delayed
-   * Is it corporate rivalry, Mysterian interference, or something else?
+   * Is it corporate rivalry, Mysterion interference, or something else?
 3. **The Unexpected Cargo**
    * A routine ore shipment from Venus arrives at Ceres with an unexpected stowaway
    * How did they survive weeks in a non-pressurized container?
@@ -200,7 +200,7 @@ The presence of valuable, minimally protected cargo inevitably attracts predator
 1. **The Long Drive**
    * A critical medication shipment has missed its transfer window
    * Players must shepherd it across three planetary orbits manually
-   * Along the way, they discover evidence of systematic Mysterian interference
+   * Along the way, they discover evidence of systematic Mysterion interference
 2. **Ghost Cargo**
    * Shipments have been arriving empty at Mars despite intact seals
    * Investigation reveals a new phase-shifting technology being tested

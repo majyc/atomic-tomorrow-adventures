@@ -38,7 +38,7 @@ This explains several unusual capabilities:
 
 ### "THE FORBIDDEN QUERY"
 
-The party discovers that someone has been using Prometheus to research Mysterian technology, specifically communication methods that could breach Venus's atmospheric defense network. The searches have been carefully fragmented to avoid detection, but when pieced together, they reveal a comprehensive plan for coordinated infiltration.
+The party discovers that someone has been using Prometheus to research Mysterion technology, specifically communication methods that could breach Venus's atmospheric defense network. The searches have been carefully fragmented to avoid detection, but when pieced together, they reveal a comprehensive plan for coordinated infiltration.
 
 ### "THE PROMETHEUS PROTOCOL"
 

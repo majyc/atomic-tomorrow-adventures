@@ -14,7 +14,7 @@ In this retro-futuristic world, technology followed a different path than our ow
 
 - Pilot rockets powered by Chemical X, the revolutionary fuel that makes interplanetary travel a matter of days not months
 - Navigate Venus's lush jungles, Mars's ancient canals, and Mercury's extreme metal-rich wastelands
-- Encounter strange alien creatures, mysterious Forerunner artifacts, and the enigmatic Mysterians
+- Encounter strange alien creatures, mysterious Forerunner artifacts, and the enigmatic Mysterions
 - Visit Cloud Haven on Venus, the ancient ruins of Mars, the mines of Mercury, and the sprawling cornucopia of Ganymede
 
 ## GAME FEATURES
@@ -91,7 +91,7 @@ Take to the skies and stars with vessels from atmospheric flying boats to interp
 
 Atomic Tomorrow Adventures is a tabletop roleplaying game inspired by golden age science fiction, pulp magazines, and retro-futurist aesthetics. The game emphasizes exploration, problem-solving, and swashbuckling action across an optimistic vision of a Solar System filled with wonders.
 
-Whether you're battling Mysterian invaders from beyond the stars, exploring ancient ruins on Mars, negotiating with the nomadic Cloud People of Venus, or racing to deliver crucial medical supplies to the colonies of Ganymede, adventure awaits in the atomic tomorrow of our Solar System!
+Whether you're battling Mysterion invaders from beyond the stars, exploring ancient ruins on Mars, negotiating with the nomadic Cloud People of Venus, or racing to deliver crucial medical supplies to the colonies of Ganymede, adventure awaits in the atomic tomorrow of our Solar System!
 
 *"This is the Solar System as we dreamed it would be—full of wonder, danger, and opportunity for the bold!"*
 

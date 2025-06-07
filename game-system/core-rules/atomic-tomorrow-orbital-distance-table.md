@@ -324,7 +324,7 @@ The "Comm Window" row indicates how long a clear communication window typically 
 
 ## STORYTELLING WITH TRANSIT & COMM LIMITATIONS
 
-- **Message Lag**: Mercury-Earth message: "Mysterians sighted near Caloris Basin." Takes 9 light-minutes to reach Earth in Distance Class D, then Earth takes hours to mobilize a response, by which time the situation has evolved
+- **Message Lag**: Mercury-Earth message: "Mysterions sighted near Caloris Basin." Takes 9 light-minutes to reach Earth in Distance Class D, then Earth takes hours to mobilize a response, by which time the situation has evolved
 - **Emergency Response**: Mars at maximum separation from Earth (Class G): A ship in distress must wait up to 22 minutes for their message to reach Earth, then another 22 minutes for instructions to return
 - **Strategic Planning**: Venus approaching optimal conjunction with Earth: Military planners time their fleet movements to coincide with the approaching Distance Class A position, reducing travel time by 28 hours
 - **Communication Blackout**: A ship behind Jupiter experiences a complete communications blackout with Earth for several hours – anything could happen during this time

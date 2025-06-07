@@ -113,7 +113,7 @@ Nimbus City floats majestically among Venus's upper cloud layers, a marvel of en
 
 ### Nimbus Adventure Elements
 
-1. **The Omniscience Array** - A ring of observation platforms surrounding the city core, housing advanced sensors and telescopes. Perfect for the boy genius to discover mysterious signals from the deep jungle or detect Mysterian activity.
+1. **The Omniscience Array** - A ring of observation platforms surrounding the city core, housing advanced sensors and telescopes. Perfect for the boy genius to discover mysterious signals from the deep jungle or detect Mysterion activity.
 2. **Greenheart Institute** - Suspended botanical gardens where scientists study and synthesize Endural. The sophisticated diplomat could navigate tensions between corporate researchers and academic purists.
 3. **Cloudskimmer Races** - Death-defying competitions where pilots navigate between floating platforms through unpredictable thermal currents. Gambling, sabotage, and glory await.
 4. **The Floating Archives** - Library platforms containing centuries of Venusian exploration data on crystal storage matrices, including classified records of "impossible" jungle encounters a telekinetic might access through unconventional means.
@@ -131,7 +131,7 @@ Perched atop Mount Maxwell above the permanent cloud layer, Highport serves as V
 1. **The Landing Fields** - Massive reinforced platforms where interplanetary vessels dock, surrounded by customs facilities and cargo processing.
 2. **Atmospheric Descent Station** - Where passengers and cargo transfer to cloud-skimmers for journeys to Venus's surface cities. A key transportation hub controlled by powerful guilds.
 3. **Solar Array** - Enormous power collection facility that harnesses the unfiltered sunlight above the clouds to power the port and beam energy to cities below.
-4. **The Observatory** - Strategic facility monitoring space traffic and maintaining communications with other planets, potentially detecting unusual activity like Mysterian vessels.
+4. **The Observatory** - Strategic facility monitoring space traffic and maintaining communications with other planets, potentially detecting unusual activity like Mysterion vessels.
 5. **Mountain Base Laboratories** - Research facilities taking advantage of Highland's unique position above the clouds for experiments that would be impossible below.
 
 ## ADVENTURES AFTER THE CRASH
@@ -142,14 +142,14 @@ Perched atop Mount Maxwell above the permanent cloud layer, Highport serves as V
 
 #### "SALVAGE RIGHTS"
 
-After surviving a Mysterian attack and crash-landing in the jungle, the party finally reaches Port Charles, only to discover that scavengers have already located their downed ship and are claiming salvage rights through the Port Authority.
+After surviving a Mysterion attack and crash-landing in the jungle, the party finally reaches Port Charles, only to discover that scavengers have already located their downed ship and are claiming salvage rights through the Port Authority.
 
 **Port Charles Adventure Elements:**
 
 * The sophisticated diplomat must navigate the byzantine Port Authority bureaucracy to maintain their claim on the vessel and its contents
-* The legendary Solar Ranger recognizes one of the scavengers as a notorious jungle guide with ties to Mysterian collaborators
+* The legendary Solar Ranger recognizes one of the scavengers as a notorious jungle guide with ties to Mysterion collaborators
 * The crack roboticist discovers that the scavengers have already removed and are attempting to sell the ship's navigation computer containing classified data
-* The telekinetic discovers they can sense residual Mysterian energy signatures on some of the salvaged equipment
+* The telekinetic discovers they can sense residual Mysterion energy signatures on some of the salvaged equipment
 * The boy genius inventor realizes certain components missing from the inventory were not taken by the scavengers but by someone else
 
 **Key Locations:**
@@ -157,13 +157,13 @@ After surviving a Mysterian attack and crash-landing in the jungle, the party fi
 * **The Harbormaster's Tower** - Where official salvage claims are processed and disputed
 * **The Shifting Market** - Where the stolen components are being discreetly sold
 * **The Eternal Docks** - Where the scavenger's ship is being loaded with their "legal salvage"
-* **The Undertow** - Secret meeting place where Mysterian collaborators gather
+* **The Undertow** - Secret meeting place where Mysterion collaborators gather
 
 **Complications:**
 
 * Port Authority officials are being bribed by the scavengers
 * A corporate agent is separately trying to acquire the technology
-* The Mysterians launch a covert operation to recover their technology from the crash site
+* The Mysterions launch a covert operation to recover their technology from the crash site
 * Time is running out as the salvage auction is scheduled for tomorrow morning
 
 ### "THE ENDURAL EPIDEMIC"
@@ -199,14 +199,14 @@ A contaminated batch of Endural is causing hallucinations and strange behavior a
 
 ### "THE GOVERNOR'S INVITATION"
 
-Upon reaching Victoria, the party is surprised to receive a formal invitation from Governor Blackwood to attend a gala at the Governor's Manor. The reason: their encounter with the Mysterians has made them persons of interest to Venus's highest authority.
+Upon reaching Victoria, the party is surprised to receive a formal invitation from Governor Blackwood to attend a gala at the Governor's Manor. The reason: their encounter with the Mysterions has made them persons of interest to Venus's highest authority.
 
 **Adventure Elements:**
 
 * The sophisticated diplomat recognizes the invitation as both an opportunity and a subtle interrogation
 * The telekinetic senses unusual psychic barriers within the Governor's Manor
 * The roboticist identifies advanced surveillance systems unlike standard Venusian technology
-* The boy genius discovers references to a classified "Mysterian Contingency Protocol" in Victoria's archives
+* The boy genius discovers references to a classified "Mysterion Contingency Protocol" in Victoria's archives
 * The legendary Solar Ranger notices unusual security personnel with non-standard equipment
 
 **Key Locations:**
@@ -214,14 +214,14 @@ Upon reaching Victoria, the party is surprised to receive a formal invitation fr
 * **The Governor's Manor** - A labyrinthine colonial mansion with hidden security systems and secret rooms
 * **The Domestication Gardens** - Where preliminary meetings occur before the main event
 * **The Old Quarter** - Where informants provide background on recent unusual activities
-* **The University Archives** - Containing historical records of previous Mysterian encounters
+* **The University Archives** - Containing historical records of previous Mysterion encounters
 * **The Expedition Outfitters' Guild** - Where equipment and information can be discreetly acquired
 
 **Complications:**
 
-* Other guests include rival factions with their own agendas regarding Mysterian technology
+* Other guests include rival factions with their own agendas regarding Mysterion technology
 * The Governor has hidden motives beyond official security concerns
-* A disguised Mysterian infiltrator is among the guests
+* A disguised Mysterion infiltrator is among the guests
 * The party's crash may have exposed something the Venusian government has been hiding
 
 ### "JUNGLE FEVER"
@@ -248,5 +248,5 @@ A mysterious disease is spreading through Victoria, affecting those who've recen
 
 * The disease is not actually harmful but a form of communication from something ancient in the jungle
 * Corporate interests want the jungle burned to cover up an illegal operation
-* The hallucinations are actually revealing the location of a crashed Mysterian vessel from decades ago
+* The hallucinations are actually revealing the location of a crashed Mysterion vessel from decades ago
 * The party begins showing symptoms, putting them under suspicion

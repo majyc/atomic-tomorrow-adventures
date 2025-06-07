@@ -40,19 +40,19 @@ title: Tabular Rocketship Catalog
 | Spectre-Delta   | Terran Intelligence | Military | Electronic Warfare | 4.0-6.0       | 8     | +20 | +20 | 70×18   | 90           | DB1, EC   | AJS, SIP, SS |
 | Troopship-Beta  | Olympus Mons        | Military | Troop Transport    | 10.0-15.0     | 10+20 | +0  | +0  | 130×35  | 120          | MR2, TT3  | TQ, RDR, AH  |
 
-## MYSTERIAN CRAFT
+## Mysterion CRAFT
 
 | Name             | Manufacturer | Type      | Role                | Cost (KiloCr) | Crew     | Man | TH  | Size (m) | Range (days) | Weapons    | Special       |
 | ---------------- | ------------ | --------- | ------------------- | ------------- | -------- | --- | --- | -------- | ------------ | ---------- | ------------- |
-| Unknown Saucer   | Mysterian    | Mysterian | Recon Saucer        | Unknown       | 3-5      | +40 | +60 | 20×5    | 60           | DB3, TA    | CC, SCE, AGG  |
-| Harvester Vessel | Mysterian    | Mysterian | Harvester Ship      | Unknown       | 5-8      | +0  | +20 | 50×20   | 180          | MDB3, PB   | SCC, AC, HEC  |
-| Grand Mothership | Mysterian    | Mysterian | Mothership          | Beyond Value  | 10-20    | +0  | +0  | 350×var | ∞           | HDA4, EPW4 | SLB, EL, SIT  |
-| Scout Disc       | Mysterian    | Mysterian | Probe Craft         | Indeterminate | Unknown  | +40 | +40 | 15×4    | Unknown      | PB2, TA    | CC, RPS, SCE  |
-| Infiltrator      | Mysterian    | Mysterian | Infiltration Vessel | Unknown       | 4-6      | +20 | +20 | 40×15   | 90           | DB3, MCP   | AC, MMD, HC   |
-| Abductor         | Mysterian    | Mysterian | Abduction Ship      | Unknown       | 3-5+subj | +20 | +20 | 40×15   | 90           | PB2, TA    | SCC, ABT, HEC |
-| Silent Observer  | Mysterian    | Mysterian | Observer Disc       | Unknown       | 3        | +40 | +40 | 20×5    | 60           | DB3, TA    | CC, TDF, NIS  |
-| Death Saucer     | Mysterian    | Mysterian | Hunter-Killer       | Unknown       | 8-10     | +40 | +40 | 50×20   | 180          | MDB3, PB2  | AC, AGG, RPS  |
-| Stealth Probe    | Mysterian    | Mysterian | Surveillance Craft  | Unknown       | 2        | +40 | +60 | 10×3    | Unknown      | PB2, MCP   | CC, SIT, SCE  |
+| Unknown Saucer   | Mysterion    | Mysterion | Recon Saucer        | Unknown       | 3-5      | +40 | +60 | 20×5    | 60           | DB3, TA    | CC, SCE, AGG  |
+| Harvester Vessel | Mysterion    | Mysterion | Harvester Ship      | Unknown       | 5-8      | +0  | +20 | 50×20   | 180          | MDB3, PB   | SCC, AC, HEC  |
+| Grand Mothership | Mysterion    | Mysterion | Mothership          | Beyond Value  | 10-20    | +0  | +0  | 350×var | ∞           | HDA4, EPW4 | SLB, EL, SIT  |
+| Scout Disc       | Mysterion    | Mysterion | Probe Craft         | Indeterminate | Unknown  | +40 | +40 | 15×4    | Unknown      | PB2, TA    | CC, RPS, SCE  |
+| Infiltrator      | Mysterion    | Mysterion | Infiltration Vessel | Unknown       | 4-6      | +20 | +20 | 40×15   | 90           | DB3, MCP   | AC, MMD, HC   |
+| Abductor         | Mysterion    | Mysterion | Abduction Ship      | Unknown       | 3-5+subj | +20 | +20 | 40×15   | 90           | PB2, TA    | SCC, ABT, HEC |
+| Silent Observer  | Mysterion    | Mysterion | Observer Disc       | Unknown       | 3        | +40 | +40 | 20×5    | 60           | DB3, TA    | CC, TDF, NIS  |
+| Death Saucer     | Mysterion    | Mysterion | Hunter-Killer       | Unknown       | 8-10     | +40 | +40 | 50×20   | 180          | MDB3, PB2  | AC, AGG, RPS  |
+| Stealth Probe    | Mysterion    | Mysterion | Surveillance Craft  | Unknown       | 2        | +40 | +60 | 10×3    | Unknown      | PB2, MCP   | CC, SIT, SCE  |
 
 ## SHIP MODIFICATIONS
 
@@ -305,19 +305,19 @@ Most ships in active service have at least minor modifications from their factor
 | Spectre-Delta   | Terran Intelligence | Military | Electronic Warfare | 4.0-6.0       | 8     | +20 | 3  | 70×18   | 90           | DB1, EC   | AJS, SIP, SS |
 | Troopship-Beta  | Olympus Mons        | Military | Troop Transport    | 10.0-15.0     | 10+20 | +0  | 2  | 130×35  | 120          | MR2, TT3  | TQ, RDR, AH  |
 
-## MYSTERIAN CRAFT
+## Mysterion CRAFT
 
 | Name             | Manufacturer | Type      | Role                | Cost (KiloCr) | Crew     | Man | TH | Size (m) | Range (days) | Weapons    | Special       |
 | ---------------- | ------------ | --------- | ------------------- | ------------- | -------- | --- | -- | -------- | ------------ | ---------- | ------------- |
-| Unknown Saucer   | Mysterian    | Mysterian | Recon Saucer        | Unknown       | 3-5      | +40 | 5  | 20×5    | 60           | DB3, TA    | CC, SCE, AGG  |
-| Harvester Vessel | Mysterian    | Mysterian | Harvester Ship      | Unknown       | 5-8      | +0  | 3  | 50×20   | 180          | MDB3, PB   | SCC, AC, HEC  |
-| Grand Mothership | Mysterian    | Mysterian | Mothership          | Beyond Value  | 10-20    | +0  | 2  | 350×var | ∞           | HDA4, EPW4 | SLB, EL, SIT  |
-| Scout Disc       | Mysterian    | Mysterian | Probe Craft         | Indeterminate | Unknown  | +40 | 4  | 15×4    | Unknown      | PB2, TA    | CC, RPS, SCE  |
-| Infiltrator      | Mysterian    | Mysterian | Infiltration Vessel | Unknown       | 4-6      | +20 | 3  | 40×15   | 90           | DB3, MCP   | AC, MMD, HC   |
-| Abductor         | Mysterian    | Mysterian | Abduction Ship      | Unknown       | 3-5+subj | +20 | 3  | 40×15   | 90           | PB2, TA    | SCC, ABT, HEC |
-| Silent Observer  | Mysterian    | Mysterian | Observer Disc       | Unknown       | 3        | +40 | 4  | 20×5    | 60           | DB3, TA    | CC, TDF, NIS  |
-| Death Saucer     | Mysterian    | Mysterian | Hunter-Killer       | Unknown       | 8-10     | +40 | 4  | 50×20   | 180          | MDB3, PB2  | AC, AGG, RPS  |
-| Stealth Probe    | Mysterian    | Mysterian | Surveillance Craft  | Unknown       | 2        | +40 | 5  | 10×3    | Unknown      | PB2, MCP   | CC, SIT, SCE  |
+| Unknown Saucer   | Mysterion    | Mysterion | Recon Saucer        | Unknown       | 3-5      | +40 | 5  | 20×5    | 60           | DB3, TA    | CC, SCE, AGG  |
+| Harvester Vessel | Mysterion    | Mysterion | Harvester Ship      | Unknown       | 5-8      | +0  | 3  | 50×20   | 180          | MDB3, PB   | SCC, AC, HEC  |
+| Grand Mothership | Mysterion    | Mysterion | Mothership          | Beyond Value  | 10-20    | +0  | 2  | 350×var | ∞           | HDA4, EPW4 | SLB, EL, SIT  |
+| Scout Disc       | Mysterion    | Mysterion | Probe Craft         | Indeterminate | Unknown  | +40 | 4  | 15×4    | Unknown      | PB2, TA    | CC, RPS, SCE  |
+| Infiltrator      | Mysterion    | Mysterion | Infiltration Vessel | Unknown       | 4-6      | +20 | 3  | 40×15   | 90           | DB3, MCP   | AC, MMD, HC   |
+| Abductor         | Mysterion    | Mysterion | Abduction Ship      | Unknown       | 3-5+subj | +20 | 3  | 40×15   | 90           | PB2, TA    | SCC, ABT, HEC |
+| Silent Observer  | Mysterion    | Mysterion | Observer Disc       | Unknown       | 3        | +40 | 4  | 20×5    | 60           | DB3, TA    | CC, TDF, NIS  |
+| Death Saucer     | Mysterion    | Mysterion | Hunter-Killer       | Unknown       | 8-10     | +40 | 4  | 50×20   | 180          | MDB3, PB2  | AC, AGG, RPS  |
+| Stealth Probe    | Mysterion    | Mysterion | Surveillance Craft  | Unknown       | 2        | +40 | 5  | 10×3    | Unknown      | PB2, MCP   | CC, SIT, SCE  |
 
 ## SHIP MODIFICATIONS
 
@@ -357,19 +357,19 @@ Most ships in active service have at least minor modifications from their factor
 | Osprey-Delta   | Terran Intelligence | Military | Electronic Warfare | 4.0-6.0       | 8     | NI  | 3  | 70×18   | 90           | DB, EC  | AJS, SIP, SS |
 | Sting-Beta     | Olympus Mons        | Military | Troop Transport    | 10.0-15.0     | 10+20 | ST  | 2  | 130×35  | 120          | MR, TT  | TQ, RDR, AH  |
 
-## MYSTERIAN CRAFT
+## Mysterion CRAFT
 
 | Name             | Manufacturer | Type      | Role                | Cost (KiloCr) | Crew     | Man | TH | Size (m) | Range (days) | Weapons  | Special       |
 | ---------------- | ------------ | --------- | ------------------- | ------------- | -------- | --- | -- | -------- | ------------ | -------- | ------------- |
-| Unknown Saucer   | Mysterian    | Mysterian | Recon Saucer        | Unknown       | 3-5      | LI  | 5  | 20×5    | 60           | DB, TA   | CC, SCE, AGG  |
-| Harvester Vessel | Mysterian    | Mysterian | Harvester Ship      | Unknown       | 5-8      | ST  | 3  | 50×20   | 180          | MDB, PB  | SCC, AC, HEC  |
-| Grand Mothership | Mysterian    | Mysterian | Mothership          | Beyond Value  | 10-20    | ST  | 2  | 350×var | ∞           | HDA, EPW | SLB, EL, SIT  |
-| Scout Disc       | Mysterian    | Mysterian | Probe Craft         | Indeterminate | Unknown  | LI  | 4  | 15×4    | Unknown      | PB, TA   | CC, RPS, SCE  |
-| Infiltrator      | Mysterian    | Mysterian | Infiltration Vessel | Unknown       | 4-6      | NI  | 3  | 40×15   | 90           | DB, MCP  | AC, MMD, HC   |
-| Abductor         | Mysterian    | Mysterian | Abduction Ship      | Unknown       | 3-5+subj | NI  | 3  | 40×15   | 90           | PB, TA   | SCC, ABT, HEC |
-| Silent Observer  | Mysterian    | Mysterian | Observer Disc       | Unknown       | 3        | LI  | 4  | 20×5    | 60           | DB, TA   | CC, TDF, NIS  |
-| Death Saucer     | Mysterian    | Mysterian | Hunter-Killer       | Unknown       | 8-10     | LI  | 4  | 50×20   | 180          | MDB, PB  | AC, AGG, RPS  |
-| Stealth Probe    | Mysterian    | Mysterian | Surveillance Craft  | Unknown       | 2        | LI  | 5  | 10×3    | Unknown      | PB, MCP  | CC, SIT, SCE  |
+| Unknown Saucer   | Mysterion    | Mysterion | Recon Saucer        | Unknown       | 3-5      | LI  | 5  | 20×5    | 60           | DB, TA   | CC, SCE, AGG  |
+| Harvester Vessel | Mysterion    | Mysterion | Harvester Ship      | Unknown       | 5-8      | ST  | 3  | 50×20   | 180          | MDB, PB  | SCC, AC, HEC  |
+| Grand Mothership | Mysterion    | Mysterion | Mothership          | Beyond Value  | 10-20    | ST  | 2  | 350×var | ∞           | HDA, EPW | SLB, EL, SIT  |
+| Scout Disc       | Mysterion    | Mysterion | Probe Craft         | Indeterminate | Unknown  | LI  | 4  | 15×4    | Unknown      | PB, TA   | CC, RPS, SCE  |
+| Infiltrator      | Mysterion    | Mysterion | Infiltration Vessel | Unknown       | 4-6      | NI  | 3  | 40×15   | 90           | DB, MCP  | AC, MMD, HC   |
+| Abductor         | Mysterion    | Mysterion | Abduction Ship      | Unknown       | 3-5+subj | NI  | 3  | 40×15   | 90           | PB, TA   | SCC, ABT, HEC |
+| Silent Observer  | Mysterion    | Mysterion | Observer Disc       | Unknown       | 3        | LI  | 4  | 20×5    | 60           | DB, TA   | CC, TDF, NIS  |
+| Death Saucer     | Mysterion    | Mysterion | Hunter-Killer       | Unknown       | 8-10     | LI  | 4  | 50×20   | 180          | MDB, PB  | AC, AGG, RPS  |
+| Stealth Probe    | Mysterion    | Mysterion | Surveillance Craft  | Unknown       | 2        | LI  | 5  | 10×3    | Unknown      | PB, MCP  | CC, SIT, SCE  |
 
 ## SHIP MODIFICATIONS
 

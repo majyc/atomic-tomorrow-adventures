@@ -1,6 +1,6 @@
 # The Initial Attack
 
-The Mysterian attack on The Aphrodite's Pearl liner wasn't random - they were specifically targeting the ship to capture it intact (before the crew's resistance forced more drastic measures). This uncharacteristic inner-system attack has raised alarms throughout the Solar System.
+The Mysterion attack on The Aphrodite's Pearl liner wasn't random - they were specifically targeting the ship to capture it intact (before the crew's resistance forced more drastic measures). This uncharacteristic inner-system attack has raised alarms throughout the Solar System.
 
 ## Emergency Routes
 
@@ -18,7 +18,7 @@ This layout creates a perfect scenario where:
 * The mercenary will need to navigate to Deck 1 or 2 to reach the cargo holds
 * The roboticist has butler robots to reprogram
 * The pilot will need to reach Deck 8 and determine which lifeboat is operational
-* Mysterians would logically enter from upper decks, working their way down
+* Mysterions would logically enter from upper decks, working their way down
 
 The journey from Deck 6 to Deck 8 with ship systems compromised creates the perfect gauntlet for your adventure's opening!
 
@@ -33,7 +33,7 @@ The journey from Deck 6 to Deck 8 with ship systems compromised creates the perf
 **Risks:**
 
 * Longer overall journey
-* Mysterians might secure all lifeboats before they can reach them
+* Mysterions might secure all lifeboats before they can reach them
 * More opportunities to encounter patrols
 
 ## Option 2: Head Upward Immediately
@@ -42,7 +42,7 @@ The journey from Deck 6 to Deck 8 with ship systems compromised creates the perf
 
 * Secure escape before all lifeboats are gone
 * Faster evacuation from the failing ship
-* Less chance of encountering Mysterians (who are likely working top-down)
+* Less chance of encountering Mysterions (who are likely working top-down)
 
 **Risks:**
 
@@ -54,36 +54,36 @@ The journey from Deck 6 to Deck 8 with ship systems compromised creates the perf
 
 **Advantages:**
 
-* Avoid direct confrontation with Mysterians entirely
+* Avoid direct confrontation with Mysterions entirely
 * The water tanks on Deck 3 provide an excellent hiding place:
   * Shielded from most sensors
   * Access to water and basic life support
   * Connected to the storm shelter with its emergency supplies
-* Could potentially rescue other passengers once Mysterians depart
+* Could potentially rescue other passengers once Mysterions depart
 
 **Risks:**
 
-* Uncertainty about Mysterian plans (will they take the ship? destroy it?)
+* Uncertainty about Mysterion plans (will they take the ship? destroy it?)
 * Limited information about what's happening elsewhere on the vessel
 * Possible detection if hiding place isn't secure
-* No guarantee the Mysterians will actually leave
+* No guarantee the Mysterions will actually leave
 
-The telekinetic might sense Mysterian movement throughout the ship, creating a stealth scenario where they must stay quiet and hidden as alien search parties move nearby.
+The telekinetic might sense Mysterion movement throughout the ship, creating a stealth scenario where they must stay quiet and hidden as alien search parties move nearby.
 
 If they choose this option, the GM could create tension by having:
 
-* The sound of Mysterians systematically searching decks
+* The sound of Mysterions systematically searching decks
 * Brief glimpses through vents of paralyzed humans being collected
 * Ship systems occasionally malfunctioning, threatening to reveal their position
 * A wounded crew member they rescue who provides partial information about the attack
 
-## The Missing Mysterians
+## The Missing Mysterions
 
 When your players investigate (either through their own initiative or official channels), they discover a crucial anomaly:
 
 * Highport's observatory tracked the attacking vessels entering Venus's atmosphere rather than departing the system
-* SID 2000 reports no Mysterian craft leaving Venus's vicinity after the attack
-* This breaks the established pattern of Mysterian "hit-and-run" tactics observed for decades
+* SID 2000 reports no Mysterion craft leaving Venus's vicinity after the attack
+* This breaks the established pattern of Mysterion "hit-and-run" tactics observed for decades
 
 ## Investigation Threads
 
@@ -91,7 +91,7 @@ When your players investigate (either through their own initiative or official c
 
 From the observatory's tracking data, players could determine:
 
-* The Mysterian craft descended to specific coordinates in Venus's equatorial oceans
+* The Mysterion craft descended to specific coordinates in Venus's equatorial oceans
 * The craft appeared to utilize a unique orbital approach that minimized visibility
 * Previous similar descent patterns were misclassified as instrument errors
 
@@ -116,22 +116,22 @@ From dockworkers and fringe elements in Port Charles:
 Researchers in Nimbus City have noted:
 
 * Inexplicable atmospheric composition changes originating from the oceans
-* Periodic electromagnetic disturbances that align with Mysterian activity patterns
+* Periodic electromagnetic disturbances that align with Mysterion activity patterns
 * Weather pattern manipulations that create "blind spots" over certain ocean regions
 
 ## Revelation Path
 
 As players follow these threads, they could ultimately:
 
-1. **Acquire Coordinates** - Pinpoint the approximate location of underwater Mysterian activity
+1. **Acquire Coordinates** - Pinpoint the approximate location of underwater Mysterion activity
 2. **Discover Entryways** - Learn of natural formations or abandoned research facilities that provide access
 3. **Obtain Technology** - Find or develop technology that allows them to survive in the hyper-oxygenated liquid environment
-4. **Infiltrate Deep Haven** - Enter the hidden Mysterian base, perhaps initially mistaken for captives
-5. **Uncover the Truth** - Learn that Venus has been a long-term Mysterian staging area, not just a recent target
+4. **Infiltrate Deep Haven** - Enter the hidden Mysterion base, perhaps initially mistaken for captives
+5. **Uncover the Truth** - Learn that Venus has been a long-term Mysterion staging area, not just a recent target
 
 ## The Bigger Mystery
 
-The ultimate revelation could be that the Mysterians aren't just using Venus as a convenient hiding place - they're specifically interested in:
+The ultimate revelation could be that the Mysterions aren't just using Venus as a convenient hiding place - they're specifically interested in:
 
 * The Forerunner technology unique to Venus's underwater ruins
 * Biological adaptations possible in Venus's environment that they need for their own purposes
@@ -139,4 +139,4 @@ The ultimate revelation could be that the Mysterians aren't just using Venus as 
 
 This approach creates a compelling investigation that builds directly from the players' crash-landing experience while gradually uncovering a much larger threat. It positions Deep Haven as a major revelation rather than a known location, making its discovery a dramatic turning point in your campaign.
 
-Would you like me to develop any particular aspect of this mystery further? Perhaps specific clues they might find at each location, or the exact nature of what the Mysterians are doing beneath Venus's oceans?
+Would you like me to develop any particular aspect of this mystery further? Perhaps specific clues they might find at each location, or the exact nature of what the Mysterions are doing beneath Venus's oceans?

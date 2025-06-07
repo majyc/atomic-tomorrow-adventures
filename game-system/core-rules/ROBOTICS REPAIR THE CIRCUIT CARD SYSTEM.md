@@ -195,7 +195,7 @@ Players accumulate Circuit Points through skill checks:
 
 ### FOREIGN TECHNOLOGY INTEGRATION
 
-- Robot contains components from unknown sources (Mysterian, Forerunner)
+- Robot contains components from unknown sources (Mysterion, Forerunner)
 - **Resolution**: Understanding alien systems while maintaining compatibility
 
 ### EMOTIONAL ATTACHMENT SYNDROME
@@ -205,7 +205,7 @@ Players accumulate Circuit Points through skill checks:
 
 ## EXAMPLE OF PLAY
 
-**Situation**: The party's robot companion "Gearbox" was damaged by Mysterian energy weapons. His positronic brain is showing signs of logic instability and personality fragmentation.
+**Situation**: The party's robot companion "Gearbox" was damaged by Mysterion energy weapons. His positronic brain is showing signs of logic instability and personality fragmentation.
 
 **GM**: "This is definitely a complex repair. Let's use the Circuit system. Start with an Engineering (Robotics) check to diagnose."
 

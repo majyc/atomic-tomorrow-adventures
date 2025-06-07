@@ -575,7 +575,7 @@ title: Atomic Tomorrow Equipment Catalog
 | Surface Penetrating Radar   | 55        | Maps solid terrain beneath Titan's lakes and seas                 |
 | Anti-Static Field Generator | 30        | Prevents dangerous charge buildup in hydrocarbon-rich environment |
 
-### MYSTERIAN TECHNOLOGY & DERIVATIVES
+### Mysterion TECHNOLOGY & DERIVATIVES
 
 #### NTH METAL DEVICES
 
@@ -585,10 +585,10 @@ title: Atomic Tomorrow Equipment Catalog
 | Nth Metal Cargo Pallet                    | 200       | Industrial transport platform, 1-ton capacity        |
 | Personal Nth Metal Skates                 | 120       | Footwear with Nth metal sole inserts                 |
 | Nth Metal Bearings                        | 50/set    | Ultra-low friction machine components                |
-| Nth Metal Sample                          | 200+/oz   | Small quantities of processed Mysterian metal        |
-| Mysterian Acoustic Vulnerability Detector | 180       | Analyzes sonic frequencies affecting Nth metal       |
-| Sonic Disruptor (Anti-Mysterian Model)    | 90        | Affects Nth metal molecular bonds                    |
-| Mysterian Artifact Containment Case       | 75        | Lined with interference materials, prevents scanning |
+| Nth Metal Sample                          | 200+/oz   | Small quantities of processed Mysterion metal        |
+| Mysterion Acoustic Vulnerability Detector | 180       | Analyzes sonic frequencies affecting Nth metal       |
+| Sonic Disruptor (Anti-Mysterion Model)    | 90        | Affects Nth metal molecular bonds                    |
+| Mysterion Artifact Containment Case       | 75        | Lined with interference materials, prevents scanning |
 
 #### Z-RAY MEDICAL TECHNOLOGY
 

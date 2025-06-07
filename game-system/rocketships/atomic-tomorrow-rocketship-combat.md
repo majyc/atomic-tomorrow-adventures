@@ -240,7 +240,7 @@ If two or more systems are at Critical or worse:
 
 ### EXAMPLE
 
-The Mysterian saucer scores a hit with its Disintegrator Beam (Destruction Rating 3) and gets a special success (+1), for a total of 4 damage.
+The Mysterion saucer scores a hit with its Disintegrator Beam (Destruction Rating 3) and gets a special success (+1), for a total of 4 damage.
 
 The Captain of the patrol ship has made a Command Decision with a critical success, negating 2 points of damage immediately (reducing it to 2). The Captain then allocates the remaining damage: 1 to Weapons and 1 to Communications.
 
@@ -492,7 +492,7 @@ With Vector at 0, deliberately impact another ship:
 
 ### EXAMPLE OF VECTOR DYNAMICS
 
-**Starting Position**: A patrol ship and a Mysterian saucer begin combat with Vector 6, Velocity 7.  As this is >10 if either ship intends to break off, they could, but they're in it to win it.
+**Starting Position**: A patrol ship and a Mysterion saucer begin combat with Vector 6, Velocity 7.  As this is >10 if either ship intends to break off, they could, but they're in it to win it.
 
 **Round 1**: The patrol ship's pilot performs a Vector Change Maneuver, rolls a special success (2 Maneuver Points), and reduces Vector to 4. The ships are now at Vector 4, Velocity 7.
 
@@ -544,7 +544,7 @@ With Vector at 0, deliberately impact another ship:
 - Special: Command Center (+20% to coordination), Fighter Bay (carries small craft)
 - Crew: 20+ (Complete bridge crew plus specialized personnel)
 
-## MYSTERIAN CRAFT
+## Mysterion CRAFT
 
 ### FLYING SAUCER
 

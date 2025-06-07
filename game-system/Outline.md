@@ -34,7 +34,7 @@
 - **Solar System Overview** (16 pages) - Just enough detail for play
 - **Key Settlements** (12 pages) - Major locations only
 - **Notable Flora & Fauna** (10 pages) - Focus on encounter-ready creatures
-- **Forerunner & Mysterian Primer** (10 pages)
+- **Forerunner & Mysterion Primer** (10 pages)
 - **Adventure Generation** (14 pages)
 - **Notable NPCs** (14 pages)
 - **Campaign Frameworks** (12 pages)

@@ -315,7 +315,7 @@ The primary construction facility for pressure-resistant vessels used throughout
 
 ## 10. Maxwell Peak Observatory
 
-The highest astronomical research facility in the inner System, positioned above Venus's cloud layer. Its unique position allows for observations impossible elsewhere, making it crucial for the ongoing Mysterian monitoring network.
+The highest astronomical research facility in the inner System, positioned above Venus's cloud layer. Its unique position allows for observations impossible elsewhere, making it crucial for the ongoing Mysterion monitoring network.
 
 ## 11. The Floating Market of Guinevere
 

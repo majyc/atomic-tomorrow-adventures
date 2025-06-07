@@ -78,7 +78,7 @@ professions = {
     "SPECIALIZED ROLES": [
         "Prospector", "Asteroid Miner", "Chronicler", "Terraform Tech", "Entertainer"
     ],
-    "MYSTERIAN AGENTS": [
+    "Mysterion AGENTS": [
         "Infiltrator", "Collaborator", "Abductee", "Researcher", "Observer"
     ]
 }
@@ -164,10 +164,10 @@ skill_sets = {
         ["Academics (Documentation)", "Perception", "Investigation", "Performance (Storytelling)"],
         ["Engineering (Environmental)", "Science", "Technology", "Medicine"]
     ],
-    "MYSTERIAN AGENTS": [
-        ["Deception (Identity)", "Technology (Mysterian)", "Perception (Weaknesses)", "Science (Human Physiology)"],
-        ["Science (Xenobiology)", "Engineering (Mysterian Tech)", "Deception (Cover Identity)", "Streetwise"],
-        ["Perception (Mysterian Detection)", "Survival (Mental Resistance)", "Psionic Powers (Latent)", "Investigation"],
+    "Mysterion AGENTS": [
+        ["Deception (Identity)", "Technology (Mysterion)", "Perception (Weaknesses)", "Science (Human Physiology)"],
+        ["Science (Xenobiology)", "Engineering (Mysterion Tech)", "Deception (Cover Identity)", "Streetwise"],
+        ["Perception (Mysterion Detection)", "Survival (Mental Resistance)", "Psionic Powers (Latent)", "Investigation"],
         ["Deception", "Technology (Alien)", "Xenology", "Stealth"]
     ]
 }
@@ -185,14 +185,14 @@ equipment = {
     "MEDICAL SPECIALISTS": ["medical kit", "diagnostic scanner", "surgical tools", "emergency stimulants"],
     "COMMUNICATIONS & DIPLOMATS": ["universal translator", "cultural database", "diplomatic credentials", "recording equipment"],
     "SPECIALIZED ROLES": ["specialized tools", "environmental scanner", "protective gear", "technical manuals"],
-    "MYSTERIAN AGENTS": ["concealed Mysterian technology", "human disguise kit", "signal jammer", "specimen collection device"]
+    "Mysterion AGENTS": ["concealed Mysterion technology", "human disguise kit", "signal jammer", "specimen collection device"]
 }
 
 # NEW: Character hooks - brief plot hooks for each NPC
 character_hooks = [
     "knows the location of a forgotten Forerunner outpost",
     "carries the last sample of a valuable vaccine",
-    "is being hunted by Mysterian agents",
+    "is being hunted by Mysterion agents",
     "has information about a coming invasion",
     "unwittingly carries an alien parasite",
     "owns a map to an untapped uranium deposit",
@@ -200,7 +200,7 @@ character_hooks = [
     "witnessed something they shouldn't have",
     "discovered a flaw in Chemical X propulsion",
     "has a price on their head in three systems",
-    "can identify a Mysterian infiltrator",
+    "can identify a Mysterion infiltrator",
     "knows the override codes to a defense grid",
     "stole classified research from Atomcorp",
     "escaped from a secret military experiment",
@@ -225,7 +225,7 @@ character_hooks = [
 # NEW: Secrets - things the NPC keeps hidden
 character_secrets = [
     "is actually a deep-cover Space Patrol agent",
-    "has been replaced by a Mysterian duplicate",
+    "has been replaced by a Mysterion duplicate",
     "is addicted to experimental performance enhancers",
     "has an illegal psionic implant",
     "works for a rival corporation",
@@ -244,7 +244,7 @@ character_secrets = [
     "maintains illegal modifications to their gear",
     "is centuries old due to time anomaly",
     "possesses forbidden Martian Mastermind technology",
-    "has made a deal with Mysterian agents",
+    "has made a deal with Mysterion agents",
     "embezzled from previous employer",
     "killed someone in self-defense and covered it up",
     "carries dormant alien DNA that's slowly activating",
@@ -342,7 +342,7 @@ def generate_attributes(category=None):
         "MEDICAL SPECIALISTS": {"SAVVY": 3, "GRIT": 2},
         "COMMUNICATIONS & DIPLOMATS": {"CHARM": 4, "GUILE": 1},
         "SPECIALIZED ROLES": {"SAVVY": 2, "GRIT": 2},
-        "MYSTERIAN AGENTS": {"GUILE": 3, "SAVVY": 2}
+        "Mysterion AGENTS": {"GUILE": 3, "SAVVY": 2}
     }
     
     # Base attributes - weighted toward competent professionals
@@ -467,7 +467,7 @@ def get_equipment(category, has_psionics=False):
             "illegal neutron knife", 
             "antique Earth coin collection", 
             "holographic disguise emitter", 
-            "Mysterian artifact fragment", 
+            "Mysterion artifact fragment", 
             "Venusian jungle seed pod",
             "ancestor's good luck charm",
             "ancient Mars expedition map",
@@ -650,7 +650,7 @@ def generate_encounter(num_npcs=3, encounter_type=None, difficulty=None, include
     encounter_types = [
         "Combat Ambush", "Diplomatic Negotiation", "Mysterious Discovery", 
         "Rescue Mission", "Intelligence Gathering", "Trade Dispute",
-        "Alien Contact", "Mysterian Infiltration", "Technical Emergency",
+        "Alien Contact", "Mysterion Infiltration", "Technical Emergency",
         "Criminal Activity", "Exploration Hazard", "Rival Confrontation"
     ]
     
@@ -673,7 +673,7 @@ def generate_encounter(num_npcs=3, encounter_type=None, difficulty=None, include
         "Intelligence Gathering": ["COMMUNICATIONS & DIPLOMATS", "PSYCHICS & ESPERS"],
         "Trade Dispute": ["MERCHANTS & TRADERS", "SCOUNDRELS & OPPORTUNISTS"],
         "Alien Contact": ["COMMUNICATIONS & DIPLOMATS", "SCIENTISTS & INTELLECTUALS"],
-        "Mysterian Infiltration": ["MYSTERIAN AGENTS", "PSYCHICS & ESPERS"],
+        "Mysterion Infiltration": ["Mysterion AGENTS", "PSYCHICS & ESPERS"],
         "Technical Emergency": ["MECHANICS & ENGINEERS", "SPACERS & PILOTS"],
         "Criminal Activity": ["SCOUNDRELS & OPPORTUNISTS", "SOLDIERS & ENFORCERS"],
         "Exploration Hazard": ["EXPLORERS & SCOUTS", "SPECIALIZED ROLES"],
@@ -741,7 +741,7 @@ def generate_encounter(num_npcs=3, encounter_type=None, difficulty=None, include
         ],
         "Intelligence Gathering": [
             "Infiltrate corporate facility to obtain research data",
-            "Identify Mysterian agent operating in a colony",
+            "Identify Mysterion agent operating in a colony",
             "Monitor suspicious activity at a spaceport",
             "Extract informant with valuable information",
             "Verify the authenticity of a leaked document"
@@ -760,10 +760,10 @@ def generate_encounter(num_npcs=3, encounter_type=None, difficulty=None, include
             "First contact protocols activated for newly discovered life",
             "Mysterious beings seek to communicate through unusual means"
         ],
-        "Mysterian Infiltration": [
+        "Mysterion Infiltration": [
             "Strange behavior suggests replaced personnel",
             "Mysterious technology discovered in colony systems",
-            "Security breach traced to Mysterian influence",
+            "Security breach traced to Mysterion influence",
             "Communications relay reprogrammed for unknown purpose",
             "Key personnel showing signs of mind control"
         ],
@@ -833,7 +833,7 @@ def generate_location(location_type=None, scale=None, details_level="standard"):
         "Spaceport", "Colony", "Research Station", "Mining Facility", 
         "Entertainment Venue", "Military Base", "Trading Post", 
         "Derelict Structure", "Secret Installation", "Natural Wonder",
-        "Corporate Headquarters", "Mysterian Site", "Forerunner Ruins"
+        "Corporate Headquarters", "Mysterion Site", "Forerunner Ruins"
     ]
     
     # Define scales
@@ -859,7 +859,7 @@ def generate_location(location_type=None, scale=None, details_level="standard"):
         "Secret Installation": ["Hidden Base", "Black Site", "Shadow Facility", "Classified Location"],
         "Natural Wonder": ["Formation", "Anomaly", "Wonder", "Phenomenon", "Marvel"],
         "Corporate Headquarters": ["Tower", "Complex", "Headquarters", "Center", "Campus"],
-        "Mysterian Site": ["Artifact", "Incursion", "Anomaly", "Disturbance", "Phenomenon"],
+        "Mysterion Site": ["Artifact", "Incursion", "Anomaly", "Disturbance", "Phenomenon"],
         "Forerunner Ruins": ["Temple", "Structure", "Monument", "Complex", "Artifact"]
     }
     
@@ -937,7 +937,7 @@ def generate_location(location_type=None, scale=None, details_level="standard"):
         "Corporate Headquarters": ["projecting power and wealth", "with extensive security measures", 
                                  "featuring cutting-edge technology", "housing proprietary research",
                                  "maintaining careful corporate image", "with specialized landing pads"],
-        "Mysterian Site": ["emitting unusual energy signatures", "with evidence of alien technology", 
+        "Mysterion Site": ["emitting unusual energy signatures", "with evidence of alien technology", 
                           "cordoned off by military forces", "defying conventional analysis",
                           "slowly changing the surrounding environment", "with temporal anomalies"],
         "Forerunner Ruins": ["covered in indecipherable symbols", "periodically activating systems", 
@@ -979,7 +979,7 @@ def generate_location(location_type=None, scale=None, details_level="standard"):
         "Secret Installation": ["operatives", "specialists", "security forces", "researchers", "test subjects"],
         "Natural Wonder": ["researchers", "tourists", "local fauna", "indigenous people", "pilgrims"],
         "Corporate Headquarters": ["executives", "employees", "security personnel", "specialists", "clients"],
-        "Mysterian Site": ["investigation teams", "military personnel", "scientists", "security forces"],
+        "Mysterion Site": ["investigation teams", "military personnel", "scientists", "security forces"],
         "Forerunner Ruins": ["archaeologists", "security details", "researchers", "looters", "cultists"]
     }
     
@@ -1024,7 +1024,7 @@ def generate_location(location_type=None, scale=None, details_level="standard"):
             "Corporate Headquarters": ["prototype technology on display", "extreme security measures", 
                                     "luxurious executive facilities", "evidence of corporate espionage", 
                                     "proprietary technology"],
-            "Mysterian Site": ["technology resisting analysis", "subtle environmental changes", 
+            "Mysterion Site": ["technology resisting analysis", "subtle environmental changes", 
                             "unexplained phenomena", "military containment perimeter", 
                             "researchers with unusual behavior"],
             "Forerunner Ruins": ["partially active ancient technology", "inscriptions defying translation", 
@@ -1062,15 +1062,15 @@ def generate_location(location_type=None, scale=None, details_level="standard"):
                                  "illegal substances are manufactured on-site"],
             "Military Base": ["testing illegal weapons technology", "preparing for an unannounced operation", 
                            "housing prisoners without documentation", "officers are plotting a coup", 
-                           "evidence of Mysterian contact is hidden in secure storage"],
-            "Trading Post": ["it's a front for intelligence gathering", "some merchants are Mysterian disguised as humans", 
+                           "evidence of Mysterion contact is hidden in secure storage"],
+            "Trading Post": ["it's a front for intelligence gathering", "some merchants are Mysterion disguised as humans", 
                           "stolen goods are fenced through legitimate businesses", "information is the most valuable commodity traded", 
                           "secret auctions offer illegal technology"],
             "Derelict Structure": ["something still lives inside", "the abandonment was staged", 
                                 "a fortune in valuable materials remains hidden", "time behaves strangely within certain sections", 
                                 "automated systems are still carrying out their final commands"],
             "Secret Installation": ["conducting illegal human experimentation", "developing weapons of mass destruction", 
-                                 "communicating with non-human intelligence", "using forbidden Mysterian technology", 
+                                 "communicating with non-human intelligence", "using forbidden Mysterion technology", 
                                  "operated by an organization that officially doesn't exist"],
             "Natural Wonder": ["subtly influencing the minds of researchers", "growing or changing at an imperceptible rate", 
                             "periodically emitting dangerous radiation", "artifacts of artificial origin have been found nearby", 
@@ -1078,11 +1078,11 @@ def generate_location(location_type=None, scale=None, details_level="standard"):
             "Corporate Headquarters": ["conducting industrial espionage against competitors", "concealing financial collapse", 
                                     "executives have been replaced by duplicates", "developing illegal technology", 
                                     "involved in assassinations of rivals"],
-            "Mysterian Site": ["active experiments on captured humans", "sending signals to deep space", 
+            "Mysterion Site": ["active experiments on captured humans", "sending signals to deep space", 
                             "causing physical changes to investigators", "evidence suggests similar sites exist in major cities", 
                             "contains technology that manipulates time"],
             "Forerunner Ruins": ["portions still contain functional technology", "affected visitors report the same dreams", 
-                               "certain chambers show signs of recent Mysterian activity", "some sections appear to be self-repairing", 
+                               "certain chambers show signs of recent Mysterion activity", "some sections appear to be self-repairing", 
                                "Earth artifacts found alongside ancient technology"]
         }
         

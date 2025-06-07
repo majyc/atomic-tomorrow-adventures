@@ -111,7 +111,7 @@ title: Hazards
 | Roll | Hazard                                                                             |
 | ---- | ---------------------------------------------------------------------------------- |
 | 81   | **Distress Beacon**- Emergency signal from unknown source                    |
-| 82   | **Mysterian Activity**- Signs of the enigmatic alien presence                |
+| 82   | **Mysterion Activity**- Signs of the enigmatic alien presence                |
 | 83   | **Abandoned Research Station**- Drifting scientific outpost                  |
 | 84   | **Pirate Ambush Point**- Strategic location for space piracy                 |
 | 85   | **Territorial Boundary Dispute**- Contested region between factions          |

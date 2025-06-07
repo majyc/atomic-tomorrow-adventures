@@ -19,7 +19,7 @@ Even the most advanced computers use vacuum tubes and mechanical relays rather t
 
 This analog approach extends to spacecraft design as well. Ships have actual viewports alongside video screens, manual hatches that can be cranked open when power fails, and systems designed to be repaired by human hands rather than automated diagnostics.
 
-The discovery of Nth metal in the wreckage of Mysterian craft - a material with unique gravitational properties - has enabled practical flying cars without rewriting the laws of physics. Nth metal interacts with gravitational fields, reducing an object's effective mass by up to 90% near planetary surfaces (though this effect diminishes in space). Combined with conventional propulsion systems, Nth metal allows for sleek flying vehicles with all the chrome and tailfins the atomic age aesthetic demands, while maintaining the analog control systems of dials, pedals, and manual stabilizer adjustments that characterize this technological path.
+The discovery of Nth metal in the wreckage of Mysterion craft - a material with unique gravitational properties - has enabled practical flying cars without rewriting the laws of physics. Nth metal interacts with gravitational fields, reducing an object's effective mass by up to 90% near planetary surfaces (though this effect diminishes in space). Combined with conventional propulsion systems, Nth metal allows for sleek flying vehicles with all the chrome and tailfins the atomic age aesthetic demands, while maintaining the analog control systems of dials, pedals, and manual stabilizer adjustments that characterize this technological path.
 
 ## SAFE, CLEAN NUCLEAR POWER
 
@@ -95,7 +95,7 @@ The distinctive ring system of Saturn provides both navigational hazards and opp
 
 ### THE OUTER PLANETS
 
-Neptune, Uranus, and their moons host small scientific outposts and monitoring stations, serving as humanity's furthest permanent presence in the Solar System. These remote stations are valued for astronomical observations and early warning of Mysterian activity from the deep void.
+Neptune, Uranus, and their moons host small scientific outposts and monitoring stations, serving as humanity's furthest permanent presence in the Solar System. These remote stations are valued for astronomical observations and early warning of Mysterion activity from the deep void.
 
 Pluto and its outposts represent the very edge of mapped space, with their inhabitants adapted to extreme isolation and self-sufficiency. These frontier scientists and observers keep watch on the darkness beyond the Solar System, often the first to detect unusual phenomena or potential threats.
 
@@ -103,9 +103,9 @@ Pluto and its outposts represent the very edge of mapped space, with their inhab
 
 ### THE SPACE PATROL
 
-Born from the Earth Defense Force that repelled the first Mysterian invasions, the Space Patrol serves as the peacekeeping force throughout the Solar System. Their jurisdiction covers all of space between planetary surfaces, with bases on Luna, Mars, and other strategic locations.
+Born from the Earth Defense Force that repelled the first Mysterion invasions, the Space Patrol serves as the peacekeeping force throughout the Solar System. Their jurisdiction covers all of space between planetary surfaces, with bases on Luna, Mars, and other strategic locations.
 
-The Space Patrol enforces interplanetary law, focuses on preventing and responding to piracy, and stands as humanity's first line of defense against Mysterian incursions. Operating across vast distances with limited communication capabilities, patrol captains must exercise significant autonomy and judgment in the field.
+The Space Patrol enforces interplanetary law, focuses on preventing and responding to piracy, and stands as humanity's first line of defense against Mysterion incursions. Operating across vast distances with limited communication capabilities, patrol captains must exercise significant autonomy and judgment in the field.
 
 Communication across the vast distances of space relies on the same system of relay stations that serves all interplanetary traffic. Key facilities like Venus Equilateral Station maintain constant contact with multiple planets regardless of their orbital positions, allowing messages to be passed from one relay to the next. However, these communications remain bound by the speed of light, creating inevitable delays between sending a message and receiving a response.
 
@@ -227,15 +227,15 @@ For adventurers in the Atomic Tomorrow, the complex patchwork of laws and enforc
 
 ## THREATS TO PEACE
 
-### THE MYSTERIANS
+### THE MysterionS
 
 These enigmatic beings first appeared in 1957, claiming to come in peace while actually seeking to capture Earth women to repopulate their dying race. After multiple invasions and abductions, they were driven from the Inner System by Earth's defense forces in 1970.
 
-Today, Mysterians continue to prey upon shipping and isolated outposts in the outer system, occasionally making stealthy raids into the inner system. Their flying saucers use propulsion technology unknown to human science, allowing them to hover in atmosphere and accelerate far beyond the capabilities of human vessels.
+Today, Mysterions continue to prey upon shipping and isolated outposts in the outer system, occasionally making stealthy raids into the inner system. Their flying saucers use propulsion technology unknown to human science, allowing them to hover in atmosphere and accelerate far beyond the capabilities of human vessels.
 
-The few recovered Mysterian corpses suggest they use human tissues as transplants to shore up their radiation-damaged biological systems. Some theorize that humans have never actually seen true Mysterians, only human slaves or puppets controlled by the real aliens.
+The few recovered Mysterion corpses suggest they use human tissues as transplants to shore up their radiation-damaged biological systems. Some theorize that humans have never actually seen true Mysterions, only human slaves or puppets controlled by the real aliens.
 
-Unlike the Martian Masterminds, Mysterians favor capture over killing, using stunners and other non-lethal weapons to take human prisoners. In space battles, they aim to disable rather than destroy their targets, though they will use deadly force against Space Patrol vessels.
+Unlike the Martian Masterminds, Mysterions favor capture over killing, using stunners and other non-lethal weapons to take human prisoners. In space battles, they aim to disable rather than destroy their targets, though they will use deadly force against Space Patrol vessels.
 
 ### SPACE PIRATES
 

@@ -154,13 +154,13 @@ When failures occur in complex tasks:
 
 ## SAMPLE EXTENDED TASKS
 
-### Breaking Mysterian Encryption (Demanding Task)
+### Breaking Mysterion Encryption (Demanding Task)
 
 - **Success Needed**: 5
 - **Skills Used**: Technology (Communications), Computer Systems (Cryptography)
 - **Timeframe**: 30 minutes (check every 5 minutes)
 - **Collaboration**: Primary/Secondary (one cryptographer with possible assistants)
-- **Narration**: "The encrypted message could reveal the Mysterians' next target. You'll need to identify their cipher patterns and break through their security protocols."
+- **Narration**: "The encrypted message could reveal the Mysterions' next target. You'll need to identify their cipher patterns and break through their security protocols."
 
 ### Emergency Repairs During Combat (Complex Task)
 
@@ -168,7 +168,7 @@ When failures occur in complex tasks:
 - **Skills Used**: Repair (Ship Systems), Engineering (Power Systems)
 - **Timeframe**: Combat rounds (one attempt per round)
 - **Collaboration**: Distributed (multiple engineers)
-- **Narration**: "With the propulsion system damaged and Mysterian saucers closing in, you need to get the engines back online before you're sitting ducks."
+- **Narration**: "With the propulsion system damaged and Mysterion saucers closing in, you need to get the engines back online before you're sitting ducks."
 
 ### Surviving in the Venusian Jungle (Expert Task)
 

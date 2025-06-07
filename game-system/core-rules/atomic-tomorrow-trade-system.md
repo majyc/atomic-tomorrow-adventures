@@ -218,7 +218,7 @@ Players may obtain inside information about upcoming market changes:
 
 | Cargo Type              | Value | Description                   | Special Rule                                                            |
 | ----------------------- | ----- | ----------------------------- | ----------------------------------------------------------------------- |
-| Mysterian Artifacts     | 10    | Recovered alien technology    | Double selling price, but -30% to selling roll                          |
+| Mysterion Artifacts     | 10    | Recovered alien technology    | Double selling price, but -30% to selling roll                          |
 | Experimental Technology | 9     | Cutting-edge prototypes       | +3 to price die, 10% chance of malfunction during transit               |
 | Diplomatic Packages     | 8     | Sealed diplomatic materials   | Guaranteed delivery contract, severe penalties for inspection           |
 | Perishable Luxuries     | 7     | Time-sensitive valuable goods | +2 to price die if delivered within one week, worthless after two weeks |

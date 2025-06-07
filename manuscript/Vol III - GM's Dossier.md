@@ -1,6 +1,6 @@
 ## **Atomic Secrets**
 
-The truth about Forerunners, Mysterians, and other setting mysteries
+The truth about Forerunners, Mysterions, and other setting mysteries
 
 ## **Adventure Generation**
 
@@ -24,7 +24,7 @@ Long-term story arcs spanning the planets
 
 ## **Deep Haven**
 
-The complete Mysterian base information
+The complete Mysterion base information
 
 ## **The Prophecy Protocols**
 

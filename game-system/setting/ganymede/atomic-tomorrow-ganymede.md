@@ -87,7 +87,7 @@ Scientists at Abyssal Research Station have detected unusual patterns in the bio
 
 ### "THE JUPITER TRIANGLE"
 
-Ships traveling between Ganymede, Europa, and Callisto have gone missing along a specific route. Local legends blame Jupiter's Ghost—a spectral manifestation in the radiation belts—but the truth involves a hidden Mysterian observation post.
+Ships traveling between Ganymede, Europa, and Callisto have gone missing along a specific route. Local legends blame Jupiter's Ghost—a spectral manifestation in the radiation belts—but the truth involves a hidden Mysterion observation post.
 
 ### "ATMOSPHERIC ANOMALY"
 
@@ -99,7 +99,7 @@ The ancient machinery beneath Galileo Regia is showing signs of activating new s
 
  **Dr. Selene Krishnamurthy** : Leading authority on Forerunner technology, cautious about interfering with the atmospheric generators.
 
- **Captain Marcos Reyes** : Commander of the Ganymede Defense Force, veteran of conflicts with Mysterian scouts in the outer system.
+ **Captain Marcos Reyes** : Commander of the Ganymede Defense Force, veteran of conflicts with Mysterion scouts in the outer system.
 
  **Zephyr Jones** : Legendary "ocean diver" who claims to have seen massive structures deep within Ganymede's subsurface sea.
 

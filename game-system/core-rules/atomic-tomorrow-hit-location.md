@@ -53,5 +53,5 @@ Not all armor covers the entire body. The referee may determine that certain hit
 For non-human targets, the referee should adapt the hit location chart appropriately:
 
 - **Martian Masterminds**: Head results may disable their psychic abilities
-- **Mysterians**: Targeting their environmental apparatus (shoulder/neck) might force retreat
+- **Mysterions**: Targeting their environmental apparatus (shoulder/neck) might force retreat
 - **Venusian Dinosaurs**: Hip results may affect tail instead with different consequences

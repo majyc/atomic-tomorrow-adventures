@@ -251,18 +251,18 @@
 | Transmatter       | Orbital Dynamics | 4  | 3  | AR, CS, CX   | 10.000     | 2+1      | 100        | Experimental matter-state transition (high failure rate) |
 | Hyperloop Pod     | New Detroit      | 5  | 2  | AC, UE, CS   | 6.000      | 4+1      | 300        | Vacuum tube transport system prototype pod               |
 
-### MYSTERIAN-INSPIRED TECHNOLOGY
+### Mysterion-INSPIRED TECHNOLOGY
 
 | Model              | Manufacturer     | SP | HA | Enhancements | Price (Cr) | Capacity | Cargo (kg) | Notes                                                       |
 | ------------------ | ---------------- | -- | -- | ------------ | ---------- | -------- | ---------- | ----------------------------------------------------------- |
 | Saucer One         | Luna Precision   | 4  | 5  | AR, GS, CX   | 12.000     | 2+1      | 200        | Reverse-engineered anti-gravity disk (unstable)             |
 | Levitator          | Orbital Dynamics | 3  | 5  | GS, AR, CS   | 10.000     | 2+1      | 300        | Hovering platform based on recovered technology             |
-| Nth Metal Skiff    | Atom Motors      | 4  | 4  | GS, CX, AR   | 11.000     | 2+1      | 150        | Incorporates recovered Mysterian alloys                     |
+| Nth Metal Skiff    | Atom Motors      | 4  | 4  | GS, CX, AR   | 11.000     | 2+1      | 150        | Incorporates recovered Mysterion alloys                     |
 | Phase Shifter      | Luna Precision   | 3  | 4  | AR, CS, GS   | 13.000     | 1+1      | 100        | Limited dimensional phasing (highly experimental)           |
 | Thought Rider      | New Detroit      | 3  | 5  | AR, CS, GS   | 14.000     | 1        | 50         | Prototype psionic interface control system                  |
 | Forerunner Replica | Mars Frontier    | 3  | 3  | RF, AR, CS   | 12.500     | 2+1      | 400        | Based on ancient Martian designs, mysterious operation      |
 | Mystertech Alpha   | Orbital Dynamics | 4  | 4  | AR, GS, CX   | 15.000     | 2+1      | 200        | Incorporates recovered alien control systems                |
-| Xenoform           | Venusian Cloud   | 3  | 4  | AT, AR, GS   | 13.500     | 2+1      | 250        | Adaptive design inspired by Mysterian biological principles |
+| Xenoform           | Venusian Cloud   | 3  | 4  | AT, AR, GS   | 13.500     | 2+1      | 250        | Adaptive design inspired by Mysterion biological principles |
 
 
 ## CONSTRUCTION & INDUSTRIAL VEHICLES
@@ -429,7 +429,7 @@
 | Cloud Pioneer       | Venusian Cloud     | 3  | 4  | AT, GS, CS   | 9.500      | 2+1      | 60 units       | Inspired by first Venusian atmospheric craft |
 | Racing Legend       | Hermes Speed       | 5  | 5  | CX, UE, GS   | 18.000     | 1+1      | 20 units       | Championship-winning vehicle replica         |
 | Explorer's Heritage | Mars Frontier      | 2  | 3  | AT, RF, AR   | 11.000     | 6+2      | 30 units       | Based on famous Mars expedition vehicle      |
-| First Contact       | Orbital Dynamics   | 4  | 4  | AR, GS, CS   | 20.000     | 2+1      | 10 units       | Commemorating first Mysterian encounter      |
+| First Contact       | Orbital Dynamics   | 4  | 4  | AR, GS, CS   | 20.000     | 2+1      | 10 units       | Commemorating first Mysterion encounter      |
 
 ## MANUFACTURER PROFILES
 
