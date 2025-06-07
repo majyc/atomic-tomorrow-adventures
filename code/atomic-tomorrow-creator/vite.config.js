@@ -4,10 +4,12 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/app/', // This is important - it sets the base path for assets to /app/
+  base: './', // Use relative paths for deployment flexibility
   publicDir: 'public',  
   build: {
-    outDir: 'dist',
+    outDir: process.env.NODE_ENV === 'production' && process.env.BUILD_TARGET === 'site' 
+      ? '../../../sfxrpg.com/tools/character-creator'  // Adjust path as needed
+      : 'dist',
     emptyOutDir: true,
     assetsDir: 'assets',
     sourcemap: false, // Set to true if you want source maps in production

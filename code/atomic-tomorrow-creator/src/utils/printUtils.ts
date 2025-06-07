@@ -624,7 +624,7 @@ export const printCharacterSheet = (character, notes = '') => {
             <div class="portrait-ring-2"></div>
             <div class="portrait-ring-1"></div>
             <div class="portrait-area">
-              ${character.portrait && character.portrait.fullPath ? `<img src="${character.portrait.fullPath}" alt="Character Portrait" style="width: 100%; height: 100%; object-fit: cover;">` : 'Portrait'}
+              ${character.portrait && character.portrait.path ? `<img src="${character.portrait.path}" alt="Character Portrait" style="width: 100%; height: 100%; object-fit: cover;">` : 'Portrait'}
             </div>
           </div>
         </div>

@@ -182,7 +182,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
               {character.portrait ? (
                 <div className="w-full h-full relative">
                   <img
-                    src={character.portrait.fullPath}
+                    src={character.portrait.path}
                     alt={"Character portrait"}
                     className="w-full h-full object-cover"
                     onError={(e) => {

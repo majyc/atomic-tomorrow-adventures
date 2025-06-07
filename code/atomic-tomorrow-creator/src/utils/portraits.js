@@ -31,12 +31,15 @@ export const PORTRAIT_TYPES = {
   ]
 };
 
+// Configurable base path for portraits (can be changed for different deployments)
+export const PORTRAITS_BASE_PATH = './portraits/';
+
 // Generate portrait data with paths
 export const generatePortraitData = () => {
   const portraits = [];
   
   // Base path for portrait assets
-  const basePath = '/portraits/';
+  const basePath = PORTRAITS_BASE_PATH;
   
   // Generate male portraits
   for (let i = 1; i <= PORTRAIT_COUNTS.male; i++) {

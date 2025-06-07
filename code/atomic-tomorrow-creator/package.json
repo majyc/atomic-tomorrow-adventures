@@ -6,6 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:site": "cross-env NODE_ENV=production BUILD_TARGET=site vite build",
+    "sync": "node scripts/sync-to-site.js",
+    "deploy": "npm run build && npm run sync",
+    "dev:sync": "node scripts/watch-and-sync.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "tailwind:init": "npx tailwindcss init -p"
@@ -21,6 +25,8 @@
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.16",
+    "chokidar": "^4.0.3",
+    "cross-env": "^7.0.3",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
