@@ -423,14 +423,16 @@ const FinishingTouchPanel = ({ character, updateCharacter }) => {
       'Cosmic Debt': {
         creditors: [
           'an alien entity that saved your life', 'time travelers you barely remember meeting',
-          'a dying psionics master who transferred obligations to you',
-          'an ancient AI that granted you knowledge',
           'interdimensional beings who answered your call',
-          'the ghost of someone you failed to save',
+          'an ancient AI that granted you knowledge',
           'a cosmic force that chose you as champion',
           'aliens who uplifted your consciousness',
           'an entity from outside space-time',
           'the collective unconscious of a dead species'
+        ],
+        namedCreditors: [
+          'a dying psionics master', 'the ghost of someone you failed to save',
+          'your deceased mentor', 'a fallen war hero', 'a murdered scientist'
         ]
       }
     };
@@ -492,9 +494,21 @@ const FinishingTouchPanel = ({ character, updateCharacter }) => {
         break;
 
       case 'Cosmic Debt':
-        const creditor = data.creditors[Math.floor(Math.random() * data.creditors.length)];
+        const useNamedCreditor = Math.random() < 0.4; // 40% chance of detailed NPC
+        let creditor;
+        let creditorDetails = '';
+        
+        if (useNamedCreditor && data.namedCreditors) {
+          const namedCreditorType = data.namedCreditors[Math.floor(Math.random() * data.namedCreditors.length)];
+          const creditorCharacter = generateCharacterForRelationship('Cosmic Debt');
+          creditor = `${creditorCharacter.epithet.name} ${creditorCharacter.name}, ${namedCreditorType}`;
+          creditorDetails = ` This ${creditorCharacter.origin.name} ${creditorCharacter.profession.name} bound you to this cosmic obligation`;
+        } else {
+          creditor = data.creditors[Math.floor(Math.random() * data.creditors.length)];
+        }
+        
         description = `You owe a debt to ${creditor}`;
-        context = `This obligation was incurred${timeRef}. The debt isn\'t monetary—it\'s spiritual, temporal, or dimensional. They don\'t accept "I forgot" as an excuse.`;
+        context = `This obligation was incurred${timeRef}.${creditorDetails ? creditorDetails : ''} The debt isn\'t monetary—it\'s spiritual, temporal, or dimensional. They don\'t accept "I forgot" as an excuse.`;
         break;
     }
 
@@ -686,28 +700,32 @@ const FinishingTouchPanel = ({ character, updateCharacter }) => {
               </div>
             )}
             
-            {finishingTouch.details && !finishingTouch.character && (
+            {finishingTouch.details && typeof finishingTouch.details === 'string' && !finishingTouch.character && !finishingTouch.context && (
               <div className="text-sm font-medium" style={{ color: colors.light }}>
                 {finishingTouch.details}
               </div>
             )}
             
-            {finishingTouch.character && (
+            {(finishingTouch.character || finishingTouch.context) && (
               <div className="space-y-3">
                 <div className="bg-gray-800 rounded p-3 border" style={{ borderColor: colors.border }}>
-                  <div className="text-lg font-bold mb-2" style={{ color: colors.secondary }}>
-                    {finishingTouch.character}
-                  </div>
-                  <div className="text-sm" style={{ color: colors.light }}>
-                    {finishingTouch.context}
-                  </div>
+                  {finishingTouch.character && (
+                    <div className="text-lg font-bold mb-2" style={{ color: colors.secondary }}>
+                      {finishingTouch.character}
+                    </div>
+                  )}
+                  {finishingTouch.context && (
+                    <div className="text-sm" style={{ color: colors.light }}>
+                      {finishingTouch.context}
+                    </div>
+                  )}
                 </div>
               </div>
             )}
 
             <div className="flex justify-end mt-4">
               <button
-                onClick={() => setFinishingTouch(null)}
+                onClick={generateFinishingTouch}
                 className="text-sm hover:underline"
                 style={{ color: colors.secondary }}
               >
