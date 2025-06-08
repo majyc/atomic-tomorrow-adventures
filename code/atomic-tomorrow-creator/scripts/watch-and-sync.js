@@ -3,10 +3,13 @@
 import { spawn } from 'child_process';
 import chokidar from 'chokidar';
 import { execSync } from 'child_process';
+import { updatePortraitsFile, scanPortraits } from './update-portrait-counts.js';
 
 // Configuration
 const DIST_PATH = './dist';
 const SITE_PATH = '../../../sfxrpg.com/tools/character-creator';
+const PORTRAITS_SOURCE = './public/portraits';
+const PORTRAITS_TARGET = '../../../sfxrpg.com/tools/character-creator/portraits';
 
 // Colors for console output
 const colors = {
@@ -31,6 +34,26 @@ function syncFiles() {
   }
 }
 
+function syncPortraits() {
+  try {
+    execSync(`mkdir -p "${PORTRAITS_TARGET}"`, { stdio: 'pipe' });
+    execSync(`rsync -av --delete "${PORTRAITS_SOURCE}/" "${PORTRAITS_TARGET}/"`, { stdio: 'pipe' });
+    log('🖼️  Portraits synced to site', 'green');
+  } catch (error) {
+    log(`❌ Portrait sync failed: ${error.message}`, 'red');
+  }
+}
+
+async function updatePortraitCounts() {
+  try {
+    const counts = await scanPortraits();
+    await updatePortraitsFile(counts);
+    log(`📊 Portrait counts updated: ${counts.male}M, ${counts.female}F`, 'green');
+  } catch (error) {
+    log(`❌ Portrait count update failed: ${error.message}`, 'red');
+  }
+}
+
 function main() {
   log('🚀 Starting watch mode with auto-sync...', 'blue');
   
@@ -41,31 +64,59 @@ function main() {
   });
 
   // Watch dist directory for changes
-  const watcher = chokidar.watch(DIST_PATH, {
+  const distWatcher = chokidar.watch(DIST_PATH, {
     ignored: /node_modules/,
     persistent: true
   });
 
-  watcher.on('change', () => {
+  distWatcher.on('change', () => {
     log('📁 Dist files changed, syncing...', 'yellow');
     setTimeout(syncFiles, 100); // Small delay to ensure file write is complete
   });
 
-  watcher.on('add', () => {
+  distWatcher.on('add', () => {
     log('📁 New file added, syncing...', 'yellow');
     setTimeout(syncFiles, 100);
   });
 
-  watcher.on('unlink', () => {
+  distWatcher.on('unlink', () => {
     log('📁 File removed, syncing...', 'yellow');
     setTimeout(syncFiles, 100);
+  });
+
+  // Watch portraits directory for changes
+  const portraitWatcher = chokidar.watch(PORTRAITS_SOURCE, {
+    ignored: /node_modules/,
+    persistent: true
+  });
+
+  portraitWatcher.on('change', () => {
+    log('🖼️  Portraits changed, syncing...', 'yellow');
+    setTimeout(syncPortraits, 100);
+  });
+
+  portraitWatcher.on('add', (filePath) => {
+    log('🖼️  New portrait added, updating counts and syncing...', 'yellow');
+    setTimeout(async () => {
+      await updatePortraitCounts();
+      syncPortraits();
+    }, 100);
+  });
+
+  portraitWatcher.on('unlink', (filePath) => {
+    log('🖼️  Portrait removed, updating counts and syncing...', 'yellow');
+    setTimeout(async () => {
+      await updatePortraitCounts();
+      syncPortraits();
+    }, 100);
   });
 
   // Handle process termination
   process.on('SIGINT', () => {
     log('🛑 Stopping watch mode...', 'yellow');
     viteProcess.kill();
-    watcher.close();
+    distWatcher.close();
+    portraitWatcher.close();
     process.exit(0);
   });
 

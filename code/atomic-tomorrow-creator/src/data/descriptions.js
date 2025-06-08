@@ -166,48 +166,57 @@ export const PERSONALITY_TRAITS = [
     ]
   };
   
-  // Signature gadget generators
+  // Signature equipment generators
+  export const SIGNATURE_EQUIPMENT = {
+    BASE_ITEMS: [
+      'Pistol', 'Scanner', 'Analyzer', 'Calculator', 'Calibrator', 'Converter', 'Generator', 
+      'Manipulator', 'Stabilizer', 'Harmonizer', 'Resonator', 'Compensator', 'Transmitter',
+      'Detector', 'Communicator', 'Oscillator', 'Regulator', 'Enhancer', 'Synthesizer', 'Monitor'
+    ]
+  };
+
   export const GADGET_COMPONENTS = {
-    ATOMIC_ADJECTIVES: ['Atomo-', 'Astro-', 'Cosmo-', 'Electro-', 'Nucleo-', 'Chrono-', 'Magneto-', 'Quantum-', 'Gyro-', 'Hyper-'],
-    TECHNO_COMPONENTS: ['-Tron', '-Ray', '-Matic', '-Wave', '-Flux', '-Static', '-Field', '-Pulse', '-Scope', '-Beam'],
-    SERIES_DESIGNATIONS: ['Mark Ω', 'Deluxe', 'Z-Series', 'Plus', 'Supreme', 'X-1000', 'Wonder', 'Paragon', 'Galaxy', 'Ultra']
+    ATOMIC_ADJECTIVES: ['Atomic', 'Portable', 'Custom', 'Retro', 'Experimental', 'Miniaturized', 'Reinforced', 'Precision', 'Quantum', 'Hyper'],
+    TECHNO_COMPONENTS: ['Calibrator', 'Analyzer', 'Converter', 'Manipulator', 'Resonator', 'Harmonizer', 'Stabilizer', 'Generator', 'Compensator', 'Transmitter'],
+    SERIES_DESIGNATIONS: ['Mark III', 'Deluxe', 'Prototype', 'Plus', 'Supreme', 'Special Edition', 'Model-T', 'Professional', 'X-500', 'Mk 7']
   };
   
-  // Effects for signature gadgets based on components
+  // Effects for signature equipment based on components
   export const GADGET_EFFECTS = {
     ADJECTIVE_EFFECTS: {
-      'Atomo-': 'Powered by miniature atomic pile that never needs recharging. On fumbles, emits harmless but alarming blue glow.',
-      'Chrono-': 'Strange temporal properties allow you to see 3 seconds into the future when using it.',
-      'Cosmo-': 'Draws energy from cosmic rays. Works even in the vacuum of space and deep underground.',
-      'Electro-': 'Generates its own electrical field. Cannot be disabled by EMP weapons and can jump-start other devices.',
-      'Nucleo-': 'Powered by stable nuclear isomer. Emits faint blue glow in darkness and is slightly warm to the touch.',
-      'Magneto-': 'Manipulates magnetic fields. Can attract/repel metal objects within 5 meters.',
-      'Quantum-': 'Exists in multiple states simultaneously. After failed roll, you may declare "that didn\'t happen" and reroll once per day.',
-      'Gyro-': 'Contains advanced stabilization technology. Grants +15% to balance-related checks and steadies your aim.',
-      'Hyper-': 'Operates at frequencies beyond normal perception. Occasionally you hear it whisper hints about nearby dangers.'
+      'Atomic': 'Powered by miniature atomic pile that never needs recharging. On fumbles, emits harmless but alarming blue glow.',
+      'Portable': 'Exceptionally compact and lightweight. Can be operated one-handed and fits in small spaces.',
+      'Custom': 'Specifically built for you. Grants +15% bonus when you use it, but -10% penalty for anyone else.',
+      'Retro': 'Uses proven atomic-age technology. Immune to modern interference and works in any environment.',
+      'Experimental': 'Cutting-edge prototype with unpredictable benefits. Once per day, provides an unexpected advantage.',
+      'Miniaturized': 'Incredibly small and discrete. Can be concealed easily and operates silently.',
+      'Reinforced': 'Built to military specifications. Resistant to damage and functions even when partially broken.',
+      'Precision': 'Engineered for accuracy. Doubles effective range and provides detailed readings.',
+      'Quantum': 'Exists in multiple states simultaneously. After failed roll, may declare "that didn\'t happen" once per day.',
+      'Hyper': 'Operates beyond normal parameters. Functions work 50% faster and at greater intensity.'
     },
     COMPONENT_EFFECTS: {
-      '-Tron': 'Houses advanced microcomputing system. Can perform complex calculations and store vast amounts of data.',
-      '-Ray': 'Projects focused energy beam with 50-meter range. Can be adjusted to heat, freeze, or illuminate.',
-      '-Matic': 'Features automated functionality. Performs routine tasks without user input and has basic voice recognition.',
-      '-Wave': 'Manipulates energy waves. Can detect and analyze radiation, sound, and electronic signals nearby.',
-      '-Flux': 'Contains unstable energy core. Occasionally glitches in unexpected but useful ways in high-stress situations.',
-      '-Static': 'Generates controlled energy field. Provides minor protection against energy-based attacks.',
-      '-Field': 'Projects dome-shaped energy barrier. Can create 3-meter radius protective field for a limited time.',
-      '-Pulse': 'Emits regular energy pulses. Can disrupt electronic devices or recalibrate malfunctioning equipment.',
-      '-Scope': 'Features advanced optical system. Grants thermal and night vision, plus 10x magnification.',
-      '-Beam': 'Focused energy projection system. Double range compared to standard models, with distinctive color.'
+      'Calibrator': 'Automatically adjusts and fine-tunes other equipment. Can repair minor malfunctions with 10 minutes work.',
+      'Analyzer': 'Provides detailed information about materials, energy, and composition within scanning range.',
+      'Converter': 'Transforms one type of energy into another. Can power other devices or change signal frequencies.',
+      'Manipulator': 'Allows precise control of small objects and energy fields from a distance.',
+      'Resonator': 'Amplifies and focuses vibrations and frequencies. Can shatter materials or enhance communications.',
+      'Harmonizer': 'Synchronizes with other technology. Improves efficiency of nearby equipment by 25%.',
+      'Stabilizer': 'Maintains steady conditions. Counters interference, turbulence, and environmental fluctuations.',
+      'Generator': 'Creates specific types of energy, fields, or particles on demand with precise control.',
+      'Compensator': 'Automatically adjusts for changing conditions and maintains optimal performance.',
+      'Transmitter': 'Sends signals and energy across vast distances with perfect clarity and reliability.'
     },
     DESIGNATION_EFFECTS: {
-      'Mark Ω': 'The ultimate iteration. Features all the refinements from previous models and unmatched reliability.',
+      'Mark III': 'Third generation design incorporating lessons from previous models. Exceptional reliability and proven performance.',
       'Deluxe': 'Gleaming chrome with atomic-age styling. Impresses onlookers and grants +15% to relevant social checks.',
-      'Z-Series': 'Experimental model with classified features. Contains hidden functionality that activates in certain situations.',
+      'Prototype': 'Experimental one-off model. Contains unique features not found in production models.',
       'Plus': 'Enhanced model with improved efficiency. Uses 50% less power and operates twice as long as standard models.',
       'Supreme': 'Premium model with exclusive features. Made from superior materials that resist damage and wear.',
-      'X-1000': 'Thousand-times prototype with enhanced capabilities. Has exactly the specialized attachment you need once per day.',
-      'Wonder': 'One-of-a-kind curiosity with unpredictable quirks. Occasionally performs impossible functions with no explanation.',
-      'Paragon': 'Exemplary showcase model. Performs with exceptional reliability and effectiveness in any environment.',
-      'Galaxy': 'Designed for deep space use. Functions in extreme conditions and interfaces with alien technology.',
-      'Ultra': 'Pushed far beyond normal parameters. Range, duration, and effectiveness increased by 50%, but requires maintenance.'
+      'Special Edition': 'Limited production run with commemorative features. Highly sought after by collectors.',
+      'Model-T': 'Rugged, dependable workhorse design. Simple to maintain and virtually impossible to break permanently.',
+      'Professional': 'Built to exacting standards for serious users. Includes advanced features and precision components.',
+      'X-500': 'Experimental prototype with enhanced capabilities. Has exactly the specialized function you need once per day.',
+      'Mk 7': 'Seventh iteration representing decades of refinement. Incorporates cutting-edge atomic-age technology.'
     }
   };

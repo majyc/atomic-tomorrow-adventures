@@ -1,5 +1,6 @@
 export const ORIGINS = [
   { id: 'terran', name: 'Terran', description: 'Born on Earth, shaped by generations of genetic engineering', attributeMods: 'SAVVY +1, GRIT -1', skills: 'Academics (Bureaucracy) +15%, Technology (Infrastructure) +10%, Academics (History) +5%' },
+  { id: 'terran-exile', name: 'Terran Exile', description: 'Cast out from Earth, choosing their own path among the stars', attributeMods: 'Standard Array or Roll Randomly', skills: 'Streetwise (Underworld) +15%, Survival (Variable) +10%, Social (Deception) +5%' },
   { id: 'loonie', name: 'Loonie', description: 'Raised in the low-gravity colonies of Luna', attributeMods: 'BRAWN -1, REFLEX +1, GUILE +1', skills: 'Athletics (Zero-G Operations) +15%, Repair (Mechanics) +10%, Streetwise (Luna) +5%' },
   { id: 'martian', name: 'Martian', description: 'Child of the red planet, frontier hardiness', attributeMods: 'BRAWN +1, GRIT +1, CHARM -1', skills: 'Survival (Mars) +15%, Ancient History +10%, Geology +5%' },
   { id: 'venusian', name: 'Venusian', description: 'Born in the cloud cities floating above Venus', attributeMods: 'BRAWN +1, NERVE +1, SAVVY -1', skills: 'Survival (Jungle) +15%, Science (Meteorology) +10%, Science (Xenobiology) +5%' },

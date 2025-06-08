@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shuffle, Trash, Plus } from 'lucide-react';
+import { Shuffle, Trash, Plus, Trash2 } from 'lucide-react';
 import { PROFESSION_EQUIPMENT } from '../data/descriptions';
 
 // Equipment categories for organization
@@ -24,6 +24,22 @@ const EquipmentPanel = ({ character, updateCharacter }) => {
 
   // State for credits
   const [credits, setCredits] = useState(character.credits || 0);
+  
+  // State to track initialization
+  const [isInitialized, setIsInitialized] = useState(false);
+
+  // Initialize professional equipment and credits when character data is available
+  useEffect(() => {
+    if (!isInitialized && character.profession && equipment.length === 0 && credits === 0) {
+      // Auto-load professional equipment
+      loadProfessionEquipment();
+      
+      // Auto-roll starting credits
+      rollCredits();
+      
+      setIsInitialized(true);
+    }
+  }, [character.profession, isInitialized]);
 
   // Update character in parent component when equipment or credits change
   useEffect(() => {
@@ -92,6 +108,15 @@ const EquipmentPanel = ({ character, updateCharacter }) => {
     setEquipment([...equipment, ...newEquipment]);
   };
 
+  // Clear all equipment
+  const clearAllEquipment = () => {
+    if (equipment.length === 0) return;
+    
+    if (window.confirm('Are you sure you want to clear all equipment? This cannot be undone.')) {
+      setEquipment([]);
+    }
+  };
+
   // CRT effect styles
   const crtStyles = {
     scanline: {
@@ -137,6 +162,22 @@ const EquipmentPanel = ({ character, updateCharacter }) => {
           >
             <Plus size={16} className="mr-1" />
             Load Profession Gear
+          </button>
+
+          <button
+            onClick={clearAllEquipment}
+            className="px-3 py-1 rounded text-sm flex items-center"
+            style={{
+              backgroundColor: '#7f1d1d',
+              color: '#fca5a5',
+              border: '1px solid #dc2626',
+              boxShadow: '0 0 10px rgba(220, 38, 38, 0.5)',
+              textShadow: '0 0 5px rgba(248, 113, 113, 0.8)'
+            }}
+            disabled={equipment.length === 0}
+          >
+            <Trash2 size={16} className="mr-1" />
+            Clear All
           </button>
 
           <div className="flex items-center">

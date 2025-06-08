@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Shuffle, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Import the updated portrait configuration
-import { PORTRAIT_COUNTS, PORTRAIT_TYPES, PORTRAITS_BASE_PATH } from '../utils/portraits';
+import { PORTRAIT_COUNTS, PORTRAITS_BASE_PATH } from '../utils/portraits';
 
 /**
  * Enhanced PortraitSelector with retro-atomic styling and dynamic portrait support
@@ -71,18 +71,13 @@ const PortraitSelector = ({ selectedPortrait, onSelectPortrait, genderPreference
       
       // Generate portrait data for these indices
       const selectedPortraits = selectedIndices.map(({ gender, index }) => {
-        const portraitTypes = gender === 'male' ? PORTRAIT_TYPES.male : PORTRAIT_TYPES.female;
-        const portraitName = index <= portraitTypes.length 
-          ? portraitTypes[index - 1] 
-          : `${gender === 'male' ? 'Male' : 'Female'} Character ${index}`;
         const portraitPath = `${PORTRAITS_BASE_PATH}${gender === 'male' ? 'm' : 'f'}_${index}.jpg`;
-        const fullPath = portraitPath;
 
         return {
           id: `${gender}-${index}`,
-          name: portraitName,
+          name: `Portrait ${index}`,
           path: portraitPath,
-          fullPath: fullPath,
+          fullPath: portraitPath,
           gender
         };
       });

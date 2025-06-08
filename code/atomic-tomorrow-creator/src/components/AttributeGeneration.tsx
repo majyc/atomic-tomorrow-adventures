@@ -26,6 +26,9 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
   const [modifiedAttributes, setModifiedAttributes] = useState<Record<string, number>>({...character.attributes});
   const [isRolling, setIsRolling] = useState<boolean>(false);
   const [componentInitialized, setComponentInitialized] = useState<boolean>(false);
+  const [terranExileChoice, setTerranExileChoice] = useState<'standard' | 'random' | null>(
+    character.terranExileChoice || null
+  );
   
   // References to prevent infinite loops
   const characterRef = useRef(character);
@@ -40,8 +43,9 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
     attributesInitializedRef.current = character._attributesInitialized;
   });
 
-  // Determine if the character is Terran
+  // Determine if the character uses standard array (Terran) or has choice (Terran Exile)
   const isTerran = character.origin?.id === 'terran';
+  const isTerranExile = character.origin?.id === 'terran-exile';
 
   // Generate dice values (for non-Terran characters)
   const generateDiceValues = () => {
@@ -58,10 +62,14 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
     if (isTerran) {
       // Use standard array for Terran characters
       return [...standardArray];
+    } else if (isTerranExile && terranExileChoice === 'standard') {
+      // Terran Exile choosing standard array
+      return [...standardArray];
     } else {
+      // Non-Terrans or Terran Exile choosing random
       return generateDiceValues();
     }
-  }, [isTerran]);
+  }, [isTerran, isTerranExile, terranExileChoice]);
 
   // Check if attributes have been saved previously - use the ref
   const attributesAreSaved = useCallback(() => {
@@ -146,24 +154,32 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
         setAssignedPositions(reconstructedPositions);
       }
     } else {
-      // First time visiting this screen, generate new values
-      const freshValues = isTerran ? [...standardArray] : generateDiceValues();
-      
-      // Save these initial rolls to the character (using a separate update)
-      const characterUpdate = {
-        ...char,
-        initialRolls: freshValues
-      };
-      updateCharacter(characterUpdate);
-      
-      setAvailableValues(freshValues);
-      
-      // If we don't have any prior attribute assignments, don't set any positions
-      setAssignedPositions({});
+      // First time visiting this screen, handle based on origin
+      if (isTerranExile && terranExileChoice === null) {
+        // Terran Exile needs to make a choice first - don't generate values yet
+        setAvailableValues([]);
+        setAssignedPositions({});
+      } else {
+        // Generate new values based on origin and choice
+        const freshValues = generateFreshValues();
+        
+        // Save these initial rolls to the character (using a separate update)
+        const characterUpdate = {
+          ...char,
+          initialRolls: freshValues,
+          terranExileChoice: terranExileChoice
+        };
+        updateCharacter(characterUpdate);
+        
+        setAvailableValues(freshValues);
+        
+        // If we don't have any prior attribute assignments, don't set any positions
+        setAssignedPositions({});
+      }
     }
     
     setComponentInitialized(true);
-  }, [componentInitialized, generateFreshValues, updateCharacter, isTerran]);
+  }, [componentInitialized, generateFreshValues, updateCharacter, isTerran, isTerranExile, terranExileChoice]);
 
   // Update modified attributes whenever attributes or assignments change - not tied to character
   useEffect(() => {
@@ -321,6 +337,36 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
       // Otherwise, assign the value
       assignValueToAttribute(attribute, position);
     }
+  };
+
+  // Handle Terran Exile choice
+  const handleTerranExileChoice = (choice: 'standard' | 'random') => {
+    setTerranExileChoice(choice);
+    
+    // Generate values based on choice
+    const freshValues = choice === 'standard' ? [...standardArray] : generateDiceValues();
+    
+    // Update character with choice and fresh values
+    updateCharacter({
+      ...characterRef.current,
+      terranExileChoice: choice,
+      initialRolls: freshValues
+    });
+    
+    setAvailableValues(freshValues);
+    setAssignedPositions({});
+    
+    // Reset attributes to default
+    const defaultAttributes: Record<string, number> = {
+      BRAWN: 0,
+      REFLEX: 0,
+      NERVE: 0,
+      SAVVY: 0,
+      CHARM: 0,
+      GRIT: 0,
+      GUILE: 0
+    };
+    setAttributes(defaultAttributes);
   };
 
   // Check if all attributes have been assigned
@@ -490,6 +536,11 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
                 As a Terran, you must distribute the Standard Array values (15, 14, 12, 11, 10, 9, 8) among your attributes.
                 Click on a value to assign it to an attribute. Click on an assigned value again to unassign it.
               </p>
+            ) : isTerranExile ? (
+              <p className="text-sm text-green-300" style={{ textShadow: '0 0 5px rgba(134, 239, 172, 0.7)' }}>
+                As a Terran Exile, you may choose between the Standard Array (15, 14, 12, 11, 10, 9, 8) or 
+                randomly generated values. Make your choice below, then assign the values to your attributes.
+              </p>
             ) : (
               <p className="text-sm text-green-300" style={{ textShadow: '0 0 5px rgba(134, 239, 172, 0.7)' }}>
                 As a {character.origin?.name || 'non-Terran'}, you have the flexibility to assign the generated values
@@ -503,8 +554,53 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
         </div>
       </div>
 
-      {/* Controls for non-Terrans */}
-      {!isTerran && (
+      {/* Terran Exile Choice */}
+      {isTerranExile && (
+        <div className="mb-6 bg-gray-800 p-4 rounded-lg border border-blue-900"
+          style={{ boxShadow: '0 0 15px rgba(30, 64, 175, 0.4), inset 0 0 10px rgba(30, 64, 175, 0.2)' }}>
+          <h3 className="text-lg font-semibold text-blue-400 mb-4"
+            style={{ textShadow: '0 0 8px rgba(96, 165, 250, 0.7)' }}>
+            CHOOSE YOUR ATTRIBUTE METHOD:
+          </h3>
+          <div className="flex gap-4">
+            <button
+              onClick={() => handleTerranExileChoice('standard')}
+              className={`flex-1 p-4 rounded-lg border-2 transition-all ${
+                terranExileChoice === 'standard'
+                  ? 'bg-blue-900 border-blue-600 text-blue-300'
+                  : 'bg-gray-700 border-gray-600 text-gray-300 hover:bg-gray-600'
+              }`}
+              style={{
+                boxShadow: terranExileChoice === 'standard' 
+                  ? '0 0 15px rgba(37, 99, 235, 0.6)' 
+                  : 'none'
+              }}
+            >
+              <div className="font-bold mb-2">STANDARD ARRAY</div>
+              <div className="text-sm">Use the balanced values: 15, 14, 12, 11, 10, 9, 8</div>
+            </button>
+            <button
+              onClick={() => handleTerranExileChoice('random')}
+              className={`flex-1 p-4 rounded-lg border-2 transition-all ${
+                terranExileChoice === 'random'
+                  ? 'bg-blue-900 border-blue-600 text-blue-300'
+                  : 'bg-gray-700 border-gray-600 text-gray-300 hover:bg-gray-600'
+              }`}
+              style={{
+                boxShadow: terranExileChoice === 'random' 
+                  ? '0 0 15px rgba(37, 99, 235, 0.6)' 
+                  : 'none'
+              }}
+            >
+              <div className="font-bold mb-2">RANDOM GENERATION</div>
+              <div className="text-sm">Roll randomly for potentially higher or lower values</div>
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Controls for non-Terrans and Terran Exiles who chose random */}
+      {((!isTerran && !isTerranExile) || (isTerranExile && terranExileChoice === 'random')) && (
         <div className="mb-6 flex justify-between items-center">
           <h3 className="text-lg font-semibold text-blue-400"
             style={{ textShadow: '0 0 8px rgba(96, 165, 250, 0.7)' }}>
@@ -536,12 +632,17 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
         </div>
       )}
 
-      {/* Attributes Panel */}
-      <div className="bg-gray-800 rounded-lg overflow-hidden border border-blue-900 mb-8"
-        style={{ boxShadow: '0 0 15px rgba(30, 64, 175, 0.4), inset 0 0 10px rgba(30, 64, 175, 0.2)' }}
-      >
+      {/* Attributes Panel - only show if choice made or not Terran Exile */}
+      {(!isTerranExile || terranExileChoice !== null) && (
+        <div className="bg-gray-800 rounded-lg overflow-hidden border border-blue-900 mb-8"
+          style={{ boxShadow: '0 0 15px rgba(30, 64, 175, 0.4), inset 0 0 10px rgba(30, 64, 175, 0.2)' }}
+        >
         <div className="bg-gray-900 p-4 border-b border-gray-700 font-semibold text-blue-400 terminal-text">
-          {isTerran ? 'TERRAN ATTRIBUTE ASSIGNMENT' : 'NON-TERRAN ATTRIBUTE ASSIGNMENT'}
+          {isTerran 
+            ? 'TERRAN ATTRIBUTE ASSIGNMENT' 
+            : isTerranExile 
+              ? `TERRAN EXILE ATTRIBUTE ASSIGNMENT (${terranExileChoice?.toUpperCase() || 'PENDING'})`
+              : 'NON-TERRAN ATTRIBUTE ASSIGNMENT'}
         </div>
 
         {renderAttributeRow('BRAWN')}
@@ -551,7 +652,8 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
         {renderAttributeRow('CHARM')}
         {renderAttributeRow('GRIT')}
         {renderAttributeRow('GUILE')}
-      </div>
+        </div>
+      )}
 
       {/* Derived Stats Panel */}
       <DerivedStatsPanel

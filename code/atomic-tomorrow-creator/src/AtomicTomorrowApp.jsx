@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, HelpCircle, Download, Save, Zap, Atom, Upload } from 'lucide-react';
+import { ChevronLeft, ChevronRight, HelpCircle, Download, Save, Zap, Atom, Upload, Library } from 'lucide-react';
 
 // Import components
 import CharacterConcept from './components/CharacterConcept';
@@ -9,9 +9,11 @@ import CharacterSheet from './components/CharacterSheet';
 import AtomicProgressIndicator from './components/AtomicProgressIndicator'; // Make sure to use the simplified version
 import AtomicStarfield from './components/AtomicStarfield';
 import ImportDialog from './components/ImportDialog';
+import CharacterLibrary from './components/CharacterLibrary';
 
 // Import utility functions
 import { importCharacter } from './utils/characterIOUtils';
+import { saveCharacter } from './utils/characterStorage';
 
 // Import CSS stylesheets
 import './styles/raygun-buttons.css';
@@ -28,6 +30,7 @@ const AtomicTomorrowApp = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [isMounted, setIsMounted] = useState(false);
   const [showImportDialog, setShowImportDialog] = useState(false);
+  const [showCharacterLibrary, setShowCharacterLibrary] = useState(false);
   const [stepsInitialized, setStepsInitialized] = useState({
     1: false,
     2: false,
@@ -123,6 +126,22 @@ const AtomicTomorrowApp = () => {
     }
   };
   
+  // Handler for Save button
+  const handleSave = () => {
+    const characterName = character.name || 'Unnamed Character';
+    
+    if (saveCharacter(character, characterName)) {
+      alert(`Character "${characterName}" saved successfully!`);
+    } else {
+      alert('Failed to save character. Please try again.');
+    }
+  };
+
+  // Handler for Character Library button
+  const handleShowLibrary = () => {
+    setShowCharacterLibrary(true);
+  };
+
   // Handler for Import button
   const handleImport = () => {
     setShowImportDialog(true);
@@ -146,6 +165,26 @@ const AtomicTomorrowApp = () => {
     
     // Success message
     alert('Character imported successfully!');
+  };
+
+  // Handler for when a character is loaded from library
+  const handleLoadFromLibrary = (loadedCharacter) => {
+    // Update the character data
+    setCharacter(loadedCharacter);
+    
+    // Mark all steps as initialized
+    setStepsInitialized({
+      1: true,
+      2: true,
+      3: true,
+      4: false // We'll initialize this when we get there
+    });
+    
+    // Set current step to the character sheet (final step)
+    setCurrentStep(4);
+    
+    // Success message
+    alert(`Character "${loadedCharacter.name || 'Unnamed Character'}" loaded successfully!`);
   };
   
   // Validation checks
@@ -256,6 +295,14 @@ const AtomicTomorrowApp = () => {
           onImport={handleImportComplete} 
         />
       )}
+
+      {/* Character Library Dialog */}
+      {showCharacterLibrary && (
+        <CharacterLibrary 
+          onClose={() => setShowCharacterLibrary(false)} 
+          onLoad={handleLoadFromLibrary} 
+        />
+      )}
       
       {/* Header with Starburst */}
       <header className="atomic-header text-white p-4 relative overflow-hidden">
@@ -269,11 +316,15 @@ const AtomicTomorrowApp = () => {
             <h1 className="text-2xl font-bold">ATOMIC TOMORROW ADVENTURES</h1>
           </div>
           <div className="flex space-x-4">
+            <button className="raygun-button" onClick={handleShowLibrary}>
+              <Library size={18} className="mr-1" />
+              Library
+            </button>
             <button className="raygun-button" onClick={handleImport}>
               <Upload size={18} className="mr-1" />
-              Import Character
+              Import
             </button>
-            <button className="raygun-button">
+            <button className="raygun-button" onClick={handleSave}>
               <Save size={18} className="mr-1" />
               Save
             </button>

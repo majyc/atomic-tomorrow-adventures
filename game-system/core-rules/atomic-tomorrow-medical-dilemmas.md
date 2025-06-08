@@ -179,15 +179,18 @@ Each piece of medical equipment provides tangible advantages:
 
 When treatments cause mutations (especially Z-Ray treatments), roll on this table:
 
-| Roll (d20) | Mutation Effect | Game Impact |
+| Roll (d10) | Mutation Effect | Game Impact |
 |------------|-----------------|-------------|
-| 1-3 | **Luminescent Skin**: Patient's skin glows faintly in darkness | Provides dim light in 5-foot radius; impossible to hide in darkness |
-| 4-6 | **Accelerated Metabolism**: Patient processes chemicals quickly | +20% to resist toxins; requires double food rations |
-| 7-9 | **Thermal Sensitivity**: Patient can detect minute heat variations | +20% to detect hidden life forms; -20% to resist heat damage |
-| 10-12 | **Altered Circulation**: Patient's blood has unusual properties | Can function at 5 wounds instead of 4; bleeds more profusely (wounds from bleeder weapons +1) |
-| 13-15 | **Neural Reconfiguration**: Patient's nervous system rewired | +10% to REFLEX checks; occasional involuntary twitches (20% chance during precision tasks) |
-| 16-18 | **Cellular Elasticity**: Patient's tissues have unusual flexibility | Can squeeze through spaces half their size; skin bruises easily (+1 damage from impacts) |
-| 19-20 | **Energy Resonance**: Patient's cells resonate with energy weapons | Can sense energy weapon charging within 50 feet; takes +1 damage from energy weapons |
+| 1 | **Luminescent Skin**: Patient's skin glows faintly in darkness | Provides dim light in 5-foot radius; impossible to hide in darkness |
+| 2 | **Accelerated Metabolism**: Patient processes chemicals quickly | +20% to resist toxins; requires double food rations |
+| 3 | **Thermal Sensitivity**: Patient can detect minute heat variations | +20% to detect hidden life forms; -20% to resist heat damage |
+| 4 | **Altered Circulation**: Patient's blood has unusual properties | Can function at 5 wounds instead of 4; bleeds more profusely (wounds from bleeder weapons +1) |
+| 5 | **Neural Reconfiguration**: Patient's nervous system rewired | +10% to REFLEX checks; occasional involuntary twitches (20% chance during precision tasks) |
+| 6 | **Cellular Elasticity**: Patient's tissues have unusual flexibility | Can squeeze through spaces half their size; skin bruises easily (+1 damage from impacts) |
+| 7 | **Energy Resonance**: Patient's cells resonate with energy weapons | Can sense energy weapon charging within 50 feet; takes +1 damage from energy weapons |
+| 8 | **Magnetic Sensitivity**: Patient's nervous system detects magnetic fields | +20% to notice hidden electronics; disoriented near strong magnets (-20% to all actions) |
+| 9 | **Crystalline Deposits**: Patient develops mineral formations under skin | Natural armor (+1 damage reduction); -20% to GRACE checks due to stiffness |
+| 10 | **Temporal Displacement**: Patient's cellular timing becomes erratic | Once per day, can act on initiative 100; ages at half normal rate but requires medical check monthly |
 
 ## SAMPLE MEDICAL SCENARIOS
 

@@ -7,6 +7,8 @@ import path from 'path';
 // Configuration - adjust these paths as needed
 const SITE_PATH = '../../../sfxrpg.com/tools/character-creator';
 const DIST_PATH = './dist';
+const PORTRAITS_SOURCE = './public/portraits';
+const PORTRAITS_TARGET = '../../../sfxrpg.com/tools/character-creator/portraits';
 
 // Colors for console output
 const colors = {
@@ -38,14 +40,25 @@ function main() {
 
     log('🔄 Syncing character creator to site...', 'blue');
 
-    // Create the target directory if it doesn't exist
+    // Create the target directories if they don't exist
     execSync(`mkdir -p "${SITE_PATH}"`, { stdio: 'inherit' });
+    execSync(`mkdir -p "${PORTRAITS_TARGET}"`, { stdio: 'inherit' });
 
-    // Sync files (preserving directory structure)
+    // Sync main files (preserving directory structure)
     execSync(`rsync -av --delete "${DIST_PATH}/" "${SITE_PATH}/"`, { stdio: 'inherit' });
+
+    // Sync portraits if they exist
+    if (existsSync(PORTRAITS_SOURCE)) {
+      log('🖼️  Syncing portraits...', 'blue');
+      execSync(`rsync -av --delete "${PORTRAITS_SOURCE}/" "${PORTRAITS_TARGET}/"`, { stdio: 'inherit' });
+      log('✅ Portraits synced!', 'green');
+    } else {
+      log('⚠️  No portraits directory found to sync', 'yellow');
+    }
 
     log('✅ Successfully synced to site!', 'green');
     log(`   Files copied to: ${path.resolve(SITE_PATH)}`, 'blue');
+    log(`   Portraits copied to: ${path.resolve(PORTRAITS_TARGET)}`, 'blue');
 
   } catch (error) {
     log(`❌ Sync failed: ${error.message}`, 'red');

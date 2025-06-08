@@ -313,16 +313,25 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                   </p>
                 </div>
                 
-                {character.signatureGadget && (
+                {character.finishingTouch && (
                   <div className="rounded p-3 border mt-4 bg-gray-900 border-blue-800">
                     <h3 className="font-bold text-blue-300 mb-1">
-                      Signature Gadget: {character.signatureGadget.name}
+                      {character.finishingTouch.name}
                     </h3>
-                    <div className="text-sm text-blue-200 space-y-1">
-                      {character.signatureGadget.effects.map((effect, idx) => (
-                        <p key={idx}>• {effect}</p>
-                      ))}
-                    </div>
+                    <p className="text-sm text-blue-200 mb-2">
+                      {character.finishingTouch.description}
+                    </p>
+                    {character.finishingTouch.effects ? (
+                      <div className="text-sm text-blue-200 space-y-1">
+                        {character.finishingTouch.effects.map((effect, idx) => (
+                          <p key={idx}>• {effect}</p>
+                        ))}
+                      </div>
+                    ) : character.finishingTouch.details && (
+                      <p className="text-sm text-blue-200">
+                        • {character.finishingTouch.details}
+                      </p>
+                    )}
                   </div>
                 )}
               </div>

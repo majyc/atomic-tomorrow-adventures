@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CharacterDetailsPanel from './CharacterDetailsPanel';
 import EquipmentPanel from './EquipmentPanel';
-import SignatureGadgetPanel from './SignatureGadgetPanel';
+import FinishingTouchPanel from './FinishingTouchPanel';
 import PortraitSelector from './PortraitSelector';
 
 /**
@@ -129,8 +129,8 @@ const EquipmentDetails = ({ character, updateCharacter }) => {
             updateCharacter={handleUpdateCharacterData} 
           />
 
-          {/* Signature Gadget Panel */}
-          <SignatureGadgetPanel 
+          {/* Finishing Touch Panel */}
+          <FinishingTouchPanel 
             character={characterData} 
             updateCharacter={handleUpdateCharacterData} 
           />
