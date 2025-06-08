@@ -90,7 +90,7 @@ Based on weapon type and attack quality:
 
 ### DAMAGE SOAKING
 
-- Defender rolls against GRIT × (5 - current wounds)
+- Defender rolls against GRIT × 5
 - Critical Success: Reduce wounds by 3
 - Special Success: Reduce wounds by 2
 - Ordinary Success: Reduce wounds by 1
