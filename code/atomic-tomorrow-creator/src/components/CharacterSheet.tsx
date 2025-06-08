@@ -328,9 +328,20 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                         ))}
                       </div>
                     ) : character.finishingTouch.details && (
-                      <p className="text-sm text-blue-200">
-                        • {character.finishingTouch.details}
-                      </p>
+                      <div className="text-sm text-blue-200">
+                        {typeof character.finishingTouch.details === 'string' ? (
+                          <p>• {character.finishingTouch.details}</p>
+                        ) : (
+                          <div className="space-y-1">
+                            {character.finishingTouch.character && (
+                              <p>• <strong>{character.finishingTouch.character}</strong></p>
+                            )}
+                            {character.finishingTouch.context && (
+                              <p className="text-xs text-blue-300 ml-2">{character.finishingTouch.context}</p>
+                            )}
+                          </div>
+                        )}
+                      </div>
                     )}
                   </div>
                 )}
