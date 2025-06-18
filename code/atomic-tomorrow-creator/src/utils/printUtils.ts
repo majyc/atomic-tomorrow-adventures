@@ -342,17 +342,28 @@ export const printCharacterSheet = (character, notes = '') => {
           padding-left: 0.05in;
         }
         
-        /* Wound Track Styling */
+        /* Dual Track Styling */
         .wound-track-container {
           margin-top: 0.05in;
           padding-top: 0.05in;
           border-top: 1px dashed rgba(243, 156, 18, 0.5);
         }
         
-        .wound-label {
-          font-weight: bold;
+        .dual-track-labels {
+          display: flex;
+          justify-content: space-between;
           margin-bottom: 0.02in;
-          text-align: center;
+          font-size: 0.8em;
+        }
+        
+        .wounds-label {
+          color: #e74c3c;
+          font-weight: bold;
+        }
+        
+        .strain-label {
+          color: #3498db;
+          font-weight: bold;
         }
         
         .wound-track {
@@ -668,9 +679,12 @@ export const printCharacterSheet = (character, notes = '') => {
                 }).join('')}
               </table>
               
-              <!-- Wound Track -->
+              <!-- Dual Damage Track -->
               <div class="wound-track-container">
-                <div class="wound-label">Wound Track</div>
+                <div class="dual-track-labels">
+                  <div class="wounds-label">Wounds →</div>
+                  <div class="strain-label">← Strain</div>
+                </div>
                 <div class="wound-track">
                   <div class="wound-box">1</div>
                   <div class="wound-box">2</div>
@@ -678,18 +692,6 @@ export const printCharacterSheet = (character, notes = '') => {
                   <div class="wound-box wound-incap">4</div>
                   ${character.epithet?.id === 'grizzled' ? '<div class="wound-box">5</div>' : ''}
                   <div class="wound-box wound-dying">${character.epithet?.id === 'grizzled' ? '6' : '5'}</div>
-                </div>
-              </div>
-              
-              <!-- Stress Track -->
-              <div class="wound-track-container">
-                <div class="wound-label">Stress Track</div>
-                <div class="wound-track">
-                  <div class="wound-box">1</div>
-                  <div class="wound-box">2</div>
-                  <div class="wound-box">3</div>
-                  <div class="wound-box">4</div>
-                  <div class="wound-box wound-incap">5</div>
                 </div>
               </div>
             </div>

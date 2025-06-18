@@ -276,21 +276,36 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 </div>
                 
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
-                  <div className="font-medium">Wound Track</div>
-                  <div className="text-xl flex items-center">
-                    {/* Wound track boxes */}
-                    {Array.from({ length: character.epithet?.id === 'grizzled' ? 5 : 4 }).map((_, i) => (
-                      <div 
-                        key={i} 
-                        className="wound-track-box border-2 border-red-500 rounded w-6 h-6 mr-1 flex items-center justify-center"
-                        style={{ boxShadow: i === 0 ? '0 0 10px rgba(239, 68, 68, 0.6)' : 'none' }}
-                      >
-                        {i === 0 && <Heart size={14} className="text-red-500" />}
-                        {i === (character.epithet?.id === 'grizzled' ? 4 : 3) && (
-                          <Skull size={14} className="text-red-500" />
-                        )}
-                      </div>
-                    ))}
+                  <div className="font-medium">Damage Track</div>
+                  <div className="text-xl flex flex-col items-center">
+                    {/* Wounds label with arrow */}
+                    <div className="text-xs text-red-400 w-full flex justify-start items-center mb-1">
+                      <span className="mr-1">Wounds</span>
+                      <span>→</span>
+                    </div>
+                    {/* Dual track boxes */}
+                    <div className="flex items-center">
+                      {Array.from({ length: character.epithet?.id === 'grizzled' ? 6 : 5 }).map((_, i) => (
+                        <div 
+                          key={i} 
+                          className="dual-track-box border-2 border-gray-400 rounded w-6 h-6 mr-1 flex items-center justify-center"
+                          style={{ 
+                            borderColor: i === 0 ? '#ef4444' : i === (character.epithet?.id === 'grizzled' ? 5 : 4) ? '#dc2626' : '#6b7280',
+                            boxShadow: i === 0 ? '0 0 10px rgba(239, 68, 68, 0.6)' : 'none' 
+                          }}
+                        >
+                          {i === 0 && <Heart size={14} className="text-red-500" />}
+                          {i === (character.epithet?.id === 'grizzled' ? 5 : 4) && (
+                            <Skull size={14} className="text-red-600" />
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                    {/* Strain label with arrow */}
+                    <div className="text-xs text-blue-400 w-full flex justify-end items-center mt-1">
+                      <span>←</span>
+                      <span className="ml-1">Strain</span>
+                    </div>
                   </div>
                 </div>
               </div>
