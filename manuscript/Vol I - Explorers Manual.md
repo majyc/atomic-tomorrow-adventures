@@ -7,21 +7,25 @@
 
 ## **WELCOME TO THE ATOMIC AGE**
 
-The year is 2025, and humanity has spread across the solar system in gleaming rocket ships powered by atomic fire. Mars hosts bustling colonies beneath its red skies, Venus conceals ancient secrets in its steaming jungles, and the asteroid belt thrums with prospectors seeking their fortunes among the stars. This is the golden age of space exploration, where ray guns gleam, robots serve, and adventure waits beyond every planet's horizon.
+It's the gleaming atomic future of 2025, and humanity has done what we always knew we would—spread across the solar system in gleaming rocket ships powered by atomic fire. Mars hosts bustling colonies beneath its red skies, Venus conceals ancient secrets in its steaming jungles, and the asteroid belt thrums with prospectors seeking their fortunes among the stars. This is the golden age of space exploration, where ray guns gleam, robots serve, and adventure waits beyond every planet's horizon.
 
-You are explorers, adventurers, and heroes of this atomic tomorrow—rocket jockeys with nerves of steel, brilliant scientists with revolutionary theories, swashbuckling scouts who blaze trails across alien worlds, and countless other extraordinary individuals. The solar system needs people with grit, determination, and the courage to face whatever mysteries lurk in the dark between the worlds.
+You're explorers, adventurers, and heroes of this atomic tomorrow—rocket jockeys with nerves of steel, brilliant scientists with revolutionary theories, swashbuckling scouts who blaze trails across alien worlds, and countless other extraordinary individuals. The solar system needs people with grit, determination, and the courage to face whatever mysteries lurk in the dark between the worlds.
 
-Whether you're hunting for ancient Martian artifacts, defending a Venus colony from saurian predators, or racing through asteroid fields to deliver vital supplies, your adventures will shape the future of humanity among the planets.
+Whether you're hunting for ancient Martian artifacts, defending a Venus colony from saurian predators, or racing through asteroid fields to deliver vital supplies, your adventures will shape the future of humanity among the planets. The question isn't whether you'll find adventure—it's whether you'll survive it with your sanity intact and your atomic-powered dreams still burning bright.
 
 ---
 
 ## **CHAPTER 1: CHARACTER CREATION**
 
-Creating a character in Atomic Tomorrow Adventures means building someone extraordinary—the kind of person who belongs in thrilling tales of atomic-age adventure. The system uses four columns to define who you are, where you come from, and what makes you special.
+Creating a character in Atomic Tomorrow Adventures means building someone extraordinary: the kind of person who belongs in thrilling tales of atomic-age adventure. But here's the thing: you're not just rolling dice and assigning numbers. You're crafting a hero worthy of the atomic tomorrow, someone with the courage to face Martian death rays and the wit to sweet-talk a Venusian merchant prince out of his finest atmospheric silk.
+
+The system uses four columns to define who you are, where you come from, and what makes you special. Think of it as choosing the fundamental elements that make your character unique; these four choices will determine everything from your skill set to your starting equipment to the kinds of adventures that call to you across the void between worlds.
 
 ### THE FOUR-COLUMN SYSTEM
 
-Every character combines one choice from each of four columns to create a unique concept. Here are all the options available:
+Every character combines one choice from each of four columns to create a unique concept. Don't worry about memorizing every option right now—just understand that each column serves a different purpose in defining your character. Your **Epithet** describes what makes you exceptional; your **Profession** determines your skills and training; your **Origin** reflects where you were born and raised; and your **Background** shapes your upbringing and connections.
+
+Here are all the options laid out for easy reference:
 
 | **COLUMN A: EPITHET** | **COLUMN B: PROFESSION** | **COLUMN C: ORIGIN** | **COLUMN D: BACKGROUND** |
 |------------------------|-------------------------|---------------------|-------------------------|
@@ -112,7 +116,7 @@ Examples of complete concepts:
 
 ### COLUMN A: EPITHET
 
-Your epithet represents what makes you extraordinary compared to ordinary people. It grants special abilities and unique advantages that set you apart.
+Your epithet represents what makes you extraordinary compared to ordinary people. In the atomic age, ordinary people are already pretty remarkable. These are the qualities that make you the kind of person who gets called in when the ray guns start firing and the atomic rockets need piloting through asteroid fields. Each epithet grants special abilities and unique advantages that reflect your character's exceptional nature; think of them as the reason you're the hero of this story rather than just another face in the crowd at Luna City Spaceport.
 
 #### Gritty/Tough Epithets
 
@@ -184,7 +188,9 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 
 ### COLUMN B: PROFESSION
 
-Your profession represents your training, expertise, and career focus. It determines your primary skill set and starting equipment. Choose from over 60 different careers across 11 categories:
+Your profession represents your training, expertise, and career focus: the work that pays the bills and shapes how you see the universe. But don't think of this as limiting; in the atomic age, a rocket jockey might also be an accomplished xenobiologist, or a space trader could have military training that comes in handy when pirates attack the convoy. Your profession determines your primary skill set and starting equipment while leaving plenty of room for growth and unexpected competencies.
+
+Choose from over 60 different careers across 11 categories, each reflecting a different aspect of life in humanity's atomic tomorrow:
 
 #### Aces & Pilots
 
@@ -434,7 +440,7 @@ Your profession represents your training, expertise, and career focus. It determ
 
 ### COLUMN C: ORIGIN
 
-Your origin reflects where you were born and raised, shaping your physical adaptations, cultural knowledge, and environmental tolerances.
+Your origin reflects where you were born and raised, and in the diverse environments of the atomic age, that makes a huge difference. A child of Earth's optimized society develops different strengths than someone who grew up in the low gravity of Luna or the high-pressure jungles of Venus. Your origin shapes your physical adaptations, cultural knowledge, and environmental tolerances—but more than that, it determines how you see the universe and your place in it.
 
 **TERRAN** (Born on Earth): SAVVY +1, GRIT -1
 - Cultural Skills: Academics (Bureaucracy) +15%, Technology (Infrastructure) +10%, Academics (History) +5%
@@ -472,7 +478,7 @@ Your origin reflects where you were born and raised, shaping your physical adapt
 - Cultural Skills: Science (Genetics) +15%, Medicine (Self-Care) +10%, Social (Adaptation) +5%
 - Adaptations: Custom Modifications, Genetic Variance, Social Stigma
 
-**RED MARTIAN** (Descendant of psychically gifted Martian colonists): NERVE +2, BRAWN -1, CHARM +1
+**RED MARTIAN** (Descendant of psychically gifted Martian natives): NERVE +2, BRAWN -1, CHARM +1
 - Cultural Skills: Psi (Telepathy) +15%, Academics (Ancient Martian History) +10%, Social (Cultural Diplomacy) +5%
 - Adaptations: Psionic Heritage, Ancient Memories, Cultural Burden
 
@@ -502,7 +508,7 @@ Your origin reflects where you were born and raised, shaping your physical adapt
 
 ### COLUMN D: BACKGROUND
 
-Your background reflects your upbringing, education, and personal history before becoming an adventurer.
+Your background reflects your upbringing, education, and personal history before becoming an adventurer: the circumstances that shaped you into the person you are today. Whether you were raised in a military family that instilled discipline and tactical thinking, or grew up as a street urchin who learned to survive on wit and cunning, your background provides the foundation for your adult capabilities. This isn't just about what you learned; it's about who you know, what connections you can call upon, and what resources you might have access to when the atomic chips are down.
 
 **MILITARY FAMILY** (GRIT +1, CHARM -1): Raised in the discipline of service
 - Skills: Tactics (Combat) +10%, Academics (Military Protocol) +10%, Combat (Firearms) +5%
@@ -610,7 +616,7 @@ Your background reflects your upbringing, education, and personal history before
 
 ### GENERATING ATTRIBUTES
 
-After selecting your four columns, you need to determine your seven core attributes. These represent your basic capabilities and form the foundation for all your skills.
+After selecting your four columns, you need to determine your seven core attributes. These represent your basic capabilities and form the foundation for all your skills. Think of them as your character's raw potential before training and experience shape it into specific competencies. Don't worry if your numbers aren't perfect; in the atomic age, determination and ingenuity often matter more than raw ability.
 
 #### The Seven Attributes
 
@@ -636,13 +642,13 @@ Your Origin determines how you generate attributes:
 
 ## **CHAPTER 2: CORE MECHANICS**
 
-Atomic Tomorrow Adventures uses a percentile dice system that emphasizes dramatic action and pulp adventure storytelling. All actions revolve around rolling your skill percentage or under, with special interpretations for particularly good or bad rolls.
+Atomic Tomorrow Adventures uses a percentile dice system that emphasizes dramatic action and pulp adventure storytelling. In the atomic age, even routine tasks can become opportunities for heroic moments. The core concept is elegantly simple: you roll two ten-sided dice to generate a number from 01 to 100, trying to roll your skill percentage or under. But here's where it gets interesting: not all successes and failures are created equal, and the quality of your roll determines just how spectacular your achievement becomes or how badly you muffed it.
 
 ### THE CORE RESOLUTION SYSTEM
 
-**Basic Resolution**: Roll percentile dice (d100) against your skill or attribute percentage. Roll equal to or under your percentage to succeed.
+**Basic Resolution**: Roll percentile dice (d100) against your skill or attribute percentage. Roll equal to or under your percentage to succeed. Simple enough, right? But the devil (or in this case, the atomic-powered angel) is in the details.
 
-**Success Quality**: The quality of your success affects the outcome.
+**Success Quality**: The quality of your success affects the outcome, and this is where the system starts to sing. You're not just succeeding or failing; you're succeeding with style, failing with complications, or achieving something so spectacular that it becomes the stuff of legends.
 
 | Quality           | Roll                                               |
 | ----------------- | -------------------------------------------------- |
@@ -656,15 +662,19 @@ Atomic Tomorrow Adventures uses a percentile dice system that emphasizes dramati
 | Automatic Failure | 96-00                                              |
 |                   |                                                    |
 
- An ordinary success occurs when you roll your skill percentage or less. Special successes happen when your successful roll ends in 0 or 5, while critical successes occur when you roll doubles (11, 22, 33, etc.) under your skill percentage. Failures work similarly—special failures are failed rolls ending in 0 or 5, and critical failures are doubles that exceed your skill percentage.
+Here's how it works: an ordinary success occurs when you roll your skill percentage or less—you accomplish exactly what you set out to do. Special successes happen when your successful roll ends in 0 or 5, representing that perfect moment when everything clicks into place. Critical successes occur when you roll doubles (11, 22, 33, etc.) under your skill percentage—these are the moments that legends are made of.
 
-Regardless of your skill level, rolls of 01-05 always succeed (automatic success) while rolls of 96-00 always fail (automatic failure).
+Failures work similarly, but with complications. Special failures are failed rolls ending in 0 or 5, while critical failures are doubles that exceed your skill percentage. These aren't just "you missed"—they're dramatic setbacks that move the story forward in unexpected ways.
 
-**Success Effects**: Success quality determines the magnitude of your achievement. An ordinary success accomplishes the base effect you intended. Special successes provide enhanced results, effectively adding one additional step of success to your effort. Critical successes deliver superior outcomes, adding two additional steps of success. Conversely, special failures create complications and subtract one success from extended tasks, while critical failures cause serious problems and typically eliminate all accumulated progress on complex endeavors.
+Regardless of your skill level, rolls of 01-05 always succeed (automatic success) while rolls of 96-00 always fail (automatic failure). Even the most incompetent atomic engineer can have a moment of perfect clarity and sometimes it's better to be lucky than to be good, while even the most skilled and experienced can have that moment of inattention where you accidentally hit the wrong button at exactly the wrong moment.
+
+**Success Effects**: Success quality determines the magnitude of your achievement, and this is where the system rewards both planning and spectacular dice rolls. An ordinary success accomplishes the base effect you intended—you hit the target, crack the code, or sweet-talk the guard. Special successes provide enhanced results, effectively adding one additional step of success to your effort. Critical successes deliver superior outcomes, adding two additional steps of success and often creating opportunities you hadn't even considered.
+
+Conversely, special failures create complications and subtract one success from extended tasks—you're making progress, but something's gone wrong. Critical failures cause serious problems and typically eliminate all accumulated progress on complex endeavors, forcing you to start over with additional complications to overcome.
 
 ### DIFFICULTY MODIFIERS
 
-All actions use this consistent scale of difficulty modifiers:
+All actions use this consistent scale of difficulty modifiers, because the atomic age throws everything from routine maintenance to desperate last-second heroics at our intrepid explorers. The key is keeping things simple while still rewarding proper preparation and acknowledging when circumstances are working against you:
 
 | Difficulty | Modifier | Examples |
 |------------|----------|----------|
@@ -676,29 +686,35 @@ All actions use this consistent scale of difficulty modifiers:
 | **Extreme** | -60% | Nearly impossible circumstances, critically limited resources |
 | **Heroic** | -80% | The stuff of legends, requires extraordinary effort |
 
-Apply only the single most significant modifier rather than stacking multiple modifiers.
+Apply only the single most significant modifier rather than stacking multiple modifiers. This keeps the math simple and prevents situations where characters become helpless due to accumulated penalties—in the atomic age, heroes find ways to overcome obstacles, not excuses to give up.
 
 ### OPPOSED CHECKS
 
-When two characters' skills directly oppose each other, both participants roll percentile dice. The higher successful roll wins, with success always trumping failure and better quality always trumping lesser quality. If both characters succeed with the same quality of success, the highest roll determines the winner. Even when both characters fail, the lower roll represents a worse outcome than the higher one.
+When two characters' skills directly oppose each other—whether it's a battle of wits, a contest of strength, or a tense negotiation over the price of Martian crystals—both participants roll percentile dice and let their skills do the talking. The higher successful roll wins, with success always trumping failure and better quality always trumping lesser quality. If both characters succeed with the same quality of success, the highest roll determines the winner—sometimes it really does come down to who rolled better.
+
+Even when both characters fail, the lower roll represents a worse outcome than the higher one. Nobody succeeds at what they were trying to do, but somebody definitely looks more foolish doing it.
 
 ---
 
 ## **CHAPTER 3: SKILLS SYSTEM**
 
-The unified skills system in Atomic Tomorrow Adventures balances natural talent with professional training, creating characters who feel both competent and specialized.
+The unified skills system in Atomic Tomorrow Adventures balances natural talent with professional training, creating characters who feel both competent and specialized. Here's the core philosophy: everyone can try anything, but experts excel in their chosen fields. Your character might not be trained in xenobiology, but if alien spores are threatening the colony, you can still make an attempt based on your general scientific knowledge and desperate ingenuity. You just shouldn't expect to perform as well as someone who spent years studying off-world life forms.
 
 ### SKILL ORGANIZATION
 
-Skills fall into two fundamental categories that reflect different aspects of human capability. Attribute-based skills are directly tied to your natural talents—your Athletics skill depends on your BRAWN, your Piloting relies on your REFLEX, and so forth. For these skills, your untrained percentage equals your attribute times two, and your core value adds 5% to represent basic familiarity (Attribute × 2) + 5%.
+Skills fall into two fundamental categories that reflect different aspects of human capability, and understanding this distinction is crucial to making the most of your character's abilities.
 
-FLEX skills represent areas of knowledge that depend more on training and experience than raw talent. Whether you're brilliant or average, mastering xenobiology or ancient languages requires dedicated study. Your untrained percentage in FLEX skills is only 10%, but your core value jumps to 25%—equivalent to having an attribute of 10. Being naturally smart certainly helps when studying history, but scholarly training in one academic specialty doesn't automatically make you competent in others like mathematics or medicine.
+**Attribute-Based Skills** are directly tied to your natural talents—your Athletics skill depends on your BRAWN, your Piloting relies on your REFLEX, and so forth. These represent capabilities where raw talent provides a solid foundation even without formal training. For these skills, your untrained percentage equals your attribute times two, and your core value adds 5% to represent basic familiarity: (Attribute × 2) + 5%. A character with high REFLEX can probably handle most vehicles reasonably well, even if they've never seen a Martian hoverbike before.
 
-The beauty of this system is its optimism: most of the time, any character can attempt any action regardless of training. Never piloted a rocket ship? There's always a chance you'll figure it out when it matters!
+**FLEX Skills** represent areas of knowledge that depend more on training and experience than raw talent. Whether you're brilliant or average, mastering xenobiology or ancient languages requires dedicated study and accumulated knowledge. Your untrained percentage in FLEX skills is only 10%—you're basically guessing—but your core value jumps to 25%, equivalent to having an attribute of 10 in an attribute-based skill. Being naturally smart certainly helps when studying history, but scholarly training in one academic specialty doesn't automatically make you competent in others like mathematics or medicine.
+
+The beauty of this system is its optimism: most of the time, any character can attempt any action regardless of training. Never piloted a rocket ship? There's always a chance you'll figure it out when it matters! Never studied Martian archaeology? You can still make educated guesses about those strange hieroglyphs. The system assumes that characters in the atomic age are generally competent, resourceful people who can rise to challenges when circumstances demand it.
 
 ### PROFESSIONAL TRAINING
 
-Your chosen profession reflects years of specialized training that significantly enhances related skills. Your primary professional skill receives a substantial +40% bonus, representing your area of greatest expertise. Secondary professional skills gain a +20% bonus, while tertiary skills receive +10%. Your final skill percentage is simply your core value plus any applicable professional, origin, or background bonuses.
+Your chosen profession reflects years of specialized training that significantly enhances related skills—this is where you separate the professionals from the enthusiastic amateurs. Your primary professional skill receives a substantial +40% bonus, representing your area of greatest expertise and the focus of your career. Secondary professional skills gain a +20% bonus, while tertiary skills receive +10%. These represent related areas where your professional experience provides significant advantages even if they weren't your main focus.
+
+Your final skill percentage is simply your core value plus any applicable professional, origin, or background bonuses. The math is straightforward, but the implications are significant: a skilled pilot with a 75% chance of success isn't just "better" than an untrained character with a 35% chance—they're operating on an entirely different level of competency.
 
 ### SKILL CALCULATION EXAMPLES
 
@@ -805,7 +821,7 @@ If you have training, you use the most relevant specialized skill, or if none ar
 
 ### SOLAR SCOUTS TRAINING
 
-Every character starts with Solar Scouts Training at 35%, representing general self-defense training they received in their youth. It covers unarmed combat, pistols, rifles, and first aid. It never improves directly, but critical successes while using Solar Scouts Training can lead to developing the full specialized skill.
+Every character starts with Solar Scouts Training at 35%, representing general survival and self-defense training they received in their youth. It covers unarmed combat, pistols, rifles, survival and first aid. It never improves directly, but critical successes while using Solar Scouts Training can lead to developing the full specialized skill.
 
 ### SKILL ADVANCEMENT
 
@@ -844,13 +860,13 @@ Success quality directly affects your progress toward task completion. Ordinary 
 
 Time constraints add urgency and drama to task resolution.
 
-Combat rounds lasting six seconds allow one attempt per round—perfect for bypassing blast doors during firefights or stabilizing wounded comrades under fire. Standard tasks spanning one to five minutes call for checks every minute, suitable for hot-wiring vehicles or picking locks while enemies approach. Extended tasks taking ten to sixty minutes use checks at meaningful intervals during activities like surgery, ship repairs, or prisoner interrogation. Prolonged efforts spanning hours or days require checks once per significant time unit when surveying crash sites, researching ancient artifacts, or constructing makeshift shelters.
+Combat rounds lasting six seconds allow one attempt per round, perfect for bypassing blast doors during firefights or stabilizing wounded comrades under fire. Standard tasks spanning one to five minutes call for checks every minute, suitable for hot-wiring vehicles or picking locks while enemies approach. Extended tasks taking ten to sixty minutes use checks at meaningful intervals during activities like surgery, ship repairs, or prisoner interrogation. Prolonged efforts spanning hours or days require checks once per significant time unit (determined by the GM) such as when surveying crash sites, researching ancient artifacts, or constructing makeshift shelters.
 
 ### TEAMWORK AND COLLABORATION
 
-Collaborative efforts take two forms depending on the nature of the task. When one person clearly leads while others assist—such as a surgeon directing nurses during an operation—the primary operator makes normal skill rolls while assistants roll at -20%. Assistants contribute a maximum of one success per roll regardless of the quality of their success, representing their supporting role.
+Collaborative efforts take two forms depending on the nature of the task. When one person clearly leads while others assist—such as a surgeon directing nurses during an operation—the primary operator makes normal skill rolls while assistants roll at -20%. Assistants contribute a maximum of one success per roll regardless of the quality of their success, representing their supporting role. Assistant's failures, even special failures, do not penalize the task, but their critical failures *do* count: the primary operator needs to make a quick unmodified roll against their skill: on a failure all progress is lost, while on a success they have averted disaster and the overall task only loses one success; on a critical success they don't even lose that. Remember, this is only triggered when an assistant critical fails.
 
-For tasks where multiple people can contribute equally—like a team of archaeologists excavating a site—all participants make normal skill rolls and all successes count at full value. This distributed approach allows teams of specialists to tackle major challenges together.
+For tasks where multiple people can contribute equally—like a team of archaeologists excavating a site—all participants make normal skill rolls and all successes count at full value. This distributed approach allows teams of specialists to tackle major challenges together. Each assistant should keep track of their own totals, since a critical failure will lose their entire contribution so far, but not all the failures of the team.
 
 ### COMPLICATIONS AND SETBACKS
 
@@ -860,23 +876,23 @@ Failures introduce complications that reflect the dramatic nature of atomic-age 
 
 ## **CHAPTER 5: COMBAT SYSTEM**
 
-Combat in Atomic Tomorrow Adventures emphasizes dramatic action, heroic stunts, and the cinematic flow of pulp adventure stories. The system keeps things fast-paced while providing tactical options for clever players.
+Combat in Atomic Tomorrow Adventures emphasizes dramatic action, heroic stunts, and the cinematic flow of pulp adventure stories. When ray guns start firing and atomic rockets start exploding, you want the action to flow like the best space opera serials. The system keeps things fast-paced while providing tactical options for clever players; whether you're swinging from the chandelier in a Venusian palace or diving behind cover as plasma bolts sear the air around you, the mechanics should enhance the drama, not slow it down.
 
 ### INITIATIVE AND TURN SEQUENCE
 
-Combat begins with initiative rolls—each participant rolls percentile dice against REFLEX × 5. The highest successful roll acts first for the entire combat, followed by players proceeding around the table. To prevent staleness, alternate between clockwise and counter-clockwise each combat. Ties go to the character with higher REFLEX.
+Combat begins with initiative rolls: each participant rolls a REFLEX check (percentile dice against REFLEX × 5). The highest successful roll acts first for the entire combat, followed by players proceeding around the table. This keeps everyone engaged and prevents any single player from dominating the action. To prevent staleness, alternate between clockwise and counter-clockwise each combat, ensuring that the same person doesn't always go last. Ties go to the character with higher REFLEX; after all, natural agility counts for something when atomic fire starts flying.
 
 ### ACTION ECONOMY
 
-Each round grants characters significant freedom of action within realistic limits. You can take one significant action such as attacking, using a complex device, or employing a skill under pressure. You can also move within your current zone or advance toward an adjacent zone, plus perform one quick action like drawing a weapon, flipping a switch, or shouting a brief warning.
+Each round grants characters significant freedom of action within realistic limits. Think "pulp fiction hero" rather than "ordinary person."  You still have to worry about the odds against you, and if somebody has the drop on you maybe you had better play along until you get an opportunity to escape, but you don't freeze up when it's crunch time.  You can take one significant action such as attacking, using a complex device, or employing a skill under pressure. You can also move within your current zone or advance toward an adjacent zone, plus perform one quick action like drawing a weapon, flipping a switch, or shouting a brief warning to your companions. The goal is to let characters feel competent and dynamic without bogging down in microscopic detail about every little movement.
 
 ### POSITIONING
 
-Combat employs abstract positioning that emphasizes dramatic action over precise measurement. Engaged range represents hand-to-hand combat distance where fists and blades dominate. Near range covers the same general area where pistols prove most effective. Far range represents separate areas still within sight, ideal for rifle combat and requiring three moves to transition from Near. Distant range demands significant movement to reach and presents difficult shots, requiring another three moves from Far.
+Combat employs abstract positioning that emphasizes dramatic action over precise measurement. Counting hexes and measuring exact distances kills the flow of a good ray gun battle. Engaged range represents hand-to-hand combat distance where fists and blades dominate; you're close enough to see the fear in your opponent's eyes. Near range covers the same general area where pistols prove most effective: across a room, down a corridor, within the same space. Far range represents separate areas still within sight, but requiring three moves to close the distance, ideal for rifle combat and requiring three moves to transition from Near. Distant range demands significant movement to reach and presents difficult shots, requiring another three moves from Far. This is sniping territory or long-range spacecraft combat.
 
 ### ATTACK SEQUENCE
 
-Combat resolution follows a straightforward three-step process. The attacker rolls against the appropriate Combat skill—Unarmed, Melee, or Ranged as the situation demands. Failed attacks miss with no effect, while special and critical failures mean something bad. Successful attacks trigger the defender's choice: attempt to defend against the attack or accept the hit and its consequences.
+Combat resolution follows a straightforward three-step process that keeps the action moving while still providing meaningful choices. The attacker rolls against the appropriate Combat skill: Unarmed, Melee, or Ranged as the situation demands. Failed attacks miss with no effect, while special and critical failures mean something bad happens to the attacker (jammed weapon, stumble, exposed position). Successful attacks trigger the defender's choice: attempt to defend against the attack or accept the hit and its consequences. This creates a moment of tension where the defender must decide whether to risk a defense attempt or take their lumps.
 
 ### DEFENSE OPTIONS
 
@@ -901,6 +917,34 @@ The wound system reflects the pulp adventure tradition where heroes remain effec
 Incapacitated characters can still attempt heroic actions by making a GRIT × 1 roll. Success allows one normal action despite the wounds, while critical success removes all wound penalties for that action. Characters at death's door can attempt one final heroic act with a NERVE check—success grants one final action before collapse, while critical success allows the action without penalty and stabilizes the character at 4 wounds.
 
 Once combat is over and the adrenaline fades, characters suffer a -20% penalty per wound to all actions, barring medical intervention, until the wound is healed.
+
+### THE DUAL TRACK SYSTEM: WOUNDS AND STRAIN
+
+Characters in Atomic Tomorrow Adventures track two types of damage: Wounds represent physical injury, while Strain reflects mental exhaustion, psychic feedback, and non-lethal trauma. Both tracks use the same five-step progression but affect characters differently.
+
+| **Level** | **Wounds** | **Strain** |
+|-----------|------------|------------|
+| **0-3** | Fully functional | Fully functional |
+| **4** | Incapacitated | Mentally exhausted (-20% to all mental actions) |
+| **5** | Dying | Unconscious |
+
+**Strain Sources**: Strain accumulates from psionic backlash, environmental stress (extreme heat, cold, radiation), exhaustion, psychological trauma, non-lethal weapons, and certain drugs or toxins.
+
+**Strain Effects**: Unlike wounds, strain primarily affects mental performance. At 4 strain, you suffer -20% to all SAVVY, NERVE, CHARM, and GUILE-based actions as mental fatigue clouds your thinking. At 5 strain, you fall unconscious from mental exhaustion.
+
+**Strain Recovery**: Strain recovers more quickly than wounds. One point of strain recovers naturally after one hour of rest, or all strain can be removed with 8 hours of sleep. Some medical treatments and meditation techniques can accelerate strain recovery.
+
+**Converting Between Tracks**: Some effects allow voluntary conversion between tracks. For example, psychics can sometimes dissipate strain by accepting physical wounds, while certain medical treatments might trade wounds for strain.
+
+### NON-LETHAL COMBAT
+
+Many conflicts in the atomic age involve stunning, capture, or subdual rather than outright killing. Non-lethal weapons and tactics inflict strain instead of wounds, allowing for dramatic confrontations without permanent consequences.
+
+**Non-lethal Weapon Examples**: Stunners, shock batons, sonic disruptors, neural scramblers, and various gas weapons inflict strain damage. These weapons follow the same combat mechanics as lethal weapons but fill the strain track instead.
+
+**Conversion Attacks**: Some weapons can be set to either lethal or non-lethal modes. Energy weapons often include "stun" settings, while projectile weapons might use tranquilizer rounds instead of bullets.
+
+**Mixed Damage**: It's possible to suffer both wounds and strain simultaneously. A character might have 2 wounds and 3 strain, requiring careful management of both conditions.
 
 ### PROTECTIVE EQUIPMENT
 
@@ -973,36 +1017,38 @@ Energy weapons offer the advantage of standardized power cells that can often be
 
 ### COMBAT EXAMPLE
 
-**Situation**: Captain Steel faces off against a Mysterion agent in the corridors of an asteroid mining station.
+Let's see how this works in practice with a classic atomic-age showdown:
+
+**Situation**: Captain Steel faces off against a Mysterion agent in the corridors of an asteroid mining station. Ray guns at twenty paces!
 
 **Round 1 - Initiative**: 
 - Captain Steel (REFLEX 15): Rolls 42 vs 75% - Success, acts first
 - Mysterion Agent: Rolls 88 vs 60% - Fails, acts second
 
-**Captain Steel's Turn**: Draws his Blast Pistol (quick action) and fires at the agent (major action)
+**Captain Steel's Turn**: Our hero draws his trusty Blast Pistol (quick action) and fires at the agent (major action)
 
 - Combat (Pistols) 65%: Rolls 30 - Special Success!
 - Blast Pistol normally does 2 wounds, +1 for special, total 3 wounds
 
-**Mysterion Agent's Defense**: Attempts to Dodge
+**Mysterion Agent's Defense**: The villain attempts to dodge behind a mining robot
 
 - Athletics (Acrobatics) 50%: Rolls 67 - Fails
-- Takes full 3 wounds, reducing him to 2 wounds remaining
+- Takes full 3 wounds, reducing him to 2 wounds remaining and looking pretty banged up
 
-**Mysterion Agent's Turn**: Returns fire with his Disintegrator
+**Mysterion Agent's Turn**: Snarling with rage, he returns fire with his dreaded Disintegrator
 - Combat (Energy Weapons) 70%: Rolls 25 - Special Success!
 - Disintegrator does 3 wounds +1 for special = 4 wounds total
 
 **Captain Steel's Defense**: Attempts to dive behind cover (Dodge)
 - Athletics (Acrobatics) 55%: Rolls 41 - Success
-- But Mysterion's special success beats Steel's ordinary success.  Had Steel rolled a 45 special success, he would have beaten the Mysterion's roll since the qualities would be the same, but his 45 is higher than the Mysterion's 25.  Had he rolled a 44 critical success he would have flat out won against the Mysterion's special success regardless of the Mysterion's actual roll.
+- But here's the crucial part: Mysterion's special success beats Steel's ordinary success. Quality of success matters! Had Steel rolled a 45 (special success), he would have beaten the Mysterion's roll since the qualities would be the same, but his 45 is higher than the Mysterion's 25. Had he rolled a 44 (critical success), he would have flat out won against the Mysterion's special success regardless of the actual numbers.
 - Steel takes 4 wounds and is incapacitated!
 
 **Captain Steel's Last Stand**: At 4 wounds, attempts GRIT check to stay active
-- GRIT 14 × 1 =14%: Rolls 09 - Success!
+- GRIT 14 × 1 = 14%: Rolls 09 - Success!
 - Can take one more action despite being incapacitated
 
-This example shows how the quality of success matters in opposed combat, and how even tough heroes can be brought down by a good shot—but might still have one last chance to save the day!
+This example shows how the quality of success matters in opposed combat, and how even tough heroes can be brought down by a good shot—but might still have one last chance to save the day! That's the atomic age for you: dramatic reversals and last-second heroics are all part of the adventure.
 
 ---
 
@@ -1149,7 +1195,7 @@ All psionic abilities use the Psi skill based on NERVE. Unlike other skills, usi
 
 ### AURA AND STRAIN
 
-Each Esper has an Aura rating representing their mental energy reserves. Using psionics depletes Aura, and attempting to use powers when your Aura is too low causes Strain—mental feedback that can be dangerous or even deadly. Aura always starts at 100 (full capacity) and is reduced by psionic exertion: every time the Esper makes a roll for a psionic power, if the roll is less than the Esper's current Aura the roll becomes the Esper's new Aura; if the Esper is attempting an extended task where they have to make several rolls to accumulate successes only the final roll counts and is compared to Aura.  If the roll is higher than the Esper's current Aura the Esper suffers from psychic backlash.  Backlash adds one Stress to the Wound track, but does not change the Aura level since the roll is higher than the current Aura.
+Each Esper has an Aura rating representing their mental energy reserves. Using psionics depletes Aura, and attempting to use powers when your Aura is too low causes Strain—the same mental exhaustion track explained in the Combat System chapter. Aura always starts at 100 (full capacity) and is reduced by psionic exertion: every time the Esper makes a roll for a psionic power, if the roll is less than the Esper's current Aura the roll becomes the Esper's new Aura; if the Esper is attempting an extended task where they have to make several rolls to accumulate successes only the final roll counts and is compared to Aura. If the roll is higher than the Esper's current Aura the Esper suffers from psychic backlash. Backlash adds one Strain to the Strain track, but does not change the Aura level since the roll is higher than the current Aura.
 
 ### AURA RECOVERY
 
@@ -1217,6 +1263,35 @@ The following table provides guidelines for typical uses of psionic disciplines.
 | | Heavy | 1 | Object summon from nearby |
 | | | 3 | Teleport across reasonable distances |
 | | | 4 | Bilocation (appear in two places briefly) |
+
+## EXAMPLE OF PLAY
+
+**Dr. Sarah Voss (Mentalist, Psi Skill 65%, Current Aura: 100, Strain: 2)**
+
+*Attempting to read the surface thoughts of a suspicious station worker*
+
+**GM**: "This will require 1 success for basic surface thoughts. The worker isn't actively resisting, so no opposed roll needed."
+
+**Player**: "I'll try to read what he's thinking about."
+
+*Rolls 43 - Success*
+
+**GM**: "You sense he's worried about something in Cargo Bay 7. Since your successful roll of 43 is under your current Aura of 100, no backlash. Your Aura is now 43."
+
+*Later, attempting to probe deeper into his memories (3 successes needed)*
+
+**Player**: "I want to find out what exactly he's hiding."
+
+*First roll: 67 (success) - 1 success* *Second roll: 23 (success) - 2 successes*
+ *Third roll: 78 (success) - 3 successes*
+
+**GM**: "You successfully probe his memories and discover he's been smuggling Rhine Institute contraband. Your final successful roll was 78, which is higher than your current Aura of 43, so you suffer backlash - advance 1 step on your Strain track. Your Aura stays at 43."
+
+**Player**: "That puts me at 3 strain total, so I want to try to dissipate my strain so I can keep using my abilities effectively."
+
+*Rolls GRIT check: 34, success but less that current Aura so her aura becomes 34. If the Grit check had succeeded but the roll was higher than 43 the strain would be removed but she would gain one wound*
+
+**GM**: "You grit your teeth and force the psychic feedback to manifest physically. Your nose starts bleeding, but your strain drops to 0 and your Aura becomes 34."
 
 ### LEGAL FRAMEWORK
 
