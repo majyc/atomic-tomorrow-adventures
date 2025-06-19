@@ -238,9 +238,9 @@ The premier medical facility in space, Hospital Station follows a carefully calc
 
 Hospital Station operates on the "fast Venus/slow Mars" cycle, meaning it makes relatively quick transits between Earth and Venus, but takes longer to reach Mars. A second Hospital Station is currently under construction that will follow the complementary "slow Venus/fast Mars" cycle, ensuring that at least one facility will always be optimally positioned for emergency response.
 
-| Current Position                                                          | Check Monthly |
-| ------------------------------------------------------------------------- | ------------- |
-| Roll d10: 1-3: Near Venus, 4-6: In transit, 7-9: Near Mars, 0: Near Earth |               |
+| Current Position                                                        (Check Monthly)|
+| -------------------------------------------------------------------------------------- |
+| Roll d10: 1-3: Near Venus, 4-6: In transit, 7-9: Near Mars, 0: Near Earth              |
 
 **Travel Times to Hospital Station**
 
