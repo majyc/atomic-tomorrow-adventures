@@ -455,6 +455,128 @@ Data analysis and interpretation require characters to evaluate experimental res
 
 Verification and peer review represent the final stages where characters confirm their findings through independent replication and expert evaluation. This phase often involves convincing skeptical colleagues, defending results against alternative explanations, and establishing the broader implications of discoveries.
 
+### **THE RESEARCH CARD SYSTEM**
+
+For complex investigations requiring sustained effort over multiple sessions—such as analyzing alien artifacts, developing new technologies, or understanding exotic phenomena—use the Research Card System. This framework transforms extended research into structured challenges with meaningful choices and dramatic complications.
+
+#### **Research Approaches**
+
+Every investigation can be approached through four distinct methodologies, each using different skills and resources:
+
+**♥️ HEARTS: INTUITIVE/PSYCHIC APPROACH**
+- Skills: Psi abilities, NERVE checks, Perception (Intuition)
+- Style: High-risk, potentially fastest progress  
+- Resource: Atomic Power Cells (amplify psionic impressions)
+
+**♦️ DIAMONDS: SCIENTIFIC APPROACH**
+- Skills: Science specializations, Investigation (Analysis), Computer Systems
+- Style: Balanced risk/reward
+- Resource: Reference Materials (journals, manuals, databases)
+
+**♣️ CLUBS: TECHNICAL/ENGINEERING APPROACH**  
+- Skills: Engineering, Technology, Repair
+- Style: Methodical, reliable progress
+- Resource: Spare Components (circuit elements, mechanical parts)
+
+**♠️ SPADES: HISTORICAL/CULTURAL APPROACH**
+- Skills: History, Anthropology, Language, Art
+- Style: Provides context and prevents misinterpretation
+- Resource: Historical Records (cultural archives, linguistic databases)
+
+#### **Research Point Accumulation**
+
+Characters accumulate Research Points through skill checks using their chosen approach:
+
+- **Critical Success**: 3 Research Points
+- **Special Success**: 2 Research Points  
+- **Ordinary Success**: 1 Research Point
+- **Special Failure**: Research tangent (draw random complication)
+- **Critical Failure**: Major setback, lose progress on current node
+
+**Extra Success Options**: When you get Special or Critical Success, excess Research Points can be spent as:
+- **Standard**: Extra points toward clearing current research node
+- **ANALYSIS**: Reveal next research card without drawing it (1 point per peek)
+- **HYPOTHESIS**: Discard a revealed card - draw replacement (1 point per discard)  
+- **DOCUMENTATION**: Store up to 5 Research Points for current approach (1:1)
+
+#### **Research Progression**
+
+Research follows card-based progression similar to medical treatment:
+
+**Primary Research Cards** (same approach): Must accumulate Research Points equal to card value to clear the research node.
+
+**Secondary Research Cards** (different approaches) create outcomes based on value comparison:
+
+**HIGHER VALUE** = *Cross-Disciplinary Insight*
+- **♥️ Hearts**: Intuitive breakthrough - gain +1 Research Point toward current node
+- **♦️ Diamonds**: Scientific validation - reduce current node requirement by 1
+- **♣️ Clubs**: Practical application - next skill roll gets +20% bonus
+- **♠️ Spades**: Historical context - reveal next card without drawing it
+
+**EXACT MATCH** = *Perfect Synthesis*
+- Any approach: Immediately gain +2 Research Points AND reduce node requirement by 1
+
+**LOWER VALUE** = *Methodological Conflict*
+- **♥️ Hearts**: Conflicting intuitions - make NERVE check or lose 1 Research Point
+- **♦️ Diamonds**: Data contradiction - choose: spend 1 Reference Material or -10% to next roll
+- **♣️ Clubs**: Technical incompatibility - must clear before continuing (costs 1 Research Point)
+- **♠️ Spades**: Cultural misunderstanding - current approach locked until node complete
+
+#### **Research Failure Conditions**
+
+Research permanently stalls when ANY of the following occurs:
+
+**THEORETICAL DEAD END**
+- After 15 failed skill rolls on a single research node
+- **Narrative**: "This approach has been exhausted - you need a fundamentally different perspective"
+- **Game Effect**: Current node becomes "burned out" - cannot be approached via this methodology again
+- **Options**: Must switch to different research approach or seek outside expertise
+
+**RESOURCE DEPLETION**
+- When research resources are exhausted (20 total limit per research project)
+- **Narrative**: "You've exhausted all available materials and references"
+- **Game Effect**: Cannot handle complications or reduce node requirements
+- **Options**: Continue with skill rolls only, or seek additional funding/resources
+
+**PARADIGM COLLAPSE**
+- When the next same-approach card is ≥4 values higher than current node
+- **Narrative**: "Your assumptions are fundamentally flawed - continuing risks invalidating all previous work"
+- **Game Effect**: Immediate research failure; must start over with different approach
+- **Prevention**: Use ANALYSIS to spot dangerous sequences, HYPOTHESIS to discard them
+
+**CASCADE CONFUSION**
+- Drawing 3 consecutive Jacks triggers theoretical incoherence
+- **Narrative**: "Multiple contradictions have created an unresolvable paradox"
+- **Game Effect**: All previous research becomes suspect; requires peer review to salvage anything
+- **Prevention**: Use HYPOTHESIS to discard Jack complications when possible
+
+#### **Research Resource Management**
+
+**Reference Materials**: Reduce required Research Points by 1-3 depending on quality
+**Atomic Power Cells**: Enable psychic research approaches and amplify intuitive insights
+**Spare Components**: Allow hands-on experimentation and prototype construction
+**Historical Records**: Provide cultural context and prevent misinterpretation
+**Resource Limit**: Maximum 20 total resources per research project
+**Collaborative Research**: Assistants can contribute expertise and provide additional resource access
+
+#### **Research Examples**
+
+**Studying Mysterious Martian Cube (Moderate Complexity: 2 research nodes needed)**
+
+**Node 1 - 6♦ (Scientific Analysis)**: Initial spectroscopic examination reveals unknown mineral composition requiring 6 Research Points.
+
+**Draw 4♠ (Historical Context)**: Lower value! Cultural misunderstanding - ancient Martian symbols were misidentified as decorative rather than functional, locking Scientific approach until resolved.
+
+**Switch to Spades approach**: Use Anthropology to understand symbolic meaning, clearing the obstruction.
+
+**Draw 8♥ (Intuitive Assessment)**: Higher value! Psychic character senses the cube's purpose, gaining +1 Research Point toward the 6♦.
+
+**Node 1 Complete**: Scientific analysis reveals the cube responds to neural activity - 1 research node cleared.
+
+**Node 2 - 4♣ (Technical Application)**: Attempting to interface with the device requires 4 Research Points of careful engineering.
+
+**Research Success**: Team understands both the cube's function and can safely activate it!
+
 ### **ALIEN ARTIFACT ANALYSIS**
 
 Ancient Martian artifacts and other xenoarchaeological discoveries present unique investigation challenges. These objects often operate according to principles that don't match human technology or understanding, requiring researchers to expand their conceptual frameworks while maintaining scientific rigor.
@@ -625,6 +747,104 @@ Memory systems provide perfect recall and rapid access to vast information datab
 
 Interface design allows natural interaction between human operators and positronic systems through voice commands, visual displays, and direct neural interface for specially trained operators. These interfaces make positronic computing accessible to users without extensive technical training while providing sophisticated capabilities for expert operators.
 
+#### **The Robotic Repair Circuit System**
+
+When sophisticated positronic systems suffer major damage or unknown malfunctions—personality instabilities, positronic brain failures, or damage from exotic sources—use the Circuit Card System. This represents the complex process of diagnosing and repairing systems that combine mechanical engineering with artificial consciousness.
+
+**When to Use the Circuit System**
+
+Not every repair needs the full circuit treatment:
+
+**Simple Repairs** (Standard Roll): Routine maintenance, replacing damaged components, quick fixes during action scenes, emergency "get it working" solutions.
+
+**Complex Repairs** (Circuit System): Positronic brain malfunctions, personality core instabilities, unknown damage from exotic sources, major system integration problems, upgrading or modifying robot capabilities.
+
+**Circuit Repair Approaches**
+
+Like research, robotics repair uses four distinct methodologies representing different problem-solving philosophies:
+
+- **♥️ HEARTS: Intuitive/Personal Approach** - Working with the robot's personality and understanding its quirks using Animal Handling (Robot Psychology), Social skills
+- **♦️ DIAMONDS: Technical/Engineering Approach** - Following proper procedures and technical manuals using Engineering (Robotics), Technology skills  
+- **♣️ CLUBS: Mechanical/Physical Approach** - Hands-on component replacement and physical fixes using Repair skills, Athletics for physical work
+- **♠️ SPADES: Theoretical/Programming Approach** - Working with the robot's logical systems and programming using Computer Systems, Science (Logic) skills
+
+**Circuit Point Accumulation**
+
+Characters accumulate Circuit Points through skill checks using their chosen approach:
+- **Critical Success**: 3 Circuit Points
+- **Special Success**: 2 Circuit Points
+- **Ordinary Success**: 1 Circuit Point
+
+**EXTRA SUCCESS OPTIONS**: When you get Special or Critical Success, excess Circuit Points can be spent as:
+- **Standard**: Extra points toward clearing current node
+- **CIRCUIT ANALYSIS**: Reveal next same-approach card (1 point per peek)
+- **PROBLEM PREVENTION**: Discard a revealed card - draw replacement (1 point per discard)
+- **CIRCUIT STORAGE**: Store up to 5 Circuit Points for current approach (1:1)
+
+**Enhanced Navigation Rules**
+
+**Primary Approach Cards** (same suit): Must accumulate Circuit Points equal to card value.
+
+**Secondary Approach Cards** (different suits) create outcomes based on value comparison:
+
+**HIGHER VALUE** = *Cross-System Synergy*
+- **♥️ Hearts**: Robot cooperation - gain +1 Circuit Point toward current node
+- **♦️ Diamonds**: Technical insight - reduce current node requirement by 1
+- **♣️ Clubs**: Physical advantage - next skill roll gets +20% bonus
+- **♠️ Spades**: Logic shortcut - reveal next card without drawing it
+
+**EXACT MATCH** = *Perfect Integration*
+- Any suit: Immediately gain +2 Circuit Points AND reduce node requirement by 1
+
+**LOWER VALUE** = *Cross-System Interference*
+- **♥️ Hearts**: Robot confusion - make Psychology check or lose 1 Circuit Point
+- **♦️ Diamonds**: Technical conflict - choose: spend 1 Spare Part or -10% to next roll
+- **♣️ Clubs**: Physical obstruction - must clear before continuing (costs 1 Circuit Point)
+- **♠️ Spades**: Logic conflict - current approach locked until node complete
+
+**Failure-Driven Complications**
+
+- **Special Failure**: Draw random card - this becomes a sidetrack in that suit (keep progress and foresight)
+- **Critical Failure**: Draw random card - sidetrack + lose any stored Circuit Analysis benefits
+- **Completing Sidetrack**: Choose to continue in sidetrack suit OR return to previous working suit
+- **Path Memory**: You can only choose between your two most recently used approaches
+
+**Repair Failure Conditions**
+
+Repair permanently fails when ANY of the following occurs:
+
+**ATTEMPT EXHAUSTION**
+- After **12 failed skill rolls** on a single node
+- **Narrative**: "You've exhausted every technique you know - this approach isn't working"
+- **Game Effect**: Current node becomes "burned out" - cannot be approached via this suit again
+- **Options**: Must switch to different approach or abandon repair
+
+**RESOURCE DEPLETION**
+- When Spare Parts are exhausted (**15 total limit** per repair sequence)  
+- **Narrative**: "You've used all available components and materials"
+- **Game Effect**: Cannot reduce node requirements or handle technical complications
+- **Options**: Continue with skill rolls only, or stop repair
+
+**SYSTEM DEGRADATION**
+- When the next same-suit card is **≥4 values higher** than current node
+- **Narrative**: "Your modifications are destabilizing the core systems - continuing risks permanent damage"
+- **Game Effect**: Immediate repair failure; no further cards can be addressed in this sequence
+- **Prevention**: Use CIRCUIT ANALYSIS to spot dangerous sequences, PROBLEM PREVENTION to discard them
+
+**CASCADE FAILURE**
+- Drawing **3 consecutive Jacks** triggers system-wide instability
+- **Narrative**: "Multiple system conflicts have created an unrecoverable cascade failure"
+- **Game Effect**: Robot suffers permanent damage, requires factory reset or major overhaul
+- **Prevention**: Use PROBLEM PREVENTION to discard Jack complications when possible
+
+**Resource Management**
+
+**Spare Parts**: Common Components (reduce Circuit Points by 1), Specialized Parts (reduce by 2), Rare Components (reduce by 3), Resource Limit: Maximum **15 total parts** per repair sequence
+
+**Time Pressure**: Workshop Conditions (no penalties), Field Conditions (-10% to all repair rolls), Combat Conditions (-30% to all repair rolls, can only work in safe rounds)
+
+**Assistant Help**: Knowledgeable Assistant (can contribute maximum 1 Circuit Point per roll), Untrained Assistant (+10% to primary technician's rolls)
+
 ### **WEAPONS AND DEFENSIVE SYSTEMS**
 
 Atomic age weaponry emphasizes precision and non-lethality while providing effective protection against the various threats encountered during interplanetary exploration. Modern weapons are designed to disable rather than destroy while offering options appropriate for different tactical situations.
@@ -652,6 +872,117 @@ Regeneration techniques enable repair of injuries that would be permanently disa
 Life support systems maintain patient viability during extended medical procedures or while traveling to appropriate treatment facilities. Portable life support can sustain patients for days or weeks while they receive definitive medical care, making emergency medical response practical across the vast distances of the atomic age.
 
 Preventive medicine includes radiation protection, disease immunity, and adaptation assistance for individuals working in exotic environments throughout the solar system. These preventive measures make long-term space travel and alien world exploration medically practical for personnel without extensive medical training.
+
+#### **The Medical Card System**
+
+For serious injuries requiring sustained medical attention—battlefield trauma, exotic poisoning, radiation exposure, or alien pathogen infection—use the Medical Card System. This framework represents the complexity of treating severe injuries under frontier conditions where medical resources are limited and evacuation to proper facilities isn't possible.
+
+**Suit Specializations**
+
+Medical treatment is diagnosis-locked to specific injury types based on the cause of damage:
+
+- **♥️ HEARTS**: Bleeding & Circulation (Internal medicine, blood loss, shock)
+- **♣️ CLUBS**: Trauma & Impact (Fractures, lacerations, penetrating wounds)  
+- **♠️ SPADES**: Toxins & Disease (Poisons, infections, pathogens, radiation sickness)
+- **♦️ DIAMONDS**: Burns & Energy (Heat damage, radiation burns, energy weapon wounds)
+
+**Treatment Sequence**
+
+Draw cards one at a time. Compare each card's value to the current card being treated:
+
+**Primary Suit Cards** (based on injury type):
+- Must accumulate Treatment Points equal to card value to clear
+- Each cleared primary card converts 1 Wound to 1 Strain
+- **ESCALATION CHECK**: Before treating each new primary suit card, check if it's ≥3 values higher than the previous primary card. If so, treatment escalation occurs (see Failure Conditions below).
+
+**Secondary Cards** (other suits) create outcomes based on value comparison:
+
+**HIGHER VALUE** = *Positive Response*
+- **♥️ Hearts**: Patient stabilizes - recover 1 strain immediately  
+- **♣️ Clubs**: Treatment going smoothly - gain +1 Treatment Point toward current card
+- **♠️ Spades**: No infection - immune to infection complications for rest of treatment
+- **♦️ Diamonds**: Equipment working perfectly - next Medicine check at +20%
+
+**EXACT MATCH** = *Perfect Response*
+- Any suit: Immediately clear 1 strain (if any) AND gain +2 Treatment Points
+
+**LOWER VALUE** = *Complications*
+- **♥️ Hearts**: Patient instability - Make GRIT check or go into shock
+- **♣️ Clubs**: Physical setback - Choose: spend 1 MSU or gain 1 strain  
+- **♠️ Spades**: Infection risk - Make Medicine check or draw 1 Spades card later
+- **♦️ Diamonds**: Equipment malfunction - Spend 1 Energy Unit or -10% to Medicine checks
+
+**Skill-Based Treatment**
+
+Progress through cards using Treatment Points accumulated from Medicine checks:
+- **Critical Success**: 3 Treatment Points
+- **Special Success**: 2 Treatment Points  
+- **Ordinary Success**: 1 Treatment Point
+
+**EXTRA SUCCESS OPTIONS**: When you get Special or Critical Success, excess Treatment Points can be spent as:
+- **Standard**: Extra points toward clearing current card
+- **FORESIGHT**: Reveal next card without drawing it (1 point per peek)
+- **PREVENTION**: Discard a future card before it happens (1 point per discard)
+
+**Medical Resource Options**
+
+**SPEND MEDICAL SUPPLIES (MSU)**
+- Cost: 1 MSU per Treatment Point gained
+- Effect: Automatic progress without rolling
+- Limitation: Maximum 3 MSU per card, **20 MSU total per treatment sequence**
+
+**SPEND TIME (Extended Care)**
+- Cost: 2 hours per auto-clear
+- Effect: Automatically clear any card of value 4 or less
+- Limitation: Patient must be stable (not critical condition)
+
+**EMERGENCY INTERVENTION**
+- Cost: 2 MSU + Medicine check at -20%
+- Effect: Immediately clear current card regardless of value
+- Risk: Special/Critical failure causes secondary complications
+
+**Treatment Failure Conditions**
+
+Treatment permanently fails when ANY of the following occurs:
+
+**ATTEMPT EXHAUSTION**
+- After **15 failed Medicine rolls** on a single card
+- **Narrative**: "You've tried everything you know, but the injury is beyond your current skill"
+- **Game Effect**: Current card remains untreated; wound stays as wound (not converted to strain)
+- **Options**: Stop treatment here, or continue to next card if sequence allows
+
+**RESOURCE DEPLETION**
+- When MSU supplies are exhausted (**20 total limit** per treatment sequence)
+- **Narrative**: "You've used all available medical supplies"
+- **Game Effect**: Cannot spend MSU for automatic treatment points or complications
+- **Options**: Continue with skill rolls only, or stop treatment
+
+**TREATMENT ESCALATION**
+- When the next primary suit card in sequence is **≥3 values higher** than current card
+- Check occurs **before** starting treatment on each new primary card
+- **Narrative**: "Your intervention is making the condition worse - continuing risks serious complications"
+- **Game Effect**: Immediate treatment failure; no further cards can be treated in this sequence
+- **Prevention**: Use FORESIGHT or PREVENTION extra success options to discard dangerous upcoming cards
+
+**Face Card Complications**
+
+**Jacks (Treatment Complications)**
+- **♥️ Heart Jack - Hemorrhage**: Patient losing blood; GRIT check or suffer additional wound
+- **♣️ Club Jack - Compound Fracture**: Bone fragments causing tissue damage
+- **♠️ Spade Jack - Toxic Reaction**: Allergic response to treatment; switch to alternative approach
+- **♦️ Diamond Jack - Tissue Necrosis**: Damaged tissue spreading; immediate surgical intervention required
+
+**Queens (Critical Decisions)**
+- **♥️ Heart Queen - Cardiac Arrest**: Emergency resuscitation; success saves patient, failure = death
+- **♣️ Club Queen - Emergency Surgery**: Must choose between saving limb or saving life
+- **♠️ Spade Queen - Organ Failure**: Requires rare antidote or cybernetic replacement
+- **♦️ Diamond Queen - Radiation Cascade**: Cellular damage spreading; experimental treatment required
+
+**Kings (Major Interventions)**
+- **♥️ Heart King - Transfusion**: Requires compatible blood donor or synthetic substitute
+- **♣️ Club King - Reconstructive Surgery**: Requires surgical bay and 8+ hour procedure
+- **♠️ Spade King - Quarantine Protocol**: Patient infectious; treat in isolation or risk spread
+- **♦️ Diamond King - Cybernetic Integration**: Damage too severe; requires artificial replacement
 
 ### **COMMUNICATION AND SENSOR TECHNOLOGY**
 

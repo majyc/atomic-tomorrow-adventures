@@ -90,22 +90,46 @@ Players accumulate Circuit Points through skill checks:
 - **Special Success**: 2 Circuit Points
 - **Ordinary Success**: 1 Circuit Point
 
+**EXTRA SUCCESS OPTIONS**: When you get Special or Critical Success, excess Circuit Points can be spent as:
+- **Standard**: Extra points toward clearing current node
+- **CIRCUIT ANALYSIS**: Reveal next same-approach card (1 point per peek)
+- **PROBLEM PREVENTION**: Discard a revealed card - draw replacement (1 point per discard)
+- **CIRCUIT STORAGE**: Store up to 5 Circuit Points for current approach (1:1)
+
+**Tactical Advantages**:
+- **Critical for avoiding System Degradation** - use CIRCUIT ANALYSIS to spot dangerous same-suit sequences
+- **PROBLEM PREVENTION becomes essential** for discarding cards that would trigger degradation failure
+- Plan repair approach based on what's coming next
+
 ## NAVIGATION RULES
 
-### NORMAL PROGRESSION (Top Edge)
+### NORMAL PROGRESSION
 
-- When you complete a node, draw the next card of the same suit
-- If no more cards of that suit exist, shuffle and draw until you find one
+- When you complete a node, draw the next card
+- **Primary Approach Cards** (same suit): Must accumulate Circuit Points equal to card value
+- **Secondary Approach Cards** (different suits) create outcomes based on value comparison:
 
-### COMPLICATIONS (Side Exits)
+**HIGHER VALUE** = *Cross-System Synergy*
+- **♥️ Hearts**: Robot cooperation - gain +1 Circuit Point toward current node
+- **♦️ Diamonds**: Technical insight - reduce current node requirement by 1
+- **♣️ Clubs**: Physical advantage - next skill roll gets +20% bonus
+- **♠️ Spades**: Logic shortcut - reveal next card without drawing it
 
-- **Special Failure**: Draw random card and move to it as a side complication
-- **Critical Failure**: Draw random card, lose all progress on current node, move to complication
+**EXACT MATCH** = *Perfect Integration*
+- Any suit: Immediately gain +2 Circuit Points AND reduce node requirement by 1
 
-### SWITCHING APPROACHES
+**LOWER VALUE** = *Cross-System Interference*
+- **♥️ Hearts**: Robot confusion - make Psychology check or lose 1 Circuit Point
+- **♦️ Diamonds**: Technical conflict - choose: spend 1 Spare Part or -10% to next roll
+- **♣️ Clubs**: Physical obstruction - must clear before continuing (costs 1 Circuit Point)
+- **♠️ Spades**: Logic conflict - current approach locked until node complete
 
-- After completing any card (gaining 1 Overall Success), you draw the next in the current suit, but if you don't like it (it has a high number you don't want to deal with) you can draw another card of a random suit placing it to one side and choose to follow the revealed path instead, drawing more cards that follow suit.
-- After hitting a complication, you must deal with the complication before continuing on, either in the complication's suit or in your original.
+### FAILURE-DRIVEN COMPLICATIONS
+
+- **Special Failure**: Draw random card - this becomes a sidetrack in that suit (keep progress and foresight)
+- **Critical Failure**: Draw random card - sidetrack + lose any stored Circuit Analysis benefits
+- **Completing Sidetrack**: Choose to continue in sidetrack suit OR return to previous working suit
+- **Path Memory**: You can only choose between your two most recently used approaches
 
 ### COMPLETION CONDITIONS
 
@@ -113,14 +137,51 @@ Players accumulate Circuit Points through skill checks:
 - **Ace Completion**: Draw any Ace to immediately complete the entire repair
 - **Joker Reset**: Black Joker forces restart; Red Joker grants immediate completion
 
+## REPAIR FAILURE CONDITIONS
+
+Repair permanently fails when ANY of the following occurs:
+
+### ATTEMPT EXHAUSTION
+- After **12 failed skill rolls** on a single node
+- **Narrative**: "You've exhausted every technique you know - this approach isn't working"
+- **Game Effect**: Current node becomes "burned out" - cannot be approached via this suit again
+- **Options**: Must switch to different approach or abandon repair
+
+### RESOURCE DEPLETION
+- When Spare Parts are exhausted (**15 total limit** per repair sequence)  
+- **Narrative**: "You've used all available components and materials"
+- **Game Effect**: Cannot reduce node requirements or handle technical complications
+- **Options**: Continue with skill rolls only, or stop repair
+
+### SYSTEM DEGRADATION
+- When the next same-suit card is **≥4 values higher** than current node
+- Check occurs **before** starting work on each new primary card
+- **Narrative**: "Your modifications are destabilizing the core systems - continuing risks permanent damage"
+- **Game Effect**: Immediate repair failure; no further cards can be addressed in this sequence
+- **Prevention**: Use CIRCUIT ANALYSIS to spot dangerous sequences, PROBLEM PREVENTION to discard them
+
+### CASCADE FAILURE
+- Drawing **3 consecutive Jacks** triggers system-wide instability
+- **Narrative**: "Multiple system conflicts have created an unrecoverable cascade failure"
+- **Game Effect**: Robot suffers permanent damage, requires factory reset or major overhaul
+- **Prevention**: Use PROBLEM PREVENTION to discard Jack complications when possible
+
+**Example System Degradation:**
+- Currently working on 5♦ (technical calibration)
+- Next primary card drawn is 9♦ (9-5=4, triggers degradation)
+- Repair fails immediately - "Your aggressive recalibration has caused system-wide instability"
+- Robot retains damage; seek advanced repair facility or specialized technician
+
 ## RESOURCE MANAGEMENT
 
 ### SPARE PARTS
 
 - **Common Components**: Reduce required Circuit Points by 1
-- **Specialized Parts**: Reduce required Circuit Points by 2
+- **Specialized Parts**: Reduce required Circuit Points by 2  
 - **Rare Components**: Reduce required Circuit Points by 3
 - **Improvised Solutions**: Add +1 to required Circuit Points but reduce cost
+- **Resource Limit**: Maximum **15 total parts** per repair sequence
+- **Strategic Use**: Save rare components for high-value nodes or emergency situations
 
 ### TIME PRESSURE
 
@@ -243,11 +304,23 @@ Players accumulate Circuit Points through skill checks:
 
 **Player**: "Final attempt." *Rolls 15 on 60%* "Success!"
 
-**GM**: "That's your 8th Circuit Point! You've successfully completed the 8 of Hearts - that's 1 Overall Success. Since this was diagnosed as a moderate complexity issue, you need 1 more Overall Success to fully repair Gearbox. Now I'll draw the next Hearts card to see what the second challenge is..." *Draws* "Jack of Hearts: 'Emotional Overflow.' This is a complication that needs to be resolved before moving forward."
+**GM**: "That's your 8th Circuit Point! You've successfully completed the 8 of Hearts - that's 1 Overall Success. Since this was diagnosed as a moderate complexity issue, you need 1 more Overall Success to fully repair Gearbox. Now I'll draw the next card..." *Draws* "4 of Clubs: 'Physical Maintenance.' This is a different approach - since 4 is lower than your previous 8, this creates cross-system interference. You need to deal with some physical obstruction before continuing - costs 1 Circuit Point to clear."
 
-**Player**: "I'll try to calm his emotional systems using Engineering (Robotics) to adjust his regulators."
+**Player**: "I'll spend 1 stored Circuit Point to clear that obstruction, then continue with the Clubs approach since it seems simpler than going back to Hearts."
 
-**GM**: "You're switching from the Intuitive approach to Technical. I'll find the next Diamond card..." *Draws* "6 of Diamonds: 'Regulation Circuits.' You need to carefully adjust his emotional processing systems - 6 Circuit Points needed to complete this card and get your second Overall Success."
+**GM**: "Good choice! The 4 of Clubs represents routine maintenance work. You need 4 Circuit Points to complete this node." *Player makes several successful rolls* "Excellent! You've completed the 4 of Clubs - that's your second Overall Success. Gearbox is fully operational again!"
+
+**Enhanced Example with Failure Prevention:**
+
+**GM**: "You got a Critical Success - that's 3 Circuit Points, but you only needed 1 more to complete the node. You have 2 extra points. What do you want to do with them?"
+
+**Player**: "I'll use 1 point for Circuit Analysis to see what's coming next."
+
+**GM**: *Draws and shows* "The next card would be Jack of Spades: 'Logic Loop' - a complication."
+
+**Player**: "That looks troublesome. I'll spend my other extra point on Problem Prevention to discard it."
+
+**GM**: "Smart! I'll discard the Jack and draw a replacement..." *Draws* "3 of Spades: 'Simple Logic Adjustment' - much more manageable!"
 
 **Player**: "Perfect! I'll use Engineering (Robotics)." *Rolls 28 on 70%* "Ordinary success."
 

@@ -26,6 +26,7 @@ Draw cards **one at a time** normally. Compare each card's value to the **curren
 **Primary Suit Cards** (based on injury type):
 - Must accumulate Treatment Points equal to card value to clear
 - Each cleared primary card converts 1 Wound to 1 Strain
+- **ESCALATION CHECK**: Before treating each new primary suit card, check if it's ≥3 values higher than the previous primary card. If so, treatment escalation occurs (see Failure Conditions below).
 
 **Secondary Cards** (other suits) create outcomes based on value comparison:
 
@@ -58,11 +59,12 @@ Progress through cards using Treatment Points accumulated from Medicine checks:
 **EXTRA SUCCESS OPTIONS**: When you get Special or Critical Success, excess Treatment Points can be spent as:
 - **Standard**: Extra points toward clearing current card
 - **FORESIGHT**: Reveal next card without drawing it (1 point per peek)
-- **PREVENTION**: Discard a future card before it happens (1 points per discard)
+- **PREVENTION**: Discard a future card before it happens (1 point per discard)
 
 **Tactical Advantages**:
 - High-skill medics can spot trouble coming and take preventive action
-- Spend resources now to avoid complications later
+- **Critical for avoiding Treatment Escalation** - use FORESIGHT to spot dangerous same-suit cards
+- **PREVENTION becomes essential** for discarding cards that would trigger escalation failure
 - Plan treatment approach based on what's coming next
 
 ## MEDICAL "MOVES" - PLAYER OPTIONS
@@ -71,6 +73,7 @@ Progress through cards using Treatment Points accumulated from Medicine checks:
 **TREAT CURRENT CARD**
 - Roll appropriate Medicine skill vs. card value
 - Accumulate Treatment Points until card is cleared
+- **Maximum 15 attempts per card** - track failed rolls carefully
 - Choose: Draw next card OR stop treatment here
 
 **STOP TREATMENT**
@@ -83,7 +86,7 @@ Progress through cards using Treatment Points accumulated from Medicine checks:
 **SPEND MEDICAL SUPPLIES (MSU)**
 - Cost: 1 MSU per Treatment Point gained
 - Effect: Automatic progress without rolling
-- Limitation: Maximum 3 MSU per card
+- Limitation: Maximum 3 MSU per card, **20 MSU total per treatment sequence**
 
 **SPEND TIME (Extended Care)**
 - Cost: 2 hours per auto-clear
@@ -168,6 +171,41 @@ Progress through cards using Treatment Points accumulated from Medicine checks:
 - Effect: Convert any card to Hearts suit (bleeding/shock focus)
 - Trade-off: +20% difficulty on all rolls
 
+## TREATMENT FAILURE CONDITIONS
+
+Treatment permanently fails when ANY of the following occurs:
+
+### ATTEMPT EXHAUSTION
+- After **15 failed Medicine rolls** on a single card
+- **Narrative**: "You've tried everything you know, but the injury is beyond your current skill"
+- **Game Effect**: Current card remains untreated; wound stays as wound (not converted to strain)
+- **Options**: Stop treatment here, or continue to next card if sequence allows
+
+### RESOURCE DEPLETION
+- When MSU supplies are exhausted (**20 total limit** per treatment sequence)
+- **Narrative**: "You've used all available medical supplies"
+- **Game Effect**: Cannot spend MSU for automatic treatment points or complications
+- **Options**: Continue with skill rolls only, or stop treatment
+
+### TREATMENT ESCALATION
+- When the next primary suit card in sequence is **≥3 values higher** than current card
+- Check occurs **before** starting treatment on each new primary card
+- **Narrative**: "Your intervention is making the condition worse - continuing risks serious complications"
+- **Game Effect**: Immediate treatment failure; no further cards can be treated in this sequence
+- **Prevention**: Use FORESIGHT or PREVENTION extra success options to discard dangerous upcoming cards
+
+### NATURAL HEALING POINT (Optional)
+- After successfully clearing **2-3 cards** in non-critical patients
+- GM discretion based on injury severity, time pressure, and available facilities
+- **Narrative**: "Further intervention risks complications; let the body heal naturally"
+- **Game Effect**: Remaining wounds convert to strain at natural healing rate (1 per day of rest)
+
+**Example Treatment Escalation:**
+- Currently treating 4♦ (moderate burn)
+- Next primary card drawn is 7♦ (7-4=3, triggers escalation)
+- Treatment fails immediately - "Your aggressive treatment has caused severe tissue damage"
+- Patient retains all remaining wounds; seek advanced medical care
+
 ## FACE CARD COMPLICATIONS
 
 ### JACKS (Treatment Complications)
@@ -244,9 +282,10 @@ Different medical specialists gain bonuses with specific suits:
 - 7♦ now fully cleared → First wound healed (becomes strain)
 
 **CARD 4 - 3♦**: Next primary burn (3 Treatment Points needed)
+- **Escalation Check**: 3♦ vs previous 7♦ = No escalation (3 < 7)
 - Current card value now: 3
 
-**CARD 5 - 8♠**: Higher than 3! Infection complication
+**CARD 5 - 8♠**: Higher than 3! No infection complication  
 - Make Medicine check to avoid future infection
 - **Success**: No additional problems
 
@@ -255,6 +294,19 @@ Different medical specialists gain bonuses with specific suits:
 - Medic uses Extended Care to auto-clear the simple 3♦
 
 **RESULT**: Both wounds healed, patient has only 1 strain total (instead of 2) due to good responses during treatment!
+
+---
+
+## ESCALATION EXAMPLE
+
+**PATIENT**: Shot with ray gun (3 wounds, Diamonds primary)  
+
+**CARD 1 - 4♦**: Primary burn (4 points needed) - Successfully cleared
+**CARD 2 - 6♣**: Secondary complication - handled successfully  
+**CARD 3 - 7♦**: Next primary burn
+- **Escalation Check**: 7♦ vs previous 4♦ = 7-4=3, **TRIGGERS ESCALATION**
+- **Treatment Fails**: "Your aggressive treatment has caused severe tissue damage spreading through healthy skin"
+- **Result**: Patient retains 2 wounds, needs advanced medical facility or different specialist
 
 ---
 
