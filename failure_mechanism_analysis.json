@@ -1,0 +1,4693 @@
+{
+  "results": {
+    "original": {
+      "Untrained": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.875,
+            "mean_contribute_rounds": 1.1266666666666667,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 14.075,
+            "mean_total_attempts": 7.2,
+            "failure_reasons": {
+              "success": 175,
+              "resource_depletion": 25
+            },
+            "contribute_rate": 0.75
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.475,
+            "mean_contribute_rounds": 1.4646464646464648,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 17.505,
+            "mean_total_attempts": 9.54,
+            "failure_reasons": {
+              "success": 95,
+              "resource_depletion": 105
+            },
+            "contribute_rate": 0.495
+          },
+          "Severe Burns": {
+            "success_rate": 0.165,
+            "mean_contribute_rounds": 2.5416666666666665,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 18.77,
+            "mean_total_attempts": 10.62,
+            "failure_reasons": {
+              "resource_depletion": 167,
+              "success": 33
+            },
+            "contribute_rate": 0.24
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.05,
+            "mean_contribute_rounds": 3.272727272727273,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 18.995,
+            "mean_total_attempts": 11.22,
+            "failure_reasons": {
+              "resource_depletion": 190,
+              "success": 10
+            },
+            "contribute_rate": 0.055
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.16,
+            "mean_contribute_rounds": 1.0410958904109588,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 23.71,
+            "failure_reasons": {
+              "attempt_limit": 168,
+              "success": 32
+            },
+            "contribute_rate": 0.365
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.08,
+            "mean_contribute_rounds": 1.0851063829787233,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 26.295,
+            "failure_reasons": {
+              "attempt_limit": 184,
+              "success": 16
+            },
+            "contribute_rate": 0.235
+          },
+          "Severe Burns": {
+            "success_rate": 0.015,
+            "mean_contribute_rounds": 2.25,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 27.495,
+            "failure_reasons": {
+              "attempt_limit": 197,
+              "success": 3
+            },
+            "contribute_rate": 0.06
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.005,
+            "mean_contribute_rounds": 3.5,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 29.765,
+            "failure_reasons": {
+              "attempt_limit": 199,
+              "success": 1
+            },
+            "contribute_rate": 0.01
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.92,
+            "mean_contribute_rounds": 1.1418439716312057,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 14.26,
+            "mean_total_attempts": 6.975,
+            "failure_reasons": {
+              "resource_depletion": 16,
+              "success": 184
+            },
+            "contribute_rate": 0.705
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.455,
+            "mean_contribute_rounds": 1.3296703296703296,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 17.885,
+            "mean_total_attempts": 9.26,
+            "failure_reasons": {
+              "resource_depletion": 109,
+              "success": 91
+            },
+            "contribute_rate": 0.455
+          },
+          "Severe Burns": {
+            "success_rate": 0.11,
+            "mean_contribute_rounds": 2.3714285714285714,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 19.02,
+            "mean_total_attempts": 10.36,
+            "failure_reasons": {
+              "resource_depletion": 178,
+              "success": 22
+            },
+            "contribute_rate": 0.175
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.015,
+            "mean_contribute_rounds": 3.5,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 19.09,
+            "mean_total_attempts": 10.46,
+            "failure_reasons": {
+              "success": 3,
+              "resource_depletion": 197
+            },
+            "contribute_rate": 0.05
+          }
+        }
+      },
+      "Novice": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.98,
+            "mean_contribute_rounds": 1.0921052631578947,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 11.7,
+            "mean_total_attempts": 7.85,
+            "failure_reasons": {
+              "resource_depletion": 4,
+              "success": 196
+            },
+            "contribute_rate": 0.76
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.775,
+            "mean_contribute_rounds": 1.4678899082568808,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 15.245,
+            "mean_total_attempts": 10.705,
+            "failure_reasons": {
+              "success": 155,
+              "resource_depletion": 45
+            },
+            "contribute_rate": 0.545
+          },
+          "Severe Burns": {
+            "success_rate": 0.32,
+            "mean_contribute_rounds": 2.45,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 17.94,
+            "mean_total_attempts": 13.24,
+            "failure_reasons": {
+              "success": 64,
+              "resource_depletion": 136
+            },
+            "contribute_rate": 0.2
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.165,
+            "mean_contribute_rounds": 3.6842105263157894,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 18.74,
+            "mean_total_attempts": 14.825,
+            "failure_reasons": {
+              "resource_depletion": 167,
+              "success": 33
+            },
+            "contribute_rate": 0.095
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.69,
+            "mean_contribute_rounds": 1.1428571428571428,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 22.785,
+            "failure_reasons": {
+              "success": 138,
+              "attempt_limit": 62
+            },
+            "contribute_rate": 0.7
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.55,
+            "mean_contribute_rounds": 1.4516129032258065,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 29.74,
+            "failure_reasons": {
+              "attempt_limit": 90,
+              "success": 110
+            },
+            "contribute_rate": 0.465
+          },
+          "Severe Burns": {
+            "success_rate": 0.425,
+            "mean_contribute_rounds": 2.8095238095238093,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 36.22,
+            "failure_reasons": {
+              "success": 85,
+              "attempt_limit": 115
+            },
+            "contribute_rate": 0.21
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.36,
+            "mean_contribute_rounds": 3.7,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 42.495,
+            "failure_reasons": {
+              "success": 72,
+              "attempt_limit": 128
+            },
+            "contribute_rate": 0.05
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.985,
+            "mean_contribute_rounds": 1.169811320754717,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 12.595,
+            "mean_total_attempts": 7.615,
+            "failure_reasons": {
+              "success": 197,
+              "resource_depletion": 3
+            },
+            "contribute_rate": 0.795
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.66,
+            "mean_contribute_rounds": 1.4464285714285714,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 16.695,
+            "mean_total_attempts": 10.715,
+            "failure_reasons": {
+              "resource_depletion": 68,
+              "success": 132
+            },
+            "contribute_rate": 0.56
+          },
+          "Severe Burns": {
+            "success_rate": 0.27,
+            "mean_contribute_rounds": 2.7948717948717947,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 18.53,
+            "mean_total_attempts": 12.825,
+            "failure_reasons": {
+              "resource_depletion": 146,
+              "success": 54
+            },
+            "contribute_rate": 0.195
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.07,
+            "mean_contribute_rounds": 3.3846153846153846,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 19.075,
+            "mean_total_attempts": 13.31,
+            "failure_reasons": {
+              "resource_depletion": 186,
+              "success": 14
+            },
+            "contribute_rate": 0.065
+          }
+        }
+      },
+      "Competent": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 1.1748251748251748,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 8.945,
+            "mean_total_attempts": 8.995,
+            "failure_reasons": {
+              "success": 199,
+              "resource_depletion": 1
+            },
+            "contribute_rate": 0.715
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.91,
+            "mean_contribute_rounds": 1.4774774774774775,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 13.495,
+            "mean_total_attempts": 12.745,
+            "failure_reasons": {
+              "success": 182,
+              "resource_depletion": 18
+            },
+            "contribute_rate": 0.555
+          },
+          "Severe Burns": {
+            "success_rate": 0.655,
+            "mean_contribute_rounds": 2.627450980392157,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 16.285,
+            "mean_total_attempts": 16.53,
+            "failure_reasons": {
+              "resource_depletion": 69,
+              "success": 131
+            },
+            "contribute_rate": 0.255
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.39,
+            "mean_contribute_rounds": 3.8,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 18.105,
+            "mean_total_attempts": 17.995,
+            "failure_reasons": {
+              "success": 78,
+              "resource_depletion": 122
+            },
+            "contribute_rate": 0.1
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.915,
+            "mean_contribute_rounds": 1.1597222222222223,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 19.87,
+            "failure_reasons": {
+              "success": 183,
+              "attempt_limit": 17
+            },
+            "contribute_rate": 0.72
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.895,
+            "mean_contribute_rounds": 1.3009708737864079,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 29.615,
+            "failure_reasons": {
+              "success": 179,
+              "attempt_limit": 21
+            },
+            "contribute_rate": 0.515
+          },
+          "Severe Burns": {
+            "success_rate": 0.81,
+            "mean_contribute_rounds": 2.6862745098039214,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 37.4,
+            "failure_reasons": {
+              "success": 162,
+              "attempt_limit": 38
+            },
+            "contribute_rate": 0.255
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.72,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 45.06,
+            "failure_reasons": {
+              "success": 144,
+              "attempt_limit": 56
+            },
+            "contribute_rate": 0.045
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 1.2272727272727273,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 11.195,
+            "mean_total_attempts": 9.085,
+            "failure_reasons": {
+              "success": 199,
+              "resource_depletion": 1
+            },
+            "contribute_rate": 0.77
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.83,
+            "mean_contribute_rounds": 1.5425531914893618,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 16.19,
+            "mean_total_attempts": 12.88,
+            "failure_reasons": {
+              "success": 166,
+              "resource_depletion": 34
+            },
+            "contribute_rate": 0.47
+          },
+          "Severe Burns": {
+            "success_rate": 0.505,
+            "mean_contribute_rounds": 2.6511627906976742,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 18.385,
+            "mean_total_attempts": 15.615,
+            "failure_reasons": {
+              "resource_depletion": 99,
+              "success": 101
+            },
+            "contribute_rate": 0.215
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.175,
+            "mean_contribute_rounds": 3.7857142857142856,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 19.005,
+            "mean_total_attempts": 17.41,
+            "failure_reasons": {
+              "resource_depletion": 165,
+              "success": 35
+            },
+            "contribute_rate": 0.07
+          }
+        }
+      },
+      "Expert": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1666666666666667,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.305,
+            "mean_total_attempts": 10.09,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.81
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 1.4574468085106382,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 8.8,
+            "mean_total_attempts": 15.815,
+            "failure_reasons": {
+              "success": 199,
+              "resource_depletion": 1
+            },
+            "contribute_rate": 0.47
+          },
+          "Severe Burns": {
+            "success_rate": 0.965,
+            "mean_contribute_rounds": 2.6285714285714286,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 11.155,
+            "mean_total_attempts": 20.765,
+            "failure_reasons": {
+              "success": 193,
+              "resource_depletion": 7
+            },
+            "contribute_rate": 0.175
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.87,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 13.19,
+            "mean_total_attempts": 25.515,
+            "failure_reasons": {
+              "success": 174,
+              "resource_depletion": 26
+            },
+            "contribute_rate": 0.075
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1986754966887416,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 14.895,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.755
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 1.4642857142857142,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 23.55,
+            "failure_reasons": {
+              "success": 199,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.56
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.9423076923076925,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 30.67,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.26
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 3.9,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 37.72,
+            "failure_reasons": {
+              "success": 199,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.1
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1625,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 8.19,
+            "mean_total_attempts": 9.71,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.8
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.975,
+            "mean_contribute_rounds": 1.4862385321100917,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 11.9,
+            "mean_total_attempts": 14.865,
+            "failure_reasons": {
+              "success": 195,
+              "resource_depletion": 5
+            },
+            "contribute_rate": 0.545
+          },
+          "Severe Burns": {
+            "success_rate": 0.885,
+            "mean_contribute_rounds": 2.8,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 15.84,
+            "mean_total_attempts": 20.04,
+            "failure_reasons": {
+              "success": 177,
+              "resource_depletion": 23
+            },
+            "contribute_rate": 0.25
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.61,
+            "mean_contribute_rounds": 3.8421052631578947,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 18.085,
+            "mean_total_attempts": 23.98,
+            "failure_reasons": {
+              "resource_depletion": 78,
+              "success": 122
+            },
+            "contribute_rate": 0.095
+          }
+        }
+      },
+      "Master": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.186335403726708,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 1.415,
+            "mean_total_attempts": 11.29,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.805
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.5130434782608695,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 2.455,
+            "mean_total_attempts": 17.51,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.575
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.9215686274509802,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 3.01,
+            "mean_total_attempts": 23.315,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.255
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 3.9705882352941178,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 4.035,
+            "mean_total_attempts": 28.4,
+            "failure_reasons": {
+              "success": 199,
+              "resource_depletion": 1
+            },
+            "contribute_rate": 0.17
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1886792452830188,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 12.59,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.795
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.4444444444444444,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 19.135,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.495
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.933333333333333,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 25.535,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.225
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 32.7,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.115
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1383647798742138,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.75,
+            "mean_total_attempts": 11.52,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.795
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.495049504950495,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 8.355,
+            "mean_total_attempts": 17.325,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.505
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.7580645161290325,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 10.845,
+            "mean_total_attempts": 23.175,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.31
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.99,
+            "mean_contribute_rounds": 4.090909090909091,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 13.635,
+            "mean_total_attempts": 29.605,
+            "failure_reasons": {
+              "success": 198,
+              "resource_depletion": 2
+            },
+            "contribute_rate": 0.11
+          }
+        }
+      }
+    },
+    "strict_attempts": {
+      "Untrained": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1319444444444444,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 14.025,
+            "mean_total_attempts": 7.115,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.72
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.5826086956521739,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 20.11,
+            "mean_total_attempts": 10.14,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.575
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.7755102040816326,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 26.51,
+            "mean_total_attempts": 13.41,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.245
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 3.909090909090909,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 34.07,
+            "mean_total_attempts": 17.39,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.11
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.08,
+            "mean_contribute_rounds": 1.069767441860465,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 16.71,
+            "failure_reasons": {
+              "attempt_limit": 184,
+              "success": 16
+            },
+            "contribute_rate": 0.215
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.04,
+            "mean_contribute_rounds": 1.2058823529411764,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 18.425,
+            "failure_reasons": {
+              "attempt_limit": 192,
+              "success": 8
+            },
+            "contribute_rate": 0.17
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.0833333333333335,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 19.52,
+            "failure_reasons": {
+              "attempt_limit": 200
+            },
+            "contribute_rate": 0.06
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.005,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 18.92,
+            "failure_reasons": {
+              "attempt_limit": 199,
+              "success": 1
+            },
+            "contribute_rate": 0.01
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1986754966887416,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 14.58,
+            "mean_total_attempts": 6.905,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.755
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.4864864864864864,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 21.13,
+            "mean_total_attempts": 10.055,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.555
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.88,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 28.6,
+            "mean_total_attempts": 13.955,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.25
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 35.76,
+            "mean_total_attempts": 17.175,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.08
+          }
+        }
+      },
+      "Novice": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1533742331288344,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 11.245,
+            "mean_total_attempts": 7.695,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.815
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.5057471264367817,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 17.33,
+            "mean_total_attempts": 11.815,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.435
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.88,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 23.115,
+            "mean_total_attempts": 15.41,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.25
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 3.772727272727273,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 28.9,
+            "mean_total_attempts": 18.915,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.11
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.435,
+            "mean_contribute_rounds": 1.0784313725490196,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 18.125,
+            "failure_reasons": {
+              "attempt_limit": 113,
+              "success": 87
+            },
+            "contribute_rate": 0.51
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.24,
+            "mean_contribute_rounds": 1.171875,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 21.92,
+            "failure_reasons": {
+              "attempt_limit": 152,
+              "success": 48
+            },
+            "contribute_rate": 0.32
+          },
+          "Severe Burns": {
+            "success_rate": 0.14,
+            "mean_contribute_rounds": 2.64,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 24.645,
+            "failure_reasons": {
+              "attempt_limit": 172,
+              "success": 28
+            },
+            "contribute_rate": 0.125
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.08,
+            "mean_contribute_rounds": 3.2857142857142856,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 24.83,
+            "failure_reasons": {
+              "attempt_limit": 184,
+              "success": 16
+            },
+            "contribute_rate": 0.035
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1304347826086956,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 12.605,
+            "mean_total_attempts": 7.54,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.805
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.3125,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 18.585,
+            "mean_total_attempts": 11.605,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.56
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.76,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 25.615,
+            "mean_total_attempts": 15.885,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.25
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 3.8666666666666667,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 32.18,
+            "mean_total_attempts": 19.77,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.075
+          }
+        }
+      },
+      "Competent": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1125827814569536,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 9.515,
+            "mean_total_attempts": 8.8,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.755
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.5858585858585859,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 13.495,
+            "mean_total_attempts": 13.205,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.495
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.7457627118644066,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 17.87,
+            "mean_total_attempts": 17.17,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.295
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 4.136363636363637,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 22.735,
+            "mean_total_attempts": 21.795,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.11
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.65,
+            "mean_contribute_rounds": 1.1640625,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 17.465,
+            "failure_reasons": {
+              "success": 130,
+              "attempt_limit": 70
+            },
+            "contribute_rate": 0.64
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.56,
+            "mean_contribute_rounds": 1.5106382978723405,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 23.39,
+            "failure_reasons": {
+              "success": 112,
+              "attempt_limit": 88
+            },
+            "contribute_rate": 0.47
+          },
+          "Severe Burns": {
+            "success_rate": 0.42,
+            "mean_contribute_rounds": 2.5142857142857142,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 29.245,
+            "failure_reasons": {
+              "attempt_limit": 116,
+              "success": 84
+            },
+            "contribute_rate": 0.175
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.34,
+            "mean_contribute_rounds": 3.769230769230769,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 32.58,
+            "failure_reasons": {
+              "attempt_limit": 132,
+              "success": 68
+            },
+            "contribute_rate": 0.065
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1643835616438356,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 11.245,
+            "mean_total_attempts": 8.93,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.73
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.55,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 17.075,
+            "mean_total_attempts": 13.285,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.5
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.7413793103448274,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 22.34,
+            "mean_total_attempts": 17.44,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.29
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 3.9565217391304346,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 27.68,
+            "mean_total_attempts": 21.84,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.115
+          }
+        }
+      },
+      "Expert": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.185897435897436,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.105,
+            "mean_total_attempts": 9.65,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.78
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.5555555555555556,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 8.195,
+            "mean_total_attempts": 14.76,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.54
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.730769230769231,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 10.24,
+            "mean_total_attempts": 20.08,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.26
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 3.96,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 13.495,
+            "mean_total_attempts": 24.465,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.125
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.96,
+            "mean_contribute_rounds": 1.1666666666666667,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 15.28,
+            "failure_reasons": {
+              "success": 192,
+              "attempt_limit": 8
+            },
+            "contribute_rate": 0.75
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.94,
+            "mean_contribute_rounds": 1.481818181818182,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 22.34,
+            "failure_reasons": {
+              "success": 188,
+              "attempt_limit": 12
+            },
+            "contribute_rate": 0.55
+          },
+          "Severe Burns": {
+            "success_rate": 0.87,
+            "mean_contribute_rounds": 2.8333333333333335,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 29.715,
+            "failure_reasons": {
+              "attempt_limit": 26,
+              "success": 174
+            },
+            "contribute_rate": 0.24
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.855,
+            "mean_contribute_rounds": 4.125,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 37.135,
+            "failure_reasons": {
+              "success": 171,
+              "attempt_limit": 29
+            },
+            "contribute_rate": 0.08
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.2085889570552146,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 8.45,
+            "mean_total_attempts": 10.24,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.815
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.4757281553398058,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 12.44,
+            "mean_total_attempts": 15.2,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.515
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.6382978723404253,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 16.795,
+            "mean_total_attempts": 20.085,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.235
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 3.8846153846153846,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 21.4,
+            "mean_total_attempts": 25.56,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.13
+          }
+        }
+      },
+      "Master": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1446540880503144,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 1.555,
+            "mean_total_attempts": 12.035,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.795
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.4285714285714286,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 2.435,
+            "mean_total_attempts": 17.8,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.56
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.8684210526315788,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 3.08,
+            "mean_total_attempts": 23.515,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.19
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 4.384615384615385,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 3.78,
+            "mean_total_attempts": 29.795,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.065
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 1.1139240506329113,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 13.125,
+            "failure_reasons": {
+              "success": 199,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.79
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.5510204081632653,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 19.275,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.49
+          },
+          "Severe Burns": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 2.6346153846153846,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 26.065,
+            "failure_reasons": {
+              "success": 199,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.26
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 31.665,
+            "failure_reasons": {
+              "success": 199,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.14
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1290322580645162,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.795,
+            "mean_total_attempts": 11.69,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.775
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.4587155963302751,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 8.195,
+            "mean_total_attempts": 17.73,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.545
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.723404255319149,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 10.78,
+            "mean_total_attempts": 22.88,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.235
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 3.8636363636363638,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 13.695,
+            "mean_total_attempts": 29.055,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.11
+          }
+        }
+      }
+    },
+    "strict_resources": {
+      "Untrained": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.635,
+            "mean_contribute_rounds": 1.1081081081081081,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 11.81,
+            "mean_total_attempts": 6.375,
+            "failure_reasons": {
+              "success": 127,
+              "resource_depletion": 73
+            },
+            "contribute_rate": 0.74
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.19,
+            "mean_contribute_rounds": 1.3297872340425532,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 13.875,
+            "mean_total_attempts": 7.895,
+            "failure_reasons": {
+              "resource_depletion": 162,
+              "success": 38
+            },
+            "contribute_rate": 0.47
+          },
+          "Severe Burns": {
+            "success_rate": 0.035,
+            "mean_contribute_rounds": 2.25,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 14.105,
+            "mean_total_attempts": 8.15,
+            "failure_reasons": {
+              "resource_depletion": 193,
+              "success": 7
+            },
+            "contribute_rate": 0.16
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3.25,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 14.085,
+            "mean_total_attempts": 8.28,
+            "failure_reasons": {
+              "resource_depletion": 200
+            },
+            "contribute_rate": 0.02
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1790123456790123,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 48.86,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.81
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.5212765957446808,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 74.695,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.47
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.730769230769231,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 99.4,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.26
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 123.665,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.095
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.615,
+            "mean_contribute_rounds": 1.1223021582733812,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 12.42,
+            "mean_total_attempts": 6.46,
+            "failure_reasons": {
+              "success": 123,
+              "resource_depletion": 77
+            },
+            "contribute_rate": 0.695
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.165,
+            "mean_contribute_rounds": 1.303370786516854,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 13.86,
+            "mean_total_attempts": 8.02,
+            "failure_reasons": {
+              "resource_depletion": 167,
+              "success": 33
+            },
+            "contribute_rate": 0.445
+          },
+          "Severe Burns": {
+            "success_rate": 0.01,
+            "mean_contribute_rounds": 2.2916666666666665,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 14.06,
+            "mean_total_attempts": 7.93,
+            "failure_reasons": {
+              "resource_depletion": 198,
+              "success": 2
+            },
+            "contribute_rate": 0.12
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 14.065,
+            "mean_total_attempts": 7.785,
+            "failure_reasons": {
+              "resource_depletion": 200
+            },
+            "contribute_rate": 0.01
+          }
+        }
+      },
+      "Novice": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.795,
+            "mean_contribute_rounds": 1.1428571428571428,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 10.42,
+            "mean_total_attempts": 7.595,
+            "failure_reasons": {
+              "success": 159,
+              "resource_depletion": 41
+            },
+            "contribute_rate": 0.735
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.44,
+            "mean_contribute_rounds": 1.3333333333333333,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 13.01,
+            "mean_total_attempts": 10.235,
+            "failure_reasons": {
+              "resource_depletion": 112,
+              "success": 88
+            },
+            "contribute_rate": 0.45
+          },
+          "Severe Burns": {
+            "success_rate": 0.11,
+            "mean_contribute_rounds": 2.3846153846153846,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 13.99,
+            "mean_total_attempts": 11.61,
+            "failure_reasons": {
+              "resource_depletion": 178,
+              "success": 22
+            },
+            "contribute_rate": 0.195
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.055,
+            "mean_contribute_rounds": 3.5,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 14.08,
+            "mean_total_attempts": 11.315,
+            "failure_reasons": {
+              "resource_depletion": 189,
+              "success": 11
+            },
+            "contribute_rate": 0.06
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.178082191780822,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 26.425,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.73
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.576271186440678,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 40.11,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.59
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.9215686274509802,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 54.72,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.255
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 3.739130434782609,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 67.14,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.115
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.82,
+            "mean_contribute_rounds": 1.1372549019607843,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 11.515,
+            "mean_total_attempts": 7.665,
+            "failure_reasons": {
+              "success": 164,
+              "resource_depletion": 36
+            },
+            "contribute_rate": 0.765
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.305,
+            "mean_contribute_rounds": 1.3085106382978724,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 13.745,
+            "mean_total_attempts": 9.385,
+            "failure_reasons": {
+              "resource_depletion": 139,
+              "success": 61
+            },
+            "contribute_rate": 0.47
+          },
+          "Severe Burns": {
+            "success_rate": 0.04,
+            "mean_contribute_rounds": 2.25,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 14.07,
+            "mean_total_attempts": 10.325,
+            "failure_reasons": {
+              "resource_depletion": 192,
+              "success": 8
+            },
+            "contribute_rate": 0.14
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.005,
+            "mean_contribute_rounds": 3.6666666666666665,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 14.16,
+            "mean_total_attempts": 10.61,
+            "failure_reasons": {
+              "resource_depletion": 199,
+              "success": 1
+            },
+            "contribute_rate": 0.03
+          }
+        }
+      },
+      "Competent": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.915,
+            "mean_contribute_rounds": 1.1756756756756757,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 8.91,
+            "mean_total_attempts": 8.985,
+            "failure_reasons": {
+              "success": 183,
+              "resource_depletion": 17
+            },
+            "contribute_rate": 0.74
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.675,
+            "mean_contribute_rounds": 1.4700854700854702,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 11.97,
+            "mean_total_attempts": 12.275,
+            "failure_reasons": {
+              "success": 135,
+              "resource_depletion": 65
+            },
+            "contribute_rate": 0.585
+          },
+          "Severe Burns": {
+            "success_rate": 0.345,
+            "mean_contribute_rounds": 2.5454545454545454,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 13.495,
+            "mean_total_attempts": 13.935,
+            "failure_reasons": {
+              "success": 69,
+              "resource_depletion": 131
+            },
+            "contribute_rate": 0.22
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.155,
+            "mean_contribute_rounds": 3.3529411764705883,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 14.055,
+            "mean_total_attempts": 15.23,
+            "failure_reasons": {
+              "resource_depletion": 169,
+              "success": 31
+            },
+            "contribute_rate": 0.085
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1847133757961783,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 20.185,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.785
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.4867256637168142,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 29.855,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.565
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.84,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 41.135,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.25
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 4.153846153846154,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 51.745,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.13
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.86,
+            "mean_contribute_rounds": 1.12987012987013,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 10.33,
+            "mean_total_attempts": 8.5,
+            "failure_reasons": {
+              "success": 172,
+              "resource_depletion": 28
+            },
+            "contribute_rate": 0.77
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.445,
+            "mean_contribute_rounds": 1.3404255319148937,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 13.21,
+            "mean_total_attempts": 11.435,
+            "failure_reasons": {
+              "resource_depletion": 111,
+              "success": 89
+            },
+            "contribute_rate": 0.47
+          },
+          "Severe Burns": {
+            "success_rate": 0.205,
+            "mean_contribute_rounds": 2.21875,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 14.155,
+            "mean_total_attempts": 13.56,
+            "failure_reasons": {
+              "resource_depletion": 159,
+              "success": 41
+            },
+            "contribute_rate": 0.16
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.05,
+            "mean_contribute_rounds": 3.4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 14.17,
+            "mean_total_attempts": 13.82,
+            "failure_reasons": {
+              "resource_depletion": 190,
+              "success": 10
+            },
+            "contribute_rate": 0.05
+          }
+        }
+      },
+      "Expert": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.99,
+            "mean_contribute_rounds": 1.1548387096774193,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.215,
+            "mean_total_attempts": 10.01,
+            "failure_reasons": {
+              "success": 198,
+              "resource_depletion": 2
+            },
+            "contribute_rate": 0.775
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.925,
+            "mean_contribute_rounds": 1.3425925925925926,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 8.26,
+            "mean_total_attempts": 15.095,
+            "failure_reasons": {
+              "success": 185,
+              "resource_depletion": 15
+            },
+            "contribute_rate": 0.54
+          },
+          "Severe Burns": {
+            "success_rate": 0.885,
+            "mean_contribute_rounds": 2.6666666666666665,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 9.68,
+            "mean_total_attempts": 19.895,
+            "failure_reasons": {
+              "success": 177,
+              "resource_depletion": 23
+            },
+            "contribute_rate": 0.225
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.67,
+            "mean_contribute_rounds": 3.9166666666666665,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 11.96,
+            "mean_total_attempts": 23.835,
+            "failure_reasons": {
+              "resource_depletion": 66,
+              "success": 134
+            },
+            "contribute_rate": 0.12
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1548387096774193,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 15.79,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.775
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.4336283185840708,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 22.98,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.565
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.7142857142857144,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 30.93,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.245
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 39.44,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.08
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.985,
+            "mean_contribute_rounds": 1.1728395061728396,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 8.105,
+            "mean_total_attempts": 10.09,
+            "failure_reasons": {
+              "success": 197,
+              "resource_depletion": 3
+            },
+            "contribute_rate": 0.81
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.87,
+            "mean_contribute_rounds": 1.4152542372881356,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 11.32,
+            "mean_total_attempts": 13.99,
+            "failure_reasons": {
+              "success": 174,
+              "resource_depletion": 26
+            },
+            "contribute_rate": 0.59
+          },
+          "Severe Burns": {
+            "success_rate": 0.575,
+            "mean_contribute_rounds": 2.8333333333333335,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 13.515,
+            "mean_total_attempts": 19.45,
+            "failure_reasons": {
+              "success": 115,
+              "resource_depletion": 85
+            },
+            "contribute_rate": 0.18
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.325,
+            "mean_contribute_rounds": 3.8333333333333335,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 14.205,
+            "mean_total_attempts": 21.085,
+            "failure_reasons": {
+              "success": 65,
+              "resource_depletion": 135
+            },
+            "contribute_rate": 0.09
+          }
+        }
+      },
+      "Master": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1710526315789473,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 1.355,
+            "mean_total_attempts": 11.515,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.76
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.7128712871287128,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 2.2,
+            "mean_total_attempts": 17.225,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.505
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.6363636363636362,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 3.22,
+            "mean_total_attempts": 23.475,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.275
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 4.24,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 3.73,
+            "mean_total_attempts": 30.25,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.125
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.167785234899329,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 13.33,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.745
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.336283185840708,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 19.155,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.565
+          },
+          "Severe Burns": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 2.5510204081632653,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 26.09,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.245
+          },
+          "Critical Poisoning": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 3.772727272727273,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 32.42,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.11
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.167741935483871,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.605,
+            "mean_total_attempts": 11.64,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.775
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 1.4957264957264957,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 8.675,
+            "mean_total_attempts": 17.445,
+            "failure_reasons": {
+              "success": 199,
+              "resource_depletion": 1
+            },
+            "contribute_rate": 0.585
+          },
+          "Severe Burns": {
+            "success_rate": 0.99,
+            "mean_contribute_rounds": 2.488372093023256,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 10.75,
+            "mean_total_attempts": 23.29,
+            "failure_reasons": {
+              "success": 198,
+              "resource_depletion": 2
+            },
+            "contribute_rate": 0.215
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.865,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 12.865,
+            "mean_total_attempts": 27.605,
+            "failure_reasons": {
+              "success": 173,
+              "resource_depletion": 27
+            },
+            "contribute_rate": 0.09
+          }
+        }
+      }
+    },
+    "escalation": {
+      "Untrained": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.58,
+            "mean_contribute_rounds": 1.2291666666666667,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 9.17,
+            "mean_total_attempts": 4.535,
+            "failure_reasons": {
+              "success": 116,
+              "treatment_escalation": 64,
+              "resource_depletion": 20
+            },
+            "contribute_rate": 0.48
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.24,
+            "mean_contribute_rounds": 1.803921568627451,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 11.005,
+            "mean_total_attempts": 5.87,
+            "failure_reasons": {
+              "success": 48,
+              "resource_depletion": 72,
+              "treatment_escalation": 80
+            },
+            "contribute_rate": 0.255
+          },
+          "Severe Burns": {
+            "success_rate": 0.05,
+            "mean_contribute_rounds": 2.6,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 7.9,
+            "mean_total_attempts": 4.205,
+            "failure_reasons": {
+              "resource_depletion": 56,
+              "treatment_escalation": 134,
+              "success": 10
+            },
+            "contribute_rate": 0.05
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3.3333333333333335,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 7.415,
+            "mean_total_attempts": 3.9,
+            "failure_reasons": {
+              "treatment_escalation": 149,
+              "resource_depletion": 51
+            },
+            "contribute_rate": 0.015
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.15,
+            "mean_contribute_rounds": 1.1388888888888888,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 15.93,
+            "failure_reasons": {
+              "attempt_limit": 112,
+              "treatment_escalation": 58,
+              "success": 30
+            },
+            "contribute_rate": 0.18
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.07,
+            "mean_contribute_rounds": 1.1,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 15.82,
+            "failure_reasons": {
+              "attempt_limit": 111,
+              "treatment_escalation": 75,
+              "success": 14
+            },
+            "contribute_rate": 0.1
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 11.74,
+            "failure_reasons": {
+              "attempt_limit": 91,
+              "treatment_escalation": 109
+            },
+            "contribute_rate": 0.02
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 10.21,
+            "failure_reasons": {
+              "treatment_escalation": 112,
+              "attempt_limit": 88
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.55,
+            "mean_contribute_rounds": 1.2127659574468086,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 8.72,
+            "mean_total_attempts": 4.225,
+            "failure_reasons": {
+              "success": 110,
+              "treatment_escalation": 75,
+              "resource_depletion": 15
+            },
+            "contribute_rate": 0.47
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.21,
+            "mean_contribute_rounds": 1.558139534883721,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 9.695,
+            "mean_total_attempts": 5.255,
+            "failure_reasons": {
+              "success": 42,
+              "treatment_escalation": 93,
+              "resource_depletion": 65
+            },
+            "contribute_rate": 0.215
+          },
+          "Severe Burns": {
+            "success_rate": 0.02,
+            "mean_contribute_rounds": 2.6666666666666665,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 7.81,
+            "mean_total_attempts": 4.15,
+            "failure_reasons": {
+              "treatment_escalation": 141,
+              "resource_depletion": 55,
+              "success": 4
+            },
+            "contribute_rate": 0.03
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.015,
+            "mean_contribute_rounds": 4.25,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 7.51,
+            "mean_total_attempts": 3.94,
+            "failure_reasons": {
+              "treatment_escalation": 146,
+              "resource_depletion": 51,
+              "success": 3
+            },
+            "contribute_rate": 0.02
+          }
+        }
+      },
+      "Novice": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.57,
+            "mean_contribute_rounds": 1.186046511627907,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 6.885,
+            "mean_total_attempts": 5.06,
+            "failure_reasons": {
+              "success": 114,
+              "treatment_escalation": 80,
+              "resource_depletion": 6
+            },
+            "contribute_rate": 0.43
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.425,
+            "mean_contribute_rounds": 1.5925925925925926,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 9.66,
+            "mean_total_attempts": 7.005,
+            "failure_reasons": {
+              "treatment_escalation": 81,
+              "resource_depletion": 34,
+              "success": 85
+            },
+            "contribute_rate": 0.27
+          },
+          "Severe Burns": {
+            "success_rate": 0.095,
+            "mean_contribute_rounds": 2.2857142857142856,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 5.825,
+            "mean_total_attempts": 4.02,
+            "failure_reasons": {
+              "success": 19,
+              "treatment_escalation": 150,
+              "resource_depletion": 31
+            },
+            "contribute_rate": 0.035
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.035,
+            "mean_contribute_rounds": 3.5,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 5.965,
+            "mean_total_attempts": 4.48,
+            "failure_reasons": {
+              "treatment_escalation": 159,
+              "resource_depletion": 34,
+              "success": 7
+            },
+            "contribute_rate": 0.01
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.465,
+            "mean_contribute_rounds": 1.1756756756756757,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 15.215,
+            "failure_reasons": {
+              "success": 93,
+              "attempt_limit": 49,
+              "treatment_escalation": 58
+            },
+            "contribute_rate": 0.37
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.325,
+            "mean_contribute_rounds": 1.607843137254902,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 16.785,
+            "failure_reasons": {
+              "treatment_escalation": 82,
+              "attempt_limit": 53,
+              "success": 65
+            },
+            "contribute_rate": 0.255
+          },
+          "Severe Burns": {
+            "success_rate": 0.16,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 15.68,
+            "failure_reasons": {
+              "treatment_escalation": 114,
+              "attempt_limit": 54,
+              "success": 32
+            },
+            "contribute_rate": 0.055
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.11,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 14.735,
+            "failure_reasons": {
+              "treatment_escalation": 141,
+              "attempt_limit": 37,
+              "success": 22
+            },
+            "contribute_rate": 0.015
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.65,
+            "mean_contribute_rounds": 1.2429906542056075,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 8.19,
+            "mean_total_attempts": 5.11,
+            "failure_reasons": {
+              "success": 130,
+              "treatment_escalation": 64,
+              "resource_depletion": 6
+            },
+            "contribute_rate": 0.535
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.35,
+            "mean_contribute_rounds": 1.6170212765957446,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 9.97,
+            "mean_total_attempts": 6.44,
+            "failure_reasons": {
+              "success": 70,
+              "treatment_escalation": 87,
+              "resource_depletion": 43
+            },
+            "contribute_rate": 0.235
+          },
+          "Severe Burns": {
+            "success_rate": 0.075,
+            "mean_contribute_rounds": 2.8333333333333335,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 7.4,
+            "mean_total_attempts": 4.75,
+            "failure_reasons": {
+              "treatment_escalation": 142,
+              "resource_depletion": 43,
+              "success": 15
+            },
+            "contribute_rate": 0.03
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.015,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 6.95,
+            "mean_total_attempts": 4.71,
+            "failure_reasons": {
+              "resource_depletion": 39,
+              "treatment_escalation": 158,
+              "success": 3
+            },
+            "contribute_rate": 0.03
+          }
+        }
+      },
+      "Competent": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.615,
+            "mean_contribute_rounds": 1.1978021978021978,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.385,
+            "mean_total_attempts": 5.495,
+            "failure_reasons": {
+              "treatment_escalation": 77,
+              "success": 123
+            },
+            "contribute_rate": 0.455
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.585,
+            "mean_contribute_rounds": 1.7361111111111112,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 9.09,
+            "mean_total_attempts": 8.75,
+            "failure_reasons": {
+              "success": 117,
+              "treatment_escalation": 67,
+              "resource_depletion": 16
+            },
+            "contribute_rate": 0.36
+          },
+          "Severe Burns": {
+            "success_rate": 0.205,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 6.13,
+            "mean_total_attempts": 5.97,
+            "failure_reasons": {
+              "treatment_escalation": 139,
+              "resource_depletion": 20,
+              "success": 41
+            },
+            "contribute_rate": 0.075
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.045,
+            "mean_contribute_rounds": 3.6666666666666665,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 5.72,
+            "mean_total_attempts": 5.505,
+            "failure_reasons": {
+              "treatment_escalation": 161,
+              "resource_depletion": 30,
+              "success": 9
+            },
+            "contribute_rate": 0.015
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.61,
+            "mean_contribute_rounds": 1.223529411764706,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 12.25,
+            "failure_reasons": {
+              "success": 122,
+              "treatment_escalation": 72,
+              "attempt_limit": 6
+            },
+            "contribute_rate": 0.425
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.495,
+            "mean_contribute_rounds": 1.5849056603773586,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 18.19,
+            "failure_reasons": {
+              "success": 99,
+              "treatment_escalation": 75,
+              "attempt_limit": 26
+            },
+            "contribute_rate": 0.265
+          },
+          "Severe Burns": {
+            "success_rate": 0.21,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 11.49,
+            "failure_reasons": {
+              "treatment_escalation": 148,
+              "attempt_limit": 10,
+              "success": 42
+            },
+            "contribute_rate": 0.055
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.175,
+            "mean_contribute_rounds": 3.75,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 13.33,
+            "failure_reasons": {
+              "treatment_escalation": 155,
+              "success": 35,
+              "attempt_limit": 10
+            },
+            "contribute_rate": 0.02
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.63,
+            "mean_contribute_rounds": 1.203883495145631,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 7.09,
+            "mean_total_attempts": 5.515,
+            "failure_reasons": {
+              "resource_depletion": 3,
+              "treatment_escalation": 71,
+              "success": 126
+            },
+            "contribute_rate": 0.515
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.445,
+            "mean_contribute_rounds": 1.5,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 9.25,
+            "mean_total_attempts": 7.855,
+            "failure_reasons": {
+              "success": 89,
+              "treatment_escalation": 85,
+              "resource_depletion": 26
+            },
+            "contribute_rate": 0.25
+          },
+          "Severe Burns": {
+            "success_rate": 0.13,
+            "mean_contribute_rounds": 3.272727272727273,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 7.065,
+            "mean_total_attempts": 5.89,
+            "failure_reasons": {
+              "success": 26,
+              "treatment_escalation": 139,
+              "resource_depletion": 35
+            },
+            "contribute_rate": 0.055
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.02,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 6.74,
+            "mean_total_attempts": 5.585,
+            "failure_reasons": {
+              "success": 4,
+              "treatment_escalation": 157,
+              "resource_depletion": 39
+            },
+            "contribute_rate": 0.0
+          }
+        }
+      },
+      "Expert": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.66,
+            "mean_contribute_rounds": 1.2346938775510203,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 3.585,
+            "mean_total_attempts": 6.82,
+            "failure_reasons": {
+              "treatment_escalation": 68,
+              "success": 132
+            },
+            "contribute_rate": 0.49
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.61,
+            "mean_contribute_rounds": 1.5932203389830508,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 5.115,
+            "mean_total_attempts": 9.415,
+            "failure_reasons": {
+              "treatment_escalation": 77,
+              "success": 122,
+              "resource_depletion": 1
+            },
+            "contribute_rate": 0.295
+          },
+          "Severe Burns": {
+            "success_rate": 0.24,
+            "mean_contribute_rounds": 2.7857142857142856,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 3.73,
+            "mean_total_attempts": 6.575,
+            "failure_reasons": {
+              "treatment_escalation": 149,
+              "success": 48,
+              "resource_depletion": 3
+            },
+            "contribute_rate": 0.07
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.23,
+            "mean_contribute_rounds": 4.1,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 4.66,
+            "mean_total_attempts": 8.23,
+            "failure_reasons": {
+              "success": 46,
+              "treatment_escalation": 151,
+              "resource_depletion": 3
+            },
+            "contribute_rate": 0.05
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.67,
+            "mean_contribute_rounds": 1.2358490566037736,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 9.98,
+            "failure_reasons": {
+              "success": 134,
+              "treatment_escalation": 66
+            },
+            "contribute_rate": 0.53
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.59,
+            "mean_contribute_rounds": 1.7627118644067796,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 13.9,
+            "failure_reasons": {
+              "success": 118,
+              "treatment_escalation": 82
+            },
+            "contribute_rate": 0.295
+          },
+          "Severe Burns": {
+            "success_rate": 0.27,
+            "mean_contribute_rounds": 3.1818181818181817,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 11.555,
+            "failure_reasons": {
+              "treatment_escalation": 145,
+              "success": 54,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.055
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.25,
+            "mean_contribute_rounds": 4,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 12.745,
+            "failure_reasons": {
+              "success": 50,
+              "treatment_escalation": 150
+            },
+            "contribute_rate": 0.04
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.635,
+            "mean_contribute_rounds": 1.3457943925233644,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.275,
+            "mean_total_attempts": 6.47,
+            "failure_reasons": {
+              "success": 127,
+              "treatment_escalation": 73
+            },
+            "contribute_rate": 0.535
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.545,
+            "mean_contribute_rounds": 1.7551020408163265,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 6.99,
+            "mean_total_attempts": 8.675,
+            "failure_reasons": {
+              "success": 109,
+              "treatment_escalation": 89,
+              "resource_depletion": 2
+            },
+            "contribute_rate": 0.245
+          },
+          "Severe Burns": {
+            "success_rate": 0.295,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 6.105,
+            "mean_total_attempts": 7.905,
+            "failure_reasons": {
+              "treatment_escalation": 137,
+              "success": 59,
+              "resource_depletion": 4
+            },
+            "contribute_rate": 0.085
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.145,
+            "mean_contribute_rounds": 4.166666666666667,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 5.615,
+            "mean_total_attempts": 7.125,
+            "failure_reasons": {
+              "treatment_escalation": 161,
+              "success": 29,
+              "resource_depletion": 10
+            },
+            "contribute_rate": 0.03
+          }
+        }
+      },
+      "Master": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.66,
+            "mean_contribute_rounds": 1.28125,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0.84,
+            "mean_total_attempts": 7.74,
+            "failure_reasons": {
+              "success": 132,
+              "treatment_escalation": 68
+            },
+            "contribute_rate": 0.48
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.525,
+            "mean_contribute_rounds": 1.709090909090909,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 1.03,
+            "mean_total_attempts": 9.4,
+            "failure_reasons": {
+              "treatment_escalation": 95,
+              "success": 105
+            },
+            "contribute_rate": 0.275
+          },
+          "Severe Burns": {
+            "success_rate": 0.25,
+            "mean_contribute_rounds": 3.1666666666666665,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0.9,
+            "mean_total_attempts": 7.47,
+            "failure_reasons": {
+              "success": 50,
+              "treatment_escalation": 150
+            },
+            "contribute_rate": 0.06
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.21,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 1.205,
+            "mean_total_attempts": 8.43,
+            "failure_reasons": {
+              "treatment_escalation": 158,
+              "success": 42
+            },
+            "contribute_rate": 0.015
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.665,
+            "mean_contribute_rounds": 1.2912621359223302,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 8.7,
+            "failure_reasons": {
+              "success": 133,
+              "treatment_escalation": 67
+            },
+            "contribute_rate": 0.515
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.535,
+            "mean_contribute_rounds": 1.7407407407407407,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 10.925,
+            "failure_reasons": {
+              "treatment_escalation": 93,
+              "success": 107
+            },
+            "contribute_rate": 0.27
+          },
+          "Severe Burns": {
+            "success_rate": 0.25,
+            "mean_contribute_rounds": 2.8461538461538463,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 8.735,
+            "failure_reasons": {
+              "treatment_escalation": 150,
+              "success": 50
+            },
+            "contribute_rate": 0.065
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.23,
+            "mean_contribute_rounds": 3.5,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 10.29,
+            "failure_reasons": {
+              "treatment_escalation": 154,
+              "success": 46
+            },
+            "contribute_rate": 0.02
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.68,
+            "mean_contribute_rounds": 1.2268041237113403,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 3.745,
+            "mean_total_attempts": 7.86,
+            "failure_reasons": {
+              "treatment_escalation": 64,
+              "success": 136
+            },
+            "contribute_rate": 0.485
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.57,
+            "mean_contribute_rounds": 1.6,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 4.725,
+            "mean_total_attempts": 10.46,
+            "failure_reasons": {
+              "treatment_escalation": 86,
+              "success": 114
+            },
+            "contribute_rate": 0.275
+          },
+          "Severe Burns": {
+            "success_rate": 0.215,
+            "mean_contribute_rounds": 2.5833333333333335,
+            "mean_healed_rounds": 4,
+            "mean_msu_used": 2.98,
+            "mean_total_attempts": 6.555,
+            "failure_reasons": {
+              "success": 43,
+              "treatment_escalation": 157
+            },
+            "contribute_rate": 0.06
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.27,
+            "mean_contribute_rounds": 4.125,
+            "mean_healed_rounds": 5,
+            "mean_msu_used": 5.11,
+            "mean_total_attempts": 10.98,
+            "failure_reasons": {
+              "treatment_escalation": 141,
+              "success": 54,
+              "resource_depletion": 5
+            },
+            "contribute_rate": 0.04
+          }
+        }
+      }
+    },
+    "natural_healing": {
+      "Untrained": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.885,
+            "mean_contribute_rounds": 1.1753246753246753,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 13.405,
+            "mean_total_attempts": 6.76,
+            "failure_reasons": {
+              "success": 177,
+              "resource_depletion": 23
+            },
+            "contribute_rate": 0.77
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.465,
+            "mean_contribute_rounds": 1.4845360824742269,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 17.245,
+            "mean_total_attempts": 9.235,
+            "failure_reasons": {
+              "success": 93,
+              "resource_depletion": 107
+            },
+            "contribute_rate": 0.485
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.347826086956522,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 17.96,
+            "mean_total_attempts": 9.46,
+            "failure_reasons": {
+              "resource_depletion": 106,
+              "natural_healing_point": 94
+            },
+            "contribute_rate": 0.115
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 17.545,
+            "mean_total_attempts": 9.445,
+            "failure_reasons": {
+              "natural_healing_point": 102,
+              "resource_depletion": 98
+            },
+            "contribute_rate": 0.04
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.17,
+            "mean_contribute_rounds": 1.0724637681159421,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 23.47,
+            "failure_reasons": {
+              "attempt_limit": 166,
+              "success": 34
+            },
+            "contribute_rate": 0.345
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.055,
+            "mean_contribute_rounds": 1.1020408163265305,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 26.185,
+            "failure_reasons": {
+              "attempt_limit": 189,
+              "success": 11
+            },
+            "contribute_rate": 0.245
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.3076923076923075,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 26.525,
+            "failure_reasons": {
+              "attempt_limit": 184,
+              "natural_healing_point": 16
+            },
+            "contribute_rate": 0.065
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 26.865,
+            "failure_reasons": {
+              "attempt_limit": 186,
+              "natural_healing_point": 14
+            },
+            "contribute_rate": 0.01
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.88,
+            "mean_contribute_rounds": 1.178343949044586,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 13.65,
+            "mean_total_attempts": 6.75,
+            "failure_reasons": {
+              "success": 176,
+              "resource_depletion": 24
+            },
+            "contribute_rate": 0.785
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.49,
+            "mean_contribute_rounds": 1.4329896907216495,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 17.945,
+            "mean_total_attempts": 9.265,
+            "failure_reasons": {
+              "resource_depletion": 102,
+              "success": 98
+            },
+            "contribute_rate": 0.485
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.269230769230769,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 18.14,
+            "mean_total_attempts": 9.315,
+            "failure_reasons": {
+              "natural_healing_point": 78,
+              "resource_depletion": 122
+            },
+            "contribute_rate": 0.13
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 18,
+            "mean_total_attempts": 9.205,
+            "failure_reasons": {
+              "resource_depletion": 112,
+              "natural_healing_point": 88
+            },
+            "contribute_rate": 0.025
+          }
+        }
+      },
+      "Novice": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.98,
+            "mean_contribute_rounds": 1.1586206896551725,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 11.255,
+            "mean_total_attempts": 8.005,
+            "failure_reasons": {
+              "success": 196,
+              "resource_depletion": 4
+            },
+            "contribute_rate": 0.725
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.705,
+            "mean_contribute_rounds": 1.5504587155963303,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 15.685,
+            "mean_total_attempts": 11.04,
+            "failure_reasons": {
+              "resource_depletion": 59,
+              "success": 141
+            },
+            "contribute_rate": 0.545
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 15.575,
+            "mean_total_attempts": 11.27,
+            "failure_reasons": {
+              "natural_healing_point": 155,
+              "resource_depletion": 45
+            },
+            "contribute_rate": 0.2
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 15.75,
+            "mean_total_attempts": 11.045,
+            "failure_reasons": {
+              "resource_depletion": 54,
+              "natural_healing_point": 146
+            },
+            "contribute_rate": 0.045
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.57,
+            "mean_contribute_rounds": 1.1,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 23.975,
+            "failure_reasons": {
+              "attempt_limit": 86,
+              "success": 114
+            },
+            "contribute_rate": 0.6
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.505,
+            "mean_contribute_rounds": 1.4,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 32.045,
+            "failure_reasons": {
+              "success": 101,
+              "attempt_limit": 99
+            },
+            "contribute_rate": 0.475
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.2758620689655173,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 31.415,
+            "failure_reasons": {
+              "natural_healing_point": 103,
+              "attempt_limit": 97
+            },
+            "contribute_rate": 0.145
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 30.625,
+            "failure_reasons": {
+              "attempt_limit": 78,
+              "natural_healing_point": 122
+            },
+            "contribute_rate": 0.025
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.975,
+            "mean_contribute_rounds": 1.1164383561643836,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 12.545,
+            "mean_total_attempts": 7.825,
+            "failure_reasons": {
+              "success": 195,
+              "resource_depletion": 5
+            },
+            "contribute_rate": 0.73
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.68,
+            "mean_contribute_rounds": 1.556701030927835,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 16.91,
+            "mean_total_attempts": 11.34,
+            "failure_reasons": {
+              "success": 136,
+              "resource_depletion": 64
+            },
+            "contribute_rate": 0.485
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.289473684210526,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 17.145,
+            "mean_total_attempts": 10.995,
+            "failure_reasons": {
+              "natural_healing_point": 138,
+              "resource_depletion": 62
+            },
+            "contribute_rate": 0.19
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 16.995,
+            "mean_total_attempts": 11.105,
+            "failure_reasons": {
+              "natural_healing_point": 127,
+              "resource_depletion": 73
+            },
+            "contribute_rate": 0.05
+          }
+        }
+      },
+      "Competent": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.99,
+            "mean_contribute_rounds": 1.096774193548387,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 9.455,
+            "mean_total_attempts": 8.5,
+            "failure_reasons": {
+              "success": 198,
+              "resource_depletion": 2
+            },
+            "contribute_rate": 0.775
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.91,
+            "mean_contribute_rounds": 1.3773584905660377,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 13.16,
+            "mean_total_attempts": 12.525,
+            "failure_reasons": {
+              "success": 182,
+              "resource_depletion": 18
+            },
+            "contribute_rate": 0.53
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.375,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 13.165,
+            "mean_total_attempts": 12.925,
+            "failure_reasons": {
+              "natural_healing_point": 180,
+              "resource_depletion": 20
+            },
+            "contribute_rate": 0.16
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 13.015,
+            "mean_total_attempts": 12.515,
+            "failure_reasons": {
+              "natural_healing_point": 185,
+              "resource_depletion": 15
+            },
+            "contribute_rate": 0.03
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.905,
+            "mean_contribute_rounds": 1.1818181818181819,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 20.645,
+            "failure_reasons": {
+              "success": 181,
+              "attempt_limit": 19
+            },
+            "contribute_rate": 0.715
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.825,
+            "mean_contribute_rounds": 1.457142857142857,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 28.56,
+            "failure_reasons": {
+              "success": 165,
+              "attempt_limit": 35
+            },
+            "contribute_rate": 0.525
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.3783783783783785,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 29.865,
+            "failure_reasons": {
+              "natural_healing_point": 174,
+              "attempt_limit": 26
+            },
+            "contribute_rate": 0.185
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 28.86,
+            "failure_reasons": {
+              "natural_healing_point": 177,
+              "attempt_limit": 23
+            },
+            "contribute_rate": 0.035
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 1.2066666666666668,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 11.605,
+            "mean_total_attempts": 8.95,
+            "failure_reasons": {
+              "success": 199,
+              "resource_depletion": 1
+            },
+            "contribute_rate": 0.75
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.875,
+            "mean_contribute_rounds": 1.4807692307692308,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 15.74,
+            "mean_total_attempts": 12.72,
+            "failure_reasons": {
+              "success": 175,
+              "resource_depletion": 25
+            },
+            "contribute_rate": 0.52
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.3947368421052633,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 16.3,
+            "mean_total_attempts": 12.95,
+            "failure_reasons": {
+              "natural_healing_point": 162,
+              "resource_depletion": 38
+            },
+            "contribute_rate": 0.19
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 15.725,
+            "mean_total_attempts": 12.85,
+            "failure_reasons": {
+              "natural_healing_point": 175,
+              "resource_depletion": 25
+            },
+            "contribute_rate": 0.04
+          }
+        }
+      },
+      "Expert": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1383647798742138,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.09,
+            "mean_total_attempts": 9.845,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.795
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.4411764705882353,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 7.615,
+            "mean_total_attempts": 14.83,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.51
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.342857142857143,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 8.105,
+            "mean_total_attempts": 15.195,
+            "failure_reasons": {
+              "natural_healing_point": 198,
+              "resource_depletion": 2
+            },
+            "contribute_rate": 0.175
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 7.94,
+            "mean_total_attempts": 15.175,
+            "failure_reasons": {
+              "natural_healing_point": 200
+            },
+            "contribute_rate": 0.05
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1830065359477124,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 15.16,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.765
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.4915254237288136,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 22.985,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.59
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.4358974358974357,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 22.355,
+            "failure_reasons": {
+              "natural_healing_point": 200
+            },
+            "contribute_rate": 0.195
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 23.515,
+            "failure_reasons": {
+              "natural_healing_point": 197,
+              "attempt_limit": 3
+            },
+            "contribute_rate": 0.06
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1772151898734178,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 8.35,
+            "mean_total_attempts": 10.075,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.79
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.995,
+            "mean_contribute_rounds": 1.3695652173913044,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 12.07,
+            "mean_total_attempts": 14.905,
+            "failure_reasons": {
+              "success": 199,
+              "resource_depletion": 1
+            },
+            "contribute_rate": 0.46
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.375,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 12.125,
+            "mean_total_attempts": 15.82,
+            "failure_reasons": {
+              "natural_healing_point": 197,
+              "resource_depletion": 3
+            },
+            "contribute_rate": 0.16
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 12.34,
+            "mean_total_attempts": 14.945,
+            "failure_reasons": {
+              "natural_healing_point": 197,
+              "resource_depletion": 3
+            },
+            "contribute_rate": 0.015
+          }
+        }
+      },
+      "Master": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.2341772151898733,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 1.625,
+            "mean_total_attempts": 11.235,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.79
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.5233644859813085,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 2.39,
+            "mean_total_attempts": 17.685,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.535
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.4047619047619047,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 2.635,
+            "mean_total_attempts": 17.86,
+            "failure_reasons": {
+              "natural_healing_point": 200
+            },
+            "contribute_rate": 0.21
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 2.26,
+            "mean_total_attempts": 17.59,
+            "failure_reasons": {
+              "natural_healing_point": 200
+            },
+            "contribute_rate": 0.06
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1375,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 12.31,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.8
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.439252336448598,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 19.43,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.535
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.3055555555555554,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 19.185,
+            "failure_reasons": {
+              "natural_healing_point": 200
+            },
+            "contribute_rate": 0.18
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 19.025,
+            "failure_reasons": {
+              "natural_healing_point": 200
+            },
+            "contribute_rate": 0.04
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.1341463414634145,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.575,
+            "mean_total_attempts": 11.69,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.82
+          },
+          "Moderate Bleeding": {
+            "success_rate": 1.0,
+            "mean_contribute_rounds": 1.5901639344262295,
+            "mean_healed_rounds": 3,
+            "mean_msu_used": 8.52,
+            "mean_total_attempts": 17.105,
+            "failure_reasons": {
+              "success": 200
+            },
+            "contribute_rate": 0.61
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2.3333333333333335,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 8.37,
+            "mean_total_attempts": 17.295,
+            "failure_reasons": {
+              "natural_healing_point": 200
+            },
+            "contribute_rate": 0.165
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 3,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 8.66,
+            "mean_total_attempts": 17.515,
+            "failure_reasons": {
+              "natural_healing_point": 200
+            },
+            "contribute_rate": 0.045
+          }
+        }
+      }
+    },
+    "combined": {
+      "Untrained": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.42,
+            "mean_contribute_rounds": 1.197674418604651,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 7.43,
+            "mean_total_attempts": 4.05,
+            "failure_reasons": {
+              "treatment_escalation": 73,
+              "success": 84,
+              "resource_depletion": 43
+            },
+            "contribute_rate": 0.43
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.1515151515151516,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 6.325,
+            "mean_total_attempts": 3.435,
+            "failure_reasons": {
+              "treatment_escalation": 104,
+              "resource_depletion": 38,
+              "natural_healing_point": 58
+            },
+            "contribute_rate": 0.165
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 3.695,
+            "mean_total_attempts": 1.935,
+            "failure_reasons": {
+              "treatment_escalation": 166,
+              "resource_depletion": 22,
+              "natural_healing_point": 12
+            },
+            "contribute_rate": 0.02
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 5.06,
+            "mean_total_attempts": 2.6,
+            "failure_reasons": {
+              "treatment_escalation": 150,
+              "resource_depletion": 30,
+              "natural_healing_point": 20
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.025,
+            "mean_contribute_rounds": 1.1111111111111112,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 6.13,
+            "failure_reasons": {
+              "attempt_limit": 113,
+              "treatment_escalation": 82,
+              "success": 5
+            },
+            "contribute_rate": 0.045
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 5.465,
+            "failure_reasons": {
+              "attempt_limit": 98,
+              "treatment_escalation": 94,
+              "natural_healing_point": 8
+            },
+            "contribute_rate": 0.03
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 4.185,
+            "failure_reasons": {
+              "attempt_limit": 81,
+              "treatment_escalation": 119
+            },
+            "contribute_rate": 0.0
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 4.2,
+            "failure_reasons": {
+              "attempt_limit": 84,
+              "treatment_escalation": 116
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.25,
+            "mean_contribute_rounds": 1.2333333333333334,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 7.11,
+            "mean_total_attempts": 3.76,
+            "failure_reasons": {
+              "treatment_escalation": 91,
+              "resource_depletion": 59,
+              "success": 50
+            },
+            "contribute_rate": 0.3
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.263157894736842,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 7.105,
+            "mean_total_attempts": 3.67,
+            "failure_reasons": {
+              "natural_healing_point": 61,
+              "resource_depletion": 48,
+              "treatment_escalation": 91
+            },
+            "contribute_rate": 0.19
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 4.105,
+            "mean_total_attempts": 2.16,
+            "failure_reasons": {
+              "resource_depletion": 25,
+              "treatment_escalation": 159,
+              "natural_healing_point": 16
+            },
+            "contribute_rate": 0.01
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 5.07,
+            "mean_total_attempts": 2.585,
+            "failure_reasons": {
+              "treatment_escalation": 148,
+              "natural_healing_point": 20,
+              "resource_depletion": 32
+            },
+            "contribute_rate": 0.0
+          }
+        }
+      },
+      "Novice": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.51,
+            "mean_contribute_rounds": 1.2528735632183907,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 6.28,
+            "mean_total_attempts": 4.595,
+            "failure_reasons": {
+              "treatment_escalation": 77,
+              "success": 102,
+              "resource_depletion": 21
+            },
+            "contribute_rate": 0.435
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.4210526315789473,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 5.78,
+            "mean_total_attempts": 3.935,
+            "failure_reasons": {
+              "natural_healing_point": 70,
+              "treatment_escalation": 105,
+              "resource_depletion": 25
+            },
+            "contribute_rate": 0.19
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 4.3,
+            "mean_total_attempts": 2.93,
+            "failure_reasons": {
+              "natural_healing_point": 33,
+              "treatment_escalation": 155,
+              "resource_depletion": 12
+            },
+            "contribute_rate": 0.005
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 4.14,
+            "mean_total_attempts": 3.14,
+            "failure_reasons": {
+              "treatment_escalation": 148,
+              "natural_healing_point": 27,
+              "resource_depletion": 25
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.1,
+            "mean_contribute_rounds": 1.0454545454545454,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 6.235,
+            "failure_reasons": {
+              "attempt_limit": 97,
+              "treatment_escalation": 83,
+              "success": 20
+            },
+            "contribute_rate": 0.11
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.3125,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 5.79,
+            "failure_reasons": {
+              "attempt_limit": 88,
+              "treatment_escalation": 93,
+              "natural_healing_point": 19
+            },
+            "contribute_rate": 0.08
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 3.705,
+            "failure_reasons": {
+              "treatment_escalation": 133,
+              "attempt_limit": 63,
+              "natural_healing_point": 4
+            },
+            "contribute_rate": 0.0
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 4.05,
+            "failure_reasons": {
+              "treatment_escalation": 122,
+              "attempt_limit": 76,
+              "natural_healing_point": 2
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.46,
+            "mean_contribute_rounds": 1.2857142857142858,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 6.315,
+            "mean_total_attempts": 3.985,
+            "failure_reasons": {
+              "success": 92,
+              "treatment_escalation": 87,
+              "resource_depletion": 21
+            },
+            "contribute_rate": 0.385
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.2424242424242424,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 6.1,
+            "mean_total_attempts": 3.985,
+            "failure_reasons": {
+              "treatment_escalation": 107,
+              "resource_depletion": 33,
+              "natural_healing_point": 60
+            },
+            "contribute_rate": 0.165
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 4.665,
+            "mean_total_attempts": 3.095,
+            "failure_reasons": {
+              "treatment_escalation": 152,
+              "resource_depletion": 30,
+              "natural_healing_point": 18
+            },
+            "contribute_rate": 0.0
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 3.83,
+            "mean_total_attempts": 2.43,
+            "failure_reasons": {
+              "treatment_escalation": 164,
+              "resource_depletion": 13,
+              "natural_healing_point": 23
+            },
+            "contribute_rate": 0.0
+          }
+        }
+      },
+      "Competent": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.525,
+            "mean_contribute_rounds": 1.3417721518987342,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 5.42,
+            "mean_total_attempts": 5.065,
+            "failure_reasons": {
+              "treatment_escalation": 87,
+              "success": 105,
+              "resource_depletion": 8
+            },
+            "contribute_rate": 0.395
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.3863636363636365,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 5.31,
+            "mean_total_attempts": 5.09,
+            "failure_reasons": {
+              "natural_healing_point": 101,
+              "treatment_escalation": 89,
+              "resource_depletion": 10
+            },
+            "contribute_rate": 0.22
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 3.36,
+            "mean_total_attempts": 3.09,
+            "failure_reasons": {
+              "resource_depletion": 11,
+              "treatment_escalation": 162,
+              "natural_healing_point": 26,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.01
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 3.155,
+            "mean_total_attempts": 3.165,
+            "failure_reasons": {
+              "treatment_escalation": 163,
+              "natural_healing_point": 29,
+              "resource_depletion": 8
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.155,
+            "mean_contribute_rounds": 1.09375,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 6.09,
+            "failure_reasons": {
+              "attempt_limit": 75,
+              "success": 31,
+              "treatment_escalation": 94
+            },
+            "contribute_rate": 0.16
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.3214285714285714,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 6.665,
+            "failure_reasons": {
+              "treatment_escalation": 86,
+              "natural_healing_point": 40,
+              "attempt_limit": 74
+            },
+            "contribute_rate": 0.14
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 4.41,
+            "failure_reasons": {
+              "treatment_escalation": 125,
+              "attempt_limit": 67,
+              "natural_healing_point": 8
+            },
+            "contribute_rate": 0.005
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 4.42,
+            "failure_reasons": {
+              "treatment_escalation": 124,
+              "attempt_limit": 72,
+              "natural_healing_point": 4
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.55,
+            "mean_contribute_rounds": 1.2127659574468086,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 6.615,
+            "mean_total_attempts": 5.23,
+            "failure_reasons": {
+              "success": 110,
+              "treatment_escalation": 75,
+              "resource_depletion": 15
+            },
+            "contribute_rate": 0.47
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.2894736842105263,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 5.545,
+            "mean_total_attempts": 4.38,
+            "failure_reasons": {
+              "natural_healing_point": 86,
+              "treatment_escalation": 104,
+              "resource_depletion": 10
+            },
+            "contribute_rate": 0.19
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 4.615,
+            "mean_total_attempts": 3.735,
+            "failure_reasons": {
+              "treatment_escalation": 155,
+              "resource_depletion": 5,
+              "natural_healing_point": 40
+            },
+            "contribute_rate": 0.02
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 3.97,
+            "mean_total_attempts": 3.41,
+            "failure_reasons": {
+              "treatment_escalation": 150,
+              "resource_depletion": 6,
+              "natural_healing_point": 43,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.0
+          }
+        }
+      },
+      "Expert": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.505,
+            "mean_contribute_rounds": 1.2933333333333332,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 2.875,
+            "mean_total_attempts": 5.055,
+            "failure_reasons": {
+              "treatment_escalation": 97,
+              "success": 101,
+              "resource_depletion": 1,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.375
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.4102564102564104,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 2.845,
+            "mean_total_attempts": 5.835,
+            "failure_reasons": {
+              "natural_healing_point": 104,
+              "treatment_escalation": 90,
+              "attempt_limit": 6
+            },
+            "contribute_rate": 0.195
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 2.375,
+            "mean_total_attempts": 4.555,
+            "failure_reasons": {
+              "treatment_escalation": 144,
+              "natural_healing_point": 55,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.025
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 2.185,
+            "mean_total_attempts": 3.85,
+            "failure_reasons": {
+              "treatment_escalation": 150,
+              "natural_healing_point": 47,
+              "attempt_limit": 3
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.31,
+            "mean_contribute_rounds": 1.26,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 6.605,
+            "failure_reasons": {
+              "treatment_escalation": 89,
+              "success": 62,
+              "attempt_limit": 49
+            },
+            "contribute_rate": 0.25
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.1379310344827587,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 5.355,
+            "failure_reasons": {
+              "treatment_escalation": 107,
+              "natural_healing_point": 49,
+              "attempt_limit": 44
+            },
+            "contribute_rate": 0.145
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 3.87,
+            "failure_reasons": {
+              "treatment_escalation": 143,
+              "attempt_limit": 41,
+              "natural_healing_point": 16
+            },
+            "contribute_rate": 0.01
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 4.51,
+            "failure_reasons": {
+              "treatment_escalation": 139,
+              "attempt_limit": 35,
+              "natural_healing_point": 26
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.535,
+            "mean_contribute_rounds": 1.3333333333333333,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 4.705,
+            "mean_total_attempts": 5.515,
+            "failure_reasons": {
+              "success": 107,
+              "resource_depletion": 3,
+              "treatment_escalation": 89,
+              "attempt_limit": 1
+            },
+            "contribute_rate": 0.405
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.2682926829268293,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 4.135,
+            "mean_total_attempts": 5.36,
+            "failure_reasons": {
+              "treatment_escalation": 102,
+              "natural_healing_point": 91,
+              "attempt_limit": 5,
+              "resource_depletion": 2
+            },
+            "contribute_rate": 0.205
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 3.055,
+            "mean_total_attempts": 3.94,
+            "failure_reasons": {
+              "natural_healing_point": 46,
+              "treatment_escalation": 147,
+              "resource_depletion": 1,
+              "attempt_limit": 6
+            },
+            "contribute_rate": 0.015
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 2.99,
+            "mean_total_attempts": 4.055,
+            "failure_reasons": {
+              "treatment_escalation": 158,
+              "natural_healing_point": 38,
+              "attempt_limit": 3,
+              "resource_depletion": 1
+            },
+            "contribute_rate": 0.0
+          }
+        }
+      },
+      "Master": {
+        "conservative": {
+          "Light Trauma": {
+            "success_rate": 0.51,
+            "mean_contribute_rounds": 1.3205128205128205,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0.67,
+            "mean_total_attempts": 6.17,
+            "failure_reasons": {
+              "treatment_escalation": 90,
+              "success": 102,
+              "attempt_limit": 8
+            },
+            "contribute_rate": 0.39
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.3658536585365855,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0.815,
+            "mean_total_attempts": 6.33,
+            "failure_reasons": {
+              "treatment_escalation": 95,
+              "natural_healing_point": 89,
+              "attempt_limit": 16
+            },
+            "contribute_rate": 0.205
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0.515,
+            "mean_total_attempts": 4.18,
+            "failure_reasons": {
+              "treatment_escalation": 151,
+              "attempt_limit": 14,
+              "natural_healing_point": 35
+            },
+            "contribute_rate": 0.03
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0.655,
+            "mean_total_attempts": 4.285,
+            "failure_reasons": {
+              "treatment_escalation": 151,
+              "natural_healing_point": 41,
+              "attempt_limit": 8
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "foresight": {
+          "Light Trauma": {
+            "success_rate": 0.445,
+            "mean_contribute_rounds": 1.2714285714285714,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 6.835,
+            "failure_reasons": {
+              "treatment_escalation": 81,
+              "success": 89,
+              "attempt_limit": 30
+            },
+            "contribute_rate": 0.35
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.2941176470588236,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 6.555,
+            "failure_reasons": {
+              "treatment_escalation": 94,
+              "natural_healing_point": 83,
+              "attempt_limit": 23
+            },
+            "contribute_rate": 0.17
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 4.455,
+            "failure_reasons": {
+              "treatment_escalation": 141,
+              "natural_healing_point": 38,
+              "attempt_limit": 21
+            },
+            "contribute_rate": 0.02
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 0,
+            "mean_total_attempts": 4.71,
+            "failure_reasons": {
+              "treatment_escalation": 141,
+              "attempt_limit": 32,
+              "natural_healing_point": 27
+            },
+            "contribute_rate": 0.0
+          }
+        },
+        "resource_heavy": {
+          "Light Trauma": {
+            "success_rate": 0.5,
+            "mean_contribute_rounds": 1.2571428571428571,
+            "mean_healed_rounds": 2,
+            "mean_msu_used": 3.07,
+            "mean_total_attempts": 6.24,
+            "failure_reasons": {
+              "success": 100,
+              "treatment_escalation": 93,
+              "attempt_limit": 7
+            },
+            "contribute_rate": 0.35
+          },
+          "Moderate Bleeding": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 1.4242424242424243,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 2.33,
+            "mean_total_attempts": 5.115,
+            "failure_reasons": {
+              "natural_healing_point": 79,
+              "treatment_escalation": 112,
+              "attempt_limit": 9
+            },
+            "contribute_rate": 0.165
+          },
+          "Severe Burns": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": 2,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 1.995,
+            "mean_total_attempts": 5.01,
+            "failure_reasons": {
+              "treatment_escalation": 144,
+              "natural_healing_point": 42,
+              "attempt_limit": 14
+            },
+            "contribute_rate": 0.02
+          },
+          "Critical Poisoning": {
+            "success_rate": 0.0,
+            "mean_contribute_rounds": null,
+            "mean_healed_rounds": null,
+            "mean_msu_used": 1.605,
+            "mean_total_attempts": 3.93,
+            "failure_reasons": {
+              "natural_healing_point": 29,
+              "treatment_escalation": 159,
+              "attempt_limit": 12
+            },
+            "contribute_rate": 0.0
+          }
+        }
+      }
+    }
+  },
+  "analysis": {
+    "original": {
+      "overall_success_rate": 0.6940833333333335,
+      "gameplay_flow_score": 80.86433333333333,
+      "strategic_diversity": 0,
+      "failure_pattern_distribution": {
+        "success": 8329,
+        "resource_depletion": 2394,
+        "attempt_limit": 1277
+      },
+      "skill_progression_clarity": 0,
+      "average_attempts": 19.13566666666667
+    },
+    "strict_attempts": {
+      "overall_success_rate": 0.8433333333333332,
+      "gameplay_flow_score": 81.79733333333333,
+      "strategic_diversity": 0,
+      "failure_pattern_distribution": {
+        "success": 10120,
+        "attempt_limit": 1880
+      },
+      "skill_progression_clarity": 0,
+      "average_attempts": 18.20266666666667
+    },
+    "strict_resources": {
+      "overall_success_rate": 0.6990833333333334,
+      "gameplay_flow_score": 76.47766666666666,
+      "strategic_diversity": 0,
+      "failure_pattern_distribution": {
+        "success": 8389,
+        "resource_depletion": 3611
+      },
+      "skill_progression_clarity": 0,
+      "average_attempts": 23.522333333333332
+    },
+    "escalation": {
+      "overall_success_rate": 0.3254166666666667,
+      "gameplay_flow_score": 91.39108333333333,
+      "strategic_diversity": 0,
+      "failure_pattern_distribution": {
+        "success": 3905,
+        "treatment_escalation": 6629,
+        "resource_depletion": 818,
+        "attempt_limit": 648
+      },
+      "skill_progression_clarity": 0,
+      "average_attempts": 8.608916666666667
+    },
+    "natural_healing": {
+      "overall_success_rate": 0.41425,
+      "gameplay_flow_score": 83.87066666666666,
+      "strategic_diversity": 0,
+      "failure_pattern_distribution": {
+        "success": 4971,
+        "resource_depletion": 1213,
+        "natural_healing_point": 4625,
+        "attempt_limit": 1191
+      },
+      "skill_progression_clarity": 0,
+      "average_attempts": 16.129333333333335
+    },
+    "combined": {
+      "overall_success_rate": 0.09666666666666666,
+      "gameplay_flow_score": 95.51466666666667,
+      "strategic_diversity": 0,
+      "failure_pattern_distribution": {
+        "treatment_escalation": 7140,
+        "success": 1160,
+        "resource_depletion": 558,
+        "natural_healing_point": 1763,
+        "attempt_limit": 1379
+      },
+      "skill_progression_clarity": 0,
+      "average_attempts": 4.485333333333334
+    }
+  },
+  "mechanisms": {
+    "original": {
+      "max_attempts_per_card": 20,
+      "max_total_msu": 20,
+      "escalation_threshold": null,
+      "natural_healing_after_cards": null
+    },
+    "strict_attempts": {
+      "max_attempts_per_card": 15,
+      "max_total_msu": null,
+      "escalation_threshold": null,
+      "natural_healing_after_cards": null
+    },
+    "strict_resources": {
+      "max_attempts_per_card": null,
+      "max_total_msu": 15,
+      "escalation_threshold": null,
+      "natural_healing_after_cards": null
+    },
+    "escalation": {
+      "max_attempts_per_card": 20,
+      "max_total_msu": 20,
+      "escalation_threshold": 3,
+      "natural_healing_after_cards": null
+    },
+    "natural_healing": {
+      "max_attempts_per_card": 20,
+      "max_total_msu": 20,
+      "escalation_threshold": null,
+      "natural_healing_after_cards": 3
+    },
+    "combined": {
+      "max_attempts_per_card": 10,
+      "max_total_msu": 15,
+      "escalation_threshold": 2,
+      "natural_healing_after_cards": 2
+    }
+  }
+}

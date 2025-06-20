@@ -1,0 +1,957 @@
+{
+  "results": {
+    "Untrained": {
+      "conservative": {
+        "Minor Problem": {
+          "success_rate": 0.8033333333333333,
+          "mean_rounds": 4.356846473029045,
+          "mean_spare_parts": 0,
+          "mean_attempts": 3.9033333333333333,
+          "failure_breakdown": {
+            "attempt_limit": 23,
+            "success": 241,
+            "system_degradation": 36
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.66,
+          "mean_rounds": 6.111111111111111,
+          "mean_spare_parts": 0,
+          "mean_attempts": 4.94,
+          "failure_breakdown": {
+            "success": 198,
+            "system_degradation": 69,
+            "attempt_limit": 33
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5166666666666667,
+          "mean_rounds": 7.232258064516129,
+          "mean_spare_parts": 0,
+          "mean_attempts": 5.65,
+          "failure_breakdown": {
+            "success": 155,
+            "attempt_limit": 35,
+            "system_degradation": 110
+          }
+        }
+      },
+      "analytical": {
+        "Minor Problem": {
+          "success_rate": 0.78,
+          "mean_rounds": 4,
+          "mean_spare_parts": 0,
+          "mean_attempts": 3.84,
+          "failure_breakdown": {
+            "success": 234,
+            "system_degradation": 36,
+            "attempt_limit": 30
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.61,
+          "mean_rounds": 6.387978142076503,
+          "mean_spare_parts": 0,
+          "mean_attempts": 6.136666666666667,
+          "failure_breakdown": {
+            "success": 185,
+            "system_degradation": 78,
+            "attempt_limit": 37
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5733333333333334,
+          "mean_rounds": 6.343023255813954,
+          "mean_spare_parts": 0,
+          "mean_attempts": 4.806666666666667,
+          "failure_breakdown": {
+            "success": 172,
+            "system_degradation": 99,
+            "attempt_limit": 29
+          }
+        }
+      },
+      "preventive": {
+        "Minor Problem": {
+          "success_rate": 0.7933333333333333,
+          "mean_rounds": 4.264705882352941,
+          "mean_spare_parts": 0,
+          "mean_attempts": 4.026666666666666,
+          "failure_breakdown": {
+            "success": 238,
+            "system_degradation": 38,
+            "attempt_limit": 24
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.64,
+          "mean_rounds": 6,
+          "mean_spare_parts": 0,
+          "mean_attempts": 4.766666666666667,
+          "failure_breakdown": {
+            "success": 192,
+            "attempt_limit": 36,
+            "system_degradation": 72
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5266666666666666,
+          "mean_rounds": 7.69620253164557,
+          "mean_spare_parts": 0,
+          "mean_attempts": 6.466666666666667,
+          "failure_breakdown": {
+            "success": 158,
+            "attempt_limit": 39,
+            "system_degradation": 103
+          }
+        }
+      },
+      "adaptive": {
+        "Minor Problem": {
+          "success_rate": 0.8066666666666666,
+          "mean_rounds": 3.7479338842975207,
+          "mean_spare_parts": 0,
+          "mean_attempts": 3.0633333333333335,
+          "failure_breakdown": {
+            "success": 242,
+            "system_degradation": 41,
+            "attempt_limit": 17
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.5833333333333334,
+          "mean_rounds": 7.508571428571429,
+          "mean_spare_parts": 0,
+          "mean_attempts": 6.47,
+          "failure_breakdown": {
+            "attempt_limit": 46,
+            "system_degradation": 78,
+            "success": 176
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5566666666666666,
+          "mean_rounds": 7.059880239520958,
+          "mean_spare_parts": 0,
+          "mean_attempts": 4.956666666666667,
+          "failure_breakdown": {
+            "success": 167,
+            "system_degradation": 108,
+            "attempt_limit": 25
+          }
+        }
+      },
+      "resource_heavy": {
+        "Minor Problem": {
+          "success_rate": 0.8566666666666667,
+          "mean_rounds": 2.914396887159533,
+          "mean_spare_parts": 0.9066666666666666,
+          "mean_attempts": 1.3733333333333333,
+          "failure_breakdown": {
+            "success": 257,
+            "system_degradation": 36,
+            "attempt_limit": 7
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.63,
+          "mean_rounds": 4.777777777777778,
+          "mean_spare_parts": 1.2066666666666668,
+          "mean_attempts": 1.7866666666666666,
+          "failure_breakdown": {
+            "success": 189,
+            "system_degradation": 105,
+            "attempt_limit": 6
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.57,
+          "mean_rounds": 6,
+          "mean_spare_parts": 1.18,
+          "mean_attempts": 1.95,
+          "failure_breakdown": {
+            "success": 171,
+            "system_degradation": 120,
+            "attempt_limit": 9
+          }
+        }
+      }
+    },
+    "Novice": {
+      "conservative": {
+        "Minor Problem": {
+          "success_rate": 0.8166666666666667,
+          "mean_rounds": 4.2122448979591836,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.8,
+          "failure_breakdown": {
+            "success": 245,
+            "system_degradation": 43,
+            "attempt_limit": 12
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.7166666666666667,
+          "mean_rounds": 4.855813953488372,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.36,
+          "failure_breakdown": {
+            "success": 215,
+            "system_degradation": 70,
+            "attempt_limit": 15
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5833333333333334,
+          "mean_rounds": 6.337142857142857,
+          "mean_spare_parts": 0,
+          "mean_attempts": 3.046666666666667,
+          "failure_breakdown": {
+            "success": 174,
+            "system_degradation": 114,
+            "attempt_limit": 11,
+            "cascade_failure": 1
+          }
+        }
+      },
+      "analytical": {
+        "Minor Problem": {
+          "success_rate": 0.8533333333333334,
+          "mean_rounds": 3.51171875,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.93,
+          "failure_breakdown": {
+            "success": 256,
+            "attempt_limit": 11,
+            "system_degradation": 33
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.7366666666666667,
+          "mean_rounds": 5.574660633484163,
+          "mean_spare_parts": 0,
+          "mean_attempts": 3.1566666666666667,
+          "failure_breakdown": {
+            "attempt_limit": 10,
+            "success": 221,
+            "system_degradation": 69
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5833333333333334,
+          "mean_rounds": 6.497142857142857,
+          "mean_spare_parts": 0,
+          "mean_attempts": 3.5166666666666666,
+          "failure_breakdown": {
+            "success": 175,
+            "system_degradation": 108,
+            "attempt_limit": 17
+          }
+        }
+      },
+      "preventive": {
+        "Minor Problem": {
+          "success_rate": 0.84,
+          "mean_rounds": 3.007936507936508,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.89,
+          "failure_breakdown": {
+            "success": 252,
+            "attempt_limit": 11,
+            "system_degradation": 37
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.65,
+          "mean_rounds": 5.425641025641026,
+          "mean_spare_parts": 0,
+          "mean_attempts": 3.0533333333333332,
+          "failure_breakdown": {
+            "success": 195,
+            "system_degradation": 90,
+            "attempt_limit": 15
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5733333333333334,
+          "mean_rounds": 6.755813953488372,
+          "mean_spare_parts": 0,
+          "mean_attempts": 3.1233333333333335,
+          "failure_breakdown": {
+            "system_degradation": 117,
+            "success": 172,
+            "attempt_limit": 11
+          }
+        }
+      },
+      "adaptive": {
+        "Minor Problem": {
+          "success_rate": 0.8633333333333333,
+          "mean_rounds": 3.776061776061776,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.1466666666666665,
+          "failure_breakdown": {
+            "system_degradation": 35,
+            "success": 259,
+            "attempt_limit": 6
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.6466666666666666,
+          "mean_rounds": 4.88659793814433,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.486666666666667,
+          "failure_breakdown": {
+            "success": 194,
+            "system_degradation": 98,
+            "attempt_limit": 8
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5333333333333333,
+          "mean_rounds": 6.18125,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.7066666666666666,
+          "failure_breakdown": {
+            "system_degradation": 126,
+            "success": 160,
+            "attempt_limit": 14
+          }
+        }
+      },
+      "resource_heavy": {
+        "Minor Problem": {
+          "success_rate": 0.88,
+          "mean_rounds": 2.492424242424242,
+          "mean_spare_parts": 0.6333333333333333,
+          "mean_attempts": 0.77,
+          "failure_breakdown": {
+            "success": 264,
+            "system_degradation": 36
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.72,
+          "mean_rounds": 4.041666666666667,
+          "mean_spare_parts": 0.6933333333333334,
+          "mean_attempts": 1.0166666666666666,
+          "failure_breakdown": {
+            "success": 216,
+            "system_degradation": 83,
+            "attempt_limit": 1
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6333333333333333,
+          "mean_rounds": 5.310526315789474,
+          "mean_spare_parts": 0.9533333333333334,
+          "mean_attempts": 1.39,
+          "failure_breakdown": {
+            "success": 190,
+            "system_degradation": 110
+          }
+        }
+      }
+    },
+    "Competent": {
+      "conservative": {
+        "Minor Problem": {
+          "success_rate": 0.88,
+          "mean_rounds": 3.253787878787879,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.5466666666666666,
+          "failure_breakdown": {
+            "success": 264,
+            "system_degradation": 33,
+            "attempt_limit": 3
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.68,
+          "mean_rounds": 5.617647058823529,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.49,
+          "failure_breakdown": {
+            "success": 204,
+            "system_degradation": 87,
+            "attempt_limit": 9
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5666666666666667,
+          "mean_rounds": 5.776470588235294,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.033333333333333,
+          "failure_breakdown": {
+            "success": 170,
+            "system_degradation": 124,
+            "attempt_limit": 6
+          }
+        }
+      },
+      "analytical": {
+        "Minor Problem": {
+          "success_rate": 0.8633333333333333,
+          "mean_rounds": 3.1853281853281854,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.5033333333333334,
+          "failure_breakdown": {
+            "success": 259,
+            "system_degradation": 38,
+            "attempt_limit": 3
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.7066666666666667,
+          "mean_rounds": 4.537735849056604,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.7066666666666668,
+          "failure_breakdown": {
+            "system_degradation": 83,
+            "success": 212,
+            "attempt_limit": 5
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6033333333333334,
+          "mean_rounds": 6.607734806629834,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.683333333333333,
+          "failure_breakdown": {
+            "success": 181,
+            "system_degradation": 116,
+            "attempt_limit": 3
+          }
+        }
+      },
+      "preventive": {
+        "Minor Problem": {
+          "success_rate": 0.8566666666666667,
+          "mean_rounds": 3.431906614785992,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.8366666666666667,
+          "failure_breakdown": {
+            "success": 257,
+            "system_degradation": 37,
+            "attempt_limit": 6
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.7033333333333334,
+          "mean_rounds": 5.118483412322274,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.84,
+          "failure_breakdown": {
+            "success": 211,
+            "system_degradation": 85,
+            "attempt_limit": 4
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5933333333333334,
+          "mean_rounds": 5.825842696629214,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.1533333333333333,
+          "failure_breakdown": {
+            "success": 178,
+            "system_degradation": 118,
+            "attempt_limit": 4
+          }
+        }
+      },
+      "adaptive": {
+        "Minor Problem": {
+          "success_rate": 0.8466666666666667,
+          "mean_rounds": 3.87007874015748,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.01,
+          "failure_breakdown": {
+            "success": 254,
+            "system_degradation": 43,
+            "attempt_limit": 3
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.71,
+          "mean_rounds": 4.647887323943662,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.7966666666666666,
+          "failure_breakdown": {
+            "success": 213,
+            "system_degradation": 84,
+            "attempt_limit": 3
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5466666666666666,
+          "mean_rounds": 5.689024390243903,
+          "mean_spare_parts": 0,
+          "mean_attempts": 2.4166666666666665,
+          "failure_breakdown": {
+            "success": 164,
+            "system_degradation": 126,
+            "attempt_limit": 10
+          }
+        }
+      },
+      "resource_heavy": {
+        "Minor Problem": {
+          "success_rate": 0.8566666666666667,
+          "mean_rounds": 2.3891050583657587,
+          "mean_spare_parts": 0.38333333333333336,
+          "mean_attempts": 0.7966666666666666,
+          "failure_breakdown": {
+            "success": 257,
+            "system_degradation": 43
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.6866666666666666,
+          "mean_rounds": 4.339805825242719,
+          "mean_spare_parts": 0.7433333333333333,
+          "mean_attempts": 1.3633333333333333,
+          "failure_breakdown": {
+            "system_degradation": 94,
+            "success": 206
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.62,
+          "mean_rounds": 5.338709677419355,
+          "mean_spare_parts": 0.8266666666666667,
+          "mean_attempts": 1.36,
+          "failure_breakdown": {
+            "success": 186,
+            "system_degradation": 114
+          }
+        }
+      }
+    },
+    "Expert": {
+      "conservative": {
+        "Minor Problem": {
+          "success_rate": 0.88,
+          "mean_rounds": 2.992424242424242,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.1833333333333333,
+          "failure_breakdown": {
+            "success": 264,
+            "system_degradation": 36
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.74,
+          "mean_rounds": 4.675675675675675,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.5833333333333333,
+          "failure_breakdown": {
+            "success": 222,
+            "system_degradation": 78
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6033333333333334,
+          "mean_rounds": 5.226519337016574,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.5066666666666666,
+          "failure_breakdown": {
+            "success": 181,
+            "system_degradation": 116,
+            "attempt_limit": 3
+          }
+        }
+      },
+      "analytical": {
+        "Minor Problem": {
+          "success_rate": 0.8733333333333333,
+          "mean_rounds": 2.8396946564885495,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.1366666666666667,
+          "failure_breakdown": {
+            "success": 262,
+            "system_degradation": 38
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.73,
+          "mean_rounds": 4.853881278538813,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.6033333333333333,
+          "failure_breakdown": {
+            "success": 219,
+            "system_degradation": 80,
+            "attempt_limit": 1
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6233333333333333,
+          "mean_rounds": 5.807486631016043,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.79,
+          "failure_breakdown": {
+            "system_degradation": 111,
+            "success": 186,
+            "cascade_failure": 1,
+            "attempt_limit": 2
+          }
+        }
+      },
+      "preventive": {
+        "Minor Problem": {
+          "success_rate": 0.86,
+          "mean_rounds": 2.872093023255814,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.14,
+          "failure_breakdown": {
+            "success": 258,
+            "system_degradation": 41,
+            "attempt_limit": 1
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.7566666666666667,
+          "mean_rounds": 4.3392070484581495,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.5166666666666666,
+          "failure_breakdown": {
+            "success": 227,
+            "system_degradation": 72,
+            "attempt_limit": 1
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6366666666666667,
+          "mean_rounds": 4.769633507853404,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.2466666666666666,
+          "failure_breakdown": {
+            "system_degradation": 108,
+            "success": 190,
+            "cascade_failure": 1,
+            "attempt_limit": 1
+          }
+        }
+      },
+      "adaptive": {
+        "Minor Problem": {
+          "success_rate": 0.8766666666666667,
+          "mean_rounds": 2.908745247148289,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.32,
+          "failure_breakdown": {
+            "system_degradation": 37,
+            "success": 263
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.73,
+          "mean_rounds": 4.972602739726027,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.5466666666666666,
+          "failure_breakdown": {
+            "success": 219,
+            "system_degradation": 81
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6233333333333333,
+          "mean_rounds": 5.652406417112299,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.59,
+          "failure_breakdown": {
+            "system_degradation": 113,
+            "success": 186,
+            "cascade_failure": 1
+          }
+        }
+      },
+      "resource_heavy": {
+        "Minor Problem": {
+          "success_rate": 0.89,
+          "mean_rounds": 2.5655430711610485,
+          "mean_spare_parts": 0.2733333333333333,
+          "mean_attempts": 0.79,
+          "failure_breakdown": {
+            "system_degradation": 33,
+            "success": 267
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.7033333333333334,
+          "mean_rounds": 4.080568720379147,
+          "mean_spare_parts": 0.30333333333333334,
+          "mean_attempts": 1.0266666666666666,
+          "failure_breakdown": {
+            "success": 211,
+            "system_degradation": 89
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6266666666666667,
+          "mean_rounds": 5.335106382978723,
+          "mean_spare_parts": 0.5966666666666667,
+          "mean_attempts": 1.5333333333333334,
+          "failure_breakdown": {
+            "success": 188,
+            "system_degradation": 112
+          }
+        }
+      }
+    },
+    "Master": {
+      "conservative": {
+        "Minor Problem": {
+          "success_rate": 0.86,
+          "mean_rounds": 2.62015503875969,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.0333333333333334,
+          "failure_breakdown": {
+            "success": 258,
+            "system_degradation": 42
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.7133333333333334,
+          "mean_rounds": 4.140186915887851,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.0666666666666667,
+          "failure_breakdown": {
+            "success": 214,
+            "system_degradation": 86
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.5766666666666667,
+          "mean_rounds": 5.069364161849711,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.3533333333333333,
+          "failure_breakdown": {
+            "system_degradation": 127,
+            "success": 173
+          }
+        }
+      },
+      "analytical": {
+        "Minor Problem": {
+          "success_rate": 0.8733333333333333,
+          "mean_rounds": 2.3625954198473282,
+          "mean_spare_parts": 0,
+          "mean_attempts": 0.71,
+          "failure_breakdown": {
+            "success": 262,
+            "system_degradation": 38
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.71,
+          "mean_rounds": 4.323943661971831,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.1933333333333334,
+          "failure_breakdown": {
+            "success": 213,
+            "system_degradation": 87
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6033333333333334,
+          "mean_rounds": 5.3535911602209945,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.39,
+          "failure_breakdown": {
+            "success": 181,
+            "system_degradation": 119
+          }
+        }
+      },
+      "preventive": {
+        "Minor Problem": {
+          "success_rate": 0.86,
+          "mean_rounds": 2.697674418604651,
+          "mean_spare_parts": 0,
+          "mean_attempts": 0.95,
+          "failure_breakdown": {
+            "success": 258,
+            "system_degradation": 42
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.7433333333333333,
+          "mean_rounds": 4.73542600896861,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.4366666666666668,
+          "failure_breakdown": {
+            "system_degradation": 77,
+            "success": 223
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.59,
+          "mean_rounds": 4.7740112994350286,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.0833333333333333,
+          "failure_breakdown": {
+            "success": 177,
+            "system_degradation": 123
+          }
+        }
+      },
+      "adaptive": {
+        "Minor Problem": {
+          "success_rate": 0.8666666666666667,
+          "mean_rounds": 2.792307692307692,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.0733333333333333,
+          "failure_breakdown": {
+            "success": 260,
+            "system_degradation": 40
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.71,
+          "mean_rounds": 4.272300469483568,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.3933333333333333,
+          "failure_breakdown": {
+            "success": 213,
+            "system_degradation": 87
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6166666666666667,
+          "mean_rounds": 5.648648648648648,
+          "mean_spare_parts": 0,
+          "mean_attempts": 1.41,
+          "failure_breakdown": {
+            "system_degradation": 115,
+            "success": 185
+          }
+        }
+      },
+      "resource_heavy": {
+        "Minor Problem": {
+          "success_rate": 0.8866666666666667,
+          "mean_rounds": 2.5488721804511276,
+          "mean_spare_parts": 0.11333333333333333,
+          "mean_attempts": 1.01,
+          "failure_breakdown": {
+            "success": 266,
+            "system_degradation": 34
+          }
+        },
+        "Moderate Problem": {
+          "success_rate": 0.7033333333333334,
+          "mean_rounds": 4.369668246445498,
+          "mean_spare_parts": 0.17666666666666667,
+          "mean_attempts": 1.2,
+          "failure_breakdown": {
+            "system_degradation": 89,
+            "success": 211
+          }
+        },
+        "Major Problem": {
+          "success_rate": 0.6766666666666666,
+          "mean_rounds": 4.916256157635468,
+          "mean_spare_parts": 0.15666666666666668,
+          "mean_attempts": 1.21,
+          "failure_breakdown": {
+            "success": 203,
+            "system_degradation": 97
+          }
+        }
+      }
+    }
+  },
+  "analysis": {
+    "Untrained": {
+      "best_overall": {
+        "Minor Problem": "resource_heavy",
+        "Moderate Problem": "conservative",
+        "Major Problem": "analytical"
+      },
+      "most_efficient": {
+        "Minor Problem": "resource_heavy",
+        "Moderate Problem": "conservative",
+        "Major Problem": "analytical"
+      },
+      "strategy_variance": {
+        "Minor Problem": 0.036035425415713626,
+        "Moderate Problem": 0.046915911718961076,
+        "Major Problem": 0.04678401775985042
+      }
+    },
+    "Novice": {
+      "best_overall": {
+        "Minor Problem": "resource_heavy",
+        "Moderate Problem": "analytical",
+        "Major Problem": "resource_heavy"
+      },
+      "most_efficient": {
+        "Minor Problem": "resource_heavy",
+        "Moderate Problem": "resource_heavy",
+        "Major Problem": "resource_heavy"
+      },
+      "strategy_variance": {
+        "Minor Problem": 0.028175043906344125,
+        "Moderate Problem": 0.0610765201114768,
+        "Major Problem": 0.06130228101332152
+      }
+    },
+    "Competent": {
+      "best_overall": {
+        "Minor Problem": "conservative",
+        "Moderate Problem": "adaptive",
+        "Major Problem": "resource_heavy"
+      },
+      "most_efficient": {
+        "Minor Problem": "resource_heavy",
+        "Moderate Problem": "resource_heavy",
+        "Major Problem": "resource_heavy"
+      },
+      "strategy_variance": {
+        "Minor Problem": 0.014335209545562924,
+        "Moderate Problem": 0.018940356363440655,
+        "Major Problem": 0.04997925514559457
+      }
+    },
+    "Expert": {
+      "best_overall": {
+        "Minor Problem": "resource_heavy",
+        "Moderate Problem": "preventive",
+        "Major Problem": "preventive"
+      },
+      "most_efficient": {
+        "Minor Problem": "resource_heavy",
+        "Moderate Problem": "resource_heavy",
+        "Major Problem": "resource_heavy"
+      },
+      "strategy_variance": {
+        "Minor Problem": 0.012447052689342576,
+        "Moderate Problem": 0.026474393176227025,
+        "Major Problem": 0.019449574009191586
+      }
+    },
+    "Master": {
+      "best_overall": {
+        "Minor Problem": "resource_heavy",
+        "Moderate Problem": "preventive",
+        "Major Problem": "resource_heavy"
+      },
+      "most_efficient": {
+        "Minor Problem": "resource_heavy",
+        "Moderate Problem": "resource_heavy",
+        "Major Problem": "resource_heavy"
+      },
+      "strategy_variance": {
+        "Minor Problem": 0.012832208995921426,
+        "Moderate Problem": 0.021935230892718306,
+        "Major Problem": 0.06326198848203973
+      }
+    }
+  },
+  "parameters": {
+    "max_attempts_per_node": 12,
+    "max_spare_parts": 15,
+    "degradation_threshold": 4,
+    "cascade_jack_limit": 3
+  }
+}

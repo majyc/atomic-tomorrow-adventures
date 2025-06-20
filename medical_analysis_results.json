@@ -1,0 +1,956 @@
+{
+  "raw_results": {
+    "Untrained": {
+      "conservative": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0089686098654709,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.906,
+          "mean_msu_used": 13.368,
+          "contribute_rate": 0.892
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.7692307692307692,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.52,
+          "mean_msu_used": 17.424,
+          "contribute_rate": 0.13
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.4482758620689653,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.126,
+          "mean_msu_used": 18.896,
+          "contribute_rate": 0.058
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 3.75,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.022,
+          "mean_msu_used": 19.052,
+          "contribute_rate": 0.008
+        }
+      },
+      "foresight": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.009049773755656,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.196,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.442
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.6,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.084,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.04
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.6,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.022,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.02
+        },
+        "5_spades": {
+          "mean_contribute_rounds": null,
+          "mean_healed_rounds": null,
+          "success_rate": 0.018,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.0
+        }
+      },
+      "prevention": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.166,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.43
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.6153846153846154,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.104,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.026
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.4,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.044,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.02
+        },
+        "5_spades": {
+          "mean_contribute_rounds": null,
+          "mean_healed_rounds": null,
+          "success_rate": 0.02,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.0
+        }
+      },
+      "mixed": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0048076923076923,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.206,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.416
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.3888888888888888,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.1,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.036
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.3636363636363638,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.034,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.022
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 5,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.012,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.002
+        }
+      },
+      "resource_heavy": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0154525386313467,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.88,
+          "mean_msu_used": 13.704,
+          "contribute_rate": 0.906
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.7241379310344827,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.482,
+          "mean_msu_used": 17.628,
+          "contribute_rate": 0.116
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.676470588235294,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.116,
+          "mean_msu_used": 18.884,
+          "contribute_rate": 0.068
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 3,
+          "mean_healed_rounds": null,
+          "success_rate": 0.02,
+          "mean_msu_used": 19.096,
+          "contribute_rate": 0.004
+        }
+      }
+    },
+    "Novice": {
+      "conservative": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.02,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.972,
+          "mean_msu_used": 11.278,
+          "contribute_rate": 0.9
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.8450704225352113,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.7,
+          "mean_msu_used": 15.632,
+          "contribute_rate": 0.142
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.883720930232558,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.396,
+          "mean_msu_used": 17.856,
+          "contribute_rate": 0.086
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 3.3333333333333335,
+          "mean_healed_rounds": null,
+          "success_rate": 0.11,
+          "mean_msu_used": 18.9,
+          "contribute_rate": 0.012
+        }
+      },
+      "foresight": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0133689839572193,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.652,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.748
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.7608695652173914,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.56,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.092
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.764705882352941,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.458,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.068
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.25,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.34,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.016
+        }
+      },
+      "prevention": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.010840108401084,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.662,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.738
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.7758620689655173,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.556,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.116
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.9393939393939394,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.43,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.066
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.7272727272727275,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.354,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.022
+        }
+      },
+      "mixed": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0222841225626742,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.622,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.718
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.7692307692307692,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.556,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.104
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.1785714285714284,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.426,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.056
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.37,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.012
+        }
+      },
+      "resource_heavy": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0270880361173815,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.984,
+          "mean_msu_used": 11.474,
+          "contribute_rate": 0.886
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.796875,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.732,
+          "mean_msu_used": 15.74,
+          "contribute_rate": 0.128
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.7941176470588234,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.368,
+          "mean_msu_used": 18.204,
+          "contribute_rate": 0.068
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 3.8333333333333335,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.146,
+          "mean_msu_used": 18.794,
+          "contribute_rate": 0.012
+        }
+      }
+    },
+    "Competent": {
+      "conservative": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0066518847006651,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.998,
+          "mean_msu_used": 9.184,
+          "contribute_rate": 0.902
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.7532467532467533,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.894,
+          "mean_msu_used": 13.418,
+          "contribute_rate": 0.154
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.1041666666666665,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.64,
+          "mean_msu_used": 16.428,
+          "contribute_rate": 0.096
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 3.727272727272727,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.362,
+          "mean_msu_used": 18.062,
+          "contribute_rate": 0.022
+        }
+      },
+      "foresight": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.026258205689278,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.948,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.914
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.9393939393939394,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.874,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.132
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.9767441860465116,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.828,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.086
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 3.9166666666666665,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.79,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.024
+        }
+      },
+      "prevention": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0091324200913243,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.928,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.876
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.890625,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.88,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.128
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.8333333333333335,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.82,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.084
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.792,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.026
+        }
+      },
+      "mixed": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0158013544018059,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.922,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.886
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.9615384615384615,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.9,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.156
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.111111111111111,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.83,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.072
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.8,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.77,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.02
+        }
+      },
+      "resource_heavy": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.024175824175824,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.996,
+          "mean_msu_used": 9.352,
+          "contribute_rate": 0.91
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.876543209876543,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.92,
+          "mean_msu_used": 13.324,
+          "contribute_rate": 0.162
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.9782608695652173,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.64,
+          "mean_msu_used": 16.578,
+          "contribute_rate": 0.092
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.538461538461538,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.292,
+          "mean_msu_used": 18.49,
+          "contribute_rate": 0.026
+        }
+      }
+    },
+    "Expert": {
+      "conservative": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0153846153846153,
+          "mean_healed_rounds": 2,
+          "success_rate": 1.0,
+          "mean_msu_used": 5.224,
+          "contribute_rate": 0.91
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.8428571428571427,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.996,
+          "mean_msu_used": 8.442,
+          "contribute_rate": 0.14
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.0925925925925926,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.97,
+          "mean_msu_used": 10.48,
+          "contribute_rate": 0.108
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.2,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.902,
+          "mean_msu_used": 12.62,
+          "contribute_rate": 0.02
+        }
+      },
+      "foresight": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0155555555555555,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.998,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.9
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.9466666666666668,
+          "mean_healed_rounds": 3,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.15
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.148936170212766,
+          "mean_healed_rounds": 4,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.094
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.571428571428571,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.998,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.028
+        }
+      },
+      "prevention": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0089686098654709,
+          "mean_healed_rounds": 2,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.892
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.9523809523809523,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.994,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.126
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.92,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.996,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.1
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.15,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.998,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.04
+        }
+      },
+      "mixed": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0356347438752784,
+          "mean_healed_rounds": 2,
+          "success_rate": 0.998,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.898
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.9047619047619047,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.996,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.126
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.2,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.998,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.09
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.083333333333333,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.994,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.024
+        }
+      },
+      "resource_heavy": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0362473347547974,
+          "mean_healed_rounds": 2,
+          "success_rate": 1.0,
+          "mean_msu_used": 5.616,
+          "contribute_rate": 0.938
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.7285714285714286,
+          "mean_healed_rounds": 3,
+          "success_rate": 0.99,
+          "mean_msu_used": 8.804,
+          "contribute_rate": 0.14
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.12,
+          "mean_healed_rounds": 4,
+          "success_rate": 0.974,
+          "mean_msu_used": 10.91,
+          "contribute_rate": 0.1
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.181818181818182,
+          "mean_healed_rounds": 5,
+          "success_rate": 0.854,
+          "mean_msu_used": 13.894,
+          "contribute_rate": 0.022
+        }
+      }
+    },
+    "Master": {
+      "conservative": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0176991150442478,
+          "mean_healed_rounds": 2,
+          "success_rate": 1.0,
+          "mean_msu_used": 1.468,
+          "contribute_rate": 0.904
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 2.0779220779220777,
+          "mean_healed_rounds": 3,
+          "success_rate": 1.0,
+          "mean_msu_used": 2.416,
+          "contribute_rate": 0.154
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 2.891891891891892,
+          "mean_healed_rounds": 4,
+          "success_rate": 1.0,
+          "mean_msu_used": 3.16,
+          "contribute_rate": 0.074
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.2,
+          "mean_healed_rounds": 5,
+          "success_rate": 1.0,
+          "mean_msu_used": 3.824,
+          "contribute_rate": 0.03
+        }
+      },
+      "foresight": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0238611713665944,
+          "mean_healed_rounds": 2,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.922
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.796875,
+          "mean_healed_rounds": 3,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.128
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.1515151515151514,
+          "mean_healed_rounds": 4,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.132
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.5,
+          "mean_healed_rounds": 5,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.02
+        }
+      },
+      "prevention": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.0267260579064588,
+          "mean_healed_rounds": 2,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.898
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 2.0277777777777777,
+          "mean_healed_rounds": 3,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.144
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.0697674418604652,
+          "mean_healed_rounds": 4,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.086
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.125,
+          "mean_healed_rounds": 5,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.032
+        }
+      },
+      "mixed": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.024390243902439,
+          "mean_healed_rounds": 2,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.902
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.7878787878787878,
+          "mean_healed_rounds": 3,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.132
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.0350877192982457,
+          "mean_healed_rounds": 4,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.114
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4,
+          "mean_healed_rounds": 5,
+          "success_rate": 1.0,
+          "mean_msu_used": 0,
+          "contribute_rate": 0.034
+        }
+      },
+      "resource_heavy": {
+        "2_clubs": {
+          "mean_contribute_rounds": 1.025287356321839,
+          "mean_healed_rounds": 2,
+          "success_rate": 1.0,
+          "mean_msu_used": 1.754,
+          "contribute_rate": 0.87
+        },
+        "3_hearts": {
+          "mean_contribute_rounds": 1.9714285714285715,
+          "mean_healed_rounds": 3,
+          "success_rate": 1.0,
+          "mean_msu_used": 2.988,
+          "contribute_rate": 0.14
+        },
+        "4_diamonds": {
+          "mean_contribute_rounds": 3.0476190476190474,
+          "mean_healed_rounds": 4,
+          "success_rate": 1.0,
+          "mean_msu_used": 4.088,
+          "contribute_rate": 0.084
+        },
+        "5_spades": {
+          "mean_contribute_rounds": 4.153846153846154,
+          "mean_healed_rounds": 5,
+          "success_rate": 1.0,
+          "mean_msu_used": 5.2,
+          "contribute_rate": 0.026
+        }
+      }
+    }
+  },
+  "analysis": {
+    "Untrained": {
+      "best_for_contribution": {
+        "2_clubs": "prevention",
+        "3_hearts": "mixed",
+        "4_diamonds": "mixed",
+        "5_spades": "resource_heavy"
+      },
+      "best_for_healing": {
+        "2_clubs": "conservative",
+        "3_hearts": "conservative",
+        "4_diamonds": "conservative",
+        "5_spades": "conservative"
+      },
+      "most_efficient": {
+        "2_clubs": "mixed",
+        "3_hearts": "prevention",
+        "4_diamonds": "prevention",
+        "5_spades": "prevention"
+      },
+      "strategy_differences": {
+        "2_clubs": {
+          "contribute_range": 0.015452538631346657,
+          "contribute_coefficient_of_variation": 0.0056831560874381765
+        },
+        "3_hearts": {
+          "contribute_range": 0.3803418803418803,
+          "contribute_coefficient_of_variation": 0.09103510403462488
+        },
+        "4_diamonds": {
+          "contribute_range": 0.3128342245989302,
+          "contribute_coefficient_of_variation": 0.0538590896481538
+        },
+        "5_spades": {
+          "contribute_range": 2,
+          "contribute_coefficient_of_variation": 0.25796501389323706
+        }
+      }
+    },
+    "Novice": {
+      "best_for_contribution": {
+        "2_clubs": "prevention",
+        "3_hearts": "foresight",
+        "4_diamonds": "foresight",
+        "5_spades": "conservative"
+      },
+      "best_for_healing": {
+        "2_clubs": "conservative",
+        "3_hearts": "conservative",
+        "4_diamonds": "conservative",
+        "5_spades": "foresight"
+      },
+      "most_efficient": {
+        "2_clubs": "prevention",
+        "3_hearts": "foresight",
+        "4_diamonds": "foresight",
+        "5_spades": "mixed"
+      },
+      "strategy_differences": {
+        "2_clubs": {
+          "contribute_range": 0.01624792771629746,
+          "contribute_coefficient_of_variation": 0.006494551548788269
+        },
+        "3_hearts": {
+          "contribute_range": 0.0842008573178199,
+          "contribute_coefficient_of_variation": 0.01886477712581104
+        },
+        "4_diamonds": {
+          "contribute_range": 0.41386554621848726,
+          "contribute_coefficient_of_variation": 0.05647828510965099
+        },
+        "5_spades": {
+          "contribute_range": 1.393939393939394,
+          "contribute_coefficient_of_variation": 0.12774588812081078
+        }
+      }
+    },
+    "Competent": {
+      "best_for_contribution": {
+        "2_clubs": "conservative",
+        "3_hearts": "conservative",
+        "4_diamonds": "prevention",
+        "5_spades": "conservative"
+      },
+      "best_for_healing": {
+        "2_clubs": "conservative",
+        "3_hearts": "conservative",
+        "4_diamonds": "conservative",
+        "5_spades": "conservative"
+      },
+      "most_efficient": {
+        "2_clubs": "foresight",
+        "3_hearts": "mixed",
+        "4_diamonds": "mixed",
+        "5_spades": "prevention"
+      },
+      "strategy_differences": {
+        "2_clubs": {
+          "contribute_range": 0.019606320988612813,
+          "contribute_coefficient_of_variation": 0.008603150154076788
+        },
+        "3_hearts": {
+          "contribute_range": 0.20829170829170818,
+          "contribute_coefficient_of_variation": 0.043013881868518365
+        },
+        "4_diamonds": {
+          "contribute_range": 0.2777777777777777,
+          "contribute_coefficient_of_variation": 0.0379911915232743
+        },
+        "5_spades": {
+          "contribute_range": 1.0727272727272728,
+          "contribute_coefficient_of_variation": 0.10777697958921625
+        }
+      }
+    },
+    "Expert": {
+      "best_for_contribution": {
+        "2_clubs": "prevention",
+        "3_hearts": "resource_heavy",
+        "4_diamonds": "prevention",
+        "5_spades": "mixed"
+      },
+      "best_for_healing": {
+        "2_clubs": "conservative",
+        "3_hearts": "conservative",
+        "4_diamonds": "conservative",
+        "5_spades": "conservative"
+      },
+      "most_efficient": {
+        "2_clubs": "prevention",
+        "3_hearts": "foresight",
+        "4_diamonds": "foresight",
+        "5_spades": "foresight"
+      },
+      "strategy_differences": {
+        "2_clubs": {
+          "contribute_range": 0.027278724889326478,
+          "contribute_coefficient_of_variation": 0.012404945399290216
+        },
+        "3_hearts": {
+          "contribute_range": 0.22380952380952368,
+          "contribute_coefficient_of_variation": 0.049518514302120065
+        },
+        "4_diamonds": {
+          "contribute_range": 0.28000000000000025,
+          "contribute_coefficient_of_variation": 0.03432463406490683
+        },
+        "5_spades": {
+          "contribute_range": 0.48809523809523814,
+          "contribute_coefficient_of_variation": 0.045309004922576425
+        }
+      }
+    },
+    "Master": {
+      "best_for_contribution": {
+        "2_clubs": "conservative",
+        "3_hearts": "mixed",
+        "4_diamonds": "conservative",
+        "5_spades": "mixed"
+      },
+      "best_for_healing": {
+        "2_clubs": "conservative",
+        "3_hearts": "conservative",
+        "4_diamonds": "conservative",
+        "5_spades": "conservative"
+      },
+      "most_efficient": {
+        "2_clubs": "foresight",
+        "3_hearts": "foresight",
+        "4_diamonds": "foresight",
+        "5_spades": "foresight"
+      },
+      "strategy_differences": {
+        "2_clubs": {
+          "contribute_range": 0.009026942862210952,
+          "contribute_coefficient_of_variation": 0.0033889178592678075
+        },
+        "3_hearts": {
+          "contribute_range": 0.2900432900432899,
+          "contribute_coefficient_of_variation": 0.06897012447263531
+        },
+        "4_diamonds": {
+          "contribute_range": 0.2596232596232593,
+          "contribute_coefficient_of_variation": 0.03092616443349563
+        },
+        "5_spades": {
+          "contribute_range": 0.5,
+          "contribute_coefficient_of_variation": 0.04421516534818386
+        }
+      }
+    }
+  }
+}
