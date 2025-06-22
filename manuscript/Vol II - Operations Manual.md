@@ -433,6 +433,59 @@ Duration limitations prevent overload techniques from becoming universal solutio
 
 Recovery considerations affect post-overload operations regardless of initial success. Systems that survive overload periods often require immediate maintenance attention to prevent delayed failures. Pilots must balance immediate tactical needs against longer-term operational requirements, especially during extended missions where immediate maintenance isn't available.
 
+### **CHASE SYSTEM PLAY EXAMPLE**
+
+**Scenario**: Captain Rex "Hotshot" Morrison is fleeing through the neon-lit canyons of Luna City in his nimble scout ship *Stardust* after stealing crucial intelligence data. Behind him, two Security Force interceptors are closing fast through the crowded traffic corridors.
+
+**Setup**: 
+- Rex's *Stardust* (Nimble +20%, TH 2 standard thrust)
+- Security Interceptors (Standard maneuverability, TH 3 +20% thrust)
+- Current Range: Close (interceptors gaining ground)
+- Environment: Urban Luna City (+20% to small vehicles, obstacles everywhere)
+
+**Round 1 - Opening the Gap**
+**Rex (Pilot)**: "Time to show these flatfoots what real flying looks like!" 
+
+*Rex attempts evasive maneuvering using Pilot (75% +20% nimble +20% urban = 115%, max 95%)*
+*Lead Interceptor uses Pursuit (65% +20% thrust = 85%)*
+
+*Rex rolls 15 - Critical Success (doubles under skill)*
+*Lead Interceptor rolls 52 - Ordinary Success*
+
+**GM**: "Rex throws the *Stardust* into a spiraling dive between two cargo haulers, using their bulk to break sensor lock. The lead interceptor follows but can't match your precision."
+
+*Range: Close → Medium (+3 for critical vs +1 for ordinary = +2 range increase)*
+
+**Round 2 - Threading the Needle**
+**Rex**: "There - the maintenance tunnel under Sector 7! They'll never fit their fat interceptors through there!"
+
+*Rex attempts "Threading the Needle" maneuver at -20% difficulty (Urban environment, tight space)*
+*Rex rolls Pilot (75% +20% nimble +20% urban -20% needle = 95%)*
+
+*Rex rolls 35 - Special Success (ends in 5)*
+
+**GM**: "The *Stardust* barely fits through the narrow maintenance tunnel, scraping sparks off both walls! The interceptors are forced to take the long way around."
+
+*Range: Medium → Extended (+2 for special success + automatic bonus for successful needle-threading)*
+
+**Round 3 - Systems Overload**
+**Lead Interceptor Pilot**: "Control, we're losing them! Engaging emergency thrust!"
+
+*Interceptor attempts engine overload with Engineering skill*
+*Rex continues evasive flying*
+
+*Rex rolls 67 - Ordinary Success*
+*Interceptor rolls overload: Success, but must check for system damage later*
+*Interceptor pursuit: 89 - Failure (overload didn't help enough)*
+
+**GM**: "The interceptor's engines scream as they push beyond safe limits, but your head start through the tunnel is too much. You watch their engine signatures fade on your rear sensors."
+
+*Range: Extended → Beyond Contact (Rex escapes)*
+
+**Captain Morrison**: "Another successful data liberation courtesy of Hotshot Morrison! Luna City Security really needs better pilots."
+
+**Result**: Rex's combination of superior maneuvering, environmental knowledge, and willingness to take risks allowed his smaller ship to outrun more powerful pursuers through skill rather than raw speed.
+
 ---
 
 ## **CHAPTER 4: RESEARCH AND INVESTIGATION**
@@ -518,7 +571,7 @@ Research follows card-based progression similar to medical treatment:
 
 **LOWER VALUE** = *Methodological Conflict*
 - **♥️ Hearts**: Conflicting intuitions - make NERVE check or lose 1 Research Point
-- **♦️ Diamonds**: Data contradiction - choose: spend 1 Reference Material or -10% to next roll
+- **♦️ Diamonds**: Data contradiction - choose: spend 1 Reference Material or -20% to next roll
 - **♣️ Clubs**: Technical incompatibility - must clear before continuing (costs 1 Research Point)
 - **♠️ Spades**: Cultural misunderstanding - current approach locked until node complete
 
@@ -798,7 +851,7 @@ Characters accumulate Circuit Points through skill checks using their chosen app
 
 **LOWER VALUE** = *Cross-System Interference*
 - **♥️ Hearts**: Robot confusion - make Psychology check or lose 1 Circuit Point
-- **♦️ Diamonds**: Technical conflict - choose: spend 1 Spare Part or -10% to next roll
+- **♦️ Diamonds**: Technical conflict - choose: spend 1 Spare Part or -20% to next roll
 - **♣️ Clubs**: Physical obstruction - must clear before continuing (costs 1 Circuit Point)
 - **♠️ Spades**: Logic conflict - current approach locked until node complete
 
@@ -841,7 +894,7 @@ Repair permanently fails when ANY of the following occurs:
 
 **Spare Parts**: Common Components (reduce Circuit Points by 1), Specialized Parts (reduce by 2), Rare Components (reduce by 3), Resource Limit: Maximum **15 total parts** per repair sequence
 
-**Time Pressure**: Workshop Conditions (no penalties), Field Conditions (-10% to all repair rolls), Combat Conditions (-30% to all repair rolls, can only work in safe rounds)
+**Time Pressure**: Workshop Conditions (no penalties), Field Conditions (-20% to all repair rolls), Combat Conditions (-40% to all repair rolls, can only work in safe rounds)
 
 **Assistant Help**: Knowledgeable Assistant (can contribute maximum 1 Circuit Point per roll), Untrained Assistant (+10% to primary technician's rolls)
 
@@ -879,7 +932,7 @@ For serious injuries requiring sustained medical attention—battlefield trauma,
 
 **Suit Specializations**
 
-Medical treatment is diagnosis-locked to specific injury types based on the cause of damage:
+Medical treatment is diagnosis-locked to specific injury types based on the cause of damage. The GM will start by fanning through the deck to fnid the first card of the correct suit for the type of medical problem, cutting the deck there and turning over that top card.  Treatment follows from there:
 
 - **♥️ HEARTS**: Bleeding & Circulation (Internal medicine, blood loss, shock)
 - **♣️ CLUBS**: Trauma & Impact (Fractures, lacerations, penetrating wounds)  
@@ -910,7 +963,7 @@ Draw cards one at a time. Compare each card's value to the current card being tr
 - **♥️ Hearts**: Patient instability - Make GRIT check or go into shock
 - **♣️ Clubs**: Physical setback - Choose: spend 1 MSU or gain 1 strain  
 - **♠️ Spades**: Infection risk - Make Medicine check or draw 1 Spades card later
-- **♦️ Diamonds**: Equipment malfunction - Spend 1 Energy Unit or -10% to Medicine checks
+- **♦️ Diamonds**: Equipment malfunction - Spend 1 Energy Unit or -20% to Medicine checks
 
 **Skill-Based Treatment**
 
@@ -997,6 +1050,822 @@ Recording systems preserve sensor data and communication intercepts for later an
 Analysis software helps operators interpret complex sensor data and communication patterns to extract meaningful information from enormous data volumes. These systems can identify patterns, anomalies, and correlations that human operators might miss while processing information rapidly enough for tactical decision-making.
 
 Network integration allows individual sensor and communication systems to share information and coordinate operations automatically. Networked systems provide redundancy against equipment failure while enhancing overall capability through information fusion and coordinated operation.
+
+---
+
+## **CHAPTER 6: SOCIAL CONTESTS**
+
+*The art of persuasion in the atomic tomorrow*
+
+In the retro-future world of Atomic Tomorrow, fast talking, seduction, and persuasion are skills as valuable as marksmanship or piloting. This system provides guidelines for handling social interactions as meaningful contests without undermining player agency or reducing complex interpersonal dynamics to simple dice rolls.
+
+### **PRINCIPLES**
+
+1. **Social Skills Are Not Mind Control**: Even critical successes cannot force others to act against their core values or self-interest
+2. **Preserve Agency**: Player characters always retain the right to determine their own actions
+3. **Reward Roleplay**: Going along with social influence (even when disadvantageous) enriches the story
+4. **Consequences Matter**: Social skills create believable reactions based on the context and relationship
+
+### **TYPES OF SOCIAL CONTESTS**
+
+#### **Persuasion**
+*Convincing someone that a course of action is logical, moral, or beneficial*
+
+- Uses CHARM vs. GUILE
+- Success means the target believes you are sincere and your argument has merit
+- Doesn't override strong ethical objections or survival instincts
+
+#### **Deception**
+*Convincing someone to believe something that isn't true*
+
+- Uses GUILE vs. GUILE
+- Success means the target believes your falsehood
+- Extreme claims still receive appropriate skepticism even on success
+
+#### **Intimidation**
+*Frightening someone into compliance*
+
+- Uses BRAWN (physical) or NERVE (psychological) vs. GRIT
+- Success means the target feels genuinely threatened
+- Temporary compliance only; may create resentment and future retaliation
+
+#### **Seduction**
+*Appealing to someone's attraction or desire*
+
+- Uses CHARM vs. CHARM
+- Success means the target finds you genuinely appealing
+- Doesn't override professional ethics, loyalty, or self-preservation
+
+### **THE CONVICTION TRACK**
+
+| Level | State     | Description                 |
+| ----- | --------- | --------------------------- |
+| 1     | Convinced | Fully accepts the position  |
+| 2     | Receptive | Inclined to agree           |
+| 3     | Neutral   | Undecided, weighing options |
+| 4     | Skeptical | Doubtful but listening      |
+| 5     | Opposed   | Firmly against the position |
+
+#### **Starting Position**
+
+NPCs begin at different positions based on their initial attitude and the request's nature:
+
+- **Friendly/Reasonable Request**: Start at 2 (Receptive)
+- **Neutral/Moderate Request**: Start at 3 (Neutral)
+- **Unfriendly/Unreasonable Request**: Start at 4 (Skeptical)
+- **Hostile/Outrageous Request**: Start at 5 (Opposed)
+
+#### **Symmetrical Success/Failure Effects**
+
+When attempting social influence:
+
+1. Make an opposed roll using the appropriate social skill against their resistance
+2. Movement on the Conviction Track is symmetrical:
+   - **Critical Success**: Move 3 steps toward Convinced
+   - **Special Success**: Move 2 steps toward Convinced
+   - **Regular Success**: Move 1 step toward Convinced
+   - **Regular Failure**: Move 1 step toward Opposed
+   - **Special Failure**: Move 2 steps toward Opposed
+   - **Critical Failure**: Move 3 steps toward Opposed
+
+### **PLAYER CHARACTER TARGETS**
+
+When NPCs attempt to influence player characters:
+
+1. The GM rolls the NPC's social skill against the player's resistance attribute
+2. The GM reports the success quality and current position on the Conviction Track
+3. The player decides how their character responds, guided by the Conviction Track
+4. **Experience Reward**: When a player goes along with social influence that leads to suboptimal choices based on the Conviction Track, they automatically receive a skill advancement check for that adventure
+
+This creates a rewarding gameplay loop where players gain mechanical benefits when they embrace roleplaying over pure tactical advantage.
+
+### **INTERACTION LIMITS**
+
+To prevent endless attempts:
+
+- Each social interaction scene allows a maximum of 3 influence attempts
+- After the third attempt, the target's position becomes fixed until circumstances significantly change
+- Each subsequent attempt within a scene incurs a cumulative -20% penalty
+
+### **ENVIRONMENTAL FACTORS**
+
+Social contests are heavily influenced by context:
+
+#### **Favorable Circumstances (+20%)**
+
+- Using leverage the target cares about
+- Offering something the target genuinely needs
+- Having reputation or credentials relevant to the request
+- Previous positive relationship with the target
+
+#### **Unfavorable Circumstances (-20%)**
+
+- Target has prior negative experience with you
+- Request clearly conflicts with target's interests
+- Significant status difference (when attempting to influence superiors)
+- Target is suspicious or on guard
+
+### **LONG-TERM INFLUENCE**
+
+Social contests aren't just for immediate results. Successful social interactions can:
+
+1. **Build Reputation**: Making honest persuasion attempts builds credibility for future interactions
+2. **Create Relationships**: Successful social contests can begin long-term connections with NPCs
+3. **Establish Patterns**: Regularly deceiving someone eventually leads to suspicion
+4. **Yield Information**: Even failed attempts can reveal what someone values or fears
+
+### **SOCIAL CONTESTS BETWEEN PLAYERS**
+
+When one player character attempts to influence another:
+
+1. The initiating player rolls their relevant social skill
+2. The target player rolls their relevant resistance attribute
+3. The GM describes the quality of the attempt
+4. **The target player decides their own response**
+5. If they choose to go along with something disadvantageous to them, they receive the experience reward
+
+### **EXPERIENCE REWARD**
+
+*"Good judgment comes from experience; experience comes from bad judgment."*
+
+When a player goes along with a successful social attempt that leads their character to make suboptimal choices:
+
+- The character automatically receives a skill advancement check for that adventure
+- This represents learning from mistakes and developing better judgment
+- The advancement works according to the standard skill advancement rules
+
+This reward applies when:
+
+- The character takes actions they wouldn't normally take
+- These actions create additional complications or challenges
+- The player embraces these complications for storytelling purposes
+
+### **DIPLOMATIC PROTOCOL AND CULTURAL SENSITIVITY**
+
+The atomic age brings together cultures that have developed under wildly different conditions: Earth societies with their ancient traditions, colonial communities adapted to alien environments, and potentially non-human intelligences with completely different social assumptions. Successful diplomacy requires understanding and respecting these differences while finding common ground for cooperation.
+
+Cultural research becomes essential preparation for diplomatic missions as social norms vary dramatically between different human communities and even more between species. What constitutes polite behavior on Earth might be deeply offensive to Martian colonial societies. Gestures, vocal tones, and personal space expectations all carry cultural significance that diplomats must understand to avoid inadvertent insults.
+
+Protocol awareness helps diplomats navigate the formal structures that govern inter-group relationships. Different societies have developed various approaches to status recognition, authority structures, and decision-making processes. Understanding these protocols allows diplomats to work within established systems rather than accidentally violating procedural expectations.
+
+Translation challenges go beyond simple language differences to include conceptual frameworks that might not exist across cultural boundaries. Some ideas that are fundamental to one society might have no equivalent in another's thinking. Skilled diplomats learn to find metaphors and explanations that bridge these conceptual gaps without losing essential meaning.
+
+### **SOCIAL CONTEST PLAY EXAMPLE**
+
+**Scenario**: Dr. Elena Vasquez needs to convince Commander Harrison to allow her research team access to the restricted section of the Luna City Archives, where classified pre-war scientific documents are stored.
+
+**Setup**: Commander Harrison is protective of his facility's security (starting at 4 - Skeptical) but respects Dr. Vasquez's scientific credentials (+20% favorable circumstances for her reputation).
+
+**Round 1 - Initial Persuasion**
+**Dr. Vasquez (Scientist)**: "Commander, I understand your security concerns, but these archives may contain critical information about the Mysterion artifacts we recovered. The war-era scientists might have encountered similar technology."
+
+*Elena rolls Persuasion (CHARM 65% +20% = 85%) vs. Commander Harrison's GUILE 50%*
+*Elena rolls 23 - Special Success (ends in 5, under skill)*
+*Harrison rolls 67 - Failure*
+
+**GM**: "Elena's argument clearly resonates with the Commander. He leans forward, intrigued despite his initial caution."
+
+*Conviction Track: 4 (Skeptical) → 2 (Receptive) - moves 2 steps toward Convinced*
+
+**Round 2 - Building on Success**
+**Dr. Vasquez**: "I'm not asking for unrestricted access. Perhaps you could assign one of your security officers to escort my team? That way we maintain protocol while advancing critical research."
+
+*Elena rolls Persuasion (85%) vs. Harrison's GUILE 50%*
+*Elena rolls 31 - Ordinary Success*
+*Harrison rolls 72 - Failure*
+
+**GM**: "Harrison nods slowly. Your reasonable approach to security concerns is clearly winning him over."
+
+*Conviction Track: 2 (Receptive) → 1 (Convinced) - moves 1 step toward Convinced*
+
+**Commander Harrison**: "Dr. Vasquez, I think we can arrange something. Sergeant Rodriguez will escort your team and ensure proper handling of the classified materials. When can you start?"
+
+**Result**: Elena successfully negotiated access to the restricted archives by understanding Harrison's security concerns and proposing a solution that addressed both parties' needs. Her reputation and reasonable approach made the difference between suspicion and cooperation.
+
+---
+
+## **CHAPTER 7: INTERPLANETARY COMMERCE SYSTEM**
+
+*Making your fortune among the stars*
+
+The dusty spaceport bars of Mars and the gleaming commerce centers of Earth all echo with the same tales: daring traders who struck it rich hauling exotic tech from Venus to the Belt, or desperate captains who lost everything on a hold full of Venusian silk that nobody would buy. In the atomic age, interplanetary commerce offers both opportunity and risk for those bold enough to stake their claim among the stars.
+
+The Atomic Tomorrow trading system simulates the challenge of finding profitable cargo routes across the Solar System. Players use their Trading skill to acquire goods at one location and sell them at another, navigating the economic complexities of different worlds.
+
+### **KEY CONCEPTS**
+
+- **Cargo Value Rating**: Represents the quality, rarity, and desirability of goods (1-10)
+- **Location Wealth Rating**: Represents a location's economic development and available capital (1-10)
+- **Market Specialties**: Locations can produce, consume, or restrict different types of goods
+- **Persistence**: Traders can make multiple attempts to sell cargo or try different locations
+
+### **CARGO CATEGORIES**
+
+1. **Agricultural Products**: Foodstuffs, plants, seeds, organic materials
+2. **Raw Materials**: Ores, chemicals, water, construction materials
+3. **Manufactured Goods**: Clothing, tools, appliances, processed items
+4. **Luxury Items**: Art, exotic goods, gourmet products, entertainment
+5. **Technology**: Scientific equipment, computers, advanced devices
+6. **Medical Supplies**: Medicines, surgical equipment, biological materials
+7. **Military Hardware**: Weapons, armor, security systems (often restricted)
+8. **Exotic Materials**: Alien artifacts, rare elements, unique substances
+
+#### **Cargo Value Ratings**
+
+- **Low Value (1-3)**: Common goods, bulk resources, basic supplies
+- **Medium Value (4-7)**: Processed goods, standard technology, specialized equipment
+- **High Value (8-10)**: Luxury items, advanced technology, rare materials
+
+#### **Cargo Size Modifiers**
+
+- **Small Cargo (1 SCU)**: +20% to acquisition roll, -20% to selling roll
+- **Standard Cargo (2 SCUs)**: No modifiers
+- **Large Cargo (4 SCUs)**: -20% to acquisition roll, +20% to selling roll
+
+### **LOCATION RATINGS**
+
+#### **Wealth Rating**
+
+- **Poor (1-3)**: Frontier outposts, struggling colonies, remote stations
+- **Medium (4-7)**: Established colonies, industrial centers, trading hubs
+- **Wealthy (8-10)**: Major planetary metropolises, luxury stations, corporate headquarters
+
+#### **Market Specialties**
+
+- **Production**: Location creates these goods efficiently (easier to buy)
+- **Consumption**: Location needs these goods (easier to sell)
+- **Restricted**: Location heavily regulates these goods (harder to buy and sell)
+
+### **TRADE PROCEDURE**
+
+#### **Buying Cargo**
+
+1. **Trading Skill Check**: Roll percentile dice against your Trading skill
+   - Regular Success: +1 to your highest die
+   - Special Success (roll ending in 0 or 5): +2 to your highest die
+   - Critical Success (doubles under skill): +3 to your highest die
+   - Failure: No bonus
+   - Critical Failure (doubles over skill): -1 to your highest die
+
+2. **Acquisition Roll**:
+   - Roll two d10s for your Trading attempt
+   - Roll two d10s for the cargo's availability
+   - Add the cargo's Value Rating to each cargo die
+   - Add your skill bonus to your highest die
+   - If in a Production area for this cargo: +2 to your highest die
+   - If in a Restricted area for this cargo: -3 to your highest die
+   - If in a wealthy Production area (Wealth 8+): +1 to your highest die
+   - Apply cargo size modifiers if applicable
+
+3. **Resolution**:
+   - If your highest die equals or exceeds the cargo's highest die, you can purchase it
+   - Purchase price = cargo's lowest die × 100 Credits
+
+#### **Selling Cargo**
+
+1. **Trading Skill Check**: Roll percentile dice against your Trading skill (as above)
+
+2. **Selling Roll**:
+   - Roll two d10s for your cargo's appeal
+   - Roll two d10s for the location's wealth
+   - Add the cargo's Value Rating to each cargo die
+   - Add your skill bonus to your highest cargo die
+   - Add the location's Wealth Rating to each wealth die
+   - If in a Consumption area for this cargo: +2 to your highest cargo die
+   - If in a Production area for this cargo: -2 to your highest cargo die
+   - If in a Restricted area for this cargo: -3 to your highest cargo die
+   - If selling Very High Value goods (7-10) at Wealthy location (8+): +1 to your highest cargo die
+   - Apply cargo size modifiers if applicable
+
+3. **Resolution**:
+   - If your cargo's highest die equals or exceeds the location's highest die, you find a buyer
+   - Selling price = location's lowest die × 100 Credits
+   - If selling at a Poor location (Wealth 1-3) that Consumes this cargo: +1 to the price die
+   - If successfully selling Restricted goods: +2 to the price die
+   - Your profit (or loss) is the difference between selling price and purchase price
+
+### **PERSISTENCE RULES**
+
+#### **Multiple Attempts at Same Location**
+
+- If a selling attempt fails, the trader may try again after 1d6 days
+- Each location allows up to 3 attempts before requiring the trader to leave and return after at least one week
+- Each attempt requires a new Trading skill check and selling roll
+
+#### **Emergency Offloading**
+
+If a trader cannot sell cargo after multiple attempts:
+- They can accept a lowball offer for 70% of their purchase price
+- They can trade the cargo for other goods of equivalent value
+- They can store the cargo at a licensed warehouse for 10% of its value per month
+
+### **SAMPLE LOCATIONS AND ECONOMIC PROFILES**
+
+#### **Earth**
+- **Wealth Rating**: 10
+- **Market Specialty**: Production (Luxury Items, Technology), Consumption (Raw Materials, Exotic Materials), Restricted (Military Hardware)
+
+#### **Luna**
+- **Wealth Rating**: 8
+- **Market Specialty**: Production (Technology, Military Hardware), Consumption (Agricultural Products)
+
+#### **Venus**
+- **Wealth Rating**: 7
+- **Market Specialty**: Production (Agricultural Products, Exotic Materials), Consumption (Technology, Manufactured Goods), Restricted (Military Hardware)
+
+#### **Mars**
+- **Wealth Rating**: 6
+- **Market Specialty**: Production (Raw Materials, Military Hardware), Consumption (Agricultural Products, Luxury Items), Restricted (Exotic Materials)
+
+#### **Belt Colonies**
+- **Wealth Rating**: 4
+- **Market Specialty**: Production (Raw Materials, Military Hardware), Consumption (Agricultural Products, Technology, Medical Supplies)
+
+#### **Jupiter Moons**
+- **Wealth Rating**: 3
+- **Market Specialty**: Production (Raw Materials, Exotic Materials), Consumption (Manufactured Goods, Medical Supplies), Restricted (Technology)
+
+#### **Frontier Outpost**
+- **Wealth Rating**: 2
+- **Market Specialty**: Production (Exotic Materials), Consumption (Almost Everything)
+
+### **TRADE EVENTS AND COMPLICATIONS**
+
+Roll d10 when entering a new market:
+
+| Roll | Event |
+|------|-------|
+| 1 | **Market Crash**: All goods sell for 50% less than normal |
+| 2 | **Supply Shortage**: One random category of goods has Value Rating increased by 2 |
+| 3 | **Trade Regulations**: Authorities inspecting all cargos, -20% to all trading rolls |
+| 4 | **Festival/Holiday**: Luxury goods in high demand (+2 Value Rating) |
+| 5-6 | **Normal Market Conditions**: No special modifications |
+| 7 | **Economic Boom**: All goods sell for 25% more than normal |
+| 8 | **Corporate Buyout**: One random category being purchased at +30% |
+| 9 | **Technological Breakthrough**: Technology goods in high demand (+2 Value Rating) |
+| 10 | **War/Crisis Preparation**: Military and Medical supplies in high demand (+3 Value Rating) |
+
+### **SPECIAL CARGO OPPORTUNITIES**
+
+| Cargo Type | Value | Description | Special Rule |
+|------------|-------|-------------|--------------|
+| Mysterion Artifacts | 10 | Recovered alien technology | Double selling price, but -60% to selling roll |
+| Experimental Technology | 9 | Cutting-edge prototypes | +3 to price die, 10% chance of malfunction during transit |
+| Diplomatic Packages | 8 | Sealed diplomatic materials | Guaranteed delivery contract, severe penalties for inspection |
+| Perishable Luxuries | 7 | Time-sensitive valuable goods | +2 to price die if delivered within one week, worthless after two weeks |
+| Frontier Essentials | 3 | Specialized frontier supplies | +3 to price die at Frontier Outposts only |
+
+### **TRADING STRATEGIES**
+
+Based on extensive simulations, certain trade approaches are more profitable than others:
+
+#### **Optimal Strategies**
+
+1. **Low Value Goods at Medium Wealth Consumption Areas**
+   - Example: Agricultural Products from Venus to Belt Colonies
+   - Highest reliability (40%+ success rate)
+   - Moderate profits per trip (200-300 credits)
+
+2. **Medium Value Goods at Medium-High Wealth Consumption Areas**
+   - Example: Raw Materials from Mars to Earth
+   - Good balance of reliability (25-30% success rate)
+   - Good profits per trip (300-500 credits)
+
+3. **Location Hopping with Multiple Selling Options**
+   - Acquire cargo at Production areas
+   - Try selling at different locations in order of preference
+   - Much more profitable than fixed routes
+
+4. **Persistence at Wealthy Locations**
+   - Make multiple attempts to sell at wealthy locations
+   - Can increase profits by 100-500% compared to single attempts
+
+### **TRADE SEQUENCE EXAMPLE**
+
+1. Captain Zhang acquires Agricultural Products (Value 2) at Venus (Production area)
+   - Trading skill 65%, rolls 43 (success, +1 bonus)
+   - Rolls 7, 3 for Trading; with +1 bonus and +2 Production bonus = 10, 3
+   - Rolls 5+2, 3+2 for cargo = 7, 5
+   - Successfully acquires cargo for 500 credits (lowest cargo die × 100)
+
+2. She flies to Mars (Consumption area) to sell
+   - Trading skill 65%, rolls 25 (special success, +2 bonus)
+   - Rolls 4+2, 1+2 for cargo; with +2 bonus and +2 Consumption bonus = 8, 3
+   - Rolls 7+6, 4+6 for location wealth = 13, 10
+   - Fails to find a buyer (8 < 13)
+
+3. She tries again a few days later
+   - Trading skill 65%, rolls 65 (success, +1 bonus)
+   - Rolls 8+2, 2+2 for cargo; with +1 bonus and +2 Consumption bonus = 11, 4
+   - Rolls 5+6, 3+6 for location wealth = 11, 9
+   - Gets a buyer (11 ≥ 11, ties favor trader)
+   - Selling price = 900 credits (lowest wealth die × 100)
+   - Profit = 400 credits
+
+*"Buy low, sell high, and know when to jettison the cargo before the Patrol comes knocking. That's the Trader's Creed, kid." - Captain Liza "Lucky" Goldstein, veteran Belt trader*
+
+---
+
+## **CHAPTER 8: ROBOTICS AND AUTOMATION**
+
+*Maintaining your mechanical companions*
+
+The atomic age relies heavily on robotic assistance for dangerous, repetitive, or precision tasks that would be impractical for human workers. However, these sophisticated machines require regular maintenance and occasional repair to continue functioning reliably. The robotics repair system provides detailed mechanics for diagnosing problems and restoring robotic systems to full operation.
+
+### **ROBOTIC SYSTEM FUNDAMENTALS**
+
+#### **Core Components**
+
+All robotic systems share certain fundamental components that enable autonomous operation:
+
+**Positronic Brain**: The central processing unit that enables artificial intelligence and decision-making capabilities. Positronic brains follow Asimov's Three Laws and provide the cognitive functions that distinguish robots from simple automation.
+
+**Motor Systems**: Physical actuators that enable movement and manipulation. These range from simple linear actuators to complex servo systems that provide precise control over robotic limbs and tools.
+
+**Sensor Arrays**: Input devices that gather information about the robot's environment and operational status. Advanced robots integrate multiple sensor types to create comprehensive environmental awareness.
+
+**Power Distribution**: Energy management systems that efficiently distribute power to all robotic subsystems while maintaining operational safety and preventing electrical failures.
+
+#### **Failure Categories**
+
+Robotic failures typically fall into predictable categories that require different diagnostic and repair approaches:
+
+**Logic Errors**: Problems with decision-making processes or response priorities that cause inappropriate behavior without affecting physical capabilities.
+
+**Mechanical Failures**: Physical component breakdown that affects movement, manipulation, or structural integrity but leaves cognitive functions intact.
+
+**Sensor Malfunction**: Input system problems that provide incorrect or incomplete environmental information, leading to poor decision-making despite functioning logic systems.
+
+**Power System Issues**: Energy distribution problems that affect overall performance or create cascading failures across multiple subsystems.
+
+### **DIAGNOSTIC PROCEDURES**
+
+#### **Initial Assessment**
+
+Robot repair begins with systematic evaluation to identify the nature and scope of problems:
+
+**Behavioral Observation**: Watch the robot's actions and responses to identify obvious malfunctions or inappropriate behaviors that suggest specific system failures.
+
+**Status Indicator Review**: Check all warning lights, display panels, and audio alerts that might provide direct information about detected problems.
+
+**Basic Function Testing**: Verify operation of fundamental systems through simple commands and observe whether responses match expected behavior patterns.
+
+#### **System-Specific Diagnostics**
+
+**Positronic Brain Testing**: Evaluate logical processes through standardized question sequences and observe response patterns for signs of cognitive malfunction.
+
+**Motor Function Evaluation**: Test movement and manipulation capabilities through calibrated exercises that reveal mechanical limitations or control problems.
+
+**Sensor Calibration Checks**: Compare sensor readings against known standards to identify accuracy problems or complete sensor failures.
+
+**Power System Analysis**: Measure voltage levels, current flows, and energy distribution patterns to locate electrical problems affecting robot performance.
+
+### **REPAIR PROCEDURES**
+
+#### **Circuit Card Replacement System**
+
+Complex robotic systems use modular circuit cards that can be replaced when individual subsystems fail. This system provides detailed mechanics for diagnosing which cards need replacement and successfully installing new components.
+
+**Card Identification**: Each circuit card controls specific robot functions and must be correctly identified before replacement. Misidentifying cards can worsen problems or create new malfunctions.
+
+**Removal Procedures**: Cards must be carefully extracted without damaging surrounding components or disrupting other systems that remain operational.
+
+**Installation Verification**: New cards require proper installation and verification testing to ensure correct function integration with existing robot systems.
+
+#### **Component Repair vs. Replacement**
+
+**Minor Repairs**: Simple problems like loose connections, worn contacts, or calibration drift can often be corrected through adjustment or cleaning without component replacement.
+
+**Major Overhauls**: Extensive damage or wear might require complete subsystem replacement or reconstruction using multiple new components.
+
+**Upgrade Opportunities**: Repair situations sometimes provide chances to install improved components that enhance robot capabilities beyond original specifications.
+
+### **SPECIALIZED ROBOT TYPES**
+
+#### **Industrial Robots**
+
+Heavy-duty machines designed for manufacturing, construction, and resource extraction in challenging environments.
+
+**Typical Problems**: Mechanical wear from heavy use, environmental contamination, overload damage from excessive work demands.
+
+**Repair Considerations**: Often require heavy-duty components and specialized tools for maintenance in industrial settings.
+
+#### **Domestic Robots**
+
+Household assistance robots designed for cleaning, cooking, and personal service in civilian environments.
+
+**Typical Problems**: Software conflicts from complex scheduling, minor mechanical wear, sensor contamination from household substances.
+
+**Repair Considerations**: Emphasize user safety and appearance restoration along with functional repair.
+
+#### **Military Robots**
+
+Combat and security robots designed for dangerous operations in hostile environments.
+
+**Typical Problems**: Battle damage, security system malfunctions, armor integration issues affecting mobility.
+
+**Repair Considerations**: Often require security clearances and specialized military components for proper restoration.
+
+---
+
+## **CHAPTER 9: CHASE SYSTEMS**
+
+*High-speed pursuits through the atomic tomorrow*
+
+In the atomic age, high-speed chases aren't just about raw speed—they're about split-second decisions, daring maneuvers, and the kind of atomic-powered technology that can turn a routine pursuit into a spectacular adventure. Whether you're racing through the pressure tunnels of Luna, diving through Venus's cloud canyons, or weaving between asteroids in the Belt, the chase system captures the white-knuckle excitement of atomic age pursuit.
+
+### **CORE MECHANICS: TWO-PHASE PURSUIT**
+
+Each round, track the current distance between vehicles using a die or marker. When distance reaches or exceeds the escape threshold, the lead vehicle successfully escapes. When distance drops to the contact threshold or below, the pursuer has caught up to the lead vehicle.
+
+#### **Distance Tracking**
+
+- **Distance 1-2**: Contact range (ramming, boarding possible)
+- **Distance 3-4**: Close range (melee attacks possible with reach weapons)
+- **Distance 5-7**: Medium range (most ranged weapons effective)
+- **Distance 8-9**: Extended range (visual contact maintained)
+- **Distance 10+**: Escape achieved (pursuer loses sight of the lead vehicle)
+
+#### **Standard Chase Parameters**
+
+**Default Chase** (Start: 5, Escape: 10):
+- Creates tense, action-packed chases that typically resolve in 4-5 rounds
+- Ideal for maintaining excitement without dominating your gaming session
+- Balanced between pursuer and quarry advantages
+
+**Extended Chases** (Start: 7, Escape: 12):
+- Use for major story pursuits, complex urban environments, or when multiple hazards should be encountered
+- Results in longer chases (6-8 rounds) with more opportunities for dramatic twists
+- Better showcases vehicles with superior speed and Handling
+
+**Quick Pursuits** (Start: 4, Escape: 8):
+- Use for minor encounters, simple terrain, or when time is limited
+- Creates brief, intense chases (2-3 rounds) that resolve quickly
+- Favors the pursuer slightly, making escape more challenging
+
+#### **Altitude Bands for Flying Vehicles**
+
+When chases involve flying vehicles, consider these additional parameters:
+
+- **Ground-Effect Band (0-20ft)**: Max Speed reduced by 2, but +1 Handling due to ground effect
+- **Low Altitude Band (20-200ft)**: Normal Speed and Handling
+- **High Altitude Band (200-1000ft)**: +1 Speed, -1 Handling due to wind patterns
+- **Restricted Altitude (1000ft+)**: Requires special permits, military clearance
+
+Flying vehicles have the advantage of vertical separation, allowing them to bypass ground traffic and obstacles. Changing to a higher band increases Distance by 1, while dropping to a lower band has no effect on Distance.
+
+### **PHASE 1: DRIVING CONTEST**
+
+Each round begins with an opposed Vehicle Operation roll between drivers:
+
+#### **Opposed Roll Outcomes**
+
+- **Lead vehicle wins by Critical vs. Failure**: +3 distance (pulls ahead)
+- **Lead vehicle wins by Special vs. Regular/Failure**: +2 distance
+- **Lead vehicle wins by Regular vs. Failure**: +1 distance
+- **Pursuer wins by Critical vs. Failure**: -3 distance (closes gap)
+- **Pursuer wins by Special vs. Regular/Failure**: -2 distance
+- **Pursuer wins by Regular vs. Failure**: -1 distance
+- **Same quality of success**: Higher roll wins, +/-1 distance
+
+#### **Vehicle Factors**
+
+- Add Speed (SP) and Handling (HA) modifiers to Vehicle Operation rolls
+- Terrain Speed Caps limit effective SP advantage in certain environments
+
+### **PHASE 2: HAZARD RESPONSE**
+
+After determining distance change in Phase 1, the referee randomly generates a hazard:
+
+#### **Hazard Generation**
+
+- Referee rolls d10 to determine hazard type
+- Lead driver selects Risk Level (1-3)
+- Lead driver makes Vehicle Operation roll with modifiers for Risk Level and HA
+- **Success**: No additional effect (already accounted for in Phase 1)
+- **Failure**: Lead vehicle rolls on Mishap Table with modifier based on Risk Level
+
+#### **Pursuer Options**
+
+**FOLLOW THROUGH**
+- Attempt the same hazard at same Risk Level
+- **Success**: No additional distance change
+- **Failure**: Distance increases by 3 (+1 for Special Failure, +2 for Critical Failure)
+- **Critical Failure**: Distance increases by 5 and roll on Mishap Table with +20
+
+**PLAY IT SAFE**
+- Choose not to navigate the hazard
+- Distance automatically increases by 4
+- No roll on Mishap Table
+
+**ALTERNATE ROUTE** (Only available for certain hazards)
+- Attempt to find a different path
+- Roll Navigation at -40%
+- **Success**: Distance increases by 2
+- **Special Success**: Distance increases by 1
+- **Critical Success**: No distance change
+- **Failure**: Distance increases by 5
+- **Special Failure**: Distance increases by 7
+- **Critical Failure**: Chase ends (completely lost visual contact)
+
+### **SPECIAL ACTIONS**
+
+These can be used instead of the normal Phase 2 options:
+
+#### **Shortcut Gambit (Pursuer Only)**
+
+- Desperate attempt to close distance by taking a risky detour
+- Roll Navigation at -40%
+- **Critical Success**: Distance decreases by 5
+- **Special Success**: Distance decreases by 3
+- **Regular Success**: Distance decreases by 2
+- **Failure**: Distance increases by 3
+- **Special Failure**: Distance increases by 5
+- **Critical Failure**: Chase ends (completely lost)
+
+#### **Chemical X Boost (One Use)**
+
+- Push engines beyond safety limits, needs recharge after each use
+- Roll Engineering (Propulsion) or Vehicle Operation
+- **Success**: Lead gains +2 distance, pursuer loses -2 distance
+- **Special Success**: Lead gains +3 distance, pursuer loses -3 distance
+- **Critical Success**: Lead gains +4 distance, pursuer loses -4 distance
+- **Failure**: No distance change and 1 damage to Propulsion
+- **Critical Failure**: 2 damage to Propulsion and roll on Mishap Table
+
+#### **Offensive Maneuver**
+
+- Attempt to interfere with the other vehicle's progress
+- Must be at distance 1-3
+- Roll Vehicle Operation against opponent's Vehicle Operation
+- **Success**: Opponent must make Vehicle Operation roll or take 1 damage to random system
+- **Failure**: -1 distance advantage
+
+### **HAZARD TABLE**
+
+Roll d10:
+
+1. **TIGHT TURN**: Sharp change in direction requiring precise control
+   - **Ground**: Hairpin curve, sudden intersection, traffic circle
+   - **Air**: Sudden crosswind, unexpected thermal, pressure gradient
+
+2. **DENSE TRAFFIC**: Navigate through concentrated obstacles
+   - **Ground**: Busy intersection, market crowd, rush hour congestion
+   - **Air**: Dense cloud bank, flock of birds, busy airspace
+   - *Allows Alternate Route*
+
+3. **NARROW GAP**: Squeeze through restricted space
+   - **Ground**: Alley, construction zone bottleneck, tunnel entrance
+   - **Air**: Mountain pass, urban canyon between buildings, bridge underpass
+   - *Allows Alternate Route*
+
+4. **SURFACE CHANGE**: Transition between environments
+   - **Ground**: Road to off-road, dry to wet surface, pavement to gravel
+   - **Air**: Rapid elevation change, stratosphere boundary, pressure zone
+
+5. **RESTRICTED ZONE**: Area with limited or controlled access
+   - **Ground**: Military checkpoint, research facility, private property
+   - **Air**: No-fly zone, test range, security perimeter
+
+6. **AUTOMATED SYSTEM**: Mechanical devices to navigate
+   - **Ground**: Robot traffic control, automated barriers, security checkpoints
+   - **Air**: Automated flight corridors, defense systems, drone network
+
+7. **ELEVATED ROUTE**: Raised path with fall hazard
+   - **Ground**: Bridge, overpass, cliff-side road, rooftop
+   - **Air**: Canyon, mountain range, urban skyscrapers
+   - *Allows Alternate Route*
+
+8. **WEATHER HAZARD**: Atmospheric challenge
+   - **Ground**: Sudden downpour, fog bank, ice patch
+   - **Air**: Thunderstorm, high turbulence zone, microbursts
+
+9. **CIVILIAN AREA**: Zone with innocent bystanders
+   - **Ground**: School zone, pedestrian mall, public park
+   - **Air**: Scenic flyover area, civilian airport approach, public event
+   - *Allows Alternate Route*
+
+10. **CONSTRUCTION ZONE**: Incomplete or in-progress structures
+    - **Ground**: Road work, building site, demolition area
+    - **Air**: Partially completed towers, crane-filled skyline
+
+#### **Risk Levels**
+
+Each hazard can be attempted at different risk levels:
+
+- **RISK LEVEL 1 (HAZARDOUS)**
+  - **Difficulty**: -0% (standard roll)
+  - **Mishap Table Modifier**: +0
+
+- **RISK LEVEL 2 (DANGEROUS)**
+  - **Difficulty**: -20%
+  - **Mishap Table Modifier**: +20
+
+- **RISK LEVEL 3 (RECKLESS)**
+  - **Difficulty**: -40%
+  - **Mishap Table Modifier**: +40
+
+### **VEHICLE CHARACTERISTICS**
+
+#### **Speed (SP)**
+
+**Core Function**: Determines how quickly a vehicle can accelerate and its maximum speed
+
+- **SP 1**: Slow (Cargo vehicles, construction equipment)
+- **SP 2**: Standard (Family cruisers, jeeps, light aircraft)
+- **SP 3**: Fast (Sports cars, military aircraft, racing boats)
+- **SP 4**: Ultra (Racing vehicles, interceptor aircraft)
+- **SP 5**: Experimental (Prototype vehicles, rocket cars)
+
+**Skill Modifier**: Each SP point adds +10% to Vehicle Operation for Phase 1 driving contest
+
+**Terrain Speed Caps**:
+- **Open Terrain**: No cap (full SP applies)
+- **Highway**: Maximum effective SP 4
+- **Suburban/Light Urban**: Maximum effective SP 3
+- **Dense Urban**: Maximum effective SP 2
+- **Extreme/Hazardous**: Maximum effective SP 1
+
+#### **Handling (HA)**
+
+**Core Function**: Determines how well a vehicle handles tight turns and complex maneuvers
+
+- **HA 1**: Clumsy (-20% to maneuver rolls)
+- **HA 2**: Standard (No modifier)
+- **HA 3**: Responsive (+20% to maneuver rolls)
+- **HA 4**: Precision (+40% to maneuver rolls)
+- **HA 5**: Exceptional (+60% to maneuver rolls)
+
+**Effect**: HA directly modifies all hazard navigation rolls in Phase 2
+
+### **DAMAGE AND MISHAPS**
+
+#### **Mishap Table**
+
+Roll percentile dice:
+
+01-20: **Close Call**: -20% to next maneuver but no damage
+21-40: **Minor System Strain**: -20% to actions with specific system for 1 round
+41-60: **Control Issue**: Vehicle requires a successful Vehicle Operation roll next round or loses 1 more distance
+61-80: **System Damage**: 1 damage to system (roll d10: 1-3 Propulsion, 4-6 Steering, 7-0 Structure)
+81-90: **Major Problem**: Vehicle stalls/spins, requiring successful Vehicle Operation roll to recover
+91-00: **Critical Failure**: 2 damage to random system, vehicle disabled on a roll of 96-00
+
+*Apply modifiers from Risk Level where indicated (e.g., +20 for Risk Level 2)*
+
+#### **Vehicle Damage System**
+
+When a vehicle takes damage to a system:
+
+**PROPULSION SYSTEM**
+- **Stressed (1)**: -1 SP for 1 round
+- **Damaged (2)**: -1 SP until repaired
+- **Critical (3)**: -2 SP until repaired
+- **Disabled (4)**: Vehicle immobilized
+
+**STEERING SYSTEM**
+- **Stressed (1)**: -1 HA for 1 round
+- **Damaged (2)**: -1 HA until repaired
+- **Critical (3)**: -2 HA until repaired
+- **Disabled (4)**: Vehicle cannot turn effectively (-60% to all maneuver rolls)
+
+**STRUCTURE**
+- **Stressed (1)**: Cosmetic damage only
+- **Damaged (2)**: Vehicle compromised, passengers at -20% to actions
+- **Critical (3)**: Vehicle severely damaged, passengers at -40%
+- **Disabled (4)**: Vehicle breaking apart, immediate evacuation required
+
+### **ATOMIC AGE VEHICLE ENHANCEMENTS**
+
+#### **Chemical X Injection System**
+- **Normal Function**: Once per chase, provides +20% to a Vehicle Operation roll
+- **Description**: Experimental chemical mixture that supercharges atomic engines for brief bursts
+- **Catastrophe**: The unstable formula ignites in a spectacular cascade of blue-white flames as the atomic accelerator redlines. Vehicle shoots forward at maximum speed, requiring Vehicle Operation rolls at -40% each round until a success is achieved.
+
+#### **Gyroscopic Stabilization**
+- **Normal Function**: +20% to any one hazard roll per chase
+- **Description**: Advanced spinning gyros that maintain vehicle stability in extreme maneuvers
+- **Catastrophe**: The precision gyros break free from their housings and tear through the vehicle's inner workings like metal pinballs. Vehicle spins wildly out of control, and all occupants must make REFLEX checks or be thrown about the cabin.
+
+#### **Reinforced Frame**
+- **Normal Function**: Ignore the first Structure damage in any chase
+- **Description**: Advanced metallurgy and additional structural bracing with distinctive external braces
+- **Catastrophe**: The reinforced components suddenly buckle under opposing stresses, twisting the vehicle's frame with a terrible metallic shriek. The vehicle's Structure system automatically takes the damage from this failure, and handling suffers -20% until repairs are completed.
+
+#### **Atomic Cooling System**
+- **Normal Function**: SP cannot be reduced by system damage
+- **Description**: Specialized cooling apparatus with glowing blue conduits and distinctive fins
+- **Catastrophe**: Pressurized cooling fluid erupts from ruptured pipes, instantly flash-freezing exposed components. Vehicle stalls completely and requires a successful Engineering (Propulsion) check to restart.
+
+#### **Advanced Traction System**
+- **Normal Function**: +20% to hazards involving surface changes or weather conditions
+- **Description**: Automatically adjusting wheels/treads that conform to terrain conditions
+- **Catastrophe**: The adaptive materials in the tires/treads suddenly shred themselves against the surface in a dramatic burst of rubber and sparks. Vehicle immediately loses 50% of its current speed and handling suffers -20% until repairs are completed.
+
+#### **Atomic Radar**
+- **Normal Function**: Once per chase, reveals outcome of Alternate Route before committing
+- **Description**: Experimental scanning system with distinctive rotating dome antenna
+- **Catastrophe**: The scanning system emits a high-pitched whine before the dome explodes in a shower of sparks and fragments. Driver suffers complete instrument failure, imposing -40% to all driving-related checks until a SAVVY check is passed.
 
 ---
 

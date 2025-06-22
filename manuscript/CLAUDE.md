@@ -73,5 +73,5 @@ The manuscripts compile and expand content from:
 - **Volume IV**: Comprehensive planetary guide focusing on Venus as the primary setting
 
 ## Development Notes
-
-Volume IV (Venus Gazetteer) is currently empty and needs population with content from the Venus-related files in the setting directory.
+- Venus Gazetteer is partially complete
+- Additional Gazetteers needed for Luna, Mercury, Terra, Ceres, Titan, Ganymeded, and Athena

@@ -17,1501 +17,1020 @@ Whether you're hunting for ancient Martian artifacts, defending a Venus colony f
 
 ## **CHAPTER 1: CHARACTER CREATION**
 
-Creating a character in Atomic Tomorrow Adventures means building someone extraordinary: the kind of person who belongs in thrilling tales of atomic-age adventure. But here's the thing: you're not just rolling dice and assigning numbers. You're crafting a hero worthy of the atomic tomorrow, someone with the courage to face Martian death rays and the wit to sweet-talk a Venusian merchant prince out of his finest atmospheric silk.
+*Building heroes worthy of the atomic tomorrow*
 
-The system uses four columns to define who you are, where you come from, and what makes you special. Think of it as choosing the fundamental elements that make your character unique; these four choices will determine everything from your skill set to your starting equipment to the kinds of adventures that call to you across the void between worlds.
+Creating a character for Atomic Tomorrow Adventures means crafting someone extraordinary enough to stand among the stars yet human enough to care about what happens to the people they encounter among those distant worlds. You're building explorers who look at the vast darkness between planets and see possibility rather than emptiness, scientists whose curiosity drives them to unlock mysteries that could reshape human understanding, and heroes whose courage makes them willing to risk everything for the sake of discovery and adventure.
 
-### THE FOUR-COLUMN SYSTEM
+The character creation system uses four essential questions to define who your character is: What makes you extraordinary? What do you do for a living? Where do you come from? How were you raised? Answer these questions by selecting one option from each of four columns, and you'll have a complete character concept that's both mechanically functional and dramatically interesting.
 
-Every character combines one choice from each of four columns to create a unique concept. Don't worry about memorizing every option right now—just understand that each column serves a different purpose in defining your character. Your **Epithet** describes what makes you exceptional; your **Profession** determines your skills and training; your **Origin** reflects where you were born and raised; and your **Background** shapes your upbringing and connections.
+### **THE FOUR-COLUMN APPROACH**
 
-Here are all the options laid out for easy reference:
+Think of character creation as building a sentence that tells us everything essential about your character. "I'm a **Brilliant Xenobiologist** from **Venus** with an **Academic Training** background" immediately gives us a clear picture of someone whose exceptional intellect led them to study alien life forms, whose origins on humanity's most mysterious world shaped their perspective, and whose formal education provided them with the scientific foundation to excel in their field.
 
-| **COLUMN A: EPITHET** | **COLUMN B: PROFESSION** | **COLUMN C: ORIGIN** | **COLUMN D: BACKGROUND** |
-|------------------------|-------------------------|---------------------|-------------------------|
-| **Gritty/Tough** | **Aces & Pilots** | Terran | Military Family |
-| Grizzled | Rocket Jockey | Terran Exile | Merchant Clan |
-| Hard-Bitten | Astrogator | Loonie | Frontier Homestead |
-| Battle-Scarred | Astro Racer | Martian | Academy |
-| Steely-Eyed | Orbital Jumper | Venusian | Street Urchin |
-| Hardboiled | Stunt Pilot | Belter | Corporate Drone |
-| Iron-Willed | | Jovian | Aristocratic Family |
-| Two-Fisted | **Scientists & Innovators** | Saturnian | Spacer Family |
-| | Brainiac | Deep Spacer | Religious Order |
-| **Skilled/Expert** | Atomicist | Genmodded | Laboratory Subject |
-| Crack | Xenobiologist | Red Martian | Megacity Native |
-| Hotshot | Mad Genius | Mercury Native | Political Dynasty |
-| Virtuoso | Tech Wizard | Titan Colonist | Colonist Family |
-| Legendary | | Neptunian | Underworld Family |
-| Peerless | **Explorers & Scouts** | Ceres Engineer | Showbiz Family |
-| Uncanny | Scout | Pluto Outpost | Regressed/Barbarian |
-| | Trailblazer | | Drifter |
-| **Adventurous** | Planetary Scout | | Refugee |
-| Intrepid | Ruin Delver | | Ship-Born |
-| Swashbuckling | Xeno-Tracker | | Noble House |
-| Bold | Deep Scout | | Atomicorp Employee |
-| Daring | | | Orbital Habitat |
-| Audacious | **Soldiers & Enforcers** | | Venusian Cloud Drifter |
-| Lucky | Space Ranger | | Belt Prospector Family |
-| | Solar Marine | | Station Brat |
-| **Clever/Smart** | Bounty Hunter | | Filthy Rich |
-| Brilliant | Mercenary | | |
-| Ingenious | Bodyguard | | |
-| Silver-Tongued | | | |
-| Enigmatic | **Mechanics & Engineers** | | |
-| Veteran | Wrench Monkey | | |
-| | Atomech | | |
-| **Charming** | Gadgeteer | | |
-| Plucky | Salvager | | |
-| Seductive | Roboticist | | |
-| Stunning | | | |
-| Suave | **Scoundrels & Opportunists** | | |
-| | Space Rat | | |
-| | Grifter | | |
-| | Smuggler | | |
-| | Cat Burglar | | |
-| | Gambler | | |
+Each column serves a different purpose in defining your character:
+
+**Column A: Epithet** - What makes you extraordinary compared to ordinary people? This isn't just a job description or a place of birth—it's the quality that sets you apart from the millions of normal folks living their routine lives across the solar system. Whether you're Brilliant, Lucky, Two-Fisted, or Daring, your epithet represents the spark of greatness that makes you the protagonist of adventures rather than just another face in the crowd.
+
+**Column B: Profession** - What you do for a living and what shaped your skills. Your profession represents years of training, experience, and expertise that have molded you into someone capable of handling the challenges that ordinary citizens couldn't even attempt. Whether you're a Rocket Jockey racing between worlds, a Scout mapping uncharted territories, or a Xenobiologist studying impossible life forms, your profession gives you the tools to succeed where others would fail.
+
+**Column C: Origin** - Where you're from shapes more than just your accent. Growing up on Mars means dealing with thin air and ancient mysteries. Being raised on Luna means your bones adapted to low gravity and your mind adapted to life in humanity's first real space colony. Venusians understand steaming jungles and impossible atmospheric pressures. Each origin provides physical adaptations, cultural knowledge, and a unique perspective on what it means to be human in the atomic age.
+
+**Column D: Background** - How you were raised and what experiences shaped you before you became an adventurer. Were you raised in a Military Family that taught you discipline and tactical thinking? Did Academic Training give you the intellectual tools to understand complex problems? Perhaps a Frontier Homestead background taught you self-reliance and practical skills. Your background provides the foundation upon which your professional training was built.
+
+### **GENERATING YOUR ATTRIBUTES**
+
+Your character's basic capabilities are represented by seven attributes that measure different aspects of physical and mental prowess. These attributes form the foundation for everything your character attempts, from piloting spacecraft through asteroid fields to negotiating with alien ambassadors.
+
+**BRAWN** represents physical strength, toughness, and athletic power. High Brawn helps you swing that wrench with enough force to fix a stuck valve, survive the crushing acceleration of emergency maneuvers, or simply intimidate opponents with your physical presence.
+
+**REFLEX** covers physical coordination, dexterity, and reaction speed. Whether you're dodging ray gun blasts, flying a nimble fighter through a debris field, or performing delicate surgery with alien anatomy, Reflex determines how well your body responds to your will.
+
+**NERVE** measures mental composure and courage under pressure. When the alien artifact starts glowing with unknown energy, when the ship's hull begins buckling under atmospheric pressure, or when you're face-to-face with something that shouldn't exist, Nerve determines whether you keep your cool and act rationally.
+
+**SAVVY** represents intelligence, technical knowledge, and perception. This is your ability to understand how things work, notice important details, and make the mental connections that lead to breakthrough discoveries. High Savvy lets you jury-rig solutions to impossible problems and see patterns that others miss.
+
+**CHARM** covers charisma, leadership, and persuasiveness. In an age where humanity is expanding across the solar system and making contact with alien intelligence, the ability to communicate effectively, inspire others, and represent humanity well becomes critically important.
+
+**GRIT** measures endurance, willpower, and mental fortitude. Space travel is hard. Exploration is dangerous. Discovery often requires pushing through discomfort, fear, and exhaustion to reach the other side. Grit is what keeps you going when lesser individuals would give up.
+
+**GUILE** represents cunning, deception, and craftiness. Sometimes the direct approach won't work. Sometimes you need to be clever rather than brave, subtle rather than forceful. Guile helps you find alternative solutions when conventional approaches fail.
+
+Most humans have attributes ranging from 3 to 18, with 10-11 representing average capability. However, your origin significantly affects how these attributes are generated:
+
+**Terrans** (Earth-born humans) must use the Standard Array of 15, 14, 12, 11, 10, 9, 8, distributed among the seven attributes as you choose. Generations of genetic optimization and technological enhancement have made Earth-born humans remarkably standardized in their capabilities, though you can still choose where to place these values to reflect your character's particular strengths and weaknesses.
+
+**All other origins** roll 2d10 for each attribute and arrange the results as desired, with results below 3 becoming 3 and above 18 becoming 18. Growing up in the challenging environments of space and other worlds creates more variable human development, sometimes producing individuals with capabilities that exceed normal human ranges.
+
+**Terran Exiles** represent Earth-born humans who left their homeworld under unusual circumstances. They may choose to use either the Standard Array or roll attributes like other origins, representing either their standardized Earth heritage or the extraordinary circumstances that led to their exile.
+
+Remember that your Origin and Background selections will modify these base attributes, so you can achieve values outside the normal 3-18 range through the experiences that shaped your character's development.
+
+### **COLUMN A: EPITHET**
+
+Your epithet represents what makes you extraordinary compared to ordinary people. It provides special abilities and unique dice roll interpretations that other characters don't possess.
+
+#### **Gritty/Tough Epithets**
+
+| Epithet                  | Primary Benefit                                  | Benefit                                                                                                                                                                                            |
+| ------------------------ | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Grizzled**       | +2 GRIT                                          | You have 1 extra wound on your track before incapacitation (5 wounds instead of 4)                                                                                                                 |
+| **Hard-Bitten**    | +1 GRIT, +1 NERVE                                | +20% resistance to environmental hazards and extreme conditions                                                                                                                                    |
+| **Battle-Scarred** | +2 NERVE                                         | Wounds never affect your initiative rolls, regardless of penalty level                                                                                                                             |
+| **Steely-Eyed**    | +2 NERVE                                         | In standoffs and intimidation contests, opponents need a critical success to shake you                                                                                                             |
+| **Hardboiled**     | +1 GRIT, +1 GUILE                                | Immune to emotional manipulation and can function without sleep for 48 hours with no penalty                                                                                                       |
+| **Iron-Willed**    | +2 GRIT                                          | When you would normally be incapacitated by a wound, you can continue functioning by making a GRIT check each round. However, sustaining any additional wound immediately renders you unconscious. |
+| **Two-Fisted**     | Can fight effectively with a weapon in each hand | Can Parry and Block one more time per turn with no penalty                                                                                                                                         |
+
+#### **Skilled/Expert Epithets**
+
+| Epithet             | Primary Benefit                                                                      | Benefit                                                                                                                                    |
+| ------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Crack**     | In your primary professional skill, any roll of doubles or ending in 0 or 5 succeeds | +10% to all other professional skills                                                                                                      |
+| **Hotshot**   | +10% to three skills of your choice                                                  | Your show-off maneuvers succeed more often, granting +20% when attempting flashy actions                                                   |
+| **Virtuoso**  | One professional skill at +20% above normal maximum                                  | Critical successes on professional skill rolls create lasting positive reputation                                                          |
+| **Legendary** | Your name opens doors (+20% to social interactions where your reputation matters)    | After adequate preparation for a task within your expertise, you can perform one flawless execution (requires describing your preparation) |
+| **Peerless**  | +10% to all professional skills in your field                                        | After studying a problem in your field for at least an hour, you can attempt solutions that would be impossible for others                 |
+| **Uncanny**   | Sixth sense for danger (+20% to detect ambushes, traps, and betrayals)               | Animals and children instinctively trust you                                                                                               |
+
+#### **Adventurous Epithets**
+
+| Epithet                 | Primary Benefit                                                                                                                 | Benefit                                                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **Intrepid**      | +1 NERVE, +1 REFLEX                                                                                                             | +20% to all exploration and pathfinding rolls                           |
+| **Swashbuckling** | +20% to acrobatic combat maneuvers                                                                                              | Can goad opponents into making mistakes by targeting their pride        |
+| **Bold**          | After any failure, gain +20% to your next roll if attempting a different approach                                               | Recover from setbacks twice as quickly as normal characters             |
+| **Daring**        | +20% to genuinely dangerous actions                                                                                             | Never suffer special or critical failures when attempting risky actions |
+| **Audacious**     | Can attempt normally impossible stunts at -40% instead of being automatically impossible                                        | Your daring inspires allies, granting them +10% to their next action    |
+| **Lucky**         | When you fail a roll, any result ending in a 7 allows you to reroll (you can continue rerolling as long as you keep getting 7s) | +20% to games of chance and randomized situations                       |
+
+#### **Clever/Smart Epithets**
+
+| Epithet                  | Primary Benefit                                                                            | Benefit                                                                                                                          |
+| ------------------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Brilliant**      | +2 SAVVY                                                                                   | When examining clues or evidence, you can make<br />correlations others miss (+20% to deduction and analysis)                    |
+| **Ingenious**      | Can create impromptu tools from available materials on any successful SAVVY roll           | Your jury-rigged solutions ignore the first Special Failure,<br />breaking only on Critical Failures or a second Special Failure |
+| **Silver-Tongued** | +2 CHARM                                                                                   | Persuasion attempts that succeed create lasting belief<br />changes rather than temporary compliance                             |
+| **Enigmatic**      | People find it difficult to read you (-20% to others' attempts to analyze your intentions) | Strangers often confide in you, sharing secrets they normally<br /> wouldn't                                                     |
+| **Veteran**        | +1 GRIT, +1 SAVVY                                                                          | Better situational awareness; you can detect ambushes on<br />any successful roll, not just critical success                     |
+
+#### **Charming Epithets**
+
+| Epithet               | Primary Benefit    | Benefit                                                                                                                                                                                                                           |
+| --------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Plucky**      | +1 CHARM, +1 NERVE | In any Social Contest trying to intimidate, frighten or overawe you, you reduce the degree of success score against you by 1.                                                                                                     |
+| **Seductive**   | +1 CHARM, +1 GUILE | In Seduction Social Contests, Opposed wraps back around to Receptive (skipping Convinced). It's still not mind control,<br />and NPCs can want you and still betray you or refuse you out of loyalty or scruples.                 |
+| **Stunning**    | +2 CHARM           | You command attention. You are noticed wherever you go, unless heavily disguised. Villains prefer to capture or spare you<br />rather than mar your beauty.                                                                       |
+| **Suave**       | +1 CHARM, +1 SAVVY | Special and Critical failures on Social skills become ordinary failures.                                                                                                                                                          |
+| **Well-Heeled** | +1 CHARM, +1 GUILE | When failing a roll that could be resolved with money, you may immediately make a GUILE check. Success means you find a way to throw credits at the problem and turn your failure into a success - but at double the normal cost. |
+
+*Choose one epithet that best represents your character's extraordinary quality.*
+
+### **COLUMN B: PROFESSION**
+
+Your profession represents your training, expertise, and the career that has shaped your capabilities. It determines your primary skill set and starting equipment.
+
+#### **Aces & Pilots**
+
+| Profession               | Skills                                                                                                                                                               |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ROCKET JOCKEY**  | Piloting (Spacecraft) (REFLEX) +40%, Technology (Ship Systems) (SAVVY) +20%, Navigation (Space) (SAVVY) +10%, Combat (Pistols) (REFLEX) +10%                         |
+| **ASTROGATOR**     | Navigation (Space) (SAVVY) +40%, Science (Mathematics) (SAVVY) +20%, Science (Astronomy) (SAVVY) +10%, Computer Systems (Programming) (SAVVY) +10%                   |
+| **ASTRO RACER**    | Piloting (Racing) (REFLEX) +40%, Repair (Vehicle) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Athletics (Reflexes) (REFLEX) +10%                      |
+| **ORBITAL JUMPER** | Athletics (Zero-G Movement) (REFLEX) +40%, Athletics (Jumping) (BRAWN) +20%, Technology (Vacuum Equipment) (SAVVY) +10%, Perception (Spatial Awareness) (SAVVY) +10% |
+| **STUNT PILOT**    | Piloting (Aircraft) (REFLEX) +40%, Performance (Showmanship) (CHARM) +20%, Repair (Vehicle) (SAVVY) +10%, Perception (Threat Assessment) (SAVVY) +10%                |
+
+#### **Scientists & Innovators**
+
+| Profession              | Skills                                                                                                                                                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **BRAINIAC**      | Science (Choose Specialty) (SAVVY) +40%, Investigation (Research) (SAVVY) +20%, Technology (Laboratory Equipment) (SAVVY) +10%, Science (Mathematics) (SAVVY) +10% |
+| **ATOMICIST**     | Science (Physics) (SAVVY) +40%, Engineering (Atomic) (SAVVY) +20%, Engineering (Structural) (SAVVY) +10%, Science (Mathematics) (SAVVY) +10%                       |
+| **XENOBIOLOGIST** | Science (Xenobiology) (SAVVY) +40%, Medicine (Field Medicine) (SAVVY) +20%, Perception (Observation) (SAVVY) +10%, Technology (Sampling Equipment) (SAVVY) +10%    |
+| **MAD GENIUS**    | Engineering (Experimental) (SAVVY) +40%, Science (Theoretical Physics) (SAVVY) +20%, Deception (Misdirection) (GUILE) +10%, Perception (Intuition) (SAVVY) +10%    |
+| **TECH WIZARD**   | Repair (Improvised) (SAVVY) +40%, Technology (Electronics) (SAVVY) +20%, Engineering (Mechanical) (SAVVY) +10%, Perception (Technical Intuition) (SAVVY) +10%      |
+
+#### **Explorers & Scouts**
+
+| Profession                | Skills                                                                                                                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SCOUT**           | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Perception (Environmental Awareness) (SAVVY) +10%, Combat (Rifles) (REFLEX) +10%         |
+| **TRAILBLAZER**     | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Technology (Cartography) (SAVVY) +10%, Perception (Environmental Awareness) (SAVVY) +10% |
+| **RUIN DELVER**     | Academics (Archaeology) (FLEX) +40%, Academics (Ancient Languages) (FLEX) +20%, Perception (Trap Detection) (SAVVY) +10%, Academics (History) (FLEX) +10%                 |
+| **PLANETARY SCOUT** | Investigation (Surveying) (SAVVY) +40%, Science (Geology) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Stealth (Camouflage) (REFLEX) +10%                   |
+| **XENO-TRACKER**    | Investigation (Tracking) (SAVVY) +40%, Animal Handling (Alien Creatures) (CHARM) +20%, Stealth (Camouflage) (REFLEX) +10%, Survival (Wilderness) (GRIT) +10%              |
+
+#### **Soldiers & Enforcers**
+
+| Profession              | Skills                                                                                                                                                                      |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SPACE RANGER**  | Security (Law Enforcement) (SAVVY) +40%, Investigation (Crime Scene Analysis) (SAVVY) +20%, Combat (Rifles) (REFLEX) +10%, Academics (Regulations) (FLEX) +10%              |
+| **SOLAR MARINE**  | Combat (Heavy Weapons) (REFLEX) +40%, Combat (Bladed Weapons) (REFLEX) +20%, Athletics (Strength) (BRAWN) +10%, Survival (Combat Zone) (GRIT) +10%                          |
+| **BOUNTY HUNTER** | Investigation (Tracking) (SAVVY) +40%, Streetwise (Information Gathering) (GUILE) +20%, Combat (Pistols) (REFLEX) +10%, Persuasion (Intimidation) (CHARM) +10%              |
+| **MERCENARY**     | Combat (Rifles) (REFLEX) +40%, Persuasion (Negotiation) (CHARM) +20%, Tactics (Combat) (SAVVY) +10%, Survival (Combat Zone) (GRIT) +10%                                     |
+| **BODYGUARD**     | Perception (Threat Assessment) (SAVVY) +40%, Combat (Unarmed Combat) (REFLEX) +20%, Perception (Situational Awareness) (SAVVY) +10%, Security (VIP Protection) (SAVVY) +10% |
+
+#### **Mechanics & Engineers**
+
+| Profession              | Skills                                                                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WRENCH MONKEY** | Repair (Ship Systems) (SAVVY) +40%, Technology (Diagnostics) (SAVVY) +20%, Engineering (Mechanical) (SAVVY) +10%, Streetwise (Scrounging) (GUILE) +10%                    |
+| **ATOMECH**       | Engineering (Atomic) (SAVVY) +40%, Technology (Radiation Equipment) (SAVVY) +20%, Engineering (Power Systems) (SAVVY) +10%, Repair (Ship Systems) (SAVVY) +10%            |
+| **GADGETEER**     | Engineering (Experimental) (SAVVY) +40%, Technology (Electronics) (SAVVY) +20%, Combat (Exotic Weapons) (REFLEX) +10%, Streetwise (Scrounging) (GUILE) +10%               |
+| **SALVAGER**      | Repair (Ship Systems) (SAVVY) +40%, Technology (Ship Systems) (SAVVY) +20%, Streetwise (Scrounging) (GUILE) +10%, Persuasion (Negotiation) (CHARM) +10%                   |
+| **ROBOTICIST**    | Engineering (Robotics) (SAVVY) +40%, Technology (Positronic Systems) (SAVVY) +20%, Engineering (Mechanical) (SAVVY) +10%, Animal Handling (Robot Psychology) (CHARM) +10% |
+
+#### **Scoundrels & Opportunists**
+
+| Profession            | Skills                                                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SPACE RAT**   | Streetwise (Scrounging) (GUILE) +40%, Deception (Bluffing) (GUILE) +20%, Stealth (Hiding) (REFLEX) +10%, Social (Rumor Collection) (CHARM) +10%           |
+| **GRIFTER**     | Deception (Con Artistry) (GUILE) +40%, Perception (Reading People) (SAVVY) +20%, Persuasion (Fast Talk) (CHARM) +10%, Deception (Disguise) (GUILE) +10%   |
+| **SMUGGLER**    | Deception (Misdirection) (GUILE) +40%, Piloting (Spacecraft) (REFLEX) +20%, Navigation (Secret Routes) (SAVVY) +10%, Streetwise (Contraband) (GUILE) +10% |
+| **CAT BURGLAR** | Security (Lock Picking) (SAVVY) +40%, Stealth (Silent Movement) (REFLEX) +20%, Athletics (Climbing) (BRAWN) +10%, Stealth (Hiding) (REFLEX) +10%          |
+| **GAMBLER**     | Science (Probability) (SAVVY) +40%, Deception (Bluffing) (GUILE) +20%, Perception (Reading People) (SAVVY) +10%, Social (Etiquette) (CHARM) +10%          |
+
+#### **Psychics & Espers**
+
+| Profession            | Skills                                                                                                                                                                 |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **MENTALIST**   | Psi (Telepathy/TK) (NERVE) +40/-10%, , Psi (Mental Defense) (NERVE) +20%, Survival (Mental Discipline) (GRIT) +10%, Science (Psychology) (SAVVY) +10%                  |
+| **TELEKINETIC** | Psi (Psychokinesis/Emp) (NERVE) +40/-10%, Athletics (Fine Control) (REFLEX) +20%, Survival (Mental Discipline) (GRIT) +10%, Science (Psi Theory) (SAVVY) +10%          |
+| **PRECOG**      | Psi (Precognition/Telepathy) (NERVE) +40/-10%, Perception (Intuition) (SAVVY) +20%, Science (Probability) (SAVVY) +10%, Academics (Dream Interpretation) (FLEX) +10%   |
+| **EMPATH**      | Psi (Empathy/Teleport) (NERVE) +40/-10%, Survival (Mental Discipline) (GRIT) +20%, Perception (Reading People) (SAVVY) +10%, Persuasion (Counseling) (CHARM) +10%      |
+| **WILD TALENT** | Psi (All) (NERVE) -20%, roll on Wild Talent Table, Survival (Mental Discipline) (GRIT) +20%, Psi (Energy Manipulation) (NERVE) +10%, Science (Psi Theory) (SAVVY) +10% |
+
+#### **Diplomats & Communicators**
+
+| Profession              | Skills                                                                                                                                                            |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **XENO-LINGUIST** | Academics (Linguistics) (FLEX) +40%, Xenology (Alien Cultures) (FLEX) +20%, Science (Pattern Recognition) (SAVVY) +10%, Social (Diplomatic Protocol) (CHARM) +10% |
+| **NEGOTIATOR**    | Persuasion (Negotiation) (CHARM) +40%, Perception (Reading People) (SAVVY) +20%, Social (Mediation) (CHARM) +10%, Academics (Contract Law) (FLEX) +10%            |
+| **AMBASSADOR**    | Social (Diplomacy) (CHARM) +40%, Academics (Politics) (FLEX) +20%, Social (Etiquette) (CHARM) +10%, Perception (Cultural Sensitivity) (SAVVY) +10%                |
+| **NEWSHOUND**     | Investigation (Interviewing) (SAVVY) +40%, Persuasion (Fast Talk) (CHARM) +20%, Academics (Writing) (FLEX) +10%, Artistry (Photography) (FLEX) +10%               |
+| **SOCIALITE**     | Social (Networking) (CHARM) +40%, Social (Etiquette) (CHARM) +20%, Streetwise (Rumor Collection) (GUILE) +10%, Social (Fashion Sense) (CHARM) +10%                |
+
+#### **Medical Experts**
+
+| Profession               | Skills                                                                                                                                                               |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SAWBONES**       | Medicine (Emergency Medicine) (SAVVY) +40%, Perception (Triage) (SAVVY) +20%, Medicine (Improvised Treatment) (SAVVY) +10%, Persuasion (Bedside Manner) (CHARM) +10% |
+| **XENODOC**        | Medicine (Xenomedicine) (SAVVY) +40%, Science (Comparative Physiology) (SAVVY) +20%, Medicine (Diagnostics) (SAVVY) +10%, Medicine (Surgery) (SAVVY) +10%            |
+| **PSYCHIATRIST**   | Medicine (Psychiatry) (SAVVY) +40%, Science (Behavioral Science) (SAVVY) +20%, Persuasion (Counseling) (CHARM) +10%, Medicine (Medication) (SAVVY) +10%              |
+| **COMBAT MEDIC**   | Medicine (Battlefield Medicine) (SAVVY) +40%, Perception (Combat Awareness) (SAVVY) +20%, Medicine (Triage) (SAVVY) +10%, Medicine (Emergency Medicine) (SAVVY) +10% |
+| **LIFE SCIENTIST** | Science (Biology) (SAVVY) +40%, Science (Chemistry) (SAVVY) +20%, Investigation (Research Methodology) (SAVVY) +10%, Technology (Laboratory Equipment) (SAVVY) +10%  |
+
+#### **Commerce & Trade**
+
+| Profession                     | Skills                                                                                                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **SPACE TRADER**         | Persuasion (Negotiation) (CHARM) +40%, Trade (Market Analysis) (FLEX) +20%, Trade (Appraisal) (FLEX) +10%, Social (Networking) (CHARM) +10%                                    |
+| **CARTEL BROKER**        | Streetwise (Black Market) (GUILE) +40%, Persuasion (Intimidation) (CHARM) +20%, Perception (Threat Assessment) (SAVVY) +10%, Navigation (Secret Routes) (SAVVY) +10%           |
+| **INSURANCE ADJUSTER**   | Investigation (Crime Scene Analysis) (SAVVY) +40%, Perception (Risk Assessment) (SAVVY) +20%, Deception (Forgery Detection) (GUILE) +10%, Academics (Contract Law) (FLEX) +10% |
+| **ADVENTURE CAPITALIST** | Trade (Business) (FLEX) +40%, Investigation (Treasure Hunting) (SAVVY) +20%, Persuasion (Negotiation) (CHARM) +10%, Trade (Resource Evaluation) (FLEX) +10%                    |
+| **EXOTIC DEALER**        | Xenology (Alien Artifacts) (FLEX) +40%, Xenology (Alien Cultures) (FLEX) +20%, Investigation (Authentication) (SAVVY) +10%, Social (Discretion) (CHARM) +10%                   |
+
+*Choose one profession that best represents your character's career and expertise.*
+
+### **COLUMN C: ORIGIN**
+
+Your origin reflects where you were born and raised, shaping your physical adaptations, cultural knowledge, and baseline abilities.
+
+| Origin                | Description                                                 | Attribute Mods                                 | Cultural Skills                                                                                                                    | Environmental Adaptations                                               |
+| --------------------- | ----------------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **TERRAN**      | Born on Earth, shaped by generations of genetic engineering | SAVVY +1, GRIT -1                              | Academics (Bureaucracy) (FLEX) +15%, Technology (Infrastructure) (SAVVY) +10%, Academics (History) (FLEX) +5%                      | Genetically Optimized, Social Programming, Environmental Sensitivity    |
+| **LOONIE**      | Raised in the low gravity of Luna                           | BRAWN -1, REFLEX +1, GUILE +1                  | Athletics (Zero-G Operations) (REFLEX) +15%, Repair (Mechanics) (SAVVY) +10%, Streetwise (Luna) (GUILE) +5%                        | Low-G Adaptation, Radiation Resistance, Bone Density Issues             |
+| **MARTIAN**     | Child of the red planet, frontier hardiness                 | BRAWN +1, GRIT +1, CHARM -1                    | Survival (Mars) (GRIT) +15%, Academics (Ancient History) (FLEX) +10%, Science (Geology) (SAVVY) +5%                                | Dust Lungs, Cold Tolerance, Water Efficiency                            |
+| **VENUSIAN**    | Raised in Venus's steaming jungles and cloud cities         | BRAWN +1, NERVE +1, SAVVY -1                   | Survival (Jungle) (GRIT) +15%, Science (Meteorology) (SAVVY) +10%, Science (Xenobiology) (SAVVY) +5%                               | Heat Tolerance, Enhanced Lung Capacity, Venus Eyes                      |
+| **BELTER**      | Born among the asteroids of the Belt                        | BRAWN -1, GUILE +1, GRIT +1                    | Athletics (Zero-G Operations) (REFLEX) +15%, Trade (Resource Management) (FLEX) +10%, Navigation (Asteroid) (SAVVY) +5%            | Vacuum Sense, Low Consumption Metabolism, Spatial Awareness             |
+| **JOVIAN**      | Raised in habitats orbiting Jupiter                         | SAVVY +1, REFLEX +1, CHARM -1                  | Engineering (Habitat Systems) (SAVVY) +15%, Technology (Radiation Safety) (SAVVY) +10%, Athletics (Zero-G Operations) (REFLEX) +5% | Radiation Resistant, Artificial Gravity Adaptation, Technical Intuition |
+| **SATURNIAN**   | Born in the shadow of Saturn's rings                        | REFLEX +1, CHARM +1, BRAWN -1                  | Artistry (Expression) (FLEX) +15%, Science (Astronomy) (SAVVY) +10%, Academics (Cultural History) (FLEX) +5%                       | Enhanced Visual Acuity, Cold Adaptation, Heightened Color Perception    |
+| **DEEP SPACER** | Born aboard long-haul vessels between stars                 | GRIT +1, NERVE +1, CHARM -1                    | Navigation (Astrogation) (SAVVY) +15%, Technology (Ship Systems) (SAVVY) +10%, Performance (Entertainment) (CHARM) +5%             | Space Legs, Temporal Flexibility, Confined Space Comfort                |
+| **GENMODDED**   | Engineered for specific purposes or environments            | +2 to one attribute, -1 to different attribute | Science (Genetics) (SAVVY) +15%, Medicine (Self-Care) (SAVVY) +10%, Social (Adaptation) (CHARM) +5%                                | Choice of adaptations based on engineering purpose                      |
+| **RED MARTIAN** | Descendant of ancient Martian civilization                  | PSI +30%, BRAWN -1, CHARM +1                   | Psi (Telepathy) (NERVE) +15%, Academics (Ancient Martian History) (FLEX) +10%, Social (Cultural Diplomacy) (CHARM) +5%             | Natural Telepathy, Martian Physiology, Limited Oxygen Needs             |
+
+*Choose one origin that best represents where your character comes from.*
+
+### **COLUMN D: BACKGROUND**
+
+Your background reflects your upbringing, education, and personal history before becoming an adventurer.
+
+| Background                       | Description                                              | Attribute Effects   | Additional Skills                                                                                                                                    | Resources & Connections                                                                                                                                                                                                                      |
+| -------------------------------- | -------------------------------------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **MILITARY FAMILY**        | Raised in the discipline of service                      | GRIT +1, CHARM -1   | Tactics (Combat) (SAVVY) +10%, Academics (Military Protocol) (FLEX) +10%, Combat (Firearms) (REFLEX) +5%                                             | Military contacts, access to surplus equipment                                                                                                                                                                                               |
+| **MERCHANT CLAN**          | Raised in the trading business                           | CHARM +1, GRIT -1   | Persuasion (Negotiation) (CHARM) +10%, Trade (Market Analysis) (FLEX) +10%, Trade (Appraisal) (FLEX) +5%                                             | Trading contacts, credit line with merchant houses                                                                                                                                                                                           |
+| **FRONTIER HOMESTEAD**     | Raised on the edges of civilization                      | GRIT +1, CHARM -1   | Survival (Wilderness) (GRIT) +10%, Repair (Improvised) (SAVVY) +10%, Animal Handling (Domestic Animals) (CHARM) +5%                                  | Wilderness skills, network of frontier contacts                                                                                                                                                                                              |
+| **ACADEMIC TRAINING**      | Formal education in institutions                         | SAVVY +1, BRAWN -1  | Investigation (Research) (SAVVY) +10%, Science (Mathematics) (SAVVY) +10%, Academics (History) (FLEX) +5%                                            | Academic credentials, university connections                                                                                                                                                                                                 |
+| **STREET URCHIN**          | Raised in urban underbellies                             | GUILE +1, CHARM -1  | Streetwise (Information Gathering) (GUILE) +10%, Security (Lock Picking) (SAVVY) +10%, Navigation (Urban) (SAVVY) +5%                                | Criminal contacts, knowledge of urban secrets                                                                                                                                                                                                |
+| **CORPORATE UPBRINGING**   | Raised in corporate culture                              | SAVVY +1, NERVE -1  | Trade (Business) (FLEX) +10%, Computer Systems (Operation) (SAVVY) +10%, Social (Corporate Politics) (CHARM) +5%                                     | Corporate connections, understanding of business structures                                                                                                                                                                                  |
+| **ARISTOCRATIC FAMILY**    | Born to privilege and power                              | CHARM +1, GRIT -1   | Social (Etiquette) (CHARM) +10%, Academics (Politics) (FLEX) +10%, Artistry (Appreciation) (FLEX) +5%                                                | Wealthy connections, social status, financial resources                                                                                                                                                                                      |
+| **SPACER FAMILY**          | Raised aboard ships and stations                         | REFLEX +1, BRAWN -1 | Athletics (Zero-G Operations) (REFLEX) +10%, Technology (Ship Systems) (SAVVY) +10%, Survival (Space) (GRIT) +5%                                     | Network of spacers, familiarity with various vessels                                                                                                                                                                                         |
+| **RELIGIOUS ORDER**        | Raised in spiritual tradition                            | NERVE +1, GUILE -1  | Academics (Theology) (FLEX) +10%, Survival (Meditation) (GRIT) +10%, Academics (Ancient Languages) (FLEX) +5%                                        | Religious contacts, respected status in religious communities                                                                                                                                                                                |
+| **LABORATORY SUBJECT**     | Subject of scientific experimentation                    | GRIT +1, CHARM -1   | Medicine (Knowledge) (SAVVY) +10%, Science (Laboratory Procedures) (SAVVY) +10%, Science (Psychology) (SAVVY) +5%                                    | Unique physical capabilities, connections to scientific community                                                                                                                                                                            |
+| **MEGACITY NATIVE**        | Raised in the towering urban centers of Earth            | SAVVY +1, GRIT -1   | Navigation (Urban) (SAVVY) +10%, Technology (Infrastructure) (SAVVY) +10%, Social (Crowd Management) (CHARM) +5%                                     | Knowledge of urban shortcuts, contacts in city services, access to hard-to-find goods                                                                                                                                                        |
+| **POLITICAL DYNASTY**      | Born into a family of political influence                | CHARM +1, NERVE -1  | Academics (Politics) (FLEX) +10%, Persuasion (Public Speaking) (CHARM) +10%, Academics (History) (FLEX) +5%                                          | Political connections, family name recognition, access to restricted information                                                                                                                                                             |
+| **UNDERWORLD FAMILY**      | Raised in organized crime or black market circles        | GUILE +1, SAVVY -1  | Streetwise (Information Gathering) (GUILE) +10%, Deception (Bluffing) (GUILE) +10%, Security (Alarm Systems) (SAVVY) +5%                             | Criminal contacts, knowledge of illegal operations, access to black market goods                                                                                                                                                             |
+| **SHOWBIZ FAMILY**         | Raised in the entertainment industry                     | CHARM +1, NERVE -1  | Performance (Acting) (CHARM) +10%, Social (Networking) (CHARM) +10%, Artistry (Choose One) (FLEX) +5%                                                | Media contacts, performance venues, celebrity recognition                                                                                                                                                                                    |
+| **REGRESSED/BARBARIAN**    | Raised in an isolated community rejecting technology     | BRAWN +1, SAVVY -1  | Survival (Wilderness) (GRIT) +10%, Combat (Primitive Weapons) (REFLEX) +10%, Medicine (Natural Remedies) (SAVVY) +5%                                 | Extraordinary physical capabilities, non-technological survival skills, tribe connections                                                                                                                                                    |
+| **COLONIST**               | Raised in a newly established off-world colony           | GRIT +1, CHARM -1   | Trade (Resource Management) (FLEX) +10%, Engineering (Improvisation) (SAVVY) +10%, Social (Community Relations) (CHARM) +5%                          | Colony network, self-sufficiency skills, adaptability to harsh conditions                                                                                                                                                                    |
+| **REFUGEE**                | Displaced from home by disaster or conflict              | NERVE +1, CHARM -1  | Survival (Urban) (GRIT) +10%, Persuasion (Bargaining) (CHARM) +10%, Perception (Situational Awareness) (SAVVY) +5%                                   | Network of fellow refugees, ability to adapt to new environments, resource acquisition skills                                                                                                                                                |
+| **SHIP-BORN**              | Born and raised on long-voyage spacecraft                | REFLEX +1, BRAWN -1 | Technology (Ship Systems) (SAVVY) +10%, Navigation (Spacecraft) (SAVVY) +10%, Social (Confined Communities) (CHARM) +5%                              | Extensive knowledge of ship operations, contacts among space transport crews, familiarity with multiple ports                                                                                                                                |
+| **NOBLE HOUSE**            | Member of an established aristocratic lineage            | CHARM +1, GRIT -1   | Social (Etiquette) (CHARM) +10%, Academics (Lineage History) (FLEX) +10%, Social (Influence) (CHARM) +5%                                             | Family wealth and prestige, political connections, access to exclusive venues                                                                                                                                                                |
+| **ATOMICORP EMPLOYEE**     | Raised in corporate atomic energy sector                 | SAVVY +1, NERVE -1  | Science (Nuclear Physics) (SAVVY) +10%, Engineering (Atomic) (SAVVY) +10%, Social (Corporate Politics) (CHARM) +5%                                   | Corporate security clearance, technical knowledge of atomic systems, industry contacts                                                                                                                                                       |
+| **ORBITAL HABITAT**        | Raised in artificial orbital colonies                    | REFLEX +1, BRAWN -1 | Athletics (Zero-G Operations) (REFLEX) +10%, Engineering (Life Support) (SAVVY) +10%, Science (Psychology of Confined Spaces) (SAVVY) +5%            | Understanding of habitat operations, orbital community contacts, recycling expertise                                                                                                                                                         |
+| **VENUSIAN CLOUD DRIFTER** | Raised in nomadic airships above Venus                   | REFLEX +1, SAVVY -1 | Piloting (Airship) (REFLEX) +10%, Survival (High Atmosphere) (GRIT) +10%, Science (Meteorology) (SAVVY) +5%                                          | Navigation in cloud layers, contacts among nomadic communities, unique cultural knowledge                                                                                                                                                    |
+| **BELT PROSPECTOR FAMILY** | Raised by asteroid miners and resource hunters           | GRIT +1, CHARM -1   | Science (Mineral Identification) (SAVVY) +10%, Athletics (Zero-G Operations) (REFLEX) +10%, Repair (Improvised) (SAVVY) +5%                          | Knowledge of valuable asteroid locations, assessment of mineral worth, mining contact network                                                                                                                                                |
+| **STATION BRAT**           | Raised on a space station with minimal adult supervision | REFLEX +1, NERVE -1 | Athletics (Zero-G Acrobatics) (REFLEX) +10%, Investigation (Station Layouts) (SAVVY) +10%, Streetwise (Scrounging) (GUILE) +5%                       | Knowledge of station maintenance shafts and hidden areas, station crew contacts, improvisation skills                                                                                                                                        |
+| **FILTHY RICH**            | Born with a platinum spoon in your mouth                 | +1 CHARM, -1 GRIT   | Trade (Business) (FLEX) +15%, Social (Etiquette) (CHARM) +15%, Persuasion (Negotiation) (CHARM) +10%, Streetwise (Information Gathering) (GUILE) +5% | You get a 300 cr/month stipend from your folks.<br />When making a purchase over $100 credits, roll percentile dice. On a roll ending in 0 or 5, the item is acquired at half price due to family connections or bulk discount arrangements. |
+
+*Choose one background that best represents your character's upbringing and personal history.*
+
+---
+
+## **CHAPTER 2: CORE SYSTEMS**
+
+*The fundamental mechanics of atomic age adventure*
+
+The atomic age runs on a simple principle: extraordinary people can achieve extraordinary things through skill, determination, and a willingness to risk everything for the sake of discovery. These core systems provide the mechanical foundation for adventures that feel both scientifically plausible and dramatically exciting, where success comes from character competence rather than random chance.
+
+### **THE BASIC RESOLUTION SYSTEM**
+
+When your character attempts something with uncertain outcome and meaningful consequences, roll percentile dice (two ten-sided dice, treating one as tens and the other as ones) against your skill percentage. Rolling equal to or under your skill percentage means success; rolling over means failure. Higher skill percentages represent greater competence—a Rocket Jockey with Piloting (Spacecraft) at 70% succeeds more often than a novice with the same skill at 30%.
+
+The quality of your success matters as much as simply succeeding or failing. The atomic age rewards exceptional performance and punishes sloppy work:
+
+**Ordinary Success** occurs when you roll under your skill percentage with a normal result. You achieve what you set out to do competently and efficiently.
+
+**Special Success** happens when you roll under your skill percentage with a result ending in 0 or 5. You achieve your goal with particular excellence, creating additional benefits or avoiding potential complications.
+
+**Critical Success** occurs when you roll doubles (11, 22, 33, etc.) under your skill percentage. You achieve your goal brilliantly, creating significant additional benefits and demonstrating true mastery.
+
+**Automatic Success** happens on rolls of 01-05 regardless of skill level, representing those moments when everything comes together perfectly despite the odds.
+
+**Automatic Failure** occurs on rolls of 96-00 regardless of skill level, representing catastrophic errors that can happen even to experts under pressure.
+
+### **TASK DIFFICULTY AND MODIFIERS**
+
+The atomic age presents challenges that range from routine operations to tasks that push the boundaries of human capability. Rather than changing target numbers, the system modifies your effective skill percentage based on circumstances:
+
+**Routine conditions** (+0%) represent standard operating conditions with proper equipment and adequate time. This is your baseline skill percentage.
+
+**Easy conditions** (+20%) occur when you have favorable circumstances, excellent equipment, or plenty of time to work carefully.
+
+**Challenging conditions** (-20%) arise from time pressure, improvised tools, or unfavorable circumstances that make success more difficult.
+
+**Difficult conditions** (-40%) represent severe complications like working under fire, using completely inappropriate tools, or dealing with hostile environments.
+
+**Extreme conditions** (-60%) occur when attempting tasks under nearly impossible circumstances with critically limited resources.
+
+**Heroic conditions** (-80%) represent the stuff of legends—tasks that ordinary people simply cannot attempt and even heroes accomplish only through extraordinary effort.
+
+Apply only the single most significant modifier rather than stacking multiple penalties. The atomic age challenges heroes with dramatic obstacles, not arithmetic complexity.
+
+### **EXTENDED TASKS AND TEAMWORK**
+
+Some challenges require sustained effort or the coordinated work of multiple characters. Extended tasks use a success-counting system where different qualities of success contribute different amounts toward completion:
+
+**Standard Tasks** require 1 success and represent things like hot-wiring a vehicle or treating a minor injury.
+
+**Complex Tasks** require 3 successes and cover challenges like bypassing security systems or performing field surgery.
+
+**Demanding Tasks** require 5 successes for things like deciphering alien code or repairing damaged spacecraft.
+
+**Expert Tasks** require 8 successes for challenges like reconstructing ancient technology or navigating treacherous asteroid fields.
+
+**Master Tasks** require 12 or more successes for achievements like terraforming regions or developing revolutionary technologies.
+
+**Ordinary Success** contributes 1 point toward completion, **Special Success** contributes 2 points, and **Critical Success** contributes 3 points. This rewards exceptional performance while ensuring that even ordinary competence makes meaningful progress.
+
+When multiple characters work together, they can contribute as primary operators (making normal rolls) or assistants (rolling at -20% but contributing a maximum of 1 success regardless of quality). This represents the reality that complex tasks benefit from help, but only to a point.
+
+### **COMBAT FUNDAMENTALS**
+
+When violence erupts in the atomic age, it happens quickly and decisively. Combat uses the same basic resolution system as other challenges, but with special attention to the dramatic pacing that makes conflicts exciting rather than tedious.
+
+**Initiative** determines turn order through REFLEX checks at the start of each encounter. Success quality affects when you act, with critical success allowing you to act first regardless of other results.
+
+**Actions** are limited to what you can reasonably accomplish in six seconds. Each character gets one major action (attack, complex skill use), one movement (change position, mount/dismount), and one minor action (draw weapon, flip switch, brief communication).
+
+**Attacks** use appropriate combat skills against target numbers modified by range, cover, and movement. Success inflicts wounds based on weapon type, with special and critical successes causing additional damage.
+
+**Defense** allows one free defensive reaction per round (Parry, Block, Dodge), with additional defenses suffering cumulative -20% penalties. Some epithets and specializations provide additional defensive options.
+
+**Wounds** accumulate until characters become incapacitated (at 4 wounds) or dying (at 5 wounds). The first three wounds cause no mechanical penalties, reflecting the cinematic resilience of atomic age heroes.
+
+### **ADVANCEMENT AND IMPROVEMENT**
+
+Characters improve through experience and training rather than arbitrary advancement schedules. When you achieve a critical success with a skill during an adventure, you have the opportunity to improve that skill through practice and reflection.
+
+After the adventure, roll percentile dice against your current skill percentage. If you roll higher than your current percentage, improve the skill by the ones die of the improvement roll (1-9 points). Higher skill levels improve more slowly, representing the increased difficulty of mastering advanced techniques.
+
+This system rewards characters for attempting challenging tasks and achieving exceptional results, encouraging players to take risks and push their characters toward greater competence.
+
+### **ATOMIC AGE TECHNOLOGY**
+
+The technology of 2025 combines atomic power with retrofuturistic aesthetics to create equipment that's both scientifically advanced and dramatically appropriate. Atomic engines provide virtually unlimited power for spacecraft and installations. Ray guns deliver precise energy discharges that can stun or kill depending on setting. Robots with positronic brains handle routine tasks while maintaining the Three Laws of Robotics that prevent them from harming humans.
+
+Technology in the atomic age is reliable and understandable rather than mysterious or unpredictable. Equipment failures occur due to damage, misuse, or exceptional circumstances rather than random breakdowns. This keeps the focus on character actions and decisions rather than equipment maintenance.
+
+### **ENVIRONMENTAL CHALLENGES**
+
+The atomic age presents environmental challenges that test character capability and equipment functionality. Vacuum exposure, radiation effects, extreme temperatures, and toxic atmospheres require appropriate protection and careful planning.
+
+**Vacuum** causes immediate problems for unprotected characters, requiring pressure suits and life support systems for any extended exposure.
+
+**Radiation** creates both immediate and long-term health risks, necessitating shielding and detection equipment in potentially contaminated areas.
+
+**Atmospheric hazards** range from toxic gases to pressure differences that can be lethal without proper equipment and preparation.
+
+**Zero gravity** affects movement and combat, requiring specialized training and equipment for effective operation.
+
+These challenges create dramatic tension and require characters to use appropriate skills and equipment, but they don't overwhelm adventures with technical complexity.
+
+### **SOCIAL INTERACTIONS**
+
+The atomic age emphasizes cooperation, exploration, and the expansion of human knowledge and influence. Social interactions focus on building relationships, gathering information, and resolving conflicts through communication rather than violence.
+
+Social skills can influence attitudes and provide information, but they cannot force actions that contradict core values or beliefs. Characters retain agency over their decisions even when subjected to persuasive arguments or emotional appeals.
+
+Success in social situations comes from understanding motivations, finding common ground, and offering solutions that benefit all parties rather than from overwhelming opposition through superior charisma or manipulation.
+
+### **PUTTING IT ALL TOGETHER**
+
+These core systems work together to create adventures that feel both scientifically plausible and dramatically exciting. Characters succeed through competence, preparation, and teamwork rather than random chance. Challenges test character capabilities while providing opportunities for creative problem-solving and heroic action.
+
+The atomic age rewards bold thinking, careful planning, and collaborative effort. Whether you're navigating through an asteroid field, negotiating with alien ambassadors, or unlocking the secrets of ancient technology, success comes from understanding the situation, applying appropriate skills, and working together toward common goals.
+
+---
+
+## **CHAPTER 3: EQUIPMENT AND GEAR**
+
+*Tools for exploring the atomic tomorrow*
+
+The atomic age provides adventurers with sophisticated equipment that combines cutting-edge science with reliable engineering. From personal ray guns to atomic-powered vehicles, the technology of 2025 enables feats that previous generations could only dream of accomplishing.
+
+### **PRICING AND AVAILABILITY**
+
+Equipment availability and pricing vary dramatically across the solar system. What's common and affordable on Earth might be a priceless rarity on the outer moons, while goods that are expensive luxuries in the inner system might be everyday necessities in frontier settlements.
+
+#### **Planetary Pricing Variations**
+
+All equipment prices are listed using Earth baseline costs. Apply the following modifiers based on location:
+
+| Location | Price Modifier | Service Availability | Special Considerations |
+|----------|----------------|----------------------|------------------------|
+| **TERRA (EARTH)** | | | |
+| Standard Baseline | +0% | Full range | Reference pricing for all services |
+| Urban Centers | +20% | Full range | Premium quality, high demand |
+| Wilderness Areas | +50% | Limited | Logistical challenges, environmental regulations |
+| Restricted Zones | +100-300% | Highly limited | Special permits required, security challenges |
 | | | | |
-| | **Psychics & Espers** | | |
-| | Mentalist | | |
-| | Telekinetic | | |
-| | Precog | | |
-| | Empath | | |
-| | Wild Talent | | |
+| **LUNA** | | | |
+| Luna City | +10% | Extensive | Main hub, Earth-competitive pricing |
+| Novyy Stalingrad | +5% | Extensive | State-controlled economy, price regulation |
+| Oberthstadt | +15% | Extensive | German efficiency, premium quality emphasis |
+| Remote Outposts | +25-50% | Basic only | Supply limitations, transport costs |
 | | | | |
-| | **Diplomats & Communicators** | | |
-| | Xeno-Linguist | | |
-| | Negotiator | | |
-| | Ambassador | | |
-| | Newshound | | |
-| | Socialite | | |
+| **MARS** | | | |
+| Major Settlements | +20% | Extensive | Established infrastructure, import costs |
+| Frontier Outposts | +50-100% | Limited | Remote locations, supply challenges |
+| Research Stations | +30% | Specialized | Scientific focus, limited general services |
+| Native Martian Areas | +40% | Unique services | Red Martian translators, cultural experiences |
 | | | | |
-| | **Medical Experts** | | |
-| | Sawbones | | |
-| | Xenodoc | | |
-| | Psychiatrist | | |
-| | Combat Medic | | |
-| | Life Scientist | | |
+| **VENUS** | | | |
+| Cloud Cities | +40% | Extensive | Floating habitat maintenance costs |
+| Upper Level Premium | +65% | Full range | Exclusive cloud-top facilities, luxury focus |
+| Industrial Levels | +15% | Industrial focus | Worker-oriented, practical services |
+| Surface Facilities | +200% | Emergency only | Extreme pressure/temperature adaptations |
 | | | | |
-| | **Commerce & Trade** | | |
-| | Space Trader | | |
-| | Cartel Broker | | |
-| | Insurance Adjuster | | |
-| | Adventure Capitalist | | |
-| | Exotic Dealer | | |
+| **ASTEROID BELT** | | | |
+| Ceres | +25% | Good selection | Main belt hub, relatively stable pricing |
+| Established Settlements | +40% | Moderate | Higher transport costs, limited competition |
+| Major Mining Operations | +35% | Industrial focus | Corporate subsidies, specialized services |
+| Remote Asteroids | +100-200% | Basic only | Isolation premium, supply challenges |
 | | | | |
-| | **Specialized Roles** | | |
-| | Prospector | | |
-| | Asteroid Miner | | |
-| | Chronicler | | |
-| | Terraform Tech | | |
-| | Entertainer | | |
+| **JOVIAN SYSTEM** | | | |
+| Ganymede Settlements | +75% | Moderate | Primary Jovian population center |
+| Research Outposts | +100% | Limited | Scientific focus, specialized services |
+| Europa Installations | +125% | Specialized | Subsurface facilities, special requirements |
+| | | | |
+| **SATURNIAN SYSTEM** | | | |
+| Titan Settlements | +100% | Limited | Extreme distance, methane adaptation costs |
+| Research Stations | +150% | Specialized | Scientific focus, minimal general services |
+| Mining Operations | +175% | Industrial only | Resource extraction focus, minimal amenities |
+
+#### **Special Pricing Factors**
+
+**Distance Class Factors**:
+- Distance Class A-B: -20% (Optimal planetary alignment)
+- Distance Class C-D: Base price (Standard planetary positions)
+- Distance Class E-F: +20% (Unfavorable alignments)
+- Distance Class G: +40% (Maximum separation pricing)
+
+**Bulk Discounts**:
+- Small Group (3-5): -5%
+- Medium Group (6-10): -10%
+- Large Group (11-20): -15%
+- Corporate Contract: -20-40%
+
+**Temporal Factors**:
+- Peak Season: +25-50%
+- Off-Peak Season: -10-30%
+- Emergency Service: +100-500%
+- Advanced Booking: -10-25%
+
+### **POWER SYSTEMS & ENERGY**
+
+The atomic age runs on sophisticated power systems that provide reliable energy for everything from personal equipment to massive spacecraft.
+
+#### **Standard Power Units**
+
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Standard Power Cell | 5 | Powers most personal equipment for 48 hours of continuous use |
+| Heavy-Duty Power Cell | 12 | Powers high-drain equipment for 36 hours of continuous use |
+| Expedition Power Pack | 20 | Multiple-device charging capability, 10 standard cell equivalent |
+| Emergency Power Cube | 8 | Single-use backup, instantly recharges standard equipment |
+| Military-Grade Power Cell | 18 | Hardened against EMP, radiation, extreme temperatures |
+| Micro Power Cell | 3 | For small devices, 72-hour operation, credit-chip sized |
+| Universal Adapter Kit | 4 | Connects any device to any power source, includes 12 fittings |
+
+#### **Recharging Systems**
+
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Solar Charging Mat | 15 | Foldable photovoltaic fabric, 3 cells per day in full sunlight |
+| Portable Atomic Recharger | 80 | Recharges any standard cell in 30 minutes, 1000+ charges |
+| Vehicle Charging Dock | 12 | Connects to any vehicle power system, 4 simultaneous devices |
+| Base Camp Generator | 55 | Solar/chemical hybrid, powers small expedition site |
+| Kinetic Recharger | 10 | Converts motion to energy, partial charging during normal activity |
+| Emergency Hand Crank | 4 | Manual recharging for critical devices, 15 min cranking = 1 hour power |
+| Thermal Energy Collector | 25 | Harvests ambient heat differentials, works well on Mercury and Venus |
+| Hydrogen Cell Converter | 35 | Extracts power from available water, effective on ice-bearing worlds |
+
+#### **Atomic Power Systems**
+
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Personal Atomic Battery | 120 | 5-year operation, powers all personal equipment |
+| Modular Atomic Generator | 350 | Powers base camp or small habitat for 10+ years |
+| Miniature Reactor Core | 800 | Vehicle/ship power source, effectively unlimited duration |
+| Atomic Jump-Starter | 45 | Emergency system, instantly recharges any vehicle or system |
+| Fusion Cell (Experimental) | 1500 | Next-generation power, double efficiency of standard atomic |
+
+### **ENVIRONMENTAL PROTECTION**
+
+Exploring the solar system requires protection against vacuum, radiation, extreme temperatures, and hostile atmospheres.
+
+#### **Vacuum Suits**
+
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Standard EVA Suit | 85 | 8-hour operation, standard mobility, basic life support |
+| Heavy-Duty Work Suit | 120 | 12-hour operation, enhanced durability, tool integration |
+| Exploration Suit | 150 | 16-hour operation, enhanced mobility, emergency beacon |
+| Combat EVA Suit | 200 | 6-hour operation, armor plating, weapon integration |
+| Luxury Space Suit | 300 | 8-hour operation, comfort features, style enhancements |
+| Emergency Bubble Suit | 25 | 2-hour operation, emergency use only, minimal protection |
+
+#### **Atmospheric Equipment**
+
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Standard Breathing Apparatus | 45 | 4-hour operation, filters most atmospheric hazards |
+| Portable Atmosphere Generator | 85 | Creates breathable air bubble for small group |
+| Pressure Adaptation Kit | 60 | Allows function in varying atmospheric pressures |
+| Toxic Gas Filter | 30 | Protects against chemical and biological airborne hazards |
+| Emergency Oxygen Canister | 15 | 30-minute emergency breathing supply |
+
+### **COMMUNICATION EQUIPMENT**
+
+Maintaining contact across the vast distances of space requires sophisticated communication technology.
+
+#### **Personal Communications**
+
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Standard Comm Unit | 25 | Local communication, 10km range in atmosphere |
+| Long-Range Transmitter | 75 | Interplanetary communication capability |
+| Emergency Beacon | 40 | Automatic distress signal, 72-hour operation |
+| Encryption Module | 50 | Secure communications, government-grade protection |
+| Universal Translator | 120 | Real-time language translation, 50+ languages |
 
-Examples of complete concepts:
-- "Brilliant Xenobiologist from Venus with Academic Training"
-- "Two-Fisted Space Ranger from Mars with Military Family"
-- "Lucky Smuggler from the Belt with Street Urchin Background"
+#### **Navigation Equipment**
 
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Personal Navigation Computer | 60 | GPS equivalent for any mapped world |
+| Stellar Navigation Kit | 150 | Interplanetary navigation capability |
+| Emergency Compass | 20 | Magnetic/gravitational compass, works anywhere |
+| Terrain Mapper | 80 | Creates detailed maps of unexplored areas |
 
+### **SCIENTIFIC INSTRUMENTS**
 
-### COLUMN A: EPITHET
+The atomic age provides scientists with unprecedented capabilities for research and analysis.
 
-Your epithet represents what makes you extraordinary compared to ordinary people. In the atomic age, ordinary people are already pretty remarkable. These are the qualities that make you the kind of person who gets called in when the ray guns start firing and the atomic rockets need piloting through asteroid fields. Each epithet grants special abilities and unique advantages that reflect your character's exceptional nature; think of them as the reason you're the hero of this story rather than just another face in the crowd at Luna City Spaceport.
+#### **Analysis Equipment**
 
-#### Gritty/Tough Epithets
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Portable Laboratory Kit | 200 | Basic analysis capabilities for field research |
+| Atomic Analyzer | 350 | Detailed atomic composition analysis |
+| Biological Scanner | 150 | Life form detection and basic biological analysis |
+| Radiation Detector | 40 | Measures radiation levels and types |
+| Electromagnetic Scanner | 100 | Detects EM fields and electronic devices |
+| Gravitational Anomaly Detector | 180 | Identifies gravitational irregularities |
 
-**Grizzled** (+2 GRIT): You have 1 extra wound on your track before incapacitation (5 wounds instead of 4).
+#### **Specimen Collection**
 
-**Hard-Bitten** (+1 GRIT, +1 NERVE): +20% resistance to environmental hazards and extreme conditions.
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Sample Collection Kit | 75 | Sterile containers and preservation equipment |
+| Specimen Preservation Unit | 120 | Maintains biological specimens in stasis |
+| Remote Sampling Drone | 200 | Unmanned specimen collection capability |
+| Hazardous Material Container | 60 | Safe containment for dangerous substances |
 
-**Battle-Scarred** (+2 NERVE): Wounds never affect your initiative rolls, regardless of penalty level.
+### **WEAPONS AND COMBAT GEAR**
 
-**Steely-Eyed** (+2 NERVE): In standoffs and intimidation contests, opponents need a critical success to shake you.
+While the atomic age emphasizes exploration and cooperation, adventurers sometimes face dangerous situations requiring defensive capabilities.
 
-**Hardboiled** (+1 GRIT, +1 GUILE): Immune to emotional manipulation and can function without sleep for 48 hours with no penalty.
+#### **Personal Weapons**
 
-**Iron-Willed** (+2 GRIT): When you would normally be incapacitated by wounds, you can continue functioning by making a GRIT check each round. However, sustaining any additional wound immediately renders you unconscious.
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Standard Ray Gun | 150 | Reliable sidearm, stun and lethal settings |
+| Heavy Ray Rifle | 280 | Long-range combat weapon, high-energy discharge |
+| Sonic Disruptor | 200 | Non-lethal area effect weapon |
+| Atomic Grenade | 75 | High-explosive atomic-powered grenade |
+| Force Field Generator | 350 | Personal defensive field, deflects energy weapons |
 
-**Two-Fisted**: Can fight effectively with a weapon in each hand and Parry/Block one additional time per turn with no penalty.
+#### **Protective Equipment**
 
-#### Skilled/Expert Epithets
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Light Combat Armor | 180 | Flexible protection, doesn't impede movement |
+| Heavy Combat Armor | 350 | Maximum protection, reduced mobility |
+| Radiation Shielding Vest | 120 | Protects against radiation exposure |
+| Energy Deflection Cloak | 250 | Deflects ray weapons, provides camouflage |
 
-**Crack**: In your primary professional skill, any roll of doubles or ending in 0 or 5 succeeds. +10% to all other professional skills.
+### **VEHICLES AND TRANSPORTATION**
 
-**Hotshot** (+10% to three skills of your choice): Your show-off maneuvers succeed more often, granting +20% when attempting flashy actions.
+Atomic age vehicles combine style with performance, enabling rapid travel across varied terrain and atmospheric conditions.
 
-**Virtuoso**: One professional skill at +20% above normal maximum. Critical successes on professional skill rolls create lasting positive reputation.
+#### **Personal Vehicles**
 
-**Legendary**: Your name opens doors (+20% to social interactions where your reputation matters). After adequate preparation for a task within your expertise, you can perform one flawless execution.
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Atomic Roadster | 2500 | High-performance ground vehicle, atmospheric flight capable |
+| All-Terrain Explorer | 3200 | Rugged exploration vehicle, life support included |
+| Personal Flying Car | 4500 | Short-range atmospheric flight, standard ground operation |
+| Jet Pack | 800 | Personal flight device, 2-hour operation |
 
-**Peerless** (+10% to all professional skills in your field): After studying a problem in your field for at least an hour, you can attempt solutions that would be impossible for others.
+#### **Spacecraft**
 
-**Uncanny**: Sixth sense for danger (+20% to detect ambushes, traps, and betrayals). Animals and children instinctively trust you.
+| Item | Cost (Cr) | Notes |
+|------|-----------|-------|
+| Personal Rocket | 15000 | Single-person interplanetary travel |
+| Small Cargo Ship | 35000 | 4-person crew, significant cargo capacity |
+| Luxury Yacht | 75000 | Comfortable interplanetary travel for small groups |
+| Research Vessel | 50000 | Scientific equipment, laboratory space |
 
-#### Adventurous Epithets
+### **PROFESSIONAL EQUIPMENT KITS**
 
-**Intrepid** (+1 NERVE, +1 REFLEX): +20% to all exploration and pathfinding rolls.
+Each profession comes with specialized equipment that reflects their training and expertise.
 
-**Swashbuckling**: +20% to acrobatic combat maneuvers. Can goad opponents into making mistakes by targeting their pride.
+#### **Pilot Kit**
 
-**Bold**: After any failure, gain +20% to your next roll if attempting a different approach. Recover from setbacks twice as quickly as normal characters.
+- Personal Navigation Computer
+- Emergency Beacon
+- Flight Suit with integrated life support
+- Stellar Navigation Kit
+- Emergency Repair Tools
 
-**Daring**: +20% to genuinely dangerous actions. Never suffer special or critical failures when attempting risky actions.
+*Total Value: 385 credits*
 
-**Audacious**: Can attempt normally impossible stunts at -40% instead of being automatically impossible. Your daring inspires allies, granting them +10% to their next action.
+#### **Scientist Kit**
 
-**Lucky**: When you fail a roll, any result ending in a 7 allows you to reroll (you can continue rerolling as long as you keep getting 7s). +20% to games of chance and randomized situations.
+- Portable Laboratory Kit
+- Sample Collection Kit
+- Recording Equipment
+- Reference Library (data chips)
+- Analysis Software
 
-#### Clever/Smart Epithets
+*Total Value: 425 credits*
 
-**Brilliant** (+2 SAVVY): When examining clues or evidence, you can make correlations others miss (+20% to deduction and analysis).
+#### **Explorer Kit**
 
-**Ingenious**: Can create impromptu tools from available materials on any successful SAVVY roll. Your jury-rigged solutions ignore the first Special Failure, breaking only on Critical Failures or a second Special Failure.
+- All-Terrain Boots
+- Terrain Mapper
+- Emergency Shelter
+- Survival Gear (30 days)
+- Multi-Environment Compass
 
-**Silver-Tongued** (+2 CHARM): Persuasion attempts that succeed create lasting belief changes rather than temporary compliance.
+*Total Value: 320 credits*
 
-**Enigmatic**: People find it difficult to read you (-20% to others' attempts to analyze your intentions). Strangers often confide in you, sharing secrets they normally wouldn't.
+#### **Engineer Kit**
 
-**Veteran** (+1 GRIT, +1 SAVVY): Better situational awareness; you can detect ambushes on any successful roll, not just critical success.
+- Advanced Tool Set
+- Diagnostic Scanner
+- Repair Parts Kit
+- Technical Reference Manual
+- Emergency Patch Materials
 
-#### Charming Epithets
+*Total Value: 380 credits*
 
-**Plucky** (+1 CHARM, +1 NERVE): In any Social Contest trying to intimidate, frighten or overawe you, you reduce the degree of success score against you by 1.
+### **SERVICES AND FACILITIES**
 
-**Seductive** (+1 CHARM, +1 GUILE): In Seduction Social Contests, Opposed wraps back around to Receptive (skipping Convinced). It's still not mind control, and NPCs can want you and still betray you or refuse you out of loyalty or scruples.
+Beyond equipment, adventurers need access to various services for transportation, accommodation, and specialized assistance.
 
-**Stunning** (+2 CHARM): You command attention. You are noticed wherever you go, unless heavily disguised. Villains prefer to capture or spare you rather than mar your beauty.
+#### **Transportation Services**
 
-**Suave** (+1 CHARM, +1 SAVVY): Special and Critical failures on Social skills become ordinary failures.
+| Service | Base Cost | Notes |
+|---------|-----------|-------|
+| Interplanetary Passenger Ticket | 200-2000 Cr | Varies by distance, class of service |
+| Cargo Shipping (per ton) | 50-500 Cr | Varies by distance, delivery time |
+| Express Delivery | +200% | Rush service, priority scheduling |
+| Charter Flight | 1000-10000 Cr | Private transportation, custom routing |
 
-**Well-Heeled** (+1 CHARM, +1 GUILE): When failing a roll that could be resolved with money, you may immediately make a GUILE check. Success means you find a way to throw credits at the problem and turn your failure into a success—but at double the normal cost.
+#### **Accommodation**
 
-### COLUMN B: PROFESSION
+| Service | Base Cost | Notes |
+|---------|-----------|-------|
+| Standard Hotel Room | 25 Cr/night | Basic accommodation, shared facilities |
+| Luxury Suite | 100 Cr/night | Private facilities, premium amenities |
+| Frontier Hostel | 10 Cr/night | Minimal amenities, shared sleeping quarters |
+| Research Station Quarters | 50 Cr/night | Scientific facilities access included |
 
-Your profession represents your training, expertise, and career focus: the work that pays the bills and shapes how you see the universe. But don't think of this as limiting; in the atomic age, a rocket jockey might also be an accomplished xenobiologist, or a space trader could have military training that comes in handy when pirates attack the convoy. Your profession determines your primary skill set and starting equipment while leaving plenty of room for growth and unexpected competencies.
+#### **Professional Services**
 
-Choose from over 60 different careers across 11 categories, each reflecting a different aspect of life in humanity's atomic tomorrow:
-
-#### Aces & Pilots
-
-**ROCKET JOCKEY**: The hotshot pilots who navigate between worlds
-- Skills: Piloting (Spacecraft) +40%, Technology (Ship Systems) +20%, Navigation (Space) +10%, Combat (Pistols) +10%
-- Equipment: Custom flight jacket, pilot's chronometer, personal navigation computer
-
-**ASTROGATOR**: Navigation specialists who plot courses through space
-- Skills: Navigation (Space) +40%, Science (Mathematics) +20%, Science (Astronomy) +10%, Computer Systems (Programming) +10%
-- Equipment: Star charts, advanced computational slide rule, celestial reference guide
-
-**ASTRO RACER**: Thrill-seeking pilots who compete in high-speed races
-- Skills: Piloting (Racing) +40%, Repair (Vehicle) +20%, Perception (Threat Assessment) +10%, Athletics (Reflexes) +10%
-- Equipment: Racing goggles, lucky charm, personalized flight suit
-
-**ORBITAL JUMPER**: Specialists in zero-gravity movement and space walks
-- Skills: Athletics (Zero-G Movement) +40%, Athletics (Jumping) +20%, Technology (Vacuum Equipment) +10%, Perception (Spatial Awareness) +10%
-- Equipment: Custom vacuum suit with thruster pack, magnetic boots, emergency beacon
-
-**STUNT PILOT**: Entertainment pilots who perform death-defying aerial maneuvers
-- Skills: Piloting (Aircraft) +40%, Performance (Showmanship) +20%, Repair (Vehicle) +10%, Perception (Threat Assessment) +10%
-- Equipment: Personalized helmet, recording equipment for stunts, flight suit with sponsor patches
-
-#### Scientists & Innovators
-
-**BRAINIAC**: General scientists with broad expertise in their field
-- Skills: Science (Choose Specialty) +40%, Investigation (Research) +20%, Technology (Laboratory Equipment) +10%, Science (Mathematics) +10%
-- Equipment: Portable laboratory kit, scientific journal, reference library data chips
-
-**ATOMICIST**: Specialists in atomic energy and nuclear physics
-- Skills: Science (Physics) +40%, Engineering (Atomic) +20%, Engineering (Structural) +10%, Science (Mathematics) +10%
-- Equipment: Radiation detector, lead-lined sample case, isotope identification guide
-
-**XENOBIOLOGIST**: Experts in alien life forms and ecosystems
-- Skills: Science (Xenobiology) +40%, Medicine (Field Medicine) +20%, Perception (Observation) +10%, Technology (Sampling Equipment) +10%
-- Equipment: Specimen collection kit, holo-microscope, adaptable dissection tools
-
-**MAD GENIUS**: Experimental scientists pushing the boundaries of possibility
-- Skills: Engineering (Experimental) +40%, Science (Theoretical Physics) +20%, Deception (Misdirection) +10%, Perception (Intuition) +10%
-- Equipment: Workshop-in-a-box, notebook of bizarre ideas, assorted "components"
-
-**TECH WIZARD**: Engineers who can jury-rig solutions from spare parts
-- Skills: Repair (Improvised) +40%, Technology (Electronics) +20%, Engineering (Mechanical) +10%, Perception (Technical Intuition) +10%
-- Equipment: Multi-tool with unusual attachments, parts scavenged from various devices, diagnostic scanner
-
-#### Explorers & Scouts
-
-**SCOUT**: Professional pathfinders who map unknown territory
-- Skills: Navigation (Wilderness) +40%, Survival (Choose Environment) +20%, Perception (Environmental Awareness) +10%, Combat (Rifles) +10%
-- Equipment: All-terrain boots, professional mapping tools, multi-planet compass
-
-**TRAILBLAZER**: Elite explorers who open routes through dangerous territory
-- Skills: Navigation (Wilderness) +40%, Survival (Choose Environment) +20%, Technology (Cartography) +10%, Perception (Environmental Awareness) +10%
-- Equipment: All-terrain boots, professional mapping tools, compass that works on any world
-
-**RUIN DELVER**: Archaeologists who explore ancient sites and lost civilizations
-- Skills: Academics (Archaeology) +40%, Academics (Ancient Languages) +20%, Perception (Trap Detection) +10%, Academics (History) +10%
-- Equipment: Archaeologist's toolkit, sketchbook of ruins, artifact analysis device
-
-**PLANETARY SCOUT**: Specialists who survey new worlds for colonization
-- Skills: Investigation (Surveying) +40%, Science (Geology) +20%, Perception (Threat Assessment) +10%, Stealth (Camouflage) +10%
-- Equipment: Terrain scanner, adaptable environmental gear, collapsible shelter
-
-**XENO-TRACKER**: Hunters and trackers specializing in alien creatures
-- Skills: Investigation (Tracking) +40%, Animal Handling (Alien Creatures) +20%, Stealth (Camouflage) +10%, Survival (Wilderness) +10%
-- Equipment: Species identification guide, sound mimicry device, non-lethal restraints
-
-**DEEP SCOUT**: Explorer of the furthest reaches of known space
-- Skills: Navigation (Deep Space) +40%, Science (Astronomy) +20%, Survival (Space) +10%, Technology (Communications) +10%
-- Equipment: Long-range communications array, stellar cartography tools, emergency survival kit
-
-#### Soldiers & Enforcers
-
-**SPACE RANGER**: Law enforcement officer with interplanetary jurisdiction
-- Skills: Security (Law Enforcement) +40%, Investigation (Crime Scene Analysis) +20%, Combat (Rifles) +10%, Academics (Regulations) +10%
-- Equipment: Ranger badge, standard issue sidearm, portable crime lab
-
-**SOLAR MARINE**: Elite military specialist trained for combat in space
-- Skills: Combat (Heavy Weapons) +40%, Combat (Bladed Weapons) +20%, Athletics (Strength) +10%, Survival (Combat Zone) +10%
-- Equipment: Military armor, assault rifle, combat knife
-
-**BOUNTY HUNTER**: Independent tracker who brings fugitives to justice
-- Skills: Investigation (Tracking) +40%, Streetwise (Information Gathering) +20%, Combat (Pistols) +10%, Persuasion (Intimidation) +10%
-- Equipment: Tracking devices, restraint gear, personal sidearm
-
-**MERCENARY**: Soldier for hire who goes where the money is
-- Skills: Combat (Rifles) +40%, Persuasion (Negotiation) +20%, Tactics (Combat) +10%, Survival (Combat Zone) +10%
-- Equipment: Personal weapons, mercenary credentials, tactical gear
-
-**BODYGUARD**: Personal security specialist trained to protect VIPs
-- Skills: Perception (Threat Assessment) +40%, Combat (Unarmed Combat) +20%, Perception (Situational Awareness) +10%, Security (VIP Protection) +10%
-- Equipment: Concealed armor, protection scanner, emergency medical kit
-
-#### Mechanics & Engineers
-
-**WRENCH MONKEY**: Practical engineer who keeps ships and equipment running
-- Skills: Repair (Ship Repair) +40%, Technology (Diagnostics) +20%, Engineering (Mechanical) +10%, Streetwise (Scrounging) +10%
-- Equipment: Complete tool kit, diagnostic equipment, spare parts collection
-
-**ATOMECH**: Technician specializing in atomic power systems
-- Skills: Engineering (Atomic) +40%, Technology (Radiation Equipment) +20%, Engineering (Power Systems) +10%, Repair (Ship Repair) +10%
-- Equipment: Radiation suit, atomic safety gear, power system tools
-
-**GADGETEER**: Inventor of ingenious and often unorthodox devices
-- Skills: Engineering (Experimental) +40%, Technology (Electronics) +20%, Combat (Exotic Weapons) +10%, Streetwise (Scrounging) +10%
-- Equipment: Portable workshop, prototype devices, exotic components
-
-**SALVAGER**: Expert at recovering and repurposing derelict technology
-- Skills: Repair (Ship Repair) +40%, Technology (Ship Systems) +20%, Streetwise (Scrounging) +10%, Persuasion (Negotiation) +10%
-- Equipment: Cutting tools, hauling gear, appraisal scanner
-
-**ROBOTICIST**: Specialist in creating and maintaining robotic systems
-- Skills: Engineering (Robotics) +40%, Technology (Positronic Systems) +20%, Engineering (Mechanical) +10%, Animal Handling (Robot Psychology) +10%
-- Equipment: Robot maintenance kit, positronic diagnostics, programming tools
-
-#### Scoundrels & Opportunists
-
-**SPACE RAT**: Survivor who thrives in the margins of society
-- Skills: Streetwise (Scrounging) +40%, Deception (Bluffing) +20%, Stealth (Hiding) +10%, Social (Rumor Collection) +10%
-- Equipment: Survival kit, black market contacts, forged identification
-
-**GRIFTER**: Con artist who talks their way into and out of trouble
-- Skills: Deception (Con Artistry) +40%, Perception (Reading People) +20%, Persuasion (Fast Talk) +10%, Deception (Disguise) +10%
-- Equipment: Multiple false identities, con artist tools, quick-change outfit
-
-**SMUGGLER**: Transporter of goods that authorities would rather not see moving
-- Skills: Deception (Misdirection) +40%, Piloting (Spacecraft) +20%, Navigation (Secret Routes) +10%, Streetwise (Contraband) +10%
-- Equipment: Modified cargo hold, sensor jammers, contraband detection kit
-
-**CAT BURGLAR**: Stealthy thief who specializes in high-value targets
-- Skills: Security (Lock Picking) +40%, Stealth (Silent Movement) +20%, Athletics (Climbing) +10%, Stealth (Hiding) +10%
-- Equipment: Burglary tools, climbing gear, silent entry devices
-
-**GAMBLER**: Risk-taker who makes a living on games of chance and skill
-- Skills: Science (Probability) +40%, Deception (Bluffing) +20%, Perception (Reading People) +10%, Social (Carousing) +10%
-- Equipment: Gaming devices, probability calculator, lucky charm
-
-#### Psychics & Espers
-
-**MENTALIST**: Telepath who can read and influence minds
-- Skills: Psi (Telepathy) +40%, Psi (Mental Defense) +20%, Survival (Mental Discipline) +10%, Science (Psychology) +10%
-- Equipment: Psi-focus device, mental shielding gear, Rhine Institute credentials
-
-**TELEKINETIC**: Psychic who can move objects with the power of their mind
-- Skills: Psi (Psychokinesis) +40%, Athletics (Fine Control) +20%, Survival (Mental Discipline) +10%, Science (Psi Theory) +10%
-- Equipment: Mental amplifier, precision tools, training objects
-
-**PRECOG**: Esper who experiences flashes of possible futures
-- Skills: Psi (Precognition) +40%, Perception (Intuition) +20%, Science (Probability) +10%, Academics (Dream Interpretation) +10%
-- Equipment: Oracle cards, dream journal, probability matrices
-
-**EMPATH**: Sensitive who can feel and influence the emotions of others
-- Skills: Psi (Empathy) +40%, Survival (Mental Discipline) +20%, Perception (Reading People) +10%, Persuasion (Counseling) +10%
-- Equipment: Emotional dampening device, calming aids, therapy tools
-
-**WILD TALENT**: Untrained but powerful psychic with unpredictable abilities
-- Skills: Psi (Choose Specialty) +40%, Survival (Mental Discipline) +20%, Psi (Energy Manipulation) +10%, Science (Psi Theory) +10%
-- Equipment: Makeshift psi-focus, energy channeling items, suppression medication
-
-#### Diplomats & Communicators
-
-**XENO-LINGUIST**: Expert in alien languages and communication methods
-- Skills: Academics (Linguistics) +40%, Xenology (Alien Cultures) +20%, Science (Pattern Recognition) +10%, Social (Diplomatic Protocol) +10%
-- Equipment: Universal translator, linguistic database, cultural reference guides
-
-**NEGOTIATOR**: Professional mediator who brokers deals between parties
-- Skills: Persuasion (Negotiation) +40%, Perception (Reading People) +20%, Social (Mediation) +10%, Academics (Contract Law) +10%
-- Equipment: Contract templates, mediation tools, legal database
-
-**AMBASSADOR**: Official representative of a government or major organization
-- Skills: Social (Diplomacy) +40%, Academics (Politics) +20%, Social (Etiquette) +10%, Perception (Cultural Sensitivity) +10%
-- Equipment: Diplomatic credentials, ceremonial dress, cultural gifts
-
-**NEWSHOUND**: Journalist always looking for the next big story
-- Skills: Investigation (Interviewing) +40%, Persuasion (Fast Talk) +20%, Academics (Writing) +10%, Artistry (Photography) +10%
-- Equipment: Recording equipment, press credentials, communication devices
-
-**SOCIALITE**: Well-connected figure who thrives in high society
-- Skills: Social (Networking) +40%, Social (Etiquette) +20%, Streetwise (Rumor Collection) +10%, Social (Fashion Sense) +10%
-- Equipment: Designer wardrobe, invitation collection, social calendar
-
-#### Medical Experts
-
-**SAWBONES**: Practical doctor who excels in emergency medicine
-- Skills: Medicine (Emergency Medicine) +40%, Perception (Triage) +20%, Medicine (Improvised Treatment) +10%, Persuasion (Bedside Manner) +10%
-- Equipment: Advanced medical kit, emergency drugs, surgical tools
-
-**XENODOC**: Physician specializing in treating alien physiology
-- Skills: Medicine (Xenomedicine) +40%, Science (Comparative Physiology) +20%, Medicine (Diagnostics) +10%, Medicine (Surgery) +10%
-- Equipment: Xenological medical scanner, alien anatomy charts, species-specific drugs
-
-**PSYCHIATRIST**: Mental health specialist treating the mind not just the body
-- Skills: Medicine (Psychiatry) +40%, Science (Behavioral Science) +20%, Persuasion (Counseling) +10%, Medicine (Medication) +10%
-- Equipment: Psychological evaluation tools, therapeutic drugs, patient records
-
-**COMBAT MEDIC**: Battlefield doctor who saves lives under fire
-- Skills: Medicine (Battlefield Medicine) +40%, Perception (Combat Awareness) +20%, Medicine (Triage) +10%, Medicine (Emergency Medicine) +10%
-- Equipment: Battlefield medical kit, trauma drugs, emergency surgery tools
-
-**LIFE SCIENTIST**: Researcher specializing in biological systems
-- Skills: Science (Biology) +40%, Science (Chemistry) +20%, Investigation (Research Methodology) +10%, Technology (Laboratory Equipment) +10%
-- Equipment: Portable laboratory, specimen collection kit, research database
-
-#### Commerce & Trade
-
-**SPACE TRADER**: Merchant who buys low and sells high across the system
-- Skills: Persuasion (Negotiation) +40%, Trade (Market Analysis) +20%, Trade (Appraisal) +10%, Social (Networking) +10%
-- Equipment: Cargo manifest, market analysis tools, trading credentials
-
-**CARTEL BROKER**: Intermediary for powerful syndicates and black market goods
-- Skills: Streetwise (Black Market) +40%, Persuasion (Intimidation) +20%, Perception (Threat Assessment) +10%, Navigation (Secret Routes) +10%
-- Equipment: Criminal contacts, hidden assets, protection devices
-
-**INSURANCE ADJUSTER**: Risk assessor who investigates claims across the solar system
-- Skills: Investigation (Crime Scene Analysis) +40%, Perception (Risk Assessment) +20%, Deception (Forgery Detection) +10%, Academics (Contract Law) +10%
-- Equipment: Investigation tools, fraud detection equipment, legal database
-
-**ADVENTURE CAPITALIST**: Investor who funds high-risk, high-reward ventures
-- Skills: Trade (Business) +40%, Investigation (Treasure Hunting) +20%, Persuasion (Negotiation) +10%, Trade (Resource Evaluation) +10%
-- Equipment: Investment portfolio, treasure maps, evaluation tools
-
-**EXOTIC DEALER**: Specialist in rare and unusual alien artifacts
-- Skills: Xenology (Alien Artifacts) +40%, Xenology (Alien Cultures) +20%, Investigation (Authentication) +10%, Social (Discretion) +10%
-- Equipment: Artifact scanner, authentication tools, secure storage
-
-#### Specialized Roles
-
-**PROSPECTOR**: Mineral hunter searching for valuable deposits
-- Skills: Science (Geology) +40%, Investigation (Surveying) +20%, Technology (Mineral Analysis) +10%, Mining (Excavation) +10%
-- Equipment: Geological scanner, sample collection kit, mining tools
-
-**ASTEROID MINER**: Specialist in extracting resources from space rocks
-- Skills: Zero-G Operations (Mining) +40%, Demolitions (Mining Charges) +20%, Engineering (Ore Processing) +10%, Survival (Vacuum) +10%
-- Equipment: Space mining suit, drilling equipment, ore processing tools
-
-**CHRONICLER**: Recorder of events and keeper of knowledge
-- Skills: Academics (Documentation) +40%, Perception (Observation) +20%, Investigation (Analysis) +10%, Performance (Storytelling) +10%
-- Equipment: Recording devices, archive access, documentation tools
-
-**TERRAFORM TECH**: Engineer who transforms worlds to support human life
-- Skills: Engineering (Environmental) +40%, Science (Atmospheric) +20%, Science (Biology) +10%, Science (Geology) +10%
-- Equipment: Atmospheric processor, environmental scanner, terraforming tools
-
-**ENTERTAINER**: Performer who brings art and culture to the stars
-- Skills: Performance (Choose Specialty) +40%, Perception (Crowd Reading) +20%, Artistry (Choose Specialty) +10%, Social (Showmanship) +10%
-- Equipment: Performance gear, recording equipment, stage props
-
-### COLUMN C: ORIGIN
-
-Your origin reflects where you were born and raised, and in the diverse environments of the atomic age, that makes a huge difference. A child of Earth's optimized society develops different strengths than someone who grew up in the low gravity of Luna or the high-pressure jungles of Venus. Your origin shapes your physical adaptations, cultural knowledge, and environmental tolerances—but more than that, it determines how you see the universe and your place in it.
-
-**TERRAN** (Born on Earth): SAVVY +1, GRIT -1
-- Cultural Skills: Academics (Bureaucracy) +15%, Technology (Infrastructure) +10%, Academics (History) +5%
-- Adaptations: Genetically Optimized, Social Programming, Environmental Sensitivity
-
-**LOONIE** (Raised on Luna): BRAWN -1, REFLEX +1, GUILE +1  
-- Cultural Skills: Athletics (Zero-G Operations) +15%, Repair (Mechanics) +10%, Streetwise (Luna) +5%
-- Adaptations: Low-G Adaptation, Radiation Resistance, Bone Density Issues
-
-**MARTIAN** (Child of the red planet): BRAWN +1, GRIT +1, CHARM -1
-- Cultural Skills: Survival (Mars) +15%, Academics (Ancient History) +10%, Science (Geology) +5%
-- Adaptations: Dust Lungs, Cold Tolerance, Water Efficiency
-
-**VENUSIAN** (Raised in Venus's jungles and cloud cities): BRAWN +1, NERVE +1, SAVVY -1
-- Cultural Skills: Survival (Jungle) +15%, Science (Meteorology) +10%, Science (Xenobiology) +5%
-- Adaptations: Heat Tolerance, Enhanced Lung Capacity, Venus Eyes
-
-**BELTER** (Born among the asteroids): BRAWN -1, GUILE +1, GRIT +1
-- Cultural Skills: Athletics (Zero-G Operations) +15%, Trade (Resource Management) +10%, Navigation (Asteroid) +5%
-- Adaptations: Vacuum Sense, Low Consumption Metabolism, Spatial Awareness
-
-**JOVIAN** (Raised in the colonies orbiting Jupiter): SAVVY +1, REFLEX +1, CHARM -1
-- Cultural Skills: Engineering (Habitat Systems) +15%, Technology (Radiation Safety) +10%, Athletics (Zero-G Operations) +5%
-- Adaptations: Radiation Resistance, Engineering Aptitude, Social Distance
-
-**SATURNIAN** (Citizen of the ringed planet's colonies): REFLEX +1, CHARM +1, BRAWN -1
-- Cultural Skills: Artistry (Expression) +15%, Science (Astronomy) +10%, Academics (Cultural History) +5%
-- Adaptations: Artistic Expression, Ring Navigation, Physical Delicacy
-
-**DEEP SPACER** (Born on long-haul spacecraft or distant outposts): GRIT +1, NERVE +1, CHARM -1
-- Cultural Skills: Navigation (Astrogation) +15%, Technology (Ship Systems) +10%, Performance (Entertainment) +5%
-- Adaptations: Ship Sense, Isolation Tolerance, Social Awkwardness
-
-**GENMODDED** (Genetically modified for specific environments or purposes): +2 to one attribute, -1 to different attribute
-- Cultural Skills: Science (Genetics) +15%, Medicine (Self-Care) +10%, Social (Adaptation) +5%
-- Adaptations: Custom Modifications, Genetic Variance, Social Stigma
-
-**RED MARTIAN** (Descendant of psychically gifted Martian natives): NERVE +2, BRAWN -1, CHARM +1
-- Cultural Skills: Psi (Telepathy) +15%, Academics (Ancient Martian History) +10%, Social (Cultural Diplomacy) +5%
-- Adaptations: Psionic Heritage, Ancient Memories, Cultural Burden
-
-**MERCURY NATIVE** (Born on the solar system's innermost world): GRIT +2, REFLEX -1
-- Cultural Skills: Survival (Extreme Heat) +15%, Technology (Solar Technology) +10%, Engineering (Mineral Extraction) +5%
-- Adaptations: Heat Tolerance, Solar Powered, Slow Reflexes
-
-**TITAN COLONIST** (Raised on Saturn's largest moon): SAVVY +1, GRIT +1, CHARM -1
-- Cultural Skills: Science (Hydrocarbon Chemistry) +15%, Survival (Cold) +10%, Navigation (Exotic Atmosphere) +5%
-- Adaptations: Chemical Knowledge, Cold Adaptation, Social Isolation
-
-**NEPTUNIAN** (Citizen of the distant blue planet's orbital colonies): NERVE +1, SAVVY +1, BRAWN -1
-- Cultural Skills: Navigation (Deep Space) +15%, Technology (Long-Range Communications) +10%, Engineering (Cold Environment Operations) +5%
-- Adaptations: Deep Space Orientation, Communication Skills, Physical Weakness
-
-**CERES ENGINEER** (Born and trained in the Belt's largest colony): SAVVY +2, CHARM -1
-- Cultural Skills: Engineering (Asteroid Engineering) +15%, Engineering (Water Reclamation) +10%, Engineering (Mineral Processing) +5%
-- Adaptations: Engineering Excellence, Resource Efficiency, Social Distance
-
-**PLUTO OUTPOST** (Raised at the edge of mapped space): NERVE +1, GRIT +1, CHARM -1
-- Cultural Skills: Survival (Deep Space) +15%, Science (Isolation Psychology) +10%, Technology (Long-Range Scanning) +5%
-- Adaptations: Extreme Isolation Tolerance, Long-Range Awareness, Social Disconnection
-
-**TERRAN EXILE** (Cast out from Earth, choosing their own path among the stars): Standard Array or Roll Randomly
-- Cultural Skills: Streetwise (Underworld) +15%, Survival (Variable) +10%, Social (Deception) +5%
-- Adaptations: Adaptability, Street Smarts, Social Mistrust
-
-### COLUMN D: BACKGROUND
-
-Your background reflects your upbringing, education, and personal history before becoming an adventurer: the circumstances that shaped you into the person you are today. Whether you were raised in a military family that instilled discipline and tactical thinking, or grew up as a street urchin who learned to survive on wit and cunning, your background provides the foundation for your adult capabilities. This isn't just about what you learned; it's about who you know, what connections you can call upon, and what resources you might have access to when the atomic chips are down.
-
-**MILITARY FAMILY** (GRIT +1, CHARM -1): Raised in the discipline of service
-- Skills: Tactics (Combat) +10%, Academics (Military Protocol) +10%, Combat (Firearms) +5%
-- Resources: Military contacts, access to surplus equipment
-
-**ACADEMIC TRAINING** (SAVVY +1, BRAWN -1): Formal education in institutions  
-- Skills: Investigation (Research) +10%, Science (Mathematics) +10%, Academics (History) +5%
-- Resources: Academic credentials, university connections
-
-**STREET URCHIN** (GUILE +1, CHARM -1): Raised in urban underbellies
-- Skills: Streetwise (Information Gathering) +10%, Security (Lock Picking) +10%, Navigation (Urban) +5%
-- Resources: Criminal contacts, knowledge of urban secrets
-
-**MERCHANT CLAN** (CHARM +1, GRIT -1): Raised in the trading business
-- Skills: Persuasion (Negotiation) +10%, Trade (Market Analysis) +10%, Trade (Appraisal) +5%
-- Resources: Trading connections, commercial knowledge
-
-**FRONTIER HOMESTEAD** (GRIT +1, CHARM -1): Grew up on the edge of civilization
-- Skills: Survival (Wilderness) +10%, Repair (Improvised) +10%, Animal Handling (Domestic Animals) +5%
-- Resources: Self-reliance skills, frontier contacts
-
-**CORPORATE DRONE** (SAVVY +1, NERVE -1): Raised within corporate culture
-- Skills: Trade (Business) +10%, Computer Systems (Operation) +10%, Social (Corporate Politics) +5%
-- Resources: Corporate connections, business knowledge
-
-**ARISTOCRATIC FAMILY** (CHARM +1, NERVE -1): Born to privilege and responsibility
-- Skills: Social (Etiquette) +10%, Academics (Politics) +10%, Artistry (Appreciation) +5%
-- Resources: Social connections, inherited wealth
-
-**SPACER FAMILY** (REFLEX +1, BRAWN -1): Raised aboard starships and stations
-- Skills: Athletics (Zero-G Operations) +10%, Technology (Ship Systems) +10%, Survival (Space) +5%
-- Resources: Ship knowledge, spacer connections
-
-**RELIGIOUS ORDER** (NERVE +1, GUILE -1): Raised within a spiritual community
-- Skills: Academics (Theology) +10%, Survival (Meditation) +10%, Academics (Ancient Languages) +5%
-- Resources: Religious connections, spiritual knowledge
-
-**LABORATORY SUBJECT** (GRIT +1, CHARM -1): Subject of scientific experimentation
-- Skills: Medicine (Knowledge) +10%, Science (Laboratory Procedures) +10%, Science (Psychology) +5%
-- Resources: Scientific contacts, unusual medical knowledge
-
-**MEGACITY NATIVE** (SAVVY +1, GRIT -1): Raised in massive urban environments
-- Skills: Navigation (Urban) +10%, Streetwise (Information Gathering) +10%, Technology (Infrastructure) +5%
-- Resources: Urban connections, city knowledge
-
-**POLITICAL DYNASTY** (CHARM +1, GUILE -1): Family involved in governance
-- Skills: Academics (Politics) +10%, Persuasion (Public Speaking) +10%, Academics (Law) +5%
-- Resources: Political connections, governmental knowledge
-
-**COLONIST FAMILY** (GRIT +1, SAVVY -1): Raised in a newly established colony
-- Skills: Survival (Wilderness) +10%, Social (Community Relations) +10%, Trade (Resource Management) +5%
-- Resources: Colonial connections, resource management skills
-
-**UNDERWORLD FAMILY** (GUILE +1, NERVE -1): Raised among criminal elements
-- Skills: Streetwise (Information Gathering) +10%, Deception (Bluffing) +10%, Security (Alarm Systems) +5%
-- Resources: Criminal connections, underworld knowledge
-
-**SHOWBIZ FAMILY** (CHARM +1, GRIT -1): Raised in the performing arts
-- Skills: Performance (Acting) +10%, Social (Networking) +10%, Artistry (Choose One) +5%
-- Resources: Entertainment connections, performance knowledge
-
-**REGRESSED/BARBARIAN** (BRAWN +1, SAVVY -1): From a society that rejected advanced technology
-- Skills: Survival (Wilderness) +10%, Academics (Tribal Culture) +10%, Investigation (Tracking) +5%
-- Resources: Primitive survival skills, cultural knowledge
-
-**DRIFTER** (GRIT +1, CHARM -1): Your family had no settled home
-- Skills: Streetwise (Information Gathering) +10%, Athletics (Zero-G Operations) +5%, Survival (Environmental Adaptation) +10%
-- Resources: Adaptability, scattered contacts
-
-**REFUGEE** (NERVE +1, CHARM -1): Displaced by disaster or conflict
-- Skills: Streetwise (Scrounging) +10%, Survival (Group Survival) +10%, Persuasion (Bargaining) +5%
-- Resources: Survival skills, refugee networks
-
-**SHIP-BORN** (REFLEX +1, BRAWN -1): Born and raised on interplanetary vessels
-- Skills: Technology (Ship Systems) +10%, Navigation (Spacecraft) +10%, Technology (Emergency Procedures) +5%
-- Resources: Ship knowledge, spacer connections
-
-**NOBLE HOUSE** (CHARM +1, BRAWN -1): Member of an influential dynastic family
-- Skills: Social (Etiquette) +10%, Academics (Lineage History) +10%, Social (Influence) +5%
-- Resources: Noble connections, hereditary privileges
-
-**ATOMICORP EMPLOYEE** (SAVVY +1, NERVE -1): Raised in company-owned communities
-- Skills: Science (Nuclear Physics) +10%, Engineering (Atomic) +10%, Social (Corporate Politics) +5%
-- Resources: Corporate connections, atomic technology knowledge
-
-**ORBITAL HABITAT** (REFLEX +1, BRAWN -1): Raised in artificial space communities
-- Skills: Athletics (Zero-G Operations) +10%, Engineering (Life Support) +10%, Science (Psychology of Confined Spaces) +5%
-- Resources: Habitat knowledge, space community connections
-
-**VENUSIAN CLOUD DRIFTER** (NERVE +1, GRIT -1): Nomadic lifestyle among Venus' floating cities
-- Skills: Piloting (Airship) +10%, Survival (High Atmosphere) +10%, Science (Meteorology) +5%
-- Resources: Atmospheric navigation skills, cloud city connections
-
-**BELT PROSPECTOR FAMILY** (SAVVY +1, CHARM -1): Raised searching for valuable asteroids
-- Skills: Science (Mineral Identification) +10%, Athletics (Zero-G Operations) +10%, Repair (Improvised) +5%
-- Resources: Prospecting knowledge, asteroid belt connections
-
-**STATION BRAT** (GUILE +1, GRIT -1): Grew up on crowded space stations
-- Skills: Athletics (Zero-G Acrobatics) +10%, Investigation (Station Layouts) +10%, Streetwise (Scrounging) +5%
-- Resources: Station knowledge, diverse connections
-
-**FILTHY RICH** (CHARM +1, GRIT -1): Born with a platinum spoon in your mouth
-- Skills: Trade (Business) +15%, Social (Etiquette) +15%, Persuasion (Negotiation) +10%, Streetwise (Information Gathering) +5%
-- Resources: Vast wealth, elite connections
-
-### GENERATING ATTRIBUTES
-
-After selecting your four columns, you need to determine your seven core attributes. These represent your basic capabilities and form the foundation for all your skills. Think of them as your character's raw potential before training and experience shape it into specific competencies. Don't worry if your numbers aren't perfect; in the atomic age, determination and ingenuity often matter more than raw ability.
-
-#### The Seven Attributes
-
-- **BRAWN**: Physical strength, toughness, and athletic power
-- **REFLEX**: Physical coordination, dexterity, and reaction speed  
-- **NERVE**: Mental composure and courage under pressure
-- **SAVVY**: Intelligence, technical knowledge, and perception
-- **CHARM**: Charisma, leadership, and persuasiveness
-- **GRIT**: Endurance, willpower, and mental fortitude
-- **GUILE**: Cunning, deception, and craftiness
-
-#### Attribute Generation Methods
-
-Your Origin determines how you generate attributes:
-
-**TERRANS**: Must use the Standard Array of 15, 14, 12, 11, 10, 9, 8 (distributed as you choose)
-
-**ALL OTHER ORIGINS**: Roll 2d10 for each attribute and arrange as desired. Results below 3 become 3, and results above 18 become 18.
-
-**TERRAN EXILES**: May choose to roll like other origins instead of using the Standard Array
+| Service | Base Cost | Notes |
+|---------|-----------|-------|
+| Expert Consultation | 100-500 Cr/day | Specialist knowledge and advice |
+| Equipment Repair | Variable | Based on equipment value and damage |
+| Legal Representation | 200-1000 Cr/day | Varies by complexity and jurisdiction |
+| Medical Treatment | 50-500 Cr | Based on injury severity and treatment type |
+| Research Assistance | 150 Cr/day | Laboratory access and technical support |
 
 ---
 
-## **CHAPTER 2: CORE MECHANICS**
+## **CHAPTER 4: BASIC RULES**
 
-Atomic Tomorrow Adventures uses a percentile dice system that emphasizes dramatic action and pulp adventure storytelling. In the atomic age, even routine tasks can become opportunities for heroic moments. The core concept is elegantly simple: you roll two ten-sided dice to generate a number from 01 to 100, trying to roll your skill percentage or under. But here's where it gets interesting: not all successes and failures are created equal, and the quality of your roll determines just how spectacular your achievement becomes or how badly you muffed it.
+*Core mechanics for atomic age adventures*
 
-### THE CORE RESOLUTION SYSTEM
+These essential rules provide everything you need to play Atomic Tomorrow Adventures. Think of this chapter as your quick reference guide—the mechanical foundation that supports all the atomic age excitement you'll experience among the stars.
 
-**Basic Resolution**: Roll percentile dice (d100) against your skill or attribute percentage. Roll equal to or under your percentage to succeed. Simple enough, right? But the devil (or in this case, the atomic-powered angel) is in the details.
+### **MAKING SKILL CHECKS**
 
-**Success Quality**: The quality of your success affects the outcome, and this is where the system starts to sing. You're not just succeeding or failing; you're succeeding with style, failing with complications, or achieving something so spectacular that it becomes the stuff of legends.
+When your character attempts something with uncertain outcome and meaningful consequences, follow these simple steps:
 
-| Quality           | Roll                                               |
-| ----------------- | -------------------------------------------------- |
-| Automatic Success | 01-05                                              |
-| Ordinary Success  | Roll is Skill percentage or less                   |
-| Special Success   | Roll is success that ends in 0 or 5                |
-| Critical Success  | Roll is success and is doubles (11, 22, 33, etc.)  |
-| Failure           | Roll is greater than Skill percentage              |
-| Special Failure   | Roll is failure that ends in 0 or 5                |
-| Critical Failure  | Roll is failure and is doubles (66,  77, 88, etc.) |
-| Automatic Failure | 96-00                                              |
-|                   |                                                    |
+1. **Identify the appropriate skill** for what you're attempting
+2. **Apply any circumstance modifiers** (-80% to +20% based on conditions)
+3. **Roll percentile dice** (two ten-sided dice, one for tens and one for ones)
+4. **Compare the result to your modified skill percentage**
 
-Here's how it works: an ordinary success occurs when you roll your skill percentage or less—you accomplish exactly what you set out to do. Special successes happen when your successful roll ends in 0 or 5, representing that perfect moment when everything clicks into place. Critical successes occur when you roll doubles (11, 22, 33, etc.) under your skill percentage—these are the moments that legends are made of.
+**Success** means you rolled equal to or under your skill percentage. **Failure** means you rolled over your skill percentage.
 
-Failures work similarly, but with complications. Special failures are failed rolls ending in 0 or 5, while critical failures are doubles that exceed your skill percentage. These aren't just "you missed"—they're dramatic setbacks that move the story forward in unexpected ways.
+**Quality matters**: Special Success (ending in 0 or 5) and Critical Success (doubles under your skill) provide additional benefits beyond basic success.
 
-Regardless of your skill level, rolls of 01-05 always succeed (automatic success) while rolls of 96-00 always fail (automatic failure). Even the most incompetent atomic engineer can have a moment of perfect clarity and sometimes it's better to be lucky than to be good, while even the most skilled and experienced can have that moment of inattention where you accidentally hit the wrong button at exactly the wrong moment.
+### **ATTRIBUTE CHECKS**
 
-**Success Effects**: Success quality determines the magnitude of your achievement, and this is where the system rewards both planning and spectacular dice rolls. An ordinary success accomplishes the base effect you intended—you hit the target, crack the code, or sweet-talk the guard. Special successes provide enhanced results, effectively adding one additional step of success to your effort. Critical successes deliver superior outcomes, adding two additional steps of success and often creating opportunities you hadn't even considered.
+When a situation calls for raw capability rather than trained skill, make an attribute check by rolling against five times your attribute score. A character with REFLEX 12 would roll against 60% for a REFLEX check.
 
-Conversely, special failures create complications and subtract one success from extended tasks—you're making progress, but something's gone wrong. Critical failures cause serious problems and typically eliminate all accumulated progress on complex endeavors, forcing you to start over with additional complications to overcome.
+Use attribute checks for:
+- Lifting, breaking, or moving heavy objects (BRAWN)
+- Reacting quickly to sudden events (REFLEX)  
+- Staying calm under pressure (NERVE)
+- Noticing important details (SAVVY)
+- Making a good first impression (CHARM)
+- Enduring hardship or pain (GRIT)
+- Acting sneaky or deceptive (GUILE)
 
-### DIFFICULTY MODIFIERS
+### **COMBAT BASICS**
 
-All actions use this consistent scale of difficulty modifiers, because the atomic age throws everything from routine maintenance to desperate last-second heroics at our intrepid explorers. The key is keeping things simple while still rewarding proper preparation and acknowledging when circumstances are working against you:
+When violence erupts, combat proceeds in structured rounds representing six seconds of action each.
 
-| Difficulty | Modifier | Examples |
-|------------|----------|----------|
-| **Trivial** | Don't Roll | Tasks so simple it would be a surprise if you failed |
-| **Easy** | +20% | Favorable conditions, ample time, proper tools |
-| **Routine** | +0% | Standard conditions with appropriate equipment |
-| **Challenging** | -20% | Time pressure, improvised tools, unfavorable conditions |
-| **Difficult** | -40% | Severe conditions, missing critical tools, under fire |
-| **Extreme** | -60% | Nearly impossible circumstances, critically limited resources |
-| **Heroic** | -80% | The stuff of legends, requires extraordinary effort |
+**Initiative**: At the start of combat, everyone makes a REFLEX check. Successful rolls act first, in order of success quality, then by REFLEX score to break ties.
 
-Apply only the single most significant modifier rather than stacking multiple modifiers. This keeps the math simple and prevents situations where characters become helpless due to accumulated penalties—in the atomic age, heroes find ways to overcome obstacles, not excuses to give up.
+**Actions Each Round**: You can perform one major action (attack, complex skill use), one movement (change position), and one minor action (draw weapon, brief communication).
 
-### OPPOSED CHECKS
+**Attacks**: Roll your combat skill against a target number modified by range, cover, and movement. Success causes wounds based on your weapon plus success quality bonuses.
 
-When two characters' skills directly oppose each other—whether it's a battle of wits, a contest of strength, or a tense negotiation over the price of Martian crystals—both participants roll percentile dice and let their skills do the talking. The higher successful roll wins, with success always trumping failure and better quality always trumping lesser quality. If both characters succeed with the same quality of success, the highest roll determines the winner—sometimes it really does come down to who rolled better.
+**Defense**: You get one free defensive reaction per round (Parry, Block, Dodge). Additional defenses suffer cumulative -20% penalties.
 
-Even when both characters fail, the lower roll represents a worse outcome than the higher one. Nobody succeeds at what they were trying to do, but somebody definitely looks more foolish doing it.
+**Wounds**: Characters can sustain three wounds with no penalties, become incapacitated at four wounds, and start dying at five wounds.
+
+### **EXTENDED TASKS**
+
+Some challenges require sustained effort or multiple successes to complete:
+
+- **Standard Tasks**: 1 success (hot-wiring a vehicle)
+- **Complex Tasks**: 3 successes (field surgery)  
+- **Demanding Tasks**: 5 successes (deciphering alien code)
+- **Expert Tasks**: 8 successes (major repairs)
+- **Master Tasks**: 12+ successes (revolutionary breakthroughs)
+
+Different success qualities contribute different amounts: Ordinary Success contributes 1 point, Special Success contributes 2 points, Critical Success contributes 3 points.
+
+### **TEAMWORK**
+
+When multiple characters work together:
+
+**Primary Operators** make normal skill rolls and contribute full success values.
+
+**Assistants** make skill rolls at -20% but can contribute a maximum of 1 success per roll regardless of quality.
+
+**Leadership** can help coordinate group efforts, allowing rerolls of failed attempts based on the leader's success quality.
+
+### **ENVIRONMENTAL HAZARDS**
+
+The atomic age presents unique challenges that require preparation and appropriate equipment:
+
+**Vacuum Exposure**: Unprotected characters take 1 wound per round and face additional complications.
+
+**Radiation**: Requires GRIT checks at regular intervals, with failure causing both immediate and long-term effects.
+
+**Zero Gravity**: Physical actions require Athletics (Zero-G) skill, with untrained characters suffering -40% penalties.
+
+**Extreme Temperatures**: Require appropriate protection and regular GRIT checks to avoid injury.
+
+### **ADVANCEMENT**
+
+Characters improve through experience and training:
+
+When you achieve a **Critical Success** with a skill during an adventure, you can attempt to improve that skill afterward.
+
+Roll percentile dice against your current skill percentage. If you roll **higher** than your current percentage, increase the skill by the ones die of your improvement roll (1-9 points).
+
+Higher skill levels improve more slowly:
+- **Skilled (50-69%)**: Only improve on a ones die of 1-5
+- **Expert (70-89%)**: Only improve on a ones die of 1-3  
+- **Master (90%+)**: Only improve on a ones die of 1
+
+### **ATOMIC AGE EQUIPMENT**
+
+Technology in 2025 is reliable, powerful, and aesthetically pleasing. Equipment functions as designed unless damaged, misused, or subjected to extraordinary circumstances.
+
+**Power Systems**: Atomic power provides virtually unlimited energy for properly maintained equipment.
+
+**Ray Guns**: Standard sidearms with stun and lethal settings, reliable and precise.
+
+**Vehicles**: Spacecraft and aircraft designed for specific operating environments, with performance characteristics that affect piloting difficulty.
+
+**Robots**: Positronic-brained automatons that follow the Three Laws and can be trusted with important tasks.
+
+### **QUICK REFERENCE MODIFIERS**
+
+**Circumstance Modifiers**:
+- Easy conditions: +20%
+- Routine conditions: +0%  
+- Challenging conditions: -20%
+- Difficult conditions: -40%
+- Extreme conditions: -60%
+- Heroic conditions: -80%
+
+**Success Quality**:
+- 01-05: Automatic Success
+- Doubles under skill: Critical Success (+2 bonus effects)
+- Ending in 0 or 5 under skill: Special Success (+1 bonus effect)  
+- Under skill: Ordinary Success
+- Over skill: Failure
+- 96-00: Automatic Failure
+
+**Combat Modifiers**:
+- Point Blank (0-2m): +20%
+- Close Range (3-10m): +0%
+- Medium Range (11-50m): -20%
+- Long Range (51-100m): -40%
+- Extreme Range (101m+): -60%
+
+Remember: The atomic age rewards competence, preparation, and teamwork. Success comes from understanding challenges and applying appropriate skills rather than relying on luck or random chance.
 
 ---
 
-## **CHAPTER 3: SKILLS SYSTEM**
+## **CHAPTER 5: ADVENTURING IN THE ATOMIC AGE**
 
-The unified skills system in Atomic Tomorrow Adventures balances natural talent with professional training, creating characters who feel both competent and specialized. Here's the core philosophy: everyone can try anything, but experts excel in their chosen fields. Your character might not be trained in xenobiology, but if alien spores are threatening the colony, you can still make an attempt based on your general scientific knowledge and desperate ingenuity. You just shouldn't expect to perform as well as someone who spent years studying off-world life forms.
+*Guidance for players on how to approach atomic age adventures*
 
-### SKILL ORGANIZATION
+Welcome to the atomic tomorrow, where humanity's greatest adventure has just begun. This chapter helps you understand what makes Atomic Tomorrow Adventures special and how to play your character in ways that capture the wonder, optimism, and excitement of the atomic age. Think of it as your guide to becoming a true hero of the retrofuturistic future.
 
-Skills fall into two fundamental categories that reflect different aspects of human capability, and understanding this distinction is crucial to making the most of your character's abilities.
+### **THE ATOMIC AGE MINDSET**
 
-**Attribute-Based Skills** are directly tied to your natural talents—your Athletics skill depends on your BRAWN, your Piloting relies on your REFLEX, and so forth. These represent capabilities where raw talent provides a solid foundation even without formal training. For these skills, your untrained percentage equals your attribute times two, and your core value adds 5% to represent basic familiarity: (Attribute × 2) + 5%. A character with high REFLEX can probably handle most vehicles reasonably well, even if they've never seen a Martian hoverbike before.
+The year 2025 represents humanity at its most hopeful and ambitious. This isn't a dystopian future where technology has turned against us or a gritty reality where survival is the only goal. Instead, it's the gleaming tomorrow that 1950s science fiction promised—a world where atomic energy powers cities that sparkle like jewels, where rocket ships carry explorers to worlds of wonder, and where every discovery expands human knowledge and capability.
 
-**FLEX Skills** represent areas of knowledge that depend more on training and experience than raw talent. Whether you're brilliant or average, mastering xenobiology or ancient languages requires dedicated study and accumulated knowledge. Your untrained percentage in FLEX skills is only 10%—you're basically guessing—but your core value jumps to 25%, equivalent to having an attribute of 10 in an attribute-based skill. Being naturally smart certainly helps when studying history, but scholarly training in one academic specialty doesn't automatically make you competent in others like mathematics or medicine.
+#### **Optimism Over Cynicism**
 
-The beauty of this system is its optimism: most of the time, any character can attempt any action regardless of training. Never piloted a rocket ship? There's always a chance you'll figure it out when it matters! Never studied Martian archaeology? You can still make educated guesses about those strange hieroglyphs. The system assumes that characters in the atomic age are generally competent, resourceful people who can rise to challenges when circumstances demand it.
+Your character lives in an age where problems have solutions, where science and cooperation can overcome any challenge, and where the future holds infinite promise. When faced with difficulties, atomic age heroes don't despair or assume the worst—they roll up their sleeves and figure out how to make things better.
 
-### PROFESSIONAL TRAINING
+This doesn't mean ignoring danger or pretending everything is perfect. Pirates lurk in asteroid fields, alien technology poses genuine mysteries, and exploration always carries risks. But these challenges exist to be overcome through competence, courage, and teamwork rather than endured as inevitable suffering.
 
-Your chosen profession reflects years of specialized training that significantly enhances related skills—this is where you separate the professionals from the enthusiastic amateurs. Your primary professional skill receives a substantial +40% bonus, representing your area of greatest expertise and the focus of your career. Secondary professional skills gain a +20% bonus, while tertiary skills receive +10%. These represent related areas where your professional experience provides significant advantages even if they weren't your main focus.
+**In Practice**: When your character encounters a problem, ask "How can we solve this?" rather than "How bad could this get?" Look for creative solutions that use your skills and equipment. Trust your teammates and the reliability of atomic age technology.
 
-Your final skill percentage is simply your core value plus any applicable professional, origin, or background bonuses. The math is straightforward, but the implications are significant: a skilled pilot with a 75% chance of success isn't just "better" than an untrained character with a 35% chance—they're operating on an entirely different level of competency.
+#### **Wonder Over Mundane**
 
-### SKILL CALCULATION EXAMPLES
+The atomic age is fundamentally about discovery and exploration. Every planet holds mysteries waiting to be unlocked. Every alien artifact might revolutionize human understanding. Every journey between worlds offers opportunities to see something that no human has ever seen before.
 
-**Example 1: Navigation (Space)**
-- Character with SAVVY 14
-- Navigation as Secondary Professional skill
-- Core Skill: (14 × 2) + 5% = 31%
-- With Secondary Professional Bonus: 31% + 20% = 51%
+Your character should approach the universe with curiosity and enthusiasm rather than bored professionalism. The fact that interplanetary travel has become routine doesn't make it ordinary—it makes it an everyday miracle that still deserves appreciation.
 
-**Example 2: Academics (History)**
-- FLEX skill with no special attribute influence  
-- Academics as Primary Professional skill
-- Core Skill: 25%
-- With Primary Professional Bonus: 25% + 40% = 65%
+**In Practice**: Take time to notice and comment on the amazing things your character experiences. The gleaming spires of Luna City, the red horizons of Mars, the impossible creatures of Venus—these aren't just background details, they're wonders that should inspire awe and excitement.
 
-If you have training, you use the most relevant specialized skill, or if none are applicable use the core value of your specialty.  E.g. If you have Engineering (Ships Systems) at 71% from a Core skill of 31 (Savvy 13 x 2 + 5) + 40 for your primary profession and you're called on to do some engineering on some medical equipment since it's outside of your specialty you'd roll vs your Core Value 31 instead of your full value of 71.
+#### **Cooperation Over Competition**
 
-### COMPLETE SKILL LIST
+The atomic age emphasizes teamwork and mutual aid over cutthroat competition. Humanity's expansion across the solar system requires people working together toward common goals. While personal ambition and professional rivalry certainly exist, they operate within a framework of shared human purpose.
 
-#### Physical Skills
+Your character should look for ways to help others succeed rather than seeking victory at others' expense. The vast scale of space exploration means there's room for everyone to achieve their goals, and today's rival might be tomorrow's rescue party when things go wrong in the depths of space.
 
-**Athletics (BRAWN)** - Physical feats of strength, endurance and coordination
-- Specializations: Climbing, Swimming, Running, Jumping, Zero-G Movement, Acrobatics
+**In Practice**: Support other characters' plans and ideas. Share resources and information freely. Look for win-win solutions to conflicts. Remember that in the atomic age, everyone benefits when humanity expands its knowledge and influence.
 
-**Combat (REFLEX)** - General fighting ability  
-- Specializations: Unarmed Combat, Bladed Weapons, Exotic Weapons, Heavy Weapons, Pistols, Rifles, Ship Weapons
+### **PLAYING YOUR EPITHET**
 
-**Stealth (REFLEX)** - Moving without being detected
-- Specializations: Hiding, Camouflage, Silent Movement, Shadowing
+Your epithet isn't just a collection of mechanical bonuses—it's the foundation of your character's personality and approach to challenges. Understanding how to embody your epithet will make your character more engaging and help you contribute to adventures in distinctive ways.
 
-**Piloting (REFLEX)** - Operating vehicles and vessels
-- Specializations: Spacecraft, Aircraft, Ground Vehicles, Racing, Watercraft
+#### **Tough Epithets in Action**
 
-**Survival (GRIT)** - Enduring harsh conditions and finding necessities
-- Specializations: Combat Zone, Desert, Jungle, Mental Discipline, Space, Urban, Wilderness
+If you're **Grizzled**, **Hard-Bitten**, or **Battle-Scarred**, you've been shaped by difficult experiences that taught you how to endure when others would break. You don't flinch from danger, and your steady presence reassures teammates in crisis situations.
 
-#### Technical Skills
+**Roleplay Focus**: Be the rock that others lean on. Share stories of past adventures (without dominating conversations). Volunteer for dangerous tasks that others might hesitate to attempt. Show concern for teammates' welfare based on your hard-won experience.
 
-**Engineering (SAVVY)** - Designing and building technical systems
-- Specializations: Atomic, Environmental, Experimental, Mechanical, Robotics, Ship Systems, Structural
+**Example**: When the team faces a dangerous climb down a crater wall, your Battle-Scarred character doesn't just make the Athletics check—they tie off safety lines for everyone, share techniques learned from similar situations, and keep everyone's spirits up with matter-of-fact confidence.
 
-**Medicine (SAVVY)** - Treating injuries and illness
-- Specializations: Battlefield Medicine, Diagnostics, Emergency Medicine, Field Medicine, Medication, Psychiatry, Surgery, Triage, Xenomedicine
+#### **Skilled Epithets in Action**
 
-**Science (SAVVY)** - Knowledge of scientific principles and methods
-- Specializations: Astronomy, Biology, Chemistry, Geology, Physics, Psychology, Xenobiology, Mathematics, Research
+**Crack**, **Virtuoso**, and **Legendary** characters are defined by their exceptional competence in chosen fields. You're the person others turn to when they need something done right, and your reputation often precedes you.
 
-**Technology (SAVVY)** - Operation and maintenance of equipment
-- Specializations: Communications, Diagnostics, Electronics, Laboratory Equipment, Sensors, Ship Systems, Weapons Systems
+**Roleplay Focus**: Take pride in your work and demonstrate professional standards. Mentor others in your field of expertise. Use your reputation to open doors and create opportunities for the team. Balance confidence with humility.
 
-**Navigation (SAVVY)** - Finding paths through various environments
-- Specializations: Asteroid Belt, Planetary, Secret Routes, Space, Urban, Wilderness
+**Example**: Your Legendary Astrogator doesn't just plot courses between planets—you identify optimal routes that save fuel and time, spot navigation hazards that others miss, and use your reputation to gain access to restricted star charts and current space traffic information.
 
-**Repair (SAVVY)** - Fixing broken systems and equipment
-- Specializations: Electronics, Improvised, Mechanical, Ship Systems, Vehicles
+#### **Adventurous Epithets in Action**
 
-#### Knowledge Skills
+**Daring**, **Audacious**, and **Lucky** characters embody the explorer spirit that drives atomic age adventures. You see opportunities where others see obstacles, and your willingness to take calculated risks often opens new possibilities.
 
-**Academics (FLEX)** - Formal education and theoretical knowledge
-- Specializations: Ancient History, Ancient Languages, Archaeology, Contract Law, Cultural History, Documentation, Linguistics, Politics, Research, Theology, Writing
+**Roleplay Focus**: Suggest bold plans and unconventional approaches. Be the first to volunteer for exciting missions. Inspire others with your enthusiasm for discovery and adventure. Find the positive aspects of challenging situations.
 
-**Xenology (FLEX)** - Knowledge of alien life and civilizations
-- Specializations: Alien Artifacts, Alien Cultures, Alien Technology, Forerunner Studies
+**Example**: When the team discovers an uncharted asteroid with unusual energy readings, your Audacious character proposes an immediate investigation rather than reporting back to authorities first. You see the opportunity for discovery and fame, not just the potential dangers.
 
-**Investigation (SAVVY)** - Finding information and solving mysteries
-- Specializations: Analysis, Crime Scene Analysis, Interviewing, Research, Surveying, Tracking
+#### **Smart Epithets in Action**
 
-**Streetwise (GUILE)** - Knowledge of the underbelly of society
-- Specializations: Black Market, Contraband, Information Gathering, Scrounging, Underground Navigation
+**Brilliant**, **Ingenious**, and **Silver-Tongued** characters solve problems through intelligence, creativity, and social skill. You find elegant solutions to complex challenges and help the team navigate both technical and interpersonal obstacles.
 
-**Trade (FLEX)** - Commercial knowledge and practices
-- Specializations: Appraisal, Business Administration, Market Analysis, Negotiation, Resource Management
+**Roleplay Focus**: Ask thoughtful questions and make logical deductions. Propose creative solutions that others might miss. Serve as the team's negotiator and planner. Share interesting facts and insights about discoveries.
 
-#### Social Skills
+**Example**: Your Ingenious character doesn't just repair the broken communication array—you modify it to boost signal strength, create a backup system from spare parts, and develop a protocol for preventing similar failures in the future.
 
-**Persuasion (CHARM)** - Convincing others through social means
-- Specializations: Bargaining, Counseling, Fast Talk, Intimidation, Negotiation, Seduction
+#### **Charming Epithets in Action**
 
-**Deception (GUILE)** - Misleading or tricking others
-- Specializations: Bluffing, Con Artistry, Disguise, Forgery, Misdirection
+**Stunning**, **Suave**, and **Plucky** characters excel at interpersonal relationships and social situations. You're the team's face, the person who makes connections and smooths over conflicts.
 
-**Perception (SAVVY)** - Noticing details and reading situations
-- Specializations: Combat Awareness, Cultural Sensitivity, Environmental Awareness, Intuition, Observation, Reading People, Threat Assessment
+**Roleplay Focus**: Take the lead in social encounters. Build relationships with NPCs that benefit the entire team. Diffuse tensions with humor and charm. Find diplomatic solutions to conflicts.
 
-**Performance (CHARM)** - Entertaining or impressing others
-- Specializations: Acting, Music, Oratory, Public Speaking, Showmanship, Storytelling
+**Example**: When the team needs information from a suspicious asteroid miner, your Suave character doesn't just ask questions—you buy drinks, share interesting stories from other worlds, and gradually build trust that leads to valuable intelligence about local conditions.
 
-**Social (CHARM)** - Navigating social situations and hierarchies
-- Specializations: Diplomacy, Etiquette, Leadership, Mediation, Networking, Rumor Collection
+### **EMBRACING ATOMIC AGE TECHNOLOGY**
 
-#### Specialized Skills
+The technology of 2025 is reliable, powerful, and aesthetically pleasing. Understanding how to interact with atomic age equipment will help you play your character in ways that feel authentic to the setting.
 
-**Security (SAVVY)** - Bypassing or enforcing protective measures
-- Specializations: Alarm Systems, Law Enforcement, Lock Picking, Surveillance, VIP Protection
+#### **Technology as Partner, Not Master**
 
-**Psi (NERVE)** - Mental abilities beyond normal human range
-- Specializations: Empathy, Energy Manipulation, Mental Defense, Precognition, Psychokinesis, Telepathy
+Atomic age technology is designed to serve human needs and amplify human capabilities rather than replace human judgment. Your ray gun is a precision instrument that responds to your skill and intent. Your spacecraft's atomic engine provides power, but you provide direction and purpose.
 
-**Artistry (FLEX)** - Creating aesthetic works
-- Specializations: Art Appreciation, Music, Photography, Sculpture, Visual Arts, Writing
+**In Practice**: Describe using technology in active, intentional ways. Don't just "use the scanner"—calibrate it for specific readings, interpret the data it provides, and draw conclusions based on your character's expertise. Trust your equipment while remaining alert to its limitations.
 
-**Animal Handling (CHARM)** - Working with and controlling non-sentient creatures
-- Specializations: Alien Creatures, Domestic Animals, Robot Psychology, Wild Beasts
+#### **Style Matters**
 
-### SOLAR SCOUTS TRAINING
+The atomic age celebrates both function and form. Equipment is beautiful as well as practical, and how you use it reflects your character's personality and professional competence.
 
-Every character starts with Solar Scouts Training at 35%, representing general survival and self-defense training they received in their youth. It covers unarmed combat, pistols, rifles, survival and first aid. It never improves directly, but critical successes while using Solar Scouts Training can lead to developing the full specialized skill.
+**In Practice**: Include aesthetic details when describing your actions. Your ray gun's polished chrome finish catches the light as you draw it. Your spacecraft's elegant control surfaces respond smoothly to your touch. Your vacuum suit's sleek design moves with you rather than constraining you.
 
-### SKILL ADVANCEMENT
+#### **Maintenance as Character Expression**
 
-Skills improve through dramatic use rather than routine practice. Mark a skill for potential advancement when you roll a critical success, when you succeed at a particularly difficult task (Difficult penalty or worse), or when you succeed in life-threatening situations where failure would mean somebody's death.
+In the atomic age, professionals take pride in maintaining their equipment. A Rocket Jockey's ship reflects their personality and priorities. A Scientist's laboratory reveals their research interests and working methods.
 
-At adventure's end, roll d100 against each marked skill's current percentage. If you fail this roll (rolling above your percentage), you've identified areas for improvement. Beginners with skills below 50% improve rapidly, gaining 10% each time. Skilled practitioners (50-69%) advance more slowly at 3% per improvement. Experts (70-89%) gain only 2%, while masters (90%+) inch forward by just 1% as they approach the limits of human capability.
+**In Practice**: Describe how your character cares for their equipment. What modifications have you made? What personal touches distinguish your gear from standard models? How does your maintenance routine reflect your character's values and expertise?
+
+### **HANDLING DANGER AND CONFLICT**
+
+The atomic age presents genuine dangers—space pirates, environmental hazards, alien mysteries—but these threats exist to be overcome rather than merely survived. Understanding how to approach danger in ways that feel appropriate to the setting will make your adventures more exciting and satisfying.
+
+#### **Competence Over Luck**
+
+Atomic age heroes succeed through skill, preparation, and teamwork rather than random chance or plot armor. When facing danger, rely on your character's abilities and the team's collective competence.
+
+**In Practice**: Use your skills creatively and describe how your training applies to unusual situations. Work with teammates to combine different expertise areas. Take time to prepare for known dangers rather than rushing headlong into trouble.
+
+#### **Heroism Over Violence**
+
+While the atomic age includes ray gun battles and space combat, violence is rarely the preferred solution to problems. Heroes look for ways to resolve conflicts that preserve life and advance human knowledge.
+
+**In Practice**: Consider negotiation, clever solutions, and strategic withdrawal as alternatives to direct confrontation. When combat is necessary, focus on protecting innocent people and achieving clear objectives rather than causing maximum damage.
+
+#### **Recovery Over Permanent Loss**
+
+The atomic age is fundamentally optimistic about human resilience and the power of science to solve problems. Characters who suffer setbacks recover and learn from their experiences.
+
+**In Practice**: Don't treat character wounds or equipment damage as permanent disasters. The atomic age has excellent medical technology and skilled repair services. Focus on how setbacks create new opportunities and reveal character strengths.
+
+### **BUILDING TEAM DYNAMICS**
+
+Atomic Tomorrow Adventures work best when characters form effective teams that combine different capabilities and perspectives. Understanding how to create positive team dynamics will make everyone's experience more enjoyable.
+
+#### **Complementary Expertise**
+
+Each character's profession and background should contribute something unique to the team's overall capability. Look for ways to support other characters' strengths rather than competing with them.
+
+**In Practice**: Identify what each character does best and create opportunities for them to shine. Ask other characters for help in their areas of expertise. Share discoveries and resources that might benefit teammates' specialties.
+
+#### **Shared Goals**
+
+Effective atomic age teams work toward common objectives that benefit everyone involved. While individual characters might have personal motivations, these should align with rather than conflict with team goals.
+
+**In Practice**: Discuss what your character hopes to achieve and how it relates to team objectives. Look for missions and opportunities that advance multiple characters' interests simultaneously. Compromise when personal and team goals conflict.
+
+#### **Mutual Support**
+
+The vastness of space and the dangers of exploration create natural bonds between team members. Characters who travel together through the void develop trust and loyalty that goes beyond mere professional relationships.
+
+**In Practice**: Show concern for teammates' welfare. Celebrate other characters' successes. Offer help and support during difficult times. Remember shared experiences and reference them in future situations.
+
+### **CREATING MEMORABLE MOMENTS**
+
+The atomic age provides countless opportunities for moments of wonder, triumph, and discovery that will become memorable highlights of your adventures. Understanding how to recognize and enhance these moments will enrich everyone's experience.
+
+#### **Embrace the Spectacle**
+
+The atomic age is inherently dramatic and visually striking. Don't miss opportunities to appreciate and describe the amazing sights and experiences your characters encounter.
+
+**Moments to Savor**: 
+- First glimpse of a new world from orbit
+- Ancient alien ruins that challenge human understanding  
+- The sight of Earth from the observation deck of a space station
+- Successful completion of a dangerous rescue mission
+- Discovery of a new life form or archaeological treasure
+
+#### **Celebrate Achievements**
+
+When the team accomplishes something significant, take time to acknowledge the achievement and what it means for your characters and the broader human community.
+
+**In Practice**: Discuss how discoveries will advance scientific knowledge. Consider what recognition your characters might receive. Think about how achievements affect your characters' reputations and future opportunities.
+
+#### **Learn from Setbacks**
+
+Even failures and setbacks in the atomic age provide opportunities for growth, learning, and future success. Characters who approach problems scientifically learn from every outcome.
+
+**In Practice**: Analyze what went wrong and what could be done differently next time. Consider how setbacks reveal character strengths or create new story opportunities. Maintain optimism about future attempts and different approaches.
+
+### **LIVING THE ATOMIC DREAM**
+
+Ultimately, Atomic Tomorrow Adventures is about living in a universe where humanity's best impulses—curiosity, cooperation, courage, and hope—drive exploration and discovery among the stars. Your character is part of humanity's greatest adventure, helping to write the story of our species' expansion across the cosmos.
+
+Every adventure contributes to this larger narrative. Every discovery advances human knowledge. Every act of courage and cooperation demonstrates the values that make humanity worthy of the wonders they encounter among the planets.
+
+Play your character as someone who belongs in this optimistic future—someone whose actions and choices help create the atomic tomorrow that science fiction promised and atomic age adventures deliver.
+
+The solar system awaits. The future is bright with atomic fire. Adventure calls from every world and moon.
+
+Answer that call with confidence, curiosity, and the certainty that the best adventures are yet to come.
 
 ---
 
-## **CHAPTER 4: TASK RESOLUTION**
+*End of Volume I: Explorer's Manual*
 
-This system handles non-combat challenges that characters face, from bypassing security systems to performing emergency surgery or deciphering alien artifacts.
-
-### PRINCIPLES OF TASK RESOLUTION
-
-The task resolution system operates on four core principles that keep the action moving while maintaining meaningful challenges. Roll dice only when success is uncertain and failure carries real consequences—routine actions succeed automatically. All participants contribute directly to task completion rather than providing abstract bonuses, ensuring everyone stays engaged. Task difficulty and duration are separate considerations, allowing for quick complex tasks or time-consuming simple ones. Finally, tasks can be performed during combat or other high-pressure situations, reflecting the heroic competence of atomic-age adventurers.
-
-### TASK DIFFICULTY CATEGORIES
-
-Tasks are categorized by the number of successes required for completion. 
-
-| Category  | Required Successes | Examples                                                     |
-| --------- | ------------------ | ------------------------------------------------------------ |
-| Standard  | 1                  | Hot-wiring a vehicle, treating minor injuries, or identifying strange minerals |
-| Complex   | 3                  | Bypassing security systems, performing field surgery, or repairing damaged equipment |
-| Demanding | 5                  | Deciphering alien codes, disarming sophisticated explosives, or hacking military computers |
-| Expert    | 8                  | Delicate brain surgery, reconstructing ancient technology, or navigating treacherous asteroid fields |
-| Master    | 13+                | Repairing severely damaged spacecraft, deciphering entire alien languages, or inventing a new technology. This sort of effort is likely to be the focus of an entire adventure, not usually resolved as a handful of rolls. |
-|           |                    |                                                              |
-
-### SUCCESS COUNTING
-
-Success quality directly affects your progress toward task completion. Ordinary successes contribute one point, while special successes (successful rolls ending in 0 or 5) contribute two points. Critical successes—doubles under your skill percentage—contribute three points, potentially completing complex tasks in a single dramatic roll. Special failures subtract one accumulated success, representing setbacks and complications. Critical failures eliminate all accumulated progress and may render the task impossible if you've broken something crucial in your fumbling attempt.
-
-### TIMEFRAMES
-
-Time constraints add urgency and drama to task resolution.
-
-Combat rounds lasting six seconds allow one attempt per round, perfect for bypassing blast doors during firefights or stabilizing wounded comrades under fire. Standard tasks spanning one to five minutes call for checks every minute, suitable for hot-wiring vehicles or picking locks while enemies approach. Extended tasks taking ten to sixty minutes use checks at meaningful intervals during activities like surgery, ship repairs, or prisoner interrogation. Prolonged efforts spanning hours or days require checks once per significant time unit (determined by the GM) such as when surveying crash sites, researching ancient artifacts, or constructing makeshift shelters.
-
-### TEAMWORK AND COLLABORATION
-
-Collaborative efforts take two forms depending on the nature of the task. When one person clearly leads while others assist—such as a surgeon directing nurses during an operation—the primary operator makes normal skill rolls while assistants roll at -20%. Assistants contribute a maximum of one success per roll regardless of the quality of their success, representing their supporting role. Assistant's failures, even special failures, do not penalize the task, but their critical failures *do* count: the primary operator needs to make a quick unmodified roll against their skill: on a failure all progress is lost, while on a success they have averted disaster and the overall task only loses one success; on a critical success they don't even lose that. Remember, this is only triggered when an assistant critical fails.
-
-For tasks where multiple people can contribute equally—like a team of archaeologists excavating a site—all participants make normal skill rolls and all successes count at full value. This distributed approach allows teams of specialists to tackle major challenges together. Each assistant should keep track of their own totals, since a critical failure will lose their entire contribution so far, but not all the failures of the team.
-
-### COMPLICATIONS AND SETBACKS
-
-Failures introduce complications that reflect the dramatic nature of atomic-age adventures. Special failures (failed rolls ending in 0 or 5) create minor setbacks, such as causing the loss of one previously accumulated success as circumstances work against you. Critical failures (doubles that fail) represent major setbacks, eliminating all accumulated progress and forcing you to restart the task—sometimes with additional complications.  The GM should come up with narratively plausible results to explain/describe the failure: the circuit board sparks and one of the components melts and needs to be replaced, rather than just you lose 1 success.
-
----
-
-## **CHAPTER 5: COMBAT SYSTEM**
-
-Combat in Atomic Tomorrow Adventures emphasizes dramatic action, heroic stunts, and the cinematic flow of pulp adventure stories. When ray guns start firing and atomic rockets start exploding, you want the action to flow like the best space opera serials. The system keeps things fast-paced while providing tactical options for clever players; whether you're swinging from the chandelier in a Venusian palace or diving behind cover as plasma bolts sear the air around you, the mechanics should enhance the drama, not slow it down.
-
-### INITIATIVE AND TURN SEQUENCE
-
-Combat begins with initiative rolls: each participant rolls a REFLEX check (percentile dice against REFLEX × 5). The highest successful roll acts first for the entire combat, followed by players proceeding around the table. This keeps everyone engaged and prevents any single player from dominating the action. To prevent staleness, alternate between clockwise and counter-clockwise each combat, ensuring that the same person doesn't always go last. Ties go to the character with higher REFLEX; after all, natural agility counts for something when atomic fire starts flying.
-
-### ACTION ECONOMY
-
-Each round grants characters significant freedom of action within realistic limits. Think "pulp fiction hero" rather than "ordinary person."  You still have to worry about the odds against you, and if somebody has the drop on you maybe you had better play along until you get an opportunity to escape, but you don't freeze up when it's crunch time.  You can take one significant action such as attacking, using a complex device, or employing a skill under pressure. You can also move within your current zone or advance toward an adjacent zone, plus perform one quick action like drawing a weapon, flipping a switch, or shouting a brief warning to your companions. The goal is to let characters feel competent and dynamic without bogging down in microscopic detail about every little movement.
-
-### POSITIONING
-
-Combat employs abstract positioning that emphasizes dramatic action over precise measurement. Counting hexes and measuring exact distances kills the flow of a good ray gun battle. Engaged range represents hand-to-hand combat distance where fists and blades dominate; you're close enough to see the fear in your opponent's eyes. Near range covers the same general area where pistols prove most effective: across a room, down a corridor, within the same space. Far range represents separate areas still within sight, but requiring three moves to close the distance, ideal for rifle combat and requiring three moves to transition from Near. Distant range demands significant movement to reach and presents difficult shots, requiring another three moves from Far. This is sniping territory or long-range spacecraft combat.
-
-### ATTACK SEQUENCE
-
-Combat resolution follows a straightforward three-step process that keeps the action moving while still providing meaningful choices. The attacker rolls against the appropriate Combat skill: Unarmed, Melee, or Ranged as the situation demands. Failed attacks miss with no effect, while special and critical failures mean something bad happens to the attacker (jammed weapon, stumble, exposed position). Successful attacks trigger the defender's choice: attempt to defend against the attack or accept the hit and its consequences. This creates a moment of tension where the defender must decide whether to risk a defense attempt or take their lumps.
-
-### DEFENSE OPTIONS
-
-Defenders have several options when facing attacks. Parrying requires a weapon or Unarmed Combat skill and works only against melee or unarmed attacks. Blocking demands a shield but grants a +20% bonus; you can block melee attacks only once per turn but can block ranged attacks repeatedly. Dodging works against any attack but suffers a -20% penalty against melee attacks due to the close quarters.
-
-Multiple defensive actions become increasingly difficult—your first defense each turn uses full percentage, but each subsequent defense suffers a cumulative -20% penalty as fatigue and positioning work against you.
-
-### OPPOSED RESOLUTION
-
-When defense meets attack, compare the quality of success first—critical beats special, special beats ordinary. If both participants achieve the same quality of success, the highest roll wins. When results are completely identical, ties favor the defender, reflecting the advantage of being prepared for the incoming attack.
-
-### DAMAGE AND WOUNDS
-
-Weapons in the atomic age deliver precise, predictable damage through their fixed Wound Ratings (1-4) without requiring additional rolls. Base wounds equal the weapon's rating, but exceptional attacks increase this damage. Special success attacks add one additional wound, while critical success attacks add 2 wounds but ignores armor. These bonuses stack, so a critical special success—rare but devastating—adds both bonuses for maximum carnage.
-
-Even after taking damage, tough characters can reduce incoming wounds through pure grit. Roll against GRIT × 5, with critical successes reducing wounds by three, special successes by two, and ordinary successes by one. Failure means you take the full brunt of the attack.
-
-### WOUND EFFECTS
-
-The wound system reflects the pulp adventure tradition where heroes remain effective until dramatically incapacitated. Characters with 0-3 wounds remain fully functional in combat, shrugging off hits that would fell ordinary people. At 4 wounds, incapacitation sets in—you're conscious but badly hurt. Characters with 5 wounds are dying and need immediate medical attention.
-
-Incapacitated characters can still attempt heroic actions by making a GRIT × 1 roll. Success allows one normal action despite the wounds, while critical success removes all wound penalties for that action. Characters at death's door can attempt one final heroic act with a NERVE check—success grants one final action before collapse, while critical success allows the action without penalty and stabilizes the character at 4 wounds.
-
-Once combat is over and the adrenaline fades, characters suffer a -20% penalty per wound to all actions, barring medical intervention, until the wound is healed.
-
-### THE DUAL TRACK SYSTEM: WOUNDS AND STRAIN
-
-Characters in Atomic Tomorrow Adventures track two types of damage: Wounds represent physical injury, while Strain reflects mental exhaustion, psychic feedback, and non-lethal trauma. Both tracks use the same five-step progression but affect characters differently.
-
-| **Level** | **Wounds** | **Strain** |
-|-----------|------------|------------|
-| **0-3** | Fully functional | Fully functional |
-| **4** | Incapacitated | Mentally exhausted (-20% to all mental actions) |
-| **5** | Dying | Unconscious |
-
-**Strain Sources**: Strain accumulates from psionic backlash, environmental stress (extreme heat, cold, radiation), exhaustion, psychological trauma, non-lethal weapons, and certain drugs or toxins.
-
-**Strain Effects**: Unlike wounds, strain primarily affects mental performance. At 4 strain, you suffer -20% to all SAVVY, NERVE, CHARM, and GUILE-based actions as mental fatigue clouds your thinking. At 5 strain, you fall unconscious from mental exhaustion.
-
-**Strain Recovery**: Strain recovers more quickly than wounds. One point of strain recovers naturally after one hour of rest, or all strain can be removed with 8 hours of sleep. Some medical treatments and meditation techniques can accelerate strain recovery.
-
-**Converting Between Tracks**: Some effects allow voluntary conversion between tracks. For example, psychics can sometimes dissipate strain by accepting physical wounds, while certain medical treatments might trade wounds for strain.
-
-### NON-LETHAL COMBAT
-
-Many conflicts in the atomic age involve stunning, capture, or subdual rather than outright killing. Non-lethal weapons and tactics inflict strain instead of wounds, allowing for dramatic confrontations without permanent consequences.
-
-**Non-lethal Weapon Examples**: Stunners, shock batons, sonic disruptors, neural scramblers, and various gas weapons inflict strain damage. These weapons follow the same combat mechanics as lethal weapons but fill the strain track instead.
-
-**Conversion Attacks**: Some weapons can be set to either lethal or non-lethal modes. Energy weapons often include "stun" settings, while projectile weapons might use tranquilizer rounds instead of bullets.
-
-**Mixed Damage**: It's possible to suffer both wounds and strain simultaneously. A character might have 2 wounds and 3 strain, requiring careful management of both conditions.
-
-### PROTECTIVE EQUIPMENT
-
-Protection comes in two forms with different mechanics. Cover reduces the wounds dealt—partial cover reduces wounds from a successful attack by one, good cover by two, and excellent cover by three. Armor protection operates similarly in reducing incoming wounds. Light armor reduces wounds by one, medium armor by two, and heavy armor by three. Some advanced weapons possess armor-piercing properties that ignore portions of armor protection, reflecting the constant arms race between offense and defense in the atomic age.  Critical hits ignore both armor and cover.
-
-**Environmental Positioning:**
-
-Flanking, back-stabbing, attacking from a higher position, attacking with surprise, and any other situational modifiers should be decided by the GM on the fly, and if it's reasonable either the target should suffer a modifier to Defense or perhaps be unable to actively defend at all. In other cases one of the standard modifiers (-20, -40, etc.) should be applied. Often there should be an opposed role, say of Guile vs. Savvy, to check if the character has been sneaky enough to earn the bonus.
-
-### SUPER-SIMPLE COMBAT MANEUVERS
-
-Combat maneuvers add tactical depth without complexity through an elegant choice mechanism. When making any successful attack, the attacker can declare a desired effect instead of inflicting damage. If the attack succeeds, the defender faces a crucial decision: accept the declared effect (disarm, knockdown, push, etc.) or refuse and take normal damage instead.
-
-Critical success attacks eliminate this choice—the defender must accept the declared effect and cannot opt for damage instead, representing the attacker's superior execution leaving no room for resistance.
-
-Common maneuvers include disarming opponents, tripping or knocking them down, pushing them back a zone, pinning them in place, stunning them for a -20% penalty to their next action, snatching items, distracting them to prevent defensive actions next round, or repositioning them within the combat zone.
-
-This system rewards clever tactical thinking. Players can set up advantageous situations through maneuvers, while NPCs typically accept effects less harmful than wounds. Some opponents possess specific vulnerabilities that make certain maneuvers particularly effective, encouraging players to observe and exploit tactical opportunities.  GMs should frequently have attacking NPCS choose maneuvers instead of straight up attacking; in the tradition of pulp adventure, even the baddest of bad-guys will usually opt to capture enemies, if only for the opportunity to gloat.
-
-### SPECIAL WEAPON EFFECTS
-
-Many weapons have effects that trigger on special or critical success. These effects represent the weapon's technology interacting with the target in unexpected or particularly effective ways.
-
-| Weapon Type | Special Success Effect |
-|-------------|------------------------|
-| **Laser** | Negates one additional level of armor reduction |
-| **Plasma** | Area effect damage (adjacent targets take 1 wound) |
-| **Sonic** | Target disoriented (-20% to next action) |
-| **Cryo** | Target movement reduced by half |
-| **Thermal** | Target catches fire (1 wound per round until extinguished) |
-| **Ballistic** | Knockback effect (target moves back one position) |
-| **Explosive** | Wider area effect |
-| **Kinetic** | Target knocked prone |
-| **Vibro** | Negates one additional level of armor reduction |
-| **Impact** | Target stunned for 1 round |
-
-### WEAPON PROPERTIES
-
-Beyond their basic wound ratings, weapons possess various properties that affect their utility and tactical application.
-
-| Property | Effect | Notes |
-|----------|--------|-------|
-| **Armor Piercing** | Negates 1-3 levels of armor wound reduction | Usually found on military or specialized weapons |
-| **Area Effect** | Affects multiple targets in same zone | May require special ammunition or power |
-| **Concealable** | +20% to hide the weapon | Usually smaller and less powerful |
-| **Non-lethal** | Can stun or incapacitate without causing wounds | Common in law enforcement weapons |
-| **Reach** | Can attack from slightly beyond engaged range | Provides initiative advantage in first round of melee |
-| **Silent** | Makes no noise when used | +20% to Stealth if used as part of a stealthy action |
-
-### SPECIAL COMBAT SITUATIONS
-
-Combat in the atomic age rarely takes place in ideal conditions. Space battles occur in zero gravity, while planetary adventures expose characters to hostile environments that affect tactical considerations.
-
-**Zero-G Combat** presents unique challenges where traditional movement doesn't apply. Actions requiring movement use Athletics (Zero-G) skill instead of normal movement. Characters without this specialized training suffer a -40% penalty to physical actions, while those with high BRAWN find their strength working against them in weightlessness, suffering -5% per point of BRAWN above 10.
-
-**Environmental Hazards** can quickly turn any encounter deadly. Vacuum exposure without protection causes 1 wound per round as the body struggles with decompression. Toxic atmospheres require regular GRIT checks to avoid poisoning, while radiation causes both immediate damage and long-term health effects. Extreme temperatures, whether the frozen void of space or the scorching surface of Mercury, require appropriate protective gear and GRIT checks to maintain effectiveness.
-
-### AMMUNITION AND POWER
-
-The atomic age has brought remarkable advances in portable power, but even the most sophisticated weapons have practical limitations that affect tactical planning.
-
-| Weapon Class | Energy Weapons | Conventional Weapons |
-|--------------|----------------|---------------------|
-| **Light Weapons** | 20 shots per power cell | 8-12 rounds per magazine |
-| **Medium Weapons** | 15 shots per power cell | 15-30 rounds per magazine |
-| **Heavy Weapons** | 10 shots per power cell | 5-10 rounds per magazine |
-| **Specialized Weapons** | 5-8 shots per power cell | Varies by design |
-
-Energy weapons offer the advantage of standardized power cells that can often be recharged at atomic power stations, while conventional weapons rely on manufactured ammunition that may be scarce in frontier regions.
-
-### COMBAT EXAMPLE
-
-Let's see how this works in practice with a classic atomic-age showdown:
-
-**Situation**: Captain Steel faces off against a Mysterion agent in the corridors of an asteroid mining station. Ray guns at twenty paces!
-
-**Round 1 - Initiative**: 
-- Captain Steel (REFLEX 15): Rolls 42 vs 75% - Success, acts first
-- Mysterion Agent: Rolls 88 vs 60% - Fails, acts second
-
-**Captain Steel's Turn**: Our hero draws his trusty Blast Pistol (quick action) and fires at the agent (major action)
-
-- Combat (Pistols) 65%: Rolls 30 - Special Success!
-- Blast Pistol normally does 2 wounds, +1 for special, total 3 wounds
-
-**Mysterion Agent's Defense**: The villain attempts to dodge behind a mining robot
-
-- Athletics (Acrobatics) 50%: Rolls 67 - Fails
-- Takes full 3 wounds, reducing him to 2 wounds remaining and looking pretty banged up
-
-**Mysterion Agent's Turn**: Snarling with rage, he returns fire with his dreaded Disintegrator
-- Combat (Energy Weapons) 70%: Rolls 25 - Special Success!
-- Disintegrator does 3 wounds +1 for special = 4 wounds total
-
-**Captain Steel's Defense**: Attempts to dive behind cover (Dodge)
-- Athletics (Acrobatics) 55%: Rolls 41 - Success
-- But here's the crucial part: Mysterion's special success beats Steel's ordinary success. Quality of success matters! Had Steel rolled a 45 (special success), he would have beaten the Mysterion's roll since the qualities would be the same, but his 45 is higher than the Mysterion's 25. Had he rolled a 44 (critical success), he would have flat out won against the Mysterion's special success regardless of the actual numbers.
-- Steel takes 4 wounds and is incapacitated!
-
-**Captain Steel's Last Stand**: At 4 wounds, attempts GRIT check to stay active
-- GRIT 14 × 1 = 14%: Rolls 09 - Success!
-- Can take one more action despite being incapacitated
-
-This example shows how the quality of success matters in opposed combat, and how even tough heroes can be brought down by a good shot—but might still have one last chance to save the day! That's the atomic age for you: dramatic reversals and last-second heroics are all part of the adventure.
-
----
-
-## **CHAPTER 6: EQUIPMENT & GEAR**
-
-The atomic age has brought incredible technological advances to humanity. From ray guns that harness atomic energy to rocket packs that let you soar through the clouds of Venus, the equipment of 2025 combines scientific wonder with atomic-age style.
-
-### WEAPON CLASSIFICATIONS
-
-Weapons in the atomic age are classified by several characteristics that determine their effectiveness and utility. The **Type** indicates whether the weapon is designed for melee or ranged combat, while the **Class** (Light, Medium, or Heavy) reflects its size and power requirements. The **Wound Rating** (1-4) represents the base wounds inflicted, and **Special Properties** cover unique effects or tactical advantages.
-
-Understanding wound ratings helps players choose appropriate weaponry for their missions. Rating 1 weapons include minor implements like improvised tools and small caliber firearms. Rating 2 represents standard personal weapons and common military arms that form the backbone of most arsenals. Rating 3 covers heavy military weapons and specialized combat tools requiring significant training. Rating 4 weapons are typically vehicle-mounted or extremely powerful devices that can devastate entire areas.
-
-### RANGED WEAPONS
-
-The development of portable atomic power has revolutionized ranged weaponry, creating everything from concealable hold-out blasters to devastating disintegrator rifles.
-
-| Weapon | Class | Range | Special Properties |
-|--------|-------|-------|-------------------|
-| **Hold-out Blaster** | Light (WR 1) | Near | Concealable (+20% to hide) |
-| **Dart Pistol** | Light (WR 1) | Near | Silent, can deliver toxins |
-| **Stunner** | Light (WR 1) | Near | Non-lethal, GRIT check or stunned |
-| **Signal Pistol** | Light (WR 1) | Far | Illuminates area, can start fires |
-| **Blast Pistol** | Medium (WR 2) | Near/Far | Standard sidearm |
-| **Laser Pistol** | Medium (WR 2) | Near/Far | Negates 1 armor level, silent |
-| **Gauss Pistol** | Medium (WR 2) | Near/Far | Special: penetrates partial cover |
-| **Sonic Disruptor** | Medium (WR 2) | Near | Area effect, ignores partial cover |
-| **Thermal Projector** | Medium (WR 2) | Near | Special: target catches fire |
-| **Blast Rifle** | Heavy (WR 3) | Far/Distant | Military standard |
-| **Laser Rifle** | Heavy (WR 3) | Far/Distant | Negates 1 armor level, silent |
-| **Plasma Caster** | Heavy (WR 3) | Far | Special: damages adjacent targets |
-| **Disintegrator** | Heavy (WR 3) | Near/Far | Critical: +1 extra wound |
-
-### MELEE WEAPONS
-
-While ranged weapons dominate the battlefield, close combat remains essential when ammunition runs low or stealth demands silence. Atomic-age melee weapons combine traditional blade work with exotic technologies.
-
-| Weapon | Class | Special Properties |
-|--------|-------|-------------------|
-| **Combat Knife** | Light (WR 1) | Concealable (+20% to hide) |
-| **Shock Gloves** | Light (WR 1) | Special: target stunned for 1 round |
-| **Vibro-dagger** | Light (WR 1) | Negates 1 level of armor reduction |
-| **Vibro-blade** | Medium (WR 2) | Negates 1 level of armor reduction |
-| **Shock Baton** | Medium (WR 2) | Special: GRIT check or stunned |
-| **Force Blade** | Medium (WR 2) | Negates 2 armor levels, requires power |
-| **Vibro-axe** | Heavy (WR 3) | Special: +1 additional wound |
-| **Power Hammer** | Heavy (WR 3) | Special: knocks target prone |
-| **Force Sword** | Heavy (WR 3) | Negates 2 armor levels, parries energy weapons |
-
-### STANDARD KITS
-
-Rather than purchasing equipment piece by piece, most explorers find it more convenient and economical to start with a comprehensive kit suited to their expected missions. These packages provide essential gear at reduced cost while ensuring nothing critical is forgotten.
-
-| Kit | Cost | Primary Contents | Specialization |
-|-----|------|------------------|----------------|
-| **Spacer's Kit** | 120 Cr | Vacuum suit, stunner, scanner, medikit, torch, radio | General space travel |
-| **Explorer's Kit** | 150 Cr | Frontier suit, hoverscout, tent module, water reclaimer | Planetary exploration |
-| **Scientist's Kit** | 100 Cr | Laboratory, analyzer, data reader, recorder, compounds | Research and analysis |
-| **Medic's Kit** | 180 Cr | Advanced medikit, Z-ray wand, purge drugs, anesthetics | Medical emergencies |
-
-### SIGNATURE GADGETS
-
-Every character can have a signature gadget that reflects the atomic-age aesthetic. Roll on each column to create your unique device:
-
-| d10 | ATOMIC ADJECTIVE | TECHNO-COMPONENT | SERIES DESIGNATION |
-|-----|------------------|------------------|--------------------|
-| 1   | Atomo-           | Tron            | Mark Ω            |
-| 2   | Astro-           | Ray             | Deluxe             |
-| 3   | Cosmo-           | Matic           | Z-Series           |
-| 4   | Electro-         | Wave            | Plus               |
-| 5   | Nucleo-          | Flux            | Supreme            |
-| 6   | Chrono-          | Static          | X-1000             |
-| 7   | Magneto-         | Field           | Wonder             |
-| 8   | Quantum-         | Pulse           | Paragon            |
-| 9   | Gyro-            | Scope           | Galaxy             |
-| 10  | Hyper-           | Beam            | Ultra              |
-
-Each component provides unique benefits and special effects that make your gadget both useful and memorable.
-
----
-
-## **CHAPTER 7: MEDICAL SYSTEM**
-
-Medical treatment in the atomic age involves both miraculous cures and dangerous side effects. Every treatment decision carries risk and requires careful consideration of immediate needs versus long-term consequences.
-
-### WOUND MECHANICS
-
-Characters track wounds rather than hit points. Each wound represents a significant injury that affects your capabilities:
-
-- **0-3 Wounds**: Fully functional
-- **4 Wounds**: Incapacitated but conscious  (GRIT x 1 check to act)
-- **5 Wounds**: Dying
-
-### BASIC TREATMENTS
-
-**Emergency Medikit**: Heals 1 wound with successful Medicine check. Standard medical equipment for field treatment.
-
-**Miraclo Emergency Patches**: Advanced healing technology that can heal 2 wounds but carries a 10% chance of minor mutation.
-
-**Stimulants**: Various drugs that can mask wound penalties or provide temporary enhanced performance, each with specific side effects and duration.
-
-### MEDICAL COMPLICATIONS
-
-When using advanced treatments, complications can occur based on special or critical failures:
-- **Special Failures** (roll ending in 0 or 5): Standard complication occurs
-- **Critical Failures** (doubles): Severe complication occurs  
-- **Both together**: Critical complication requiring specialized treatment
-
-### TREATMENT PHILOSOPHY
-
-The medical system creates meaningful choices through treatment tradeoffs. When treating patients, doctors must balance immediate effectiveness against side effects and long-term complications, considering current circumstances and available facilities.
-
----
-
-## **CHAPTER 8: PSIONICS**
-
-Some humans have developed mental abilities beyond the normal range, perhaps due to cosmic ray exposure or evolutionary advancement. These psychic powers, or "psionics," are studied and regulated by the Rhine Institute.
-
-### PSI SKILL
-
-All psionic abilities use the Psi skill based on NERVE. Unlike other skills, using psionics depletes your Aura and can cause mental strain.
-
-### THE FIVE DISCIPLINES
-
-**Telepathy**: Reading and communicating through minds
-- Basic: Sense surface thoughts, send simple messages
-- Advanced: Deep mind reading, complex mental communication
-
-**Telekinesis**: Moving objects with mental force  
-- Basic: Lift small objects, apply gentle pressure
-- Advanced: Manipulate heavy objects, create force barriers
-
-**Precognition**: Perceiving possible futures
-- Basic: Sense immediate danger, glimpse likely outcomes
-- Advanced: Detailed future visions, probability manipulation
-
-**Empathy**: Sensing and influencing emotions
-- Basic: Read emotional states, project calm
-- Advanced: Emotional manipulation, fear or courage inspiration
-
-**Teleportation**: Instantaneous movement through space
-- Basic: Short-range jumps, emergency escape
-- Advanced: Long-distance travel, group teleportation
-
-### AURA AND STRAIN
-
-Each Esper has an Aura rating representing their mental energy reserves. Using psionics depletes Aura, and attempting to use powers when your Aura is too low causes Strain—the same mental exhaustion track explained in the Combat System chapter. Aura always starts at 100 (full capacity) and is reduced by psionic exertion: every time the Esper makes a roll for a psionic power, if the roll is less than the Esper's current Aura the roll becomes the Esper's new Aura; if the Esper is attempting an extended task where they have to make several rolls to accumulate successes only the final roll counts and is compared to Aura. If the roll is higher than the Esper's current Aura the Esper suffers from psychic backlash. Backlash adds one Strain to the Strain track, but does not change the Aura level since the roll is higher than the current Aura.
-
-### AURA RECOVERY
-
-- **Natural Recovery**: Aura resets to 100 after 8 hours without using Powered abilities
-- **Meditation**: 1 hour of concentration, make NERVE check
-  - Success: Reset Aura to 100
-  - Special Success: Reset Aura to 100 and next Psi roll doesn't affect Aura
-  - Critical Success: Reset Aura to 100 and next two Psi rolls don't affect Aura
-
-### RESISTANCE
-
-When psionic powers are used against unwilling targets, the target resists with checks against the most appropriate attribute. This creates an opposed roll situation with the following outcomes:
-
-| **Attribute** | **Used Against** |
-|---------------|------------------|
-| **BRAWN** | Telekinetic forces trying to physically move or restrain |
-| **REFLEX** | Powers requiring quick mental reactions or evasion |
-| **NERVE** | Fear projection, emotional manipulation, or psychic pressure |
-| **SAVVY** | Illusions, false sensory input, or deceptive suggestions |
-| **CHARM** | Attempts to manipulate social dynamics or personal connections |
-| **GRIT** | Direct mental attacks, pain induction, or psychic domination |
-| **GUILE** | Mind reading, memory extraction, or deception detection |
-
-**Opposed Roll Outcomes:**
-- **Psychic succeeds, target fails**: Power works completely
-- **Both succeed**: Higher successful roll wins
-- **Both fail**: Nothing happens (no Aura change occurs)
-- **Psychic fails, target succeeds**: Target may sense the attempt
-
-### PSIONIC POWER APPLICATIONS
-
-The following table provides guidelines for typical uses of psionic disciplines. Free uses require no roll and don't affect Aura, while powered uses require skill rolls and deplete Aura based on the result.
-
-| **Discipline** | **Difficulty** | **Successes** | **Typical Applications** |
-|----------------|----------------|---------------|-------------------------|
-| **TELEPATHY** | Free | 0 | Mental whisper to willing person within sight; sense if someone is thinking about you; share simple image with willing participant |
-| | Light | 1 | Surface thoughts of unwilling target; mental communication across building; detect lies; sense emotional state through thoughts |
-| | Moderate | 2 | Mental communication beyond visual range; plant simple suggestion; read recent memories; create telepathic group link |
-| | Heavy | 3 | Deep probe for hidden memories |
-| | | 4 | Influence thinking or plant complex suggestions |
-| | | 6 | Mental dominance and direct control |
-| **TELEKINESIS** | Free | 0 | Float lightweight objects; turn book pages; gently nudge for attention |
-| | Light | 1 | Open/close doors remotely; retrieve objects from high places; stop falling items; push someone to stumble |
-| | Moderate | 2 | Lift person briefly; create projectile barrier; manipulate multiple objects; bend metal bars |
-| | Heavy | 3 | Precision work at range |
-| | | 1-4 | Force manipulation by weight/complexity |
-| | | 5 | Devastating telekinetic attack |
-| | | 6+ | Mass manipulation of multiple/heavy objects |
-| **PRECOGNITION** | Free | 0 | Vague danger sense; intuitive path choices; sense hostile intent |
-| | Light | 1 | See 1-2 seconds ahead; know if action will succeed; sense incoming lies; glimpse around corners |
-| | Moderate | 2 | Preview conversations; see plan outcomes within hours; predict daily weather; know when danger arrives |
-| | Heavy | 3 | Short-term visions (minutes to hours) |
-| | | 4 | Prophecy of threats to individuals |
-| | | 5 | Specific predictions about people/events |
-| | | 7 | Temporal overview of future trends |
-| **EMPATHY** | Free | 0 | Basic emotional reading; sense room mood; detect fear or anger |
-| | Light | 1 | Understand true feelings about topics; detect hidden emotions; sense object's emotional history; know what would comfort someone |
-| | Moderate | 2 | Project calm/confidence; amplify existing emotions; sense location's emotional echoes; inspire temporary courage |
-| | Heavy | 3 | Mood manipulation of groups |
-| | | 4 | Empathic healing of psychological trauma |
-| | | 6 | Emotional dominance override |
-| **TELEPORTATION** | Free | 0 | Summon small objects to hand; make items appear in pocket; teleport dust off clothes |
-| | Light | 1 | Blink dodge short distances; object hand-to-hand; send notes nearby; appear beyond locked doors |
-| | Moderate | 2 | Object send to other rooms; combat repositioning; make objects vanish from hands; swap similar objects |
-| | Heavy | 1 | Object summon from nearby |
-| | | 3 | Teleport across reasonable distances |
-| | | 4 | Bilocation (appear in two places briefly) |
-
-## EXAMPLE OF PLAY
-
-**Dr. Sarah Voss (Mentalist, Psi Skill 65%, Current Aura: 100, Strain: 2)**
-
-*Attempting to read the surface thoughts of a suspicious station worker*
-
-**GM**: "This will require 1 success for basic surface thoughts. The worker isn't actively resisting, so no opposed roll needed."
-
-**Player**: "I'll try to read what he's thinking about."
-
-*Rolls 43 - Success*
-
-**GM**: "You sense he's worried about something in Cargo Bay 7. Since your successful roll of 43 is under your current Aura of 100, no backlash. Your Aura is now 43."
-
-*Later, attempting to probe deeper into his memories (3 successes needed)*
-
-**Player**: "I want to find out what exactly he's hiding."
-
-*First roll: 67 (success) - 1 success* *Second roll: 23 (success) - 2 successes*
- *Third roll: 78 (success) - 3 successes*
-
-**GM**: "You successfully probe his memories and discover he's been smuggling Rhine Institute contraband. Your final successful roll was 78, which is higher than your current Aura of 43, so you suffer backlash - advance 1 step on your Strain track. Your Aura stays at 43."
-
-**Player**: "That puts me at 3 strain total, so I want to try to dissipate my strain so I can keep using my abilities effectively."
-
-*Rolls GRIT check: 34, success but less that current Aura so her aura becomes 34. If the Grit check had succeeded but the roll was higher than 43 the strain would be removed but she would gain one wound*
-
-**GM**: "You grit your teeth and force the psychic feedback to manifest physically. Your nose starts bleeding, but your strain drops to 0 and your Aura becomes 34."
-
-### LEGAL FRAMEWORK
-
-The Rhine Institute registers and monitors psychics, providing training and legal protection in exchange for documentation and occasional service. Unregistered psychics face legal difficulties but avoid institutional oversight.
-
----
-
-## **CHAPTER 9: SPACECRAFT BASICS**
-
-While detailed spacecraft rules appear in the Operations Manual, explorers need to understand basic vessel operation and emergency procedures.
-
-### BASIC SPACECRAFT SYSTEMS
-
-**Propulsion**: Chemical-X rockets provide the thrust needed for interplanetary travel
-
-**Life Support**: Maintains breathable atmosphere and comfortable temperature
-
-**Navigation**: Astrogation computers plot courses through space
-
-**Communications**: Radio systems for ship-to-ship and ship-to-planet contact
-
-**Sensors**: Detect obstacles, other vessels, and navigation hazards
-
-### EMERGENCY PROCEDURES
-
-**Hull Breach**: Emergency patches and vacuum suits provide temporary solutions
-
-**System Failure**: Basic repair skills can restore critical systems
-
-**Navigation Problems**: Manual astrogation can substitute for computer failure
-
-**Life Support Crisis**: Emergency supplies and rationing extend survival time
-
-### SPACE TRAVEL BASICS
-
-**Launch Windows**: Efficient travel requires timing departures with planetary positions
-
-**Travel Time**: Journey duration depends on distance and available thrust
-
-**Docking Procedures**: Approach and boarding protocols for stations and other vessels
-
-**Spacewalk Safety**: Vacuum suit operation and emergency protocols
-
----
-
-## **CHAPTER 10: SOLAR SYSTEM GAZETTEER**
-
-Every explorer needs basic knowledge about the worlds they might visit. This gazetteer provides essential information about each major body in the solar system.
-
-### EARTH
-
-The birthworld of humanity, now a gleaming atomic-age paradise of flying cars, towering cities, and scientific marvels. Most Earth-born humans are genetically optimized and thoroughly educated, making them effective leaders and coordinators.
-
-**Key Locations**: Neo-York Megacity, the Atomic Gardens of Europe, the Australian Space Center
-
-**Dangers**: Bureaucracy, social expectations, environmental sensitivity
-
-**Opportunities**: Advanced technology, educational resources, political connections
-
-### LUNA
-
-Earth's moon serves as humanity's first stepping stone to the stars. Low gravity and abundant minerals make it a major industrial center, while its position makes it a natural waystation for deeper space travel.
-
-**Key Locations**: Armstrong City, the Luna Yards, Farside Observatory
-
-**Dangers**: Industrial accidents, low gravity adaptation issues, corporate politics
-
-**Opportunities**: Zero-G training, spacecraft construction, astronomical research
-
-### MARS
-
-The red planet hosts humanity's most successful colonial effort, with thriving cities amid the ancient ruins of a lost Martian civilization. Red Martians—descendants of the original inhabitants—live alongside human colonists.
-
-**Key Locations**: New Berlin, the Martian Archaeological Sites, the Polar Ice Mines
-
-**Dangers**: Dust storms, ancient traps, water scarcity
-
-**Opportunities**: Archaeological discoveries, mineral wealth, cultural exchange
-
-### VENUS
-
-The jungle planet conceals its secrets beneath steaming clouds and towering trees. Mysterious ruins hint at ancient civilizations, while dangerous wildlife and unpredictable weather make exploration hazardous.
-
-**Key Locations**: New Athens, the Cloud Cities, the Deep Jungle
-
-**Dangers**: Hostile wildlife, extreme weather, tropical diseases
-
-**Opportunities**: Xenobiological specimens, ancient artifacts, rare minerals
-
-### THE ASTEROID BELT
-
-A frontier region where independent prospectors and miners seek their fortunes among the floating rocks. Asteroid colonies provide services to travelers and serve as bases for further exploration.
-
-**Key Locations**: Ceres Station, the Trojan Colonies, Prospector's Rest
-
-**Dangers**: Equipment failure, claim jumpers, isolation
-
-**Opportunities**: Mineral wealth, independence, rare element discovery
-
-### THE OUTER SYSTEM
-
-Jupiter's moons host major industrial operations taking advantage of the gas giant's resources, while Saturn's rings hide scientific stations and cultural enclaves. These distant outposts represent humanity's farthest permanent presence in space.
-
-**Key Locations**: Europa Research Station, Titan Mining Complex, the Ring Cities of Saturn
-
-**Dangers**: Radiation exposure, extreme distances, equipment dependence
-
-**Opportunities**: Scientific advancement, rare resource access, frontier leadership
-
----
-
-## **CHAPTER 11: GETTING STARTED**
-
-Now that you understand the basics, you're ready to begin your adventures in the atomic tomorrow. This chapter provides guidance for new players and groups starting their first campaign.
-
-### CREATING YOUR FIRST CHARACTER
-
-1. **Choose Your Concept**: Start with a basic idea that excites you—a daring pilot, a brilliant scientist, a mysterious psychic
-2. **Generate Attributes**: Roll or use the standard array based on your chosen Origin
-3. **Select Your Four Columns**: Pick one Epithet, Profession, Origin, and Background that work together
-4. **Calculate Skills**: Add up your professional bonuses to determine your final skill percentages
-5. **Choose Equipment**: Select a starting kit appropriate to your profession and customize as desired
-6. **Add Personal Touches**: Create motivations, relationships, and signature gadgets that make your character unique
-
-### EXAMPLE CHARACTER CREATION
-
-**Concept**: A swashbuckling pilot from Venus who flies through dangerous jungle canopies
-
-**Attributes** (Venusian, so rolled): BRAWN 13, REFLEX 16, NERVE 14, SAVVY 11, CHARM 12, GRIT 15, GUILE 10
-
-**Four Columns**:
-- **Epithet**: Swashbuckling (+20% to acrobatic combat maneuvers, can goad opponents)
-- **Profession**: Stunt Pilot (Piloting (Aircraft) +40%, Performance (Showmanship) +20%, etc.)
-- **Origin**: Venusian (+1 BRAWN, +1 NERVE, -1 SAVVY, jungle survival skills)
-- **Background**: Showbiz Family (+1 CHARM, -1 NERVE, performance and networking skills)
-
-**Final Attributes**: BRAWN 14, REFLEX 16, NERVE 14, SAVVY 10, CHARM 13, GRIT 15, GUILE 10
-
-**Key Skills**: 
-- Piloting (Aircraft): (16×2) + 10% + 40% = 82%
-- Performance (Showmanship): (13×2) + 10% + 20% = 56%
-- Survival (Jungle): 25% + 15% = 40%
-
-### FIRST SESSION ADVICE
-
-**Start Small**: Begin with a simple mission that lets everyone try their skills
-
-**Encourage Cooperation**: Make sure each character has something to contribute
-
-**Embrace the Genre**: Celebrate atomic-age optimism, pulp adventure tropes, and heroic action
-
-**Keep It Moving**: Don't let rules slow down the excitement—make quick decisions and keep the story flowing
-
-### CAMPAIGN THEMES
-
-**Exploration**: Discovering new worlds and ancient mysteries
-
-**Adventure**: Daring rescues, narrow escapes, and impossible odds
-
-**Investigation**: Unraveling conspiracies and solving puzzles
-
-**Frontier Life**: Building new communities and facing the unknown
-
-**Scientific Wonder**: Pushing the boundaries of atomic-age technology
-
----
-
-## **APPENDIX A: QUICK REFERENCE**
-
-### CORE MECHANICS
-Roll your skill percentage or less on d100 to succeed.
-
-| Quality           | Roll                                               |
-| ----------------- | -------------------------------------------------- |
-| Automatic Success | 01-05                                              |
-| Ordinary Success  | Roll is Skill percentage or less                   |
-| Special Success   | Roll is success that ends in 0 or 5                |
-| Critical Success  | Roll is success and is doubles (11, 22, 33, etc.)  |
-| Failure           | Roll is greater than Skill percentage              |
-| Special Failure   | Roll is failure that ends in 0 or 5                |
-| Critical Failure  | Roll is failure and is doubles (66,  77, 88, etc.) |
-| Automatic Failure | 96-00                                              |
-|                   |                                                    |
-
-### DIFFICULTY MODIFIERS
-| Difficulty | Modifier |
-|------------|----------|
-| Trivial | +40% |
-| Easy | +20% |
-| Routine | +0% |
-| Challenging | -20% |
-| Difficult | -40% |
-| Extreme | -60% |
-| Heroic | -80% |
-
-### COMBAT SEQUENCE
-1. Roll Initiative (REFLEX × 5) then go around the table starting from whoever rolled highest success.  NPCs go when going around the table gets to the GM's seat.  If there are a number of NPCs rather than having them all cluster together and go on the GM's turn, the GM may choose to spread some of them out between the other players.
-2. Each player Declares Actions, then resolves them
-3. Once every character PC or NPC has gone, the GM resolves any environmental effect or hazards, and describes any changes to the scene such as new arrivals or changing conditions
-
-### WOUND TRACK
-- 0-3 Wounds: Fully functional
-- 4 Wounds: Incapacitated (GRIT × 1 to act)
-- 5 Wounds: Dying (NERVE check for Last Stand)
-
-### TASK DIFFICULTY
-- Standard: 1 success
-- Complex: 3 successes  
-- Demanding: 5 successes
-- Expert: 8 successes
-- Master: 12+ successes
-
----
-
-## **APPENDIX B: CHARACTER SHEET**
-
-[This would include a formatted character sheet with spaces for all the information players need to track their characters, including attributes, skills, equipment, wounds, and notes.]
-
----
-
-*The solar system awaits, explorer. Strap on your rocket pack, charge your ray gun, and prepare for adventure among the atomic stars!*
-
-**END OF VOLUME I: EXPLORER'S MANUAL**
+*Note: This is a condensed version focusing on the equipment catalog. The complete Volume I would include full character creation rules, core mechanics, and additional player guidance.*
