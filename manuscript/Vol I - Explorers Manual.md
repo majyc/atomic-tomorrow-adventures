@@ -7,11 +7,11 @@
 
 ## **WELCOME TO THE ATOMIC AGE**
 
-It's the gleaming atomic future of 2025, and humanity has done what we always knew we would—spread across the solar system in gleaming rocket ships powered by atomic fire. Mars hosts bustling colonies beneath its red skies, Venus conceals ancient secrets in its steaming jungles, and the asteroid belt thrums with prospectors seeking their fortunes among the stars. This is the golden age of space exploration, where ray guns gleam, robots serve, and adventure waits beyond every planet's horizon.
+Welcome to the far-flung gleaming atomic future of 2025! Humanity has done what we always knew we would—spread across the solar system in gleaming rocket ships powered by atomic fire. Mars hosts bustling colonies beneath its red skies, Venus conceals ancient secrets in its steaming jungles, O'Neill cylinders hang in space at Earth's L5 point, the asteroid belt thrums with prospectors seeking their fortunes in the depths of space, and rumors swirl of a Forerunner megastructure discovered encircling Jupiter. This is the golden age of space exploration, where ray guns gleam, robots serve, and adventure waits beyond every planet's horizon.
 
-You're explorers, adventurers, and heroes of this atomic tomorrow—rocket jockeys with nerves of steel, brilliant scientists with revolutionary theories, swashbuckling scouts who blaze trails across alien worlds, and countless other extraordinary individuals. The solar system needs people with grit, determination, and the courage to face whatever mysteries lurk in the dark between the worlds.
+You're explorers, adventurers, and heroes of this atomic tomorrow—rocket jockeys with nerves of steel, brilliant scientists with revolutionary theories, swashbuckling scouts who blaze trails across alien worlds, and countless other extraordinary individuals. The solar system needs people with grit, determination, curiosity and the courage to face whatever mysteries lurk in the dark between the worlds.
 
-Whether you're hunting for ancient Martian artifacts, defending a Venus colony from saurian predators, or racing through asteroid fields to deliver vital supplies, your adventures will shape the future of humanity among the planets. The question isn't whether you'll find adventure—it's whether you'll survive it with your sanity intact and your atomic-powered dreams still burning bright.
+Whether you're hunting for ancient Martian artifacts, defending a Titan colony from undersea predators, negotiating peace between Venus' squabbling tribes of autochthons, or racing to deliver vital medical supplies to Hospital Station on its endless transit between Venus and Mars, your adventures will shape the future of humanity among the planets. Fame, Fortune, Knowledge, Adventure, they are all yours for the taking, if you dare!
 
 ---
 
@@ -29,7 +29,7 @@ Think of character creation as building a sentence that tells us everything esse
 
 Each column serves a different purpose in defining your character:
 
-**Column A: Epithet** - What makes you extraordinary compared to ordinary people? This isn't just a job description or a place of birth—it's the quality that sets you apart from the millions of normal folks living their routine lives across the solar system. Whether you're Brilliant, Lucky, Two-Fisted, or Daring, your epithet represents the spark of greatness that makes you the protagonist of adventures rather than just another face in the crowd.
+**Column A: Epithet** - What makes you extraordinary compared to ordinary people? This is the quality that sets you apart from the millions of normal folks living their routine lives across the solar system. Whether you're Brilliant, Lucky, Two-Fisted, or Daring, your epithet represents the spark of greatness that makes you the protagonist of adventures rather than just another face in the crowd.
 
 **Column B: Profession** - What you do for a living and what shaped your skills. Your profession represents years of training, experience, and expertise that have molded you into someone capable of handling the challenges that ordinary citizens couldn't even attempt. Whether you're a Rocket Jockey racing between worlds, a Scout mapping uncharted territories, or a Xenobiologist studying impossible life forms, your profession gives you the tools to succeed where others would fail.
 
@@ -59,9 +59,9 @@ Most humans have attributes ranging from 3 to 18, with 10-11 representing averag
 
 **Terrans** (Earth-born humans) must use the Standard Array of 15, 14, 12, 11, 10, 9, 8, distributed among the seven attributes as you choose. Generations of genetic optimization and technological enhancement have made Earth-born humans remarkably standardized in their capabilities, though you can still choose where to place these values to reflect your character's particular strengths and weaknesses.
 
-**All other origins** roll 2d10 for each attribute and arrange the results as desired, with results below 3 becoming 3 and above 18 becoming 18. Growing up in the challenging environments of space and other worlds creates more variable human development, sometimes producing individuals with capabilities that exceed normal human ranges.
+**Terran Exiles** represent Earth-born humans who left their home-world under unusual circumstances. They may choose to use either the Standard Array or roll attributes like other origins, representing either their standardized Earth heritage or the extraordinary circumstances that led to their exile.
 
-**Terran Exiles** represent Earth-born humans who left their homeworld under unusual circumstances. They may choose to use either the Standard Array or roll attributes like other origins, representing either their standardized Earth heritage or the extraordinary circumstances that led to their exile.
+**All other origins** roll 2d10 for each attribute and arrange the results as desired, with results below 3 becoming 3 and above 18 becoming 18. Growing up in the challenging environments of space and other worlds creates more variable human development, sometimes producing individuals with capabilities that exceed normal human ranges.
 
 Remember that your Origin and Background selections will modify these base attributes, so you can achieve values outside the normal 3-18 range through the experiences that shaped your character's development.
 
@@ -300,9 +300,9 @@ The quality of your success matters as much as simply succeeding or failing. The
 
 **Ordinary Success** occurs when you roll under your skill percentage with a normal result. You achieve what you set out to do competently and efficiently.
 
-**Special Success** happens when you roll under your skill percentage with a result ending in 0 or 5. You achieve your goal with particular excellence, creating additional benefits or avoiding potential complications.
+**Special Success** happens when you roll your skill percentage or under with a result ending in 0 or 5. You achieve your goal with particular excellence, creating additional benefits or avoiding potential complications.
 
-**Critical Success** occurs when you roll doubles (11, 22, 33, etc.) under your skill percentage. You achieve your goal brilliantly, creating significant additional benefits and demonstrating true mastery.
+**Critical Success** occurs when you roll doubles (11, 22, 33, etc.) less than or equal to your skill percentage. You achieve your goal brilliantly, creating significant additional benefits and demonstrating true mastery.
 
 **Automatic Success** happens on rolls of 01-05 regardless of skill level, representing those moments when everything comes together perfectly despite the odds.
 
@@ -342,7 +342,7 @@ Some challenges require sustained effort or the coordinated work of multiple cha
 
 **Ordinary Success** contributes 1 point toward completion, **Special Success** contributes 2 points, and **Critical Success** contributes 3 points. This rewards exceptional performance while ensuring that even ordinary competence makes meaningful progress.
 
-When multiple characters work together, they can contribute as primary operators (making normal rolls) or assistants (rolling at -20% but contributing a maximum of 1 success regardless of quality). This represents the reality that complex tasks benefit from help, but only to a point.
+When multiple characters work together, they can contribute as primary operators (making normal rolls) or assistants (rolling at -20% but contributing a maximum of 1 success regardless of quality). This represents the reality that complex tasks benefit from help, but only to a point. The Game Master will decide which is appropriate based on the task at hand.
 
 ### **COMBAT FUNDAMENTALS**
 
@@ -356,13 +356,21 @@ When violence erupts in the atomic age, it happens quickly and decisively. Comba
 
 **Defense** allows one free defensive reaction per round (Parry, Block, Dodge), with additional defenses suffering cumulative -20% penalties. Some epithets and specializations provide additional defensive options.
 
-**Wounds** accumulate until characters become incapacitated (at 4 wounds) or dying (at 5 wounds). The first three wounds cause no mechanical penalties, reflecting the cinematic resilience of atomic age heroes.
+**Wounds** accumulate until characters become incapacitated (at 4 wounds) or dying (at 5 wounds). The first three wounds cause no mechanical penalties until after combat is completed, reflecting the cinematic resilience of atomic age heroes.
 
 ### **ADVANCEMENT AND IMPROVEMENT**
 
-Characters improve through experience and training rather than arbitrary advancement schedules. When you achieve a critical success with a skill during an adventure, you have the opportunity to improve that skill through practice and reflection.
+Characters improve through experience and training rather than arbitrary advancement schedules. When you achieve a critical success with a skill during an adventure, you have the opportunity to improve that skill through practice and reflection.  Mark that skill for an advancement check later.
 
-After the adventure, roll percentile dice against your current skill percentage. If you roll higher than your current percentage, improve the skill by the ones die of the improvement roll (1-9 points). Higher skill levels improve more slowly, representing the increased difficulty of mastering advanced techniques.
+After the adventure, for each skill that qualified for an advancement check roll percentile dice against your current skill percentage. If you roll higher than your current percentage, the skill improves!
+
+
+* **Beginner (<50%)**: improve by 10%
+* **Skilled (50-69%)**: improve by 3%
+* **Expert (70-89%)**: improve by 2%
+* **Master (90%+)**: improve by 1 %
+
+Higher skill levels improve more slowly, representing the increased difficulty of mastering advanced techniques.
 
 This system rewards characters for attempting challenging tasks and achieving exceptional results, encouraging players to take risks and push their characters toward greater competence.
 
@@ -370,7 +378,9 @@ This system rewards characters for attempting challenging tasks and achieving ex
 
 The technology of 2025 combines atomic power with retrofuturistic aesthetics to create equipment that's both scientifically advanced and dramatically appropriate. Atomic engines provide virtually unlimited power for spacecraft and installations. Ray guns deliver precise energy discharges that can stun or kill depending on setting. Robots with positronic brains handle routine tasks while maintaining the Three Laws of Robotics that prevent them from harming humans.
 
-Technology in the atomic age is reliable and understandable rather than mysterious or unpredictable. Equipment failures occur due to damage, misuse, or exceptional circumstances rather than random breakdowns. This keeps the focus on character actions and decisions rather than equipment maintenance.
+Technology in the atomic age is reliable and understandable rather than mysterious or unpredictable. Equipment failures occur due to damage, misuse, or exceptional circumstances rather than random breakdowns. This keeps the focus on character actions and decisions rather than equipment maintenance.  
+
+Equipment in the atomic age is built with the three R's always in mind: Reliability, Redundancy, and Reparability.   When you're a million miles from the nearest repair shop, lives depend on your being able to fix whatever goes wrong on the ship with materials at hand.  Rocket ships carry extensive stores with replacements and are always equipped with at least rudimentary machine shops; larger and better equipped ships may have an entire deck devoted to this, but even a one-man scout will stock what it needs for repairs in the great beyond.  Equipment will almost always be analog, or at least have an analog mechanical back-up.  Digital screens, tablets, and heavily computerized are too prone to failure during solar storms that frequently short out electrical systems.  In space the blue screen of death would be exactly that!  All hatches and airlocks will have a back-up hand-cranks, all elevator shafts will have access panels and ladders, all corridors will have luminescent strips and markings that require no power to operate.
 
 ### **ENVIRONMENTAL CHALLENGES**
 
@@ -729,7 +739,7 @@ When your character attempts something with uncertain outcome and meaningful con
 
 **Success** means you rolled equal to or under your skill percentage. **Failure** means you rolled over your skill percentage.
 
-**Quality matters**: Special Success (ending in 0 or 5) and Critical Success (doubles under your skill) provide additional benefits beyond basic success.
+**Quality matters**: Special (ending in 0 or 5) and Critical  (doubles) provide additional benefits or penalties beyond basic success/failure, depending on whether the roll itself is a success or failure.
 
 ### **ATTRIBUTE CHECKS**
 
@@ -748,7 +758,7 @@ Use attribute checks for:
 
 When violence erupts, combat proceeds in structured rounds representing six seconds of action each.
 
-**Initiative**: At the start of combat, everyone makes a REFLEX check. Successful rolls act first, in order of success quality, then by REFLEX score to break ties.
+**Initiative**: At the start of combat, everyone makes a REFLEX check. Highest success quality goes first, ties broken by the highest roll, or if the rolls are tied (!) by REFLEX score.  Once who goes first is settled, play proceeds around the table, with NPCs going when play comes around to the GM.  To keep it from getting stale (Bob always goes right after Alice because of where he's sitting), every other combat can reverse whether play goes clockwise or counterclockwise.
 
 **Actions Each Round**: You can perform one major action (attack, complex skill use), one movement (change position), and one minor action (draw weapon, brief communication).
 
