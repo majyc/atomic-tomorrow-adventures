@@ -1,0 +1,152 @@
+{
+  "Conservative": {
+    "4": {
+      "completion_rate": 0.961,
+      "avg_turns": 4.577523413111343,
+      "avg_resources_spent": 1.6566077003121749,
+      "failure_rate": 0.039,
+      "total_simulations": 1000
+    },
+    "6": {
+      "completion_rate": 0.924,
+      "avg_turns": 5.264069264069264,
+      "avg_resources_spent": 1.7002164502164503,
+      "failure_rate": 0.076,
+      "total_simulations": 1000
+    },
+    "8": {
+      "completion_rate": 0.773,
+      "avg_turns": 6.747736093143597,
+      "avg_resources_spent": 1.8551099611901682,
+      "failure_rate": 0.227,
+      "total_simulations": 1000
+    },
+    "10": {
+      "completion_rate": 0.493,
+      "avg_turns": 8.578093306288032,
+      "avg_resources_spent": 1.945233265720081,
+      "failure_rate": 0.507,
+      "total_simulations": 1000
+    }
+  },
+  "Aggressive": {
+    "4": {
+      "completion_rate": 0.878,
+      "avg_turns": 6.2722095671981775,
+      "avg_resources_spent": 0.3337129840546697,
+      "failure_rate": 0.122,
+      "total_simulations": 1000
+    },
+    "6": {
+      "completion_rate": 0.878,
+      "avg_turns": 6.575170842824601,
+      "avg_resources_spent": 0.44760820045558086,
+      "failure_rate": 0.122,
+      "total_simulations": 1000
+    },
+    "8": {
+      "completion_rate": 0.597,
+      "avg_turns": 8.236180904522612,
+      "avg_resources_spent": 0.6013400335008375,
+      "failure_rate": 0.403,
+      "total_simulations": 1000
+    },
+    "10": {
+      "completion_rate": 0.311,
+      "avg_turns": 9.189710610932476,
+      "avg_resources_spent": 0.6527331189710611,
+      "failure_rate": 0.689,
+      "total_simulations": 1000
+    }
+  },
+  "Balanced": {
+    "4": {
+      "completion_rate": 0.946,
+      "avg_turns": 4.79492600422833,
+      "avg_resources_spent": 1.5676532769556026,
+      "failure_rate": 0.054,
+      "total_simulations": 1000
+    },
+    "6": {
+      "completion_rate": 0.916,
+      "avg_turns": 5.127729257641922,
+      "avg_resources_spent": 1.6058951965065502,
+      "failure_rate": 0.084,
+      "total_simulations": 1000
+    },
+    "8": {
+      "completion_rate": 0.792,
+      "avg_turns": 6.621212121212121,
+      "avg_resources_spent": 1.7436868686868687,
+      "failure_rate": 0.208,
+      "total_simulations": 1000
+    },
+    "10": {
+      "completion_rate": 0.495,
+      "avg_turns": 8.232323232323232,
+      "avg_resources_spent": 1.9131313131313132,
+      "failure_rate": 0.505,
+      "total_simulations": 1000
+    }
+  },
+  "Resource-Heavy": {
+    "4": {
+      "completion_rate": 0.948,
+      "avg_turns": 4.6613924050632916,
+      "avg_resources_spent": 1.6149789029535866,
+      "failure_rate": 0.052,
+      "total_simulations": 1000
+    },
+    "6": {
+      "completion_rate": 0.92,
+      "avg_turns": 5.0076086956521735,
+      "avg_resources_spent": 1.7271739130434782,
+      "failure_rate": 0.08,
+      "total_simulations": 1000
+    },
+    "8": {
+      "completion_rate": 0.77,
+      "avg_turns": 7.0064935064935066,
+      "avg_resources_spent": 1.8688311688311687,
+      "failure_rate": 0.23,
+      "total_simulations": 1000
+    },
+    "10": {
+      "completion_rate": 0.543,
+      "avg_turns": 8.348066298342541,
+      "avg_resources_spent": 1.9281767955801106,
+      "failure_rate": 0.457,
+      "total_simulations": 1000
+    }
+  },
+  "Threshold-Focused": {
+    "4": {
+      "completion_rate": 0.828,
+      "avg_turns": 3.536231884057971,
+      "avg_resources_spent": 2.210144927536232,
+      "failure_rate": 0.172,
+      "total_simulations": 1000
+    },
+    "6": {
+      "completion_rate": 0.909,
+      "avg_turns": 3.9141914191419143,
+      "avg_resources_spent": 2.386138613861386,
+      "failure_rate": 0.091,
+      "total_simulations": 1000
+    },
+    "8": {
+      "completion_rate": 0.87,
+      "avg_turns": 5.180459770114942,
+      "avg_resources_spent": 2.871264367816092,
+      "failure_rate": 0.13,
+      "total_simulations": 1000
+    },
+    "10": {
+      "completion_rate": 0.674,
+      "avg_turns": 7.121661721068249,
+      "avg_resources_spent": 3.2462908011869436,
+      "failure_rate": 0.326,
+      "total_simulations": 1000
+    }
+  }
+}
