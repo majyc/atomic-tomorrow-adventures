@@ -7,9 +7,9 @@
 
 ## **WELCOME TO THE ATOMIC AGE**
 
-Welcome to the far-flung gleaming atomic future of 2025! Humanity has done what we always knew we would—spread across the solar system in gleaming rocket ships powered by atomic fire. Mars hosts bustling colonies beneath its red skies, Venus conceals ancient secrets in its steaming jungles, O'Neill cylinders hang in space at Earth's L5 point, the asteroid belt thrums with prospectors seeking their fortunes in the depths of space, and rumors swirl of a Forerunner megastructure discovered encircling Jupiter. This is the golden age of space exploration, where ray guns gleam, robots serve, and adventure waits beyond every planet's horizon.
+Welcome to the far-flung gleaming atomic future of 2025! Humanity has spread across the solar system in gleaming rocket ships powered by atomic fire. Mars hosts bustling colonies beneath its red skies, Venus conceals ancient secrets in its steaming jungles, O'Neill cylinders hang in space at Earth's L5 point, the asteroid belt thrums with prospectors seeking their fortunes in the depths of space, and rumors swirl of a Forerunner megastructure discovered encircling Jupiter. This is the golden age of space exploration, where ray guns gleam, robots serve, and adventure waits beyond every planet's horizon.
 
-You're explorers, adventurers, and heroes of this atomic tomorrow—rocket jockeys with nerves of steel, brilliant scientists with revolutionary theories, swashbuckling scouts who blaze trails across alien worlds, and countless other extraordinary individuals. The solar system needs people with grit, determination, curiosity and the courage to face whatever mysteries lurk in the dark between the worlds.
+You're explorers, adventurers, and heroes of this atomic tomorrow: rocket jockeys with nerves of steel, brilliant scientists with revolutionary theories, swashbuckling scouts who blaze trails across alien worlds, daring explorers, suave diplomats, and countless other extraordinary individuals. The solar system needs people with grit, determination, curiosity and the courage to face whatever mysteries lurk in the dark between the worlds.
 
 Whether you're hunting for ancient Martian artifacts, defending a Titan colony from undersea predators, negotiating peace between Venus' squabbling tribes of autochthons, or racing to deliver vital medical supplies to Hospital Station on its endless transit between Venus and Mars, your adventures will shape the future of humanity among the planets. Fame, Fortune, Knowledge, Adventure, they are all yours for the taking, if you dare!
 
@@ -19,7 +19,7 @@ Whether you're hunting for ancient Martian artifacts, defending a Titan colony f
 
 *Building heroes worthy of the atomic tomorrow*
 
-Creating a character for Atomic Tomorrow Adventures means crafting someone extraordinary enough to stand among the stars yet human enough to care about what happens to the people they encounter among those distant worlds. You're building explorers who look at the vast darkness between planets and see possibility rather than emptiness, scientists whose curiosity drives them to unlock mysteries that could reshape human understanding, and heroes whose courage makes them willing to risk everything for the sake of discovery and adventure.
+Creating a character for Atomic Tomorrow Adventures means crafting someone extraordinary enough to stand among the planets and far-flung outposts of the Solar System yet human enough to care about what happens to the people they encounter among those distant worlds. You're building explorers who look at the vast darkness between planets and see possibility rather than emptiness, scientists whose curiosity drives them to unlock mysteries that could reshape human understanding, and heroes whose courage makes them willing to risk everything for the sake of discovery and adventure.
 
 The character creation system uses four essential questions to define who your character is: What makes you extraordinary? What do you do for a living? Where do you come from? How were you raised? Answer these questions by selecting one option from each of four columns, and you'll have a complete character concept that's both mechanically functional and dramatically interesting.
 
@@ -53,7 +53,7 @@ Your character's basic capabilities are represented by seven attributes that mea
 
 **GRIT** measures endurance, willpower, and mental fortitude. Space travel is hard. Exploration is dangerous. Discovery often requires pushing through discomfort, fear, and exhaustion to reach the other side. Grit is what keeps you going when lesser individuals would give up.
 
-**GUILE** represents cunning, deception, and craftiness. Sometimes the direct approach won't work. Sometimes you need to be clever rather than brave, subtle rather than forceful. Guile helps you find alternative solutions when conventional approaches fail.
+**GUILE** represents cunning, deception, and craftiness. Sometimes the direct approach won't work. Sometimes you need to be clever rather than brave, subtle rather than forceful. Guile helps you find alternative solutions when conventional approaches fail, and helps you spot duplicity in others.
 
 Most humans have attributes ranging from 3 to 18, with 10-11 representing average capability. However, your origin significantly affects how these attributes are generated:
 
@@ -107,19 +107,19 @@ Your epithet represents what makes you extraordinary compared to ordinary people
 
 | Epithet                  | Primary Benefit                                                                            | Benefit                                                                                                                          |
 | ------------------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| **Brilliant**      | +2 SAVVY                                                                                   | When examining clues or evidence, you can make<br />correlations others miss (+20% to deduction and analysis)                    |
-| **Ingenious**      | Can create impromptu tools from available materials on any successful SAVVY roll           | Your jury-rigged solutions ignore the first Special Failure,<br />breaking only on Critical Failures or a second Special Failure |
-| **Silver-Tongued** | +2 CHARM                                                                                   | Persuasion attempts that succeed create lasting belief<br />changes rather than temporary compliance                             |
-| **Enigmatic**      | People find it difficult to read you (-20% to others' attempts to analyze your intentions) | Strangers often confide in you, sharing secrets they normally<br /> wouldn't                                                     |
-| **Veteran**        | +1 GRIT, +1 SAVVY                                                                          | Better situational awareness; you can detect ambushes on<br />any successful roll, not just critical success                     |
+| **Brilliant**      | +2 SAVVY                                                                                   | When examining clues or evidence, you can make correlations others miss (+20% to deduction and analysis)                   |
+| **Ingenious**      | Can create impromptu tools from available materials on any successful SAVVY roll           | Your jury-rigged solutions ignore the first Special Failure, breaking only on Critical Failures or a second Special Failure |
+| **Silver-Tongued** | +2 CHARM                                                                                   | Persuasion attempts that succeed create lasting belief changes rather than temporary compliance                            |
+| **Enigmatic**      | People find it difficult to read you (-20% to others' attempts to analyze your intentions) | Strangers often confide in you, sharing secrets they normally wouldn't                                                     |
+| **Veteran**        | +1 GRIT, +1 SAVVY                                                                          | Better situational awareness; you can detect ambushes on any successful roll, not just critical success                    |
 
 #### **Charming Epithets**
 
 | Epithet               | Primary Benefit    | Benefit                                                                                                                                                                                                                           |
 | --------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Plucky**      | +1 CHARM, +1 NERVE | In any Social Contest trying to intimidate, frighten or overawe you, you reduce the degree of success score against you by 1.                                                                                                     |
-| **Seductive**   | +1 CHARM, +1 GUILE | In Seduction Social Contests, Opposed wraps back around to Receptive (skipping Convinced). It's still not mind control,<br />and NPCs can want you and still betray you or refuse you out of loyalty or scruples.                 |
-| **Stunning**    | +2 CHARM           | You command attention. You are noticed wherever you go, unless heavily disguised. Villains prefer to capture or spare you<br />rather than mar your beauty.                                                                       |
+| **Seductive**   | +1 CHARM, +1 GUILE | In Seduction Social Contests, Opposed wraps back around to Receptive (skipping Convinced). It's still not mind control, and NPCs can want you and still betray you or refuse you out of loyalty or scruples.                |
+| **Stunning**    | +2 CHARM           | You command attention. You are noticed wherever you go, unless heavily disguised. Villains prefer to capture or spare you rather than mar your beauty.                                                                     |
 | **Suave**       | +1 CHARM, +1 SAVVY | Special and Critical failures on Social skills become ordinary failures.                                                                                                                                                          |
 | **Well-Heeled** | +1 CHARM, +1 GUILE | When failing a roll that could be resolved with money, you may immediately make a GUILE check. Success means you find a way to throw credits at the problem and turn your failure into a success - but at double the normal cost. |
 
@@ -280,7 +280,7 @@ Your background reflects your upbringing, education, and personal history before
 | **VENUSIAN CLOUD DRIFTER** | Raised in nomadic airships above Venus                   | REFLEX +1, SAVVY -1 | Piloting (Airship) (REFLEX) +10%, Survival (High Atmosphere) (GRIT) +10%, Science (Meteorology) (SAVVY) +5%                                          | Navigation in cloud layers, contacts among nomadic communities, unique cultural knowledge                                                                                                                                                    |
 | **BELT PROSPECTOR FAMILY** | Raised by asteroid miners and resource hunters           | GRIT +1, CHARM -1   | Science (Mineral Identification) (SAVVY) +10%, Athletics (Zero-G Operations) (REFLEX) +10%, Repair (Improvised) (SAVVY) +5%                          | Knowledge of valuable asteroid locations, assessment of mineral worth, mining contact network                                                                                                                                                |
 | **STATION BRAT**           | Raised on a space station with minimal adult supervision | REFLEX +1, NERVE -1 | Athletics (Zero-G Acrobatics) (REFLEX) +10%, Investigation (Station Layouts) (SAVVY) +10%, Streetwise (Scrounging) (GUILE) +5%                       | Knowledge of station maintenance shafts and hidden areas, station crew contacts, improvisation skills                                                                                                                                        |
-| **FILTHY RICH**            | Born with a platinum spoon in your mouth                 | +1 CHARM, -1 GRIT   | Trade (Business) (FLEX) +15%, Social (Etiquette) (CHARM) +15%, Persuasion (Negotiation) (CHARM) +10%, Streetwise (Information Gathering) (GUILE) +5% | You get a 300 cr/month stipend from your folks.<br />When making a purchase over $100 credits, roll percentile dice. On a roll ending in 0 or 5, the item is acquired at half price due to family connections or bulk discount arrangements. |
+| **FILTHY RICH**            | Born with a platinum spoon in your mouth                 | +1 CHARM, -1 GRIT   | Trade (Business) (FLEX) +15%, Social (Etiquette) (CHARM) +15%, Persuasion (Negotiation) (CHARM) +10%, Streetwise (Information Gathering) (GUILE) +5% | You get a 300 CR/month stipend from your folks. When making a purchase over $100 credits, roll percentile dice. On a roll ending in 0 or 5, the item is acquired at half price due to family connections or bulk discount arrangements. |
 
 *Choose one background that best represents your character's upbringing and personal history.*
 
@@ -303,6 +303,12 @@ The quality of your success matters as much as simply succeeding or failing. The
 **Special Success** happens when you roll your skill percentage or under with a result ending in 0 or 5. You achieve your goal with particular excellence, creating additional benefits or avoiding potential complications.
 
 **Critical Success** occurs when you roll doubles (11, 22, 33, etc.) less than or equal to your skill percentage. You achieve your goal brilliantly, creating significant additional benefits and demonstrating true mastery.
+
+**Ordinary Failure** occurs when you roll over your skill percentage.
+
+**Special Failure** occurs when you roll over your skill percentage with a result ending in 0 or 5.  Not only do you not achieve your goal, but some mishap may have occurred costing you some of your hard-won progress.
+
+**Critical Failure** occurs when you roll doubles (66, 77, 88, etc.) You fail hard, a piece of equipment breaks, or you lose all your progress in completing the task.
 
 **Automatic Success** happens on rolls of 01-05 regardless of skill level, representing those moments when everything comes together perfectly despite the odds.
 
