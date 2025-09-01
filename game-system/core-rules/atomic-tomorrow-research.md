@@ -18,42 +18,58 @@ Research follows the core Atomic Tomorrow d100 system:
 
 * ♥️ **HEARTS: INTUITIVE/PSI APPROACH**
   * Skills: Psi abilities, NERVE checks, Perception (Intuition)
-  * Style: High-risk, potentially fastest progress
   * Resource: Atomic Power Cells (used to amplify psionic impressions)
 * ♦️ **DIAMONDS: SCIENTIFIC APPROACH**
   * Skills: Science specializations, Investigation (Analysis), Computer Systems
-  * Style: Balanced risk/reward
   * Resource: Reference Materials (scientific journals, technical manuals, historical data)
 * ♣️ **CLUBS: TECHNICAL/ENGINEERING APPROACH**
   * Skills: Engineering, Technology, Repair
-  * Style: Methodical, reliable progress
   * Resource: Spare Components (circuit elements, mechanical parts, raw materials)
 * ♠️ **SPADES: XENOLOGY/CULTURAL APPROACH**
   * Skills: Xenology, Academics (Ancient Languages), Social (Cultural Sensitivity)
-  * Style: Unpredictable, potentially revealing
   * Resource: Cultural Artifacts (comparison specimens, xenological databases)
 
-## SETUP AND FLOW
+* ## Core Mechanics
 
-1. **Setup** : GM shuffles a standard deck of cards and sets it aside
-2. **Initial Approach** : Players choose their starting research direction
-3. **First Challenge** : GM finds the topmost card of the matching suit
+  ### Setup
+  - Standard 52-card deck
+  - Four research approaches (suits): Hearts, Diamonds, Clubs, Spades
+  - Each suit represents a different research methodology
+  - Resource types correspond to suits for acceleration
 
-### Challenge Resolution
+  ### Basic Flow
 
-1. The card's value (2-10) indicates required Research Points to complete the node
-2. Players take turns making skill checks to accumulate Research Points
-3. No researcher can use the same skill twice in a row
-4. When the required points are accumulated, the node is solved
+  1. **Initial Draw**: GM draws cards until one matches the current research approach (suit)
+  2. **Hidden Track Creation**: Non-matching cards are placed face-down in separate rows by suit
+  3. **Player Choice**: Player decides between:
+     - Working on the revealed matching card
+     - Exploring a hidden track (committing to that suit until completion)
+  4. **Track Commitment**: When choosing a hidden track, GM flips the top card face-up
+  5. **Completion**: Research continues until threshold is met **and** an Ace is drawn
+  6. **Cleanup**: Unused face-down cards go to bottom of deck
 
-### Research Progression
+  ### Difficulty Thresholds
 
-After solving a node:
+  Research projects have announced minimum card values required before an Ace can complete the research:
 
-* **Standard Progress** : Turn over cards until finding the next card of the same suit
-* **Research Tangent** : On special/critical failure, draw a random card and place it to the side of the current card
-* **Resource Use** : Spend applicable resources to reduce required Research Points
-* **Success** : Finding an Ace represents a major breakthrough
+  - **Routine (3-4)**: Basic research, almost guaranteed success
+  - **Moderate (5-6)**: Standard difficulty, likely but not certain success  
+  - **Hard (7-8)**: Challenging research, real risk of hitting Ace first
+  - **Extreme (9-10)**: Cutting-edge research, Ace quite possible before threshold
+
+  ### Special Cards
+
+  - **Ace**: Completes research if threshold has been met; forces continuation if not
+  - **Face Cards (J, Q, K)**: Special events or complications (GM discretion)
+  - **Number Cards**: Progress toward threshold, with suit-specific resource spending for acceleration
+
+  ### Resource Acceleration
+
+  Players can spend suit-appropriate resources to complete cards faster:
+  - **Hearts**: Time, patience, careful observation
+  - **Diamonds**: Money, equipment, materials
+  - **Clubs**: Connections, favors, social resources
+  - **Spades**: Risk-taking, direct action, bold moves
 
 ## RESOURCES AND THEIR USES
 
@@ -134,8 +150,9 @@ When a special card comes up, or the research is forced onto a tangent, the GM s
 
 * **Aces** : Represent major breakthroughs (success nodes)
 * **Jokers** :
-* Red Joker: Extraordinary Breakthrough - skip directly to nearest Ace
-* Black Joker: Catastrophic Failure - research collapses, return to start with penalty
+  * **Red Joker**: Extraordinary Breakthrough - skip directly to nearest Ace
+  * **Black Joker**: Catastrophic Failure - research collapses, return to start with penalty
+
 
 ## RESOURCE TIERS & RESEARCH VALUE
 

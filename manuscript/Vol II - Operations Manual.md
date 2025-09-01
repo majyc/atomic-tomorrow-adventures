@@ -25,7 +25,7 @@ The solar system of 2025 operates according to the same fundamental laws of phys
 
 ### **THE REALITY OF DISTANCE**
 
-Space is big. Impossibly, mind-numbingly big in ways that challenge human comprehension. Even with Chemical X rockets that can maintain constant acceleration at comfortable gravity levels, journeys between planets take days or weeks rather than minutes or hours. This scale creates unique storytelling opportunities that simply don't exist in terrestrial adventures.
+Space is big. Impossibly, mind-numbingly big in ways that challenge human comprehension. Even with Chemical X rockets that can maintain constant acceleration at comfortable gravity levels, journeys between planets take days or weeks rather than minutes or hours. This scale creates unique storytelling opportunities that simply don't exist in terrestrial adventures, at least not since the age of sail.
 
 Distance also means that communication with mission control or outside resources operates under significant delays. A message from Mars to Earth takes between 4 and 22 minutes to arrive, depending on orbital positions. By the time headquarters sends a response, the situation requiring guidance might have evolved dramatically. This forces characters to rely on their own judgment and initiative in ways that create natural dramatic tension.
 
@@ -494,20 +494,6 @@ Recovery considerations affect post-overload operations regardless of initial su
 
 The atomic tomorrow contains mysteries that demand systematic investigation: ancient Martian artifacts that respond to human consciousness, energy readings that don't match known physics, alien communication patterns that might represent intelligence, and technological principles that could revolutionize human understanding of the universe. The research system provides frameworks for discovering these secrets through careful observation, experimentation, and analysis.
 
-### **SYSTEMATIC INVESTIGATION PROCEDURES**
-
-Scientific research in the atomic age operates according to established principles that reward systematic approaches while allowing for breakthrough discoveries that transcend conventional understanding. Characters who follow proper research procedures find themselves making progress toward solutions even when dealing with phenomena that challenge existing knowledge.
-
-Research projects begin with preliminary observation and data gathering. Characters use appropriate skills to document phenomena, collect samples, record measurements, and establish baseline understanding of whatever they're investigating. This phase rewards diverse expertise as different specializations contribute unique perspectives to the overall understanding of complex problems.
-
-Hypothesis formation follows preliminary data collection. Characters propose explanations for observed phenomena based on their current understanding and the evidence they've gathered. The quality of hypotheses depends on character expertise, available information, and the player's ability to synthesize complex data into testable predictions.
-
-Experimental design challenges characters to devise tests that can evaluate their hypotheses under controlled conditions. This often requires creative problem-solving as atomic age mysteries rarely yield to standard laboratory techniques. Characters might need to design new instruments, develop novel testing procedures, or find ways to safely investigate dangerous phenomena.
-
-Data analysis and interpretation require characters to evaluate experimental results and determine what they reveal about underlying principles. Success often depends on characters' ability to recognize patterns, identify anomalies, and distinguish between correlation and causation in complex data sets.
-
-Verification and peer review represent the final stages where characters confirm their findings through independent replication and expert evaluation. This phase often involves convincing skeptical colleagues, defending results against alternative explanations, and establishing the broader implications of discoveries.
-
 ### **THE RESEARCH CARD SYSTEM**
 
 For complex investigations requiring sustained effort over multiple sessions—such as analyzing alien artifacts, developing new technologies, or understanding exotic phenomena—use the Research Card System. This framework transforms extended research into structured challenges with meaningful choices and dramatic complications.
@@ -518,22 +504,20 @@ Every investigation can be approached through four distinct methodologies, each 
 
 **♥️ HEARTS: INTUITIVE/PSYCHIC APPROACH**
 - Skills: Psi abilities, NERVE checks, Perception (Intuition)
-- Style: High-risk, potentially fastest progress  
-- Resource: Atomic Power Cells (amplify psionic impressions)
+- Resource: Psi Crystals (amplify psionic impressions)
 
 **♦️ DIAMONDS: SCIENTIFIC APPROACH**
 - Skills: Science specializations, Investigation (Analysis), Computer Systems
-- Style: Balanced risk/reward
 - Resource: Reference Materials (journals, manuals, databases)
 
 **♣️ CLUBS: TECHNICAL/ENGINEERING APPROACH**  
+
 - Skills: Engineering, Technology, Repair
-- Style: Methodical, reliable progress
 - Resource: Spare Components (circuit elements, mechanical parts)
 
 **♠️ SPADES: HISTORICAL/CULTURAL APPROACH**
+
 - Skills: History, Anthropology, Language, Art
-- Style: Provides context and prevents misinterpretation
 - Resource: Historical Records (cultural archives, linguistic databases)
 
 #### **Research Point Accumulation**
@@ -554,7 +538,13 @@ Characters accumulate Research Points through skill checks using their chosen ap
 
 #### **Research Progression**
 
-Research follows card-based progression similar to medical treatment:
+Research uses a card-based system that creates both visible and hidden research tracks:
+
+**Initial Setup**: GM draws cards until finding one that matches the current research approach, placing non-matching cards face-down in separate rows by suit to create hidden alternative tracks.
+
+**Player Choice Each Turn**: Researchers decide between:
+- Working on the revealed matching card (known difficulty)
+- Exploring a hidden track by flipping the top card of any face-down row (unknown difficulty)
 
 **Primary Research Cards** (same approach): Must accumulate Research Points equal to card value to clear the research node.
 
@@ -614,81 +604,179 @@ Research permanently stalls when ANY of the following occurs:
 
 #### **Research Examples**
 
-**Studying Mysterious Martian Cube (Moderate Complexity: 2 research nodes needed)**
+**Studying Mysterious Martian Cube (Threshold 6)**
 
-**Node 1 - 6♦ (Scientific Analysis)**: Initial spectroscopic examination reveals unknown mineral composition requiring 6 Research Points.
+**Initial Draw**: GM draws until finding Scientific approach match: 2♠, 7♣, 6♦
+- Places 2♠ and 7♣ face-down in Spades and Clubs rows
+- Reveals 6♦ as visible option requiring 6 Research Points
 
-**Draw 4♠ (Historical Context)**: Lower value! Cultural misunderstanding - ancient Martian symbols were misidentified as decorative rather than functional, locking Scientific approach until resolved.
+**Player Decision**: Team sees the 6♦ meets their threshold 6 requirement and chooses to work on it rather than risk unknown hidden tracks.
 
-**Switch to Spades approach**: Use Anthropology to understand symbolic meaning, clearing the obstruction.
+**Research Continues**: Team accumulates points through Science checks and resource spending.
 
-**Draw 8♥ (Intuitive Assessment)**: Higher value! Psychic character senses the cube's purpose, gaining +1 Research Point toward the 6♦.
+**Next Draw**: GM draws cards until finding match: 4♠, K♥, 3♦
+- 4♠ added to Spades row, K♥ to Hearts row (special event noted)
+- 3♦ revealed as next option
 
-**Node 1 Complete**: Scientific analysis reveals the cube responds to neural activity - 1 research node cleared.
+**Player Decision**: Seeing the easier 3♦, team works on visible card rather than exploring hidden alternatives.
 
-**Node 2 - 4♣ (Technical Application)**: Attempting to interface with the device requires 4 Research Points of careful engineering.
+**Alternative Scenario**: If team had explored Clubs row earlier, they would have found 7♣ - a harder challenge but potentially leading to different insights about the cube's engineering.
 
-**Research Success**: Team understands both the cube's function and can safely activate it!
-
-### **ALIEN ARTIFACT ANALYSIS**
-
-Ancient Martian artifacts and other xenoarchaeological discoveries present unique investigation challenges. These objects often operate according to principles that don't match human technology or understanding, requiring researchers to expand their conceptual frameworks while maintaining scientific rigor.
-
-Initial examination focuses on non-invasive documentation techniques that record artifact characteristics without risking damage to irreplaceable specimens. This includes detailed visual documentation, electromagnetic spectrum analysis, gravitational field measurements, and any other observations that can be made without directly interfering with artifact structure or function.
-
-Material analysis attempts to determine artifact composition and construction techniques. Standard analytical methods provide starting points, but alien materials often exhibit properties that require development of new testing procedures. Characters might discover substances that don't appear in terrestrial periodic tables or construction techniques that seem to violate known engineering principles.
-
-Functional analysis seeks to understand what artifacts were designed to accomplish and how they achieve their effects. This often requires experimental interaction with artifacts under carefully controlled conditions. Characters must balance scientific curiosity against safety considerations as alien technology might have unintended consequences or defensive mechanisms.
-
-Pattern recognition becomes crucial for understanding artifacts that operate according to unfamiliar principles. Characters look for mathematical relationships, geometric patterns, symbolic systems, or other organizational principles that might provide insights into alien thinking and design philosophy.
-
-Cultural interpretation attempts to understand artifacts within their original social and technological context. This requires anthropological thinking about alien societies, their needs, capabilities, and the problems they were trying to solve through technology. Understanding the cultural context often provides crucial insights into artifact function and operation.
-
-### **BREAKTHROUGH DISCOVERIES**
-
-Atomic age research occasionally produces discoveries that transcend conventional understanding and open entirely new fields of investigation. These breakthrough moments represent the pinnacle of scientific achievement and often create adventure opportunities as their implications become clear.
-
-Breakthrough discoveries usually result from the intersection of careful preparation and unexpected observation. Characters who have been systematically investigating phenomena are more likely to recognize truly significant anomalies when they occur. The combination of expertise, proper equipment, and fortunate timing creates conditions where major advances become possible.
-
-Paradigm shifts occur when discoveries challenge fundamental assumptions about how the universe works. These might involve evidence of faster-than-light communication, technology that responds to consciousness, or physical laws that operate differently under specific conditions. Paradigm shifts often meet resistance from established scientific communities before being accepted.
-
-Practical applications emerge as researchers find ways to harness new principles for useful purposes. A discovery about alien technology might lead to improvements in human engineering. Understanding exotic energy phenomena might enable new forms of space propulsion. Breakthrough discoveries often have implications far beyond their original investigation context.
-
-Research verification becomes crucial when dealing with discoveries that challenge conventional understanding. Other researchers must be able to replicate results independently before breakthrough claims gain scientific acceptance. This process can take months or years, creating suspense about whether discoveries will be confirmed or debunked.
-
-Commercial and political implications follow major discoveries as various groups attempt to control or exploit new knowledge. Characters might find themselves dealing with corporate espionage, government classification efforts, or competitive research programs trying to duplicate their work. Scientific discoveries rarely remain purely academic in the atomic age.
-
-### **TECHNOLOGICAL REVERSE ENGINEERING**
-
-Human technology advances through careful study of devices that exceed current understanding. Whether examining captured alien artifacts, recovered Forerunner installations, or experimental technology from rival research programs, reverse engineering requires systematic approaches that balance curiosity with caution.
-
-Non-destructive analysis provides the starting point for understanding unknown technology without risking damage to unique specimens. This includes external examination, electromagnetic field analysis, spectroscopic investigation, and any other techniques that can gather information without opening or disassembling devices.
-
-Operational testing attempts to activate technology under controlled conditions to observe its function and effects. This phase requires extensive safety precautions as unknown technology might have dangerous side effects, defensive mechanisms, or unintended consequences. Characters must balance information gathering against risk management.
-
-Component isolation seeks to understand how complex devices achieve their effects through interaction between individual elements. This often requires careful disassembly procedures that preserve component relationships while allowing detailed examination of individual parts. Characters risk destroying irreplaceable technology if they approach disassembly carelessly.
-
-Principle extraction attempts to understand the underlying scientific principles that enable technology to function. This represents the transition from simply copying existing devices to understanding why they work and how similar principles might be applied to different problems. Successful principle extraction often leads to breakthrough discoveries.
-
-Replication efforts seek to reproduce technological effects using human manufacturing techniques and available materials. This often proves more challenging than understanding principles because alien technology might rely on materials or manufacturing processes unavailable to human industry. Characters must find ways to achieve similar results through different means.
-
-### **COLLABORATIVE RESEARCH NETWORKS**
-
-Complex research problems often require expertise and resources beyond what individual characters can provide. The atomic age has developed institutional frameworks that allow researchers to collaborate across planets and specializations while managing the competitive pressures that surround valuable discoveries.
-
-Research consortiums bring together specialists from multiple institutions to tackle problems requiring diverse expertise. These collaborations provide access to equipment, knowledge, and resources that individual researchers couldn't obtain independently. However, consortium research also involves negotiating shared credit, publication rights, and application privileges among participating institutions.
-
-Peer review networks ensure research quality through independent evaluation by qualified experts. The atomic age's communication delays create interesting challenges for peer review as expert evaluation might take weeks or months to coordinate across planetary distances. Emergency review procedures exist for time-sensitive discoveries, but they sacrifice thoroughness for speed.
-
-Information sharing protocols balance scientific openness against competitive and security concerns. Research institutions maintain complex agreements about what information can be shared freely, what requires restricted access, and what must remain classified for security reasons. Characters must navigate these protocols when seeking access to research data or attempting to publish their own findings.
-
-Priority disputes arise when multiple research groups investigate similar problems simultaneously. The vast distances and communication delays of the atomic age mean that parallel research often proceeds unknown to competing groups until discoveries are announced. Resolution procedures exist for determining priority claims, but they can be contentious and time-consuming.
-
-Resource allocation decisions determine which research projects receive funding, equipment access, and institutional support. Characters must often compete for limited resources while demonstrating the value and feasibility of their proposed investigations. Success depends on both scientific merit and political skill in navigating institutional bureaucracies.
+**Research Success**: Team completes their investigation, understanding both the cube's archaeological significance and its practical applications!
 
 ---
 
-## **CHAPTER 5: SOCIAL CONFLICTS AND NEGOTIATIONS**
+## **CHAPTER 5: PLANETARY EXPLORATION SYSTEMS**
+
+*Mapping the unknown territories of the atomic frontier*
+
+The solar system of 2025 remains largely unmapped despite humanity's atomic-powered expansion among the worlds. Each planet contains vast regions where only the most preliminary surveys have established basic topography, leaving countless opportunities for discovery that can shape entire civilizations. The exploration card system provides frameworks for generating meaningful terrain encounters, managing the drama of discovery, and handling the complex relationship between visibility, navigation, and the constant tension between wonder and danger that defines frontier expeditions.
+
+Planetary exploration operates fundamentally differently from terrestrial adventure because of scale, isolation, and the exotic conditions found throughout the solar system. A single wrong decision can strand expeditions hundreds of millions of miles from rescue, while successful discoveries might revolutionize human understanding of alien worlds. The card-based exploration system captures these stakes while generating the variety and unpredictability that makes each expedition unique.
+
+### **VISIBILITY AND TERRAIN INTERACTION**
+
+The fundamental challenge of exploration lies in determining what explorers can perceive from their current position and how environmental conditions affect their ability to plan ahead. Different terrain types dramatically affect visibility ranges, which in turn determines how much information explorers have when making crucial navigation decisions.
+
+**Low Visibility Terrain** includes dense jungles, deep canyons, areas of persistent fog or atmospheric disturbance, and any environment where sight lines are severely restricted. In these areas, explorers can only determine what exists in their immediate hex, forcing them to make navigation decisions based on limited information and requiring careful attention to landmarks, natural pathways, and other guidance systems.
+
+**Standard Visibility Terrain** covers most common environments including plains, deserts, hills, and areas with moderate elevation changes. From these positions, explorers can observe notable features in one direction beyond their current location, providing enough information to make informed decisions about their next movement while maintaining the uncertainty that drives exploration drama.
+
+**High Visibility Terrain** encompasses mountain peaks, observation towers, elevated plateaus, and any position that provides commanding views of surrounding territory. From these advantageous positions, explorers can observe features in multiple directions, gaining strategic understanding of regional layout while revealing multiple potential destinations for further investigation.
+
+### **THE FEATURE CARD SYSTEM**
+
+Feature cards represent the distinctive landmarks, geographical formations, and points of interest that guide exploration decisions and create memorable discoveries. Rather than generating random terrain without context, feature cards ensure that every vista contains something worth investigating while providing the variety necessary for sustained exploration campaigns.
+
+Each feature card shows specific observable elements that explorers can identify from a distance. Features might include natural formations like crystal clusters or waterfalls, artificial structures like abandoned outposts or ancient ruins, biological phenomena like unusual plant growth or animal congregations, or atmospheric conditions like thermal vents or electromagnetic anomalies.
+
+The cards serve multiple purposes in exploration sequences. They provide immediate navigation goals that give players clear choices about where to direct their expeditions. They create anticipation as players approach visible features, wondering what details will be revealed upon closer investigation. They ensure that exploration sequences maintain forward momentum rather than devolving into aimless wandering through empty terrain.
+
+**Card Drawing Protocol**: Draw feature cards only when visibility conditions permit observation beyond the current hex. Position cards to indicate the relative direction of visible features, allowing explorers to make informed decisions about which direction offers the most promising opportunities for investigation.
+
+**Feature Investigation**: When explorers move toward a visible feature, they arrive at the corresponding hex where the feature can be investigated thoroughly. At this point, you might draw additional opportunity or hazard cards to determine what happens when the feature is explored in detail, creating layered discovery experiences that reward careful investigation.
+
+### **EXPLORATION SEQUENCE MANAGEMENT**
+
+Effective exploration requires balancing the desire for comprehensive discovery against practical limitations like supply consumption, equipment durability, and mission timeframes. The exploration system provides structure for managing these competing demands while maintaining the dramatic pacing that keeps exploration engaging rather than tedious.
+
+**Entry Phase**: When explorers enter a new hex, establish terrain type based on planetary conditions and regional characteristics. Roll on appropriate terrain generation tables to determine basic environmental features, then assess visibility conditions to determine what feature cards should be drawn.
+
+**Assessment Phase**: Present visible features to players and allow them to discuss their options. This creates natural decision points where players must weigh the potential value of different discoveries against factors like distance, apparent difficulty, and how investigation fits into their overall mission parameters.
+
+**Movement Phase**: Players choose their next destination based on available information. Movement toward visible features provides clear direction, while movement into unexplored territory requires navigation checks and creates opportunities for unexpected discoveries or complications that weren't visible from previous positions.
+
+**Investigation Phase**: When explorers arrive at features they observed from a distance, provide detailed descriptions and opportunities for thorough investigation. This is where feature cards transition from navigation aids to specific encounter opportunities that might trigger opportunity or hazard cards for detailed resolution.
+
+### **NAVIGATION AND WAYFINDING**
+
+The atomic age provides explorers with sophisticated navigation tools, but planetary conditions often limit their effectiveness in ways that create interesting challenges and preserve the fundamental uncertainties that make exploration dramatically compelling.
+
+Standard navigation equipment includes planetary positioning systems, magnetic compasses (where applicable), and stellar navigation tools. However, dense atmospheres block satellite signals, magnetic anomalies confuse compass readings, and perpetual cloud cover prevents stellar navigation. These limitations force explorers to rely on landmark navigation, indigenous guidance systems, and natural phenomena for orientation.
+
+**Landmark Navigation** uses distinctive terrain features to establish position and direction. Crystal formations, unusual geological structures, and artificial constructions serve as reference points that explorers can identify from multiple positions. The feature card system supports landmark navigation by ensuring that distinctive features appear regularly in exploration sequences.
+
+**Indigenous Systems** represent navigation methods developed by native populations or previous expeditions. These might include trail markers, natural sign reading, biological indicators like animal migration patterns, or cultural systems like sacred site networks that provide orientation frameworks across large regions.
+
+**Natural Phenomena** include river systems, prevailing wind patterns, geological formations, and other environmental features that provide directional reference. Venus's extensive waterways offer reliable navigation corridors, while Mars's ancient canal system provides a planetary-scale framework for orientation even when individual canals have long since dried.
+
+### **SUPPLY MANAGEMENT AND EXPEDITION PLANNING**
+
+Successful exploration depends on careful resource management that balances thorough investigation against the practical limitations of finite supplies and equipment durability. The exploration system provides guidelines for tracking supply consumption while avoiding the tedious bookkeeping that can slow game pacing.
+
+**Supply Point System**: Rather than tracking individual items, use abstracted Supply Points that represent the expedition's overall resource status. Different activities consume supplies at different rates, with careful exploration consuming resources more slowly than forced marches or emergency situations.
+
+**Equipment Durability**: Exploration equipment gradually degrades through normal use and environmental exposure. The atomic age provides remarkably reliable technology, but even the best equipment requires maintenance and eventually replacement when subjected to the harsh conditions found throughout the solar system.
+
+**Emergency Procedures**: When expeditions encounter unexpected complications—equipment failures, hostile encounters, severe weather, or navigation errors—emergency protocols help maintain expedition capability while creating dramatic tension around resource allocation decisions.
+
+### **THE EXPLORATION CARD SYSTEM**
+
+The exploration card system operates through a structured sequence that transforms terrain generation from random rolling into meaningful decision-making opportunities. This framework ensures that every exploration sequence provides clear navigation choices while maintaining the unpredictability that makes discovery exciting.
+
+#### **Terrain Generation and Card Drawing**
+
+**Step 1: Hex Entry and Terrain Establishment**
+When explorers enter a new hex, roll on appropriate terrain generation tables to determine basic environmental characteristics. Place a terrain index card to mark this hex on your growing map, noting terrain type, basic features, and any special characteristics that affect movement or visibility.
+
+**Step 2: Visibility Assessment and Feature Card Drawing**
+Based on terrain type, determine visibility conditions and draw appropriate feature cards:
+
+- **Low Visibility Terrain**: Draw no feature cards. Explorers can only perceive what exists in their immediate hex and must rely on ground-level navigation cues like trails, water flow, or indigenous markers.
+
+- **Standard Visibility Terrain**: Draw one feature card and position it to indicate the direction of the visible feature. This card shows what explorers can observe in one direction beyond their current position.
+
+- **High Visibility Terrain**: Draw one feature card for each "forward" direction that explorers can observe. Position cards to indicate relative directions of visible features, providing strategic overview of regional opportunities.
+
+**Step 3: Feature Presentation and Player Choice**
+Present visible features to players, describing what they can observe from their current position. Allow players to discuss their options and choose which direction offers the most promising opportunities for investigation or best serves their mission objectives.
+
+#### **Feature Card Mechanics**
+
+Each feature card represents specific observable elements that provide navigation targets and investigation opportunities. Cards should be positioned relative to the explorers' current hex to indicate direction, creating visual representations of available exploration choices.   As the players explore and feature cards are drawn lay them out in staggered rows, so each card is adjacent to one card to the left and right, and two cards each in the top and bottom directions, creating a "hex" with 6 potential exits from each location.
+
+**Card Positioning**: Place feature cards around the current hex card to show directional relationships. This visual arrangement helps players understand their options while providing you with clear reference for which direction leads to which discoveries. When the players choose to enter the area represented by the card, replace it with a blank index card. Scribble onto the newly added card the salient feature of the feature card, and as the players interact with that area additional notes can be added to the growing map, for instance any natives, settlers or structures they find as they explore.
+
+**Card Reuse**: Feature cards can be reused throughout campaigns as the same types of features appear in different contexts. A "crystal formation" card might represent different formations on different worlds, but the basic navigation and investigation opportunities remain consistent.
+
+**Multiple Features**: High visibility positions allow observation of multiple features simultaneously. Position multiple cards around the current hex to show all visible options, creating strategic decision points where players must choose between competing opportunities.
+
+#### **Investigation and Discovery Resolution**
+
+When explorers move toward a visible feature, they arrive at the corresponding hex where detailed investigation becomes possible. This creates a two-stage discovery process where distant observation creates anticipation and closer investigation provides detailed resolution.
+
+**Feature Resolution**: Upon arrival at a feature hex, provide detailed descriptions of what explorers find. The feature that was visible from a distance becomes the central element of the new hex, but closer investigation reveals additional details not apparent from afar.
+
+**Opportunity and Hazard Integration**: Use opportunity and hazard cards to determine what happens when features are investigated thoroughly. A crystal formation might trigger an opportunity card revealing valuable materials, while a seemingly peaceful clearing might trigger a hazard card indicating territorial wildlife.
+
+**Exploration Momentum**: Each feature investigation should reveal new visible features when visibility conditions permit, maintaining exploration momentum while ensuring that every discovery opens new possibilities rather than creating dead ends.
+
+#### **Hex Scale and Movement Rates**
+
+Different planetary conditions require adjusted hex scales that reflect both visibility limitations and movement capabilities under varying gravitational and atmospheric conditions.
+
+**Planetary Hex Scales**:
+- **Earth**: 2 miles (baseline reference)
+- **Venus**: 1 mile (dense vegetation limits visibility)
+- **Mars**: 3 miles (low gravity increases range, clear air improves visibility)
+- **Mercury**: 4 miles (excellent visibility but extreme conditions)
+
+**Daily Movement Rates**:
+Travel rates depend on terrain difficulty, planetary conditions, and available transportation methods. Base rates assume careful exploration rather than forced marches, accounting for the investigation time that makes exploration worthwhile.
+
+**Venus Movement Rates**:
+- Highland terrain: 2-3 hexes per day on foot
+- River travel: 4-6 hexes per day following waterways
+- Hovercraft: 5-7 hexes per day in cleared areas
+
+**Mars Movement Rates**:
+- Open terrain: 4-6 hexes per day on foot (low gravity benefit)
+- Canal routes: 5-7 hexes per day following ancient waterways
+- Ground vehicles: 8-12 hexes per day on established paths
+
+#### **Example Exploration Sequence**
+
+**GM**: "Your expedition has reached a highland plateau on Venus. This is standard visibility terrain." *Draws one feature card and positions it northeast of current hex* "From this elevated position, you can see a cluster of violet crystals catching the filtered sunlight about two kilometers to the northeast. The crystals appear to be growing from a natural rock formation."
+
+**Player 1**: "Those crystals might be valuable. Let's head that way and investigate."
+
+**GM**: "You travel northeast through highland jungle terrain. After about three hours of hiking, you arrive at the crystal formation." *Places new terrain card for crystal hex* "Up close, you can see the crystals are about twice your height and emit a faint harmonic vibration when the wind passes through them."
+
+*Draws opportunity card for thorough investigation*
+
+**GM**: "While examining the formation, you discover that the crystals have unusual acoustic properties. A Science check could determine if they have practical applications for communication equipment."
+
+**Player 2**: "I'll make the Science check while keeping watch for anything dangerous."
+
+*Player rolls Science check successfully*
+
+**GM**: "The crystals resonate at frequencies that could amplify standard radio signals. You could harvest enough material to enhance your communication gear's range significantly." *Since this is still standard visibility terrain, draws new feature card* "From this position, you can also see what appears to be an abandoned research shelter about a kilometer to the west, partially hidden by large flowering plants."
+
+This sequence demonstrates how feature cards create navigation goals, investigation opportunities, and forward momentum while maintaining the dramatic pacing that keeps exploration engaging.
+
+---
+
+## **CHAPTER 6: SOCIAL CONFLICTS AND NEGOTIATIONS**
 
 *The art of persuasion in the atomic tomorrow*
 
@@ -766,7 +854,7 @@ Relationship preservation attempts to maintain cooperative relationships despite
 
 ---
 
-## **CHAPTER 6: ADVANCED EQUIPMENT AND TECHNOLOGY**
+## **CHAPTER 7: ADVANCED EQUIPMENT AND TECHNOLOGY**
 
 *Tools and devices for sophisticated adventures*
 
@@ -1053,7 +1141,7 @@ Network integration allows individual sensor and communication systems to share 
 
 ---
 
-## **CHAPTER 6: SOCIAL CONTESTS**
+## **CHAPTER 7: SOCIAL CONTESTS**
 
 *The art of persuasion in the atomic tomorrow*
 
@@ -1244,7 +1332,7 @@ Translation challenges go beyond simple language differences to include conceptu
 
 ---
 
-## **CHAPTER 7: INTERPLANETARY COMMERCE SYSTEM**
+## **CHAPTER 8: INTERPLANETARY COMMERCE SYSTEM**
 
 *Making your fortune among the stars*
 
@@ -1466,7 +1554,7 @@ Based on extensive simulations, certain trade approaches are more profitable tha
 
 ---
 
-## **CHAPTER 8: ROBOTICS AND AUTOMATION**
+## **CHAPTER 9: ROBOTICS AND AUTOMATION**
 
 *Maintaining your mechanical companions*
 
@@ -1568,7 +1656,7 @@ Combat and security robots designed for dangerous operations in hostile environm
 
 ---
 
-## **CHAPTER 9: CHASE SYSTEMS**
+## **CHAPTER 10: CHASE SYSTEMS**
 
 *High-speed pursuits through the atomic tomorrow*
 
@@ -1866,6 +1954,288 @@ When a vehicle takes damage to a system:
 - **Normal Function**: Once per chase, reveals outcome of Alternate Route before committing
 - **Description**: Experimental scanning system with distinctive rotating dome antenna
 - **Catastrophe**: The scanning system emits a high-pitched whine before the dome explodes in a shower of sparks and fragments. Driver suffers complete instrument failure, imposing -40% to all driving-related checks until a SAVVY check is passed.
+
+---
+
+## **CHAPTER 11: PSIONIC SYSTEMS**
+
+*The hidden potential of the human mind in the atomic age*
+
+In the atomic tomorrow, the same forces that split atoms and power rockets across space have awakened dormant capacities within the human mind itself. Psychic potential exists in all humans but usually remains locked away, emerging only through intensive training, genetic predisposition, or exposure to the exotic radiations that permeate the atomic age. The Rhine Institute was established to identify, train, and monitor those with active psionic capabilities—both for their safety and society's protection.
+
+Understanding psionic abilities requires grasping a fundamental principle: the mind operates according to laws as rigorous as those governing atomic reactions, but infinitely more complex and personal. Every psychic discovers their own rhythm, their own limits, and their own relationship with forces that science can measure but not fully explain. These systems provide structure for that exploration while preserving the mystery that makes psionic abilities compelling rather than mundane.
+
+### **THE PSI SKILL: UNIFIED PSYCHIC ABILITY**
+
+Unlike other skills that represent training in specific techniques, Psi Skill reflects your character's overall attunement to psychic forces. All psionic disciplines—telepathy, telekinesis, precognition, empathy, and teleportation—use the same base skill percentage, modified by professional specialization and natural aptitude.
+
+#### **Starting Psi Skill Values**
+
+Your base Psi Skill equals (**NERVE × 2) + 40%** in your specialty discipline, **+0%** in other disciplines, and **-10%** in your opposed specialty. Add any bonuses from your Origin or Background to calculate your final percentages.
+
+Psionic professions each have a specialty they excel at and a weakness where mental patterns conflict:
+
+- **Mentalist**: Specialty Telepathy, Weakness Telekinesis
+- **Telekinetic**: Specialty Telekinesis, Weakness Empathy  
+- **Precog**: Specialty Precognition, Weakness Teleportation
+- **Empath**: Specialty Empathy, Weakness Telekinesis
+- **Teleporter**: Specialty Teleportation, Weakness Telepathy
+- **Wild Talent**: All disciplines at -20%, but gains one unique power.  Specialists in other disciplines can't have wild talents.
+
+This unified skill system reflects how all psionic abilities stem from the same fundamental mental capacity, while specialization represents focused development rather than completely separate training. A telepath attempting telekinesis uses the same core skill, but without the instinctive understanding that makes their specialty effortless.
+
+### **POWER USAGE: FREE USES AND POWERED APPLICATIONS**
+
+Psionic abilities operate on two distinct levels that reflect how psychic energy integrates with daily life. Understanding this distinction helps you portray psychic characters as naturally gifted individuals rather than walking superweapons who exhaust themselves lighting cigarettes.
+
+#### **Free Uses (0 Successes Required)**
+
+Simple applications that require no skill rolls and don't drain psychic reserves. These represent the unconscious psychic gestures that make experienced Espers seem slightly uncanny even during routine activities. Free Uses include:
+
+**Telepathy**: Mental whispers to willing people within sight; sensing when someone thinks about you; sharing simple images or memories with willing participants.
+
+**Telekinesis**: Floating lightweight objects like pencils or coffee cups; turning book pages while reading; gentle nudges to get someone's attention.
+
+**Precognition**: Vague danger sense or good/bad "vibes"; intuitive feelings about which path to take; sensing whether someone means harm.
+
+**Empathy**: Basic emotional reading of visible people; sensing a room's general mood; detecting obvious fear or anger.
+
+**Teleportation**: Summoning small objects to your hand from across a room; making items appear in pockets instead of hands; teleporting dust off clothing.
+
+Free Uses create the subtle background psychic activity that makes characters feel naturally gifted without requiring constant mechanical resolution. They're limited in scope but unlimited in frequency, representing capabilities so integrated into the psychic's life that they require no more conscious effort than walking or breathing.
+
+#### **Powered Uses (1+ Successes Required)**
+
+Dramatic applications requiring skill rolls and consuming psychic energy. These represent deliberate channeling of psionic forces for significant effects. The number of successes required reflects the complexity and power level of the intended effect:
+
+**Light Uses (1 Success)**: Surface thoughts of unwilling targets; opening doors from across rooms; seeing 1-2 seconds ahead; detecting hidden emotions; short-distance teleportation to dodge attacks.
+
+**Moderate Uses (2 Successes)**: Communication beyond visual range; lifting people briefly; previewing conversations before they happen; projecting calm to others; sending objects to people in other rooms.
+
+**Heavy Uses (3+ Successes)**: Deep memory probes; devastating telekinetic attacks; detailed future visions; emotional manipulation of groups; long-range teleportation across significant distances.
+
+The examples provided represent typical difficulty levels, but adapt freely based on circumstances. A telepathic contact with a willing, trusted friend might only require 1 success even across planetary distances, while reading the surface thoughts of a psychically trained opponent could demand 2 or more successes even at close range.
+
+### **THE AURA SYSTEM: MANAGING PSYCHIC ENERGY**
+
+Aura represents your current psychic energy reserves and your attunement to the subtle forces that make psionic abilities possible. Unlike Health or other renewable resources, Aura operates according to principles that reward careful use and punish reckless expenditure of psychic energy.
+
+#### **Tracking Aura Levels**
+
+- **Starting Aura**: Begin each day with Aura level 100, representing full psychic reserves
+- **After Successful Power Use**: If your final successful roll equals or falls under your current Aura, your Aura becomes that roll value
+- **Backlash Risk**: If your final successful roll exceeds your current Aura, suffer backlash and Aura remains unchanged
+
+This system creates natural tension between using powerful abilities and maintaining psychic reserves. Early in the day, when Aura stands at 100, even difficult powers pose little backlash risk. As psychic energy diminishes through use, each additional power becomes increasingly dangerous, forcing characters to choose between pressing their limits and preserving their capabilities.
+
+#### **Understanding Aura Dynamics**
+
+Aura reduction isn't fatigue in the conventional sense—it represents growing misalignment between your consciousness and the psychic forces you're channeling. High Aura means you're perfectly attuned; low Aura means you're forcing connections that don't want to form naturally. This creates the backlash risk that makes continued power use increasingly dangerous.
+
+The system naturally encourages varied approaches to challenges. Early in an adventure, characters might solve problems with flashy displays of psychic power. Later, as Aura dwindles, they'll need to rely more on conventional skills, teamwork, and creative thinking—exactly the kind of pacing that creates interesting character moments and prevents psionic abilities from overshadowing other party members.
+
+### **BACKLASH AND PSYCHIC STRAIN**
+
+When psychic forces resist your attempts to channel them, the resulting backlash can cause lasting strain that affects your character's capabilities until recovery occurs. Understanding how strain accumulates and recovers helps you manage risk while pursuing ambitious psychic goals.
+
+#### **Backlash Occurs When:**
+
+- Your final successful Psi roll exceeds your current Aura level
+- You suffer a critical failure on any Psi roll
+- Certain environmental hazards or psychic attacks affect you
+
+#### **Backlash Effects**
+
+When backlash occurs:
+- Advance 1 step on your Psychic Strain track
+- Your Aura level remains at its current value (no reduction)
+- Roll on optional Feedback Effects table for additional complications
+
+#### **Psychic Strain Track**
+
+Characters can sustain strain according to their mental resilience:
+
+- **Strain 1-3**: No mechanical penalties (uncomfortable but manageable)
+- **Strain 4**: Psychically incapacitated (no Powered abilities until recovery)
+- **Strain 5**: Unconscious from psychic overload
+
+This track operates independently of your Health track, representing mental rather than physical damage. Characters might be physically unharmed but psychically exhausted, or conversely, wounded in body but mentally sharp and capable of using their abilities normally.
+
+#### **Strain Recovery Options**
+
+**Natural Recovery**: 1 strain removes per day of complete rest from psychic activity.
+
+**Meditation**: Spend 1 hour in concentration and make a NERVE check. Success removes 1 strain and resets Aura to 100. Special Success also makes your next Psi roll immune to Aura effects. Critical Success provides this immunity for two rolls.
+
+**Empathic Healing**: Skilled empaths can transfer strain from other psychics to themselves, converting 1 strain into 1 wound. This requires a successful Empathy check and willing cooperation from both parties.
+
+**Self-Conversion**: Make a GRIT check to convert 1 of your own strain into 1 wound, representing the mental discipline to transform psychic stress into manageable physical discomfort.
+
+These recovery options create interesting tactical choices about resource management and mutual support among psychic characters. They also provide mechanical justification for the meditation practices and supportive communities that characterize psychic culture in the atomic age.
+
+### **RESISTANCE AND OPPOSED ROLLS**
+
+When psionic powers target unwilling subjects, natural mental defenses create resistance that must be overcome through superior psychic force. This system ensures that psychic abilities enhance rather than replace social interaction and conventional problem-solving approaches.
+
+#### **Resistance Attributes by Power Type**
+
+Targets resist psionic powers using their most appropriate attribute:
+
+- **BRAWN**: Against telekinetic forces attempting physical manipulation
+- **REFLEX**: Against powers requiring quick mental reactions or evasion
+- **NERVE**: Against fear projection, emotional manipulation, or psychic pressure  
+- **SAVVY**: Against illusions, false sensory input, or deceptive suggestions
+- **CHARM**: Against manipulation of social dynamics or personal connections
+- **GRIT**: Against direct mental attacks, pain induction, or psychic domination
+- **GUILE**: Against mind reading, memory extraction, or deception detection
+
+#### **Resolution Process**
+
+1. **Psychic makes Psi Skill roll** accumulating required successes
+2. **Target makes resistance roll** using appropriate attribute
+3. **Compare outcomes** to determine final result
+
+**Both succeed**: Higher successful roll wins
+**Psychic succeeds, target fails**: Power works completely  
+**Both fail**: No effect occurs, no Aura change
+**Psychic fails, target succeeds**: Target may sense the attempt
+
+This creates meaningful tactical choices about when to use psychic abilities versus conventional approaches. A skilled interrogator might prefer traditional techniques over telepathy when facing a strong-willed subject, while psychic powers become more attractive against targets with weak mental defenses.
+
+### **SUCCESS QUALITY AND ENHANCED EFFECTS**
+
+Psionic abilities follow the same success quality system as other skills, but exceptional results can produce effects that stretch the boundaries of what seems possible within scientific frameworks.
+
+#### **Enhanced Effect Examples**
+
+**Critical Success (Doubles under skill)**: Duration doubled, range extended, or additional beneficial side effects occur.
+
+**Special Success (Roll ending in 0 or 5)**: More information gained than expected, smoother implementation with less strain, or subtle additional benefits.
+
+These enhanced effects should feel like natural extensions of the character's growing mastery rather than arbitrary mechanical bonuses. A critical success on telepathy might provide emotional context along with thoughts, while a special success on telekinesis could accomplish the task with particular elegance or efficiency.
+
+### **PROFESSIONAL SPECIALIZATIONS**
+
+Each psionic profession represents a different approach to developing psychic abilities, reflecting both natural aptitude and intensive training in specialized techniques.
+
+#### **Mentalist**
+*Masters of mind-to-mind contact and mental influence*
+
+Professional Focus: Telepathy +40%, all others +0%, Telekinesis -10%
+Secondary Skills: Psychology +20%, Rhine Institute Protocols +10%
+
+Mentalists excel at the subtle arts of mental contact and influence. They understand the complex rhythms of thought and emotion that make telepathic contact possible, often serving as communicators, negotiators, and investigators within psychic communities. Their weakness with telekinesis stems from focusing so intensively on mental rather than physical phenomena.
+
+#### **Telekinetic**
+*Masters of moving matter through mental force*  
+
+Professional Focus: Telekinesis +40%, all others +0%, Empathy -10%
+Secondary Skills: Physics +20%, Fine Motor Control +10%
+
+Telekineticists approach psychic abilities with an engineer's precision, understanding the mechanical principles that govern how mental force affects physical objects. They often work in construction, manufacturing, or technical fields where their abilities complement conventional tools. Their emotional distance can make empathy difficult.
+
+#### **Precog**
+*Seers who glimpse potential futures*
+
+Professional Focus: Precognition +40%, all others +0%, Teleportation -10%  
+Secondary Skills: Pattern Recognition +20%, Probability Theory +10%
+
+Precogs develop heightened sensitivity to the subtle patterns that suggest future developments. They excel as planners, advisors, and risk assessors, but their focus on temporal rather than spatial relationships makes teleportation particularly challenging.
+
+#### **Empath**
+*Specialists in emotional perception and manipulation*
+
+Professional Focus: Empathy +40%, all others +0%, Telekinesis -10%
+Secondary Skills: Psychology +20%, Counseling +10%
+
+Empaths serve as counselors, diplomats, and social coordinators within psychic communities. Their deep understanding of emotional dynamics makes them invaluable for resolving conflicts and maintaining group harmony, but their sensitivity can interfere with the mechanical precision required for telekinesis.
+
+#### **Teleporter**
+*Masters of spatial displacement*
+
+Professional Focus: Teleportation +40%, all others +0%, Telepathy -10%
+Secondary Skills: Spatial Awareness +20%, Emergency Procedures +10%
+
+Teleporters excel at rapid movement and spatial manipulation, often serving as couriers, scouts, or emergency responders. Their focus on immediate spatial relationships can make the sustained mental contact required for telepathy particularly difficult.
+
+#### **Wild Talent**
+*Unpredictable psychics with broad but unfocused abilities*
+
+Professional Limitation: All disciplines at -20%
+Special Ability: Roll on Wild Talent Table for one unique power
+Secondary Skills: Choose any two skills +20% and +10%
+
+Wild Talents represent psychics whose abilities developed without formal training or clear specialization. While weaker in standard applications, they often manifest unusual powers that don't fit conventional categories—perhaps seeing through electronic surveillance, communicating with artificial intelligences, or affecting quantum probability directly.
+
+### **THE RHINE INSTITUTE**
+
+Founded in 1976 following government recognition of potentially dangerous uncontrolled psychics, the Rhine Institute maintains facilities throughout the solar system and serves as the primary regulatory body for psionic activity.
+
+#### **Institute Functions**
+
+**Identification**: Systematic testing for psionic potential among the general population, often conducted during routine educational or medical screenings.
+
+**Training**: Structured development programs that teach safe power use, ethical guidelines, and integration with non-psychic society.
+
+**Certification**: Official licensing that permits legal use of psionic abilities for commercial, investigative, or professional purposes.
+
+**Regulation**: Oversight and intervention capabilities for situations involving dangerous or illegal psychic activity.
+
+**Research**: Ongoing study of psionic phenomena, development of new applications, and investigation of psychic-related incidents.
+
+**Protection**: Resources and safe havens for psychics facing discrimination, psychic predators, or loss of control over their abilities.
+
+#### **Legal Framework**
+
+In most jurisdictions, unlicensed psionic activity violates regulations similar to those governing radioactive materials or advanced weaponry. Particularly restricted activities include:
+
+- Commercial applications without proper certification
+- Investigation or surveillance without legal authority  
+- Mental influence against unwilling subjects
+- Gathering classified or protected information
+- Any use that violates others' privacy or autonomy
+
+Licensed Espers receive credentials indicating their training level and authorized applications, similar to medical or engineering licenses. This creates interesting roleplay opportunities around the tension between natural abilities and legal restrictions, especially for characters whose psychic gifts emerged outside formal training programs.
+
+### **EXTENDED EXAMPLE OF PLAY**
+
+**Dr. Sarah Voss, Mentalist (Psi Skill 65%, Current Aura: 100, Strain: 0)**
+
+*The space station's corridors echo with tension as Dr. Voss approaches the suspected smuggler. Station security has been ineffective, but direct telepathic investigation requires careful handling to avoid legal complications.*
+
+**GM**: "The dockworker, Martinez, is clearly nervous about something. He keeps glancing toward Cargo Bay 7. Reading surface thoughts of an unaware target requires 1 success."
+
+**Player**: "I'll try to pick up what's making him so worried."
+
+*Rolls 43 - Success under 65%*
+
+**GM**: "You sense his anxiety centers on 'the shipment in Bay 7' and something about 'Rhine Institute seals.' Since 43 is under your Aura of 100, no backlash risk. Your Aura drops to 43."
+
+*Later, after discovering Rhine Institute contraband, Dr. Voss attempts a deeper probe (3 successes needed)*
+
+**Player**: "I need to know who's behind this smuggling operation. I'll probe his recent memories."
+
+*First roll: 51 (success, 1 total). Second roll: 28 (success, 2 total). Third roll: 67 (success, 3 total)*
+
+**GM**: "You successfully access his memories and learn the operation connects to a corrupt Institute inspector on Mars. However, your final roll of 67 exceeds your current Aura of 43, so you suffer backlash. Advance 1 step on your Strain track, and your Aura remains at 43."
+
+**Player**: "That psychic feedback is going to impair me. I want to convert the strain to physical damage so I can keep operating effectively."
+
+*Rolls GRIT check: 34, success*
+
+**GM**: "You force the psychic stress to manifest physically—your nose starts bleeding and you feel a sharp headache, but your mental clarity returns. Take 1 wound and reduce your strain to 0."
+
+This example demonstrates the risk-reward dynamics that make psionic abilities tactically interesting. Early success with high Aura made the initial probe safe and effective. The subsequent deep probe succeeded but at considerable cost, forcing the character to make difficult choices about resource management. The conversion of strain to wounds represents the kind of gritty determination that characterizes heroes in the atomic age.
+
+### **INCORPORATING PSIONICS INTO YOUR CAMPAIGN**
+
+Psionic abilities work best when they enhance rather than overshadow conventional problem-solving approaches. The Aura system naturally creates this balance by making repeated power use increasingly risky, encouraging psychic characters to rely on teamwork, preparation, and conventional skills alongside their special abilities.
+
+Consider psionics as tools that create new storytelling opportunities rather than shortcuts around existing challenges. A telepath still benefits from conventional interrogation skills; their abilities just provide additional options and information sources. A telekinetic still needs to understand physics and engineering; their powers simply offer alternative implementation methods.
+
+The legal and social framework around the Rhine Institute creates numerous adventure hooks and roleplay opportunities. Characters might work as licensed Institute agents, operate as unlicensed rogues avoiding official attention, or navigate the complex relationship between psychic abilities and conventional law enforcement. These dynamics help integrate psionic abilities into the broader social and political landscape of the atomic age.
+
+Remember that not all problems require psionic solutions, and not all psionic applications require mechanical resolution. The most compelling psychic characters are those whose abilities feel natural and integrated rather than mechanically dominant, contributing to group success while maintaining the collaborative spirit that makes the atomic tomorrow special.
 
 ---
 

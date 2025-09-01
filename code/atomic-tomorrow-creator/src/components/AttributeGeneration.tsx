@@ -29,6 +29,18 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
   const [terranExileChoice, setTerranExileChoice] = useState<'standard' | 'random' | null>(
     character.terranExileChoice || null
   );
+  const [attributeMethod, setAttributeMethod] = useState<'generate' | 'manual'>(
+    character.attributeMethod || 'generate'
+  );
+  const [manualAttributes, setManualAttributes] = useState<Record<string, string>>({
+    BRAWN: String(character.attributes?.BRAWN || ''),
+    REFLEX: String(character.attributes?.REFLEX || ''),
+    NERVE: String(character.attributes?.NERVE || ''),
+    SAVVY: String(character.attributes?.SAVVY || ''),
+    CHARM: String(character.attributes?.CHARM || ''),
+    GRIT: String(character.attributes?.GRIT || ''),
+    GUILE: String(character.attributes?.GUILE || '')
+  });
   
   // References to prevent infinite loops
   const characterRef = useRef(character);
@@ -84,9 +96,36 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
     const char = characterRef.current;
     const attrInitialized = attributesInitializedRef.current;
 
+    // Initialize method from character data
+    if (char.attributeMethod) {
+      setAttributeMethod(char.attributeMethod);
+    }
+
     if (attrInitialized) {
-      // If we have saved values and positions, restore them
-      if (char.initialRolls && char.attributesAndPositions) {
+      // Check if this was manual mode
+      if (char.attributeMethod === 'manual') {
+        // Initialize manual attributes from character data
+        const currentAttrs = char.attributes || {};
+        setManualAttributes({
+          BRAWN: String(currentAttrs.BRAWN || ''),
+          REFLEX: String(currentAttrs.REFLEX || ''),
+          NERVE: String(currentAttrs.NERVE || ''),
+          SAVVY: String(currentAttrs.SAVVY || ''),
+          CHARM: String(currentAttrs.CHARM || ''),
+          GRIT: String(currentAttrs.GRIT || ''),
+          GUILE: String(currentAttrs.GUILE || '')
+        });
+        
+        // Set base attributes (remove origin modifiers)
+        const originModifiers = getOriginModifiers(char.origin?.id);
+        const baseAttrs: Record<string, number> = {};
+        Object.entries(currentAttrs).forEach(([attr, value]) => {
+          const modifier = originModifiers[attr] || 0;
+          baseAttrs[attr] = (typeof value === 'number' ? value : 0) - modifier;
+        });
+        setAttributes(baseAttrs);
+        setModifiedAttributes(currentAttrs);
+      } else if (char.initialRolls && char.attributesAndPositions) {
         setAvailableValues(char.initialRolls);
         setAssignedPositions(char.attributesAndPositions);
         
@@ -181,6 +220,14 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
     setComponentInitialized(true);
   }, [componentInitialized, generateFreshValues, updateCharacter, isTerran, isTerranExile, terranExileChoice]);
 
+  // Check if all manual attributes are valid and filled
+  const areManualAttributesValid = useCallback(() => {
+    return Object.values(manualAttributes).every(value => {
+      const num = parseInt(value);
+      return value !== '' && !isNaN(num) && num >= 3 && num <= 18;
+    });
+  }, [manualAttributes]);
+
   // Update modified attributes whenever attributes or assignments change - not tied to character
   useEffect(() => {
     if (!componentInitialized) return;
@@ -194,9 +241,37 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
     setModifiedAttributes(newModifiedAttributes);
   }, [attributes, componentInitialized]);
   
+  // Effect to handle manual attribute updates
+  useEffect(() => {
+    if (!componentInitialized || attributeMethod !== 'manual') return;
+    
+    // Cancel any existing timeout
+    if (attributeUpdateTimeoutRef.current !== null) {
+      window.clearTimeout(attributeUpdateTimeoutRef.current);
+    }
+    
+    // Set up a new timeout to update character after a delay
+    attributeUpdateTimeoutRef.current = window.setTimeout(() => {
+      updateCharacter({
+        ...characterRef.current,
+        attributes: modifiedAttributes,
+        attributeMethod: 'manual',
+        _attributesInitialized: areManualAttributesValid()
+      });
+      attributeUpdateTimeoutRef.current = null;
+    }, 300); // Throttle updates to prevent infinite loops
+    
+    // Clean up timeout on unmount
+    return () => {
+      if (attributeUpdateTimeoutRef.current !== null) {
+        window.clearTimeout(attributeUpdateTimeoutRef.current);
+      }
+    };
+  }, [modifiedAttributes, componentInitialized, attributeMethod, areManualAttributesValid, updateCharacter]);
+
   // Separate effect to update the character - throttled with a ref
   useEffect(() => {
-    if (!componentInitialized || Object.keys(assignedPositions).length < 7) return;
+    if (!componentInitialized || attributeMethod === 'manual' || Object.keys(assignedPositions).length < 7) return;
     
     // Cancel any existing timeout
     if (attributeUpdateTimeoutRef.current !== null) {
@@ -369,10 +444,88 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
     setAttributes(defaultAttributes);
   };
 
+  // Handle attribute method choice (generate vs manual)
+  const handleAttributeMethodChoice = (method: 'generate' | 'manual') => {
+    setAttributeMethod(method);
+    
+    // Update character with method choice
+    updateCharacter({
+      ...characterRef.current,
+      attributeMethod: method
+    });
+    
+    if (method === 'manual') {
+      // Initialize manual attributes from current character attributes if they exist
+      const currentAttrs = character.attributes || {};
+      setManualAttributes({
+        BRAWN: String(currentAttrs.BRAWN || ''),
+        REFLEX: String(currentAttrs.REFLEX || ''),
+        NERVE: String(currentAttrs.NERVE || ''),
+        SAVVY: String(currentAttrs.SAVVY || ''),
+        CHARM: String(currentAttrs.CHARM || ''),
+        GRIT: String(currentAttrs.GRIT || ''),
+        GUILE: String(currentAttrs.GUILE || '')
+      });
+    } else {
+      // Switch back to generation mode - trigger fresh values
+      if (isTerranExile && terranExileChoice === null) {
+        // Need to make choice first
+        setAvailableValues([]);
+        setAssignedPositions({});
+      } else {
+        // Generate fresh values
+        const freshValues = generateFreshValues();
+        setAvailableValues(freshValues);
+        setAssignedPositions({});
+        
+        // Update character
+        updateCharacter({
+          ...characterRef.current,
+          initialRolls: freshValues,
+          attributeMethod: method
+        });
+      }
+      
+      // Reset attributes to default
+      const defaultAttributes: Record<string, number> = {
+        BRAWN: 0,
+        REFLEX: 0,
+        NERVE: 0,
+        SAVVY: 0,
+        CHARM: 0,
+        GRIT: 0,
+        GUILE: 0
+      };
+      setAttributes(defaultAttributes);
+    }
+  };
+
+  // Handle manual attribute input change
+  const handleManualAttributeChange = (attribute: string, value: string) => {
+    // Allow empty string or valid numbers (including incomplete entries like "1")
+    if (value === '' || /^\d+$/.test(value)) {
+      setManualAttributes(prev => ({
+        ...prev,
+        [attribute]: value
+      }));
+      
+      // Convert to number and update base attributes
+      const numValue = value === '' ? 0 : Math.max(0, Math.min(30, parseInt(value) || 0));
+      
+      setAttributes(prev => ({
+        ...prev,
+        [attribute]: numValue
+      }));
+    }
+  };
+
   // Check if all attributes have been assigned
   const allAttributesAssigned = useCallback(() => {
+    if (attributeMethod === 'manual') {
+      return areManualAttributesValid();
+    }
     return Object.keys(assignedPositions).length === 7;
-  }, [assignedPositions]);
+  }, [assignedPositions, attributeMethod, areManualAttributesValid]);
 
   // CRT effect styles
   const crtStyles = {
@@ -388,6 +541,88 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
       zIndex: 1,
       animation: 'scanlines 1s linear infinite'
     } as React.CSSProperties
+  };
+
+  // Render a manual attribute input row
+  const renderManualAttributeRow = (attribute: string) => {
+    const originModifier = getOriginModifiers(character.origin?.id)[attribute] || 0;
+    const description = getAttributeDescription(attribute);
+    const baseValue = parseInt(manualAttributes[attribute]) || 0;
+    const modifiedValue = baseValue + originModifier;
+    const isValid = manualAttributes[attribute] !== '' && baseValue >= 3 && baseValue <= 18;
+
+    return (
+      <div className="flex items-center p-4 border-b border-gray-700 hover:bg-gray-800 transition-colors">
+        <div className="w-1/4">
+          <div className="font-bold text-blue-400" style={{ textShadow: '0 0 8px rgba(96, 165, 250, 0.7)' }}>
+            {attribute}
+          </div>
+          <div className="text-xs text-gray-400">{description}</div>
+        </div>
+
+        <div className="w-1/2">
+          <div className="flex items-center space-x-4">
+            <div className="flex flex-col">
+              <label className="text-xs text-gray-400 mb-1">Base Value (3-18):</label>
+              <input
+                type="text"
+                value={manualAttributes[attribute]}
+                onChange={(e) => handleManualAttributeChange(attribute, e.target.value)}
+                className={`w-20 h-10 px-3 text-center text-lg font-bold bg-gray-800 border-2 rounded ${
+                  isValid 
+                    ? 'border-blue-600 text-blue-300' 
+                    : manualAttributes[attribute] === ''
+                      ? 'border-gray-600 text-gray-400'
+                      : 'border-red-600 text-red-400'
+                } focus:outline-none focus:border-blue-400`}
+                style={{
+                  boxShadow: isValid ? '0 0 10px rgba(37, 99, 235, 0.6)' : 'none',
+                  textShadow: isValid ? '0 0 5px rgba(147, 197, 253, 0.8)' : 'none'
+                }}
+                placeholder="0"
+                maxLength={2}
+              />
+              {manualAttributes[attribute] !== '' && !isValid && (
+                <div className="text-xs text-red-400 mt-1">Must be 3-18</div>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className="w-1/4 flex items-center justify-end">
+          <div className="flex items-center space-x-2">
+            <div 
+              className={`w-12 h-12 rounded-full ${isValid ? 'bg-gray-800 border-2 border-blue-600' : 'bg-gray-800 border-2 border-gray-600'} flex items-center justify-center text-xl font-bold`}
+              style={{
+                boxShadow: isValid ? '0 0 10px rgba(37, 99, 235, 0.6)' : 'none',
+                color: isValid ? '#93c5fd' : '#6b7280',
+                textShadow: isValid ? '0 0 5px rgba(147, 197, 253, 0.8)' : 'none'
+              }}
+            >
+              {baseValue || "-"}
+            </div>
+
+            {originModifier !== 0 && (
+              <>
+                <ArrowRight size={20} className="text-green-400" />
+                <div className={`w-12 h-12 rounded-full bg-gray-800 border-2 border-green-600 flex items-center justify-center text-xl font-bold relative`}
+                  style={{
+                    boxShadow: '0 0 10px rgba(34, 197, 94, 0.6)',
+                    color: '#4ade80',
+                    textShadow: '0 0 5px rgba(74, 222, 128, 0.8)'
+                  }}>
+                  {isValid ? modifiedValue : "-"}
+                  {originModifier > 0 && <span className="absolute -top-1 -right-1 w-5 h-5 bg-green-600 rounded-full text-xs flex items-center justify-center font-bold"
+                    style={{ boxShadow: '0 0 8px rgba(22, 163, 74, 0.8)' }}>+{originModifier}</span>}
+                  {originModifier < 0 && <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-600 rounded-full text-xs flex items-center justify-center font-bold"
+                    style={{ boxShadow: '0 0 8px rgba(220, 38, 38, 0.8)' }}>{originModifier}</span>}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    );
   };
 
   // Render an attribute row
@@ -531,7 +766,12 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
             <h3 className="font-bold text-green-400 terminal-text">
               ATTRIBUTE ASSIGNMENT FOR {character.origin?.name?.toUpperCase() || 'CHARACTER'}
             </h3>
-            {isTerran ? (
+            {attributeMethod === 'manual' ? (
+              <p className="text-sm text-green-300" style={{ textShadow: '0 0 5px rgba(134, 239, 172, 0.7)' }}>
+                Enter your attribute values directly (base values from 3-18). These will be modified by your origin's bonuses/penalties.
+                Perfect for recreating characters you created offline or using custom values.
+              </p>
+            ) : isTerran ? (
               <p className="text-sm text-green-300" style={{ textShadow: '0 0 5px rgba(134, 239, 172, 0.7)' }}>
                 As a Terran, you must distribute the Standard Array values (15, 14, 12, 11, 10, 9, 8) among your attributes.
                 Click on a value to assign it to an attribute. Click on an assigned value again to unassign it.
@@ -548,14 +788,63 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
               </p>
             )}
             <p className="text-sm text-yellow-300 mt-2" style={{ textShadow: '0 0 5px rgba(250, 204, 21, 0.7)' }}>
-              You must assign a value to every attribute before proceeding to the next step.
+              You must {attributeMethod === 'manual' ? 'enter values for' : 'assign a value to'} every attribute before proceeding to the next step.
             </p>
           </div>
         </div>
       </div>
 
+      {/* Attribute Method Choice */}
+      <div className="mb-6 bg-gray-800 p-4 rounded-lg border border-purple-900"
+        style={{ boxShadow: '0 0 15px rgba(147, 51, 234, 0.4), inset 0 0 10px rgba(147, 51, 234, 0.2)' }}>
+        <h3 className="text-lg font-semibold text-purple-400 mb-4"
+          style={{ textShadow: '0 0 8px rgba(196, 181, 253, 0.7)' }}>
+          CHOOSE ATTRIBUTE METHOD:
+        </h3>
+        <div className="flex gap-4">
+          <button
+            onClick={() => handleAttributeMethodChoice('generate')}
+            className={`flex-1 p-4 rounded-lg border-2 transition-all ${
+              attributeMethod === 'generate'
+                ? 'bg-purple-900 border-purple-600 text-purple-300'
+                : 'bg-gray-700 border-gray-600 text-gray-300 hover:bg-gray-600'
+            }`}
+            style={{
+              boxShadow: attributeMethod === 'generate' 
+                ? '0 0 15px rgba(147, 51, 234, 0.6)' 
+                : 'none'
+            }}
+          >
+            <div className="font-bold mb-2">GENERATE VALUES</div>
+            <div className="text-sm">
+              {isTerran 
+                ? 'Use Standard Array (15, 14, 12, 11, 10, 9, 8)'
+                : isTerranExile 
+                  ? 'Choose between Standard Array or random values'
+                  : 'Generate random attribute values'}
+            </div>
+          </button>
+          <button
+            onClick={() => handleAttributeMethodChoice('manual')}
+            className={`flex-1 p-4 rounded-lg border-2 transition-all ${
+              attributeMethod === 'manual'
+                ? 'bg-purple-900 border-purple-600 text-purple-300'
+                : 'bg-gray-700 border-gray-600 text-gray-300 hover:bg-gray-600'
+            }`}
+            style={{
+              boxShadow: attributeMethod === 'manual' 
+                ? '0 0 15px rgba(147, 51, 234, 0.6)' 
+                : 'none'
+            }}
+          >
+            <div className="font-bold mb-2">MANUAL INPUT</div>
+            <div className="text-sm">Enter attribute values directly (3-18)</div>
+          </button>
+        </div>
+      </div>
+
       {/* Terran Exile Choice */}
-      {isTerranExile && (
+      {isTerranExile && attributeMethod === 'generate' && (
         <div className="mb-6 bg-gray-800 p-4 rounded-lg border border-blue-900"
           style={{ boxShadow: '0 0 15px rgba(30, 64, 175, 0.4), inset 0 0 10px rgba(30, 64, 175, 0.2)' }}>
           <h3 className="text-lg font-semibold text-blue-400 mb-4"
@@ -600,7 +889,7 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
       )}
 
       {/* Controls for non-Terrans and Terran Exiles who chose random */}
-      {((!isTerran && !isTerranExile) || (isTerranExile && terranExileChoice === 'random')) && (
+      {attributeMethod === 'generate' && ((!isTerran && !isTerranExile) || (isTerranExile && terranExileChoice === 'random')) && (
         <div className="mb-6 flex justify-between items-center">
           <h3 className="text-lg font-semibold text-blue-400"
             style={{ textShadow: '0 0 8px rgba(96, 165, 250, 0.7)' }}>
@@ -632,26 +921,42 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
         </div>
       )}
 
-      {/* Attributes Panel - only show if choice made or not Terran Exile */}
-      {(!isTerranExile || terranExileChoice !== null) && (
+      {/* Attributes Panel */}
+      {(attributeMethod === 'manual' || (!isTerranExile || terranExileChoice !== null)) && (
         <div className="bg-gray-800 rounded-lg overflow-hidden border border-blue-900 mb-8"
           style={{ boxShadow: '0 0 15px rgba(30, 64, 175, 0.4), inset 0 0 10px rgba(30, 64, 175, 0.2)' }}
         >
         <div className="bg-gray-900 p-4 border-b border-gray-700 font-semibold text-blue-400 terminal-text">
-          {isTerran 
-            ? 'TERRAN ATTRIBUTE ASSIGNMENT' 
-            : isTerranExile 
-              ? `TERRAN EXILE ATTRIBUTE ASSIGNMENT (${terranExileChoice?.toUpperCase() || 'PENDING'})`
-              : 'NON-TERRAN ATTRIBUTE ASSIGNMENT'}
+          {attributeMethod === 'manual' 
+            ? 'MANUAL ATTRIBUTE INPUT'
+            : isTerran 
+              ? 'TERRAN ATTRIBUTE ASSIGNMENT' 
+              : isTerranExile 
+                ? `TERRAN EXILE ATTRIBUTE ASSIGNMENT (${terranExileChoice?.toUpperCase() || 'PENDING'})`
+                : 'NON-TERRAN ATTRIBUTE ASSIGNMENT'}
         </div>
 
-        {renderAttributeRow('BRAWN')}
-        {renderAttributeRow('REFLEX')}
-        {renderAttributeRow('NERVE')}
-        {renderAttributeRow('SAVVY')}
-        {renderAttributeRow('CHARM')}
-        {renderAttributeRow('GRIT')}
-        {renderAttributeRow('GUILE')}
+        {attributeMethod === 'manual' ? (
+          <>
+            {renderManualAttributeRow('BRAWN')}
+            {renderManualAttributeRow('REFLEX')}
+            {renderManualAttributeRow('NERVE')}
+            {renderManualAttributeRow('SAVVY')}
+            {renderManualAttributeRow('CHARM')}
+            {renderManualAttributeRow('GRIT')}
+            {renderManualAttributeRow('GUILE')}
+          </>
+        ) : (
+          <>
+            {renderAttributeRow('BRAWN')}
+            {renderAttributeRow('REFLEX')}
+            {renderAttributeRow('NERVE')}
+            {renderAttributeRow('SAVVY')}
+            {renderAttributeRow('CHARM')}
+            {renderAttributeRow('GRIT')}
+            {renderAttributeRow('GUILE')}
+          </>
+        )}
         </div>
       )}
 
@@ -668,11 +973,11 @@ const AttributeGeneration: React.FC<AttributeGenerationProps> = ({
         }`}>
         {allAttributesAssigned() ? (
           <p className="text-green-300 font-bold">
-            All attributes assigned! You can proceed to the next step.
+            All attributes {attributeMethod === 'manual' ? 'entered' : 'assigned'}! You can proceed to the next step.
           </p>
         ) : (
           <p className="text-yellow-300 font-bold">
-            You must assign values to all attributes before proceeding.
+            You must {attributeMethod === 'manual' ? 'enter valid values (3-18) for' : 'assign values to'} all attributes before proceeding.
           </p>
         )}
       </div>

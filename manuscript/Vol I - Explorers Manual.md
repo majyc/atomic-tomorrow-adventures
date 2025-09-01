@@ -845,11 +845,11 @@ Technology in 2025 is reliable, powerful, and aesthetically pleasing. Equipment 
 
 **Success Quality**:
 - 01-05: Automatic Success
-- Doubles under skill: Critical Success (+2 bonus effects)
-- Ending in 0 or 5 under skill: Special Success (+1 bonus effect)  
 - Under skill: Ordinary Success
 - Over skill: Failure
 - 96-00: Automatic Failure
+- Doubles: Critical Success if under skill (+2 bonus effects)  or Critical Failure if over (usually losing accumulated successes) 
+- Ending in 0 or 5: Special Success (+1 bonus effect)  if  under skill, Special Failure if under (-1 success or a complication)
 
 **Combat Modifiers**:
 - Point Blank (0-2m): +20%
@@ -1048,5 +1048,3 @@ Answer that call with confidence, curiosity, and the certainty that the best adv
 ---
 
 *End of Volume I: Explorer's Manual*
-
-*Note: This is a condensed version focusing on the equipment catalog. The complete Volume I would include full character creation rules, core mechanics, and additional player guidance.*

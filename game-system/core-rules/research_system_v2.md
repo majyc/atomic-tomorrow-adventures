@@ -18,9 +18,9 @@ The Research Card System v2.0 addresses the "dead card" problem while creating m
 2. **Hidden Track Creation**: Non-matching cards are placed face-down in separate rows by suit
 3. **Player Choice**: Player decides between:
    - Working on the revealed matching card
-   - Exploring a hidden track (committing to that suit until completion)
-4. **Track Commitment**: When choosing a hidden track, GM flips the top card face-up
-5. **Completion**: Research continues until threshold is met and an Ace is drawn
+   - Exploring a hidden track (switching to that approach for this turn), or resuming a partially completed track exposed before.
+4. **Track Selection**: When choosing a hidden track, GM flips the top card face-up, the researchers must finish that card before they can switch.
+5. **Completion**: Research continues until threshold is met and any Ace is drawn
 6. **Cleanup**: Unused face-down cards go to bottom of deck
 
 ### Difficulty Thresholds
@@ -51,7 +51,7 @@ Players can spend suit-appropriate resources to complete cards faster:
 ### Track Management
 - **Visible tracks**: Known difficulty, predictable progression
 - **Hidden tracks**: Unknown difficulty, potential shortcuts or traps
-- **Commitment cost**: Once in a hidden track, must complete before switching
+- **Approach flexibility**: Players can switch between visible and hidden options each turn based on revealed cards
 
 ### Resource Economics
 - Early resource spending vs. saving for emergencies
@@ -79,10 +79,11 @@ Players can spend suit-appropriate resources to complete cards faster:
 - 6♥ revealed as current option
 - Player considers: known 6 vs. hidden alternatives
 - Chooses to explore Diamonds row, GM flips 4♦
-- Player commits to Diamonds track
+- Player switches to Diamonds approach for this card
 
-**Turn 3**: Player works on 4♦, spends 1 Diamond resource to accelerate
-**Turn 4**: GM draws for Diamonds: A♦ - research complete!
+**Turn 3**: Player works on 4♦, spends 1 Diamond resource to accelerate, completes card
+**Turn 4**: GM draws next card set, player can choose any available approach
+- GM draws A♦ - research complete!
 
 ## Simulation Parameters
 

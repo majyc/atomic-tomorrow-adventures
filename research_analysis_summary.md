@@ -4,6 +4,14 @@
 
 The Monte Carlo simulation reveals several important insights about the new research card system:
 
+### Player Strategies
+1. **Conservative**: Always take visible cards, spend resources liberally
+2. **Aggressive**: Explore hidden tracks when visible card >6, minimal resource spending
+3. **Balanced**: Mix of approaches based on current situation
+4. **Resource-Heavy**: Always spend resources when available
+5. **Threshold-Focused**: Only work on cards that meet/exceed threshold
+
+
 ### 1. Strategy Effectiveness by Difficulty
 
 **Easy Research (Threshold 4-6)**
