@@ -42,6 +42,11 @@ Location can be determined using the ones digit of the attack roll or the tens d
 
 ### TRAUMA TREATMENTS (For Kinetic/Penetrating Wounds)
 
+**FLEXI GEL**
+- **Effect**: Seals and cleans wounds, prevents infections (adds one success to any GRIT check against infection)
+- **Trade-off**: Does not treat wound penalties
+- **Duration**: Permanent for current wound; doesn't prevent new damage.
+
 **BONE-KNIT GEL**
 
 - **Effect**: Stabilizes fractures, eliminates penalties from bone injuries
@@ -50,13 +55,13 @@ Location can be determined using the ones digit of the attack roll or the tens d
 
 **VASCULAR SEALANT**
 
-- **Effect**: Stops bleeding and prevents circulatory complications
+- **Effect**: Stops bleeding and prevents circulatory complications, reduces current wound severity by 1 (min 0).
 - **Trade-off**: Area numbed; -20% to fine manipulation involving affected area
 - **Duration**: Permanent for current wound; doesn't prevent new damage
 
 **TRAUMA PAK**
 
-- **Effect**: Comprehensive treatment reducing wound penalties by half
+- **Effect**: Comprehensive treatment reducing all wound penalties by half
 - **Trade-off**: Requires 1 hour of rest after application
 - **Duration**: 24 hours before requiring reassessment
 
@@ -139,11 +144,17 @@ Location can be determined using the ones digit of the attack roll or the tens d
 - **Crash**: -40% to all actions for 2 hours after effect ends
 - **Risk**: Second dose before recovery requires GRIT check or immediate unconsciousness
 
-**SUSPENDED ANIMATION SPRAY**
+**FREEZE SPRAY**
 
 - **Effect**: Freezes injury progression until proper treatment available
 - **Trade-off**: Affected area completely nonfunctional until treated
 - **Duration**: 48 hours guaranteed, extended to 72 hours with successful Medicine check
+
+**STOPALOMINE**
+
+- **Effect**: Puts subject in suspended animation until proper treatment available
+- **Trade-off**: Patient is in a coma until antidote is applied
+- **Duration**: Until antidote is applied at a full-scale medical facility such as Hospital Station, requires a Medicine check every 72 hours or patient will suffer a severe complication upon revival.
 
 **EMERGENCY NANITES**
 

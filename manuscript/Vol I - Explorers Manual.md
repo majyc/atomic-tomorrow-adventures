@@ -314,6 +314,10 @@ The quality of your success matters as much as simply succeeding or failing. The
 
 **Automatic Failure** occurs on rolls of 96-00 regardless of skill level, representing catastrophic errors that can happen even to experts under pressure.
 
+### Supreme Effort
+
+A character can turn a failed roll into a bare success at the cost of one wound; this can't be applied to critical failures.  In an opposed roll, supreme effort trumps any ordinary success, but still loses to Special or Critical Success. 
+
 ### **TASK DIFFICULTY AND MODIFIERS**
 
 The atomic age presents challenges that range from routine operations to tasks that push the boundaries of human capability. Rather than changing target numbers, the system modifies your effective skill percentage based on circumstances:

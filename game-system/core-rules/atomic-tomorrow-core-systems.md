@@ -44,6 +44,10 @@ When two characters' skills directly oppose each other:
 - If both succeed with same quality, highest roll below skill wins
 - If both fail, lower roll still fails worse
 
+### Supreme Effort
+
+A character can turn a failed roll into a bare success at the cost of one wound; this can't be applied to critical failures.  In an opposed roll, supreme effort trumps any ordinary success, but still loses to Special or Critical Success. 
+
 ## STANDARD DIFFICULTY MODIFIERS
 
 All skills and actions use this consistent scale of difficulty modifiers:
