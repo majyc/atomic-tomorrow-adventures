@@ -254,7 +254,7 @@ Critical failures can cause dangerous feedback effects:
 
 ## PSIONIC PROFESSIONS
 
-All psychics can attempt all psionic disciplines, but each profession has a specialty and a weakness:
+All psychics can attempt all psionic disciplines (wild talents don't count as a discipline), but each profession has a specialty and a weakness:
 
 ### MENTALIST
 
