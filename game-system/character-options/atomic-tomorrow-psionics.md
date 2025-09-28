@@ -250,7 +250,7 @@ Critical failures can cause dangerous feedback effects:
 
 - Advance 1 step on the Psychic Strain track immediately
 - Roll on the Feedback Effects table for additional complications
-- Aura level becomes 99 (severely depleted reserves)
+- Aura level becomes 01 (severely depleted reserves)
 
 ## PSIONIC PROFESSIONS
 
