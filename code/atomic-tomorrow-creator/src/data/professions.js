@@ -1,6 +1,6 @@
 export const PROFESSIONS = [
   // ACES & PILOTS
-  { id: 'rocket-jockey', name: 'Rocket Jockey', description: 'Expert spacecraft pilot who thrives on the thrill of atmospheric entry', skills: 'Piloting (Spacecraft) +40%, Technology (Ship Systems) +20%, Navigation (Space) +10%, Combat (Pistols) +10%' },
+  { id: 'rocket-jockey', name: 'Rocket Jockey', description: 'Expert spacecraft pilot who thrives on the thrill of atmospheric entry', skills: 'Piloting (Spacecraft) +40%, Technology (Ship Systems) +20%, Navigation (Space) +10%, Combat (Guns) +10%' },
   { id: 'astrogator', name: 'Astrogator', description: 'Navigation specialist who charts courses through the stars', skills: 'Navigation (Space) +40%, Academics (Mathematics) +20%, Science (Astronomy) +10%, Computer Systems (Programming) +10%' },
   { id: 'astro-racer', name: 'Astro Racer', description: 'Speed demon who competes in dangerous space races', skills: 'Piloting (Racing) +40%, Repair (Vehicle Repair) +20%, Perception (Threat Assessment) +10%, Athletics (Reflexes) +10%' },
   { id: 'orbital-jumper', name: 'Orbital Jumper', description: 'Daredevil who specializes in zero-G maneuvers between spacecraft', skills: 'Zero-G Operations (Space) +40%, Athletics (Jumping) +20%, Technology (Vacuum Equipment) +10%, Perception (Spatial Awareness) +10%' },
@@ -22,10 +22,10 @@ export const PROFESSIONS = [
   { id: 'deep-scout', name: 'Deep Scout', description: 'Explorer of the furthest reaches of known space', skills: 'Navigation (Deep Space) +40%, Science (Astronomy) +20%, Survival (Space) +10%, Technology (Communications) +10%' },
 
   // SOLDIERS & ENFORCERS
-  { id: 'space-ranger', name: 'Space Ranger', description: 'Law enforcement officer with interplanetary jurisdiction', skills: 'Security (Law Enforcement) +40%, Investigation (Crime Scene Analysis) +20%, Combat (Rifles) +10%, Academics (Regulations) +10%' },
+  { id: 'space-ranger', name: 'Space Ranger', description: 'Law enforcement officer with interplanetary jurisdiction', skills: 'Security (Law Enforcement) +40%, Investigation (Crime Scene Analysis) +20%, Combat (Guns) +10%, Academics (Regulations) +10%' },
   { id: 'solar-marine', name: 'Solar Marine', description: 'Elite military specialist trained for combat in space', skills: 'Combat (Heavy Weapons) +40%, Combat (Bladed Weapons) +20%, Athletics (Strength) +10%, Survival (Combat Zone) +10%' },
-  { id: 'bounty-hunter', name: 'Bounty Hunter', description: 'Independent tracker who brings fugitives to justice', skills: 'Investigation (Tracking) +40%, Streetwise (Information Gathering) +20%, Combat (Pistols) +10%, Persuasion (Intimidation) +10%' },
-  { id: 'mercenary', name: 'Mercenary', description: 'Soldier for hire who goes where the money is', skills: 'Combat (Rifles) +40%, Persuasion (Negotiation) +20%, Tactics (Combat) +10%, Survival (Combat Zone) +10%' },
+  { id: 'bounty-hunter', name: 'Bounty Hunter', description: 'Independent tracker who brings fugitives to justice', skills: 'Investigation (Tracking) +40%, Streetwise (Information Gathering) +20%, Combat (Guns) +10%, Persuasion (Intimidation) +10%' },
+  { id: 'mercenary', name: 'Mercenary', description: 'Soldier for hire who goes where the money is', skills: 'Combat (Guns) +40%, Persuasion (Negotiation) +20%, Tactics (Combat) +10%, Survival (Combat Zone) +10%' },
   { id: 'bodyguard', name: 'Bodyguard', description: 'Personal security specialist trained to protect VIPs', skills: 'Perception (Threat Assessment) +40%, Combat (Unarmed Combat) +20%, Perception (Situational Awareness) +10%, Security (VIP Protection) +10%' },
 
   // MECHANICS & ENGINEERS

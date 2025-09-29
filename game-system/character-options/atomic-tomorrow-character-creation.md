@@ -111,7 +111,7 @@ Your profession represents your training, expertise, and the career that has sha
 
 | Profession               | Skills                                                                                                                                                               |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ROCKET JOCKEY**  | Piloting (Spacecraft) (REFLEX) +40%, Technology (Ship Systems) (SAVVY) +20%, Navigation (Space) (SAVVY) +10%, Combat (Pistols) (REFLEX) +10%                         |
+| **ROCKET JOCKEY**  | Piloting (Spacecraft) (REFLEX) +40%, Technology (Ship Systems) (SAVVY) +20%, Navigation (Space) (SAVVY) +10%, Combat (guns) (REFLEX) +10%                         |
 | **ASTROGATOR**     | Navigation (Space) (SAVVY) +40%, Science (Mathematics) (SAVVY) +20%, Science (Astronomy) (SAVVY) +10%, Computer Systems (Programming) (SAVVY) +10%                   |
 | **ASTRO RACER**    | Piloting (Racing) (REFLEX) +40%, Repair (Vehicle) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Athletics (Reflexes) (REFLEX) +10%                      |
 | **ORBITAL JUMPER** | Athletics (Zero-G Movement) (REFLEX) +40%, Athletics (Jumping) (BRAWN) +20%, Technology (Vacuum Equipment) (SAVVY) +10%, Perception (Spatial Awareness) (SAVVY) +10% |
@@ -131,7 +131,7 @@ Your profession represents your training, expertise, and the career that has sha
 
 | Profession                | Skills                                                                                                                                                                    |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **SCOUT**           | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Perception (Environmental Awareness) (SAVVY) +10%, Combat (Rifles) (REFLEX) +10%         |
+| **SCOUT**           | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Perception (Environmental Awareness) (SAVVY) +10%, Combat (guns) (REFLEX) +10%         |
 | **TRAILBLAZER**     | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Technology (Cartography) (SAVVY) +10%, Perception (Environmental Awareness) (SAVVY) +10% |
 | **RUIN DELVER**     | Academics (Archaeology) (FLEX) +40%, Academics (Ancient Languages) (FLEX) +20%, Perception (Trap Detection) (SAVVY) +10%, Academics (History) (FLEX) +10%                 |
 | **PLANETARY SCOUT** | Investigation (Surveying) (SAVVY) +40%, Science (Geology) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Stealth (Camouflage) (REFLEX) +10%                   |
@@ -141,10 +141,10 @@ Your profession represents your training, expertise, and the career that has sha
 
 | Profession              | Skills                                                                                                                                                                      |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **SPACE RANGER**  | Security (Law Enforcement) (SAVVY) +40%, Investigation (Crime Scene Analysis) (SAVVY) +20%, Combat (Rifles) (REFLEX) +10%, Academics (Regulations) (FLEX) +10%              |
+| **SPACE RANGER**  | Security (Law Enforcement) (SAVVY) +40%, Investigation (Crime Scene Analysis) (SAVVY) +20%, Combat (Guns) (REFLEX) +10%, Academics (Regulations) (FLEX) +10%              |
 | **SOLAR MARINE**  | Combat (Heavy Weapons) (REFLEX) +40%, Combat (Bladed Weapons) (REFLEX) +20%, Athletics (Strength) (BRAWN) +10%, Survival (Combat Zone) (GRIT) +10%                          |
-| **BOUNTY HUNTER** | Investigation (Tracking) (SAVVY) +40%, Streetwise (Information Gathering) (GUILE) +20%, Combat (Pistols) (REFLEX) +10%, Persuasion (Intimidation) (CHARM) +10%              |
-| **MERCENARY**     | Combat (Rifles) (REFLEX) +40%, Persuasion (Negotiation) (CHARM) +20%, Tactics (Combat) (SAVVY) +10%, Survival (Combat Zone) (GRIT) +10%                                     |
+| **BOUNTY HUNTER** | Investigation (Tracking) (SAVVY) +40%, Streetwise (Information Gathering) (GUILE) +20%, Combat (Guns) (REFLEX) +10%, Persuasion (Intimidation) (CHARM) +10%              |
+| **MERCENARY**     | Combat (guns) (REFLEX) +40%, Persuasion (Negotiation) (CHARM) +20%, Tactics (Combat) (SAVVY) +10%, Survival (Combat Zone) (GRIT) +10%                                     |
 | **BODYGUARD**     | Perception (Threat Assessment) (SAVVY) +40%, Combat (Unarmed Combat) (REFLEX) +20%, Perception (Situational Awareness) (SAVVY) +10%, Security (VIP Protection) (SAVVY) +10% |
 
 ## MECHANICS & ENGINEERS

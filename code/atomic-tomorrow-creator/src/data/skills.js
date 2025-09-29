@@ -30,8 +30,8 @@ export const CORE_SKILLS = {
     type: SKILL_TYPES.ATTRIBUTE,
     description: 'General fighting ability',
     specializations: [
-      'Unarmed Combat', 'Bladed Weapons', 'Exotic Weapons', 'Heavy Weapons', 
-      'Pistols', 'Rifles', 'Ship Weapons'
+      'Unarmed Combat', 'Bladed Weapons', 'Exotic Weapons', 'Heavy Weapons',
+      'Guns', 'Ship Weapons'
     ]
   },
   'STEALTH': {
@@ -280,8 +280,7 @@ export const SPECIAL_SKILLS = {
     description: 'Basic training that every citizen receives',
     specializations: {
       'Unarmed Combat': { derivedFrom: 'REFLEX', bonus: 15 },
-      'Pistols': { derivedFrom: 'REFLEX', bonus: 15 },
-      'Rifles': { derivedFrom: 'REFLEX', bonus: 15 },
+      'Guns': { derivedFrom: 'REFLEX', bonus: 15 },
       'Survival': { derivedFrom: 'REFLEX', bonus: 15 },
       'First Aid': { baseValue: 35 }
     }

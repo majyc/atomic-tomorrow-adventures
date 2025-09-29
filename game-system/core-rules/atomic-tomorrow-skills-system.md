@@ -7,7 +7,7 @@ title: Atomic Tomorrow Skills System
 ## ACES & PILOTS
 
 * **ROCKET JOCKEY**
-  * Skills: Piloting (Spacecraft) +40%, Technology (Ship Systems) +20%, Navigation (Space) +10%, Combat (Pistols) +10%
+  * Skills: Piloting (Spacecraft) +40%, Technology (Ship Systems) +20%, Navigation (Space) +10%, Combat (guns) +10%
   * Equipment: Custom flight jacket, pilot's chronometer, personal navigation computer
 * **ASTROGATOR**
   * Skills: Navigation (Space) +40%, Science (Mathematics) (SAVVY) +20%, Science (Astronomy) +10%, Computer Systems (Programming) +10%
@@ -43,7 +43,7 @@ title: Atomic Tomorrow Skills System
 ## EXPLORERS & SCOUTS
 
 * **SCOUT**
-  * Skills: Navigation (Wilderness) +40%, Survival (choose environment) +20%, Perception (Environmental Awareness) +10%, Combat (Rifles) +10%
+  * Skills: Navigation (Wilderness) +40%, Survival (choose environment) +20%, Perception (Environmental Awareness) +10%, Combat (guns) +10%
   * Equipment: All-terrain boots, professional mapping tools, multi-planet compass
 * **TRAILBLAZER**
   * Skills: Navigation (Wilderness) +40%, Survival (choose environment) +20%, Technology (Cartography) +10%, Perception (Environmental Awareness) +10%
@@ -61,16 +61,16 @@ title: Atomic Tomorrow Skills System
 ## SOLDIERS & ENFORCERS
 
 * **SPACE RANGER**
-  * Skills: Security (Law Enforcement) +40%, Investigation (Crime Scene Analysis) +20%, Combat (Rifles) +10%, Academics (Regulations) +10%
+  * Skills: Security (Law Enforcement) +40%, Investigation (Crime Scene Analysis) +20%, Combat (guns) +10%, Academics (Regulations) +10%
   * Equipment: Ranger badge, regulation sidearm, handcuffs, patrol vehicle authorization
 * **SOLAR MARINE**
   * Skills: Combat (Heavy Weapons) +40%, Combat (Bladed Weapons) +20%, Athletics (Strength) +10%, Survival (Combat Zone) +10%
   * Equipment: Combat armor, service sidearm, combat knife, military ID
 * **BOUNTY HUNTER**
-  * Skills: Investigation (Tracking) +40%, Streetwise (Information Gathering) +20%, Combat (Pistols) +10%, Persuasion (Intimidation) +10%
+  * Skills: Investigation (Tracking) +40%, Streetwise (Information Gathering) +20%, Combat (guns) +10%, Persuasion (Intimidation) +10%
   * Equipment: Bounty database, restraints, non-lethal capture tools, target profiles
 * **MERCENARY**
-  * Skills: Combat (Rifles) +40%, Persuasion (Negotiation) +20%, Tactics (Combat) +10%, Survival (Combat Zone) +10%
+  * Skills: Combat (guns) +40%, Persuasion (Negotiation) +20%, Tactics (Combat) +10%, Survival (Combat Zone) +10%
   * Equipment: Custom weapon, contract datapad, body armor, medkit
 * **BODYGUARD**
   * Skills: Perception (Threat Assessment) +40%, Combat (Unarmed Combat) +20%, Perception (Situational Awareness) +10%, Security (VIP Protection) +10%
@@ -299,7 +299,7 @@ Characters can attempt skills even without training:
 
 *General fighting ability*
 
-* **Specializations:** Unarmed Combat, Bladed Weapons, Exotic Weapons, Heavy Weapons, Pistols, Rifles, Ship Weapons
+* **Specializations:** Unarmed Combat, Bladed Weapons, Exotic Weapons, Heavy Weapons, guns, Ship Weapons
 
 #### Stealth (REFLEX)
 
@@ -472,7 +472,7 @@ Characters can attempt skills even without training:
 Every character starts with Solar Scouts Training, representing general self-defense training they received in their youth:
 
 * Solar Scouts Training is 310%
-* It covers unnarmed combat, pistols, rifles, and first aid
+* It covers unnarmed combat, guns, and first aid
 * It never improves directly, but critical successes while using Solar Scouts Training can lead to developing the full specialized skill
 
 ### Hobbies (Optional)

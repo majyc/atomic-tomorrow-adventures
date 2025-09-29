@@ -370,7 +370,7 @@ export const getSkillDerivation = (skillData: any, attribute: string, character:
   
   // Otherwise, calculate it on the fly (this is a fallback)
   // For SOLAR SCOUTS TRAINING specializations that are derived from REFLEX
-  if (skillData.source === "Standard Training" && ["Unarmed Combat", "Pistols", "Rifles", "Survival"].includes(skillData.name)) {
+  if (skillData.source === "Standard Training" && ["Unarmed Combat", "Guns", "Survival"].includes(skillData.name)) {
     const attrValue = character.attributes?.REFLEX || 10;
     return `(REFLEX: ${attrValue} × 2) + 15 (Solar Scouts Training)`;
   }

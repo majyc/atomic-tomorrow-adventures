@@ -191,7 +191,7 @@ Result: **Atomo-Beam X-1000 Pistol**
 Captain Jack Steel draws his distinctive sidearm, which hums with atomic energy. "Stand back! This Atomo-Beam X-1000 Pistol can cut through that barrier like it's tissue paper!"
 
 - Powered by a miniature atomic pile, never needs recharging (Atomo-)
-- Projects focused energy at double the range of standard pistols, with Jack's trademark crimson beam (-Beam)
+- Projects focused energy at double the range of standard guns, with Jack's trademark crimson beam (-Beam)
 - Can manifest specialized attachments when needed, though this completely drains its power for 24 hours (X-1000)
 
 Roll: 8, 7, 2

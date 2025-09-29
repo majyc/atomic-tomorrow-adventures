@@ -18,7 +18,7 @@
   - Piloting (Spacecraft) (REFLEX) +40%
   - Technology (Ship Systems) (SAVVY) +20%
   - Navigation (Space) (SAVVY) +10%
-  - Combat (Pistols) (REFLEX) +10%
+  - Combat (guns) (REFLEX) +10%
 - **Equipment**: Custom flight jacket, pilot's chronometer, personal navigation computer
 
 ### ASTROGATOR
@@ -143,7 +143,7 @@
   - Navigation (Wilderness) (SAVVY) +40%
   - Survival (Choose Environment) (GRIT) +20%
   - Perception (Environmental Awareness) (SAVVY) +10%
-  - Combat (Rifles) (REFLEX) +10%
+  - Combat (guns) (REFLEX) +10%
 - **Equipment**: All-terrain boots, professional mapping tools, multi-planet compass
 
 ### TRAILBLAZER
@@ -199,7 +199,7 @@
 - **Skills**:
   - Security (Law Enforcement) (SAVVY) +40%
   - Investigation (Crime Scene Analysis) (SAVVY) +20%
-  - Combat (Rifles) (REFLEX) +10%
+  - Combat (guns) (REFLEX) +10%
   - Academics (Regulations) (FLEX) +10%
 - **Equipment**: Ranger badge, regulation sidearm, handcuffs, patrol vehicle authorization
 
@@ -221,7 +221,7 @@
 - **Skills**:
   - Investigation (Tracking) (SAVVY) +40%
   - Streetwise (Information Gathering) (GUILE) +20%
-  - Combat (Pistols) (REFLEX) +10%
+  - Combat (guns) (REFLEX) +10%
   - Persuasion (Intimidation) (CHARM) +10%
 - **Equipment**: Bounty database, restraints, non-lethal capture tools, target profiles
 
@@ -230,7 +230,7 @@
 *Professional soldier for hire with specialized combat skills*
 
 - **Skills**:
-  - Combat (Rifles) (REFLEX) +40%
+  - Combat (guns) (REFLEX) +40%
   - Persuasion (Negotiation) (CHARM) +20%
   - Tactics (Combat) (SAVVY) +10%
   - Survival (Combat Zone) (GRIT) +10%

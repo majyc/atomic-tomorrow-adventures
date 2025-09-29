@@ -272,7 +272,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                 
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
                   <div className="font-medium">Solar Scouts Training</div>
-                  <div className="text-xl font-bold">{((character.attributes?.REFLEX || 10) * 2) + 15}%</div>
+                  <div className="text-xl font-bold">35%</div>
                 </div>
                 
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
