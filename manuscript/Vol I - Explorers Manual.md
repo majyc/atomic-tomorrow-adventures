@@ -133,7 +133,7 @@ Your profession represents your training, expertise, and the career that has sha
 
 | Profession               | Skills                                                                                                                                                               |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ROCKET JOCKEY**  | Piloting (Spacecraft) (REFLEX) +40%, Technology (Ship Systems) (SAVVY) +20%, Navigation (Space) (SAVVY) +10%, Combat (Pistols) (REFLEX) +10%                         |
+| **ROCKET JOCKEY**  | Piloting (Spacecraft) (REFLEX) +40%, Technology (Ship Systems) (SAVVY) +20%, Navigation (Space) (SAVVY) +10%, Combat (guns) (REFLEX) +10%                         |
 | **ASTROGATOR**     | Navigation (Space) (SAVVY) +40%, Science (Mathematics) (SAVVY) +20%, Science (Astronomy) (SAVVY) +10%, Computer Systems (Programming) (SAVVY) +10%                   |
 | **ASTRO RACER**    | Piloting (Racing) (REFLEX) +40%, Repair (Vehicle) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Athletics (Reflexes) (REFLEX) +10%                      |
 | **ORBITAL JUMPER** | Athletics (Zero-G Movement) (REFLEX) +40%, Athletics (Jumping) (BRAWN) +20%, Technology (Vacuum Equipment) (SAVVY) +10%, Perception (Spatial Awareness) (SAVVY) +10% |
@@ -153,7 +153,7 @@ Your profession represents your training, expertise, and the career that has sha
 
 | Profession                | Skills                                                                                                                                                                    |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **SCOUT**           | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Perception (Environmental Awareness) (SAVVY) +10%, Combat (Rifles) (REFLEX) +10%         |
+| **SCOUT**           | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Perception (Environmental Awareness) (SAVVY) +10%, Combat (guns) (REFLEX) +10%         |
 | **TRAILBLAZER**     | Navigation (Wilderness) (SAVVY) +40%, Survival (Choose Environment) (GRIT) +20%, Technology (Cartography) (SAVVY) +10%, Perception (Environmental Awareness) (SAVVY) +10% |
 | **RUIN DELVER**     | Academics (Archaeology) (FLEX) +40%, Academics (Ancient Languages) (FLEX) +20%, Perception (Trap Detection) (SAVVY) +10%, Academics (History) (FLEX) +10%                 |
 | **PLANETARY SCOUT** | Investigation (Surveying) (SAVVY) +40%, Science (Geology) (SAVVY) +20%, Perception (Threat Assessment) (SAVVY) +10%, Stealth (Camouflage) (REFLEX) +10%                   |
@@ -163,10 +163,10 @@ Your profession represents your training, expertise, and the career that has sha
 
 | Profession              | Skills                                                                                                                                                                      |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **SPACE RANGER**  | Security (Law Enforcement) (SAVVY) +40%, Investigation (Crime Scene Analysis) (SAVVY) +20%, Combat (Rifles) (REFLEX) +10%, Academics (Regulations) (FLEX) +10%              |
+| **SPACE RANGER**  | Security (Law Enforcement) (SAVVY) +40%, Investigation (Crime Scene Analysis) (SAVVY) +20%, Combat (guns) (REFLEX) +10%, Academics (Regulations) (FLEX) +10%              |
 | **SOLAR MARINE**  | Combat (Heavy Weapons) (REFLEX) +40%, Combat (Bladed Weapons) (REFLEX) +20%, Athletics (Strength) (BRAWN) +10%, Survival (Combat Zone) (GRIT) +10%                          |
-| **BOUNTY HUNTER** | Investigation (Tracking) (SAVVY) +40%, Streetwise (Information Gathering) (GUILE) +20%, Combat (Pistols) (REFLEX) +10%, Persuasion (Intimidation) (CHARM) +10%              |
-| **MERCENARY**     | Combat (Rifles) (REFLEX) +40%, Persuasion (Negotiation) (CHARM) +20%, Tactics (Combat) (SAVVY) +10%, Survival (Combat Zone) (GRIT) +10%                                     |
+| **BOUNTY HUNTER** | Investigation (Tracking) (SAVVY) +40%, Streetwise (Information Gathering) (GUILE) +20%, Combat (guns) (REFLEX) +10%, Persuasion (Intimidation) (CHARM) +10%              |
+| **MERCENARY**     | Combat (guns) (REFLEX) +40%, Persuasion (Negotiation) (CHARM) +20%, Tactics (Combat) (SAVVY) +10%, Survival (Combat Zone) (GRIT) +10%                                     |
 | **BODYGUARD**     | Perception (Threat Assessment) (SAVVY) +40%, Combat (Unarmed Combat) (REFLEX) +20%, Perception (Situational Awareness) (SAVVY) +10%, Security (VIP Protection) (SAVVY) +10% |
 
 #### **Mechanics & Engineers**
@@ -308,7 +308,7 @@ The quality of your success matters as much as simply succeeding or failing. The
 
 **Special Failure** occurs when you roll over your skill percentage with a result ending in 0 or 5.  Not only do you not achieve your goal, but some mishap may have occurred costing you some of your hard-won progress.
 
-**Critical Failure** occurs when you roll doubles (66, 77, 88, etc.) You fail hard, a piece of equipment breaks, or you lose all your progress in completing the task.
+**Critical Failure** occurs when you roll doubles (66, 77, 88, etc.) over your skill percentage. You fail hard, a piece of equipment breaks, or you lose all your progress in completing the task.
 
 **Automatic Success** happens on rolls of 01-05 regardless of skill level, representing those moments when everything comes together perfectly despite the odds.
 
@@ -364,7 +364,7 @@ When violence erupts in the atomic age, it happens quickly and decisively. Comba
 
 **Attacks** use appropriate combat skills against target numbers modified by range, cover, and movement. Success inflicts wounds based on weapon type, with special and critical successes causing additional damage.
 
-**Defense** allows one free defensive reaction per round (Parry, Block, Dodge), with additional defenses suffering cumulative -20% penalties. Some epithets and specializations provide additional defensive options.
+**Defense** allows one free defensive reaction per round (Parry, Block, Dodge), with additional defenses suffering cumulative -20% penalties. Parry uses your Combat (Unarmed or Melee) skill; Dodge uses your base Combat skill (REFLEX × 2 + 10%); Block uses Parry +20% with a shield. Some epithets and specializations provide additional defensive options.
 
 **Wounds** accumulate until characters become incapacitated (at 4 wounds) or dying (at 5 wounds). The first three wounds cause no mechanical penalties until after combat is completed, reflecting the cinematic resilience of atomic age heroes.
 
@@ -775,6 +775,9 @@ When violence erupts, combat proceeds in structured rounds representing six seco
 **Attacks**: Roll your combat skill against a target number modified by range, cover, and movement. Success causes wounds based on your weapon plus success quality bonuses.
 
 **Defense**: You get one free defensive reaction per round (Parry, Block, Dodge). Additional defenses suffer cumulative -20% penalties.
+- **Parry**: Use your Combat (Unarmed Combat) or Combat (Melee Weapons) skill, depending on what you're using to parry. Only vs. melee/unarmed attacks.
+- **Dodge**: Use your base Combat skill: (REFLEX × 2) + 10%. Works at full value vs. ranged attacks, -20% vs. melee attacks.
+- **Block**: Use your Parry skill +20% when using a shield. Can block melee once/turn, missiles as many times as needed.
 
 **Wounds**: Characters can sustain three wounds with no penalties, become incapacitated at four wounds, and start dying at five wounds.
 

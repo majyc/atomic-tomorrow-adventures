@@ -24,10 +24,14 @@ title: Atomic Tomorrow Combat Analysis
   - **Critical Success**: +2 damage
 
 ### Defense Mechanics
-- **Parry**: Roll percentile dice against defender's skill
+- **Parry**: Roll percentile dice against defender's Combat (Unarmed or Melee) skill
   - Higher quality of success negates attack
   - Equal quality: higher raw roll wins
   - Subsequent parry attempts in same round take cumulative -20% penalty
+- **Dodge**: Roll against base Combat skill: (REFLEX × 2) + 10%
+  - Full value vs. ranged attacks, -20% vs. melee attacks
+- **Block**: Roll against Parry skill +20% when using a shield
+  - Can block melee once/turn, missiles unlimited
 - **Armor**: Provides automatic damage reduction
   - Light Armor: 1 point reduction
   - Medium Armor: 2 point reduction 

@@ -43,9 +43,11 @@ Combat uses abstract positioning with four ranges:
 
 There are two Defense skills, Parry (vs melee attacks) and Dodge (vs ranged attacks). Each successive Defense in a turn incurs a -20% penalty.
 
-- **Parry**: requires a weapon or Unarmed Combat skill, only vs. melee or unarmed attacks.
-- **Block**: Requires a shield, +20%. Can only block melee attacks once/turn, can block missiles as many times as needed
-- **Dodge**: -20% vs. melee attacks.
+#### Defense Skill Values
+
+- **Parry**: Use your Combat (Unarmed Combat) skill or Combat (Melee Weapons) skill, depending on what you're using to parry. Only works vs. melee or unarmed attacks.
+- **Dodge**: Use your base Combat skill: (REFLEX × 2) + 10%. Works against ranged attacks at full value, or at -20% vs. melee attacks.
+- **Block**: Use your Parry skill +20% when using a shield. Can only block melee attacks once/turn, can block missiles as many times as needed.
 
 ### DEFENSE LIMITATIONS
 

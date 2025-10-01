@@ -678,7 +678,50 @@ export const printCharacterSheet = (character, notes = '') => {
                   `;
                 }).join('')}
               </table>
-              
+
+              <!-- Derived Combat Values -->
+              <div style="margin-top: 0.1in; padding-top: 0.05in; border-top: 1px dashed rgba(243, 156, 18, 0.5);">
+                <table class="attribute-table" style="font-size: 0.9em;">
+                  <tr>
+                    <td class="attribute-name">Initiative</td>
+                    <td class="attribute-value" colspan="2">${(character.attributes?.REFLEX || 10) * 5}%</td>
+                    <td class="attribute-mod">REFLEX × 5</td>
+                  </tr>
+                  <tr>
+                    <td class="attribute-name">Damage Soak</td>
+                    <td class="attribute-value" colspan="2">${(character.attributes?.GRIT || 10) * 5}%</td>
+                    <td class="attribute-mod">GRIT × 5</td>
+                  </tr>
+                  <tr>
+                    <td class="attribute-name">Parry</td>
+                    <td class="attribute-value" colspan="2">${(() => {
+                      const skills = calculateSimplifiedSkills(character);
+                      return Math.max(
+                        skills['Combat (Unarmed Combat)']?.value || ((character.attributes?.REFLEX || 10) * 2) + 10,
+                        skills['Combat (Melee Weapons)']?.value || ((character.attributes?.REFLEX || 10) * 2) + 10
+                      );
+                    })()}%</td>
+                    <td class="attribute-mod">Best Combat skill</td>
+                  </tr>
+                  <tr>
+                    <td class="attribute-name">Dodge</td>
+                    <td class="attribute-value" colspan="2">${((character.attributes?.REFLEX || 10) * 2) + 10}%</td>
+                    <td class="attribute-mod">(REFLEX × 2) + 10</td>
+                  </tr>
+                  <tr>
+                    <td class="attribute-name">Block</td>
+                    <td class="attribute-value" colspan="2">${(() => {
+                      const skills = calculateSimplifiedSkills(character);
+                      return Math.max(
+                        skills['Combat (Unarmed Combat)']?.value || ((character.attributes?.REFLEX || 10) * 2) + 10,
+                        skills['Combat (Melee Weapons)']?.value || ((character.attributes?.REFLEX || 10) * 2) + 10
+                      ) + 20;
+                    })()}%</td>
+                    <td class="attribute-mod">Parry + 20 (shield)</td>
+                  </tr>
+                </table>
+              </div>
+
               <!-- Dual Damage Track -->
               <div class="wound-track-container">
                 <div class="dual-track-labels">
@@ -712,13 +755,28 @@ export const printCharacterSheet = (character, notes = '') => {
               <h2 class="section-title details-title">Character Details</h2>
               <div class="abilities-content">
                 <div class="ability-text">
+                  <span class="ability-name">Age:</span>
+                  <span class="ability-description">${character.age || 20}</span>
+                </div>
+
+                <div class="ability-text">
                   <span class="ability-name">Appearance:</span>
                   <span class="ability-description">${character.appearance || 'No appearance details provided.'}</span>
                 </div>
-                
+
                 <div class="ability-text">
                   <span class="ability-name">Personality:</span>
                   <span class="ability-description">${character.personality || 'No personality details provided.'}</span>
+                </div>
+
+                <div class="ability-text">
+                  <span class="ability-name">Origin:</span>
+                  <span class="ability-description">${character.origin?.name || 'None'} - ${character.origin?.description || 'No origin selected.'}</span>
+                </div>
+
+                <div class="ability-text">
+                  <span class="ability-name">Background:</span>
+                  <span class="ability-description">${character.background?.name || 'None'} - ${character.background?.description || 'No background selected.'}</span>
                 </div>
               </div>
             </div>

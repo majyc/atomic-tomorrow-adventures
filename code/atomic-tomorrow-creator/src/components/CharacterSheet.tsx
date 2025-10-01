@@ -274,7 +274,28 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                   <div className="font-medium">Solar Scouts Training</div>
                   <div className="text-xl font-bold">35%</div>
                 </div>
-                
+
+                <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
+                  <div className="font-medium">Parry (Unarmed/Melee)</div>
+                  <div className="text-xl font-bold">{Math.max(
+                    calculatedSkills['Combat (Unarmed Combat)']?.value || ((character.attributes?.REFLEX || 10) * 2) + 10,
+                    calculatedSkills['Combat (Melee Weapons)']?.value || ((character.attributes?.REFLEX || 10) * 2) + 10
+                  )}%</div>
+                </div>
+
+                <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
+                  <div className="font-medium">Dodge</div>
+                  <div className="text-xl font-bold">{((character.attributes?.REFLEX || 10) * 2) + 10}%</div>
+                </div>
+
+                <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
+                  <div className="font-medium">Block (with shield)</div>
+                  <div className="text-xl font-bold">{Math.max(
+                    calculatedSkills['Combat (Unarmed Combat)']?.value || ((character.attributes?.REFLEX || 10) * 2) + 10,
+                    calculatedSkills['Combat (Melee Weapons)']?.value || ((character.attributes?.REFLEX || 10) * 2) + 10
+                  ) + 20}%</div>
+                </div>
+
                 <div className="flex justify-between items-center p-2 bg-gray-900 rounded">
                   <div className="font-medium">Damage Track</div>
                   <div className="text-xl flex flex-col items-center">
@@ -450,12 +471,19 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                   {/* Left Details */}
                   <div>
                     <div className="mb-4">
+                      <h3 className="font-bold text-blue-400 mb-1">Age</h3>
+                      <p className="p-2 rounded border bg-gray-900 border-blue-800 text-sm">
+                        {character.age || 20}
+                      </p>
+                    </div>
+
+                    <div className="mb-4">
                       <h3 className="font-bold text-blue-400 mb-1">Appearance</h3>
                       <p className="p-2 rounded border bg-gray-900 border-blue-800 text-sm">
                         {character.appearance || "No appearance details provided."}
                       </p>
                     </div>
-                    
+
                     <div>
                       <h3 className="font-bold text-blue-400 mb-1">Personality</h3>
                       <p className="p-2 rounded border bg-gray-900 border-blue-800 text-sm">
@@ -463,7 +491,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                       </p>
                     </div>
                   </div>
-                  
+
                   {/* Right Details */}
                   <div>
                     <div className="mb-4">
@@ -474,7 +502,7 @@ const CharacterSheet = ({ character, updateCharacter }) => {
                         {character.origin?.description || "No origin selected."}
                       </p>
                     </div>
-                    
+
                     <div>
                       <h3 className="font-bold text-blue-400 mb-1">
                         Background: {character.background?.name}
