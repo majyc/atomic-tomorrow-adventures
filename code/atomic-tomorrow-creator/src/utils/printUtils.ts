@@ -768,16 +768,6 @@ export const printCharacterSheet = (character, notes = '') => {
                   <span class="ability-name">Personality:</span>
                   <span class="ability-description">${character.personality || 'No personality details provided.'}</span>
                 </div>
-
-                <div class="ability-text">
-                  <span class="ability-name">Origin:</span>
-                  <span class="ability-description">${character.origin?.name || 'None'} - ${character.origin?.description || 'No origin selected.'}</span>
-                </div>
-
-                <div class="ability-text">
-                  <span class="ability-name">Background:</span>
-                  <span class="ability-description">${character.background?.name || 'None'} - ${character.background?.description || 'No background selected.'}</span>
-                </div>
               </div>
             </div>
             
